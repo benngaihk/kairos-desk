@@ -1,0 +1,4299 @@
+{
+  "as_of_utc": "2026-09-14T02:16:52Z",
+  "as_of_cst": "2026-09-14 10:16 CST",
+  "n_counted": 676,
+  "n_completeness": 662,
+  "n_negrisk_events": 14,
+  "count_rule": "676 = 662 Yes/No completeness books + 14 NegRisk events (not 676 identical objects).",
+  "sha256_market_ids": "51351529d97d644500758363f8bb8c0f7c464f3e73ad1f741f22ca36cafa115c",
+  "n_unique_market_ids": 662,
+  "completeness": [
+    {
+      "market_id": "2252242",
+      "slug": "will-the-fed-decrease-interest-rates-by-50-bps-after-the-september-2026-meeting-863",
+      "question": "Will the Fed decrease interest rates by 50+ bps after the September 2026 meeting?",
+      "event_slug": "fed-decision-in-september-762"
+    },
+    {
+      "market_id": "2252243",
+      "slug": "will-the-fed-decrease-interest-rates-by-25-bps-after-the-september-2026-meeting-586",
+      "question": "Will the Fed decrease interest rates by 25 bps after the September 2026 meeting?",
+      "event_slug": "fed-decision-in-september-762"
+    },
+    {
+      "market_id": "2252244",
+      "slug": "will-there-be-no-change-in-fed-interest-rates-after-the-september-2026-meeting-615",
+      "question": "Will there be no change in Fed interest rates after the September 2026 meeting?",
+      "event_slug": "fed-decision-in-september-762"
+    },
+    {
+      "market_id": "2252245",
+      "slug": "will-the-fed-increase-interest-rates-by-25-bps-after-the-september-2026-meeting-649",
+      "question": "Will the Fed increase interest rates by 25 bps after the September 2026 meeting?",
+      "event_slug": "fed-decision-in-september-762"
+    },
+    {
+      "market_id": "2252246",
+      "slug": "will-the-fed-increase-interest-rates-by-50-bps-after-the-september-2026-meeting-664",
+      "question": "Will the Fed increase interest rates by 50+ bps after the September 2026 meeting?",
+      "event_slug": "fed-decision-in-september-762"
+    },
+    {
+      "market_id": "3335123",
+      "slug": "nfl-dal-nyg-2026-09-14",
+      "question": "Cowboys vs. Giants",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "3340140",
+      "slug": "nfl-dal-nyg-2026-09-14-spread-away-1pt5",
+      "question": "Spread: Cowboys (-1.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "3340142",
+      "slug": "nfl-dal-nyg-2026-09-14-spread-away-2pt5",
+      "question": "Spread: Cowboys (-2.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "3340143",
+      "slug": "nfl-dal-nyg-2026-09-14-spread-away-3pt5",
+      "question": "Spread: Cowboys (-3.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "3340144",
+      "slug": "nfl-dal-nyg-2026-09-14-spread-away-4pt5",
+      "question": "Spread: Cowboys (-4.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "3340145",
+      "slug": "nfl-dal-nyg-2026-09-14-total-45pt5",
+      "question": "Cowboys vs. Giants: O/U 45.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "3340146",
+      "slug": "nfl-dal-nyg-2026-09-14-total-47pt5",
+      "question": "Cowboys vs. Giants: O/U 47.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "3340147",
+      "slug": "nfl-dal-nyg-2026-09-14-total-48pt5",
+      "question": "Cowboys vs. Giants: O/U 48.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "3340148",
+      "slug": "nfl-dal-nyg-2026-09-14-total-50pt5",
+      "question": "Cowboys vs. Giants: O/U 50.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "3340149",
+      "slug": "nfl-dal-nyg-2026-09-14-total-52pt5",
+      "question": "Cowboys vs. Giants: O/U 52.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "3920553",
+      "slug": "nfl-dal-nyg-2026-09-14-spread-away-0pt5",
+      "question": "Spread: Cowboys (-0.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "3920554",
+      "slug": "nfl-dal-nyg-2026-09-14-total-28pt5",
+      "question": "Cowboys vs. Giants: O/U 28.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "3920555",
+      "slug": "nfl-dal-nyg-2026-09-14-total-30pt5",
+      "question": "Cowboys vs. Giants: O/U 30.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "3920556",
+      "slug": "nfl-dal-nyg-2026-09-14-total-32pt5",
+      "question": "Cowboys vs. Giants: O/U 32.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "3920557",
+      "slug": "nfl-dal-nyg-2026-09-14-total-34pt5",
+      "question": "Cowboys vs. Giants: O/U 34.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "3920558",
+      "slug": "nfl-dal-nyg-2026-09-14-total-36pt5",
+      "question": "Cowboys vs. Giants: O/U 36.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "3920559",
+      "slug": "nfl-dal-nyg-2026-09-14-total-38pt5",
+      "question": "Cowboys vs. Giants: O/U 38.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "3920560",
+      "slug": "nfl-dal-nyg-2026-09-14-total-40pt5",
+      "question": "Cowboys vs. Giants: O/U 40.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "3920561",
+      "slug": "nfl-dal-nyg-2026-09-14-total-42pt5",
+      "question": "Cowboys vs. Giants: O/U 42.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "3920562",
+      "slug": "nfl-dal-nyg-2026-09-14-total-44pt5",
+      "question": "Cowboys vs. Giants: O/U 44.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "3920563",
+      "slug": "nfl-dal-nyg-2026-09-14-total-46pt5",
+      "question": "Cowboys vs. Giants: O/U 46.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "3920564",
+      "slug": "nfl-dal-nyg-2026-09-14-total-54pt5",
+      "question": "Cowboys vs. Giants: O/U 54.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "3920565",
+      "slug": "nfl-dal-nyg-2026-09-14-total-56pt5",
+      "question": "Cowboys vs. Giants: O/U 56.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "3920566",
+      "slug": "nfl-dal-nyg-2026-09-14-total-58pt5",
+      "question": "Cowboys vs. Giants: O/U 58.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "3920567",
+      "slug": "nfl-dal-nyg-2026-09-14-total-60pt5",
+      "question": "Cowboys vs. Giants: O/U 60.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "3920568",
+      "slug": "nfl-dal-nyg-2026-09-14-total-62pt5",
+      "question": "Cowboys vs. Giants: O/U 62.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "3920569",
+      "slug": "nfl-dal-nyg-2026-09-14-total-64pt5",
+      "question": "Cowboys vs. Giants: O/U 64.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "3920570",
+      "slug": "nfl-dal-nyg-2026-09-14-total-66pt5",
+      "question": "Cowboys vs. Giants: O/U 66.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "3920571",
+      "slug": "nfl-dal-nyg-2026-09-14-total-68pt5",
+      "question": "Cowboys vs. Giants: O/U 68.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4015342",
+      "slug": "nfl-dal-nyg-2026-09-14-2h-moneyline",
+      "question": "Cowboys vs. Giants: 2H Moneyline",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4015343",
+      "slug": "nfl-dal-nyg-2026-09-14-2h-total-17pt5",
+      "question": "Cowboys vs. Giants: 2H O/U 17.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4015344",
+      "slug": "nfl-dal-nyg-2026-09-14-2h-total-20pt5",
+      "question": "Cowboys vs. Giants: 2H O/U 20.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4015345",
+      "slug": "nfl-dal-nyg-2026-09-14-2h-total-23pt5",
+      "question": "Cowboys vs. Giants: 2H O/U 23.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4015346",
+      "slug": "nfl-dal-nyg-2026-09-14-2h-total-26pt5",
+      "question": "Cowboys vs. Giants: 2H O/U 26.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4015347",
+      "slug": "nfl-dal-nyg-2026-09-14-2h-total-29pt5",
+      "question": "Cowboys vs. Giants: 2H O/U 29.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4015368",
+      "slug": "nfl-dal-nyg-2026-09-14-3q-spread-away-0pt5",
+      "question": "3Q Spread: Cowboys (-0.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4015369",
+      "slug": "nfl-dal-nyg-2026-09-14-3q-spread-away-1pt5",
+      "question": "3Q Spread: Cowboys (-1.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4015370",
+      "slug": "nfl-dal-nyg-2026-09-14-3q-spread-away-2pt5",
+      "question": "3Q Spread: Cowboys (-2.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4015371",
+      "slug": "nfl-dal-nyg-2026-09-14-3q-spread-away-3pt5",
+      "question": "3Q Spread: Cowboys (-3.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4015372",
+      "slug": "nfl-dal-nyg-2026-09-14-3q-total-3pt5",
+      "question": "Cowboys vs. Giants: 3Q O/U 3.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4015373",
+      "slug": "nfl-dal-nyg-2026-09-14-3q-total-6pt5",
+      "question": "Cowboys vs. Giants: 3Q O/U 6.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4015374",
+      "slug": "nfl-dal-nyg-2026-09-14-3q-total-9pt5",
+      "question": "Cowboys vs. Giants: 3Q O/U 9.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4015375",
+      "slug": "nfl-dal-nyg-2026-09-14-3q-total-12pt5",
+      "question": "Cowboys vs. Giants: 3Q O/U 12.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4015376",
+      "slug": "nfl-dal-nyg-2026-09-14-3q-total-15pt5",
+      "question": "Cowboys vs. Giants: 3Q O/U 15.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4015377",
+      "slug": "nfl-dal-nyg-2026-09-14-3q-moneyline",
+      "question": "Cowboys vs. Giants: 3Q Moneyline",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4015378",
+      "slug": "nfl-dal-nyg-2026-09-14-4q-spread-away-0pt5",
+      "question": "4Q Spread: Cowboys (-0.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4015379",
+      "slug": "nfl-dal-nyg-2026-09-14-4q-spread-away-1pt5",
+      "question": "4Q Spread: Cowboys (-1.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4015380",
+      "slug": "nfl-dal-nyg-2026-09-14-4q-spread-away-2pt5",
+      "question": "4Q Spread: Cowboys (-2.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4015381",
+      "slug": "nfl-dal-nyg-2026-09-14-4q-spread-away-3pt5",
+      "question": "4Q Spread: Cowboys (-3.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4015382",
+      "slug": "nfl-dal-nyg-2026-09-14-4q-total-7pt5",
+      "question": "Cowboys vs. Giants: 4Q O/U 7.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4015383",
+      "slug": "nfl-dal-nyg-2026-09-14-4q-total-10pt5",
+      "question": "Cowboys vs. Giants: 4Q O/U 10.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4015384",
+      "slug": "nfl-dal-nyg-2026-09-14-4q-total-13pt5",
+      "question": "Cowboys vs. Giants: 4Q O/U 13.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4015385",
+      "slug": "nfl-dal-nyg-2026-09-14-4q-total-16pt5",
+      "question": "Cowboys vs. Giants: 4Q O/U 16.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4015386",
+      "slug": "nfl-dal-nyg-2026-09-14-4q-total-19pt5",
+      "question": "Cowboys vs. Giants: 4Q O/U 19.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4015387",
+      "slug": "nfl-dal-nyg-2026-09-14-4q-moneyline",
+      "question": "Cowboys vs. Giants: 4Q Moneyline",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4015394",
+      "slug": "nfl-dal-nyg-2026-09-14-2h-team-total-nyg-8pt5",
+      "question": "Giants 2H Team Total: O/U 8.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4015395",
+      "slug": "nfl-dal-nyg-2026-09-14-2h-team-total-nyg-10pt5",
+      "question": "Giants 2H Team Total: O/U 10.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4015396",
+      "slug": "nfl-dal-nyg-2026-09-14-2h-team-total-nyg-12pt5",
+      "question": "Giants 2H Team Total: O/U 12.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4015397",
+      "slug": "nfl-dal-nyg-2026-09-14-2h-team-total-dal-10pt5",
+      "question": "Cowboys 2H Team Total: O/U 10.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4015398",
+      "slug": "nfl-dal-nyg-2026-09-14-2h-team-total-dal-12pt5",
+      "question": "Cowboys 2H Team Total: O/U 12.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4015399",
+      "slug": "nfl-dal-nyg-2026-09-14-2h-team-total-dal-14pt5",
+      "question": "Cowboys 2H Team Total: O/U 14.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4015922",
+      "slug": "nfl-dal-nyg-2026-09-14-3q-spread-away-4pt5",
+      "question": "3Q Spread: Cowboys (-4.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4015923",
+      "slug": "nfl-dal-nyg-2026-09-14-4q-spread-away-4pt5",
+      "question": "4Q Spread: Cowboys (-4.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4213210",
+      "slug": "nfl-dal-nyg-2026-09-14-2h-spread-away-0pt5",
+      "question": "2H Spread: Cowboys (-0.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4213211",
+      "slug": "nfl-dal-nyg-2026-09-14-2h-spread-away-1pt5",
+      "question": "2H Spread: Cowboys (-1.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4213212",
+      "slug": "nfl-dal-nyg-2026-09-14-2h-spread-away-2pt5",
+      "question": "2H Spread: Cowboys (-2.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4213213",
+      "slug": "nfl-dal-nyg-2026-09-14-2h-spread-away-3pt5",
+      "question": "2H Spread: Cowboys (-3.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4213804",
+      "slug": "nfl-dal-nyg-2026-09-14-2h-spread-away-4pt5",
+      "question": "2H Spread: Cowboys (-4.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4228668",
+      "slug": "nfl-dal-nyg-2026-09-14-team-total-dal-19pt5",
+      "question": "Cowboys Team Total: O/U 19.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4228669",
+      "slug": "nfl-dal-nyg-2026-09-14-team-total-dal-22pt5",
+      "question": "Cowboys Team Total: O/U 22.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4228670",
+      "slug": "nfl-dal-nyg-2026-09-14-team-total-dal-25pt5",
+      "question": "Cowboys Team Total: O/U 25.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4228671",
+      "slug": "nfl-dal-nyg-2026-09-14-team-total-dal-28pt5",
+      "question": "Cowboys Team Total: O/U 28.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4228672",
+      "slug": "nfl-dal-nyg-2026-09-14-team-total-dal-31pt5",
+      "question": "Cowboys Team Total: O/U 31.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4228673",
+      "slug": "nfl-dal-nyg-2026-09-14-team-total-nyg-17pt5",
+      "question": "Giants Team Total: O/U 17.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4228674",
+      "slug": "nfl-dal-nyg-2026-09-14-team-total-nyg-20pt5",
+      "question": "Giants Team Total: O/U 20.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4228675",
+      "slug": "nfl-dal-nyg-2026-09-14-team-total-nyg-23pt5",
+      "question": "Giants Team Total: O/U 23.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4228676",
+      "slug": "nfl-dal-nyg-2026-09-14-team-total-nyg-26pt5",
+      "question": "Giants Team Total: O/U 26.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4228677",
+      "slug": "nfl-dal-nyg-2026-09-14-team-total-nyg-29pt5",
+      "question": "Giants Team Total: O/U 29.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4314941",
+      "slug": "nfl-dal-nyg-2026-09-14-exact-margin-long-25-plus",
+      "question": "Exact Margin: Cowboys by 25+",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4314942",
+      "slug": "nfl-dal-nyg-2026-09-14-exact-margin-long-19-24",
+      "question": "Exact Margin: Cowboys by 19-24",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4314943",
+      "slug": "nfl-dal-nyg-2026-09-14-exact-margin-long-13-18",
+      "question": "Exact Margin: Cowboys by 13-18",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4314944",
+      "slug": "nfl-dal-nyg-2026-09-14-exact-margin-long-7-12",
+      "question": "Exact Margin: Cowboys by 7-12",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4314945",
+      "slug": "nfl-dal-nyg-2026-09-14-exact-margin-long-1-6",
+      "question": "Exact Margin: Cowboys by 1-6",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4314946",
+      "slug": "nfl-dal-nyg-2026-09-14-exact-margin-tie",
+      "question": "Exact Margin: Tie",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4314947",
+      "slug": "nfl-dal-nyg-2026-09-14-exact-margin-short-1-6",
+      "question": "Exact Margin: Giants by 1-6",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4314948",
+      "slug": "nfl-dal-nyg-2026-09-14-exact-margin-short-7-13",
+      "question": "Exact Margin: Giants by 7-13",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4314949",
+      "slug": "nfl-dal-nyg-2026-09-14-exact-margin-short-14-20",
+      "question": "Exact Margin: Giants by 14-20",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4314950",
+      "slug": "nfl-dal-nyg-2026-09-14-exact-margin-short-21-plus",
+      "question": "Exact Margin: Giants by 21+",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4314951",
+      "slug": "nfl-dal-nyg-2026-09-14-safety",
+      "question": "Cowboys vs. Giants: Safety?",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4314952",
+      "slug": "nfl-dal-nyg-2026-09-14-longest-field-goal",
+      "question": "Cowboys vs. Giants: Team to Record Longest FG",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4314955",
+      "slug": "nfl-dal-nyg-2026-09-14-3q-btts-points",
+      "question": "Cowboys vs. Giants: Both Teams to Score Points - 3Q",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4314956",
+      "slug": "nfl-dal-nyg-2026-09-14-4q-btts-points",
+      "question": "Cowboys vs. Giants: Both Teams to Score Points - 4Q",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4314957",
+      "slug": "nfl-dal-nyg-2026-09-14-team-tds-dal-2pt5",
+      "question": "Cowboys Total Touchdowns: O/U 2.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4314958",
+      "slug": "nfl-dal-nyg-2026-09-14-team-tds-nyg-2pt5",
+      "question": "Giants Total Touchdowns: O/U 2.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4314959",
+      "slug": "nfl-dal-nyg-2026-09-14-team-off-yards-dal-350pt5",
+      "question": "Cowboys Total Offensive Yards: O/U 350.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4314960",
+      "slug": "nfl-dal-nyg-2026-09-14-team-off-yards-nyg-350pt5",
+      "question": "Giants Total Offensive Yards: O/U 350.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4314961",
+      "slug": "nfl-dal-nyg-2026-09-14-two-pt-conversions-0pt5",
+      "question": "Cowboys vs. Giants: Total Two-Point Conversions O/U 0.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4424935",
+      "slug": "nfl-dal-nyg-2026-09-14-total-49pt5",
+      "question": "Cowboys vs. Giants: O/U 49.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4424936",
+      "slug": "nfl-dal-nyg-2026-09-14-total-51pt5",
+      "question": "Cowboys vs. Giants: O/U 51.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447350",
+      "slug": "nfl-dal-nyg-2026-09-14-spread-away-5pt5",
+      "question": "Spread: Cowboys (-5.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447352",
+      "slug": "nfl-dal-nyg-2026-09-14-spread-away-6pt5",
+      "question": "Spread: Cowboys (-6.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447355",
+      "slug": "nfl-dal-nyg-2026-09-14-spread-away-7pt5",
+      "question": "Spread: Cowboys (-7.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447357",
+      "slug": "nfl-dal-nyg-2026-09-14-spread-away-8pt5",
+      "question": "Spread: Cowboys (-8.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447359",
+      "slug": "nfl-dal-nyg-2026-09-14-spread-away-9pt5",
+      "question": "Spread: Cowboys (-9.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447361",
+      "slug": "nfl-dal-nyg-2026-09-14-spread-away-10pt5",
+      "question": "Spread: Cowboys (-10.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447364",
+      "slug": "nfl-dal-nyg-2026-09-14-spread-away-13pt5",
+      "question": "Spread: Cowboys (-13.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447366",
+      "slug": "nfl-dal-nyg-2026-09-14-spread-away-14pt5",
+      "question": "Spread: Cowboys (-14.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447368",
+      "slug": "nfl-dal-nyg-2026-09-14-spread-away-16pt5",
+      "question": "Spread: Cowboys (-16.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447371",
+      "slug": "nfl-dal-nyg-2026-09-14-spread-away-17pt5",
+      "question": "Spread: Cowboys (-17.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447372",
+      "slug": "nfl-dal-nyg-2026-09-14-spread-away-19pt5",
+      "question": "Spread: Cowboys (-19.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447375",
+      "slug": "nfl-dal-nyg-2026-09-14-spread-away-20pt5",
+      "question": "Spread: Cowboys (-20.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447378",
+      "slug": "nfl-dal-nyg-2026-09-14-spread-away-21pt5",
+      "question": "Spread: Cowboys (-21.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447380",
+      "slug": "nfl-dal-nyg-2026-09-14-spread-home-1pt5",
+      "question": "Spread: Giants (-1.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447383",
+      "slug": "nfl-dal-nyg-2026-09-14-spread-home-2pt5",
+      "question": "Spread: Giants (-2.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447385",
+      "slug": "nfl-dal-nyg-2026-09-14-spread-home-3pt5",
+      "question": "Spread: Giants (-3.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447387",
+      "slug": "nfl-dal-nyg-2026-09-14-spread-home-4pt5",
+      "question": "Spread: Giants (-4.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447389",
+      "slug": "nfl-dal-nyg-2026-09-14-spread-home-5pt5",
+      "question": "Spread: Giants (-5.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447392",
+      "slug": "nfl-dal-nyg-2026-09-14-spread-home-6pt5",
+      "question": "Spread: Giants (-6.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447393",
+      "slug": "nfl-dal-nyg-2026-09-14-spread-home-7pt5",
+      "question": "Spread: Giants (-7.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447395",
+      "slug": "nfl-dal-nyg-2026-09-14-spread-home-8pt5",
+      "question": "Spread: Giants (-8.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447398",
+      "slug": "nfl-dal-nyg-2026-09-14-spread-home-9pt5",
+      "question": "Spread: Giants (-9.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447400",
+      "slug": "nfl-dal-nyg-2026-09-14-spread-home-10pt5",
+      "question": "Spread: Giants (-10.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447402",
+      "slug": "nfl-dal-nyg-2026-09-14-spread-home-13pt5",
+      "question": "Spread: Giants (-13.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447405",
+      "slug": "nfl-dal-nyg-2026-09-14-spread-home-14pt5",
+      "question": "Spread: Giants (-14.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447407",
+      "slug": "nfl-dal-nyg-2026-09-14-spread-home-16pt5",
+      "question": "Spread: Giants (-16.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447411",
+      "slug": "nfl-dal-nyg-2026-09-14-spread-home-17pt5",
+      "question": "Spread: Giants (-17.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447413",
+      "slug": "nfl-dal-nyg-2026-09-14-spread-home-19pt5",
+      "question": "Spread: Giants (-19.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447415",
+      "slug": "nfl-dal-nyg-2026-09-14-spread-home-20pt5",
+      "question": "Spread: Giants (-20.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447418",
+      "slug": "nfl-dal-nyg-2026-09-14-spread-home-21pt5",
+      "question": "Spread: Giants (-21.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447506",
+      "slug": "nfl-dal-nyg-2026-09-14-2h-spread-away-5pt5",
+      "question": "2H Spread: Cowboys (-5.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447508",
+      "slug": "nfl-dal-nyg-2026-09-14-2h-spread-away-6pt5",
+      "question": "2H Spread: Cowboys (-6.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447511",
+      "slug": "nfl-dal-nyg-2026-09-14-2h-spread-away-7pt5",
+      "question": "2H Spread: Cowboys (-7.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447513",
+      "slug": "nfl-dal-nyg-2026-09-14-2h-spread-away-8pt5",
+      "question": "2H Spread: Cowboys (-8.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447516",
+      "slug": "nfl-dal-nyg-2026-09-14-2h-spread-away-9pt5",
+      "question": "2H Spread: Cowboys (-9.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447518",
+      "slug": "nfl-dal-nyg-2026-09-14-2h-spread-away-10pt5",
+      "question": "2H Spread: Cowboys (-10.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447522",
+      "slug": "nfl-dal-nyg-2026-09-14-2h-spread-away-13pt5",
+      "question": "2H Spread: Cowboys (-13.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447524",
+      "slug": "nfl-dal-nyg-2026-09-14-2h-spread-away-14pt5",
+      "question": "2H Spread: Cowboys (-14.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447526",
+      "slug": "nfl-dal-nyg-2026-09-14-2h-spread-away-16pt5",
+      "question": "2H Spread: Cowboys (-16.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447529",
+      "slug": "nfl-dal-nyg-2026-09-14-2h-spread-away-17pt5",
+      "question": "2H Spread: Cowboys (-17.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447531",
+      "slug": "nfl-dal-nyg-2026-09-14-2h-spread-away-20pt5",
+      "question": "2H Spread: Cowboys (-20.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447534",
+      "slug": "nfl-dal-nyg-2026-09-14-2h-spread-away-21pt5",
+      "question": "2H Spread: Cowboys (-21.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447537",
+      "slug": "nfl-dal-nyg-2026-09-14-2h-spread-home-1pt5",
+      "question": "2H Spread: Giants (-1.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447540",
+      "slug": "nfl-dal-nyg-2026-09-14-2h-spread-home-2pt5",
+      "question": "2H Spread: Giants (-2.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447543",
+      "slug": "nfl-dal-nyg-2026-09-14-2h-spread-home-3pt5",
+      "question": "2H Spread: Giants (-3.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447546",
+      "slug": "nfl-dal-nyg-2026-09-14-2h-spread-home-4pt5",
+      "question": "2H Spread: Giants (-4.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447549",
+      "slug": "nfl-dal-nyg-2026-09-14-2h-spread-home-5pt5",
+      "question": "2H Spread: Giants (-5.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447551",
+      "slug": "nfl-dal-nyg-2026-09-14-2h-spread-home-6pt5",
+      "question": "2H Spread: Giants (-6.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447555",
+      "slug": "nfl-dal-nyg-2026-09-14-2h-spread-home-7pt5",
+      "question": "2H Spread: Giants (-7.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447557",
+      "slug": "nfl-dal-nyg-2026-09-14-2h-spread-home-8pt5",
+      "question": "2H Spread: Giants (-8.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447560",
+      "slug": "nfl-dal-nyg-2026-09-14-2h-spread-home-9pt5",
+      "question": "2H Spread: Giants (-9.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447562",
+      "slug": "nfl-dal-nyg-2026-09-14-2h-spread-home-10pt5",
+      "question": "2H Spread: Giants (-10.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447565",
+      "slug": "nfl-dal-nyg-2026-09-14-2h-spread-home-13pt5",
+      "question": "2H Spread: Giants (-13.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447568",
+      "slug": "nfl-dal-nyg-2026-09-14-2h-spread-home-14pt5",
+      "question": "2H Spread: Giants (-14.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447571",
+      "slug": "nfl-dal-nyg-2026-09-14-2h-spread-home-16pt5",
+      "question": "2H Spread: Giants (-16.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447574",
+      "slug": "nfl-dal-nyg-2026-09-14-2h-spread-home-17pt5",
+      "question": "2H Spread: Giants (-17.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447576",
+      "slug": "nfl-dal-nyg-2026-09-14-2h-spread-home-20pt5",
+      "question": "2H Spread: Giants (-20.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447580",
+      "slug": "nfl-dal-nyg-2026-09-14-2h-spread-home-21pt5",
+      "question": "2H Spread: Giants (-21.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447715",
+      "slug": "nfl-dal-nyg-2026-09-14-3q-spread-away-6pt5",
+      "question": "3Q Spread: Cowboys (-6.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447716",
+      "slug": "nfl-dal-nyg-2026-09-14-3q-spread-away-7pt5",
+      "question": "3Q Spread: Cowboys (-7.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447717",
+      "slug": "nfl-dal-nyg-2026-09-14-3q-spread-away-9pt5",
+      "question": "3Q Spread: Cowboys (-9.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447718",
+      "slug": "nfl-dal-nyg-2026-09-14-3q-spread-away-10pt5",
+      "question": "3Q Spread: Cowboys (-10.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447719",
+      "slug": "nfl-dal-nyg-2026-09-14-3q-spread-away-13pt5",
+      "question": "3Q Spread: Cowboys (-13.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447720",
+      "slug": "nfl-dal-nyg-2026-09-14-3q-spread-away-14pt5",
+      "question": "3Q Spread: Cowboys (-14.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447721",
+      "slug": "nfl-dal-nyg-2026-09-14-3q-spread-home-2pt5",
+      "question": "3Q Spread: Giants (-2.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447722",
+      "slug": "nfl-dal-nyg-2026-09-14-3q-spread-home-3pt5",
+      "question": "3Q Spread: Giants (-3.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447723",
+      "slug": "nfl-dal-nyg-2026-09-14-3q-spread-home-4pt5",
+      "question": "3Q Spread: Giants (-4.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447724",
+      "slug": "nfl-dal-nyg-2026-09-14-3q-spread-home-6pt5",
+      "question": "3Q Spread: Giants (-6.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447725",
+      "slug": "nfl-dal-nyg-2026-09-14-3q-spread-home-7pt5",
+      "question": "3Q Spread: Giants (-7.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447726",
+      "slug": "nfl-dal-nyg-2026-09-14-3q-spread-home-9pt5",
+      "question": "3Q Spread: Giants (-9.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447727",
+      "slug": "nfl-dal-nyg-2026-09-14-3q-spread-home-10pt5",
+      "question": "3Q Spread: Giants (-10.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447728",
+      "slug": "nfl-dal-nyg-2026-09-14-3q-spread-home-13pt5",
+      "question": "3Q Spread: Giants (-13.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447729",
+      "slug": "nfl-dal-nyg-2026-09-14-3q-spread-home-14pt5",
+      "question": "3Q Spread: Giants (-14.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447730",
+      "slug": "nfl-dal-nyg-2026-09-14-4q-spread-away-6pt5",
+      "question": "4Q Spread: Cowboys (-6.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447731",
+      "slug": "nfl-dal-nyg-2026-09-14-4q-spread-away-7pt5",
+      "question": "4Q Spread: Cowboys (-7.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447732",
+      "slug": "nfl-dal-nyg-2026-09-14-4q-spread-away-9pt5",
+      "question": "4Q Spread: Cowboys (-9.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447733",
+      "slug": "nfl-dal-nyg-2026-09-14-4q-spread-away-10pt5",
+      "question": "4Q Spread: Cowboys (-10.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447734",
+      "slug": "nfl-dal-nyg-2026-09-14-4q-spread-away-13pt5",
+      "question": "4Q Spread: Cowboys (-13.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447735",
+      "slug": "nfl-dal-nyg-2026-09-14-4q-spread-away-14pt5",
+      "question": "4Q Spread: Cowboys (-14.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447736",
+      "slug": "nfl-dal-nyg-2026-09-14-4q-spread-home-2pt5",
+      "question": "4Q Spread: Giants (-2.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447737",
+      "slug": "nfl-dal-nyg-2026-09-14-4q-spread-home-3pt5",
+      "question": "4Q Spread: Giants (-3.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447738",
+      "slug": "nfl-dal-nyg-2026-09-14-4q-spread-home-4pt5",
+      "question": "4Q Spread: Giants (-4.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447739",
+      "slug": "nfl-dal-nyg-2026-09-14-4q-spread-home-6pt5",
+      "question": "4Q Spread: Giants (-6.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447740",
+      "slug": "nfl-dal-nyg-2026-09-14-4q-spread-home-7pt5",
+      "question": "4Q Spread: Giants (-7.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447741",
+      "slug": "nfl-dal-nyg-2026-09-14-4q-spread-home-9pt5",
+      "question": "4Q Spread: Giants (-9.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447742",
+      "slug": "nfl-dal-nyg-2026-09-14-4q-spread-home-10pt5",
+      "question": "4Q Spread: Giants (-10.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447743",
+      "slug": "nfl-dal-nyg-2026-09-14-4q-spread-home-13pt5",
+      "question": "4Q Spread: Giants (-13.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4447744",
+      "slug": "nfl-dal-nyg-2026-09-14-4q-spread-home-14pt5",
+      "question": "4Q Spread: Giants (-14.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4451479",
+      "slug": "nfl-dal-nyg-2026-09-14-3q-spread-away-5pt5",
+      "question": "3Q Spread: Cowboys (-5.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4451480",
+      "slug": "nfl-dal-nyg-2026-09-14-3q-spread-away-8pt5",
+      "question": "3Q Spread: Cowboys (-8.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4451481",
+      "slug": "nfl-dal-nyg-2026-09-14-4q-spread-away-5pt5",
+      "question": "4Q Spread: Cowboys (-5.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4451482",
+      "slug": "nfl-dal-nyg-2026-09-14-4q-spread-away-8pt5",
+      "question": "4Q Spread: Cowboys (-8.5)",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4455952",
+      "slug": "nfl-dal-nyg-2026-09-14-total-24pt5",
+      "question": "Cowboys vs. Giants: O/U 24.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4455953",
+      "slug": "nfl-dal-nyg-2026-09-14-total-26pt5",
+      "question": "Cowboys vs. Giants: O/U 26.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4455959",
+      "slug": "nfl-dal-nyg-2026-09-14-2h-total-16pt5",
+      "question": "Cowboys vs. Giants: 2H O/U 16.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4455960",
+      "slug": "nfl-dal-nyg-2026-09-14-2h-total-19pt5",
+      "question": "Cowboys vs. Giants: 2H O/U 19.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4455961",
+      "slug": "nfl-dal-nyg-2026-09-14-2h-total-22pt5",
+      "question": "Cowboys vs. Giants: 2H O/U 22.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4455962",
+      "slug": "nfl-dal-nyg-2026-09-14-2h-total-25pt5",
+      "question": "Cowboys vs. Giants: 2H O/U 25.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4455963",
+      "slug": "nfl-dal-nyg-2026-09-14-2h-total-28pt5",
+      "question": "Cowboys vs. Giants: 2H O/U 28.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4455974",
+      "slug": "nfl-dal-nyg-2026-09-14-3q-total-5pt5",
+      "question": "Cowboys vs. Giants: 3Q O/U 5.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4455975",
+      "slug": "nfl-dal-nyg-2026-09-14-3q-total-7pt5",
+      "question": "Cowboys vs. Giants: 3Q O/U 7.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4455976",
+      "slug": "nfl-dal-nyg-2026-09-14-3q-total-10pt5",
+      "question": "Cowboys vs. Giants: 3Q O/U 10.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4455977",
+      "slug": "nfl-dal-nyg-2026-09-14-3q-total-13pt5",
+      "question": "Cowboys vs. Giants: 3Q O/U 13.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4455978",
+      "slug": "nfl-dal-nyg-2026-09-14-3q-total-14pt5",
+      "question": "Cowboys vs. Giants: 3Q O/U 14.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4455979",
+      "slug": "nfl-dal-nyg-2026-09-14-4q-total-5pt5",
+      "question": "Cowboys vs. Giants: 4Q O/U 5.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4455980",
+      "slug": "nfl-dal-nyg-2026-09-14-4q-total-6pt5",
+      "question": "Cowboys vs. Giants: 4Q O/U 6.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4455981",
+      "slug": "nfl-dal-nyg-2026-09-14-4q-total-14pt5",
+      "question": "Cowboys vs. Giants: 4Q O/U 14.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4455982",
+      "slug": "nfl-dal-nyg-2026-09-14-team-total-dal-10pt5",
+      "question": "Cowboys Team Total: O/U 10.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4455983",
+      "slug": "nfl-dal-nyg-2026-09-14-team-total-dal-12pt5",
+      "question": "Cowboys Team Total: O/U 12.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4455984",
+      "slug": "nfl-dal-nyg-2026-09-14-team-total-dal-13pt5",
+      "question": "Cowboys Team Total: O/U 13.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4455985",
+      "slug": "nfl-dal-nyg-2026-09-14-team-total-dal-16pt5",
+      "question": "Cowboys Team Total: O/U 16.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4455986",
+      "slug": "nfl-dal-nyg-2026-09-14-team-total-dal-20pt5",
+      "question": "Cowboys Team Total: O/U 20.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4455987",
+      "slug": "nfl-dal-nyg-2026-09-14-team-total-dal-23pt5",
+      "question": "Cowboys Team Total: O/U 23.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4455988",
+      "slug": "nfl-dal-nyg-2026-09-14-team-total-dal-26pt5",
+      "question": "Cowboys Team Total: O/U 26.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4455989",
+      "slug": "nfl-dal-nyg-2026-09-14-team-total-dal-27pt5",
+      "question": "Cowboys Team Total: O/U 27.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4455990",
+      "slug": "nfl-dal-nyg-2026-09-14-team-total-dal-30pt5",
+      "question": "Cowboys Team Total: O/U 30.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4455991",
+      "slug": "nfl-dal-nyg-2026-09-14-team-total-dal-34pt5",
+      "question": "Cowboys Team Total: O/U 34.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4455995",
+      "slug": "nfl-dal-nyg-2026-09-14-team-total-nyg-16pt5",
+      "question": "Giants Team Total: O/U 16.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4455996",
+      "slug": "nfl-dal-nyg-2026-09-14-team-total-nyg-19pt5",
+      "question": "Giants Team Total: O/U 19.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4455997",
+      "slug": "nfl-dal-nyg-2026-09-14-team-total-nyg-27pt5",
+      "question": "Giants Team Total: O/U 27.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4455998",
+      "slug": "nfl-dal-nyg-2026-09-14-team-total-nyg-30pt5",
+      "question": "Giants Team Total: O/U 30.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4455999",
+      "slug": "nfl-dal-nyg-2026-09-14-team-total-nyg-34pt5",
+      "question": "Giants Team Total: O/U 34.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4456012",
+      "slug": "nfl-dal-nyg-2026-09-14-2h-team-total-dal-6pt5",
+      "question": "Cowboys 2H Team Total: O/U 6.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4456013",
+      "slug": "nfl-dal-nyg-2026-09-14-2h-team-total-dal-13pt5",
+      "question": "Cowboys 2H Team Total: O/U 13.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4456014",
+      "slug": "nfl-dal-nyg-2026-09-14-2h-team-total-dal-16pt5",
+      "question": "Cowboys 2H Team Total: O/U 16.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4456015",
+      "slug": "nfl-dal-nyg-2026-09-14-2h-team-total-dal-17pt5",
+      "question": "Cowboys 2H Team Total: O/U 17.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4456016",
+      "slug": "nfl-dal-nyg-2026-09-14-2h-team-total-dal-19pt5",
+      "question": "Cowboys 2H Team Total: O/U 19.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4456017",
+      "slug": "nfl-dal-nyg-2026-09-14-2h-team-total-dal-20pt5",
+      "question": "Cowboys 2H Team Total: O/U 20.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4456018",
+      "slug": "nfl-dal-nyg-2026-09-14-2h-team-total-nyg-6pt5",
+      "question": "Giants 2H Team Total: O/U 6.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4456019",
+      "slug": "nfl-dal-nyg-2026-09-14-2h-team-total-nyg-13pt5",
+      "question": "Giants 2H Team Total: O/U 13.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4456020",
+      "slug": "nfl-dal-nyg-2026-09-14-2h-team-total-nyg-16pt5",
+      "question": "Giants 2H Team Total: O/U 16.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4456021",
+      "slug": "nfl-dal-nyg-2026-09-14-2h-team-total-nyg-17pt5",
+      "question": "Giants 2H Team Total: O/U 17.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4456022",
+      "slug": "nfl-dal-nyg-2026-09-14-2h-team-total-nyg-19pt5",
+      "question": "Giants 2H Team Total: O/U 19.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4456023",
+      "slug": "nfl-dal-nyg-2026-09-14-2h-team-total-nyg-20pt5",
+      "question": "Giants 2H Team Total: O/U 20.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4456163",
+      "slug": "nfl-dal-nyg-2026-09-14-team-total-dal-17pt5",
+      "question": "Cowboys Team Total: O/U 17.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4456164",
+      "slug": "nfl-dal-nyg-2026-09-14-team-total-dal-29pt5",
+      "question": "Cowboys Team Total: O/U 29.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4456165",
+      "slug": "nfl-dal-nyg-2026-09-14-team-total-nyg-14pt5",
+      "question": "Giants Team Total: O/U 14.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4456168",
+      "slug": "nfl-dal-nyg-2026-09-14-3q-total-4pt5",
+      "question": "Cowboys vs. Giants: 3Q O/U 4.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4456169",
+      "slug": "nfl-dal-nyg-2026-09-14-3q-total-16pt5",
+      "question": "Cowboys vs. Giants: 3Q O/U 16.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4456172",
+      "slug": "nfl-dal-nyg-2026-09-14-2h-team-total-nyg-11pt5",
+      "question": "Giants 2H Team Total: O/U 11.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "4456173",
+      "slug": "nfl-dal-nyg-2026-09-14-2h-team-total-nyg-15pt5",
+      "question": "Giants 2H Team Total: O/U 15.5",
+      "event_slug": "nfl-dal-nyg-2026-09-14"
+    },
+    {
+      "market_id": "1357371",
+      "slug": "will-the-arizona-cardinals-win-the-2027-nfl-league-championship",
+      "question": "Will the Arizona Cardinals win the 2027 NFL league championship?",
+      "event_slug": "pro-football-2027-champion-20260729185915366"
+    },
+    {
+      "market_id": "1357372",
+      "slug": "will-the-atlanta-falcons-win-the-2027-nfl-league-championship",
+      "question": "Will the Atlanta Falcons win the 2027 NFL league championship?",
+      "event_slug": "pro-football-2027-champion-20260729185915366"
+    },
+    {
+      "market_id": "1357373",
+      "slug": "will-the-baltimore-ravens-win-the-2027-nfl-league-championship",
+      "question": "Will the Baltimore Ravens win the 2027 NFL league championship?",
+      "event_slug": "pro-football-2027-champion-20260729185915366"
+    },
+    {
+      "market_id": "1357374",
+      "slug": "will-the-buffalo-bills-win-the-2027-nfl-league-championship",
+      "question": "Will the Buffalo Bills win the 2027 NFL league championship?",
+      "event_slug": "pro-football-2027-champion-20260729185915366"
+    },
+    {
+      "market_id": "1357375",
+      "slug": "will-the-carolina-panthers-win-the-2027-nfl-league-championship",
+      "question": "Will the Carolina Panthers win the 2027 NFL league championship?",
+      "event_slug": "pro-football-2027-champion-20260729185915366"
+    },
+    {
+      "market_id": "1357376",
+      "slug": "will-the-chicago-bears-win-the-2027-nfl-league-championship",
+      "question": "Will the Chicago Bears win the 2027 NFL league championship?",
+      "event_slug": "pro-football-2027-champion-20260729185915366"
+    },
+    {
+      "market_id": "1357377",
+      "slug": "will-the-cincinnati-bengals-win-the-2027-nfl-league-championship",
+      "question": "Will the Cincinnati Bengals win the 2027 NFL league championship?",
+      "event_slug": "pro-football-2027-champion-20260729185915366"
+    },
+    {
+      "market_id": "1357378",
+      "slug": "will-the-cleveland-browns-win-the-2027-nfl-league-championship",
+      "question": "Will the Cleveland Browns win the 2027 NFL league championship?",
+      "event_slug": "pro-football-2027-champion-20260729185915366"
+    },
+    {
+      "market_id": "1357379",
+      "slug": "will-the-dallas-cowboys-win-the-2027-nfl-league-championship",
+      "question": "Will the Dallas Cowboys win the 2027 NFL league championship?",
+      "event_slug": "pro-football-2027-champion-20260729185915366"
+    },
+    {
+      "market_id": "1357380",
+      "slug": "will-the-denver-broncos-win-the-2027-nfl-league-championship",
+      "question": "Will the Denver Broncos win the 2027 NFL league championship?",
+      "event_slug": "pro-football-2027-champion-20260729185915366"
+    },
+    {
+      "market_id": "1357381",
+      "slug": "will-the-detroit-lions-win-the-2027-nfl-league-championship",
+      "question": "Will the Detroit Lions win the 2027 NFL league championship?",
+      "event_slug": "pro-football-2027-champion-20260729185915366"
+    },
+    {
+      "market_id": "1357382",
+      "slug": "will-the-green-bay-packers-win-the-2027-nfl-league-championship",
+      "question": "Will the Green Bay Packers win the 2027 NFL league championship?",
+      "event_slug": "pro-football-2027-champion-20260729185915366"
+    },
+    {
+      "market_id": "1357383",
+      "slug": "will-the-houston-texans-win-the-2027-nfl-league-championship",
+      "question": "Will the Houston Texans win the 2027 NFL league championship?",
+      "event_slug": "pro-football-2027-champion-20260729185915366"
+    },
+    {
+      "market_id": "1357384",
+      "slug": "will-the-indianapolis-colts-win-the-2027-nfl-league-championship",
+      "question": "Will the Indianapolis Colts win the 2027 NFL league championship?",
+      "event_slug": "pro-football-2027-champion-20260729185915366"
+    },
+    {
+      "market_id": "1357385",
+      "slug": "will-the-jacksonville-jaguars-win-the-2027-nfl-league-championship",
+      "question": "Will the Jacksonville Jaguars win the 2027 NFL league championship?",
+      "event_slug": "pro-football-2027-champion-20260729185915366"
+    },
+    {
+      "market_id": "1357386",
+      "slug": "will-the-kansas-city-chiefs-win-the-2027-nfl-league-championship",
+      "question": "Will the Kansas City Chiefs win the 2027 NFL league championship?",
+      "event_slug": "pro-football-2027-champion-20260729185915366"
+    },
+    {
+      "market_id": "1357387",
+      "slug": "will-the-las-vegas-raiders-win-the-2027-nfl-league-championship",
+      "question": "Will the Las Vegas Raiders win the 2027 NFL league championship?",
+      "event_slug": "pro-football-2027-champion-20260729185915366"
+    },
+    {
+      "market_id": "1357388",
+      "slug": "will-the-los-angeles-chargers-win-the-2027-nfl-league-championship",
+      "question": "Will the Los Angeles Chargers win the 2027 NFL league championship?",
+      "event_slug": "pro-football-2027-champion-20260729185915366"
+    },
+    {
+      "market_id": "1357389",
+      "slug": "will-the-los-angeles-rams-win-the-2027-nfl-league-championship",
+      "question": "Will the Los Angeles Rams win the 2027 NFL league championship?",
+      "event_slug": "pro-football-2027-champion-20260729185915366"
+    },
+    {
+      "market_id": "1357390",
+      "slug": "will-the-miami-dolphins-win-the-2027-nfl-league-championship",
+      "question": "Will the Miami Dolphins win the 2027 NFL league championship?",
+      "event_slug": "pro-football-2027-champion-20260729185915366"
+    },
+    {
+      "market_id": "1357391",
+      "slug": "will-the-minnesota-vikings-win-the-2027-nfl-league-championship",
+      "question": "Will the Minnesota Vikings win the 2027 NFL league championship?",
+      "event_slug": "pro-football-2027-champion-20260729185915366"
+    },
+    {
+      "market_id": "1357392",
+      "slug": "will-the-new-england-patriots-win-the-2027-nfl-league-championship",
+      "question": "Will the New England Patriots win the 2027 NFL league championship?",
+      "event_slug": "pro-football-2027-champion-20260729185915366"
+    },
+    {
+      "market_id": "1357393",
+      "slug": "will-the-new-orleans-saints-win-the-2027-nfl-league-championship",
+      "question": "Will the New Orleans Saints win the 2027 NFL league championship?",
+      "event_slug": "pro-football-2027-champion-20260729185915366"
+    },
+    {
+      "market_id": "1357394",
+      "slug": "will-the-new-york-giants-win-the-2027-nfl-league-championship",
+      "question": "Will the New York Giants win the 2027 NFL league championship?",
+      "event_slug": "pro-football-2027-champion-20260729185915366"
+    },
+    {
+      "market_id": "1357395",
+      "slug": "will-the-new-york-jets-win-the-2027-nfl-league-championship",
+      "question": "Will the New York Jets win the 2027 NFL league championship?",
+      "event_slug": "pro-football-2027-champion-20260729185915366"
+    },
+    {
+      "market_id": "1357396",
+      "slug": "will-the-philadelphia-eagles-win-the-2027-nfl-league-championship",
+      "question": "Will the Philadelphia Eagles win the 2027 NFL league championship?",
+      "event_slug": "pro-football-2027-champion-20260729185915366"
+    },
+    {
+      "market_id": "1357397",
+      "slug": "will-the-pittsburgh-steelers-win-the-2027-nfl-league-championship",
+      "question": "Will the Pittsburgh Steelers win the 2027 NFL league championship?",
+      "event_slug": "pro-football-2027-champion-20260729185915366"
+    },
+    {
+      "market_id": "1357398",
+      "slug": "will-the-san-francisco-49ers-win-the-2027-nfl-league-championship",
+      "question": "Will the San Francisco 49ers win the 2027 NFL league championship?",
+      "event_slug": "pro-football-2027-champion-20260729185915366"
+    },
+    {
+      "market_id": "1357399",
+      "slug": "will-the-seattle-seahawks-win-the-2027-nfl-league-championship",
+      "question": "Will the Seattle Seahawks win the 2027 NFL league championship?",
+      "event_slug": "pro-football-2027-champion-20260729185915366"
+    },
+    {
+      "market_id": "1357400",
+      "slug": "will-the-tampa-bay-buccaneers-win-the-2027-nfl-league-championship",
+      "question": "Will the Tampa Bay Buccaneers win the 2027 NFL league championship?",
+      "event_slug": "pro-football-2027-champion-20260729185915366"
+    },
+    {
+      "market_id": "1357401",
+      "slug": "will-the-tennessee-titans-win-the-2027-nfl-league-championship",
+      "question": "Will the Tennessee Titans win the 2027 NFL league championship?",
+      "event_slug": "pro-football-2027-champion-20260729185915366"
+    },
+    {
+      "market_id": "1357402",
+      "slug": "will-the-washington-commanders-win-the-2027-nfl-league-championship",
+      "question": "Will the Washington Commanders win the 2027 NFL league championship?",
+      "event_slug": "pro-football-2027-champion-20260729185915366"
+    },
+    {
+      "market_id": "1357403",
+      "slug": "will-the-other-win-the-2027-nfl-league-championship",
+      "question": "Will another team win the 2027 NFL league championship?",
+      "event_slug": "pro-football-2027-champion-20260729185915366"
+    },
+    {
+      "market_id": "1193093",
+      "slug": "will-ulf-kristersson-be-the-next-prime-minister-of-sweden",
+      "question": "Will Ulf Kristersson be the next Prime Minister of Sweden?",
+      "event_slug": "next-prime-minister-of-sweden"
+    },
+    {
+      "market_id": "1193094",
+      "slug": "will-magdalena-andersson-be-the-next-prime-minister-of-sweden",
+      "question": "Will Magdalena Andersson be the next Prime Minister of Sweden?",
+      "event_slug": "next-prime-minister-of-sweden"
+    },
+    {
+      "market_id": "1193095",
+      "slug": "will-jimmie-kesson-be-the-next-prime-minister-of-sweden",
+      "question": "Will Jimmie Åkesson be the next Prime Minister of Sweden?",
+      "event_slug": "next-prime-minister-of-sweden"
+    },
+    {
+      "market_id": "1193096",
+      "slug": "will-ebba-busch-be-the-next-prime-minister-of-sweden",
+      "question": "Will Ebba Busch be the next Prime Minister of Sweden?",
+      "event_slug": "next-prime-minister-of-sweden"
+    },
+    {
+      "market_id": "1193097",
+      "slug": "will-anna-karin-hatt-be-the-next-prime-minister-of-sweden",
+      "question": "Will Anna-Karin Hatt be the next Prime Minister of Sweden?",
+      "event_slug": "next-prime-minister-of-sweden"
+    },
+    {
+      "market_id": "1193098",
+      "slug": "will-nooshi-dadgostar-be-the-next-prime-minister-of-sweden",
+      "question": "Will Nooshi Dadgostar be the next Prime Minister of Sweden?",
+      "event_slug": "next-prime-minister-of-sweden"
+    },
+    {
+      "market_id": "1193099",
+      "slug": "will-simona-mohamsson-be-the-next-prime-minister-of-sweden",
+      "question": "Will Simona Mohamsson be the next Prime Minister of Sweden?",
+      "event_slug": "next-prime-minister-of-sweden"
+    },
+    {
+      "market_id": "1193100",
+      "slug": "will-amanda-lind-be-the-next-prime-minister-of-sweden",
+      "question": "Will Amanda Lind be the next Prime Minister of Sweden?",
+      "event_slug": "next-prime-minister-of-sweden"
+    },
+    {
+      "market_id": "1193101",
+      "slug": "will-daniel-helldn-be-the-next-prime-minister-of-sweden",
+      "question": "Will Daniel Helldén be the next Prime Minister of Sweden?",
+      "event_slug": "next-prime-minister-of-sweden"
+    },
+    {
+      "market_id": "1193102",
+      "slug": "will-another-candidate-be-the-next-prime-minister-of-sweden",
+      "question": "Will another candidate be the next Prime Minister of Sweden?",
+      "event_slug": "next-prime-minister-of-sweden"
+    },
+    {
+      "market_id": "1193103",
+      "slug": "will-elisabeth-thand-ringqvist-be-the-next-prime-minister-of-sweden",
+      "question": "Will Elisabeth Thand Ringqvist be the next Prime Minister of Sweden?",
+      "event_slug": "next-prime-minister-of-sweden"
+    },
+    {
+      "market_id": "1193104",
+      "slug": "will-candidate-b-be-the-next-prime-minister-of-sweden",
+      "question": "Will Candidate B be the next Prime Minister of Sweden?",
+      "event_slug": "next-prime-minister-of-sweden"
+    },
+    {
+      "market_id": "1193105",
+      "slug": "will-candidate-c-be-the-next-prime-minister-of-sweden",
+      "question": "Will Candidate C be the next Prime Minister of Sweden?",
+      "event_slug": "next-prime-minister-of-sweden"
+    },
+    {
+      "market_id": "1193106",
+      "slug": "will-candidate-d-be-the-next-prime-minister-of-sweden",
+      "question": "Will Candidate D be the next Prime Minister of Sweden?",
+      "event_slug": "next-prime-minister-of-sweden"
+    },
+    {
+      "market_id": "1193107",
+      "slug": "will-candidate-e-be-the-next-prime-minister-of-sweden",
+      "question": "Will Candidate E be the next Prime Minister of Sweden?",
+      "event_slug": "next-prime-minister-of-sweden"
+    },
+    {
+      "market_id": "1193108",
+      "slug": "will-candidate-f-be-the-next-prime-minister-of-sweden",
+      "question": "Will Candidate F be the next Prime Minister of Sweden?",
+      "event_slug": "next-prime-minister-of-sweden"
+    },
+    {
+      "market_id": "1193109",
+      "slug": "will-candidate-g-be-the-next-prime-minister-of-sweden",
+      "question": "Will Candidate G be the next Prime Minister of Sweden?",
+      "event_slug": "next-prime-minister-of-sweden"
+    },
+    {
+      "market_id": "1193110",
+      "slug": "will-candidate-h-be-the-next-prime-minister-of-sweden",
+      "question": "Will Candidate H be the next Prime Minister of Sweden?",
+      "event_slug": "next-prime-minister-of-sweden"
+    },
+    {
+      "market_id": "1193111",
+      "slug": "will-candidate-i-be-the-next-prime-minister-of-sweden",
+      "question": "Will Candidate I be the next Prime Minister of Sweden?",
+      "event_slug": "next-prime-minister-of-sweden"
+    },
+    {
+      "market_id": "1193112",
+      "slug": "will-candidate-j-be-the-next-prime-minister-of-sweden",
+      "question": "Will Candidate J be the next Prime Minister of Sweden?",
+      "event_slug": "next-prime-minister-of-sweden"
+    },
+    {
+      "market_id": "1193113",
+      "slug": "will-candidate-k-be-the-next-prime-minister-of-sweden",
+      "question": "Will Candidate K be the next Prime Minister of Sweden?",
+      "event_slug": "next-prime-minister-of-sweden"
+    },
+    {
+      "market_id": "1193114",
+      "slug": "will-candidate-l-be-the-next-prime-minister-of-sweden",
+      "question": "Will Candidate L be the next Prime Minister of Sweden?",
+      "event_slug": "next-prime-minister-of-sweden"
+    },
+    {
+      "market_id": "1193115",
+      "slug": "will-candidate-m-be-the-next-prime-minister-of-sweden",
+      "question": "Will Candidate M be the next Prime Minister of Sweden?",
+      "event_slug": "next-prime-minister-of-sweden"
+    },
+    {
+      "market_id": "1193116",
+      "slug": "will-candidate-n-be-the-next-prime-minister-of-sweden",
+      "question": "Will Candidate N be the next Prime Minister of Sweden?",
+      "event_slug": "next-prime-minister-of-sweden"
+    },
+    {
+      "market_id": "1193117",
+      "slug": "will-candidate-o-be-the-next-prime-minister-of-sweden",
+      "question": "Will Candidate O be the next Prime Minister of Sweden?",
+      "event_slug": "next-prime-minister-of-sweden"
+    },
+    {
+      "market_id": "1193118",
+      "slug": "will-candidate-p-be-the-next-prime-minister-of-sweden",
+      "question": "Will Candidate P be the next Prime Minister of Sweden?",
+      "event_slug": "next-prime-minister-of-sweden"
+    },
+    {
+      "market_id": "1193119",
+      "slug": "will-candidate-q-be-the-next-prime-minister-of-sweden",
+      "question": "Will Candidate Q be the next Prime Minister of Sweden?",
+      "event_slug": "next-prime-minister-of-sweden"
+    },
+    {
+      "market_id": "1193120",
+      "slug": "will-candidate-r-be-the-next-prime-minister-of-sweden",
+      "question": "Will Candidate R be the next Prime Minister of Sweden?",
+      "event_slug": "next-prime-minister-of-sweden"
+    },
+    {
+      "market_id": "1193122",
+      "slug": "will-candidate-s-be-the-next-prime-minister-of-sweden",
+      "question": "Will Candidate S be the next Prime Minister of Sweden?",
+      "event_slug": "next-prime-minister-of-sweden"
+    },
+    {
+      "market_id": "1193123",
+      "slug": "will-candidate-t-be-the-next-prime-minister-of-sweden",
+      "question": "Will Candidate T be the next Prime Minister of Sweden?",
+      "event_slug": "next-prime-minister-of-sweden"
+    },
+    {
+      "market_id": "1193124",
+      "slug": "will-candidate-u-be-the-next-prime-minister-of-sweden",
+      "question": "Will Candidate U be the next Prime Minister of Sweden?",
+      "event_slug": "next-prime-minister-of-sweden"
+    },
+    {
+      "market_id": "1193125",
+      "slug": "will-candidate-v-be-the-next-prime-minister-of-sweden",
+      "question": "Will Candidate V be the next Prime Minister of Sweden?",
+      "event_slug": "next-prime-minister-of-sweden"
+    },
+    {
+      "market_id": "1193126",
+      "slug": "will-candidate-w-be-the-next-prime-minister-of-sweden",
+      "question": "Will Candidate W be the next Prime Minister of Sweden?",
+      "event_slug": "next-prime-minister-of-sweden"
+    },
+    {
+      "market_id": "1193127",
+      "slug": "will-candidate-x-be-the-next-prime-minister-of-sweden",
+      "question": "Will Candidate X be the next Prime Minister of Sweden?",
+      "event_slug": "next-prime-minister-of-sweden"
+    },
+    {
+      "market_id": "1193128",
+      "slug": "will-candidate-y-be-the-next-prime-minister-of-sweden",
+      "question": "Will Candidate Y be the next Prime Minister of Sweden?",
+      "event_slug": "next-prime-minister-of-sweden"
+    },
+    {
+      "market_id": "1193129",
+      "slug": "will-candidate-z-be-the-next-prime-minister-of-sweden",
+      "question": "Will Candidate Z be the next Prime Minister of Sweden?",
+      "event_slug": "next-prime-minister-of-sweden"
+    },
+    {
+      "market_id": "4333264",
+      "slug": "mlb-sd-sf-2026-09-13",
+      "question": "San Diego Padres vs. San Francisco Giants",
+      "event_slug": "mlb-sd-sf-2026-09-13"
+    },
+    {
+      "market_id": "4502860",
+      "slug": "mlb-sd-sf-2026-09-13-spread-away-1pt5",
+      "question": "Spread: San Diego Padres (-1.5)",
+      "event_slug": "mlb-sd-sf-2026-09-13"
+    },
+    {
+      "market_id": "4502869",
+      "slug": "mlb-sd-sf-2026-09-13-extra-innings",
+      "question": "Will the game go to extra innings?: San Diego Padres vs. San Francisco Giants",
+      "event_slug": "mlb-sd-sf-2026-09-13"
+    },
+    {
+      "market_id": "4502900",
+      "slug": "mlb-sd-sf-2026-09-13-spread-home-2pt5",
+      "question": "Spread: San Francisco Giants (-2.5)",
+      "event_slug": "mlb-sd-sf-2026-09-13"
+    },
+    {
+      "market_id": "4502901",
+      "slug": "mlb-sd-sf-2026-09-13-spread-home-1pt5",
+      "question": "Spread: San Francisco Giants (-1.5)",
+      "event_slug": "mlb-sd-sf-2026-09-13"
+    },
+    {
+      "market_id": "4502902",
+      "slug": "mlb-sd-sf-2026-09-13-spread-away-2pt5",
+      "question": "Spread: San Diego Padres (-2.5)",
+      "event_slug": "mlb-sd-sf-2026-09-13"
+    },
+    {
+      "market_id": "4544075",
+      "slug": "mlb-sd-sf-2026-09-13-spread-away-3pt5",
+      "question": "Spread: San Diego Padres (-3.5)",
+      "event_slug": "mlb-sd-sf-2026-09-13"
+    },
+    {
+      "market_id": "4544076",
+      "slug": "mlb-sd-sf-2026-09-13-total-10pt5",
+      "question": "San Diego Padres vs. San Francisco Giants: O/U 10.5",
+      "event_slug": "mlb-sd-sf-2026-09-13"
+    },
+    {
+      "market_id": "4544309",
+      "slug": "mlb-sd-sf-2026-09-13-spread-away-5pt5",
+      "question": "Spread: San Diego Padres (-5.5)",
+      "event_slug": "mlb-sd-sf-2026-09-13"
+    },
+    {
+      "market_id": "4544310",
+      "slug": "mlb-sd-sf-2026-09-13-total-11pt5",
+      "question": "San Diego Padres vs. San Francisco Giants: O/U 11.5",
+      "event_slug": "mlb-sd-sf-2026-09-13"
+    },
+    {
+      "market_id": "4544374",
+      "slug": "mlb-sd-sf-2026-09-13-total-12pt5",
+      "question": "San Diego Padres vs. San Francisco Giants: O/U 12.5",
+      "event_slug": "mlb-sd-sf-2026-09-13"
+    },
+    {
+      "market_id": "4544471",
+      "slug": "mlb-sd-sf-2026-09-13-spread-away-4pt5",
+      "question": "Spread: San Diego Padres (-4.5)",
+      "event_slug": "mlb-sd-sf-2026-09-13"
+    },
+    {
+      "market_id": "4544480",
+      "slug": "mlb-sd-sf-2026-09-13-total-13pt5",
+      "question": "San Diego Padres vs. San Francisco Giants: O/U 13.5",
+      "event_slug": "mlb-sd-sf-2026-09-13"
+    },
+    {
+      "market_id": "1088493",
+      "slug": "will-other-win-the-2026-mens-us-open",
+      "question": "Will Other win the 2026 Men's US Open?",
+      "event_slug": "2026-mens-us-open-winner-tennis"
+    },
+    {
+      "market_id": "1088495",
+      "slug": "will-casper-ruud-win-the-2026-mens-us-open",
+      "question": "Will Casper Ruud win the 2026 Men's US Open?",
+      "event_slug": "2026-mens-us-open-winner-tennis"
+    },
+    {
+      "market_id": "4034680",
+      "slug": "mls-sdg-phi-2026-09-13-sdg",
+      "question": "Will San Diego FC win on 2026-09-13?",
+      "event_slug": "mls-sdg-phi-2026-09-13"
+    },
+    {
+      "market_id": "4034682",
+      "slug": "mls-sdg-phi-2026-09-13-draw",
+      "question": "Will San Diego FC vs. Philadelphia Union end in a draw?",
+      "event_slug": "mls-sdg-phi-2026-09-13"
+    },
+    {
+      "market_id": "4034684",
+      "slug": "mls-sdg-phi-2026-09-13-phi",
+      "question": "Will Philadelphia Union win on 2026-09-13?",
+      "event_slug": "mls-sdg-phi-2026-09-13"
+    },
+    {
+      "market_id": "1163699",
+      "slug": "clarity-act-signed-into-law-in-2026",
+      "question": "Clarity Act (H.R.3633) signed into law in 2026?",
+      "event_slug": "clarity-act-signed-into-law-in-2026"
+    },
+    {
+      "market_id": "2772166",
+      "slug": "will-paris-saint-germain-win-the-2026-27-uefa-champions-league-championship-20260701202025550",
+      "question": "Will Paris Saint-Germain win the 2026-27 UEFA Champions League Championship?",
+      "event_slug": "uefa-champions-league-2027-champion-20260701202025549"
+    },
+    {
+      "market_id": "2772167",
+      "slug": "will-aston-villa-win-the-2026-27-uefa-champions-league-championship-20260701202025551",
+      "question": "Will Aston Villa win the 2026-27 UEFA Champions League Championship?",
+      "event_slug": "uefa-champions-league-2027-champion-20260701202025549"
+    },
+    {
+      "market_id": "2772168",
+      "slug": "will-arsenal-win-the-2026-27-uefa-champions-league-championship-20260701202025552",
+      "question": "Will Arsenal win the 2026-27 UEFA Champions League Championship?",
+      "event_slug": "uefa-champions-league-2027-champion-20260701202025549"
+    },
+    {
+      "market_id": "2772169",
+      "slug": "will-manchester-city-win-the-2026-27-uefa-champions-league-championship-20260701202025553",
+      "question": "Will Manchester City win the 2026-27 UEFA Champions League Championship?",
+      "event_slug": "uefa-champions-league-2027-champion-20260701202025549"
+    },
+    {
+      "market_id": "2772170",
+      "slug": "will-manchester-united-win-the-2026-27-uefa-champions-league-championship-20260701202025554",
+      "question": "Will Manchester United win the 2026-27 UEFA Champions League Championship?",
+      "event_slug": "uefa-champions-league-2027-champion-20260701202025549"
+    },
+    {
+      "market_id": "2772171",
+      "slug": "will-liverpool-win-the-2026-27-uefa-champions-league-championship-20260701202025555",
+      "question": "Will Liverpool win the 2026-27 UEFA Champions League Championship?",
+      "event_slug": "uefa-champions-league-2027-champion-20260701202025549"
+    },
+    {
+      "market_id": "2772172",
+      "slug": "will-inter-milan-win-the-2026-27-uefa-champions-league-championship-20260701202025556",
+      "question": "Will Inter Milan win the 2026-27 UEFA Champions League Championship?",
+      "event_slug": "uefa-champions-league-2027-champion-20260701202025549"
+    },
+    {
+      "market_id": "2772173",
+      "slug": "will-napoli-win-the-2026-27-uefa-champions-league-championship-20260701202025557",
+      "question": "Will Napoli win the 2026-27 UEFA Champions League Championship?",
+      "event_slug": "uefa-champions-league-2027-champion-20260701202025549"
+    },
+    {
+      "market_id": "2772174",
+      "slug": "will-roma-win-the-2026-27-uefa-champions-league-championship-20260701202025558",
+      "question": "Will Roma win the 2026-27 UEFA Champions League Championship?",
+      "event_slug": "uefa-champions-league-2027-champion-20260701202025549"
+    },
+    {
+      "market_id": "2772175",
+      "slug": "will-como-win-the-2026-27-uefa-champions-league-championship-20260701202025559",
+      "question": "Will Como win the 2026-27 UEFA Champions League Championship?",
+      "event_slug": "uefa-champions-league-2027-champion-20260701202025549"
+    },
+    {
+      "market_id": "2772176",
+      "slug": "will-barcelona-win-the-2026-27-uefa-champions-league-championship-20260701202025560",
+      "question": "Will Barcelona win the 2026-27 UEFA Champions League Championship?",
+      "event_slug": "uefa-champions-league-2027-champion-20260701202025549"
+    },
+    {
+      "market_id": "2772177",
+      "slug": "will-real-madrid-win-the-2026-27-uefa-champions-league-championship-20260701202025561",
+      "question": "Will Real Madrid win the 2026-27 UEFA Champions League Championship?",
+      "event_slug": "uefa-champions-league-2027-champion-20260701202025549"
+    },
+    {
+      "market_id": "2772178",
+      "slug": "will-villarreal-win-the-2026-27-uefa-champions-league-championship-20260701202025562",
+      "question": "Will Villarreal win the 2026-27 UEFA Champions League Championship?",
+      "event_slug": "uefa-champions-league-2027-champion-20260701202025549"
+    },
+    {
+      "market_id": "2772179",
+      "slug": "will-atletico-madrid-win-the-2026-27-uefa-champions-league-championship-20260701202025563",
+      "question": "Will Atlético Madrid win the 2026-27 UEFA Champions League Championship?",
+      "event_slug": "uefa-champions-league-2027-champion-20260701202025549"
+    },
+    {
+      "market_id": "2772180",
+      "slug": "will-real-betis-win-the-2026-27-uefa-champions-league-championship-20260701202025564",
+      "question": "Will Real Betis win the 2026-27 UEFA Champions League Championship?",
+      "event_slug": "uefa-champions-league-2027-champion-20260701202025549"
+    },
+    {
+      "market_id": "2772181",
+      "slug": "will-bayern-munich-win-the-2026-27-uefa-champions-league-championship-20260701202025565",
+      "question": "Will Bayern Munich win the 2026-27 UEFA Champions League Championship?",
+      "event_slug": "uefa-champions-league-2027-champion-20260701202025549"
+    },
+    {
+      "market_id": "2772182",
+      "slug": "will-borussia-dortmund-win-the-2026-27-uefa-champions-league-championship-20260701202025566",
+      "question": "Will Borussia Dortmund win the 2026-27 UEFA Champions League Championship?",
+      "event_slug": "uefa-champions-league-2027-champion-20260701202025549"
+    },
+    {
+      "market_id": "2772183",
+      "slug": "will-rb-leipzig-win-the-2026-27-uefa-champions-league-championship-20260701202025567",
+      "question": "Will RB Leipzig win the 2026-27 UEFA Champions League Championship?",
+      "event_slug": "uefa-champions-league-2027-champion-20260701202025549"
+    },
+    {
+      "market_id": "2772184",
+      "slug": "will-vfb-stuttgart-win-the-2026-27-uefa-champions-league-championship-20260701202025568",
+      "question": "Will VfB Stuttgart win the 2026-27 UEFA Champions League Championship?",
+      "event_slug": "uefa-champions-league-2027-champion-20260701202025549"
+    },
+    {
+      "market_id": "2772185",
+      "slug": "will-lens-win-the-2026-27-uefa-champions-league-championship-20260701202025569",
+      "question": "Will Lens win the 2026-27 UEFA Champions League Championship?",
+      "event_slug": "uefa-champions-league-2027-champion-20260701202025549"
+    },
+    {
+      "market_id": "2772186",
+      "slug": "will-lille-win-the-2026-27-uefa-champions-league-championship-20260701202025570",
+      "question": "Will Lille win the 2026-27 UEFA Champions League Championship?",
+      "event_slug": "uefa-champions-league-2027-champion-20260701202025549"
+    },
+    {
+      "market_id": "2772187",
+      "slug": "will-psv-eindhoven-win-the-2026-27-uefa-champions-league-championship-20260701202025571",
+      "question": "Will PSV Eindhoven win the 2026-27 UEFA Champions League Championship?",
+      "event_slug": "uefa-champions-league-2027-champion-20260701202025549"
+    },
+    {
+      "market_id": "2772188",
+      "slug": "will-feyenoord-win-the-2026-27-uefa-champions-league-championship-20260701202025572",
+      "question": "Will Feyenoord win the 2026-27 UEFA Champions League Championship?",
+      "event_slug": "uefa-champions-league-2027-champion-20260701202025549"
+    },
+    {
+      "market_id": "2772189",
+      "slug": "will-porto-win-the-2026-27-uefa-champions-league-championship-20260701202025573",
+      "question": "Will Porto win the 2026-27 UEFA Champions League Championship?",
+      "event_slug": "uefa-champions-league-2027-champion-20260701202025549"
+    },
+    {
+      "market_id": "2772190",
+      "slug": "will-sporting-cp-win-the-2026-27-uefa-champions-league-championship-20260701202025574",
+      "question": "Will Sporting CP win the 2026-27 UEFA Champions League Championship?",
+      "event_slug": "uefa-champions-league-2027-champion-20260701202025549"
+    },
+    {
+      "market_id": "2772191",
+      "slug": "will-club-brugge-win-the-2026-27-uefa-champions-league-championship-20260701202025575",
+      "question": "Will Club Brugge win the 2026-27 UEFA Champions League Championship?",
+      "event_slug": "uefa-champions-league-2027-champion-20260701202025549"
+    },
+    {
+      "market_id": "2772192",
+      "slug": "will-slavia-prague-win-the-2026-27-uefa-champions-league-championship-20260701202025576",
+      "question": "Will Slavia Prague win the 2026-27 UEFA Champions League Championship?",
+      "event_slug": "uefa-champions-league-2027-champion-20260701202025549"
+    },
+    {
+      "market_id": "2772193",
+      "slug": "will-galatasaray-win-the-2026-27-uefa-champions-league-championship-20260701202025577",
+      "question": "Will Galatasaray win the 2026-27 UEFA Champions League Championship?",
+      "event_slug": "uefa-champions-league-2027-champion-20260701202025549"
+    },
+    {
+      "market_id": "2772194",
+      "slug": "will-shakhtar-donetsk-win-the-2026-27-uefa-champions-league-championship-20260701202025578",
+      "question": "Will Shakhtar Donetsk win the 2026-27 UEFA Champions League Championship?",
+      "event_slug": "uefa-champions-league-2027-champion-20260701202025549"
+    },
+    {
+      "market_id": "2772195",
+      "slug": "will-fenerbahe-win-the-2026-27-uefa-champions-league-championship",
+      "question": "Will Fenerbahçe win the 2026-27 UEFA Champions League Championship?",
+      "event_slug": "uefa-champions-league-2027-champion-20260701202025549"
+    },
+    {
+      "market_id": "2772196",
+      "slug": "will-bodglimt-win-the-2026-27-uefa-champions-league-championship",
+      "question": "Will Bodø/Glimt win the 2026-27 UEFA Champions League Championship?",
+      "event_slug": "uefa-champions-league-2027-champion-20260701202025549"
+    },
+    {
+      "market_id": "2772197",
+      "slug": "will-slovan-bratislava-win-the-2026-27-uefa-champions-league-championship",
+      "question": "Will Slovan Bratislava win the 2026-27 UEFA Champions League Championship?",
+      "event_slug": "uefa-champions-league-2027-champion-20260701202025549"
+    },
+    {
+      "market_id": "2772198",
+      "slug": "will-aek-athens-win-the-2026-27-uefa-champions-league-championship",
+      "question": "Will AEK Athens win the 2026-27 UEFA Champions League Championship?",
+      "event_slug": "uefa-champions-league-2027-champion-20260701202025549"
+    },
+    {
+      "market_id": "2772199",
+      "slug": "will-lask-win-the-2026-27-uefa-champions-league-championship",
+      "question": "Will LASK win the 2026-27 UEFA Champions League Championship?",
+      "event_slug": "uefa-champions-league-2027-champion-20260701202025549"
+    },
+    {
+      "market_id": "2772200",
+      "slug": "will-viking-win-the-2026-27-uefa-champions-league-championship",
+      "question": "Will Viking win the 2026-27 UEFA Champions League Championship?",
+      "event_slug": "uefa-champions-league-2027-champion-20260701202025549"
+    },
+    {
+      "market_id": "2772201",
+      "slug": "will-sabah-win-the-2026-27-uefa-champions-league-championship",
+      "question": "Will Sabah win the 2026-27 UEFA Champions League Championship?",
+      "event_slug": "uefa-champions-league-2027-champion-20260701202025549"
+    },
+    {
+      "market_id": "2772202",
+      "slug": "will-another-team-win-the-2026-27-uefa-champions-league-championship-20260701202025586",
+      "question": "Will another team win the 2026-27 UEFA Champions League Championship?",
+      "event_slug": "uefa-champions-league-2027-champion-20260701202025549"
+    },
+    {
+      "market_id": "2772203",
+      "slug": "will-team-h-win-the-2026-27-uefa-champions-league-championship-20260701212302026",
+      "question": "Will Team H win the 2026-27 UEFA Champions League Championship?",
+      "event_slug": "uefa-champions-league-2027-champion-20260701202025549"
+    },
+    {
+      "market_id": "2772204",
+      "slug": "will-team-i-win-the-2026-27-uefa-champions-league-championship-20260701212302027",
+      "question": "Will Team I win the 2026-27 UEFA Champions League Championship?",
+      "event_slug": "uefa-champions-league-2027-champion-20260701202025549"
+    },
+    {
+      "market_id": "2772205",
+      "slug": "will-team-j-win-the-2026-27-uefa-champions-league-championship-20260701212302028",
+      "question": "Will Team J win the 2026-27 UEFA Champions League Championship?",
+      "event_slug": "uefa-champions-league-2027-champion-20260701202025549"
+    },
+    {
+      "market_id": "2772206",
+      "slug": "will-team-k-win-the-2026-27-uefa-champions-league-championship-20260701212302029",
+      "question": "Will Team K win the 2026-27 UEFA Champions League Championship?",
+      "event_slug": "uefa-champions-league-2027-champion-20260701202025549"
+    },
+    {
+      "market_id": "2772207",
+      "slug": "will-team-l-win-the-2026-27-uefa-champions-league-championship-20260701212302030",
+      "question": "Will Team L win the 2026-27 UEFA Champions League Championship?",
+      "event_slug": "uefa-champions-league-2027-champion-20260701202025549"
+    },
+    {
+      "market_id": "561229",
+      "slug": "will-jd-vance-win-the-2028-us-presidential-election",
+      "question": "Will JD Vance win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561230",
+      "slug": "will-gavin-newsom-win-the-2028-us-presidential-election",
+      "question": "Will Gavin Newsom win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561231",
+      "slug": "will-alexandria-ocasio-cortez-win-the-2028-us-presidential-election",
+      "question": "Will Alexandria Ocasio-Cortez win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561232",
+      "slug": "will-pete-buttigieg-win-the-2028-us-presidential-election",
+      "question": "Will Pete Buttigieg win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561233",
+      "slug": "will-josh-shapiro-win-the-2028-us-presidential-election",
+      "question": "Will Josh Shapiro win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561234",
+      "slug": "will-marco-rubio-win-the-2028-us-presidential-election",
+      "question": "Will Marco Rubio win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561235",
+      "slug": "will-wes-moore-win-the-2028-us-presidential-election",
+      "question": "Will Wes Moore win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561236",
+      "slug": "will-gretchen-whitmer-win-the-2028-us-presidential-election",
+      "question": "Will Gretchen Whitmer win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561237",
+      "slug": "will-andy-beshear-win-the-2028-us-presidential-election",
+      "question": "Will Andy Beshear win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561238",
+      "slug": "will-glenn-youngkin-win-the-2028-us-presidential-election",
+      "question": "Will Glenn Youngkin win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561239",
+      "slug": "will-kamala-harris-win-the-2028-us-presidential-election",
+      "question": "Will Kamala Harris win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561240",
+      "slug": "will-stephen-smith-win-the-2028-us-presidential-election",
+      "question": "Will Stephen Smith win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561241",
+      "slug": "will-jb-pritzker-win-the-2028-us-presidential-election",
+      "question": "Will JB Pritzker win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561242",
+      "slug": "will-tulsi-gabbard-win-the-2028-us-presidential-election",
+      "question": "Will Tulsi Gabbard win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561243",
+      "slug": "will-donald-trump-win-the-2028-us-presidential-election",
+      "question": "Will Donald Trump win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561244",
+      "slug": "will-donald-trump-jr-win-the-2028-us-presidential-election",
+      "question": "Will Donald Trump Jr. win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561245",
+      "slug": "will-nikki-haley-win-the-2028-us-presidential-election",
+      "question": "Will Nikki Haley win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561246",
+      "slug": "will-ron-desantis-win-the-2028-us-presidential-election",
+      "question": "Will Ron DeSantis win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561247",
+      "slug": "will-tim-walz-win-the-2028-us-presidential-election",
+      "question": "Will Tim Walz win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561248",
+      "slug": "will-vivek-ramaswamy-win-the-2028-us-presidential-election",
+      "question": "Will Vivek Ramaswamy win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561249",
+      "slug": "will-greg-abbott-win-the-2028-us-presidential-election",
+      "question": "Will Greg Abbott win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561250",
+      "slug": "will-elon-musk-win-the-2028-us-presidential-election",
+      "question": "Will Elon Musk win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561251",
+      "slug": "will-lebron-james-win-the-2028-us-presidential-election",
+      "question": "Will LeBron James win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561252",
+      "slug": "will-dwayne-the-rock-johnson-win-the-2028-us-presidential-election",
+      "question": "Will Dwayne 'The Rock' Johnson win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561253",
+      "slug": "will-tucker-carlson-win-the-2028-us-presidential-election",
+      "question": "Will Tucker Carlson win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561254",
+      "slug": "will-kim-kardashian-win-the-2028-us-presidential-election",
+      "question": "Will Kim Kardashian win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561255",
+      "slug": "will-ivanka-trump-win-the-2028-us-presidential-election",
+      "question": "Will Ivanka Trump win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561256",
+      "slug": "will-zohran-mamdani-win-the-2028-us-presidential-election",
+      "question": "Will Zohran Mamdani win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561257",
+      "slug": "will-michelle-obama-win-the-2028-us-presidential-election",
+      "question": "Will Michelle Obama win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561258",
+      "slug": "will-jamie-dimon-win-the-2028-us-presidential-election",
+      "question": "Will Jamie Dimon win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561259",
+      "slug": "will-ro-khanna-win-the-2028-us-presidential-election",
+      "question": "Will Ro Khanna win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561260",
+      "slug": "will-thomas-massie-win-the-2028-us-presidential-election",
+      "question": "Will Thomas Massie win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561261",
+      "slug": "will-jon-ossoff-win-the-2028-us-presidential-election",
+      "question": "Will Jon Ossoff win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561262",
+      "slug": "will-james-talarico-win-the-2028-us-presidential-election",
+      "question": "Will James Talarico win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561263",
+      "slug": "will-eric-trump-win-the-2028-us-presidential-election",
+      "question": "Will Eric Trump win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561264",
+      "slug": "will-pete-hegseth-win-the-2028-us-presidential-election",
+      "question": "Will Pete Hegseth win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561265",
+      "slug": "will-jalen-brunson-win-the-2028-us-presidential-election",
+      "question": "Will Jalen Brunson win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561266",
+      "slug": "will-abigail-spanberger-win-the-2028-us-presidential-election",
+      "question": "Will Abigail Spanberger win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561267",
+      "slug": "will-hakeem-jeffries-win-the-2028-us-presidential-election",
+      "question": "Will Hakeem Jeffries win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561268",
+      "slug": "will-elissa-slotkin-win-the-2028-us-presidential-election",
+      "question": "Will Elissa Slotkin win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561269",
+      "slug": "will-adam-schiff-win-the-2028-us-presidential-election",
+      "question": "Will Adam Schiff win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561270",
+      "slug": "will-josh-stein-win-the-2028-us-presidential-election",
+      "question": "Will Josh Stein win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561271",
+      "slug": "will-alex-padilla-win-the-2028-us-presidential-election",
+      "question": "Will Alex Padilla win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561272",
+      "slug": "will-candace-owens-win-the-2028-us-presidential-election",
+      "question": "Will Candace Owens win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561273",
+      "slug": "will-tim-scott-win-the-2028-us-presidential-election",
+      "question": "Will Tim Scott win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561274",
+      "slug": "will-mike-johnson-win-the-2028-us-presidential-election",
+      "question": "Will Mike Johnson win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561275",
+      "slug": "will-doug-burgum-win-the-2028-us-presidential-election",
+      "question": "Will Doug Burgum win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561276",
+      "slug": "will-tom-cotton-win-the-2028-us-presidential-election",
+      "question": "Will Tom Cotton win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561277",
+      "slug": "will-john-n-kennedy-win-the-2028-us-presidential-election",
+      "question": "Will John N. Kennedy win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561278",
+      "slug": "will-rick-scott-win-the-2028-us-presidential-election",
+      "question": "Will Rick Scott win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561279",
+      "slug": "will-person-ad-win-the-2028-us-presidential-election",
+      "question": "Will Mark Kelly win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561280",
+      "slug": "will-person-ae-win-the-2028-us-presidential-election",
+      "question": "Will Raphael Warnock win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561281",
+      "slug": "will-person-af-win-the-2028-us-presidential-election",
+      "question": "Will Person AF win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561282",
+      "slug": "will-person-ag-win-the-2028-us-presidential-election",
+      "question": "Will Person AG win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561283",
+      "slug": "will-person-ah-win-the-2028-us-presidential-election",
+      "question": "Will Person AH win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561284",
+      "slug": "will-person-ai-win-the-2028-us-presidential-election",
+      "question": "Will Person AI win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561285",
+      "slug": "will-person-aj-win-the-2028-us-presidential-election",
+      "question": "Will Person AJ win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561286",
+      "slug": "will-person-ak-win-the-2028-us-presidential-election",
+      "question": "Will Person AK win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561287",
+      "slug": "will-person-al-win-the-2028-us-presidential-election",
+      "question": "Will Person AL win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561288",
+      "slug": "will-person-am-win-the-2028-us-presidential-election",
+      "question": "Will Person AM win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561289",
+      "slug": "will-person-an-win-the-2028-us-presidential-election",
+      "question": "Will Person AN win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561290",
+      "slug": "will-person-ao-win-the-2028-us-presidential-election",
+      "question": "Will Person AO win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561291",
+      "slug": "will-person-ap-win-the-2028-us-presidential-election",
+      "question": "Will Person AP win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561292",
+      "slug": "will-person-aq-win-the-2028-us-presidential-election",
+      "question": "Will Person AQ win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561293",
+      "slug": "will-person-ar-win-the-2028-us-presidential-election",
+      "question": "Will Person AR win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561294",
+      "slug": "will-person-as-win-the-2028-us-presidential-election",
+      "question": "Will Person AS win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561295",
+      "slug": "will-person-at-win-the-2028-us-presidential-election",
+      "question": "Will Person AT win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561296",
+      "slug": "will-person-au-win-the-2028-us-presidential-election",
+      "question": "Will Person AU win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561297",
+      "slug": "will-person-av-win-the-2028-us-presidential-election",
+      "question": "Will Person AV win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561298",
+      "slug": "will-person-aw-win-the-2028-us-presidential-election",
+      "question": "Will Person AW win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561299",
+      "slug": "will-person-ax-win-the-2028-us-presidential-election",
+      "question": "Will Person AX win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561300",
+      "slug": "will-person-ay-win-the-2028-us-presidential-election",
+      "question": "Will Person AY win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561301",
+      "slug": "will-person-az-win-the-2028-us-presidential-election",
+      "question": "Will Person AZ win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561302",
+      "slug": "will-person-ba-win-the-2028-us-presidential-election",
+      "question": "Will Person BA win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561303",
+      "slug": "will-person-bb-win-the-2028-us-presidential-election",
+      "question": "Will Person BB win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561304",
+      "slug": "will-person-bc-win-the-2028-us-presidential-election",
+      "question": "Will Person BC win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561305",
+      "slug": "will-person-bd-win-the-2028-us-presidential-election",
+      "question": "Will Person BD win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561306",
+      "slug": "will-person-be-win-the-2028-us-presidential-election",
+      "question": "Will Person BE win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561307",
+      "slug": "will-person-bf-win-the-2028-us-presidential-election",
+      "question": "Will Person BF win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561308",
+      "slug": "will-person-bg-win-the-2028-us-presidential-election",
+      "question": "Will Person BG win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561309",
+      "slug": "will-person-bh-win-the-2028-us-presidential-election",
+      "question": "Will Person BH win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561310",
+      "slug": "will-person-bi-win-the-2028-us-presidential-election",
+      "question": "Will Person BI win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561311",
+      "slug": "will-person-bj-win-the-2028-us-presidential-election",
+      "question": "Will Person BJ win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561312",
+      "slug": "will-person-bk-win-the-2028-us-presidential-election",
+      "question": "Will Person BK win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561313",
+      "slug": "will-person-bl-win-the-2028-us-presidential-election",
+      "question": "Will Person BL win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561314",
+      "slug": "will-person-bm-win-the-2028-us-presidential-election",
+      "question": "Will Person BM win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561315",
+      "slug": "will-person-bn-win-the-2028-us-presidential-election",
+      "question": "Will Person BN win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561316",
+      "slug": "will-person-bo-win-the-2028-us-presidential-election",
+      "question": "Will Person BO win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561317",
+      "slug": "will-person-bp-win-the-2028-us-presidential-election",
+      "question": "Will Person BP win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561318",
+      "slug": "will-person-bq-win-the-2028-us-presidential-election",
+      "question": "Will Person BQ win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561319",
+      "slug": "will-person-br-win-the-2028-us-presidential-election",
+      "question": "Will Person BR win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561320",
+      "slug": "will-person-bs-win-the-2028-us-presidential-election",
+      "question": "Will Person BS win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561321",
+      "slug": "will-person-bt-win-the-2028-us-presidential-election",
+      "question": "Will Person BT win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561322",
+      "slug": "will-person-bu-win-the-2028-us-presidential-election",
+      "question": "Will Person BU win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561323",
+      "slug": "will-person-bv-win-the-2028-us-presidential-election",
+      "question": "Will Person BV win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561324",
+      "slug": "will-person-bw-win-the-2028-us-presidential-election",
+      "question": "Will Person BW win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561325",
+      "slug": "will-person-bx-win-the-2028-us-presidential-election",
+      "question": "Will Person BX win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561326",
+      "slug": "will-person-by-win-the-2028-us-presidential-election",
+      "question": "Will Person BY win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561327",
+      "slug": "will-person-bz-win-the-2028-us-presidential-election",
+      "question": "Will Person BZ win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561328",
+      "slug": "will-person-ca-win-the-2028-us-presidential-election",
+      "question": "Will Person CA win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561329",
+      "slug": "will-person-cb-win-the-2028-us-presidential-election",
+      "question": "Will Person CB win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561330",
+      "slug": "will-person-cc-win-the-2028-us-presidential-election",
+      "question": "Will Person CC win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561331",
+      "slug": "will-person-cd-win-the-2028-us-presidential-election",
+      "question": "Will Person CD win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561332",
+      "slug": "will-person-ce-win-the-2028-us-presidential-election",
+      "question": "Will Person CE win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561333",
+      "slug": "will-person-cf-win-the-2028-us-presidential-election",
+      "question": "Will Person CF win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561334",
+      "slug": "will-person-cg-win-the-2028-us-presidential-election",
+      "question": "Will Person CG win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561335",
+      "slug": "will-person-ch-win-the-2028-us-presidential-election",
+      "question": "Will Person CH win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561336",
+      "slug": "will-person-ci-win-the-2028-us-presidential-election",
+      "question": "Will Person CI win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561337",
+      "slug": "will-person-cj-win-the-2028-us-presidential-election",
+      "question": "Will Person CJ win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561338",
+      "slug": "will-person-ck-win-the-2028-us-presidential-election",
+      "question": "Will Person CK win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561339",
+      "slug": "will-person-cl-win-the-2028-us-presidential-election",
+      "question": "Will Person CL win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561340",
+      "slug": "will-person-cm-win-the-2028-us-presidential-election",
+      "question": "Will Person CM win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561341",
+      "slug": "will-person-cn-win-the-2028-us-presidential-election",
+      "question": "Will Person CN win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561342",
+      "slug": "will-person-co-win-the-2028-us-presidential-election",
+      "question": "Will Person CO win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561343",
+      "slug": "will-person-cp-win-the-2028-us-presidential-election",
+      "question": "Will Person CP win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561344",
+      "slug": "will-person-cq-win-the-2028-us-presidential-election",
+      "question": "Will Person CQ win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561345",
+      "slug": "will-person-cr-win-the-2028-us-presidential-election",
+      "question": "Will Person CR win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561346",
+      "slug": "will-person-cs-win-the-2028-us-presidential-election",
+      "question": "Will Person CS win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561347",
+      "slug": "will-person-ct-win-the-2028-us-presidential-election",
+      "question": "Will Person CT win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561348",
+      "slug": "will-person-cu-win-the-2028-us-presidential-election",
+      "question": "Will Person CU win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561349",
+      "slug": "will-person-cv-win-the-2028-us-presidential-election",
+      "question": "Will Person CV win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561350",
+      "slug": "will-person-cw-win-the-2028-us-presidential-election",
+      "question": "Will Person CW win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561351",
+      "slug": "will-person-cx-win-the-2028-us-presidential-election",
+      "question": "Will Person CX win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561352",
+      "slug": "will-person-cy-win-the-2028-us-presidential-election",
+      "question": "Will Person CY win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561353",
+      "slug": "will-person-cz-win-the-2028-us-presidential-election",
+      "question": "Will Person CZ win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561354",
+      "slug": "will-person-da-win-the-2028-us-presidential-election",
+      "question": "Will Person DA win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561355",
+      "slug": "will-person-db-win-the-2028-us-presidential-election",
+      "question": "Will Person DB win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "561357",
+      "slug": "will-another-person-win-the-2028-us-presidential-election-527",
+      "question": "Will another person win the 2028 US Presidential Election?",
+      "event_slug": "presidential-election-winner-2028"
+    },
+    {
+      "market_id": "4541003",
+      "slug": "mlb-sea-oak-2026-09-13-total-11pt5",
+      "question": "Seattle Mariners vs. Athletics: O/U 11.5",
+      "event_slug": "mlb-sea-oak-2026-09-13"
+    },
+    {
+      "market_id": "560317",
+      "slug": "putin-out-before-2027-346",
+      "question": "Putin out as President of Russia by December 31, 2026?",
+      "event_slug": "putin-out-before-2027"
+    },
+    {
+      "market_id": "2822005",
+      "slug": "putin-out-as-president-of-russia-by-september-30-2026",
+      "question": "Putin out as President of Russia by September 30, 2026?",
+      "event_slug": "putin-out-before-2027"
+    },
+    {
+      "market_id": "2822017",
+      "slug": "putin-out-as-president-of-russia-by-june-30-2027",
+      "question": "Putin out as President of Russia by June 30, 2027?",
+      "event_slug": "putin-out-before-2027"
+    },
+    {
+      "market_id": "4338200",
+      "slug": "bitcoin-above-68k-on-september-14-2026",
+      "question": "Will the price of Bitcoin be above $68,000 on September 14?",
+      "event_slug": "bitcoin-above-on-september-14-2026"
+    },
+    {
+      "market_id": "4338201",
+      "slug": "bitcoin-above-70k-on-september-14-2026",
+      "question": "Will the price of Bitcoin be above $70,000 on September 14?",
+      "event_slug": "bitcoin-above-on-september-14-2026"
+    },
+    {
+      "market_id": "4338202",
+      "slug": "bitcoin-above-72k-on-september-14-2026",
+      "question": "Will the price of Bitcoin be above $72,000 on September 14?",
+      "event_slug": "bitcoin-above-on-september-14-2026"
+    },
+    {
+      "market_id": "4338204",
+      "slug": "bitcoin-above-74k-on-september-14-2026",
+      "question": "Will the price of Bitcoin be above $74,000 on September 14?",
+      "event_slug": "bitcoin-above-on-september-14-2026"
+    },
+    {
+      "market_id": "4338208",
+      "slug": "bitcoin-above-76k-on-september-14-2026",
+      "question": "Will the price of Bitcoin be above $76,000 on September 14?",
+      "event_slug": "bitcoin-above-on-september-14-2026"
+    },
+    {
+      "market_id": "4338211",
+      "slug": "bitcoin-above-78k-on-september-14-2026",
+      "question": "Will the price of Bitcoin be above $78,000 on September 14?",
+      "event_slug": "bitcoin-above-on-september-14-2026"
+    },
+    {
+      "market_id": "4338215",
+      "slug": "bitcoin-above-80k-on-september-14-2026",
+      "question": "Will the price of Bitcoin be above $80,000 on September 14?",
+      "event_slug": "bitcoin-above-on-september-14-2026"
+    },
+    {
+      "market_id": "4338218",
+      "slug": "bitcoin-above-82k-on-september-14-2026",
+      "question": "Will the price of Bitcoin be above $82,000 on September 14?",
+      "event_slug": "bitcoin-above-on-september-14-2026"
+    },
+    {
+      "market_id": "4338220",
+      "slug": "bitcoin-above-84k-on-september-14-2026",
+      "question": "Will the price of Bitcoin be above $84,000 on September 14?",
+      "event_slug": "bitcoin-above-on-september-14-2026"
+    },
+    {
+      "market_id": "4338223",
+      "slug": "bitcoin-above-86k-on-september-14-2026",
+      "question": "Will the price of Bitcoin be above $86,000 on September 14?",
+      "event_slug": "bitcoin-above-on-september-14-2026"
+    },
+    {
+      "market_id": "4338227",
+      "slug": "bitcoin-above-88k-on-september-14-2026",
+      "question": "Will the price of Bitcoin be above $88,000 on September 14?",
+      "event_slug": "bitcoin-above-on-september-14-2026"
+    },
+    {
+      "market_id": "4052444",
+      "slug": "will-ethereum-reach-4000-in-september-2026",
+      "question": "Will Ethereum reach $4,000 in September?",
+      "event_slug": "what-price-will-ethereum-hit-in-september-2026"
+    },
+    {
+      "market_id": "4052445",
+      "slug": "will-ethereum-reach-3300-in-september-2026",
+      "question": "Will Ethereum reach $3,300 in September?",
+      "event_slug": "what-price-will-ethereum-hit-in-september-2026"
+    },
+    {
+      "market_id": "4052446",
+      "slug": "will-ethereum-reach-3200-in-september-2026",
+      "question": "Will Ethereum reach $3,200 in September?",
+      "event_slug": "what-price-will-ethereum-hit-in-september-2026"
+    },
+    {
+      "market_id": "4052447",
+      "slug": "will-ethereum-reach-3100-in-september-2026",
+      "question": "Will Ethereum reach $3,100 in September?",
+      "event_slug": "what-price-will-ethereum-hit-in-september-2026"
+    },
+    {
+      "market_id": "4052448",
+      "slug": "will-ethereum-reach-3000-in-september-2026",
+      "question": "Will Ethereum reach $3,000 in September?",
+      "event_slug": "what-price-will-ethereum-hit-in-september-2026"
+    },
+    {
+      "market_id": "4052449",
+      "slug": "will-ethereum-reach-2900-in-september-2026",
+      "question": "Will Ethereum reach $2,900 in September?",
+      "event_slug": "what-price-will-ethereum-hit-in-september-2026"
+    },
+    {
+      "market_id": "4052450",
+      "slug": "will-ethereum-reach-2800-in-september-2026",
+      "question": "Will Ethereum reach $2,800 in September?",
+      "event_slug": "what-price-will-ethereum-hit-in-september-2026"
+    },
+    {
+      "market_id": "4052451",
+      "slug": "will-ethereum-reach-2700-in-september-2026",
+      "question": "Will Ethereum reach $2,700 in September?",
+      "event_slug": "what-price-will-ethereum-hit-in-september-2026"
+    },
+    {
+      "market_id": "4052455",
+      "slug": "will-ethereum-dip-to-2300-in-september-2026",
+      "question": "Will Ethereum dip to $2,300 in September?",
+      "event_slug": "what-price-will-ethereum-hit-in-september-2026"
+    },
+    {
+      "market_id": "4052456",
+      "slug": "will-ethereum-dip-to-2200-in-september-2026",
+      "question": "Will Ethereum dip to $2,200 in September?",
+      "event_slug": "what-price-will-ethereum-hit-in-september-2026"
+    },
+    {
+      "market_id": "4052457",
+      "slug": "will-ethereum-dip-to-2100-in-september-2026",
+      "question": "Will Ethereum dip to $2,100 in September?",
+      "event_slug": "what-price-will-ethereum-hit-in-september-2026"
+    },
+    {
+      "market_id": "4052458",
+      "slug": "will-ethereum-dip-to-2000-in-september-2026",
+      "question": "Will Ethereum dip to $2,000 in September?",
+      "event_slug": "what-price-will-ethereum-hit-in-september-2026"
+    },
+    {
+      "market_id": "4052459",
+      "slug": "will-ethereum-dip-to-1900-in-september-2026",
+      "question": "Will Ethereum dip to $1,900 in September?",
+      "event_slug": "what-price-will-ethereum-hit-in-september-2026"
+    },
+    {
+      "market_id": "4052460",
+      "slug": "will-ethereum-dip-to-1800-in-september-2026",
+      "question": "Will Ethereum dip to $1,800 in September?",
+      "event_slug": "what-price-will-ethereum-hit-in-september-2026"
+    },
+    {
+      "market_id": "4052461",
+      "slug": "will-ethereum-dip-to-1700-in-september-2026",
+      "question": "Will Ethereum dip to $1,700 in September?",
+      "event_slug": "what-price-will-ethereum-hit-in-september-2026"
+    },
+    {
+      "market_id": "4052462",
+      "slug": "will-ethereum-dip-to-1600-in-september-2026",
+      "question": "Will Ethereum dip to $1,600 in September?",
+      "event_slug": "what-price-will-ethereum-hit-in-september-2026"
+    },
+    {
+      "market_id": "4052463",
+      "slug": "will-ethereum-dip-to-1500-in-september-2026",
+      "question": "Will Ethereum dip to $1,500 in September?",
+      "event_slug": "what-price-will-ethereum-hit-in-september-2026"
+    },
+    {
+      "market_id": "4190833",
+      "slug": "will-ethereum-dip-to-2400-in-september-2026-from-september-3",
+      "question": "Will Ethereum dip to $2,400 in September?",
+      "event_slug": "what-price-will-ethereum-hit-in-september-2026"
+    },
+    {
+      "market_id": "4471006",
+      "slug": "will-ethereum-reach-2600-in-september-2026-from-september-11",
+      "question": "Will Ethereum reach $2,600 in September?",
+      "event_slug": "what-price-will-ethereum-hit-in-september-2026"
+    },
+    {
+      "market_id": "4237459",
+      "slug": "elon-musk-of-tweets-september-8-september-15-2026-120-139",
+      "question": "Will Elon Musk post 120-139 tweets from September 8 to September 15, 2026?",
+      "event_slug": "elon-musk-of-tweets-september-8-september-15-2026"
+    },
+    {
+      "market_id": "4237462",
+      "slug": "elon-musk-of-tweets-september-8-september-15-2026-140-159",
+      "question": "Will Elon Musk post 140-159 tweets from September 8 to September 15, 2026?",
+      "event_slug": "elon-musk-of-tweets-september-8-september-15-2026"
+    },
+    {
+      "market_id": "4237464",
+      "slug": "elon-musk-of-tweets-september-8-september-15-2026-160-179",
+      "question": "Will Elon Musk post 160-179 tweets from September 8 to September 15, 2026?",
+      "event_slug": "elon-musk-of-tweets-september-8-september-15-2026"
+    },
+    {
+      "market_id": "4237466",
+      "slug": "elon-musk-of-tweets-september-8-september-15-2026-180-199",
+      "question": "Will Elon Musk post 180-199 tweets from September 8 to September 15, 2026?",
+      "event_slug": "elon-musk-of-tweets-september-8-september-15-2026"
+    },
+    {
+      "market_id": "4237468",
+      "slug": "elon-musk-of-tweets-september-8-september-15-2026-200-219",
+      "question": "Will Elon Musk post 200-219 tweets from September 8 to September 15, 2026?",
+      "event_slug": "elon-musk-of-tweets-september-8-september-15-2026"
+    },
+    {
+      "market_id": "4237469",
+      "slug": "elon-musk-of-tweets-september-8-september-15-2026-220-239",
+      "question": "Will Elon Musk post 220-239 tweets from September 8 to September 15, 2026?",
+      "event_slug": "elon-musk-of-tweets-september-8-september-15-2026"
+    },
+    {
+      "market_id": "4237471",
+      "slug": "elon-musk-of-tweets-september-8-september-15-2026-240-259",
+      "question": "Will Elon Musk post 240-259 tweets from September 8 to September 15, 2026?",
+      "event_slug": "elon-musk-of-tweets-september-8-september-15-2026"
+    },
+    {
+      "market_id": "4237474",
+      "slug": "elon-musk-of-tweets-september-8-september-15-2026-260-279",
+      "question": "Will Elon Musk post 260-279 tweets from September 8 to September 15, 2026?",
+      "event_slug": "elon-musk-of-tweets-september-8-september-15-2026"
+    },
+    {
+      "market_id": "4237476",
+      "slug": "elon-musk-of-tweets-september-8-september-15-2026-280-299",
+      "question": "Will Elon Musk post 280-299 tweets from September 8 to September 15, 2026?",
+      "event_slug": "elon-musk-of-tweets-september-8-september-15-2026"
+    },
+    {
+      "market_id": "4237477",
+      "slug": "elon-musk-of-tweets-september-8-september-15-2026-300-319",
+      "question": "Will Elon Musk post 300-319 tweets from September 8 to September 15, 2026?",
+      "event_slug": "elon-musk-of-tweets-september-8-september-15-2026"
+    },
+    {
+      "market_id": "4237478",
+      "slug": "elon-musk-of-tweets-september-8-september-15-2026-320-339",
+      "question": "Will Elon Musk post 320-339 tweets from September 8 to September 15, 2026?",
+      "event_slug": "elon-musk-of-tweets-september-8-september-15-2026"
+    },
+    {
+      "market_id": "4237479",
+      "slug": "elon-musk-of-tweets-september-8-september-15-2026-340-359",
+      "question": "Will Elon Musk post 340-359 tweets from September 8 to September 15, 2026?",
+      "event_slug": "elon-musk-of-tweets-september-8-september-15-2026"
+    },
+    {
+      "market_id": "4237480",
+      "slug": "elon-musk-of-tweets-september-8-september-15-2026-360-379",
+      "question": "Will Elon Musk post 360-379 tweets from September 8 to September 15, 2026?",
+      "event_slug": "elon-musk-of-tweets-september-8-september-15-2026"
+    },
+    {
+      "market_id": "4237481",
+      "slug": "elon-musk-of-tweets-september-8-september-15-2026-380-399",
+      "question": "Will Elon Musk post 380-399 tweets from September 8 to September 15, 2026?",
+      "event_slug": "elon-musk-of-tweets-september-8-september-15-2026"
+    },
+    {
+      "market_id": "4237482",
+      "slug": "elon-musk-of-tweets-september-8-september-15-2026-400-419",
+      "question": "Will Elon Musk post 400-419 tweets from September 8 to September 15, 2026?",
+      "event_slug": "elon-musk-of-tweets-september-8-september-15-2026"
+    },
+    {
+      "market_id": "4237484",
+      "slug": "elon-musk-of-tweets-september-8-september-15-2026-420-439",
+      "question": "Will Elon Musk post 420-439 tweets from September 8 to September 15, 2026?",
+      "event_slug": "elon-musk-of-tweets-september-8-september-15-2026"
+    },
+    {
+      "market_id": "4237486",
+      "slug": "elon-musk-of-tweets-september-8-september-15-2026-440-459",
+      "question": "Will Elon Musk post 440-459 tweets from September 8 to September 15, 2026?",
+      "event_slug": "elon-musk-of-tweets-september-8-september-15-2026"
+    },
+    {
+      "market_id": "4237488",
+      "slug": "elon-musk-of-tweets-september-8-september-15-2026-460-479",
+      "question": "Will Elon Musk post 460-479 tweets from September 8 to September 15, 2026?",
+      "event_slug": "elon-musk-of-tweets-september-8-september-15-2026"
+    },
+    {
+      "market_id": "4237491",
+      "slug": "elon-musk-of-tweets-september-8-september-15-2026-480-499",
+      "question": "Will Elon Musk post 480-499 tweets from September 8 to September 15, 2026?",
+      "event_slug": "elon-musk-of-tweets-september-8-september-15-2026"
+    },
+    {
+      "market_id": "4237493",
+      "slug": "elon-musk-of-tweets-september-8-september-15-2026-500plus",
+      "question": "Will Elon Musk post 500+ tweets from September 8 to September 15, 2026?",
+      "event_slug": "elon-musk-of-tweets-september-8-september-15-2026"
+    },
+    {
+      "market_id": "4495063",
+      "slug": "cfb-nmxst-hawaii-2026-09-13-anytime-td-tyler-king",
+      "question": "Tyler King: Anytime Touchdown",
+      "event_slug": "cfb-nmxst-hawaii-2026-09-13"
+    },
+    {
+      "market_id": "4508354",
+      "slug": "dota2-dawnbu-ks-2026-09-13-game2-first-blood",
+      "question": "First Blood in Game 2?",
+      "event_slug": "dota2-dawnbu-ks-2026-09-13"
+    },
+    {
+      "market_id": "1130012",
+      "slug": "will-united-russia-er-gain-the-most-seats-in-the-next-russian-parliamentary-election",
+      "question": "Will United Russia (ER) gain the most seats in the next Russian parliamentary election?",
+      "event_slug": "which-party-will-gain-most-seats-in-russian-parliamentary-election"
+    },
+    {
+      "market_id": "1130013",
+      "slug": "will-the-communist-party-of-the-russian-federation-kprf-gain-the-most-seats-in-the-next-russian-parliamentary-election",
+      "question": "Will the Communist Party of the Russian Federation (KPRF) gain the most seats in the next Russian parliamentary election?",
+      "event_slug": "which-party-will-gain-most-seats-in-russian-parliamentary-election"
+    },
+    {
+      "market_id": "1130014",
+      "slug": "will-a-just-russia-for-truth-srzp-gain-the-most-seats-in-the-next-russian-parliamentary-election",
+      "question": "Will A Just Russia – For Truth (SRZP) gain the most seats in the next Russian parliamentary election?",
+      "event_slug": "which-party-will-gain-most-seats-in-russian-parliamentary-election"
+    },
+    {
+      "market_id": "1130015",
+      "slug": "will-the-liberal-democratic-party-of-russia-ldpr-gain-the-most-seats-in-the-next-russian-parliamentary-election",
+      "question": "Will the Liberal Democratic Party of Russia (LDPR) gain the most seats in the next Russian parliamentary election?",
+      "event_slug": "which-party-will-gain-most-seats-in-russian-parliamentary-election"
+    },
+    {
+      "market_id": "1130016",
+      "slug": "will-new-people-nl-gain-the-most-seats-in-the-next-russian-parliamentary-election",
+      "question": "Will New People (NL) gain the most seats in the next Russian parliamentary election?",
+      "event_slug": "which-party-will-gain-most-seats-in-russian-parliamentary-election"
+    },
+    {
+      "market_id": "1130017",
+      "slug": "will-rodina-gain-the-most-seats-in-the-next-russian-parliamentary-election",
+      "question": "Will Rodina gain the most seats in the next Russian parliamentary election?",
+      "event_slug": "which-party-will-gain-most-seats-in-russian-parliamentary-election"
+    },
+    {
+      "market_id": "1130018",
+      "slug": "will-civic-platform-gp-gain-the-most-seats-in-the-next-russian-parliamentary-election",
+      "question": "Will Civic Platform (GP) gain the most seats in the next Russian parliamentary election?",
+      "event_slug": "which-party-will-gain-most-seats-in-russian-parliamentary-election"
+    },
+    {
+      "market_id": "1130019",
+      "slug": "will-other-gain-the-most-seats-in-the-next-russian-parliamentary-election",
+      "question": "Will Other gain the most seats in the next Russian parliamentary election?",
+      "event_slug": "which-party-will-gain-most-seats-in-russian-parliamentary-election"
+    },
+    {
+      "market_id": "1130020",
+      "slug": "will-yabloko-gain-the-most-seats-in-the-next-russian-parliamentary-election",
+      "question": "Will Yabloko gain the most seats in the next Russian parliamentary election?",
+      "event_slug": "which-party-will-gain-most-seats-in-russian-parliamentary-election"
+    },
+    {
+      "market_id": "1130021",
+      "slug": "will-party-b-gain-the-most-seats-in-the-next-russian-parliamentary-election",
+      "question": "Will Party B gain the most seats in the next Russian parliamentary election?",
+      "event_slug": "which-party-will-gain-most-seats-in-russian-parliamentary-election"
+    },
+    {
+      "market_id": "1130022",
+      "slug": "will-party-c-gain-the-most-seats-in-the-next-russian-parliamentary-election",
+      "question": "Will Party C gain the most seats in the next Russian parliamentary election?",
+      "event_slug": "which-party-will-gain-most-seats-in-russian-parliamentary-election"
+    },
+    {
+      "market_id": "1130023",
+      "slug": "will-party-d-gain-the-most-seats-in-the-next-russian-parliamentary-election",
+      "question": "Will Party D gain the most seats in the next Russian parliamentary election?",
+      "event_slug": "which-party-will-gain-most-seats-in-russian-parliamentary-election"
+    },
+    {
+      "market_id": "1130024",
+      "slug": "will-party-e-gain-the-most-seats-in-the-next-russian-parliamentary-election",
+      "question": "Will Party E gain the most seats in the next Russian parliamentary election?",
+      "event_slug": "which-party-will-gain-most-seats-in-russian-parliamentary-election"
+    },
+    {
+      "market_id": "1130025",
+      "slug": "will-party-f-gain-the-most-seats-in-the-next-russian-parliamentary-election",
+      "question": "Will Party F gain the most seats in the next Russian parliamentary election?",
+      "event_slug": "which-party-will-gain-most-seats-in-russian-parliamentary-election"
+    },
+    {
+      "market_id": "1130026",
+      "slug": "will-party-g-gain-the-most-seats-in-the-next-russian-parliamentary-election",
+      "question": "Will Party G gain the most seats in the next Russian parliamentary election?",
+      "event_slug": "which-party-will-gain-most-seats-in-russian-parliamentary-election"
+    },
+    {
+      "market_id": "1130027",
+      "slug": "will-party-h-gain-the-most-seats-in-the-next-russian-parliamentary-election",
+      "question": "Will Party H gain the most seats in the next Russian parliamentary election?",
+      "event_slug": "which-party-will-gain-most-seats-in-russian-parliamentary-election"
+    },
+    {
+      "market_id": "1130028",
+      "slug": "will-party-i-gain-the-most-seats-in-the-next-russian-parliamentary-election",
+      "question": "Will Party I gain the most seats in the next Russian parliamentary election?",
+      "event_slug": "which-party-will-gain-most-seats-in-russian-parliamentary-election"
+    },
+    {
+      "market_id": "1130029",
+      "slug": "will-party-j-gain-the-most-seats-in-the-next-russian-parliamentary-election",
+      "question": "Will Party J gain the most seats in the next Russian parliamentary election?",
+      "event_slug": "which-party-will-gain-most-seats-in-russian-parliamentary-election"
+    },
+    {
+      "market_id": "1130030",
+      "slug": "will-party-k-gain-the-most-seats-in-the-next-russian-parliamentary-election",
+      "question": "Will Party K gain the most seats in the next Russian parliamentary election?",
+      "event_slug": "which-party-will-gain-most-seats-in-russian-parliamentary-election"
+    },
+    {
+      "market_id": "1130031",
+      "slug": "will-party-l-gain-the-most-seats-in-the-next-russian-parliamentary-election",
+      "question": "Will Party L gain the most seats in the next Russian parliamentary election?",
+      "event_slug": "which-party-will-gain-most-seats-in-russian-parliamentary-election"
+    },
+    {
+      "market_id": "1130032",
+      "slug": "will-party-m-gain-the-most-seats-in-the-next-russian-parliamentary-election",
+      "question": "Will Party M gain the most seats in the next Russian parliamentary election?",
+      "event_slug": "which-party-will-gain-most-seats-in-russian-parliamentary-election"
+    },
+    {
+      "market_id": "1130033",
+      "slug": "will-party-n-gain-the-most-seats-in-the-next-russian-parliamentary-election",
+      "question": "Will Party N gain the most seats in the next Russian parliamentary election?",
+      "event_slug": "which-party-will-gain-most-seats-in-russian-parliamentary-election"
+    },
+    {
+      "market_id": "1130034",
+      "slug": "will-party-o-gain-the-most-seats-in-the-next-russian-parliamentary-election",
+      "question": "Will Party O gain the most seats in the next Russian parliamentary election?",
+      "event_slug": "which-party-will-gain-most-seats-in-russian-parliamentary-election"
+    },
+    {
+      "market_id": "1130035",
+      "slug": "will-party-p-gain-the-most-seats-in-the-next-russian-parliamentary-election",
+      "question": "Will Party P gain the most seats in the next Russian parliamentary election?",
+      "event_slug": "which-party-will-gain-most-seats-in-russian-parliamentary-election"
+    },
+    {
+      "market_id": "1130036",
+      "slug": "will-party-q-gain-the-most-seats-in-the-next-russian-parliamentary-election",
+      "question": "Will Party Q gain the most seats in the next Russian parliamentary election?",
+      "event_slug": "which-party-will-gain-most-seats-in-russian-parliamentary-election"
+    },
+    {
+      "market_id": "1130037",
+      "slug": "will-party-r-gain-the-most-seats-in-the-next-russian-parliamentary-election",
+      "question": "Will Party R gain the most seats in the next Russian parliamentary election?",
+      "event_slug": "which-party-will-gain-most-seats-in-russian-parliamentary-election"
+    },
+    {
+      "market_id": "1130038",
+      "slug": "will-party-s-gain-the-most-seats-in-the-next-russian-parliamentary-election",
+      "question": "Will Party S gain the most seats in the next Russian parliamentary election?",
+      "event_slug": "which-party-will-gain-most-seats-in-russian-parliamentary-election"
+    },
+    {
+      "market_id": "1130039",
+      "slug": "will-party-t-gain-the-most-seats-in-the-next-russian-parliamentary-election",
+      "question": "Will Party T gain the most seats in the next Russian parliamentary election?",
+      "event_slug": "which-party-will-gain-most-seats-in-russian-parliamentary-election"
+    },
+    {
+      "market_id": "1130040",
+      "slug": "will-party-u-gain-the-most-seats-in-the-next-russian-parliamentary-election",
+      "question": "Will Party U gain the most seats in the next Russian parliamentary election?",
+      "event_slug": "which-party-will-gain-most-seats-in-russian-parliamentary-election"
+    },
+    {
+      "market_id": "1130041",
+      "slug": "will-party-v-gain-the-most-seats-in-the-next-russian-parliamentary-election",
+      "question": "Will Party V gain the most seats in the next Russian parliamentary election?",
+      "event_slug": "which-party-will-gain-most-seats-in-russian-parliamentary-election"
+    },
+    {
+      "market_id": "1130042",
+      "slug": "will-party-w-gain-the-most-seats-in-the-next-russian-parliamentary-election",
+      "question": "Will Party W gain the most seats in the next Russian parliamentary election?",
+      "event_slug": "which-party-will-gain-most-seats-in-russian-parliamentary-election"
+    },
+    {
+      "market_id": "1130043",
+      "slug": "will-party-x-gain-the-most-seats-in-the-next-russian-parliamentary-election",
+      "question": "Will Party X gain the most seats in the next Russian parliamentary election?",
+      "event_slug": "which-party-will-gain-most-seats-in-russian-parliamentary-election"
+    },
+    {
+      "market_id": "1130044",
+      "slug": "will-party-y-gain-the-most-seats-in-the-next-russian-parliamentary-election",
+      "question": "Will Party Y gain the most seats in the next Russian parliamentary election?",
+      "event_slug": "which-party-will-gain-most-seats-in-russian-parliamentary-election"
+    },
+    {
+      "market_id": "1130045",
+      "slug": "will-party-z-gain-the-most-seats-in-the-next-russian-parliamentary-election",
+      "question": "Will Party Z gain the most seats in the next Russian parliamentary election?",
+      "event_slug": "which-party-will-gain-most-seats-in-russian-parliamentary-election"
+    },
+    {
+      "market_id": "811719",
+      "slug": "will-the-swedish-social-democratic-party-s-win-the-most-seats-in-the-2026-swedish-parliamentary-election",
+      "question": "Will the Swedish Social Democratic Party (S) win the most seats in the 2026 Swedish parliamentary election?",
+      "event_slug": "sweden-parliamentary-election-winner"
+    },
+    {
+      "market_id": "811720",
+      "slug": "will-the-sweden-democrats-sd-win-the-most-seats-in-the-2026-swedish-parliamentary-election",
+      "question": "Will the Sweden Democrats (SD) win the most seats in the 2026 Swedish parliamentary election?",
+      "event_slug": "sweden-parliamentary-election-winner"
+    },
+    {
+      "market_id": "811721",
+      "slug": "will-the-moderate-party-m-win-the-most-seats-in-the-2026-swedish-parliamentary-election",
+      "question": "Will the Moderate Party (M) win the most seats in the 2026 Swedish parliamentary election?",
+      "event_slug": "sweden-parliamentary-election-winner"
+    },
+    {
+      "market_id": "811722",
+      "slug": "will-the-centre-party-c-win-the-most-seats-in-the-2026-swedish-parliamentary-election",
+      "question": "Will the Centre Party (C) win the most seats in the 2026 Swedish parliamentary election?",
+      "event_slug": "sweden-parliamentary-election-winner"
+    },
+    {
+      "market_id": "811723",
+      "slug": "will-the-left-party-v-win-the-most-seats-in-the-2026-swedish-parliamentary-election",
+      "question": "Will the Left Party (V) win the most seats in the 2026 Swedish parliamentary election?",
+      "event_slug": "sweden-parliamentary-election-winner"
+    },
+    {
+      "market_id": "811724",
+      "slug": "will-the-christian-democrats-kd-win-the-most-seats-in-the-2026-swedish-parliamentary-election",
+      "question": "Will the Christian Democrats (KD) win the most seats in the 2026 Swedish parliamentary election?",
+      "event_slug": "sweden-parliamentary-election-winner"
+    },
+    {
+      "market_id": "811725",
+      "slug": "will-the-green-party-mp-win-the-most-seats-in-the-2026-swedish-parliamentary-election",
+      "question": "Will the Green Party (MP) win the most seats in the 2026 Swedish parliamentary election?",
+      "event_slug": "sweden-parliamentary-election-winner"
+    },
+    {
+      "market_id": "811726",
+      "slug": "will-the-liberals-l-win-the-most-seats-in-the-2026-swedish-parliamentary-election",
+      "question": "Will the Liberals (L) win the most seats in the 2026 Swedish parliamentary election?",
+      "event_slug": "sweden-parliamentary-election-winner"
+    },
+    {
+      "market_id": "811727",
+      "slug": "will-the-citizens-coalition-med-win-the-most-seats-in-the-2026-swedish-parliamentary-election",
+      "question": "Will the Citizens' Coalition (MED) win the most seats in the 2026 Swedish parliamentary election?",
+      "event_slug": "sweden-parliamentary-election-winner"
+    },
+    {
+      "market_id": "811728",
+      "slug": "will-party-a-win-the-most-seats-in-the-2026-swedish-parliamentary-election",
+      "question": "Will Party A win the most seats in the 2026 Swedish parliamentary election?",
+      "event_slug": "sweden-parliamentary-election-winner"
+    },
+    {
+      "market_id": "811729",
+      "slug": "will-party-b-win-the-most-seats-in-the-2026-swedish-parliamentary-election",
+      "question": "Will Party B win the most seats in the 2026 Swedish parliamentary election?",
+      "event_slug": "sweden-parliamentary-election-winner"
+    },
+    {
+      "market_id": "811730",
+      "slug": "will-party-c-win-the-most-seats-in-the-2026-swedish-parliamentary-election",
+      "question": "Will Party C win the most seats in the 2026 Swedish parliamentary election?",
+      "event_slug": "sweden-parliamentary-election-winner"
+    },
+    {
+      "market_id": "811731",
+      "slug": "will-party-d-win-the-most-seats-in-the-2026-swedish-parliamentary-election",
+      "question": "Will Party D win the most seats in the 2026 Swedish parliamentary election?",
+      "event_slug": "sweden-parliamentary-election-winner"
+    },
+    {
+      "market_id": "811732",
+      "slug": "will-party-e-win-the-most-seats-in-the-2026-swedish-parliamentary-election",
+      "question": "Will Party E win the most seats in the 2026 Swedish parliamentary election?",
+      "event_slug": "sweden-parliamentary-election-winner"
+    },
+    {
+      "market_id": "811733",
+      "slug": "will-party-f-win-the-most-seats-in-the-2026-swedish-parliamentary-election",
+      "question": "Will Party F win the most seats in the 2026 Swedish parliamentary election?",
+      "event_slug": "sweden-parliamentary-election-winner"
+    },
+    {
+      "market_id": "811734",
+      "slug": "will-party-g-win-the-most-seats-in-the-2026-swedish-parliamentary-election",
+      "question": "Will Party G win the most seats in the 2026 Swedish parliamentary election?",
+      "event_slug": "sweden-parliamentary-election-winner"
+    },
+    {
+      "market_id": "811735",
+      "slug": "will-party-h-win-the-most-seats-in-the-2026-swedish-parliamentary-election",
+      "question": "Will Party H win the most seats in the 2026 Swedish parliamentary election?",
+      "event_slug": "sweden-parliamentary-election-winner"
+    },
+    {
+      "market_id": "811736",
+      "slug": "will-party-i-win-the-most-seats-in-the-2026-swedish-parliamentary-election",
+      "question": "Will Party I win the most seats in the 2026 Swedish parliamentary election?",
+      "event_slug": "sweden-parliamentary-election-winner"
+    },
+    {
+      "market_id": "811737",
+      "slug": "will-party-j-win-the-most-seats-in-the-2026-swedish-parliamentary-election",
+      "question": "Will Party J win the most seats in the 2026 Swedish parliamentary election?",
+      "event_slug": "sweden-parliamentary-election-winner"
+    },
+    {
+      "market_id": "811738",
+      "slug": "will-party-k-win-the-most-seats-in-the-2026-swedish-parliamentary-election",
+      "question": "Will Party K win the most seats in the 2026 Swedish parliamentary election?",
+      "event_slug": "sweden-parliamentary-election-winner"
+    },
+    {
+      "market_id": "811739",
+      "slug": "will-party-l-win-the-most-seats-in-the-2026-swedish-parliamentary-election",
+      "question": "Will Party L win the most seats in the 2026 Swedish parliamentary election?",
+      "event_slug": "sweden-parliamentary-election-winner"
+    },
+    {
+      "market_id": "811740",
+      "slug": "will-party-m-win-the-most-seats-in-the-2026-swedish-parliamentary-election",
+      "question": "Will Party M win the most seats in the 2026 Swedish parliamentary election?",
+      "event_slug": "sweden-parliamentary-election-winner"
+    },
+    {
+      "market_id": "811741",
+      "slug": "will-party-n-win-the-most-seats-in-the-2026-swedish-parliamentary-election",
+      "question": "Will Party N win the most seats in the 2026 Swedish parliamentary election?",
+      "event_slug": "sweden-parliamentary-election-winner"
+    },
+    {
+      "market_id": "811742",
+      "slug": "will-party-o-win-the-most-seats-in-the-2026-swedish-parliamentary-election",
+      "question": "Will Party O win the most seats in the 2026 Swedish parliamentary election?",
+      "event_slug": "sweden-parliamentary-election-winner"
+    },
+    {
+      "market_id": "811743",
+      "slug": "will-party-p-win-the-most-seats-in-the-2026-swedish-parliamentary-election",
+      "question": "Will Party P win the most seats in the 2026 Swedish parliamentary election?",
+      "event_slug": "sweden-parliamentary-election-winner"
+    },
+    {
+      "market_id": "811744",
+      "slug": "will-party-q-win-the-most-seats-in-the-2026-swedish-parliamentary-election",
+      "question": "Will Party Q win the most seats in the 2026 Swedish parliamentary election?",
+      "event_slug": "sweden-parliamentary-election-winner"
+    },
+    {
+      "market_id": "811745",
+      "slug": "will-party-r-win-the-most-seats-in-the-2026-swedish-parliamentary-election",
+      "question": "Will Party R win the most seats in the 2026 Swedish parliamentary election?",
+      "event_slug": "sweden-parliamentary-election-winner"
+    },
+    {
+      "market_id": "811746",
+      "slug": "will-party-s-win-the-most-seats-in-the-2026-swedish-parliamentary-election",
+      "question": "Will Party S win the most seats in the 2026 Swedish parliamentary election?",
+      "event_slug": "sweden-parliamentary-election-winner"
+    },
+    {
+      "market_id": "811747",
+      "slug": "will-party-t-win-the-most-seats-in-the-2026-swedish-parliamentary-election",
+      "question": "Will Party T win the most seats in the 2026 Swedish parliamentary election?",
+      "event_slug": "sweden-parliamentary-election-winner"
+    },
+    {
+      "market_id": "811748",
+      "slug": "will-party-u-win-the-most-seats-in-the-2026-swedish-parliamentary-election",
+      "question": "Will Party U win the most seats in the 2026 Swedish parliamentary election?",
+      "event_slug": "sweden-parliamentary-election-winner"
+    },
+    {
+      "market_id": "811749",
+      "slug": "will-party-v-win-the-most-seats-in-the-2026-swedish-parliamentary-election",
+      "question": "Will Party V win the most seats in the 2026 Swedish parliamentary election?",
+      "event_slug": "sweden-parliamentary-election-winner"
+    },
+    {
+      "market_id": "811750",
+      "slug": "will-party-w-win-the-most-seats-in-the-2026-swedish-parliamentary-election",
+      "question": "Will Party W win the most seats in the 2026 Swedish parliamentary election?",
+      "event_slug": "sweden-parliamentary-election-winner"
+    },
+    {
+      "market_id": "811751",
+      "slug": "will-party-x-win-the-most-seats-in-the-2026-swedish-parliamentary-election",
+      "question": "Will Party X win the most seats in the 2026 Swedish parliamentary election?",
+      "event_slug": "sweden-parliamentary-election-winner"
+    },
+    {
+      "market_id": "811752",
+      "slug": "will-party-y-win-the-most-seats-in-the-2026-swedish-parliamentary-election",
+      "question": "Will Party Y win the most seats in the 2026 Swedish parliamentary election?",
+      "event_slug": "sweden-parliamentary-election-winner"
+    },
+    {
+      "market_id": "811753",
+      "slug": "will-party-z-win-the-most-seats-in-the-2026-swedish-parliamentary-election",
+      "question": "Will Party Z win the most seats in the 2026 Swedish parliamentary election?",
+      "event_slug": "sweden-parliamentary-election-winner"
+    },
+    {
+      "market_id": "811754",
+      "slug": "will-other-win-the-most-seats-in-the-2026-swedish-parliamentary-election",
+      "question": "Will Other win the most seats in the 2026 Swedish parliamentary election?",
+      "event_slug": "sweden-parliamentary-election-winner"
+    },
+    {
+      "market_id": "4441457",
+      "slug": "elon-musk-of-tweets-september-12-september-14-2026-0-39",
+      "question": "Will Elon Musk post <40 tweets from September 12 to September 14, 2026?",
+      "event_slug": "elon-musk-of-tweets-september-12-september-14-2026"
+    },
+    {
+      "market_id": "4441458",
+      "slug": "elon-musk-of-tweets-september-12-september-14-2026-40-64",
+      "question": "Will Elon Musk post 40-64 tweets from September 12 to September 14, 2026?",
+      "event_slug": "elon-musk-of-tweets-september-12-september-14-2026"
+    },
+    {
+      "market_id": "4441459",
+      "slug": "elon-musk-of-tweets-september-12-september-14-2026-65-89",
+      "question": "Will Elon Musk post 65-89 tweets from September 12 to September 14, 2026?",
+      "event_slug": "elon-musk-of-tweets-september-12-september-14-2026"
+    },
+    {
+      "market_id": "4441460",
+      "slug": "elon-musk-of-tweets-september-12-september-14-2026-90-114",
+      "question": "Will Elon Musk post 90-114 tweets from September 12 to September 14, 2026?",
+      "event_slug": "elon-musk-of-tweets-september-12-september-14-2026"
+    },
+    {
+      "market_id": "4441461",
+      "slug": "elon-musk-of-tweets-september-12-september-14-2026-115-139",
+      "question": "Will Elon Musk post 115-139 tweets from September 12 to September 14, 2026?",
+      "event_slug": "elon-musk-of-tweets-september-12-september-14-2026"
+    },
+    {
+      "market_id": "4441462",
+      "slug": "elon-musk-of-tweets-september-12-september-14-2026-140-164",
+      "question": "Will Elon Musk post 140-164 tweets from September 12 to September 14, 2026?",
+      "event_slug": "elon-musk-of-tweets-september-12-september-14-2026"
+    },
+    {
+      "market_id": "4441463",
+      "slug": "elon-musk-of-tweets-september-12-september-14-2026-165-189",
+      "question": "Will Elon Musk post 165-189 tweets from September 12 to September 14, 2026?",
+      "event_slug": "elon-musk-of-tweets-september-12-september-14-2026"
+    },
+    {
+      "market_id": "4441465",
+      "slug": "elon-musk-of-tweets-september-12-september-14-2026-190-214",
+      "question": "Will Elon Musk post 190-214 tweets from September 12 to September 14, 2026?",
+      "event_slug": "elon-musk-of-tweets-september-12-september-14-2026"
+    },
+    {
+      "market_id": "4441466",
+      "slug": "elon-musk-of-tweets-september-12-september-14-2026-215-239",
+      "question": "Will Elon Musk post 215-239 tweets from September 12 to September 14, 2026?",
+      "event_slug": "elon-musk-of-tweets-september-12-september-14-2026"
+    },
+    {
+      "market_id": "4441467",
+      "slug": "elon-musk-of-tweets-september-12-september-14-2026-240plus",
+      "question": "Will Elon Musk post 240+ tweets from September 12 to September 14, 2026?",
+      "event_slug": "elon-musk-of-tweets-september-12-september-14-2026"
+    },
+    {
+      "market_id": "2589810",
+      "slug": "will-the-fed-decrease-interest-rates-by-50-bps-after-the-october-2026-meeting-20260617190324029",
+      "question": "Will the Fed decrease interest rates by 50+ bps after the October 2026 meeting?",
+      "event_slug": "fed-decision-in-october-20260617190323537"
+    },
+    {
+      "market_id": "2589811",
+      "slug": "will-the-fed-decrease-interest-rates-by-25-bps-after-the-october-2026-meeting-20260617190324030",
+      "question": "Will the Fed decrease interest rates by 25 bps after the October 2026 meeting?",
+      "event_slug": "fed-decision-in-october-20260617190323537"
+    },
+    {
+      "market_id": "2589812",
+      "slug": "will-there-be-no-change-in-fed-interest-rates-after-the-october-2026-meeting-20260617190324031",
+      "question": "Will there be no change in Fed interest rates after the October 2026 meeting?",
+      "event_slug": "fed-decision-in-october-20260617190323537"
+    },
+    {
+      "market_id": "2589813",
+      "slug": "will-the-fed-increase-interest-rates-by-25-bps-after-the-october-2026-meeting-20260617190324032",
+      "question": "Will the Fed increase interest rates by 25 bps after the October 2026 meeting?",
+      "event_slug": "fed-decision-in-october-20260617190323537"
+    },
+    {
+      "market_id": "2589814",
+      "slug": "will-the-fed-increase-interest-rates-by-50-bps-after-the-october-2026-meeting-20260617190324033",
+      "question": "Will the Fed increase interest rates by 50+ bps after the October 2026 meeting?",
+      "event_slug": "fed-decision-in-october-20260617190323537"
+    },
+    {
+      "market_id": "3215005",
+      "slug": "will-the-fed-decrease-interest-rates-by-50-bps-after-the-december-2026-meeting-20260729232808633",
+      "question": "Will the Fed decrease interest rates by 50+ bps after the December 2026 meeting?",
+      "event_slug": "fed-decision-in-december-20260729232808632"
+    },
+    {
+      "market_id": "3215006",
+      "slug": "will-the-fed-decrease-interest-rates-by-25-bps-after-the-december-2026-meeting-20260729232808634",
+      "question": "Will the Fed decrease interest rates by 25 bps after the December 2026 meeting?",
+      "event_slug": "fed-decision-in-december-20260729232808632"
+    },
+    {
+      "market_id": "3215007",
+      "slug": "will-there-be-no-change-in-fed-interest-rates-after-the-december-2026-meeting-20260729232808635",
+      "question": "Will there be no change in Fed interest rates after the December 2026 meeting?",
+      "event_slug": "fed-decision-in-december-20260729232808632"
+    },
+    {
+      "market_id": "3215008",
+      "slug": "will-the-fed-increase-interest-rates-by-25-bps-after-the-december-2026-meeting-20260729232808636",
+      "question": "Will the Fed increase interest rates by 25 bps after the December 2026 meeting?",
+      "event_slug": "fed-decision-in-december-20260729232808632"
+    },
+    {
+      "market_id": "3215009",
+      "slug": "will-the-fed-increase-interest-rates-by-50-bps-after-the-december-2026-meeting-20260729232808637",
+      "question": "Will the Fed increase interest rates by 50+ bps after the December 2026 meeting?",
+      "event_slug": "fed-decision-in-december-20260729232808632"
+    },
+    {
+      "market_id": "3215010",
+      "slug": "will-the-fed-decrease-interest-rates-by-50-bps-after-the-january-2027-meeting-20260729233815503",
+      "question": "Will the Fed decrease interest rates by 50+ bps after the January 2027 meeting?",
+      "event_slug": "fed-decision-in-january-20260729233815502"
+    },
+    {
+      "market_id": "3215011",
+      "slug": "will-the-fed-decrease-interest-rates-by-25-bps-after-the-january-2027-meeting-20260729233815504",
+      "question": "Will the Fed decrease interest rates by 25 bps after the January 2027 meeting?",
+      "event_slug": "fed-decision-in-january-20260729233815502"
+    },
+    {
+      "market_id": "3215012",
+      "slug": "will-there-be-no-change-in-fed-interest-rates-after-the-january-2027-meeting-20260729233815505",
+      "question": "Will there be no change in Fed interest rates after the January 2027 meeting?",
+      "event_slug": "fed-decision-in-january-20260729233815502"
+    },
+    {
+      "market_id": "3215013",
+      "slug": "will-the-fed-increase-interest-rates-by-25-bps-after-the-january-2027-meeting-20260729233815506",
+      "question": "Will the Fed increase interest rates by 25 bps after the January 2027 meeting?",
+      "event_slug": "fed-decision-in-january-20260729233815502"
+    },
+    {
+      "market_id": "3215014",
+      "slug": "will-the-fed-increase-interest-rates-by-50-bps-after-the-january-2027-meeting-20260729233815507",
+      "question": "Will the Fed increase interest rates by 50+ bps after the January 2027 meeting?",
+      "event_slug": "fed-decision-in-january-20260729233815502"
+    },
+    {
+      "market_id": "4513821",
+      "slug": "btc-updown-5m-1789352100",
+      "question": "Bitcoin Up or Down - September 13, 10:15PM-10:20PM ET",
+      "event_slug": "btc-updown-5m-1789352100"
+    },
+    {
+      "market_id": "4513830",
+      "slug": "eth-updown-5m-1789352100",
+      "question": "Ethereum Up or Down - September 13, 10:15PM-10:20PM ET",
+      "event_slug": "eth-updown-5m-1789352100"
+    },
+    {
+      "market_id": "4513826",
+      "slug": "sol-updown-5m-1789352100",
+      "question": "Solana Up or Down - September 13, 10:15PM-10:20PM ET",
+      "event_slug": "sol-updown-5m-1789352100"
+    },
+    {
+      "market_id": "4513832",
+      "slug": "btc-updown-15m-1789352100",
+      "question": "Bitcoin Up or Down - September 13, 10:15PM-10:30PM ET",
+      "event_slug": "btc-updown-15m-1789352100"
+    },
+    {
+      "market_id": "4513817",
+      "slug": "btc-updown-5m-1789351800",
+      "question": "Bitcoin Up or Down - September 13, 10:10PM-10:15PM ET",
+      "event_slug": "btc-updown-5m-1789351800"
+    },
+    {
+      "market_id": "4513812",
+      "slug": "eth-updown-5m-1789351800",
+      "question": "Ethereum Up or Down - September 13, 10:10PM-10:15PM ET",
+      "event_slug": "eth-updown-5m-1789351800"
+    },
+    {
+      "market_id": "4513819",
+      "slug": "sol-updown-5m-1789351800",
+      "question": "Solana Up or Down - September 13, 10:10PM-10:15PM ET",
+      "event_slug": "sol-updown-5m-1789351800"
+    },
+    {
+      "market_id": "4513617",
+      "slug": "btc-updown-15m-1789351200",
+      "question": "Bitcoin Up or Down - September 13, 10:00PM-10:15PM ET",
+      "event_slug": "btc-updown-15m-1789351200"
+    }
+  ],
+  "negrisk": [
+    {
+      "event_id": "481717",
+      "slug": "fed-decision-in-september-762",
+      "title": "Fed Decision in September?",
+      "n_outcomes": 5,
+      "market_ids": [
+        "2252242",
+        "2252243",
+        "2252244",
+        "2252245",
+        "2252246"
+      ]
+    },
+    {
+      "event_id": "202857",
+      "slug": "pro-football-2027-champion-20260729185915366",
+      "title": "Pro Football: 2027 Champion",
+      "n_outcomes": 32,
+      "market_ids": [
+        "1357371",
+        "1357372",
+        "1357373",
+        "1357374",
+        "1357375",
+        "1357376",
+        "1357377",
+        "1357378",
+        "1357379",
+        "1357380",
+        "1357381",
+        "1357382",
+        "1357383",
+        "1357384",
+        "1357385",
+        "1357386",
+        "1357387",
+        "1357388",
+        "1357389",
+        "1357390",
+        "1357391",
+        "1357392",
+        "1357393",
+        "1357394",
+        "1357395",
+        "1357396",
+        "1357397",
+        "1357398",
+        "1357399",
+        "1357400",
+        "1357401",
+        "1357402"
+      ]
+    },
+    {
+      "event_id": "166435",
+      "slug": "next-prime-minister-of-sweden",
+      "title": "Next Prime Minister of Sweden",
+      "n_outcomes": 10,
+      "market_ids": [
+        "1193093",
+        "1193094",
+        "1193095",
+        "1193096",
+        "1193097",
+        "1193098",
+        "1193099",
+        "1193100",
+        "1193101",
+        "1193103"
+      ]
+    },
+    {
+      "event_id": "139236",
+      "slug": "2026-mens-us-open-winner-tennis",
+      "title": "2026 Men’s US Open Winner (Tennis)",
+      "n_outcomes": null,
+      "market_ids": [
+        "1088495"
+      ]
+    },
+    {
+      "event_id": "942646",
+      "slug": "mls-sdg-phi-2026-09-13",
+      "title": "San Diego FC vs. Philadelphia Union",
+      "n_outcomes": 3,
+      "market_ids": [
+        "4034680",
+        "4034682",
+        "4034684"
+      ]
+    },
+    {
+      "event_id": "659671",
+      "slug": "uefa-champions-league-2027-champion-20260701202025549",
+      "title": "UEFA Champions League: 2027 Champion",
+      "n_outcomes": 36,
+      "market_ids": [
+        "2772166",
+        "2772167",
+        "2772168",
+        "2772169",
+        "2772170",
+        "2772171",
+        "2772172",
+        "2772173",
+        "2772174",
+        "2772175",
+        "2772176",
+        "2772177",
+        "2772178",
+        "2772179",
+        "2772180",
+        "2772181",
+        "2772182",
+        "2772183",
+        "2772184",
+        "2772185",
+        "2772186",
+        "2772187",
+        "2772188",
+        "2772189",
+        "2772190",
+        "2772191",
+        "2772192",
+        "2772193",
+        "2772194",
+        "2772195",
+        "2772196",
+        "2772197",
+        "2772198",
+        "2772199",
+        "2772200",
+        "2772201"
+      ]
+    },
+    {
+      "event_id": "31552",
+      "slug": "presidential-election-winner-2028",
+      "title": "Presidential Election Winner 2028",
+      "n_outcomes": 52,
+      "market_ids": [
+        "561229",
+        "561230",
+        "561231",
+        "561232",
+        "561233",
+        "561234",
+        "561235",
+        "561236",
+        "561237",
+        "561238",
+        "561239",
+        "561240",
+        "561241",
+        "561242",
+        "561243",
+        "561244",
+        "561245",
+        "561246",
+        "561247",
+        "561248",
+        "561249",
+        "561250",
+        "561251",
+        "561252",
+        "561253",
+        "561254",
+        "561255",
+        "561256",
+        "561257",
+        "561258",
+        "561259",
+        "561260",
+        "561261",
+        "561262",
+        "561263",
+        "561264",
+        "561265",
+        "561266",
+        "561267",
+        "561268",
+        "561269",
+        "561270",
+        "561271",
+        "561272",
+        "561273",
+        "561274",
+        "561275",
+        "561276",
+        "561277",
+        "561278",
+        "561279",
+        "561280"
+      ]
+    },
+    {
+      "event_id": "967957",
+      "slug": "elon-musk-of-tweets-september-8-september-15-2026",
+      "title": "Elon Musk # tweets September 8 - September 15, 2026?",
+      "n_outcomes": 20,
+      "market_ids": [
+        "4237459",
+        "4237462",
+        "4237464",
+        "4237466",
+        "4237468",
+        "4237469",
+        "4237471",
+        "4237474",
+        "4237476",
+        "4237477",
+        "4237478",
+        "4237479",
+        "4237480",
+        "4237481",
+        "4237482",
+        "4237484",
+        "4237486",
+        "4237488",
+        "4237491",
+        "4237493"
+      ]
+    },
+    {
+      "event_id": "149589",
+      "slug": "which-party-will-gain-most-seats-in-russian-parliamentary-election",
+      "title": "Which party will gain most seats in Russian Parliamentary Election?",
+      "n_outcomes": 8,
+      "market_ids": [
+        "1130012",
+        "1130013",
+        "1130014",
+        "1130015",
+        "1130016",
+        "1130017",
+        "1130018",
+        "1130020"
+      ]
+    },
+    {
+      "event_id": "96640",
+      "slug": "sweden-parliamentary-election-winner",
+      "title": "Sweden Parliamentary Election Winner",
+      "n_outcomes": 8,
+      "market_ids": [
+        "811719",
+        "811720",
+        "811721",
+        "811722",
+        "811723",
+        "811724",
+        "811725",
+        "811726",
+        "811727"
+      ]
+    },
+    {
+      "event_id": "999740",
+      "slug": "elon-musk-of-tweets-september-12-september-14-2026",
+      "title": "Elon Musk # tweets September 12 - September 14, 2026?",
+      "n_outcomes": 10,
+      "market_ids": [
+        "4441457",
+        "4441458",
+        "4441459",
+        "4441460",
+        "4441461",
+        "4441462",
+        "4441463",
+        "4441465",
+        "4441466",
+        "4441467"
+      ]
+    },
+    {
+      "event_id": "606422",
+      "slug": "fed-decision-in-october-20260617190323537",
+      "title": "Fed Decision in October?",
+      "n_outcomes": 5,
+      "market_ids": [
+        "2589810",
+        "2589811",
+        "2589812",
+        "2589813",
+        "2589814"
+      ]
+    },
+    {
+      "event_id": "770450",
+      "slug": "fed-decision-in-december-20260729232808632",
+      "title": "Fed Decision in December?",
+      "n_outcomes": 5,
+      "market_ids": [
+        "3215005",
+        "3215006",
+        "3215007",
+        "3215008",
+        "3215009"
+      ]
+    },
+    {
+      "event_id": "770451",
+      "slug": "fed-decision-in-january-20260729233815502",
+      "title": "Fed Decision in January?",
+      "n_outcomes": 5,
+      "market_ids": [
+        "3215010",
+        "3215011",
+        "3215012",
+        "3215013",
+        "3215014"
+      ]
+    }
+  ]
+}

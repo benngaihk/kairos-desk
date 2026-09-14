@@ -166,7 +166,13 @@
     "corrected_verdict": "NO_EDGE",
     "captured_utc": "2026-09-14T02:20:54Z",
     "near_miss_filter_en": "Raw 169 is Yes+No (or exclusive-set) net within a few cents of $1. Most are 0.1¢ longshot dust. Watch list keeps incomplete partitions and econ books with real size.",
-    "near_miss_filter_zh": "原始 169 条是 Yes+No（或互斥组）扣费后净成本离 $1 只差几分。多数是 0.1¢ 长尾尘埃。观察名单只留分区不完整、以及有真实深度的经济盘。"
+    "near_miss_filter_zh": "原始 169 条是 Yes+No（或互斥组）扣费后净成本离 $1 只差几分。多数是 0.1¢ 长尾尘埃。观察名单只留分区不完整、以及有真实深度的经济盘。",
+    "completeness_tested": 662,
+    "negrisk_tested": 14,
+    "n_unique_market_ids": 662,
+    "universe_sha256": "51351529d97d644500758363f8bb8c0f7c464f3e73ad1f741f22ca36cafa115c",
+    "count_rule_en": "676 = 662 Yes/No books + 14 NegRisk events. Full set in universe.json.",
+    "count_rule_zh": "676 = 662 个 Yes/No 盘 + 14 个 NegRisk 事件。全集在 universe.json。"
   },
   "scorecards": {
     "cpi": {
@@ -355,5 +361,10 @@
   },
   "published_cst": "2026-09-14 14:52 CST",
   "published_note_en": "Scan captured 10:20 CST. This schema/receipts file published later the same day.",
-  "published_note_zh": "扫描采集于 10:20 CST。本回执文件同日稍后公开。"
+  "published_note_zh": "扫描采集于 10:20 CST。本回执文件同日稍后公开。",
+  "universe_url": "https://benngaihk.github.io/kairos-desk/universe.json",
+  "track": {
+    "en": "Countable freeze-vs-print starts at FOMC 15–16 Sep. CPI 11 Sep and NFP 4 Sep were internal.",
+    "zh": "可计分的冻盘对公布从 9/15–16 FOMC 开始。CPI 9/11 和非农 9/4 当时未公开。"
+  }
 }

@@ -297,7 +297,7 @@ function apply(){
   paintWatch();
   if(D.method) document.getElementById("method").textContent = lang==="zh"?D.method.zh:D.method.en;
   if(D.notify) document.getElementById("notify").textContent = lang==="zh"?D.notify.zh:D.notify.en;
-  document.getElementById("curl").textContent = "GET "+D.json_url+"\nGET "+D.history_url;
+  document.getElementById("curl").textContent = ["GET "+D.json_url,"GET "+D.history_url].concat(D.universe_url?["GET "+D.universe_url]:[]).join("\n");
   if(D.history_policy) document.getElementById("hpol").textContent = lang==="zh"?D.history_policy.zh:D.history_policy.en;
   loadHist();
 }

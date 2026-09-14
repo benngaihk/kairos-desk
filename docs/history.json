@@ -29,5 +29,6 @@
       "note_en": "Adds watch list, status fields, and pre-print labeling. Same 10:20 scan.",
       "note_zh": "补观察名单、状态字段和事前标记。扫描仍是 10:20。"
     }
-  ]
+  ],
+  "universe_url": "./universe.json"
 }
