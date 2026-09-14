@@ -1,52 +1,70 @@
 {
   "as_of_cst": "2026-09-14 10:20 CST",
+  "question_en": "Is there a fee-adjusted Polymarket edge?",
+  "question_zh": "Polymarket 上有没有扣完费的边？",
+  "verdict": "NO",
+  "signal": "LOW",
+  "headline_en": "0 after audit",
+  "headline_zh": "审计后 0 条",
+  "sub_en": "676 markets scanned. 1 raw “edge.” 0 survived fees and a full exclusive set.",
+  "sub_zh": "扫了 676 个市场。生结果 1 条边。扣费并核完整分区后是 0。",
   "fed": {
-    "event": "FOMC 15–16 Sep 2026",
+    "event_en": "FOMC 15–16 Sep",
+    "event_zh": "9月15–16日 FOMC",
     "pm_hike25": 0.795,
-    "pm_hold": 0.195,
+    "pm_hold": 0.205,
     "cme_hike_bin": 0.879,
     "cme_hold_bin": 0.121,
-    "cme_source": "Altınla FedWatch · ZQU26 96.2725 · 13 Sep 23:48 UTC",
     "gap_pp": 8.4,
     "mismatch_flag": true,
-    "honest_edge": "NO_EDGE",
-    "note_en": "PM exclusive +25bp is not the same contract as a CME target-rate bin. Gap is a mismatch flag, not tradable arb.",
-    "note_zh": "PM 独家 +25bp 与 CME 目标利率档不是同一合约。缺口只是错配标记，不是可交易套利。"
+    "negrisk_net_cps": 1.0286,
+    "note_en": "Same-week gap. PM exclusive +25bp is not a CME target-rate bin. Buying the whole NegRisk set costs 1.029 after 5% fees.",
+    "note_zh": "当周缺口。PM 独家 +25bp 不是 CME 目标利率档。整组 NegRisk 扣 5% 费后成本 1.029。"
+  },
+  "receipt": {
+    "title": "Sweden Parliamentary Election Winner",
+    "slug": "sweden-parliamentary-election-winner",
+    "raw_edge": 9.92,
+    "n_outcomes": 8,
+    "verdict": "REJECTED",
+    "reason_en": "Asks on 8 names summed to 0.8¢. Social Democrats had no ask. Not a complete exclusive set — not an edge.",
+    "reason_zh": "8 个名字的卖一合计 0.8¢，社民党没有卖一。不是完整互斥组，不是边。"
   },
   "scan": {
-    "as_of_cst": "2026-09-14 10:20 CST",
     "markets": 676,
     "raw_edges": 1,
-    "edges_after_fees_audit": 0,
+    "after_audit": 0,
     "near_misses": 169,
     "raw_verdict": "EDGE_FOUND",
-    "corrected_verdict": "ECON_MISMATCH",
-    "rejected_en": "Sweden election NegRisk — incomplete partition",
-    "rejected_zh": "瑞典大选 NegRisk：分区不完整，已剔除"
+    "corrected_verdict": "NO_EDGE"
   },
   "scorecards": {
     "cpi": {
-      "print_en": "11 Sep · August CPI",
-      "print_zh": "9月11日 · 8月CPI",
+      "print_en": "11 Sep CPI",
+      "print_zh": "9月11日 CPI",
+      "hits": 3,
+      "n": 4,
       "rows": [
-        {"name_en": "Headline YoY", "name_zh": "整体同比", "actual": "3.4%", "result": "WIN"},
-        {"name_en": "Headline MoM", "name_zh": "整体环比", "actual": "0.4%", "result": "WIN"},
-        {"name_en": "Core YoY", "name_zh": "核心同比", "actual": "2.4%", "result": "WIN"},
-        {"name_en": "Core MoM", "name_zh": "核心环比", "actual": "0.3%", "result": "LOSE"}
-      ],
-      "note_en": "Modal/consensus vs BLS first print. n=1. Not a win-rate product.",
-      "note_zh": "众数/共识对 BLS 首次。n=1，不是胜率产品。"
+        {"name_en": "H YoY", "name_zh": "整体同比", "actual": "3.4%", "result": "WIN"},
+        {"name_en": "H MoM", "name_zh": "整体环比", "actual": "0.4%", "result": "WIN"},
+        {"name_en": "C YoY", "name_zh": "核心同比", "actual": "2.4%", "result": "WIN"},
+        {"name_en": "C MoM", "name_zh": "核心环比", "actual": "0.3%", "result": "LOSE"}
+      ]
     },
     "nfp": {
-      "print_en": "4 Sep · August jobs",
-      "print_zh": "9月4日 · 8月非农",
+      "print_en": "4 Sep jobs",
+      "print_zh": "9月4日非农",
+      "hits": 1,
+      "n": 2,
       "rows": [
         {"name_en": "NFP", "name_zh": "非农", "actual": "+162k", "result": "LOSE"},
         {"name_en": "U-3", "name_zh": "失业率", "actual": "4.1%", "result": "WIN"}
-      ],
-      "note_en": "Books were glued to +56k / 50–100k. n=1.",
-      "note_zh": "盘口黏在 +56k / 50–100k。n=1。"
+      ]
     }
   },
-  "fee_example": {"p": 0.5, "c": 100, "rate": 0.05, "fee": 1.25}
+  "upcoming": [
+    {"id": "fomc", "en": "FOMC", "zh": "FOMC", "when": "15–16 Sep", "status": "FROZEN"},
+    {"id": "nfp", "en": "Sep NFP", "zh": "9月非农", "when": "2 Oct", "status": "NEXT"},
+    {"id": "cpi", "en": "Sep CPI", "zh": "9月CPI", "when": "14 Oct", "status": "NEXT"}
+  ]
 }
