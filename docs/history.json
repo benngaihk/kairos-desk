@@ -1,10 +1,33 @@
 {
+  "policy_en": "A freeze is pre-print only if the GitHub commit time is before the official release. CPI 11 Sep and NFP 4 Sep freezes were internal; first public copy is the 14 Sep 10:20 snapshot (commit c32856a). This same snapshot is a public pre-print freeze for FOMC 15–16 Sep. Later prints get their own history file before release.",
+  "policy_zh": "只有 GitHub commit 时间早于官方公布，冻盘才算事前。CPI 9/11 和非农 9/4 的冻结当时只在内部；第一次公开是 9/14 10:20 快照（commit c32856a）。同一份快照可作为 9/15–16 FOMC 的事前公开冻结。之后的公布会在发布前单独追加历史文件。",
+  "commits_url": "https://github.com/benngaihk/kairos-desk/commits/main",
   "snapshots": [
     {
       "id": "2026-09-14-1020",
       "as_of_cst": "2026-09-14 10:20 CST",
       "after_audit": 0,
-      "url": "./history/2026-09-14-1020.json"
+      "url": "./history/2026-09-14-1020.json",
+      "kind": "scan",
+      "pre_print": [
+        "fomc-2026-09-15"
+      ],
+      "first_public_commit": "c32856a",
+      "note_en": "First public snapshot. CPI/NFP freezes inside were internal before this commit.",
+      "note_zh": "第一次公开快照。其中 CPI/非农冻结在此 commit 之前只在内部。"
+    },
+    {
+      "id": "2026-09-14-1452",
+      "as_of_cst": "2026-09-14 10:20 CST",
+      "published_cst": "2026-09-14 14:52 CST",
+      "after_audit": 0,
+      "url": "./history/2026-09-14-1452.json",
+      "kind": "scan+receipts",
+      "pre_print": [
+        "fomc-2026-09-15"
+      ],
+      "note_en": "Adds watch list, status fields, and pre-print labeling. Same 10:20 scan.",
+      "note_zh": "补观察名单、状态字段和事前标记。扫描仍是 10:20。"
     }
   ]
 }

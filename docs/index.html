@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,600;6..72,700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet"/>
 <style>
-:root{--bg:#f6f4ee;--ink:#141414;--muted:#5c5850;--line:#ddd6c8;--card:#fffcf7;--no:#8f2d1a;--ok:#1f4a38;--chip:#ece7dc}
+:root{--bg:#f6f4ee;--ink:#141414;--muted:#5c5850;--line:#ddd6c8;--card:#fffcf7;--no:#8f2d1a;--ok:#1f4a38;--chip:#ece7dc;--wait:#5c5850;--stale:#8a5a12}
 *{box-sizing:border-box}
 html,body{margin:0;background:var(--bg);color:var(--ink);font-family:"Source Sans 3",system-ui,sans-serif}
 a{color:inherit}
@@ -21,14 +21,20 @@ header{display:flex;justify-content:space-between;align-items:center;gap:12px}
 .lang button{border:0;background:transparent;font:12px/1 "IBM Plex Mono",monospace;padding:7px 10px;cursor:pointer;color:var(--ink)}
 .lang button.on{background:var(--ink);color:var(--bg)}
 .cta{font:12px/1 "IBM Plex Mono",monospace;text-decoration:none;border:1px solid var(--ink);padding:8px 10px}
-h1{font-family:Newsreader,serif;font-size:clamp(34px,6vw,56px);line-height:1.05;letter-spacing:-.03em;font-weight:700;margin:36px 0 10px;max-width:14em}
-.status{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--no)}
+h1{font-family:Newsreader,serif;font-size:clamp(34px,6vw,56px);line-height:1.05;letter-spacing:-.03em;font-weight:700;margin:36px 0 10px;max-width:16em}
+.status{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--wait)}
+.status.no{color:var(--no)}
+.status.ok{color:var(--ok)}
+.status.err,.status.stale{color:var(--stale)}
 .kicker{font:11px/1 "IBM Plex Mono",monospace;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin:28px 0 0}
+.lede{font-size:16px;line-height:1.45;max-width:36em;white-space:pre-line;margin:0 0 8px}
 .board{display:grid;grid-template-columns:320px 1fr;gap:14px;margin:18px 0 8px}
 @media(max-width:800px){.board{grid-template-columns:1fr}}
 .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px 20px}
 .gauge{text-align:center}
 .ring{width:210px;height:210px;margin:12px auto;border-radius:50%;background:conic-gradient(#c9c3b5 0 12deg,#ece8df 0);display:grid;place-items:center}
+.ring.ok{background:conic-gradient(#1f4a38 0 40deg,#ece8df 0)}
+.ring.err{background:conic-gradient(#8a5a12 0 20deg,#ece8df 0)}
 .ring span{width:168px;height:168px;border-radius:50%;background:var(--card);display:grid;place-items:center;font-family:Newsreader,serif;font-size:84px;font-weight:700;letter-spacing:-.05em}
 .cap{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
 .asof{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--muted);margin-top:10px}
@@ -44,7 +50,7 @@ h2{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.14em;tex
 .stamp.no{color:var(--no)}
 .stamp.ok{color:var(--ok)}
 .log{border:1px solid var(--line);background:var(--card)}
-.log row,.log .row{display:grid;grid-template-columns:140px 1fr auto;gap:12px;padding:12px 16px;border-top:1px solid var(--line);font-size:14px}
+.log .row{display:grid;grid-template-columns:140px 1fr auto;gap:12px;padding:12px 16px;border-top:1px solid var(--line);font-size:14px}
 .log .row:first-child{border-top:0}
 .log .k{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
 .cal{display:flex;gap:8px;flex-wrap:wrap}
@@ -58,7 +64,6 @@ details summary{cursor:pointer;font-family:"IBM Plex Mono",monospace;font-size:1
 pre,code{font-family:"IBM Plex Mono",monospace;font-size:12px;background:var(--chip);padding:2px 6px}
 pre{display:block;padding:10px 12px;overflow:auto;white-space:pre-wrap}
 .recheck{margin-top:8px;padding:8px 10px;border-left:3px solid var(--ink);font-size:13px}
-#data{margin-top:48px;padding-top:20px;border-top:1px solid var(--ink)}
 footer{margin-top:36px;font:11px/1.4 "IBM Plex Mono",monospace;color:var(--muted)}
 table{width:100%;border-collapse:collapse;font-size:14px;margin-top:6px}
 th{text-align:left;font:11px/1 "IBM Plex Mono",monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);padding:4px 0}
@@ -71,25 +76,28 @@ td{padding:5px 0;border-bottom:1px solid var(--line)}
   <div class="mark">Kairos desk</div>
   <div class="nav">
     <div class="lang"><button type="button" id="btn-en" class="on">EN</button><button type="button" id="btn-zh">中文</button></div>
-    <a class="cta" href="#data" data-i="nav">Open JSON</a>
+    <a class="cta" id="cta-json" href="./desk.json" target="_blank" rel="noopener" data-i="nav">Open JSON</a>
   </div>
 </header>
 
 <div class="kicker" data-i="kicker">Fee-adjusted edge</div>
 <h1 id="q">Is there a fee-adjusted Polymarket edge?</h1>
+<p class="lede" id="lede">Loading snapshot…</p>
 <div class="board">
   <div class="card gauge">
-    <div class="status" id="sig">Low signal · no edge</div>
-    <div class="ring"><span id="big">0</span></div>
-    <div class="cap" data-i="after">after audit</div>
+    <div class="status" id="sig">Loading snapshot</div>
+    <div class="ring" id="ring"><span id="big">·</span></div>
+    <div class="cap" id="cap"></div>
     <p class="asof" id="asof"></p>
-    <p class="asof" id="sub"></p>
   </div>
   <div class="card pulse">
     <h3 data-i="h_log">Receipt pulse</h3>
     <div class="log" id="log"></div>
   </div>
 </div>
+
+<h2 data-i="h_watch">Watch</h2>
+<div class="tiles" id="watch"></div>
 
 <h2 data-i="h_readout">Signal readout</h2>
 <div class="tiles">
@@ -100,7 +108,7 @@ td{padding:5px 0;border-bottom:1px solid var(--line)}
   </div>
   <div class="tile">
     <h3 data-i="h_reject">Last rejected “edge”</h3>
-    <div class="v" id="rej_v">REJECTED</div>
+    <div class="v" id="rej_v">—</div>
     <p id="rej_p"></p><div id="rej_x"></div>
   </div>
   <div class="tile">
@@ -115,7 +123,6 @@ td{padding:5px 0;border-bottom:1px solid var(--line)}
   </div>
 </div>
 
-
 <h2 data-i="h_next">Next freeze</h2>
 <div class="cal" id="cal"></div>
 
@@ -127,46 +134,102 @@ td{padding:5px 0;border-bottom:1px solid var(--line)}
 
 <section id="data">
   <h2 data-i="acc_h">Data</h2>
-  <p class="cannot" data-i="acc_p">No signup. Snapshots are public JSON. History is appended when the desk changes.</p>
+  <p class="cannot" data-i="acc_p">No signup. Snapshots are public JSON. History is appended when data updates.</p>
+  <p class="cannot" id="notify"></p>
   <pre id="curl"></pre>
   <p class="asof" id="hist"></p>
+  <p class="asof" id="hpol"></p>
 </section>
 <footer data-i="foot">Kairos · snapshots only · not trading advice</footer>
 </div>
 <script>
 const I = {
   en: {
-    nav:"Open JSON", kicker:"Fee-adjusted edge", after:"after audit",
+    nav:"Open JSON", kicker:"Fee-adjusted edge",
     h_readout:"Signal readout", h_reject:"Last rejected “edge”",
     h_log:"Receipt pulse", h_next:"Next freeze", h_cannot:"What this cannot say",
+    h_method:"How we audit", h_watch:"Watch",
     cannot:"A gap between Polymarket and a CME-method bin is not a trade. A raw NegRisk sum is not an edge until every outcome is on the book. Fee-adjusted is not fillable: this page does not show slippage or size you can actually get. Two freeze days are not a win rate. This page is a receipt, not a signal shop.",
-    acc_h:"Data", acc_p:"No signup. Snapshots are public JSON. History is appended when the desk changes.",
-    verify:"Verify", recheck:"Re-check when", freeze:"Freeze",
+    acc_h:"Data", acc_p:"No signup. Snapshots are public JSON. History is appended when data updates.",
+    verify:"Verify", recheck:"Re-check when", freeze:"Freeze", print:"Print",
     foot:"Kairos · snapshots only · not trading advice",
-    sig:"Low signal · no edge",
-    fed_gap:(d)=>d.fed.gap_pp.toFixed(1)+" pp",
-    mismatch:"Mismatch on", same:"not the same contract",
-    frozen:"Frozen", next:"Upcoming"
+    loading:"Loading snapshot",
+    error:"Could not load desk.json",
+    stale:"Snapshot stale",
+    no_edge:"No edge after audit",
+    edge:"Fee-adjusted candidate",
+    cap_load:"loading",
+    cap_err:"load failed",
+    cap_stale:"stale snapshot",
+    cap_no:"after audit",
+    cap_yes:"after audit",
+    lede_load:"Loading the public snapshot.",
+    lede_err:"desk.json did not load. This is not an audit result.",
+    mismatch:"Definition mismatch", same:"not the same contract",
+    frozen:"Frozen", next:"Upcoming",
+    missing:"Missing", far:"Distance",
+    fed_gap:(d)=>d.fed.gap_pp.toFixed(1)+" pp"
   },
   zh: {
-    nav:"打开 JSON", kicker:"扣费后的边", after:"审计后",
-    h_readout:"信号读数", h_reject:"最近一条被毙的「边」",
+    nav:"打开 JSON", kicker:"扣费后优势",
+    h_readout:"信号读数", h_reject:"最近一条被毙的「优势」",
     h_log:"回执", h_next:"下一场冻盘", h_cannot:"这页不能说什么",
-    cannot:"Polymarket 和 CME 方法档之间的缺口不是交易。NegRisk 加总在每个结果都有卖一之前不是边。扣费后不等于能成交：这页不展示滑点和可成交量。两个冻盘日不是胜率。这是回执，不是信号店。",
-    acc_h:"数据", acc_p:"不用注册。快照是公开 JSON。书桌一变就追加历史。",
-    verify:"复核", recheck:"何时重检", freeze:"冻结",
+    h_method:"怎么审", h_watch:"继续观察",
+    cannot:"Polymarket 和 CME 方法档之间的缺口不是交易。NegRisk 加总在每个结果都有卖一之前不是优势。扣费后不等于能成交：这页不展示滑点和可成交量。两个冻盘日不是胜率。这是回执，不是信号店。",
+    acc_h:"数据", acc_p:"不用注册。快照是公开 JSON。数据更新时追加历史。",
+    verify:"复核", recheck:"何时重检", freeze:"冻结", print:"公布",
     foot:"Kairos · 只展示快照 · 非交易建议",
-    sig:"弱信号 · 无边",
-    fed_gap:(d)=>d.fed.gap_pp.toFixed(1)+" 个百分点",
-    mismatch:"错配开", same:"不是同一合约",
-    frozen:"已冻", next:"待冻"
+    loading:"正在加载快照",
+    error:"desk.json 加载失败",
+    stale:"快照已过期",
+    no_edge:"审计后无机会",
+    edge:"扣费后候选",
+    cap_load:"加载中",
+    cap_err:"加载失败",
+    cap_stale:"快照过期",
+    cap_no:"审计后",
+    cap_yes:"审计后",
+    lede_load:"正在加载公开快照。",
+    lede_err:"desk.json 没拿到。这不是审计结果。",
+    mismatch:"合约口径不一致", same:"不是同一合约",
+    frozen:"已冻", next:"待冻",
+    missing:"缺什么", far:"离阈值",
+    fed_gap:(d)=>d.fed.gap_pp.toFixed(1)+" 个百分点"
   }
 };
 let lang = localStorage.getItem("kairos-lang")==="zh"?"zh":"en";
 let D = null;
+let ui = "loading";
 const t = k => { const v=I[lang][k]; return typeof v==="function"?v(D):v; };
 function cents(x){return (x*100).toFixed(1)+"¢";}
 function pct(x){return (x*100).toFixed(1)+"%";}
+function hoursOld(iso){
+  if(!iso) return Infinity;
+  const ms = Date.now() - Date.parse(iso);
+  return ms/36e5;
+}
+function derive(d){
+  const n = d.scan && d.scan.after_audit;
+  const v = (d.scan && d.scan.corrected_verdict) || d.verdict || "";
+  const limit = d.stale_after_hours || 36;
+  const stale = hoursOld(d.as_of_utc) > limit;
+  const has = (typeof n === "number" && n > 0) || v === "EDGE" || v === "EDGE_FOUND";
+  if (stale) return has ? "stale_edge" : "stale";
+  return has ? "edge" : "no_edge";
+}
+function ledeText(){
+  if(ui==="loading") return t("lede_load");
+  if(ui==="error") return t("lede_err");
+  const n = D.scan.markets, a = D.scan.after_audit;
+  if(lang==="zh"){
+    let s = `本次扫描 ${n} 个市场，发现 ${a} 个通过完整性与费用检查的候选机会。\n快照时间：${D.as_of_cst}｜成交深度尚未验证`;
+    if(ui.startsWith("stale")) s += "\n"+t("stale");
+    return s;
+  }
+  let s = `This scan covered ${n} markets. ${a} candidate${a===1?"":"s"} passed completeness and fee checks.\nSnapshot: ${D.as_of_cst} · fill depth not verified`;
+  if(ui.startsWith("stale")) s += "\n"+t("stale");
+  return s;
+}
 
 function apply(){
   document.documentElement.lang = lang;
@@ -176,11 +239,41 @@ function apply(){
     const v=I[lang][el.getAttribute("data-i")];
     if(typeof v==="string") el.textContent=v;
   });
-  if(!D) return;
+  const sig = document.getElementById("sig");
+  const cap = document.getElementById("cap");
+  const ring = document.getElementById("ring");
+  const big = document.getElementById("big");
+  sig.className = "status";
+  ring.className = "ring";
+  if(ui==="loading"){
+    sig.textContent = t("loading");
+    sig.classList.add("wait");
+    cap.textContent = t("cap_load");
+    big.textContent = "·";
+    document.getElementById("lede").textContent = ledeText();
+    return;
+  }
+  if(ui==="error"){
+    sig.textContent = t("error");
+    sig.classList.add("err");
+    cap.textContent = t("cap_err");
+    ring.classList.add("err");
+    big.textContent = "!";
+    document.getElementById("lede").textContent = ledeText();
+    document.getElementById("q").textContent = lang==="zh"?"Polymarket 上有没有扣完费的优势？":"Is there a fee-adjusted Polymarket edge?";
+    return;
+  }
+  const n = D.scan.after_audit;
+  const isEdge = ui==="edge" || ui==="stale_edge";
+  const isStale = ui.startsWith("stale");
+  sig.textContent = isStale ? t("stale")+" · "+(isEdge?t("edge"):t("no_edge")) : (isEdge?t("edge"):t("no_edge"));
+  sig.classList.add(isStale ? "stale" : (isEdge?"ok":"no"));
+  cap.textContent = isStale ? t("cap_stale") : (isEdge?t("cap_yes"):t("cap_no"));
+  if(isEdge) ring.classList.add("ok");
+  if(isStale) ring.classList.add("err");
+  big.textContent = String(n);
   document.getElementById("q").textContent = lang==="zh"?D.question_zh:D.question_en;
-  document.getElementById("sig").textContent = t("sig")+" · "+D.as_of_cst;
-  document.getElementById("big").textContent = D.scan.after_audit;
-  document.getElementById("sub").textContent = lang==="zh"?D.sub_zh:D.sub_en;
+  document.getElementById("lede").textContent = ledeText();
   document.getElementById("asof").textContent = D.as_of_cst;
   document.getElementById("fed_h").textContent = lang==="zh"?D.fed.event_zh:D.fed.event_en;
   document.getElementById("fed_v").textContent = t("fed_gap");
@@ -193,16 +286,19 @@ function apply(){
   document.getElementById("rej_p").textContent = (lang==="zh"?D.receipt.reason_zh:D.receipt.reason_en);
   document.getElementById("rej_x").innerHTML = recDetails();
   paintSc("cpi"); paintSc("nfp");
+  const stamp = (lab, cls) => `<div class="stamp ${cls}">${lab}</div>`;
   document.getElementById("log").innerHTML =
-    `<div class="row"><div class="k">${D.receipt.slug}</div><div>${lang==="zh"?D.receipt.reason_zh:D.receipt.reason_en}</div><div class="stamp no">${D.receipt.verdict}</div></div>`+
-    `<div class="row"><div class="k">fed NegRisk</div><div>net ${D.fed.negrisk_net_cps.toFixed(3)} @ ${D.fed.fee_rate*100}% ${D.fed.fee_rate_src}</div><div class="stamp no">NO EDGE</div></div>`+
-    `<div class="row"><div class="k">scan</div><div>${D.scan.markets} markets · raw ${D.scan.raw_edges} · ${D.scan.captured_utc}</div><div class="stamp no">${D.scan.after_audit}</div></div>`;
+    `<div class="row"><div class="k">${D.receipt.slug}</div><div>${lang==="zh"?D.receipt.reason_zh:D.receipt.reason_en}</div>${stamp(D.receipt.verdict,"no")}</div>`+
+    `<div class="row"><div class="k">fed NegRisk</div><div>net ${D.fed.negrisk_net_cps.toFixed(4)} @ ${D.fed.fee_rate*100}% ${D.fed.fee_rate_src}</div>${stamp(D.scan.corrected_verdict,"no")}</div>`+
+    `<div class="row"><div class="k">scan</div><div>${D.scan.markets} markets · raw ${D.scan.raw_edges} · ${D.scan.captured_utc}</div>${stamp(String(D.scan.after_audit), D.scan.after_audit>0?"ok":"no")}</div>`;
   document.getElementById("cal").innerHTML = D.upcoming.map(u=>
-    `<div class="pill"><b>${lang==="zh"?u.zh:u.en}</b><span>${u.when} · ${u.status==="FROZEN"?t("frozen"):t("next")}</span></div>`
+    `<div class="pill"><b>${lang==="zh"?u.zh:u.en}</b><span>${u.when} · ${u.status==="FROZEN"?t("frozen"):t("next")}${u.public_freeze?" · public":""}</span></div>`
   ).join("");
+  paintWatch();
   if(D.method) document.getElementById("method").textContent = lang==="zh"?D.method.zh:D.method.en;
-  document.getElementById("curl").textContent =
-    "GET "+D.json_url+"\nGET "+D.history_url;
+  if(D.notify) document.getElementById("notify").textContent = lang==="zh"?D.notify.zh:D.notify.en;
+  document.getElementById("curl").textContent = "GET "+D.json_url+"\nGET "+D.history_url;
+  if(D.history_policy) document.getElementById("hpol").textContent = lang==="zh"?D.history_policy.zh:D.history_policy.en;
   loadHist();
 }
 function fedDetails(){
@@ -234,7 +330,7 @@ function paintSc(k){
   const sc=D.scorecards[k];
   document.getElementById(k+"_h").textContent = lang==="zh"?sc.print_zh:sc.print_en;
   document.getElementById(k+"_v").textContent = sc.hits+" / "+sc.n;
-  const head = `<tr><th></th><th>${t("freeze")}</th><th>p</th><th></th></tr>`;
+  const head = `<tr><th></th><th>${t("freeze")}</th><th>${t("print")}</th><th></th></tr>`;
   const body = sc.rows.map(r=>{
     const n=lang==="zh"?r.name_zh:r.name_en;
     const cls=r.result==="WIN"?"ok":"no";
@@ -243,17 +339,42 @@ function paintSc(k){
     const fp=r.freeze_p!=null?r.freeze_p:"";
     return `<tr><td>${name}</td><td>${r.modal||""} ${fp}</td><td>${r.actual}</td><td><span class="stamp ${cls}">${r.result}</span></td></tr>`;
   }).join("");
-  document.getElementById(k+"_tbl").innerHTML = `<table>${head}${body}</table><p class="asof">${sc.freeze_cst||""} · ${lang==="zh"?sc.note_zh:sc.note_en}</p>`;
+  const pub = sc.public_before_print===false ? (lang==="zh"?"事前未公开。":"Not public before print. ") : "";
+  document.getElementById(k+"_tbl").innerHTML = `<table>${head}${body}</table><p class="asof">${sc.freeze_cst||""} · ${pub}${lang==="zh"?sc.note_zh:sc.note_en}</p>`;
+}
+function paintWatch(){
+  const items=D.watch||[];
+  const filter = lang==="zh"?D.scan.near_miss_filter_zh:D.scan.near_miss_filter_en;
+  const cards = items.map(w=>{
+    const miss = lang==="zh"?w.missing_zh:w.missing_en;
+    const far = lang==="zh"?w.distance_zh:w.distance_en;
+    const rec = lang==="zh"?w.recheck_zh:w.recheck_en;
+    const dist = w.distance_cps!=null ? (w.distance_cps*100).toFixed(2)+"¢" : "—";
+    return `<div class="tile"><h3><a href="${w.url}">${w.title}</a></h3>
+      <div class="v">${dist}</div>
+      <p><b>${t("missing")}</b> ${miss}</p>
+      <p><b>${t("far")}</b> ${far}</p>
+      <div class="recheck"><b>${t("recheck")}</b> ${rec}</div></div>`;
+  }).join("");
+  document.getElementById("watch").innerHTML = cards + `<div class="tile"><h3>${D.scan.near_misses} raw</h3><p>${filter||""}</p></div>`;
 }
 function loadHist(){
-  fetch("./history.json").then(r=>r.json()).then(h=>{
-    const rows=(h.snapshots||[]).map(s=>`<a href="${s.url}">${s.id}</a> · ${s.as_of_cst} · after_audit ${s.after_audit}`).join("<br>");
-    document.getElementById("hist").innerHTML = rows;
+  fetch("./history.json",{cache:"no-store"}).then(r=>r.json()).then(h=>{
+    const rows=(h.snapshots||[]).map(s=>{
+      const pre = (s.pre_print||[]).join(", ");
+      return `<a href="${s.url}">${s.id}</a> · ${s.as_of_cst} · after_audit ${s.after_audit}${pre?" · pre-print "+pre:""}${s.first_public_commit?" · "+s.first_public_commit:""}`;
+    }).join("<br>");
+    const link = h.commits_url ? `<br><a href="${h.commits_url}">publish log</a>` : "";
+    document.getElementById("hist").innerHTML = rows+link;
   }).catch(()=>{});
 }
 document.getElementById("btn-en").onclick=()=>{lang="en";localStorage.setItem("kairos-lang","en");apply();};
 document.getElementById("btn-zh").onclick=()=>{lang="zh";localStorage.setItem("kairos-lang","zh");apply();};
-fetch("./desk.json").then(r=>r.json()).then(d=>{D=d;apply();});
+apply();
+fetch("./desk.json",{cache:"no-store"}).then(r=>{
+  if(!r.ok) throw new Error(String(r.status));
+  return r.json();
+}).then(d=>{ D=d; ui=derive(d); apply(); }).catch(()=>{ ui="error"; apply(); });
 </script>
 </body>
 </html>
