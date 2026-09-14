@@ -7,5 +7,6 @@ Public **static** receipts: fee-adjusted Polymarket scan audit, definition-match
 - History index: https://benngaihk.github.io/kairos-desk/history.json
 - Scan universe: https://benngaihk.github.io/kairos-desk/universe.json
 - Publish log: https://github.com/benngaihk/kairos-desk/commits/main
+- X: https://x.com/benngai123
 
 No signup. Poll `desk.json`; if `verdict` or `scan.after_audit` changes, the conclusion changed. Not trading advice.
