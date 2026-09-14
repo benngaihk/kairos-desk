@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Kairos Research Desk</title>
+<meta name="description" content="Odds aggregators show you a price. This desk shows whether it survives definition-match and fees."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet"/>
+<style>
+:root{--paper:#f3eee4;--ink:#1b1714;--muted:#6b6358;--rule:#d4cbbd;--card:#faf7f1;--rust:#b5441f;--moss:#2f4f3e;--lose:#8a3b2a;--win:#2f4f3e}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--paper);color:var(--ink);font-family:"Source Sans 3",system-ui,sans-serif;line-height:1.45}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:28px 22px 80px}
+header{display:flex;justify-content:space-between;align-items:center;gap:16px;border-bottom:1px solid var(--ink);padding-bottom:14px;flex-wrap:wrap}
+.brand{font-family:Fraunces,serif;font-weight:700;font-size:22px;letter-spacing:-.02em}
+.brand span{font-weight:400;font-size:13px;margin-left:10px;color:var(--muted);font-family:"Source Sans 3",sans-serif;letter-spacing:0}
+.nav{display:flex;align-items:center;gap:10px}
+.lang{display:inline-flex;border:1px solid var(--ink);font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.08em}
+.lang button{background:transparent;color:var(--ink);border:0;padding:7px 10px;cursor:pointer;font:inherit}
+.lang button.on{background:var(--ink);color:var(--paper)}
+.cta{font-family:"IBM Plex Mono",monospace;font-size:12px;text-decoration:none;border:1px solid var(--ink);padding:8px 12px;background:var(--ink);color:var(--paper)}
+.lede{margin:36px 0 8px;font-family:Fraunces,serif;font-size:clamp(28px,4.6vw,52px);line-height:1.08;font-weight:600;letter-spacing:-.03em;max-width:18em}
+.sub{color:var(--muted);max-width:38em;font-size:17px}
+.hero{margin-top:36px;border:1px solid var(--ink);background:var(--card);padding:28px 28px 22px;display:grid;grid-template-columns:1.1fr .9fr;gap:24px}
+@media(max-width:800px){.hero{grid-template-columns:1fr;padding:20px}}
+.gap-num{font-family:Fraunces,serif;font-size:clamp(72px,12vw,128px);line-height:.9;letter-spacing:-.04em;font-weight:700}
+.gap-num small{font-size:.28em;margin-left:8px;font-weight:500;letter-spacing:0}
+.gap-cap{font-family:"IBM Plex Mono",monospace;font-size:12px;text-transform:uppercase;letter-spacing:.12em;margin-top:10px;color:var(--muted)}
+.stamps{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.stamp{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;border:1.5px solid currentColor;padding:6px 10px}
+.stamp.hot{color:var(--rust);transform:rotate(-2deg)}
+.stamp.ok{color:var(--moss);transform:rotate(1.5deg)}
+.cols{display:flex;flex-direction:column;justify-content:center;gap:14px;border-left:1px solid var(--rule);padding-left:24px}
+@media(max-width:800px){.cols{border-left:0;padding-left:0;border-top:1px solid var(--rule);padding-top:18px}}
+.row{display:flex;justify-content:space-between;align-items:baseline;gap:12px;font-size:15px}
+.row b{font-family:"IBM Plex Mono",monospace;font-size:20px;font-weight:500}
+.note{font-size:13px;color:var(--muted);margin-top:8px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+@media(max-width:800px){.grid{grid-template-columns:1fr}}
+section h2{font-family:Fraunces,serif;font-size:22px;margin:36px 0 10px;font-weight:600}
+.card{border:1px solid var(--rule);background:var(--card);padding:18px 18px 14px}
+.card h3{margin:0 0 8px;font-size:13px;font-family:"IBM Plex Mono",monospace;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);font-weight:500}
+.big{font-family:Fraunces,serif;font-size:42px;font-weight:700;letter-spacing:-.03em}
+.arrow{font-family:"IBM Plex Mono",monospace;font-size:13px;margin:8px 0;color:var(--muted)}
+.chip{display:inline-block;font-family:"IBM Plex Mono",monospace;font-size:11px;padding:3px 7px;margin:2px 4px 2px 0;border:1px solid var(--rule)}
+.chip.win{border-color:var(--win);color:var(--win)}
+.chip.lose{border-color:var(--lose);color:var(--lose)}
+table{width:100%;border-collapse:collapse;font-size:14px;margin-top:8px}
+td,th{text-align:left;padding:6px 0;border-bottom:1px solid var(--rule)}
+th{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--muted);font-weight:500;text-transform:uppercase;letter-spacing:.08em}
+.vs{margin:28px 0 0;border-top:1px solid var(--ink);padding-top:18px;display:grid;grid-template-columns:1fr 1fr;gap:20px}
+@media(max-width:800px){.vs{grid-template-columns:1fr}}
+.vs h3{margin:0 0 6px;font-family:Fraunces,serif;font-size:18px}
+#access{margin-top:48px;border:1px solid var(--ink);padding:28px;background:var(--card)}
+#access h2{margin-top:0}
+form{display:grid;grid-template-columns:1fr 1fr;gap:12px 16px;margin-top:16px}
+form .full{grid-column:1/-1}
+@media(max-width:700px){form{grid-template-columns:1fr}}
+label{font-family:"IBM Plex Mono",monospace;font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);display:block;margin-bottom:4px}
+input,textarea{width:100%;font:inherit;padding:10px 12px;border:1px solid var(--ink);background:#fffdf8;color:var(--ink)}
+textarea{min-height:90px;resize:vertical}
+button.go{font-family:"IBM Plex Mono",monospace;font-size:13px;background:var(--ink);color:var(--paper);border:0;padding:12px 16px;cursor:pointer}
+button.go:hover{opacity:.88}
+.fee{display:flex;align-items:center;gap:12px;margin-top:8px}
+.fee input{accent-color:var(--ink)}
+footer{margin-top:40px;font-size:12px;color:var(--muted);border-top:1px solid var(--rule);padding-top:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="brand">Kairos <span>Research Desk 0.1</span></div>
+  <div class="nav">
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" id="btn-en" class="on">EN</button>
+      <button type="button" id="btn-zh">中文</button>
+    </div>
+    <a class="cta" href="#access" data-i="nav_access">Request access</a>
+  </div>
+</header>
+
+<p class="lede" data-i="lede">Odds aggregators show you a price. This desk shows whether it survives.</p>
+<p class="sub" data-i="sub">Definition-matched Fed mismatch. Fee-adjusted scan audit. Freeze-vs-print scorecards. Honest NO_EDGE when the bar is not met.</p>
+
+<div class="hero" id="fed">
+  <div>
+    <div class="gap-num" id="gap">—<small>pp</small></div>
+    <div class="gap-cap" data-i="gap_cap">PM exclusive +25bp vs CME-method hike bin</div>
+    <div class="stamps">
+      <span class="stamp" id="mis">—</span>
+      <span class="stamp ok" id="edge">After fees · NO_EDGE</span>
+    </div>
+    <p class="note" id="fednote"></p>
+  </div>
+  <div class="cols">
+    <div class="row"><span data-i="lab_pm">Polymarket +25bp</span><b id="pm">—</b></div>
+    <div class="row"><span data-i="lab_cme">CME-method hike bin</span><b id="cme">—</b></div>
+    <div class="row"><span data-i="lab_hold">Hold (PM / CME map)</span><b id="hold">—</b></div>
+    <p class="note" id="asof"></p>
+  </div>
+</div>
+
+<section>
+  <h2 data-i="h_audit">What changed after the audit</h2>
+  <div class="grid">
+    <div class="card">
+      <h3 id="scan_h">PM scan</h3>
+      <div class="big" id="scan_n">0</div>
+      <div class="arrow" id="scan_arrow"></div>
+      <p id="scan_verdicts"></p>
+      <p class="note" id="scan_note"></p>
+    </div>
+    <div class="card">
+      <h3><span data-i="h_fee">Fee at p =</span> <span id="pval">0.50</span></h3>
+      <div class="big" id="feen">1.25</div>
+      <div class="arrow" data-i="fee_arrow">on C = 100, rate 5% · the bit most “edge” posts skip</div>
+      <div class="fee"><input id="prange" type="range" min="1" max="99" value="50"/> <span class="note" data-i="drag">drag probability</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2 data-i="h_freeze">Freeze vs print</h2>
+  <div class="grid">
+    <div class="card">
+      <h3 id="cpi_h">CPI</h3>
+      <table><thead><tr><th data-i="th_series">Series</th><th data-i="th_actual">Actual</th><th data-i="th_modal">Modal</th></tr></thead><tbody id="cpi_body"></tbody></table>
+      <p class="note" id="cpi_note"></p>
+    </div>
+    <div class="card">
+      <h3 id="nfp_h">NFP</h3>
+      <table><thead><tr><th data-i="th_series2">Series</th><th data-i="th_actual2">Actual</th><th data-i="th_modal2">Modal</th></tr></thead><tbody id="nfp_body"></tbody></table>
+      <p class="note" id="nfp_note"></p>
+    </div>
+  </div>
+</section>
+
+<div class="vs">
+  <div>
+    <h3 data-i="is_h">What this is</h3>
+    <p data-i="is_p">A public snapshot of a research desk: mismatch flags, scan audits, scorecards. Not the engine.</p>
+  </div>
+  <div>
+    <h3 data-i="not_h">What this is not</h3>
+    <p data-i="not_p">Not an odds aggregator. Not a signal shop. Not live orders. An 8pp gap is a paper flag until fee-adjusted edge is proven.</p>
+  </div>
+</div>
+
+<section id="access">
+  <h2 data-i="acc_h">Request access</h2>
+  <p data-i="acc_p">Approved desks get the snapshot feed. No trading keys. No alpha promises.</p>
+  <form id="form">
+    <div><label for="name" data-i="f_name">Name</label><input id="name" name="name" required autocomplete="name"/></div>
+    <div><label for="email" data-i="f_email">Email</label><input id="email" name="email" type="email" required autocomplete="email"/></div>
+    <div><label for="org" data-i="f_org">Organization / desk</label><input id="org" name="org"/></div>
+    <div><label for="handle" data-i="f_handle">GitHub or X</label><input id="handle" name="handle" placeholder="@you"/></div>
+    <div class="full"><label for="use" data-i="f_use">What will you use the feed for?</label>
+      <textarea id="use" name="use" required></textarea></div>
+    <div class="full"><button class="go" type="submit" data-i="f_go">Submit access request</button></div>
+  </form>
+  <p class="note" data-i="acc_note">Files a GitHub issue on this display repo. You need to be logged into GitHub. The research engine stays private.</p>
+</section>
+
+<footer data-i="foot">Kairos Research Desk · display snapshots only · not trading advice</footer>
+</div>
+<script>
+const I18N = {
+  en: {
+    nav_access:"Request access",
+    lede:"Odds aggregators show you a price. This desk shows whether it survives.",
+    sub:"Definition-matched Fed mismatch. Fee-adjusted scan audit. Freeze-vs-print scorecards. Honest NO_EDGE when the bar is not met.",
+    gap_cap:"PM exclusive +25bp vs CME-method hike bin",
+    lab_pm:"Polymarket +25bp", lab_cme:"CME-method hike bin", lab_hold:"Hold (PM / CME map)",
+    mis_on:"Mismatch on", mis_off:"Mismatch off",
+    edge:"After fees · NO_EDGE",
+    h_audit:"What changed after the audit",
+    scan_arrow:(d)=>`${d.scan.markets} markets → ${d.scan.raw_edges} raw “edge” → ${d.scan.edges_after_fees_audit} after fees & partition check`,
+    raw:"Raw", corr:"Corrected",
+    h_fee:"Fee at p =", fee_arrow:"on C = 100, rate 5% · the bit most “edge” posts skip", drag:"drag probability",
+    h_freeze:"Freeze vs print",
+    th_series:"Series", th_actual:"Actual", th_modal:"Modal",
+    th_series2:"Series", th_actual2:"Actual", th_modal2:"Modal",
+    is_h:"What this is", is_p:"A public snapshot of a research desk: mismatch flags, scan audits, scorecards. Not the engine.",
+    not_h:"What this is not", not_p:"Not an odds aggregator. Not a signal shop. Not live orders. An 8pp gap is a paper flag until fee-adjusted edge is proven.",
+    acc_h:"Request access", acc_p:"Approved desks get the snapshot feed. No trading keys. No alpha promises.",
+    f_name:"Name", f_email:"Email", f_org:"Organization / desk", f_handle:"GitHub or X",
+    f_use:"What will you use the feed for?", f_go:"Submit access request",
+    acc_note:"Files a GitHub issue on this display repo. You need to be logged into GitHub. The research engine stays private.",
+    foot:"Kairos Research Desk · display snapshots only · not trading advice",
+    asof:(d)=>`As of ${d.as_of_cst} · ${d.fed.cme_source}`,
+    scan_h:(d)=>`PM scan · ${d.scan.as_of_cst}`
+  },
+  zh: {
+    nav_access:"申请接入",
+    lede:"盘口聚合给你一个价格。这张书桌告诉你它能不能活下来。",
+    sub:"定义对齐的美联储错配。扣费后的扫描审计。冻盘对公布的记分卡。过不了门槛就标 NO_EDGE。",
+    gap_cap:"PM 独家 +25bp 对 CME 方法加息档",
+    lab_pm:"Polymarket +25bp", lab_cme:"CME 方法加息档", lab_hold:"持有（PM / CME 映射）",
+    mis_on:"错配开", mis_off:"错配关",
+    edge:"扣费后 · NO_EDGE",
+    h_audit:"审计之后还剩什么",
+    scan_arrow:(d)=>`${d.scan.markets} 个市场 → 生结果 ${d.scan.raw_edges} 条边 → 扣费并核分区后 ${d.scan.edges_after_fees_audit}`,
+    raw:"生结果", corr:"审计后",
+    h_fee:"费率 p =", fee_arrow:"C=100、费率 5% · 多数「有边」帖会跳过这一步", drag:"拖动概率",
+    h_freeze:"冻盘对公布",
+    th_series:"系列", th_actual:"实际", th_modal:"众数",
+    th_series2:"系列", th_actual2:"实际", th_modal2:"众数",
+    is_h:"这是什么", is_p:"公开的是研究书桌快照：错配、扫描审计、记分卡。不是引擎。",
+    not_h:"这不是什么", not_p:"不是盘口聚合，不是信号店，不下单。8 个百分点只是纸面标记，除非扣费后的边被证明。",
+    acc_h:"申请接入", acc_p:"通过后给你快照源。不给交易密钥，不承诺 alpha。",
+    f_name:"姓名", f_email:"邮箱", f_org:"机构 / 书桌", f_handle:"GitHub 或 X",
+    f_use:"你要用这份源做什么？", f_go:"提交接入申请",
+    acc_note:"会在这个展示仓开 GitHub Issue。需要登录 GitHub。研究引擎保持私有。",
+    foot:"Kairos 研究书桌 · 只展示快照 · 非交易建议",
+    asof:(d)=>`截至 ${d.as_of_cst} · ${d.fed.cme_source}`,
+    scan_h:(d)=>`PM 扫描 · ${d.scan.as_of_cst}`
+  }
+};
+
+let lang = localStorage.getItem("kairos-lang") === "zh" ? "zh" : "en";
+let desk = null;
+const ISSUES = "https://github.com/benngaihk/kairos-desk/issues/new";
+
+function t(key){
+  const v = I18N[lang][key];
+  return typeof v === "function" ? v(desk) : v;
+}
+function pct(x){ return (x*100).toFixed(1) + "%"; }
+function cents(x){ return (x*100).toFixed(1) + "¢"; }
+
+function applyCopy(){
+  document.documentElement.lang = lang;
+  document.getElementById("btn-en").className = lang==="en"?"on":"";
+  document.getElementById("btn-zh").className = lang==="zh"?"on":"";
+  document.querySelectorAll("[data-i]").forEach(el=>{
+    const k = el.getAttribute("data-i");
+    const v = I18N[lang][k];
+    if(typeof v === "string") el.textContent = v;
+  });
+  if(!desk) return;
+  const f = desk.fed, s = desk.scan;
+  document.getElementById("gap").innerHTML = f.gap_pp.toFixed(1)+"<small>pp</small>";
+  const mis = document.getElementById("mis");
+  mis.textContent = t(f.mismatch_flag ? "mis_on" : "mis_off");
+  mis.className = "stamp " + (f.mismatch_flag ? "hot" : "ok");
+  document.getElementById("edge").textContent = t("edge");
+  document.getElementById("fednote").textContent = lang==="zh" ? f.note_zh : f.note_en;
+  document.getElementById("pm").textContent = cents(f.pm_hike25);
+  document.getElementById("cme").textContent = pct(f.cme_hike_bin);
+  document.getElementById("hold").textContent = cents(f.pm_hold)+" / "+pct(f.cme_hold_bin);
+  document.getElementById("asof").textContent = t("asof");
+  document.getElementById("scan_h").textContent = t("scan_h");
+  document.getElementById("scan_n").textContent = s.edges_after_fees_audit;
+  document.getElementById("scan_arrow").textContent = t("scan_arrow");
+  document.getElementById("scan_verdicts").innerHTML =
+    `${t("raw")} <span class="chip">${s.raw_verdict}</span> ${t("corr")} <span class="chip lose">${s.corrected_verdict}</span>`;
+  document.getElementById("scan_note").textContent = lang==="zh"?s.rejected_zh:s.rejected_en;
+  paintTable("cpi");
+  paintTable("nfp");
+}
+
+function paintTable(key){
+  const sc = desk.scorecards[key];
+  document.getElementById(key+"_h").textContent = lang==="zh"?sc.print_zh:sc.print_en;
+  document.getElementById(key+"_note").textContent = lang==="zh"?sc.note_zh:sc.note_en;
+  document.getElementById(key+"_body").innerHTML = sc.rows.map(r=>{
+    const name = lang==="zh"?r.name_zh:r.name_en;
+    const cls = r.result==="WIN"?"win":"lose";
+    return `<tr><td>${name}</td><td>${r.actual}</td><td><span class="chip ${cls}">${r.result}</span></td></tr>`;
+  }).join("");
+}
+
+function setLang(next){
+  lang = next;
+  localStorage.setItem("kairos-lang", lang);
+  applyCopy();
+}
+document.getElementById("btn-en").onclick = ()=>setLang("en");
+document.getElementById("btn-zh").onclick = ()=>setLang("zh");
+
+const fee = (p,c=100,r=0.05)=>c*r*p*(1-p);
+const pr = document.getElementById("prange");
+function paintFee(){
+  const p = (+pr.value)/100;
+  document.getElementById("pval").textContent = p.toFixed(2);
+  document.getElementById("feen").textContent = fee(p).toFixed(2);
+}
+pr.addEventListener("input", paintFee);
+
+document.getElementById("form").addEventListener("submit",(e)=>{
+  e.preventDefault();
+  const v = id => document.getElementById(id).value.trim();
+  const title = encodeURIComponent("Access request — "+(v("name")||"desk"));
+  const body = encodeURIComponent(
+`### Access request
+- **Name:** ${v("name")}
+- **Email:** ${v("email")}
+- **Organization / desk:** ${v("org")||"—"}
+- **GitHub or X:** ${v("handle")||"—"}
+- **Lang:** ${lang}
+
+**Use**
+${v("use")}
+
+_Filed from the Kairos desk display. Research snapshots only._
+`);
+  location.href = ISSUES+"?title="+title+"&body="+body+"&labels=access";
+});
+
+fetch("./desk.json")
+  .then(r=>r.json())
+  .then(d=>{ desk=d; applyCopy(); })
+  .catch(()=>applyCopy());
+</script>
+</body>
+</html>

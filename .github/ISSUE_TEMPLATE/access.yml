@@ -1,0 +1,26 @@
+name: Access request
+description: Ask for the snapshot feed
+title: "Access request"
+labels: ["access"]
+body:
+  - type: markdown
+    attributes:
+      value: Display site only. The research engine is private.
+  - type: input
+    id: name
+    attributes: {label: Name}
+    validations: {required: true}
+  - type: input
+    id: email
+    attributes: {label: Email}
+    validations: {required: true}
+  - type: input
+    id: org
+    attributes: {label: Organization / desk}
+  - type: input
+    id: handle
+    attributes: {label: GitHub or X}
+  - type: textarea
+    id: use
+    attributes: {label: What will you use the feed for?}
+    validations: {required: true}
