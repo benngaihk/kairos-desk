@@ -1,9 +1,9 @@
-# Kairos Research Desk (display)
+# Kairos desk (display)
 
-Public **static** snapshot page. No trading engine, no scan code, no private research tree.
+Public **static** receipts: fee-adjusted Polymarket scan audit, definition-matched Fed gap, freeze-vs-print scorecards.
 
 - Site: https://benngaihk.github.io/kairos-desk/
-- Access requests: GitHub Issues on this repo
-- Numbers live in `docs/desk.json` and are updated from a private research loop
+- Live snapshot: https://benngaihk.github.io/kairos-desk/desk.json
+- History index: https://benngaihk.github.io/kairos-desk/history.json
 
-Not trading advice.
+No signup. No trading engine in this repo. Not trading advice.

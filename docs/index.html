@@ -52,16 +52,16 @@ h2{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.14em;tex
 .pill b{display:block;font-family:Newsreader,serif;font-size:18px}
 .pill span{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--muted)}
 .cannot{color:var(--muted);font-size:14px;max-width:40em}
-#access{margin-top:48px;padding-top:20px;border-top:1px solid var(--ink)}
-form{display:grid;grid-template-columns:1fr 1fr;gap:10px 14px;margin-top:12px}
-form .full{grid-column:1/-1}
-@media(max-width:640px){form{grid-template-columns:1fr}}
-label{display:block;font:11px/1 "IBM Plex Mono",monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
-input,textarea{width:100%;border:1px solid var(--ink);background:var(--card);padding:9px 10px;font:inherit}
-textarea{min-height:80px}
-button.go{font:12px/1 "IBM Plex Mono",monospace;background:var(--ink);color:var(--bg);border:0;padding:12px 14px;cursor:pointer}
+#data{margin-top:48px;padding-top:20px;border-top:1px solid var(--ink)}
+details{margin-top:8px;font-size:13px;color:var(--muted)}
+details summary{cursor:pointer;font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink)}
+pre,code{font-family:"IBM Plex Mono",monospace;font-size:12px;background:var(--chip);padding:2px 6px}
+pre{display:block;padding:10px 12px;overflow:auto;white-space:pre-wrap}
+.recheck{margin-top:8px;padding:8px 10px;border-left:3px solid var(--ink);font-size:13px}
+#data{margin-top:48px;padding-top:20px;border-top:1px solid var(--ink)}
 footer{margin-top:36px;font:11px/1.4 "IBM Plex Mono",monospace;color:var(--muted)}
 table{width:100%;border-collapse:collapse;font-size:14px;margin-top:6px}
+th{text-align:left;font:11px/1 "IBM Plex Mono",monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);padding:4px 0}
 td{padding:5px 0;border-bottom:1px solid var(--line)}
 </style>
 </head>
@@ -71,7 +71,7 @@ td{padding:5px 0;border-bottom:1px solid var(--line)}
   <div class="mark">Kairos desk</div>
   <div class="nav">
     <div class="lang"><button type="button" id="btn-en" class="on">EN</button><button type="button" id="btn-zh">中文</button></div>
-    <a class="cta" href="#access" data-i="nav">Request access</a>
+    <a class="cta" href="#data" data-i="nav">Open JSON</a>
   </div>
 </header>
 
@@ -96,12 +96,12 @@ td{padding:5px 0;border-bottom:1px solid var(--line)}
   <div class="tile">
     <h3 id="fed_h">FOMC</h3>
     <div class="v" id="fed_v">—</div>
-    <p id="fed_p"></p>
+    <p id="fed_p"></p><div id="fed_x"></div>
   </div>
   <div class="tile">
     <h3 data-i="h_reject">Last rejected “edge”</h3>
     <div class="v" id="rej_v">REJECTED</div>
-    <p id="rej_p"></p>
+    <p id="rej_p"></p><div id="rej_x"></div>
   </div>
   <div class="tile">
     <h3 id="cpi_h">CPI</h3>
@@ -119,30 +119,29 @@ td{padding:5px 0;border-bottom:1px solid var(--line)}
 <h2 data-i="h_next">Next freeze</h2>
 <div class="cal" id="cal"></div>
 
-<h2 data-i="h_cannot">What this cannot say</h2>
-<p class="cannot" data-i="cannot">A gap between Polymarket and a CME-method bin is not a trade. A raw NegRisk sum is not an edge until every outcome is on the book. Two freeze days are not a win rate. This page is a receipt, not a signal shop.</p>
+<h2 data-i="h_method">How we audit</h2>
+<p class="cannot" id="method"></p>
 
-<section id="access">
-  <h2 data-i="acc_h">Request the snapshot feed</h2>
-  <p class="cannot" data-i="acc_p">Same numbers as JSON, updated on this page. No trading keys.</p>
-  <form id="form">
-    <div><label for="name" data-i="f_name">Name</label><input id="name" required/></div>
-    <div><label for="email" data-i="f_email">Email</label><input id="email" type="email" required/></div>
-    <div class="full"><label for="use" data-i="f_use">What for?</label><textarea id="use" required></textarea></div>
-    <div class="full"><button class="go" type="submit" data-i="f_go">File a GitHub issue</button></div>
-  </form>
+<h2 data-i="h_cannot">What this cannot say</h2>
+<p class="cannot" data-i="cannot">A gap between Polymarket and a CME-method bin is not a trade. A raw NegRisk sum is not an edge until every outcome is on the book. Fee-adjusted is not fillable: this page does not show slippage or size you can actually get. Two freeze days are not a win rate. This page is a receipt, not a signal shop.</p>
+
+<section id="data">
+  <h2 data-i="acc_h">Data</h2>
+  <p class="cannot" data-i="acc_p">No signup. Snapshots are public JSON. History is appended when the desk changes.</p>
+  <pre id="curl"></pre>
+  <p class="asof" id="hist"></p>
 </section>
 <footer data-i="foot">Kairos · snapshots only · not trading advice</footer>
 </div>
 <script>
 const I = {
   en: {
-    nav:"Request access", kicker:"Fee-adjusted edge", after:"after audit",
+    nav:"Open JSON", kicker:"Fee-adjusted edge", after:"after audit",
     h_readout:"Signal readout", h_reject:"Last rejected “edge”",
-    h_log:"Receipt log", h_next:"Next freeze", h_cannot:"What this cannot say",
-    cannot:"A gap between Polymarket and a CME-method bin is not a trade. A raw NegRisk sum is not an edge until every outcome is on the book. Two freeze days are not a win rate. This page is a receipt, not a signal shop.",
-    acc_h:"Request the snapshot feed", acc_p:"Same numbers as JSON, updated on this page. No trading keys.",
-    f_name:"Name", f_email:"Email", f_use:"What for?", f_go:"File a GitHub issue",
+    h_log:"Receipt pulse", h_next:"Next freeze", h_cannot:"What this cannot say",
+    cannot:"A gap between Polymarket and a CME-method bin is not a trade. A raw NegRisk sum is not an edge until every outcome is on the book. Fee-adjusted is not fillable: this page does not show slippage or size you can actually get. Two freeze days are not a win rate. This page is a receipt, not a signal shop.",
+    acc_h:"Data", acc_p:"No signup. Snapshots are public JSON. History is appended when the desk changes.",
+    verify:"Verify", recheck:"Re-check when", freeze:"Freeze",
     foot:"Kairos · snapshots only · not trading advice",
     sig:"Low signal · no edge",
     fed_gap:(d)=>d.fed.gap_pp.toFixed(1)+" pp",
@@ -150,12 +149,12 @@ const I = {
     frozen:"Frozen", next:"Upcoming"
   },
   zh: {
-    nav:"申请接入", kicker:"扣费后的边", after:"审计后",
+    nav:"打开 JSON", kicker:"扣费后的边", after:"审计后",
     h_readout:"信号读数", h_reject:"最近一条被毙的「边」",
     h_log:"回执", h_next:"下一场冻盘", h_cannot:"这页不能说什么",
-    cannot:"Polymarket 和 CME 方法档之间的缺口不是交易。NegRisk 加总在每个结果都有卖一之前不是边。两个冻盘日不是胜率。这是回执，不是信号店。",
-    acc_h:"申请快照源", acc_p:"和这页同一组数字的 JSON。不给交易密钥。",
-    f_name:"姓名", f_email:"邮箱", f_use:"用来做什么？", f_go:"开 GitHub Issue",
+    cannot:"Polymarket 和 CME 方法档之间的缺口不是交易。NegRisk 加总在每个结果都有卖一之前不是边。扣费后不等于能成交：这页不展示滑点和可成交量。两个冻盘日不是胜率。这是回执，不是信号店。",
+    acc_h:"数据", acc_p:"不用注册。快照是公开 JSON。书桌一变就追加历史。",
+    verify:"复核", recheck:"何时重检", freeze:"冻结",
     foot:"Kairos · 只展示快照 · 非交易建议",
     sig:"弱信号 · 无边",
     fed_gap:(d)=>d.fed.gap_pp.toFixed(1)+" 个百分点",
@@ -165,7 +164,6 @@ const I = {
 };
 let lang = localStorage.getItem("kairos-lang")==="zh"?"zh":"en";
 let D = null;
-const ISSUES = "https://github.com/benngaihk/kairos-desk/issues/new";
 const t = k => { const v=I[lang][k]; return typeof v==="function"?v(D):v; };
 function cents(x){return (x*100).toFixed(1)+"¢";}
 function pct(x){return (x*100).toFixed(1)+"%";}
@@ -190,36 +188,71 @@ function apply(){
     `<span class="stamp no">${t("mismatch")}</span><span class="stamp">${t("same")}</span><br>`+
     `PM +25bp ${cents(D.fed.pm_hike25)} · CME-method ${pct(D.fed.cme_hike_bin)}<br>`+
     (lang==="zh"?D.fed.note_zh:D.fed.note_en);
+  document.getElementById("fed_x").innerHTML = fedDetails();
   document.getElementById("rej_v").textContent = D.receipt.verdict;
   document.getElementById("rej_p").textContent = (lang==="zh"?D.receipt.reason_zh:D.receipt.reason_en);
+  document.getElementById("rej_x").innerHTML = recDetails();
   paintSc("cpi"); paintSc("nfp");
   document.getElementById("log").innerHTML =
     `<div class="row"><div class="k">${D.receipt.slug}</div><div>${lang==="zh"?D.receipt.reason_zh:D.receipt.reason_en}</div><div class="stamp no">${D.receipt.verdict}</div></div>`+
-    `<div class="row"><div class="k">fed NegRisk</div><div>net cost / share ${D.fed.negrisk_net_cps.toFixed(3)} after 5% fees</div><div class="stamp no">NO EDGE</div></div>`+
-    `<div class="row"><div class="k">scan</div><div>${D.scan.markets} markets · raw ${D.scan.raw_edges} · ${D.scan.raw_verdict} → ${D.scan.corrected_verdict}</div><div class="stamp no">${D.scan.after_audit}</div></div>`;
+    `<div class="row"><div class="k">fed NegRisk</div><div>net ${D.fed.negrisk_net_cps.toFixed(3)} @ ${D.fed.fee_rate*100}% ${D.fed.fee_rate_src}</div><div class="stamp no">NO EDGE</div></div>`+
+    `<div class="row"><div class="k">scan</div><div>${D.scan.markets} markets · raw ${D.scan.raw_edges} · ${D.scan.captured_utc}</div><div class="stamp no">${D.scan.after_audit}</div></div>`;
   document.getElementById("cal").innerHTML = D.upcoming.map(u=>
     `<div class="pill"><b>${lang==="zh"?u.zh:u.en}</b><span>${u.when} · ${u.status==="FROZEN"?t("frozen"):t("next")}</span></div>`
   ).join("");
+  if(D.method) document.getElementById("method").textContent = lang==="zh"?D.method.zh:D.method.en;
+  document.getElementById("curl").textContent =
+    "GET "+D.json_url+"\nGET "+D.history_url;
+  loadHist();
+}
+function fedDetails(){
+  const f=D.fed, b=f.books||{};
+  const rows=Object.keys(b).map(k=>{
+    const x=b[k];
+    return `<tr><td>${k}</td><td>${x.bid??"—"}</td><td>${x.ask??"—"}</td><td>${x.mid??"—"}</td><td>${x.n_bids}/${x.n_asks}</td></tr>`;
+  }).join("");
+  return `<details><summary>${t("verify")}</summary>
+    <p><a href="${f.url}">${f.slug}</a> · captured ${D.as_of_utc}</p>
+    <p>${D.fee.formula} · rate ${f.fee_rate} (${f.fee_rate_src}) · NegRisk gross ${f.negrisk_gross} → net ${f.negrisk_net_cps}</p>
+    <p>CME ${f.cme_source} asof ${f.cme_asof_utc} · future ${f.cme_future}</p>
+    <table><tr><th></th><th>bid</th><th>ask</th><th>mid</th><th>n</th></tr>${rows}</table>
+    <div class="recheck"><b>${t("recheck")}</b> ${lang==="zh"?f.recheck_zh:f.recheck_en}</div>
+  </details>`;
+}
+function recDetails(){
+  const r=D.receipt;
+  const rows=(r.legs||[]).map(L=>`<tr><td>${L.label}</td><td>${L.ask??"null"}</td><td>${L.size}</td><td>${L.market_id}</td></tr>`).join("");
+  return `<details><summary>${t("verify")}</summary>
+    <p><a href="${r.url}">${r.slug}</a> · ${r.captured_utc} · ${r.method}</p>
+    <p>${D.fee.formula} · rate ${r.fee_rate} (${r.fee_rate_src}) · missing ${r.missing}</p>
+    <p>gross ask sum ${r.gross_ask_sum} · net/share ${r.net_cost_per_share} · raw edge/share ${r.raw_edge_per_share}</p>
+    <table><tr><th>outcome</th><th>ask</th><th>size</th><th>market</th></tr>${rows}</table>
+    <div class="recheck"><b>${t("recheck")}</b> ${lang==="zh"?r.recheck_zh:r.recheck_en}</div>
+  </details>`;
 }
 function paintSc(k){
   const sc=D.scorecards[k];
   document.getElementById(k+"_h").textContent = lang==="zh"?sc.print_zh:sc.print_en;
   document.getElementById(k+"_v").textContent = sc.hits+" / "+sc.n;
-  document.getElementById(k+"_tbl").innerHTML = "<table>"+sc.rows.map(r=>{
+  const head = `<tr><th></th><th>${t("freeze")}</th><th>p</th><th></th></tr>`;
+  const body = sc.rows.map(r=>{
     const n=lang==="zh"?r.name_zh:r.name_en;
     const cls=r.result==="WIN"?"ok":"no";
-    return `<tr><td>${n}</td><td>${r.actual}</td><td><span class="stamp ${cls}">${r.result}</span></td></tr>`;
-  }).join("")+"</table>";
+    const href=r.slug?`https://polymarket.com/event/${r.slug}`:"";
+    const name=href?`<a href="${href}">${n}</a>`:n;
+    const fp=r.freeze_p!=null?r.freeze_p:"";
+    return `<tr><td>${name}</td><td>${r.modal||""} ${fp}</td><td>${r.actual}</td><td><span class="stamp ${cls}">${r.result}</span></td></tr>`;
+  }).join("");
+  document.getElementById(k+"_tbl").innerHTML = `<table>${head}${body}</table><p class="asof">${sc.freeze_cst||""} · ${lang==="zh"?sc.note_zh:sc.note_en}</p>`;
+}
+function loadHist(){
+  fetch("./history.json").then(r=>r.json()).then(h=>{
+    const rows=(h.snapshots||[]).map(s=>`<a href="${s.url}">${s.id}</a> · ${s.as_of_cst} · after_audit ${s.after_audit}`).join("<br>");
+    document.getElementById("hist").innerHTML = rows;
+  }).catch(()=>{});
 }
 document.getElementById("btn-en").onclick=()=>{lang="en";localStorage.setItem("kairos-lang","en");apply();};
 document.getElementById("btn-zh").onclick=()=>{lang="zh";localStorage.setItem("kairos-lang","zh");apply();};
-document.getElementById("form").onsubmit=e=>{
-  e.preventDefault();
-  const v=id=>document.getElementById(id).value.trim();
-  const title=encodeURIComponent("Access request — "+(v("name")||"desk"));
-  const body=encodeURIComponent(`### Access request\n- **Name:** ${v("name")}\n- **Email:** ${v("email")}\n\n${v("use")}\n`);
-  location.href=ISSUES+"?title="+title+"&body="+body+"&labels=access";
-};
 fetch("./desk.json").then(r=>r.json()).then(d=>{D=d;apply();});
 </script>
 </body>
