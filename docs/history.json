@@ -54,6 +54,19 @@
       ],
       "note_en": "Forced FOMC pre-print freeze on decision window. Scan 10:16 CST: CME hike-bin 98.6% vs PM +25bp 87.5% (gap 11.1pp). after_audit 0. Universe 830.",
       "note_zh": "FOMC 决策窗口内强制事前冻结。10:16 CST 扫描：CME 加息档 98.6% 对 PM +25bp 87.5%（缺口 11.1pp）。审计后 0。宇宙 830。"
+    },
+    {
+      "id": "2026-09-15-1636",
+      "as_of_cst": "2026-09-15 16:11 CST",
+      "published_cst": "2026-09-15 16:36 CST",
+      "after_audit": 0,
+      "url": "./history/2026-09-15-1636.json",
+      "kind": "pre-print-freeze",
+      "pre_print": [
+        "fomc-2026-09-15"
+      ],
+      "note_en": "Forced FOMC pre-print freeze on decision window. Scan 2026-09-15 16:11 CST: CME hike-bin 96.4% vs PM +25bp 87.5% (gap 8.9pp). after_audit 0. Universe 663.",
+      "note_zh": "FOMC 决策窗口内强制事前冻结。2026-09-15 16:11 CST 扫描：CME 加息档 96.4% 对 PM +25bp 87.5%（缺口 8.9pp）。审计后 0。宇宙 663。"
     }
   ],
   "universe_url": "./universe.json"
