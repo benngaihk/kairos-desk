@@ -1,6 +1,6 @@
 {
-  "policy_en": "A freeze is pre-print only if the GitHub commit time is before the official release. CPI 11 Sep and NFP 4 Sep freezes were internal; first public copy is the 14 Sep 10:20 snapshot (commit c32856a). Later same-day snapshots (14:52, 16:36) are additional public pre-print freezes for FOMC 15–16 Sep. After a print, append a result snapshot without rewriting the freeze file.",
-  "policy_zh": "只有 GitHub commit 时间早于官方公布，冻盘才算事前。CPI 9/11 和非农 9/4 的冻结当时只在内部；第一次公开是 9/14 10:20 快照（commit c32856a）。同日稍后快照（14:52、16:36）是 9/15–16 FOMC 的追加事前公开冻结。公布后只追加结果快照，不改写冻结文件。",
+  "policy_en": "A freeze is pre-print only if the GitHub commit time is before the official release. CPI 11 Sep and NFP 4 Sep freezes were internal; first public copy is the 14 Sep 10:20 snapshot (commit c32856a). Later snapshots on 14 Sep and 15 Sep are additional public pre-print freezes for FOMC 15–16 Sep. After a print, append a result snapshot without rewriting the freeze file.",
+  "policy_zh": "只有 GitHub commit 时间早于官方公布，冻盘才算事前。CPI 9/11 和非农 9/4 的冻结当时只在内部；第一次公开是 9/14 10:20 快照（commit c32856a）。9/14 与 9/15 的后续快照是 9/15–16 FOMC 的追加事前公开冻结。公布后只追加结果快照，不改写冻结文件。",
   "commits_url": "https://github.com/benngaihk/kairos-desk/commits/main",
   "snapshots": [
     {
@@ -41,6 +41,19 @@
       ],
       "note_en": "Forced FOMC pre-print freeze within 48h. Scan 16:24 CST: CME hike-bin 92.1% vs PM +25bp 79.5% (gap 12.6pp). after_audit 0.",
       "note_zh": "距 FOMC 不足 48 小时强制事前冻结。16:24 CST 扫描：CME 加息档 92.1% 对 PM +25bp 79.5%（缺口 12.6pp）。审计后 0。"
+    },
+    {
+      "id": "2026-09-15-1044",
+      "as_of_cst": "2026-09-15 10:16 CST",
+      "published_cst": "2026-09-15 10:44 CST",
+      "after_audit": 0,
+      "url": "./history/2026-09-15-1044.json",
+      "kind": "pre-print-freeze",
+      "pre_print": [
+        "fomc-2026-09-15"
+      ],
+      "note_en": "Forced FOMC pre-print freeze on decision window. Scan 10:16 CST: CME hike-bin 98.6% vs PM +25bp 87.5% (gap 11.1pp). after_audit 0. Universe 830.",
+      "note_zh": "FOMC 决策窗口内强制事前冻结。10:16 CST 扫描：CME 加息档 98.6% 对 PM +25bp 87.5%（缺口 11.1pp）。审计后 0。宇宙 830。"
     }
   ],
   "universe_url": "./universe.json"
