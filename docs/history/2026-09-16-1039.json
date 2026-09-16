@@ -1,0 +1,346 @@
+{
+  "as_of_cst": "2026-09-16 10:05 CST",
+  "as_of_utc": "2026-09-16T02:05:58Z",
+  "question_en": "Is there a fee-adjusted Polymarket edge?",
+  "question_zh": "Polymarket 上有没有扣完费的优势？",
+  "verdict": "NO",
+  "signal": "LOW",
+  "headline_en": "0 after audit",
+  "headline_zh": "审计后 0 条",
+  "sub_en": "629 markets scanned. 0 raw “edge.” 0 survived fees and a full exclusive set.",
+  "sub_zh": "扫了 629 个市场。生结果 0 条边。扣费并核完整分区后是 0。",
+  "json_url": "https://benngaihk.github.io/kairos-desk/desk.json",
+  "history_url": "https://benngaihk.github.io/kairos-desk/history.json",
+  "fee": {
+    "formula": "fee = C × feeRate × p × (1 − p)",
+    "rebate": "maker rebate ignored (not immediate)",
+    "docs": "https://docs.polymarket.com/trading/fees",
+    "note_en": "Use each market’s feeSchedule.rate when feesEnabled. Never assume 0.",
+    "note_zh": "feesEnabled 时用该市场 feeSchedule.rate，不默认 0。"
+  },
+  "fed": {
+    "event_en": "FOMC 15–16 Sep",
+    "event_zh": "9月15–16日 FOMC",
+    "slug": "fed-decision-in-september-762",
+    "url": "https://polymarket.com/event/fed-decision-in-september-762",
+    "pm_hike25": 0.875,
+    "pm_hold": 0.11499999999999999,
+    "cme_hike_bin": 0.943,
+    "cme_hold_bin": 0.057,
+    "cme_future": 96.265,
+    "cme_asof_utc": "2026-09-16T01:12:00Z",
+    "cme_source": "Altınla FedWatch / ZQU26 96.265",
+    "gap_pp": 6.8,
+    "mismatch_flag": false,
+    "negrisk_gross": 1.012,
+    "negrisk_net_cps": 1.023156,
+    "fee_rate": 0.05,
+    "fee_rate_src": "feeSchedule.rate",
+    "books": {
+      "hike25": {
+        "bid": 0.87,
+        "ask": 0.88,
+        "mid": 0.875,
+        "n_bids": 68,
+        "n_asks": 12
+      },
+      "hold": {
+        "bid": 0.11,
+        "ask": 0.12,
+        "mid": 0.11499999999999999,
+        "n_bids": 11,
+        "n_asks": 76
+      },
+      "hike50": {
+        "bid": 0.008,
+        "ask": 0.009,
+        "mid": 0.0085,
+        "n_bids": 8,
+        "n_asks": 83
+      },
+      "cut25": {
+        "bid": 0.001,
+        "ask": 0.002,
+        "mid": 0.0015,
+        "n_bids": 1,
+        "n_asks": 93
+      },
+      "cut50": {
+        "bid": null,
+        "ask": 0.001,
+        "mid": null,
+        "n_bids": 0,
+        "n_asks": 94
+      }
+    },
+    "note_en": "PM exclusive +25bp is not a CME target-rate bin. Gap 6.8pp is below the ~8–10pp mismatch bar. Buying the whole NegRisk set costs 1.0232 after 5% fees — no edge.",
+    "note_zh": "PM 独家 +25bp 不是 CME 目标利率档。缺口 6.8 个百分点低于约 8–10 个百分点的错配门槛。整组 NegRisk 扣 5% 费后成本 1.0232，无边。",
+    "recheck_en": "Re-check if: (1) contracts are definition-matched, AND (2) NegRisk net cost/share < 1 after live feeSchedule, AND (3) the expensive legs still have size.",
+    "recheck_zh": "重检条件：定义对齐，且 NegRisk 扣现费后净成本 < 1，且贵的那几条仍有深度。"
+  },
+  "receipt": {
+    "title": "Fed Decision in September?",
+    "slug": "fed-decision-in-september-762",
+    "url": "https://polymarket.com/event/fed-decision-in-september-762",
+    "event_id": "481717",
+    "captured_utc": "2026-09-16T02:05:58Z",
+    "method": "negrisk_exclusive_yes_sum",
+    "fee_rate": 0.05,
+    "fee_rate_src": "feeSchedule.rate",
+    "feesEnabled": true,
+    "C": 10.0,
+    "n_outcomes_with_ask": 5,
+    "n_markets_in_event_est": 5,
+    "missing": null,
+    "gross_ask_sum": 1.012,
+    "net_cost_per_share": 1.023156,
+    "raw_edge_per_share": -0.023156000000000176,
+    "verdict": "NO_EDGE",
+    "reason_en": "Exclusive NegRisk Yes-asks sum to 1.012; after feeSchedule.rate=0.05 net cost/share is 1.023156 (>1). No fee-adjusted edge.",
+    "reason_zh": "互斥 NegRisk Yes 卖一合计 1.012；按 feeSchedule.rate=0.05 扣费后净成本/股 1.023156（>1）。无扣费后优势。",
+    "recheck_en": "Re-check if contracts are definition-matched to CME AND NegRisk net cost/share < 1 after live feeSchedule AND expensive legs still have size.",
+    "recheck_zh": "重检条件：与 CME 定义对齐，且 NegRisk 扣现费后净成本 < 1，且贵的腿仍有深度。",
+    "legs": [
+      {
+        "label": "50+ bps decrease",
+        "ask": 0.001,
+        "size": 6245416.85,
+        "market_id": "2252242"
+      },
+      {
+        "label": "25 bps decrease",
+        "ask": 0.002,
+        "size": 822152.73,
+        "market_id": "2252243"
+      },
+      {
+        "label": "No change",
+        "ask": 0.12,
+        "size": 150194.8,
+        "market_id": "2252244"
+      },
+      {
+        "label": "25 bps increase",
+        "ask": 0.88,
+        "size": 49319.28,
+        "market_id": "2252245"
+      },
+      {
+        "label": "50+ bps increase",
+        "ask": 0.009,
+        "size": 206095.93,
+        "market_id": "2252246"
+      }
+    ]
+  },
+  "scan": {
+    "markets": 629,
+    "raw_edges": 0,
+    "after_audit": 0,
+    "near_misses": 218,
+    "raw_verdict": "NO_EDGE",
+    "corrected_verdict": "NO_EDGE",
+    "captured_utc": "2026-09-16T02:05:58Z",
+    "near_miss_filter_en": "Raw 218 is Yes+No (or exclusive-set) net within a few cents of $1. Most are 0.1¢ longshot dust. Watch list keeps incomplete partitions and econ books with real size.",
+    "near_miss_filter_zh": "原始 218 条是 Yes+No（或互斥组）扣费后净成本离 $1 只差几分。多数是 0.1¢ 长尾尘埃。观察名单只留分区不完整、以及有真实深度的经济盘。",
+    "completeness_tested": 619,
+    "negrisk_tested": 10,
+    "n_unique_market_ids": 619,
+    "universe_sha256": "2fa603d93b0095579e56dc911c3b9b92d9c974d9d42edd3bdd406bf507f8818e",
+    "count_rule_en": "629 = 619 Yes/No books + 10 NegRisk events. Full set in universe.json.",
+    "count_rule_zh": "629 = 619 个 Yes/No 盘 + 10 个 NegRisk 事件。全集在 universe.json。"
+  },
+  "scorecards": {
+    "cpi": {
+      "print_en": "11 Sep CPI",
+      "print_zh": "9月11日 CPI",
+      "freeze_utc": "2026-09-11T10:39:11Z",
+      "freeze_cst": "2026-09-11 18:39 CST",
+      "hits": 3,
+      "n": 4,
+      "note_en": "Internal T−2h freeze 11 Sep 18:39 CST; first public copy 14 Sep. n=1 day. Not a track record.",
+      "note_zh": "内部 T−2h 冻结 9/11 18:39 CST；第一次公开是 9/14。n=1，不是战绩。",
+      "rows": [
+        {
+          "name_en": "H YoY",
+          "name_zh": "整体同比",
+          "slug": "august-inflation-us-annual-1786474662954",
+          "modal": "3.4%",
+          "freeze_p": 0.485,
+          "bid": 0.48,
+          "ask": 0.49,
+          "actual": "3.4%",
+          "result": "WIN"
+        },
+        {
+          "name_en": "H MoM",
+          "name_zh": "整体环比",
+          "slug": "august-inflation-us-monthly-1786474662954",
+          "modal": "0.4%",
+          "freeze_p": 0.53,
+          "bid": 0.52,
+          "ask": 0.54,
+          "actual": "0.4%",
+          "result": "WIN"
+        },
+        {
+          "name_en": "C YoY",
+          "name_zh": "核心同比",
+          "slug": "core-cpi-yoy-august-2026-1786474662954",
+          "modal": "2.4%",
+          "freeze_p": 0.49,
+          "bid": 0.47,
+          "ask": 0.51,
+          "actual": "2.4%",
+          "result": "WIN"
+        },
+        {
+          "name_en": "C MoM",
+          "name_zh": "核心环比",
+          "slug": "core-cpi-mom-august-2026-1786474662954",
+          "modal": "0.2%",
+          "freeze_p": 0.675,
+          "bid": 0.66,
+          "ask": 0.69,
+          "actual": "0.3%",
+          "result": "LOSE"
+        }
+      ],
+      "public_before_print": false,
+      "first_public_commit": "c32856a"
+    },
+    "nfp": {
+      "print_en": "4 Sep jobs",
+      "print_zh": "9月4日非农",
+      "freeze_utc": "2026-09-04T10:23:56Z",
+      "freeze_cst": "2026-09-04 18:24 CST",
+      "hits": 1,
+      "n": 2,
+      "note_en": "Internal T−2h freeze 4 Sep 18:24 CST; first public copy 14 Sep. Street +56k. Print +162k landed in 150k+.",
+      "note_zh": "内部 T−2h 冻结 9/4 18:24 CST；第一次公开是 9/14。街上 +56k。公布 +162k 落在 150k+。",
+      "rows": [
+        {
+          "name_en": "NFP",
+          "name_zh": "非农",
+          "slug": "how-many-jobs-added-in-august-1786116586124",
+          "modal": "0–50k",
+          "freeze_p": 0.38,
+          "actual": "+162k",
+          "result": "LOSE",
+          "bid": 0.35,
+          "ask": 0.41,
+          "consensus": "+56k",
+          "consensus_bucket": "50–100k",
+          "consensus_p": 0.305
+        },
+        {
+          "name_en": "U-3",
+          "name_zh": "失业率",
+          "slug": "august-unemployment-rate-1786116586124",
+          "modal": "4.1%",
+          "freeze_p": 0.41,
+          "actual": "4.1%",
+          "result": "WIN",
+          "bid": 0.4,
+          "ask": 0.42
+        }
+      ],
+      "public_before_print": false,
+      "first_public_commit": "c32856a"
+    }
+  },
+  "upcoming": [
+    {
+      "id": "fomc",
+      "en": "FOMC",
+      "zh": "FOMC",
+      "when": "15–16 Sep",
+      "status": "FROZEN",
+      "public_freeze": true,
+      "public_freeze_id": "2026-09-16-1039"
+    },
+    {
+      "id": "nfp",
+      "en": "Sep NFP",
+      "zh": "9月非农",
+      "when": "2 Oct",
+      "status": "NEXT"
+    },
+    {
+      "id": "cpi",
+      "en": "Sep CPI",
+      "zh": "9月CPI",
+      "when": "14 Oct",
+      "status": "NEXT"
+    }
+  ],
+  "method": {
+    "en": "Audit, not a teaser. Scan exclusive NegRisk Yes-asks; reject any incomplete partition; apply that market’s feeSchedule.rate (fee = C × rate × p × (1−p); rebate ignored). A Fed gap counts only if contracts are definition-matched. Scorecards freeze T−2h modal Yes mid vs BLS first print. Engine stays private; every number on this page is in desk.json.",
+    "zh": "这是审计，不是预告页。扫互斥 NegRisk 的 Yes 卖一；分区不完整就否；用该市场 feeSchedule.rate（fee = C × rate × p × (1−p)，忽略返佣）。利率缺口只在定义对齐时才算。记分卡用 T−2h 众数 Yes mid 对 BLS 首次。引擎不公开；这页每个数都在 desk.json。"
+  },
+  "stale_after_hours": 36,
+  "publish_log": "https://github.com/benngaihk/kairos-desk/commits/main",
+  "watch": [
+    {
+      "id": "dem2028",
+      "title": "Democratic Presidential Nominee 2028",
+      "url": "https://polymarket.com/event/democratic-presidential-nominee-2028",
+      "missing_en": "Person-*/Other placeholder legs inactive. Counted 51 named asks of ~128 markets — exclusive set incomplete.",
+      "missing_zh": "Person-*/Other 占位腿未激活。约 128 个市场里只计入 51 条具名卖一——互斥组不完整。",
+      "distance_en": "Not a price miss — required outcomes are off the live exclusive set.",
+      "distance_zh": "不是价差，是缺腿。",
+      "recheck_en": "When every required nominee shows a live ask, the set is exhaustive, and sum(ask)+fees < 1 with size on every leg.",
+      "recheck_zh": "每个必须覆盖的提名人都有卖一、集合穷尽、每条有深度，且 ask+费 < 1。"
+    },
+    {
+      "id": "fed-negrisk",
+      "title": "Fed Decision in September?",
+      "url": "https://polymarket.com/event/fed-decision-in-september-762",
+      "net_cps": 1.023156,
+      "threshold": 1.0,
+      "distance_cps": 0.023156,
+      "missing_en": "NegRisk net 2.32¢ over $1 after 5% fees. Also not definition-matched to CME.",
+      "missing_zh": "NegRisk 扣 5% 费后净成本比 $1 贵 2.32¢。且与 CME 合约口径不一致。",
+      "distance_en": "2.32¢ / share above the $1 payout after fees.",
+      "distance_zh": "扣费后每股比 $1 赔付贵 2.32¢。",
+      "recheck_en": "When contracts are definition-matched AND net cost/share < 1 after live feeSchedule AND expensive legs still have size.",
+      "recheck_zh": "定义对齐，且扣现费后净成本 < 1，且贵的腿仍有深度。"
+    },
+    {
+      "id": "fed-cut25",
+      "title": "Fed −25bp after September meeting",
+      "url": "https://polymarket.com/event/will-the-fed-decrease-interest-rates-by-25-bps-after-the-september-2026-meeting-586",
+      "slug": "will-the-fed-decrease-interest-rates-by-25-bps-after-the-september-2026-meeting-586",
+      "ay": 0.002,
+      "an": 0.999,
+      "ask_size_yes": 822152.73,
+      "ask_size_no": 1715280.91,
+      "net_cps": 1.00115,
+      "threshold": 1.0,
+      "distance_cps": 0.00115,
+      "fee_rate": 0.05,
+      "missing_en": "Yes+No asks = 1.001; after 5% fees net 1.001150. Yes ask is 0.2¢ (size ~822152.7).",
+      "missing_zh": "Yes+No 卖一合计 1.001；扣 5% 费后 1.001150。Yes 卖一 0.2¢（深度约 822152.7）。",
+      "distance_en": "0.115¢ / share over $1 after fees.",
+      "distance_zh": "扣费后每股比 $1 贵 0.115¢。",
+      "recheck_en": "When Yes ask + No ask + live fees < 1 with displayed size on both sides.",
+      "recheck_zh": "两边卖一加现费 < 1，且两边都有展示深度。"
+    }
+  ],
+  "history_policy": {
+    "en": "A freeze is pre-print only if the GitHub commit time is before the official release. CPI 11 Sep and NFP 4 Sep freezes were internal; first public copy is the 14 Sep 10:20 snapshot (commit c32856a). Later snapshots on 14–16 Sep are additional public pre-print freezes for FOMC 15–16 Sep. After a print, append a result snapshot without rewriting the freeze file.",
+    "zh": "只有 GitHub commit 时间早于官方公布，冻盘才算事前。CPI 9/11 和非农 9/4 的冻结当时只在内部；第一次公开是 9/14 10:20 快照（commit c32856a）。9/14–16 的后续快照是 9/15–16 FOMC 的追加事前公开冻结。公布后只追加结果快照，不改写冻结文件。"
+  },
+  "notify": {
+    "en": "No push alerts. Poll desk.json. If verdict or scan.after_audit changes, the conclusion changed. GitHub commits are the publish log.",
+    "zh": "没有推送。轮询 desk.json。verdict 或 scan.after_audit 变了就是结论变了。GitHub commit 是发布记录。"
+  },
+  "published_cst": "2026-09-16 10:39 CST",
+  "published_note_en": "Scan captured 2026-09-16 10:05 CST. Pre-print freeze for FOMC 15–16 Sep (decision window / within 48h).",
+  "published_note_zh": "扫描采集于 2026-09-16 10:05 CST。9/15–16 FOMC 决策窗口内，追加事前公开冻结。",
+  "universe_url": "https://benngaihk.github.io/kairos-desk/universe.json",
+  "track": {
+    "en": "Countable freeze-vs-print starts at FOMC 15–16 Sep. CPI 11 Sep and NFP 4 Sep were internal.",
+    "zh": "可计分的冻盘对公布从 9/15–16 FOMC 开始。CPI 9/11 和非农 9/4 当时未公开。"
+  }
+}
