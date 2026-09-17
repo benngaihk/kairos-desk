@@ -1,0 +1,64 @@
+{
+ "id": "2026-09-17-fomc-print",
+ "kind": "result",
+ "event": "fomc-2026-09-15",
+ "as_of_cst": "2026-09-17 10:20 CST",
+ "published_cst": "2026-09-17 10:42 CST",
+ "public_freeze_id": "2026-09-16-1637",
+ "official": "+25bp to 3.75–4.00% (unanimous); effective 2026-09-17",
+ "pm_hike25_resolved_yes": true,
+ "freeze_ref": {
+  "id": "2026-09-16-1637",
+  "as_of_cst": "2026-09-16 16:06 CST",
+  "pm_hike25": 0.875,
+  "pm_hold": 0.125,
+  "cme_hike_bin": 0.964,
+  "cme_hold_bin": 0.036,
+  "cme_future": 96.2625,
+  "gap_pp": 8.9,
+  "mismatch_flag": true
+ },
+ "note_en": "Append-only print result. Last public freeze 2026-09-16-1637 had PM +25bp 0.875 vs CME hike-bin 0.964 (gap 8.9pp, mismatch_flag true). Official print +25bp. Freeze files not rewritten. Mismatch watch DONE/N_A.",
+ "note_zh": "只追加公布结果。末次公开冻结 2026-09-16-1637：PM +25bp 0.875 对 CME 加息档 0.964（缺口 8.9pp，错配标记 true）。官方公布 +25bp。冻结文件未改写。错配观察 DONE/N_A。",
+ "scorecard": {
+  "print_en": "15–16 Sep FOMC",
+  "print_zh": "9月15–16日 FOMC",
+  "freeze_utc": "2026-09-16T08:06:25.952564Z",
+  "freeze_cst": "2026-09-16 16:06 CST",
+  "public_freeze_id": "2026-09-16-1637",
+  "public_before_print": true,
+  "hits": 1,
+  "n": 1,
+  "note_en": "Public pre-print freezes 14–16 Sep (last 2026-09-16-1637). Official +25bp. Countable freeze-vs-print starts here. Mismatch watch retired post-print.",
+  "note_zh": "9/14–16 公开事前冻结（末次 2026-09-16-1637）。官方 +25bp。可计分冻盘对公布从此开始。错配观察在公布后退役。",
+  "rows": [
+   {
+    "name_en": "+25bp",
+    "name_zh": "+25bp",
+    "slug": "fed-decision-in-september-762",
+    "modal": "+25bp",
+    "freeze_p": 0.875,
+    "bid": 0.87,
+    "ask": 0.88,
+    "cme_bin": 0.964,
+    "actual": "+25bp",
+    "result": "WIN"
+   },
+   {
+    "name_en": "Hold",
+    "name_zh": "维持",
+    "slug": "fed-decision-in-september-762",
+    "modal": "hold",
+    "freeze_p": 0.125,
+    "bid": 0.12,
+    "ask": 0.13,
+    "cme_bin": 0.036,
+    "actual": "no",
+    "result": "LOSE_as_modal_was_hike"
+   }
+  ],
+  "official": "+25bp to 3.75–4.00% (unanimous); effective 2026-09-17",
+  "freeze_gap_pp": 8.9,
+  "freeze_mismatch_flag": true
+ }
+}

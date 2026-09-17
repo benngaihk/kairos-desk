@@ -1,6 +1,6 @@
 {
- "policy_en": "A freeze is pre-print only if the GitHub commit time is before the official release. CPI 11 Sep and NFP 4 Sep freezes were internal; first public copy is the 14 Sep 10:20 snapshot (commit c32856a). Later snapshots on 14–16 Sep are additional public pre-print freezes for FOMC 15–16 Sep. After a print, append a result snapshot without rewriting the freeze file.",
- "policy_zh": "只有 GitHub commit 时间早于官方公布，冻盘才算事前。CPI 9/11 和非农 9/4 的冻结当时只在内部；第一次公开是 9/14 10:20 快照（commit c32856a）。9/14–16 的后续快照是 9/15–16 FOMC 的追加事前公开冻结。公布后只追加结果快照，不改写冻结文件。",
+ "policy_en": "A freeze is pre-print only if the GitHub commit time is before the official release. CPI 11 Sep and NFP 4 Sep freezes were internal; first public copy is the 14 Sep 10:20 snapshot (commit c32856a). Later snapshots on 14–16 Sep are additional public pre-print freezes for FOMC 15–16 Sep. After the FOMC print (+25bp), this publish appends a result snapshot without rewriting freeze files. Countable freeze-vs-print starts at FOMC 15–16 Sep.",
+ "policy_zh": "只有 GitHub commit 时间早于官方公布，冻盘才算事前。CPI 9/11 和非农 9/4 的冻结当时只在内部；第一次公开是 9/14 10:20 快照（commit c32856a）。9/14–16 的后续快照是 9/15–16 FOMC 的追加事前公开冻结。FOMC 公布（+25bp）后，本次只追加结果快照，不改写冻结文件。可计分的冻盘对公布从 9/15–16 FOMC 开始。",
  "commits_url": "https://github.com/benngaihk/kairos-desk/commits/main",
  "snapshots": [
   {
@@ -93,6 +93,30 @@
    ],
    "note_en": "Forced FOMC pre-print freeze on decision window. Scan 2026-09-16 16:06 CST: CME hike-bin 0.964 vs PM +25bp 0.875 (gap 8.9pp). after_audit 0. Universe 572.",
    "note_zh": "FOMC 决策窗口内强制事前冻结。2026-09-16 16:06 CST 扫描：CME 加息档 0.964 对 PM +25bp 0.875（缺口 8.9pp）。审计后 0。宇宙 572。"
+  },
+  {
+   "id": "2026-09-17-fomc-print",
+   "as_of_cst": "2026-09-17 10:20 CST",
+   "published_cst": "2026-09-17 10:42 CST",
+   "after_audit": 0,
+   "url": "./history/2026-09-17-fomc-print.json",
+   "kind": "result",
+   "event": "fomc-2026-09-15",
+   "print": "+25bp",
+   "public_freeze_id": "2026-09-16-1637",
+   "note_en": "FOMC 15–16 Sep print result appended. Official +25bp vs freeze PM 0.875 / CME 0.964. Freeze files untouched.",
+   "note_zh": "追加 9/15–16 FOMC 公布结果。官方 +25bp，对照冻结 PM 0.875 / CME 0.964。冻结文件未改。"
+  },
+  {
+   "id": "2026-09-17-1039",
+   "as_of_cst": "2026-09-17 10:20 CST",
+   "published_cst": "2026-09-17 10:42 CST",
+   "after_audit": 0,
+   "url": "./history/2026-09-17-1039.json",
+   "kind": "scan",
+   "pre_print": [],
+   "note_en": "Post-FOMC refresh. Scan 2026-09-17 10:20 CST: markets 547, raw_edges 2 rejected (2028 placeholders + incomplete sports), after_audit 0, corrected_verdict NO_EDGE. Live Fed = October (PM +25bp 0.455 vs CME hike-bin 0.505, gap 5.0pp, mismatch_flag false). Universe 547.",
+   "note_zh": "FOMC 公布后刷新。扫描 2026-09-17 10:20 CST：市场 547，生边 2 条已否（2028 占位 + 赛后不完整体育），审计后 0，corrected_verdict NO_EDGE。在轨利率盘为十月（PM +25bp 0.455 对 CME 加息档 0.505，缺口 5.0pp，错配 false）。宇宙 547。"
   }
  ],
  "universe_url": "./universe.json"
