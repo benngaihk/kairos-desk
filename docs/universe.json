@@ -1,12 +1,12 @@
 {
- "as_of_utc": "2026-09-17T02:20:18.729135Z",
- "as_of_cst": "2026-09-17 10:20 CST",
- "n_counted": 547,
- "n_completeness": 538,
- "n_negrisk_events": 9,
- "count_rule": "547 = 538 Yes/No completeness books + 9 NegRisk events (not 547 identical objects).",
- "sha256_market_ids": "71cfe96628ed18c559cc86aa1cd490e39d43122eaaf35041133d68e285820338",
- "n_unique_market_ids": 538,
+ "as_of_utc": "2026-09-17T08:17:14.223968Z",
+ "as_of_cst": "2026-09-17 16:17 CST",
+ "n_counted": 877,
+ "n_completeness": 865,
+ "n_negrisk_events": 12,
+ "count_rule": "877 = 865 Yes/No completeness books + 12 NegRisk events (not 877 identical objects).",
+ "sha256_market_ids": "9f539cd352bf3e0cf5c7f82cd43fcb3852d68052dbd3ccd46835986e1eb73197",
+ "n_unique_market_ids": 865,
  "completeness": [
   {
    "market_id": "2589810",
@@ -202,51 +202,6 @@
    "market_id": "1130045",
    "slug": "will-party-z-gain-the-most-seats-in-the-next-russian-parliamentary-election",
    "question": "Will Party Z gain the most seats in the next Russian parliamentary election?"
-  },
-  {
-   "market_id": "4437674",
-   "slug": "mlb-mil-pit-2026-09-16",
-   "question": "Milwaukee Brewers vs. Pittsburgh Pirates"
-  },
-  {
-   "market_id": "4594717",
-   "slug": "mlb-mil-pit-2026-09-16-spread-away-1pt5",
-   "question": "Spread: Milwaukee Brewers (-1.5)"
-  },
-  {
-   "market_id": "4594737",
-   "slug": "mlb-mil-pit-2026-09-16-extra-innings",
-   "question": "Will the game go to extra innings?: Milwaukee Brewers vs. Pittsburgh Pirates"
-  },
-  {
-   "market_id": "4594793",
-   "slug": "mlb-mil-pit-2026-09-16-spread-home-2pt5",
-   "question": "Spread: Pittsburgh Pirates (-2.5)"
-  },
-  {
-   "market_id": "4594794",
-   "slug": "mlb-mil-pit-2026-09-16-spread-home-1pt5",
-   "question": "Spread: Pittsburgh Pirates (-1.5)"
-  },
-  {
-   "market_id": "4594796",
-   "slug": "mlb-mil-pit-2026-09-16-spread-away-2pt5",
-   "question": "Spread: Milwaukee Brewers (-2.5)"
-  },
-  {
-   "market_id": "4629184",
-   "slug": "mlb-mil-pit-2026-09-16-total-9pt5",
-   "question": "Milwaukee Brewers vs. Pittsburgh Pirates: O/U 9.5"
-  },
-  {
-   "market_id": "4629460",
-   "slug": "mlb-mil-pit-2026-09-16-total-10pt5",
-   "question": "Milwaukee Brewers vs. Pittsburgh Pirates: O/U 10.5"
-  },
-  {
-   "market_id": "4629471",
-   "slug": "mlb-mil-pit-2026-09-16-total-11pt5",
-   "question": "Milwaukee Brewers vs. Pittsburgh Pirates: O/U 11.5"
   },
   {
    "market_id": "561973",
@@ -889,134 +844,264 @@
    "question": "Will another person win the 2028 Republican presidential nomination?"
   },
   {
-   "market_id": "4437669",
-   "slug": "mlb-lad-cin-2026-09-16",
-   "question": "Los Angeles Dodgers vs. Cincinnati Reds"
+   "market_id": "4631209",
+   "slug": "mlb-mia-ari-2026-09-16-total-6pt5",
+   "question": "Miami Marlins vs. Arizona Diamondbacks: O/U 6.5"
   },
   {
-   "market_id": "4437670",
-   "slug": "mlb-lad-cin-2026-09-16-nrfi",
-   "question": "Will there be a run scored in the first inning?: Los Angeles Dodgers vs. Cincinnati Reds"
+   "market_id": "4517783",
+   "slug": "lol-tes-ig1-2026-09-17-game1",
+   "question": "LoL: Top Esports vs Invictus Gaming - Game 1 Winner"
   },
   {
-   "market_id": "4594632",
-   "slug": "mlb-lad-cin-2026-09-16-spread-away-1pt5",
-   "question": "Spread: Los Angeles Dodgers (-1.5)"
+   "market_id": "4517785",
+   "slug": "lol-tes-ig1-2026-09-17-game2",
+   "question": "LoL: Top Esports vs Invictus Gaming - Game 2 Winner"
   },
   {
-   "market_id": "4594633",
-   "slug": "mlb-lad-cin-2026-09-16-total-8pt5",
-   "question": "Los Angeles Dodgers vs. Cincinnati Reds: O/U 8.5"
+   "market_id": "4517787",
+   "slug": "lol-tes-ig1-2026-09-17-game3",
+   "question": "LoL: Top Esports vs Invictus Gaming - Game 3 Winner"
   },
   {
-   "market_id": "4594647",
-   "slug": "mlb-lad-cin-2026-09-16-extra-innings",
-   "question": "Will the game go to extra innings?: Los Angeles Dodgers vs. Cincinnati Reds"
+   "market_id": "4517789",
+   "slug": "lol-tes-ig1-2026-09-17-game4",
+   "question": "LoL: Top Esports vs Invictus Gaming - Game 4 Winner"
   },
   {
-   "market_id": "4594706",
-   "slug": "mlb-lad-cin-2026-09-16-spread-home-2pt5",
-   "question": "Spread: Cincinnati Reds (-2.5)"
+   "market_id": "4517791",
+   "slug": "lol-tes-ig1-2026-09-17",
+   "question": "LoL: Top Esports vs Invictus Gaming (BO5) - LPL Regional Finals Playoffs"
   },
   {
-   "market_id": "4594707",
-   "slug": "mlb-lad-cin-2026-09-16-spread-home-1pt5",
-   "question": "Spread: Cincinnati Reds (-1.5)"
+   "market_id": "4517793",
+   "slug": "lol-tes-ig1-2026-09-17-total-games-3pt5",
+   "question": "Games Total: O/U 3.5"
   },
   {
-   "market_id": "4594709",
-   "slug": "mlb-lad-cin-2026-09-16-spread-away-2pt5",
-   "question": "Spread: Los Angeles Dodgers (-2.5)"
+   "market_id": "4517795",
+   "slug": "lol-tes-ig1-2026-09-17-total-games-4pt5",
+   "question": "Games Total: O/U 4.5"
   },
   {
-   "market_id": "4594712",
-   "slug": "mlb-lad-cin-2026-09-16-total-9pt5",
-   "question": "Los Angeles Dodgers vs. Cincinnati Reds: O/U 9.5"
+   "market_id": "4517797",
+   "slug": "lol-tes-ig1-2026-09-17-game-handicap-home-1pt5",
+   "question": "Game Handicap: IG (-1.5) vs Top Esports (+1.5)"
   },
   {
-   "market_id": "4629587",
-   "slug": "mlb-lad-cin-2026-09-16-spread-home-4pt5",
-   "question": "Spread: Cincinnati Reds (-4.5)"
+   "market_id": "4517799",
+   "slug": "lol-tes-ig1-2026-09-17-game-handicap-home-2pt5",
+   "question": "Game Handicap: IG (-2.5) vs Top Esports (+2.5)"
   },
   {
-   "market_id": "4629588",
-   "slug": "mlb-lad-cin-2026-09-16-spread-home-3pt5",
-   "question": "Spread: Cincinnati Reds (-3.5)"
+   "market_id": "4517801",
+   "slug": "lol-tes-ig1-2026-09-17-game1-both-teams-slay-baron",
+   "question": "Game 1: Both Teams Slay Baron Nashor?"
   },
   {
-   "market_id": "4437700",
-   "slug": "mlb-bal-nym-2026-09-16",
-   "question": "Baltimore Orioles vs. New York Mets"
+   "market_id": "4517803",
+   "slug": "lol-tes-ig1-2026-09-17-game1-both-teams-slay-dragon",
+   "question": "Game 1: Both Teams Slay a Dragon?"
   },
   {
-   "market_id": "4594949",
-   "slug": "mlb-bal-nym-2026-09-16-spread-home-1pt5",
-   "question": "Spread: New York Mets (-1.5)"
+   "market_id": "4517805",
+   "slug": "lol-tes-ig1-2026-09-17-game1-both-teams-destroy-inhibitors",
+   "question": "Game 1: Both Teams Destroy Inhibitors?"
   },
   {
-   "market_id": "4594950",
-   "slug": "mlb-bal-nym-2026-09-16-total-8pt5",
-   "question": "Baltimore Orioles vs. New York Mets: O/U 8.5"
+   "market_id": "4517807",
+   "slug": "lol-tes-ig1-2026-09-17-game1-any-player-quadra-kill",
+   "question": "Game 1: Any Player Quadra Kill?"
   },
   {
-   "market_id": "4594958",
-   "slug": "mlb-bal-nym-2026-09-16-extra-innings",
-   "question": "Will the game go to extra innings?: Baltimore Orioles vs. New York Mets"
+   "market_id": "4517808",
+   "slug": "lol-tes-ig1-2026-09-17-game1-any-player-penta-kill",
+   "question": "Game 1: Any Player Penta Kill?"
   },
   {
-   "market_id": "4594989",
-   "slug": "mlb-bal-nym-2026-09-16-spread-home-2pt5",
-   "question": "Spread: New York Mets (-2.5)"
+   "market_id": "4517809",
+   "slug": "lol-tes-ig1-2026-09-17-game1-odd-even-total-kills",
+   "question": "Game 1: Odd/Even Total Kills?"
   },
   {
-   "market_id": "4594990",
-   "slug": "mlb-bal-nym-2026-09-16-spread-away-1pt5",
-   "question": "Spread: Baltimore Orioles (-1.5)"
+   "market_id": "4517810",
+   "slug": "lol-tes-ig1-2026-09-17-game2-both-teams-slay-baron",
+   "question": "Game 2: Both Teams Slay Baron Nashor?"
   },
   {
-   "market_id": "4594991",
-   "slug": "mlb-bal-nym-2026-09-16-spread-away-2pt5",
-   "question": "Spread: Baltimore Orioles (-2.5)"
+   "market_id": "4517811",
+   "slug": "lol-tes-ig1-2026-09-17-game2-both-teams-slay-dragon",
+   "question": "Game 2: Both Teams Slay a Dragon?"
   },
   {
-   "market_id": "4594993",
-   "slug": "mlb-bal-nym-2026-09-16-total-9pt5",
-   "question": "Baltimore Orioles vs. New York Mets: O/U 9.5"
+   "market_id": "4517812",
+   "slug": "lol-tes-ig1-2026-09-17-game2-both-teams-destroy-inhibitors",
+   "question": "Game 2: Both Teams Destroy Inhibitors?"
   },
   {
-   "market_id": "4628750",
-   "slug": "mlb-bal-nym-2026-09-16-total-10pt5",
-   "question": "Baltimore Orioles vs. New York Mets: O/U 10.5"
+   "market_id": "4517813",
+   "slug": "lol-tes-ig1-2026-09-17-game2-any-player-quadra-kill",
+   "question": "Game 2: Any Player Quadra Kill?"
   },
   {
-   "market_id": "4628996",
-   "slug": "mlb-bal-nym-2026-09-16-spread-away-4pt5",
-   "question": "Spread: Baltimore Orioles (-4.5)"
+   "market_id": "4517814",
+   "slug": "lol-tes-ig1-2026-09-17-game2-any-player-penta-kill",
+   "question": "Game 2: Any Player Penta Kill?"
   },
   {
-   "market_id": "4628997",
-   "slug": "mlb-bal-nym-2026-09-16-total-11pt5",
-   "question": "Baltimore Orioles vs. New York Mets: O/U 11.5"
+   "market_id": "4517815",
+   "slug": "lol-tes-ig1-2026-09-17-game2-odd-even-total-kills",
+   "question": "Game 2: Odd/Even Total Kills?"
   },
   {
-   "market_id": "4629003",
-   "slug": "mlb-bal-nym-2026-09-16-spread-away-5pt5",
-   "question": "Spread: Baltimore Orioles (-5.5)"
+   "market_id": "4517816",
+   "slug": "lol-tes-ig1-2026-09-17-game3-both-teams-slay-baron",
+   "question": "Game 3: Both Teams Slay Baron Nashor?"
   },
   {
-   "market_id": "4629007",
-   "slug": "mlb-bal-nym-2026-09-16-total-12pt5",
-   "question": "Baltimore Orioles vs. New York Mets: O/U 12.5"
+   "market_id": "4517817",
+   "slug": "lol-tes-ig1-2026-09-17-game3-both-teams-slay-dragon",
+   "question": "Game 3: Both Teams Slay a Dragon?"
   },
   {
-   "market_id": "4629104",
-   "slug": "mlb-bal-nym-2026-09-16-spread-away-6pt5",
-   "question": "Spread: Baltimore Orioles (-6.5)"
+   "market_id": "4517818",
+   "slug": "lol-tes-ig1-2026-09-17-game3-both-teams-destroy-inhibitors",
+   "question": "Game 3: Both Teams Destroy Inhibitors?"
   },
   {
-   "market_id": "1163699",
-   "slug": "clarity-act-signed-into-law-in-2026",
-   "question": "Clarity Act (H.R.3633) signed into law in 2026?"
+   "market_id": "4517819",
+   "slug": "lol-tes-ig1-2026-09-17-game3-any-player-quadra-kill",
+   "question": "Game 3: Any Player Quadra Kill?"
+  },
+  {
+   "market_id": "4517820",
+   "slug": "lol-tes-ig1-2026-09-17-game3-any-player-penta-kill",
+   "question": "Game 3: Any Player Penta Kill?"
+  },
+  {
+   "market_id": "4517821",
+   "slug": "lol-tes-ig1-2026-09-17-game3-odd-even-total-kills",
+   "question": "Game 3: Odd/Even Total Kills?"
+  },
+  {
+   "market_id": "4517822",
+   "slug": "lol-tes-ig1-2026-09-17-game4-both-teams-slay-baron",
+   "question": "Game 4: Both Teams Slay Baron Nashor?"
+  },
+  {
+   "market_id": "4517823",
+   "slug": "lol-tes-ig1-2026-09-17-game4-both-teams-slay-dragon",
+   "question": "Game 4: Both Teams Slay a Dragon?"
+  },
+  {
+   "market_id": "4517824",
+   "slug": "lol-tes-ig1-2026-09-17-game4-both-teams-destroy-inhibitors",
+   "question": "Game 4: Both Teams Destroy Inhibitors?"
+  },
+  {
+   "market_id": "4517825",
+   "slug": "lol-tes-ig1-2026-09-17-game4-any-player-quadra-kill",
+   "question": "Game 4: Any Player Quadra Kill?"
+  },
+  {
+   "market_id": "4517826",
+   "slug": "lol-tes-ig1-2026-09-17-game4-any-player-penta-kill",
+   "question": "Game 4: Any Player Penta Kill?"
+  },
+  {
+   "market_id": "4517827",
+   "slug": "lol-tes-ig1-2026-09-17-game4-odd-even-total-kills",
+   "question": "Game 4: Odd/Even Total Kills?"
+  },
+  {
+   "market_id": "4517828",
+   "slug": "lol-tes-ig1-2026-09-17-game5-both-teams-slay-baron",
+   "question": "Game 5: Both Teams Slay Baron Nashor?"
+  },
+  {
+   "market_id": "4517829",
+   "slug": "lol-tes-ig1-2026-09-17-game5-both-teams-slay-dragon",
+   "question": "Game 5: Both Teams Slay a Dragon?"
+  },
+  {
+   "market_id": "4517830",
+   "slug": "lol-tes-ig1-2026-09-17-game5-both-teams-destroy-inhibitors",
+   "question": "Game 5: Both Teams Destroy Inhibitors?"
+  },
+  {
+   "market_id": "4517831",
+   "slug": "lol-tes-ig1-2026-09-17-game5-any-player-quadra-kill",
+   "question": "Game 5: Any Player Quadra Kill?"
+  },
+  {
+   "market_id": "4517832",
+   "slug": "lol-tes-ig1-2026-09-17-game5-any-player-penta-kill",
+   "question": "Game 5: Any Player Penta Kill?"
+  },
+  {
+   "market_id": "4517833",
+   "slug": "lol-tes-ig1-2026-09-17-game5-odd-even-total-kills",
+   "question": "Game 5: Odd/Even Total Kills?"
+  },
+  {
+   "market_id": "4609505",
+   "slug": "lol-tes-ig1-2026-09-17-game2-first-blood",
+   "question": "First Blood in Game 2?"
+  },
+  {
+   "market_id": "4609503",
+   "slug": "lol-tes-ig1-2026-09-17-game3-first-blood",
+   "question": "First Blood in Game 3?"
+  },
+  {
+   "market_id": "4609504",
+   "slug": "lol-tes-ig1-2026-09-17-game4-first-blood",
+   "question": "First Blood in Game 4?"
+  },
+  {
+   "market_id": "4609506",
+   "slug": "lol-tes-ig1-2026-09-17-game1-first-blood",
+   "question": "First Blood in Game 1?"
+  },
+  {
+   "market_id": "4609507",
+   "slug": "lol-tes-ig1-2026-09-17-game3-kill-over-30pt5",
+   "question": "Total Kills Over/Under 30.5 in Game 3?"
+  },
+  {
+   "market_id": "4609508",
+   "slug": "lol-tes-ig1-2026-09-17-game4-kill-over-27pt5",
+   "question": "Total Kills Over/Under 27.5 in Game 4?"
+  },
+  {
+   "market_id": "4609510",
+   "slug": "lol-tes-ig1-2026-09-17-game2-kill-over-27pt5",
+   "question": "Total Kills Over/Under 27.5 in Game 2?"
+  },
+  {
+   "market_id": "4609509",
+   "slug": "lol-tes-ig1-2026-09-17-game1-kill-over-30pt5",
+   "question": "Total Kills Over/Under 30.5 in Game 1?"
+  },
+  {
+   "market_id": "4609511",
+   "slug": "lol-tes-ig1-2026-09-17-game3-kill-over-27pt5",
+   "question": "Total Kills Over/Under 27.5 in Game 3?"
+  },
+  {
+   "market_id": "4609512",
+   "slug": "lol-tes-ig1-2026-09-17-game4-kill-over-30pt5",
+   "question": "Total Kills Over/Under 30.5 in Game 4?"
+  },
+  {
+   "market_id": "4609513",
+   "slug": "lol-tes-ig1-2026-09-17-game2-kill-over-30pt5",
+   "question": "Total Kills Over/Under 30.5 in Game 2?"
+  },
+  {
+   "market_id": "4609514",
+   "slug": "lol-tes-ig1-2026-09-17-game1-kill-over-27pt5",
+   "question": "Total Kills Over/Under 27.5 in Game 1?"
   },
   {
    "market_id": "4441301",
@@ -1074,79 +1159,199 @@
    "question": "Will the price of Bitcoin be above $88,000 on September 17?"
   },
   {
-   "market_id": "4437712",
-   "slug": "mlb-bos-tex-2026-09-16",
-   "question": "Boston Red Sox vs. Texas Rangers"
+   "market_id": "1163699",
+   "slug": "clarity-act-signed-into-law-in-2026",
+   "question": "Clarity Act (H.R.3633) signed into law in 2026?"
   },
   {
-   "market_id": "4594994",
-   "slug": "mlb-bos-tex-2026-09-16-spread-away-1pt5",
-   "question": "Spread: Boston Red Sox (-1.5)"
+   "market_id": "4052413",
+   "slug": "will-bitcoin-reach-100k-in-september-2026",
+   "question": "Will Bitcoin reach $100,000 in September?"
   },
   {
-   "market_id": "4594995",
-   "slug": "mlb-bos-tex-2026-09-16-total-8pt5",
-   "question": "Boston Red Sox vs. Texas Rangers: O/U 8.5"
+   "market_id": "4052414",
+   "slug": "will-bitcoin-reach-97pt5k-in-september-2026",
+   "question": "Will Bitcoin reach $97,500 in September?"
   },
   {
-   "market_id": "4594996",
-   "slug": "mlb-bos-tex-2026-09-16-f5-spread-home-1pt5",
-   "question": "1st 5 Innings Spread: Texas Rangers (-1.5)"
+   "market_id": "4052415",
+   "slug": "will-bitcoin-reach-95k-in-september-2026",
+   "question": "Will Bitcoin reach $95,000 in September?"
   },
   {
-   "market_id": "4594997",
-   "slug": "mlb-bos-tex-2026-09-16-f5-spread-away-1pt5",
-   "question": "1st 5 Innings Spread: Boston Red Sox (-1.5)"
+   "market_id": "4052416",
+   "slug": "will-bitcoin-reach-92pt5k-in-september-2026",
+   "question": "Will Bitcoin reach $92,500 in September?"
   },
   {
-   "market_id": "4595001",
-   "slug": "mlb-bos-tex-2026-09-16-f5-total-5pt5",
-   "question": "Boston Red Sox vs. Texas Rangers: 1st 5 Innings O/U 5.5"
+   "market_id": "4052417",
+   "slug": "will-bitcoin-reach-90k-in-september-2026",
+   "question": "Will Bitcoin reach $90,000 in September?"
   },
   {
-   "market_id": "4595002",
-   "slug": "mlb-bos-tex-2026-09-16-f5-total-6pt5",
-   "question": "Boston Red Sox vs. Texas Rangers: 1st 5 Innings O/U 6.5"
+   "market_id": "4052418",
+   "slug": "will-bitcoin-reach-87pt5k-in-september-2026",
+   "question": "Will Bitcoin reach $87,500 in September?"
   },
   {
-   "market_id": "4595003",
-   "slug": "mlb-bos-tex-2026-09-16-extra-innings",
-   "question": "Will the game go to extra innings?: Boston Red Sox vs. Texas Rangers"
+   "market_id": "4052419",
+   "slug": "will-bitcoin-reach-85k-in-september-2026",
+   "question": "Will Bitcoin reach $85,000 in September?"
   },
   {
-   "market_id": "4595067",
-   "slug": "mlb-bos-tex-2026-09-16-spread-home-2pt5",
-   "question": "Spread: Texas Rangers (-2.5)"
+   "market_id": "4052420",
+   "slug": "will-bitcoin-reach-82pt5k-in-september-2026",
+   "question": "Will Bitcoin reach $82,500 in September?"
   },
   {
-   "market_id": "4595068",
-   "slug": "mlb-bos-tex-2026-09-16-spread-home-1pt5",
-   "question": "Spread: Texas Rangers (-1.5)"
+   "market_id": "4052425",
+   "slug": "will-bitcoin-dip-to-72pt5k-in-september-2026",
+   "question": "Will Bitcoin dip to $72,500 in September?"
   },
   {
-   "market_id": "4595069",
-   "slug": "mlb-bos-tex-2026-09-16-spread-away-2pt5",
-   "question": "Spread: Boston Red Sox (-2.5)"
+   "market_id": "4052427",
+   "slug": "will-bitcoin-dip-to-70k-in-september-2026",
+   "question": "Will Bitcoin dip to $70,000 in September?"
   },
   {
-   "market_id": "4595070",
-   "slug": "mlb-bos-tex-2026-09-16-total-7pt5",
-   "question": "Boston Red Sox vs. Texas Rangers: O/U 7.5"
+   "market_id": "4052429",
+   "slug": "will-bitcoin-dip-to-67pt5k-in-september-2026",
+   "question": "Will Bitcoin dip to $67,500 in September?"
   },
   {
-   "market_id": "4595071",
-   "slug": "mlb-bos-tex-2026-09-16-total-9pt5",
-   "question": "Boston Red Sox vs. Texas Rangers: O/U 9.5"
+   "market_id": "4052431",
+   "slug": "will-bitcoin-dip-to-65k-in-september-2026",
+   "question": "Will Bitcoin dip to $65,000 in September?"
   },
   {
-   "market_id": "4629167",
-   "slug": "mlb-bos-tex-2026-09-16-total-10pt5",
-   "question": "Boston Red Sox vs. Texas Rangers: O/U 10.5"
+   "market_id": "4052432",
+   "slug": "will-bitcoin-dip-to-62pt5k-in-september-2026",
+   "question": "Will Bitcoin dip to $62,500 in September?"
   },
   {
-   "market_id": "4629209",
-   "slug": "mlb-bos-tex-2026-09-16-total-11pt5",
-   "question": "Boston Red Sox vs. Texas Rangers: O/U 11.5"
+   "market_id": "4052434",
+   "slug": "will-bitcoin-dip-to-60k-in-september-2026",
+   "question": "Will Bitcoin dip to $60,000 in September?"
+  },
+  {
+   "market_id": "4052436",
+   "slug": "will-bitcoin-dip-to-57pt5k-in-september-2026",
+   "question": "Will Bitcoin dip to $57,500 in September?"
+  },
+  {
+   "market_id": "4052438",
+   "slug": "will-bitcoin-dip-to-55k-in-september-2026",
+   "question": "Will Bitcoin dip to $55,000 in September?"
+  },
+  {
+   "market_id": "4338638",
+   "slug": "will-bitcoin-reach-80k-in-september-2026-from-september-7",
+   "question": "Will Bitcoin reach $80,000 in September?"
+  },
+  {
+   "market_id": "4589616",
+   "slug": "will-bitcoin-reach-77pt5k-in-september-2026-from-september-15",
+   "question": "Will Bitcoin reach $77,500 in September?"
+  },
+  {
+   "market_id": "4617905",
+   "slug": "will-bitcoin-dip-to-75k-in-september-2026-from-september-16",
+   "question": "Will Bitcoin dip to $75,000 in September?"
+  },
+  {
+   "market_id": "4354833",
+   "slug": "elon-musk-of-tweets-september-11-september-18-2026-140-159",
+   "question": "Will Elon Musk post 140-159 tweets from September 11 to September 18, 2026?"
+  },
+  {
+   "market_id": "4354840",
+   "slug": "elon-musk-of-tweets-september-11-september-18-2026-160-179",
+   "question": "Will Elon Musk post 160-179 tweets from September 11 to September 18, 2026?"
+  },
+  {
+   "market_id": "4354848",
+   "slug": "elon-musk-of-tweets-september-11-september-18-2026-180-199",
+   "question": "Will Elon Musk post 180-199 tweets from September 11 to September 18, 2026?"
+  },
+  {
+   "market_id": "4354854",
+   "slug": "elon-musk-of-tweets-september-11-september-18-2026-200-219",
+   "question": "Will Elon Musk post 200-219 tweets from September 11 to September 18, 2026?"
+  },
+  {
+   "market_id": "4354856",
+   "slug": "elon-musk-of-tweets-september-11-september-18-2026-220-239",
+   "question": "Will Elon Musk post 220-239 tweets from September 11 to September 18, 2026?"
+  },
+  {
+   "market_id": "4354860",
+   "slug": "elon-musk-of-tweets-september-11-september-18-2026-240-259",
+   "question": "Will Elon Musk post 240-259 tweets from September 11 to September 18, 2026?"
+  },
+  {
+   "market_id": "4354861",
+   "slug": "elon-musk-of-tweets-september-11-september-18-2026-260-279",
+   "question": "Will Elon Musk post 260-279 tweets from September 11 to September 18, 2026?"
+  },
+  {
+   "market_id": "4354864",
+   "slug": "elon-musk-of-tweets-september-11-september-18-2026-280-299",
+   "question": "Will Elon Musk post 280-299 tweets from September 11 to September 18, 2026?"
+  },
+  {
+   "market_id": "4354865",
+   "slug": "elon-musk-of-tweets-september-11-september-18-2026-300-319",
+   "question": "Will Elon Musk post 300-319 tweets from September 11 to September 18, 2026?"
+  },
+  {
+   "market_id": "4354866",
+   "slug": "elon-musk-of-tweets-september-11-september-18-2026-320-339",
+   "question": "Will Elon Musk post 320-339 tweets from September 11 to September 18, 2026?"
+  },
+  {
+   "market_id": "4354867",
+   "slug": "elon-musk-of-tweets-september-11-september-18-2026-340-359",
+   "question": "Will Elon Musk post 340-359 tweets from September 11 to September 18, 2026?"
+  },
+  {
+   "market_id": "4354868",
+   "slug": "elon-musk-of-tweets-september-11-september-18-2026-360-379",
+   "question": "Will Elon Musk post 360-379 tweets from September 11 to September 18, 2026?"
+  },
+  {
+   "market_id": "4354870",
+   "slug": "elon-musk-of-tweets-september-11-september-18-2026-380-399",
+   "question": "Will Elon Musk post 380-399 tweets from September 11 to September 18, 2026?"
+  },
+  {
+   "market_id": "4354871",
+   "slug": "elon-musk-of-tweets-september-11-september-18-2026-400-419",
+   "question": "Will Elon Musk post 400-419 tweets from September 11 to September 18, 2026?"
+  },
+  {
+   "market_id": "4354872",
+   "slug": "elon-musk-of-tweets-september-11-september-18-2026-420-439",
+   "question": "Will Elon Musk post 420-439 tweets from September 11 to September 18, 2026?"
+  },
+  {
+   "market_id": "4354873",
+   "slug": "elon-musk-of-tweets-september-11-september-18-2026-440-459",
+   "question": "Will Elon Musk post 440-459 tweets from September 11 to September 18, 2026?"
+  },
+  {
+   "market_id": "4354874",
+   "slug": "elon-musk-of-tweets-september-11-september-18-2026-460-479",
+   "question": "Will Elon Musk post 460-479 tweets from September 11 to September 18, 2026?"
+  },
+  {
+   "market_id": "4354876",
+   "slug": "elon-musk-of-tweets-september-11-september-18-2026-480-499",
+   "question": "Will Elon Musk post 480-499 tweets from September 11 to September 18, 2026?"
+  },
+  {
+   "market_id": "4354878",
+   "slug": "elon-musk-of-tweets-september-11-september-18-2026-500plus",
+   "question": "Will Elon Musk post 500+ tweets from September 11 to September 18, 2026?"
   },
   {
    "market_id": "559652",
@@ -1789,256 +1994,6 @@
    "question": "Will another person win the 2028 Democratic presidential nomination?"
   },
   {
-   "market_id": "2467206",
-   "slug": "will-bitcoin-reach-95000-by-december-31-2026-from-june-8",
-   "question": "Will Bitcoin reach $95,000 by December 31, 2026?"
-  },
-  {
-   "market_id": "2467207",
-   "slug": "will-bitcoin-reach-85000-by-december-31-2026-from-june-8",
-   "question": "Will Bitcoin reach $85,000 by December 31, 2026?"
-  },
-  {
-   "market_id": "3013350",
-   "slug": "will-bitcoin-dip-to-60k-by-december-31-2026-from-july-21",
-   "question": "Will Bitcoin dip to $60,000 by December 31, 2026?"
-  },
-  {
-   "market_id": "3865960",
-   "slug": "will-bitcoin-dip-to-70000-by-december-31-2026-from-august-24",
-   "question": "Will Bitcoin dip to $70,000 by December 31, 2026?"
-  },
-  {
-   "market_id": "3865962",
-   "slug": "will-bitcoin-dip-to-65000-by-december-31-2026-from-august-24",
-   "question": "Will Bitcoin dip to $65,000 by December 31, 2026?"
-  },
-  {
-   "market_id": "701486",
-   "slug": "will-bitcoin-reach-200000-by-december-31-2026-752-232-389",
-   "question": "Will Bitcoin reach $200,000 by December 31, 2026?"
-  },
-  {
-   "market_id": "701487",
-   "slug": "will-bitcoin-reach-190000-by-december-31-2026-936-485-627",
-   "question": "Will Bitcoin reach $190,000 by December 31, 2026?"
-  },
-  {
-   "market_id": "701488",
-   "slug": "will-bitcoin-reach-180000-by-december-31-2026-629-622-598",
-   "question": "Will Bitcoin reach $180,000 by December 31, 2026?"
-  },
-  {
-   "market_id": "701489",
-   "slug": "will-bitcoin-reach-170000-by-december-31-2026-335-688-943",
-   "question": "Will Bitcoin reach $170,000 by December 31, 2026?"
-  },
-  {
-   "market_id": "701490",
-   "slug": "will-bitcoin-reach-160000-by-december-31-2026-934-934-164",
-   "question": "Will Bitcoin reach $160,000 by December 31, 2026?"
-  },
-  {
-   "market_id": "701491",
-   "slug": "will-bitcoin-reach-150000-by-december-31-2026-557-246-971",
-   "question": "Will Bitcoin reach $150,000 by December 31, 2026?"
-  },
-  {
-   "market_id": "701492",
-   "slug": "will-bitcoin-reach-140000-by-december-31-2026-131-829-299",
-   "question": "Will Bitcoin reach $140,000 by December 31, 2026?"
-  },
-  {
-   "market_id": "701493",
-   "slug": "will-bitcoin-reach-130000-by-december-31-2026-756-151-855",
-   "question": "Will Bitcoin reach $130,000 by December 31, 2026?"
-  },
-  {
-   "market_id": "701494",
-   "slug": "will-bitcoin-reach-120000-by-december-31-2026-625-425-562",
-   "question": "Will Bitcoin reach $120,000 by December 31, 2026?"
-  },
-  {
-   "market_id": "701495",
-   "slug": "will-bitcoin-reach-110000-by-december-31-2026-658-339-969",
-   "question": "Will Bitcoin reach $110,000 by December 31, 2026?"
-  },
-  {
-   "market_id": "701496",
-   "slug": "will-bitcoin-reach-100000-by-december-31-2026-571-361-361",
-   "question": "Will Bitcoin reach $100,000 by December 31, 2026?"
-  },
-  {
-   "market_id": "701501",
-   "slug": "will-bitcoin-dip-to-55000-by-december-31-2026-527-627-868-745-188-361-314-673-612-946-821-624-855-557-684-381-884-939-182-939-516",
-   "question": "Will Bitcoin dip to $55,000 by December 31, 2026?"
-  },
-  {
-   "market_id": "701502",
-   "slug": "will-bitcoin-dip-to-45000-by-december-31-2026-674-923-755-971-998-525-926-245-316-517-544-589-965-923-986-841-815-224-586-231-289-533-573",
-   "question": "Will Bitcoin dip to $45,000 by December 31, 2026?"
-  },
-  {
-   "market_id": "701503",
-   "slug": "will-bitcoin-dip-to-35000-by-december-31-2026-744-877-748-219-467-465-646-211-122-947-537-552-555-361-972-954-635-887-657-996-643",
-   "question": "Will Bitcoin dip to $35,000 by December 31, 2026?"
-  },
-  {
-   "market_id": "701504",
-   "slug": "will-bitcoin-dip-to-25000-by-december-31-2026-948-243-253-666-115-787-981-282-573-719-186-417-762-754-486-851-278-145-417-178-244",
-   "question": "Will Bitcoin dip to $25,000 by December 31, 2026?"
-  },
-  {
-   "market_id": "1057883",
-   "slug": "will-bitcoin-reach-250000-by-december-31-2026-579-442",
-   "question": "Will Bitcoin reach $250,000 by December 31, 2026?"
-  },
-  {
-   "market_id": "1057916",
-   "slug": "will-bitcoin-dip-to-15000-by-december-31-2026-416-954-417-853-885-363-335-458-585-275-615-269-479-379-516-218-918-374-598-429-212",
-   "question": "Will Bitcoin dip to $15,000 by December 31, 2026?"
-  },
-  {
-   "market_id": "1339767",
-   "slug": "will-bitcoin-dip-to-50000-by-december-31-2026-454-325-222-878-949-487-451-853-523-111",
-   "question": "Will Bitcoin dip to $50,000 by December 31, 2026?"
-  },
-  {
-   "market_id": "1339768",
-   "slug": "will-bitcoin-dip-to-40000-by-december-31-2026-593-522-842-874-931-776-991-167-531-959",
-   "question": "Will Bitcoin dip to $40,000 by December 31, 2026?"
-  },
-  {
-   "market_id": "1339769",
-   "slug": "will-bitcoin-dip-to-30000-by-december-31-2026-971-191-116-343-999-758-299-813-237",
-   "question": "Will Bitcoin dip to $30,000 by December 31, 2026?"
-  },
-  {
-   "market_id": "1343219",
-   "slug": "will-bitcoin-dip-to-20000-by-december-31-2026-121-885-178-397-354-236-731-159-857",
-   "question": "Will Bitcoin dip to $20,000 by December 31, 2026?"
-  },
-  {
-   "market_id": "1343220",
-   "slug": "will-bitcoin-dip-to-10000-by-december-31-2026-888-644-567-258-946-853-325-494-356-991",
-   "question": "Will Bitcoin dip to $10,000 by December 31, 2026?"
-  },
-  {
-   "market_id": "1343228",
-   "slug": "will-bitcoin-dip-to-5000-by-december-31-2026-jy3n-991-141-345-117-196-482-674-487-176-555",
-   "question": "Will Bitcoin dip to $5,000 by December 31, 2026?"
-  },
-  {
-   "market_id": "1345531",
-   "slug": "will-bitcoin-reach-90000-by-december-31-2026-113-862-581-343",
-   "question": "Will Bitcoin reach $90,000 by December 31, 2026?"
-  },
-  {
-   "market_id": "1393068",
-   "slug": "will-bitcoin-reach-500000-by-december-31-2026-864",
-   "question": "Will Bitcoin reach $500,000 by December 31, 2026?"
-  },
-  {
-   "market_id": "1393070",
-   "slug": "will-bitcoin-reach-1000000-by-december-31-2026-946",
-   "question": "Will Bitcoin reach $1,000,000 by December 31, 2026?"
-  },
-  {
-   "market_id": "4052413",
-   "slug": "will-bitcoin-reach-100k-in-september-2026",
-   "question": "Will Bitcoin reach $100,000 in September?"
-  },
-  {
-   "market_id": "4052414",
-   "slug": "will-bitcoin-reach-97pt5k-in-september-2026",
-   "question": "Will Bitcoin reach $97,500 in September?"
-  },
-  {
-   "market_id": "4052415",
-   "slug": "will-bitcoin-reach-95k-in-september-2026",
-   "question": "Will Bitcoin reach $95,000 in September?"
-  },
-  {
-   "market_id": "4052416",
-   "slug": "will-bitcoin-reach-92pt5k-in-september-2026",
-   "question": "Will Bitcoin reach $92,500 in September?"
-  },
-  {
-   "market_id": "4052417",
-   "slug": "will-bitcoin-reach-90k-in-september-2026",
-   "question": "Will Bitcoin reach $90,000 in September?"
-  },
-  {
-   "market_id": "4052418",
-   "slug": "will-bitcoin-reach-87pt5k-in-september-2026",
-   "question": "Will Bitcoin reach $87,500 in September?"
-  },
-  {
-   "market_id": "4052419",
-   "slug": "will-bitcoin-reach-85k-in-september-2026",
-   "question": "Will Bitcoin reach $85,000 in September?"
-  },
-  {
-   "market_id": "4052420",
-   "slug": "will-bitcoin-reach-82pt5k-in-september-2026",
-   "question": "Will Bitcoin reach $82,500 in September?"
-  },
-  {
-   "market_id": "4052425",
-   "slug": "will-bitcoin-dip-to-72pt5k-in-september-2026",
-   "question": "Will Bitcoin dip to $72,500 in September?"
-  },
-  {
-   "market_id": "4052427",
-   "slug": "will-bitcoin-dip-to-70k-in-september-2026",
-   "question": "Will Bitcoin dip to $70,000 in September?"
-  },
-  {
-   "market_id": "4052429",
-   "slug": "will-bitcoin-dip-to-67pt5k-in-september-2026",
-   "question": "Will Bitcoin dip to $67,500 in September?"
-  },
-  {
-   "market_id": "4052431",
-   "slug": "will-bitcoin-dip-to-65k-in-september-2026",
-   "question": "Will Bitcoin dip to $65,000 in September?"
-  },
-  {
-   "market_id": "4052432",
-   "slug": "will-bitcoin-dip-to-62pt5k-in-september-2026",
-   "question": "Will Bitcoin dip to $62,500 in September?"
-  },
-  {
-   "market_id": "4052434",
-   "slug": "will-bitcoin-dip-to-60k-in-september-2026",
-   "question": "Will Bitcoin dip to $60,000 in September?"
-  },
-  {
-   "market_id": "4052436",
-   "slug": "will-bitcoin-dip-to-57pt5k-in-september-2026",
-   "question": "Will Bitcoin dip to $57,500 in September?"
-  },
-  {
-   "market_id": "4052438",
-   "slug": "will-bitcoin-dip-to-55k-in-september-2026",
-   "question": "Will Bitcoin dip to $55,000 in September?"
-  },
-  {
-   "market_id": "4338638",
-   "slug": "will-bitcoin-reach-80k-in-september-2026-from-september-7",
-   "question": "Will Bitcoin reach $80,000 in September?"
-  },
-  {
-   "market_id": "4589616",
-   "slug": "will-bitcoin-reach-77pt5k-in-september-2026-from-september-15",
-   "question": "Will Bitcoin reach $77,500 in September?"
-  },
-  {
-   "market_id": "4617905",
-   "slug": "will-bitcoin-dip-to-75k-in-september-2026-from-september-16",
-   "question": "Will Bitcoin dip to $75,000 in September?"
-  },
-  {
    "market_id": "2772166",
    "slug": "will-paris-saint-germain-win-the-2026-27-uefa-champions-league-championship-20260701202025550",
    "question": "Will Paris Saint-Germain win the 2026-27 UEFA Champions League Championship?"
@@ -2259,359 +2214,2034 @@
    "question": "Will the US confirm that aliens exist before 2027?"
   },
   {
-   "market_id": "4194122",
-   "slug": "bra-bot-gre-2026-09-16-bot",
-   "question": "Will Botafogo FR win on 2026-09-16?"
+   "market_id": "608540",
+   "slug": "will-kylian-mbapp-win-the-2026-ballon-dor",
+   "question": "Will Kylian Mbappé win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4194124",
-   "slug": "bra-bot-gre-2026-09-16-draw",
-   "question": "Will Botafogo FR vs. Grêmio FBPA end in a draw?"
+   "market_id": "608541",
+   "slug": "will-erling-haaland-win-the-2026-ballon-dor",
+   "question": "Will Erling Haaland win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4194125",
-   "slug": "bra-bot-gre-2026-09-16-gre",
-   "question": "Will Grêmio FBPA win on 2026-09-16?"
+   "market_id": "608542",
+   "slug": "will-jude-bellingham-win-the-2026-ballon-dor",
+   "question": "Will Jude Bellingham win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4354833",
-   "slug": "elon-musk-of-tweets-september-11-september-18-2026-140-159",
-   "question": "Will Elon Musk post 140-159 tweets from September 11 to September 18, 2026?"
+   "market_id": "608543",
+   "slug": "will-ousmane-dembl-win-the-2026-ballon-dor",
+   "question": "Will Ousmane Dembélé win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4354840",
-   "slug": "elon-musk-of-tweets-september-11-september-18-2026-160-179",
-   "question": "Will Elon Musk post 160-179 tweets from September 11 to September 18, 2026?"
+   "market_id": "608545",
+   "slug": "will-lamine-yamal-win-the-2026-ballon-dor",
+   "question": "Will Lamine Yamal win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4354848",
-   "slug": "elon-musk-of-tweets-september-11-september-18-2026-180-199",
-   "question": "Will Elon Musk post 180-199 tweets from September 11 to September 18, 2026?"
+   "market_id": "608546",
+   "slug": "will-vincius-jnior-win-the-2026-ballon-dor",
+   "question": "Will Vinícius Júnior win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4354854",
-   "slug": "elon-musk-of-tweets-september-11-september-18-2026-200-219",
-   "question": "Will Elon Musk post 200-219 tweets from September 11 to September 18, 2026?"
+   "market_id": "608547",
+   "slug": "will-harry-kane-win-the-2026-ballon-dor",
+   "question": "Will Harry Kane win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4354856",
-   "slug": "elon-musk-of-tweets-september-11-september-18-2026-220-239",
-   "question": "Will Elon Musk post 220-239 tweets from September 11 to September 18, 2026?"
+   "market_id": "608550",
+   "slug": "will-someone-else-win-the-2026-ballon-dor",
+   "question": "Will someone else win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4354860",
-   "slug": "elon-musk-of-tweets-september-11-september-18-2026-240-259",
-   "question": "Will Elon Musk post 240-259 tweets from September 11 to September 18, 2026?"
+   "market_id": "608551",
+   "slug": "will-michael-olise-win-the-2026-ballon-dor",
+   "question": "Will Michael Olise win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4354861",
-   "slug": "elon-musk-of-tweets-september-11-september-18-2026-260-279",
-   "question": "Will Elon Musk post 260-279 tweets from September 11 to September 18, 2026?"
+   "market_id": "608552",
+   "slug": "will-declan-rice-win-the-2026-ballon-dor",
+   "question": "Will Declan Rice win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4354864",
-   "slug": "elon-musk-of-tweets-september-11-september-18-2026-280-299",
-   "question": "Will Elon Musk post 280-299 tweets from September 11 to September 18, 2026?"
+   "market_id": "608553",
+   "slug": "will-khvicha-kvaratskhelia-win-the-2026-ballon-dor",
+   "question": "Will Khvicha Kvaratskhelia win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4354865",
-   "slug": "elon-musk-of-tweets-september-11-september-18-2026-300-319",
-   "question": "Will Elon Musk post 300-319 tweets from September 11 to September 18, 2026?"
+   "market_id": "608554",
+   "slug": "will-vitinha-win-the-2026-ballon-dor",
+   "question": "Will Vitinha win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4354866",
-   "slug": "elon-musk-of-tweets-september-11-september-18-2026-320-339",
-   "question": "Will Elon Musk post 320-339 tweets from September 11 to September 18, 2026?"
+   "market_id": "608559",
+   "slug": "will-achraf-hakimi-win-the-2026-ballon-dor",
+   "question": "Will Achraf Hakimi win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4354867",
-   "slug": "elon-musk-of-tweets-september-11-september-18-2026-340-359",
-   "question": "Will Elon Musk post 340-359 tweets from September 11 to September 18, 2026?"
+   "market_id": "608560",
+   "slug": "will-bruno-fernandes-win-the-2026-ballon-dor",
+   "question": "Will Bruno Fernandes win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4354868",
-   "slug": "elon-musk-of-tweets-september-11-september-18-2026-360-379",
-   "question": "Will Elon Musk post 360-379 tweets from September 11 to September 18, 2026?"
+   "market_id": "608561",
+   "slug": "will-luis-diaz-win-the-2026-ballon-dor",
+   "question": "Will Luis Diaz win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4354870",
-   "slug": "elon-musk-of-tweets-september-11-september-18-2026-380-399",
-   "question": "Will Elon Musk post 380-399 tweets from September 11 to September 18, 2026?"
+   "market_id": "608562",
+   "slug": "will-lautaro-martinez-win-the-2026-ballon-dor",
+   "question": "Will Lautaro Martinez win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4354871",
-   "slug": "elon-musk-of-tweets-september-11-september-18-2026-400-419",
-   "question": "Will Elon Musk post 400-419 tweets from September 11 to September 18, 2026?"
+   "market_id": "608565",
+   "slug": "will-lionel-messi-win-the-2026-ballon-dor",
+   "question": "Will Lionel Messi win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4354872",
-   "slug": "elon-musk-of-tweets-september-11-september-18-2026-420-439",
-   "question": "Will Elon Musk post 420-439 tweets from September 11 to September 18, 2026?"
+   "market_id": "608566",
+   "slug": "will-rodri-win-the-2026-ballon-dor",
+   "question": "Will Rodri win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4354873",
-   "slug": "elon-musk-of-tweets-september-11-september-18-2026-440-459",
-   "question": "Will Elon Musk post 440-459 tweets from September 11 to September 18, 2026?"
+   "market_id": "608567",
+   "slug": "will-pau-cubarsi-win-the-2026-ballon-dor",
+   "question": "Will Pau Cubarsi win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4354874",
-   "slug": "elon-musk-of-tweets-september-11-september-18-2026-460-479",
-   "question": "Will Elon Musk post 460-479 tweets from September 11 to September 18, 2026?"
+   "market_id": "608568",
+   "slug": "will-fabian-ruiz-win-the-2026-ballon-dor",
+   "question": "Will Fabian Ruiz win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4354876",
-   "slug": "elon-musk-of-tweets-september-11-september-18-2026-480-499",
-   "question": "Will Elon Musk post 480-499 tweets from September 11 to September 18, 2026?"
+   "market_id": "608572",
+   "slug": "will-gavi-win-the-2026-ballon-dor",
+   "question": "Will Gavi win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4354878",
-   "slug": "elon-musk-of-tweets-september-11-september-18-2026-500plus",
-   "question": "Will Elon Musk post 500+ tweets from September 11 to September 18, 2026?"
+   "market_id": "608573",
+   "slug": "will-placeholder-w-win-the-2026-ballon-dor",
+   "question": "Will [Placeholder W] win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4591962",
-   "slug": "atp-djere-mikrut-2026-09-16-game-handicap-home-3pt5",
-   "question": "Game Spread: Laslo Djere (-3.5) vs Luka Mikrut (+3.5)"
+   "market_id": "608574",
+   "slug": "will-placeholder-x-win-the-2026-ballon-dor",
+   "question": "Will [Placeholder X] win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4437719",
-   "slug": "mlb-kc-hou-2026-09-16",
-   "question": "Kansas City Royals vs. Houston Astros"
+   "market_id": "608575",
+   "slug": "will-placeholder-y-win-the-2026-ballon-dor",
+   "question": "Will [Placeholder Y] win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4437721",
-   "slug": "mlb-kc-hou-2026-09-16-nrfi",
-   "question": "Will there be a run scored in the first inning?: Kansas City Royals vs. Houston Astros"
+   "market_id": "608576",
+   "slug": "will-placeholder-z-win-the-2026-ballon-dor",
+   "question": "Will [Placeholder Z] win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4595072",
-   "slug": "mlb-kc-hou-2026-09-16-spread-home-1pt5",
-   "question": "Spread: Houston Astros (-1.5)"
+   "market_id": "608577",
+   "slug": "will-placeholder-aa-win-the-2026-ballon-dor",
+   "question": "Will [Placeholder AA] win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4595074",
-   "slug": "mlb-kc-hou-2026-09-16-total-9pt5",
-   "question": "Kansas City Royals vs. Houston Astros: O/U 9.5"
+   "market_id": "608578",
+   "slug": "will-placeholder-ab-win-the-2026-ballon-dor",
+   "question": "Will [Placeholder AB] win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4595089",
-   "slug": "mlb-kc-hou-2026-09-16-extra-innings",
-   "question": "Will the game go to extra innings?: Kansas City Royals vs. Houston Astros"
+   "market_id": "608579",
+   "slug": "will-placeholder-ac-win-the-2026-ballon-dor",
+   "question": "Will [Placeholder AC] win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4595145",
-   "slug": "mlb-kc-hou-2026-09-16-spread-home-2pt5",
-   "question": "Spread: Houston Astros (-2.5)"
+   "market_id": "608580",
+   "slug": "will-placeholder-ad-win-the-2026-ballon-dor",
+   "question": "Will [Placeholder AD] win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4595146",
-   "slug": "mlb-kc-hou-2026-09-16-spread-away-1pt5",
-   "question": "Spread: Kansas City Royals (-1.5)"
+   "market_id": "608581",
+   "slug": "will-placeholder-ae-win-the-2026-ballon-dor",
+   "question": "Will [Placeholder AE] win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4595147",
-   "slug": "mlb-kc-hou-2026-09-16-spread-away-2pt5",
-   "question": "Spread: Kansas City Royals (-2.5)"
+   "market_id": "608582",
+   "slug": "will-placeholder-af-win-the-2026-ballon-dor",
+   "question": "Will [Placeholder AF] win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4595148",
-   "slug": "mlb-kc-hou-2026-09-16-total-10pt5",
-   "question": "Kansas City Royals vs. Houston Astros: O/U 10.5"
+   "market_id": "608583",
+   "slug": "will-placeholder-ag-win-the-2026-ballon-dor",
+   "question": "Will [Placeholder AG] win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4595149",
-   "slug": "mlb-kc-hou-2026-09-16-total-8pt5",
-   "question": "Kansas City Royals vs. Houston Astros: O/U 8.5"
+   "market_id": "608584",
+   "slug": "will-placeholder-ah-win-the-2026-ballon-dor",
+   "question": "Will [Placeholder AH] win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4629221",
-   "slug": "mlb-kc-hou-2026-09-16-total-7pt5",
-   "question": "Kansas City Royals vs. Houston Astros: O/U 7.5"
+   "market_id": "608585",
+   "slug": "will-placeholder-ai-win-the-2026-ballon-dor",
+   "question": "Will [Placeholder AI] win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4629396",
-   "slug": "mlb-kc-hou-2026-09-16-total-6pt5",
-   "question": "Kansas City Royals vs. Houston Astros: O/U 6.5"
+   "market_id": "608586",
+   "slug": "will-placeholder-aj-win-the-2026-ballon-dor",
+   "question": "Will [Placeholder AJ] win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4629459",
-   "slug": "mlb-kc-hou-2026-09-16-total-5pt5",
-   "question": "Kansas City Royals vs. Houston Astros: O/U 5.5"
+   "market_id": "608587",
+   "slug": "will-placeholder-ak-win-the-2026-ballon-dor",
+   "question": "Will [Placeholder AK] win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4629801",
-   "slug": "mlb-kc-hou-2026-09-16-total-4pt5",
-   "question": "Kansas City Royals vs. Houston Astros: O/U 4.5"
+   "market_id": "608588",
+   "slug": "will-placeholder-al-win-the-2026-ballon-dor",
+   "question": "Will [Placeholder AL] win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4629905",
-   "slug": "mlb-kc-hou-2026-09-16-total-3pt5",
-   "question": "Kansas City Royals vs. Houston Astros: O/U 3.5"
+   "market_id": "608589",
+   "slug": "will-placeholder-am-win-the-2026-ballon-dor",
+   "question": "Will [Placeholder AM] win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4437733",
-   "slug": "mlb-sd-col-2026-09-16",
-   "question": "San Diego Padres vs. Colorado Rockies"
+   "market_id": "608590",
+   "slug": "will-placeholder-an-win-the-2026-ballon-dor",
+   "question": "Will [Placeholder AN] win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4595150",
-   "slug": "mlb-sd-col-2026-09-16-spread-away-1pt5",
-   "question": "Spread: San Diego Padres (-1.5)"
+   "market_id": "608591",
+   "slug": "will-placeholder-ao-win-the-2026-ballon-dor",
+   "question": "Will [Placeholder AO] win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4595151",
-   "slug": "mlb-sd-col-2026-09-16-total-11pt5",
-   "question": "San Diego Padres vs. Colorado Rockies: O/U 11.5"
+   "market_id": "608592",
+   "slug": "will-placeholder-ap-win-the-2026-ballon-dor",
+   "question": "Will [Placeholder AP] win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4595152",
-   "slug": "mlb-sd-col-2026-09-16-f5-spread-home-1pt5",
-   "question": "1st 5 Innings Spread: Colorado Rockies (-1.5)"
+   "market_id": "608593",
+   "slug": "will-placeholder-aq-win-the-2026-ballon-dor",
+   "question": "Will [Placeholder AQ] win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4595153",
-   "slug": "mlb-sd-col-2026-09-16-f5-spread-away-1pt5",
-   "question": "1st 5 Innings Spread: San Diego Padres (-1.5)"
+   "market_id": "608594",
+   "slug": "will-placeholder-ar-win-the-2026-ballon-dor",
+   "question": "Will [Placeholder AR] win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4595156",
-   "slug": "mlb-sd-col-2026-09-16-f5-total-4pt5",
-   "question": "San Diego Padres vs. Colorado Rockies: 1st 5 Innings O/U 4.5"
+   "market_id": "608595",
+   "slug": "will-placeholder-as-win-the-2026-ballon-dor",
+   "question": "Will [Placeholder AS] win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4595157",
-   "slug": "mlb-sd-col-2026-09-16-f5-total-5pt5",
-   "question": "San Diego Padres vs. Colorado Rockies: 1st 5 Innings O/U 5.5"
+   "market_id": "608596",
+   "slug": "will-placeholder-at-win-the-2026-ballon-dor",
+   "question": "Will [Placeholder AT] win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4595158",
-   "slug": "mlb-sd-col-2026-09-16-f5-total-6pt5",
-   "question": "San Diego Padres vs. Colorado Rockies: 1st 5 Innings O/U 6.5"
+   "market_id": "608597",
+   "slug": "will-placeholder-au-win-the-2026-ballon-dor",
+   "question": "Will [Placeholder AU] win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4595159",
-   "slug": "mlb-sd-col-2026-09-16-extra-innings",
-   "question": "Will the game go to extra innings?: San Diego Padres vs. Colorado Rockies"
+   "market_id": "608598",
+   "slug": "will-placeholder-av-win-the-2026-ballon-dor",
+   "question": "Will [Placeholder AV] win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4595190",
-   "slug": "mlb-sd-col-2026-09-16-spread-home-1pt5",
-   "question": "Spread: Colorado Rockies (-1.5)"
+   "market_id": "608599",
+   "slug": "will-placeholder-aw-win-the-2026-ballon-dor",
+   "question": "Will [Placeholder AW] win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4595191",
-   "slug": "mlb-sd-col-2026-09-16-spread-home-2pt5",
-   "question": "Spread: Colorado Rockies (-2.5)"
+   "market_id": "608600",
+   "slug": "will-placeholder-ax-win-the-2026-ballon-dor",
+   "question": "Will [Placeholder AX] win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4595192",
-   "slug": "mlb-sd-col-2026-09-16-spread-away-2pt5",
-   "question": "Spread: San Diego Padres (-2.5)"
+   "market_id": "608601",
+   "slug": "will-placeholder-ay-win-the-2026-ballon-dor",
+   "question": "Will [Placeholder AY] win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4595193",
-   "slug": "mlb-sd-col-2026-09-16-total-10pt5",
-   "question": "San Diego Padres vs. Colorado Rockies: O/U 10.5"
+   "market_id": "608602",
+   "slug": "will-placeholder-az-win-the-2026-ballon-dor",
+   "question": "Will [Placeholder AZ] win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4595194",
-   "slug": "mlb-sd-col-2026-09-16-total-12pt5",
-   "question": "San Diego Padres vs. Colorado Rockies: O/U 12.5"
+   "market_id": "608603",
+   "slug": "will-placeholder-ba-win-the-2026-ballon-dor",
+   "question": "Will [Placeholder BA] win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4629469",
-   "slug": "mlb-sd-col-2026-09-16-spread-away-3pt5",
-   "question": "Spread: San Diego Padres (-3.5)"
+   "market_id": "608604",
+   "slug": "will-placeholder-bb-win-the-2026-ballon-dor",
+   "question": "Will [Placeholder BB] win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4629470",
-   "slug": "mlb-sd-col-2026-09-16-total-13pt5",
-   "question": "San Diego Padres vs. Colorado Rockies: O/U 13.5"
+   "market_id": "608605",
+   "slug": "will-placeholder-bc-win-the-2026-ballon-dor",
+   "question": "Will [Placeholder BC] win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4629847",
-   "slug": "mlb-sd-col-2026-09-16-spread-away-4pt5",
-   "question": "Spread: San Diego Padres (-4.5)"
+   "market_id": "608606",
+   "slug": "will-placeholder-bd-win-the-2026-ballon-dor",
+   "question": "Will [Placeholder BD] win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4629906",
-   "slug": "mlb-sd-col-2026-09-16-spread-away-5pt5",
-   "question": "Spread: San Diego Padres (-5.5)"
+   "market_id": "608607",
+   "slug": "will-placeholder-be-win-the-2026-ballon-dor",
+   "question": "Will [Placeholder BE] win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4604371",
-   "slug": "will-bitcoin-reach-83k-on-september-16-2026",
-   "question": "Will Bitcoin reach $83,000 on September 16?"
+   "market_id": "608608",
+   "slug": "will-placeholder-bf-win-the-2026-ballon-dor",
+   "question": "Will [Placeholder BF] win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4604372",
-   "slug": "will-bitcoin-reach-82k-on-september-16-2026",
-   "question": "Will Bitcoin reach $82,000 on September 16?"
+   "market_id": "608609",
+   "slug": "will-placeholder-bg-win-the-2026-ballon-dor",
+   "question": "Will [Placeholder BG] win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4604373",
-   "slug": "will-bitcoin-reach-81k-on-september-16-2026",
-   "question": "Will Bitcoin reach $81,000 on September 16?"
+   "market_id": "608610",
+   "slug": "will-placeholder-bh-win-the-2026-ballon-dor",
+   "question": "Will [Placeholder BH] win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4604374",
-   "slug": "will-bitcoin-reach-80k-on-september-16-2026",
-   "question": "Will Bitcoin reach $80,000 on September 16?"
+   "market_id": "608611",
+   "slug": "will-placeholder-bi-win-the-2026-ballon-dor",
+   "question": "Will [Placeholder BI] win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4604375",
-   "slug": "will-bitcoin-reach-79k-on-september-16-2026",
-   "question": "Will Bitcoin reach $79,000 on September 16?"
+   "market_id": "608612",
+   "slug": "will-placeholder-bj-win-the-2026-ballon-dor",
+   "question": "Will [Placeholder BJ] win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4604376",
-   "slug": "will-bitcoin-reach-78k-on-september-16-2026",
-   "question": "Will Bitcoin reach $78,000 on September 16?"
+   "market_id": "608613",
+   "slug": "will-placeholder-bk-win-the-2026-ballon-dor",
+   "question": "Will [Placeholder BK] win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4604377",
-   "slug": "will-bitcoin-reach-77k-on-september-16-2026",
-   "question": "Will Bitcoin reach $77,000 on September 16?"
+   "market_id": "608614",
+   "slug": "will-placeholder-bl-win-the-2026-ballon-dor",
+   "question": "Will [Placeholder BL] win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4604379",
-   "slug": "will-bitcoin-dip-to-75k-on-september-16-2026",
-   "question": "Will Bitcoin dip to $75,000 on September 16?"
+   "market_id": "608615",
+   "slug": "will-placeholder-bm-win-the-2026-ballon-dor",
+   "question": "Will [Placeholder BM] win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4604380",
-   "slug": "will-bitcoin-dip-to-74k-on-september-16-2026",
-   "question": "Will Bitcoin dip to $74,000 on September 16?"
+   "market_id": "608616",
+   "slug": "will-placeholder-bn-win-the-2026-ballon-dor",
+   "question": "Will [Placeholder BN] win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4604381",
-   "slug": "will-bitcoin-dip-to-73k-on-september-16-2026",
-   "question": "Will Bitcoin dip to $73,000 on September 16?"
+   "market_id": "608617",
+   "slug": "will-placeholder-bo-win-the-2026-ballon-dor",
+   "question": "Will [Placeholder BO] win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4604383",
-   "slug": "will-bitcoin-dip-to-72k-on-september-16-2026",
-   "question": "Will Bitcoin dip to $72,000 on September 16?"
+   "market_id": "608618",
+   "slug": "will-placeholder-bp-win-the-2026-ballon-dor",
+   "question": "Will [Placeholder BP] win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4604384",
-   "slug": "will-bitcoin-dip-to-71k-on-september-16-2026",
-   "question": "Will Bitcoin dip to $71,000 on September 16?"
+   "market_id": "608619",
+   "slug": "will-placeholder-bq-win-the-2026-ballon-dor",
+   "question": "Will [Placeholder BQ] win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4604385",
-   "slug": "will-bitcoin-dip-to-70k-on-september-16-2026",
-   "question": "Will Bitcoin dip to $70,000 on September 16?"
+   "market_id": "608620",
+   "slug": "will-placeholder-br-win-the-2026-ballon-dor",
+   "question": "Will [Placeholder BR] win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4604386",
-   "slug": "will-bitcoin-dip-to-69k-on-september-16-2026",
-   "question": "Will Bitcoin dip to $69,000 on September 16?"
+   "market_id": "608621",
+   "slug": "will-placeholder-bs-win-the-2026-ballon-dor",
+   "question": "Will [Placeholder BS] win the 2026 Ballon d'Or?"
   },
   {
-   "market_id": "4604387",
-   "slug": "will-bitcoin-dip-to-68k-on-september-16-2026",
-   "question": "Will Bitcoin dip to $68,000 on September 16?"
+   "market_id": "608622",
+   "slug": "will-placeholder-bt-win-the-2026-ballon-dor",
+   "question": "Will [Placeholder BT] win the 2026 Ballon d'Or?"
+  },
+  {
+   "market_id": "608623",
+   "slug": "will-placeholder-bu-win-the-2026-ballon-dor",
+   "question": "Will [Placeholder BU] win the 2026 Ballon d'Or?"
+  },
+  {
+   "market_id": "608624",
+   "slug": "will-placeholder-bv-win-the-2026-ballon-dor",
+   "question": "Will [Placeholder BV] win the 2026 Ballon d'Or?"
+  },
+  {
+   "market_id": "608625",
+   "slug": "will-placeholder-bw-win-the-2026-ballon-dor",
+   "question": "Will [Placeholder BW] win the 2026 Ballon d'Or?"
+  },
+  {
+   "market_id": "608626",
+   "slug": "will-placeholder-bx-win-the-2026-ballon-dor",
+   "question": "Will [Placeholder BX] win the 2026 Ballon d'Or?"
+  },
+  {
+   "market_id": "608627",
+   "slug": "will-placeholder-by-win-the-2026-ballon-dor",
+   "question": "Will [Placeholder BY] win the 2026 Ballon d'Or?"
+  },
+  {
+   "market_id": "608628",
+   "slug": "will-placeholder-bz-win-the-2026-ballon-dor",
+   "question": "Will [Placeholder BZ] win the 2026 Ballon d'Or?"
+  },
+  {
+   "market_id": "4600028",
+   "slug": "wta-marista-ribera-2026-09-16",
+   "question": "Valencia: Guiomar Maristany vs Marina Bassols Ribera"
+  },
+  {
+   "market_id": "4600029",
+   "slug": "wta-marista-ribera-2026-09-16-completed-match",
+   "question": "Valencia: Completed Match: Guiomar Maristany vs Marina Bassols Ribera"
+  },
+  {
+   "market_id": "4600778",
+   "slug": "wta-marista-ribera-2026-09-16-game-handicap-away-0pt5",
+   "question": "Game Spread: Marina Bassols Ribera (-0.5) vs Guiomar Maristany (+0.5)"
+  },
+  {
+   "market_id": "679018",
+   "slug": "will-marine-le-pen-win-the-2027-french-presidential-election",
+   "question": "Will Marine Le Pen win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679019",
+   "slug": "will-jordan-bardella-win-the-2027-french-presidential-election",
+   "question": "Will Jordan Bardella win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679020",
+   "slug": "will-ric-zemmour-win-the-2027-french-presidential-election",
+   "question": "Will Éric Zemmour win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679021",
+   "slug": "will-douard-philippe-win-the-2027-french-presidential-election",
+   "question": "Will Édouard Philippe win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679022",
+   "slug": "will-david-lisnard-win-the-2027-french-presidential-election",
+   "question": "Will David Lisnard win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679023",
+   "slug": "will-xavier-bertrand-win-the-2027-french-presidential-election",
+   "question": "Will Xavier Bertrand win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679024",
+   "slug": "will-laurent-wauquiez-win-the-2027-french-presidential-election",
+   "question": "Will Laurent Wauquiez win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679025",
+   "slug": "will-franois-ruffin-win-the-2027-french-presidential-election",
+   "question": "Will François Ruffin win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679026",
+   "slug": "will-gabriel-attal-win-the-2027-french-presidential-election",
+   "question": "Will Gabriel Attal win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679027",
+   "slug": "will-bruno-retailleau-win-the-2027-french-presidential-election",
+   "question": "Will Bruno Retailleau win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679028",
+   "slug": "will-franois-hollande-win-the-2027-french-presidential-election",
+   "question": "Will François Hollande win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679029",
+   "slug": "will-raphal-glucksmann-win-the-2027-french-presidential-election",
+   "question": "Will Raphaël Glucksmann win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679030",
+   "slug": "will-jean-luc-mlenchon-win-the-2027-french-presidential-election",
+   "question": "Will Jean-Luc Mélenchon win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679031",
+   "slug": "will-marine-tondelier-win-the-2027-french-presidential-election",
+   "question": "Will Marine Tondelier win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679032",
+   "slug": "will-fabien-roussel-win-the-2027-french-presidential-election",
+   "question": "Will Fabien Roussel win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679033",
+   "slug": "will-olivier-faure-win-the-2027-french-presidential-election",
+   "question": "Will Olivier Faure win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679034",
+   "slug": "will-dominique-de-villepin-win-the-2027-french-presidential-election",
+   "question": "Will Dominique de Villepin win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679035",
+   "slug": "will-sgolne-royal-win-the-2027-french-presidential-election",
+   "question": "Will Ségolène Royal win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679036",
+   "slug": "will-franois-asselineau-win-the-2027-french-presidential-election",
+   "question": "Will François Asselineau win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679037",
+   "slug": "will-clmentine-autain-win-the-2027-french-presidential-election",
+   "question": "Will Clémentine Autain win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679038",
+   "slug": "will-nicolas-dupont-aignan-win-the-2027-french-presidential-election",
+   "question": "Will Nicolas Dupont-Aignan win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679039",
+   "slug": "will-michel-barnier-win-the-2027-french-presidential-election",
+   "question": "Will Michel Barnier win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679040",
+   "slug": "will-valrie-pcresse-win-the-2027-french-presidential-election",
+   "question": "Will Valérie Pécresse win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679041",
+   "slug": "will-franois-bayrou-win-the-2027-french-presidential-election",
+   "question": "Will François Bayrou win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679042",
+   "slug": "will-lisabeth-borne-win-the-2027-french-presidential-election",
+   "question": "Will Élisabeth Borne win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679043",
+   "slug": "will-yal-braun-pivet-win-the-2027-french-presidential-election",
+   "question": "Will Yaël Braun-Pivet win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679044",
+   "slug": "will-jean-castex-win-the-2027-french-presidential-election",
+   "question": "Will Jean Castex win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679045",
+   "slug": "will-grald-darmanin-win-the-2027-french-presidential-election",
+   "question": "Will Gérald Darmanin win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679046",
+   "slug": "will-carole-delga-win-the-2027-french-presidential-election",
+   "question": "Will Carole Delga win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679047",
+   "slug": "will-bernard-cazeneuve-win-the-2027-french-presidential-election",
+   "question": "Will Bernard Cazeneuve win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679048",
+   "slug": "will-manuel-bompard-win-the-2027-french-presidential-election",
+   "question": "Will Manuel Bompard win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679049",
+   "slug": "will-mathilde-panot-win-the-2027-french-presidential-election",
+   "question": "Will Mathilde Panot win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679050",
+   "slug": "will-another-person-win-the-2027-french-presidential-election",
+   "question": "Will another person win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679051",
+   "slug": "will-sarah-knafo-win-the-2027-french-presidential-election",
+   "question": "Will Sarah Knafo win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679052",
+   "slug": "will-juan-branco-win-the-2027-french-presidential-election",
+   "question": "Will Juan Branco win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679053",
+   "slug": "will-clmence-guett-win-the-2027-french-presidential-election",
+   "question": "Will Clémence Guetté win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679054",
+   "slug": "will-sbastien-lecornu-win-the-2027-french-presidential-election",
+   "question": "Will Sébastien Lecornu win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679055",
+   "slug": "will-karim-bouamrane-win-the-2027-french-presidential-election",
+   "question": "Will Karim Bouamrane win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679056",
+   "slug": "will-lucie-castets-win-the-2027-french-presidential-election",
+   "question": "Will Lucie Castets win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679057",
+   "slug": "will-yannick-jadot-win-the-2027-french-presidential-election",
+   "question": "Will Yannick Jadot win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679058",
+   "slug": "will-franois-baroin-win-the-2027-french-presidential-election",
+   "question": "Will François Baroin win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679059",
+   "slug": "will-marion-marchal-win-the-2027-french-presidential-election",
+   "question": "Will Marion Maréchal win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679060",
+   "slug": "will-person-j-win-the-2027-french-presidential-election",
+   "question": "Will Person J win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679061",
+   "slug": "will-person-k-win-the-2027-french-presidential-election",
+   "question": "Will Person K win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679062",
+   "slug": "will-person-l-win-the-2027-french-presidential-election",
+   "question": "Will Person L win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679063",
+   "slug": "will-person-m-win-the-2027-french-presidential-election",
+   "question": "Will Person M win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679064",
+   "slug": "will-person-n-win-the-2027-french-presidential-election",
+   "question": "Will Person N win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679065",
+   "slug": "will-person-o-win-the-2027-french-presidential-election",
+   "question": "Will Person O win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679066",
+   "slug": "will-person-p-win-the-2027-french-presidential-election",
+   "question": "Will Person P win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679067",
+   "slug": "will-person-q-win-the-2027-french-presidential-election",
+   "question": "Will Person Q win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679068",
+   "slug": "will-person-r-win-the-2027-french-presidential-election",
+   "question": "Will Person R win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679069",
+   "slug": "will-person-s-win-the-2027-french-presidential-election",
+   "question": "Will Person S win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679070",
+   "slug": "will-person-t-win-the-2027-french-presidential-election",
+   "question": "Will Person T win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679071",
+   "slug": "will-person-u-win-the-2027-french-presidential-election",
+   "question": "Will Person U win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679072",
+   "slug": "will-person-v-win-the-2027-french-presidential-election",
+   "question": "Will Person V win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679073",
+   "slug": "will-person-w-win-the-2027-french-presidential-election",
+   "question": "Will Person W win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679074",
+   "slug": "will-person-x-win-the-2027-french-presidential-election",
+   "question": "Will Person X win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679075",
+   "slug": "will-person-y-win-the-2027-french-presidential-election",
+   "question": "Will Person Y win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679076",
+   "slug": "will-person-z-win-the-2027-french-presidential-election",
+   "question": "Will Person Z win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679077",
+   "slug": "will-person-aa-win-the-2027-french-presidential-election",
+   "question": "Will Person AA win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679078",
+   "slug": "will-person-ab-win-the-2027-french-presidential-election",
+   "question": "Will Person AB win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679079",
+   "slug": "will-person-ac-win-the-2027-french-presidential-election",
+   "question": "Will Person AC win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679080",
+   "slug": "will-person-ad-win-the-2027-french-presidential-election",
+   "question": "Will Person AD win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679081",
+   "slug": "will-person-ae-win-the-2027-french-presidential-election",
+   "question": "Will Person AE win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679082",
+   "slug": "will-person-af-win-the-2027-french-presidential-election",
+   "question": "Will Person AF win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679083",
+   "slug": "will-person-ag-win-the-2027-french-presidential-election",
+   "question": "Will Person AG win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679084",
+   "slug": "will-person-ah-win-the-2027-french-presidential-election",
+   "question": "Will Person AH win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679085",
+   "slug": "will-person-ai-win-the-2027-french-presidential-election",
+   "question": "Will Person AI win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679086",
+   "slug": "will-person-aj-win-the-2027-french-presidential-election",
+   "question": "Will Person AJ win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679087",
+   "slug": "will-person-ak-win-the-2027-french-presidential-election",
+   "question": "Will Person AK win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679088",
+   "slug": "will-person-al-win-the-2027-french-presidential-election",
+   "question": "Will Person AL win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679089",
+   "slug": "will-person-am-win-the-2027-french-presidential-election",
+   "question": "Will Person AM win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679090",
+   "slug": "will-person-an-win-the-2027-french-presidential-election",
+   "question": "Will Person AN win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679091",
+   "slug": "will-person-ao-win-the-2027-french-presidential-election",
+   "question": "Will Person AO win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679092",
+   "slug": "will-person-ap-win-the-2027-french-presidential-election",
+   "question": "Will Person AP win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679093",
+   "slug": "will-person-aq-win-the-2027-french-presidential-election",
+   "question": "Will Person AQ win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679094",
+   "slug": "will-person-ar-win-the-2027-french-presidential-election",
+   "question": "Will Person AR win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679095",
+   "slug": "will-person-as-win-the-2027-french-presidential-election",
+   "question": "Will Person AS win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679096",
+   "slug": "will-person-at-win-the-2027-french-presidential-election",
+   "question": "Will Person AT win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679097",
+   "slug": "will-person-au-win-the-2027-french-presidential-election",
+   "question": "Will Person AU win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679098",
+   "slug": "will-person-av-win-the-2027-french-presidential-election",
+   "question": "Will Person AV win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679099",
+   "slug": "will-person-aw-win-the-2027-french-presidential-election",
+   "question": "Will Person AW win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679100",
+   "slug": "will-person-ax-win-the-2027-french-presidential-election",
+   "question": "Will Person AX win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679101",
+   "slug": "will-person-ay-win-the-2027-french-presidential-election",
+   "question": "Will Person AY win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679102",
+   "slug": "will-person-az-win-the-2027-french-presidential-election",
+   "question": "Will Person AZ win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679103",
+   "slug": "will-person-ba-win-the-2027-french-presidential-election",
+   "question": "Will Person BA win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679104",
+   "slug": "will-person-bb-win-the-2027-french-presidential-election",
+   "question": "Will Person BB win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679105",
+   "slug": "will-person-bc-win-the-2027-french-presidential-election",
+   "question": "Will Person BC win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679106",
+   "slug": "will-person-bd-win-the-2027-french-presidential-election",
+   "question": "Will Person BD win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679107",
+   "slug": "will-person-be-win-the-2027-french-presidential-election",
+   "question": "Will Person BE win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679108",
+   "slug": "will-person-bf-win-the-2027-french-presidential-election",
+   "question": "Will Person BF win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679109",
+   "slug": "will-person-bg-win-the-2027-french-presidential-election",
+   "question": "Will Person BG win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679110",
+   "slug": "will-person-bh-win-the-2027-french-presidential-election",
+   "question": "Will Person BH win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679111",
+   "slug": "will-person-bi-win-the-2027-french-presidential-election",
+   "question": "Will Person BI win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679112",
+   "slug": "will-person-bj-win-the-2027-french-presidential-election",
+   "question": "Will Person BJ win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679113",
+   "slug": "will-person-bk-win-the-2027-french-presidential-election",
+   "question": "Will Person BK win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679114",
+   "slug": "will-person-bl-win-the-2027-french-presidential-election",
+   "question": "Will Person BL win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679115",
+   "slug": "will-person-bm-win-the-2027-french-presidential-election",
+   "question": "Will Person BM win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679116",
+   "slug": "will-person-bn-win-the-2027-french-presidential-election",
+   "question": "Will Person BN win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679117",
+   "slug": "will-person-bo-win-the-2027-french-presidential-election",
+   "question": "Will Person BO win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679118",
+   "slug": "will-person-bp-win-the-2027-french-presidential-election",
+   "question": "Will Person BP win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679119",
+   "slug": "will-person-bq-win-the-2027-french-presidential-election",
+   "question": "Will Person BQ win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679120",
+   "slug": "will-person-br-win-the-2027-french-presidential-election",
+   "question": "Will Person BR win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679121",
+   "slug": "will-person-bs-win-the-2027-french-presidential-election",
+   "question": "Will Person BS win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679122",
+   "slug": "will-person-bt-win-the-2027-french-presidential-election",
+   "question": "Will Person BT win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679123",
+   "slug": "will-person-bu-win-the-2027-french-presidential-election",
+   "question": "Will Person BU win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679124",
+   "slug": "will-person-bv-win-the-2027-french-presidential-election",
+   "question": "Will Person BV win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679125",
+   "slug": "will-person-bw-win-the-2027-french-presidential-election",
+   "question": "Will Person BW win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679126",
+   "slug": "will-person-bx-win-the-2027-french-presidential-election",
+   "question": "Will Person BX win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679127",
+   "slug": "will-person-by-win-the-2027-french-presidential-election",
+   "question": "Will Person BY win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679128",
+   "slug": "will-person-bz-win-the-2027-french-presidential-election",
+   "question": "Will Person BZ win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679129",
+   "slug": "will-person-ca-win-the-2027-french-presidential-election",
+   "question": "Will Person CA win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679130",
+   "slug": "will-person-cb-win-the-2027-french-presidential-election",
+   "question": "Will Person CB win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679131",
+   "slug": "will-person-cc-win-the-2027-french-presidential-election",
+   "question": "Will Person CC win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679132",
+   "slug": "will-person-cd-win-the-2027-french-presidential-election",
+   "question": "Will Person CD win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679133",
+   "slug": "will-person-ce-win-the-2027-french-presidential-election",
+   "question": "Will Person CE win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679134",
+   "slug": "will-person-cf-win-the-2027-french-presidential-election",
+   "question": "Will Person CF win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679135",
+   "slug": "will-person-cg-win-the-2027-french-presidential-election",
+   "question": "Will Person CG win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679136",
+   "slug": "will-person-ch-win-the-2027-french-presidential-election",
+   "question": "Will Person CH win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679137",
+   "slug": "will-person-ci-win-the-2027-french-presidential-election",
+   "question": "Will Person CI win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679138",
+   "slug": "will-person-cj-win-the-2027-french-presidential-election",
+   "question": "Will Person CJ win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679139",
+   "slug": "will-person-ck-win-the-2027-french-presidential-election",
+   "question": "Will Person CK win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679140",
+   "slug": "will-person-cl-win-the-2027-french-presidential-election",
+   "question": "Will Person CL win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679141",
+   "slug": "will-person-cm-win-the-2027-french-presidential-election",
+   "question": "Will Person CM win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679142",
+   "slug": "will-person-cn-win-the-2027-french-presidential-election",
+   "question": "Will Person CN win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679143",
+   "slug": "will-person-co-win-the-2027-french-presidential-election",
+   "question": "Will Person CO win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679144",
+   "slug": "will-person-cp-win-the-2027-french-presidential-election",
+   "question": "Will Person CP win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "679145",
+   "slug": "will-person-cq-win-the-2027-french-presidential-election",
+   "question": "Will Person CQ win the 2027 French presidential election?"
+  },
+  {
+   "market_id": "561229",
+   "slug": "will-jd-vance-win-the-2028-us-presidential-election",
+   "question": "Will JD Vance win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561230",
+   "slug": "will-gavin-newsom-win-the-2028-us-presidential-election",
+   "question": "Will Gavin Newsom win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561231",
+   "slug": "will-alexandria-ocasio-cortez-win-the-2028-us-presidential-election",
+   "question": "Will Alexandria Ocasio-Cortez win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561232",
+   "slug": "will-pete-buttigieg-win-the-2028-us-presidential-election",
+   "question": "Will Pete Buttigieg win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561233",
+   "slug": "will-josh-shapiro-win-the-2028-us-presidential-election",
+   "question": "Will Josh Shapiro win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561234",
+   "slug": "will-marco-rubio-win-the-2028-us-presidential-election",
+   "question": "Will Marco Rubio win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561235",
+   "slug": "will-wes-moore-win-the-2028-us-presidential-election",
+   "question": "Will Wes Moore win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561236",
+   "slug": "will-gretchen-whitmer-win-the-2028-us-presidential-election",
+   "question": "Will Gretchen Whitmer win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561237",
+   "slug": "will-andy-beshear-win-the-2028-us-presidential-election",
+   "question": "Will Andy Beshear win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561238",
+   "slug": "will-glenn-youngkin-win-the-2028-us-presidential-election",
+   "question": "Will Glenn Youngkin win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561239",
+   "slug": "will-kamala-harris-win-the-2028-us-presidential-election",
+   "question": "Will Kamala Harris win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561240",
+   "slug": "will-stephen-smith-win-the-2028-us-presidential-election",
+   "question": "Will Stephen Smith win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561241",
+   "slug": "will-jb-pritzker-win-the-2028-us-presidential-election",
+   "question": "Will JB Pritzker win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561242",
+   "slug": "will-tulsi-gabbard-win-the-2028-us-presidential-election",
+   "question": "Will Tulsi Gabbard win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561243",
+   "slug": "will-donald-trump-win-the-2028-us-presidential-election",
+   "question": "Will Donald Trump win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561244",
+   "slug": "will-donald-trump-jr-win-the-2028-us-presidential-election",
+   "question": "Will Donald Trump Jr. win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561245",
+   "slug": "will-nikki-haley-win-the-2028-us-presidential-election",
+   "question": "Will Nikki Haley win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561246",
+   "slug": "will-ron-desantis-win-the-2028-us-presidential-election",
+   "question": "Will Ron DeSantis win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561247",
+   "slug": "will-tim-walz-win-the-2028-us-presidential-election",
+   "question": "Will Tim Walz win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561248",
+   "slug": "will-vivek-ramaswamy-win-the-2028-us-presidential-election",
+   "question": "Will Vivek Ramaswamy win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561249",
+   "slug": "will-greg-abbott-win-the-2028-us-presidential-election",
+   "question": "Will Greg Abbott win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561250",
+   "slug": "will-elon-musk-win-the-2028-us-presidential-election",
+   "question": "Will Elon Musk win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561251",
+   "slug": "will-lebron-james-win-the-2028-us-presidential-election",
+   "question": "Will LeBron James win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561252",
+   "slug": "will-dwayne-the-rock-johnson-win-the-2028-us-presidential-election",
+   "question": "Will Dwayne 'The Rock' Johnson win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561253",
+   "slug": "will-tucker-carlson-win-the-2028-us-presidential-election",
+   "question": "Will Tucker Carlson win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561254",
+   "slug": "will-kim-kardashian-win-the-2028-us-presidential-election",
+   "question": "Will Kim Kardashian win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561255",
+   "slug": "will-ivanka-trump-win-the-2028-us-presidential-election",
+   "question": "Will Ivanka Trump win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561256",
+   "slug": "will-zohran-mamdani-win-the-2028-us-presidential-election",
+   "question": "Will Zohran Mamdani win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561257",
+   "slug": "will-michelle-obama-win-the-2028-us-presidential-election",
+   "question": "Will Michelle Obama win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561258",
+   "slug": "will-jamie-dimon-win-the-2028-us-presidential-election",
+   "question": "Will Jamie Dimon win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561259",
+   "slug": "will-ro-khanna-win-the-2028-us-presidential-election",
+   "question": "Will Ro Khanna win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561260",
+   "slug": "will-thomas-massie-win-the-2028-us-presidential-election",
+   "question": "Will Thomas Massie win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561261",
+   "slug": "will-jon-ossoff-win-the-2028-us-presidential-election",
+   "question": "Will Jon Ossoff win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561262",
+   "slug": "will-james-talarico-win-the-2028-us-presidential-election",
+   "question": "Will James Talarico win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561263",
+   "slug": "will-eric-trump-win-the-2028-us-presidential-election",
+   "question": "Will Eric Trump win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561264",
+   "slug": "will-pete-hegseth-win-the-2028-us-presidential-election",
+   "question": "Will Pete Hegseth win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561265",
+   "slug": "will-jalen-brunson-win-the-2028-us-presidential-election",
+   "question": "Will Jalen Brunson win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561266",
+   "slug": "will-abigail-spanberger-win-the-2028-us-presidential-election",
+   "question": "Will Abigail Spanberger win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561267",
+   "slug": "will-hakeem-jeffries-win-the-2028-us-presidential-election",
+   "question": "Will Hakeem Jeffries win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561268",
+   "slug": "will-elissa-slotkin-win-the-2028-us-presidential-election",
+   "question": "Will Elissa Slotkin win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561269",
+   "slug": "will-adam-schiff-win-the-2028-us-presidential-election",
+   "question": "Will Adam Schiff win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561270",
+   "slug": "will-josh-stein-win-the-2028-us-presidential-election",
+   "question": "Will Josh Stein win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561271",
+   "slug": "will-alex-padilla-win-the-2028-us-presidential-election",
+   "question": "Will Alex Padilla win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561272",
+   "slug": "will-candace-owens-win-the-2028-us-presidential-election",
+   "question": "Will Candace Owens win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561273",
+   "slug": "will-tim-scott-win-the-2028-us-presidential-election",
+   "question": "Will Tim Scott win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561274",
+   "slug": "will-mike-johnson-win-the-2028-us-presidential-election",
+   "question": "Will Mike Johnson win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561275",
+   "slug": "will-doug-burgum-win-the-2028-us-presidential-election",
+   "question": "Will Doug Burgum win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561276",
+   "slug": "will-tom-cotton-win-the-2028-us-presidential-election",
+   "question": "Will Tom Cotton win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561277",
+   "slug": "will-john-n-kennedy-win-the-2028-us-presidential-election",
+   "question": "Will John N. Kennedy win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561278",
+   "slug": "will-rick-scott-win-the-2028-us-presidential-election",
+   "question": "Will Rick Scott win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561279",
+   "slug": "will-person-ad-win-the-2028-us-presidential-election",
+   "question": "Will Mark Kelly win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561280",
+   "slug": "will-person-ae-win-the-2028-us-presidential-election",
+   "question": "Will Raphael Warnock win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561281",
+   "slug": "will-person-af-win-the-2028-us-presidential-election",
+   "question": "Will Person AF win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561282",
+   "slug": "will-person-ag-win-the-2028-us-presidential-election",
+   "question": "Will Person AG win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561283",
+   "slug": "will-person-ah-win-the-2028-us-presidential-election",
+   "question": "Will Person AH win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561284",
+   "slug": "will-person-ai-win-the-2028-us-presidential-election",
+   "question": "Will Person AI win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561285",
+   "slug": "will-person-aj-win-the-2028-us-presidential-election",
+   "question": "Will Person AJ win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561286",
+   "slug": "will-person-ak-win-the-2028-us-presidential-election",
+   "question": "Will Person AK win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561287",
+   "slug": "will-person-al-win-the-2028-us-presidential-election",
+   "question": "Will Person AL win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561288",
+   "slug": "will-person-am-win-the-2028-us-presidential-election",
+   "question": "Will Person AM win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561289",
+   "slug": "will-person-an-win-the-2028-us-presidential-election",
+   "question": "Will Person AN win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561290",
+   "slug": "will-person-ao-win-the-2028-us-presidential-election",
+   "question": "Will Person AO win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561291",
+   "slug": "will-person-ap-win-the-2028-us-presidential-election",
+   "question": "Will Person AP win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561292",
+   "slug": "will-person-aq-win-the-2028-us-presidential-election",
+   "question": "Will Person AQ win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561293",
+   "slug": "will-person-ar-win-the-2028-us-presidential-election",
+   "question": "Will Person AR win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561294",
+   "slug": "will-person-as-win-the-2028-us-presidential-election",
+   "question": "Will Person AS win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561295",
+   "slug": "will-person-at-win-the-2028-us-presidential-election",
+   "question": "Will Person AT win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561296",
+   "slug": "will-person-au-win-the-2028-us-presidential-election",
+   "question": "Will Person AU win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561297",
+   "slug": "will-person-av-win-the-2028-us-presidential-election",
+   "question": "Will Person AV win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561298",
+   "slug": "will-person-aw-win-the-2028-us-presidential-election",
+   "question": "Will Person AW win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561299",
+   "slug": "will-person-ax-win-the-2028-us-presidential-election",
+   "question": "Will Person AX win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561300",
+   "slug": "will-person-ay-win-the-2028-us-presidential-election",
+   "question": "Will Person AY win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561301",
+   "slug": "will-person-az-win-the-2028-us-presidential-election",
+   "question": "Will Person AZ win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561302",
+   "slug": "will-person-ba-win-the-2028-us-presidential-election",
+   "question": "Will Person BA win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561303",
+   "slug": "will-person-bb-win-the-2028-us-presidential-election",
+   "question": "Will Person BB win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561304",
+   "slug": "will-person-bc-win-the-2028-us-presidential-election",
+   "question": "Will Person BC win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561305",
+   "slug": "will-person-bd-win-the-2028-us-presidential-election",
+   "question": "Will Person BD win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561306",
+   "slug": "will-person-be-win-the-2028-us-presidential-election",
+   "question": "Will Person BE win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561307",
+   "slug": "will-person-bf-win-the-2028-us-presidential-election",
+   "question": "Will Person BF win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561308",
+   "slug": "will-person-bg-win-the-2028-us-presidential-election",
+   "question": "Will Person BG win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561309",
+   "slug": "will-person-bh-win-the-2028-us-presidential-election",
+   "question": "Will Person BH win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561310",
+   "slug": "will-person-bi-win-the-2028-us-presidential-election",
+   "question": "Will Person BI win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561311",
+   "slug": "will-person-bj-win-the-2028-us-presidential-election",
+   "question": "Will Person BJ win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561312",
+   "slug": "will-person-bk-win-the-2028-us-presidential-election",
+   "question": "Will Person BK win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561313",
+   "slug": "will-person-bl-win-the-2028-us-presidential-election",
+   "question": "Will Person BL win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561314",
+   "slug": "will-person-bm-win-the-2028-us-presidential-election",
+   "question": "Will Person BM win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561315",
+   "slug": "will-person-bn-win-the-2028-us-presidential-election",
+   "question": "Will Person BN win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561316",
+   "slug": "will-person-bo-win-the-2028-us-presidential-election",
+   "question": "Will Person BO win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561317",
+   "slug": "will-person-bp-win-the-2028-us-presidential-election",
+   "question": "Will Person BP win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561318",
+   "slug": "will-person-bq-win-the-2028-us-presidential-election",
+   "question": "Will Person BQ win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561319",
+   "slug": "will-person-br-win-the-2028-us-presidential-election",
+   "question": "Will Person BR win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561320",
+   "slug": "will-person-bs-win-the-2028-us-presidential-election",
+   "question": "Will Person BS win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561321",
+   "slug": "will-person-bt-win-the-2028-us-presidential-election",
+   "question": "Will Person BT win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561322",
+   "slug": "will-person-bu-win-the-2028-us-presidential-election",
+   "question": "Will Person BU win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561323",
+   "slug": "will-person-bv-win-the-2028-us-presidential-election",
+   "question": "Will Person BV win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561324",
+   "slug": "will-person-bw-win-the-2028-us-presidential-election",
+   "question": "Will Person BW win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561325",
+   "slug": "will-person-bx-win-the-2028-us-presidential-election",
+   "question": "Will Person BX win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561326",
+   "slug": "will-person-by-win-the-2028-us-presidential-election",
+   "question": "Will Person BY win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561327",
+   "slug": "will-person-bz-win-the-2028-us-presidential-election",
+   "question": "Will Person BZ win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561328",
+   "slug": "will-person-ca-win-the-2028-us-presidential-election",
+   "question": "Will Person CA win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561329",
+   "slug": "will-person-cb-win-the-2028-us-presidential-election",
+   "question": "Will Person CB win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561330",
+   "slug": "will-person-cc-win-the-2028-us-presidential-election",
+   "question": "Will Person CC win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561331",
+   "slug": "will-person-cd-win-the-2028-us-presidential-election",
+   "question": "Will Person CD win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561332",
+   "slug": "will-person-ce-win-the-2028-us-presidential-election",
+   "question": "Will Person CE win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561333",
+   "slug": "will-person-cf-win-the-2028-us-presidential-election",
+   "question": "Will Person CF win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561334",
+   "slug": "will-person-cg-win-the-2028-us-presidential-election",
+   "question": "Will Person CG win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561335",
+   "slug": "will-person-ch-win-the-2028-us-presidential-election",
+   "question": "Will Person CH win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561336",
+   "slug": "will-person-ci-win-the-2028-us-presidential-election",
+   "question": "Will Person CI win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561337",
+   "slug": "will-person-cj-win-the-2028-us-presidential-election",
+   "question": "Will Person CJ win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561338",
+   "slug": "will-person-ck-win-the-2028-us-presidential-election",
+   "question": "Will Person CK win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561339",
+   "slug": "will-person-cl-win-the-2028-us-presidential-election",
+   "question": "Will Person CL win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561340",
+   "slug": "will-person-cm-win-the-2028-us-presidential-election",
+   "question": "Will Person CM win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561341",
+   "slug": "will-person-cn-win-the-2028-us-presidential-election",
+   "question": "Will Person CN win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561342",
+   "slug": "will-person-co-win-the-2028-us-presidential-election",
+   "question": "Will Person CO win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561343",
+   "slug": "will-person-cp-win-the-2028-us-presidential-election",
+   "question": "Will Person CP win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561344",
+   "slug": "will-person-cq-win-the-2028-us-presidential-election",
+   "question": "Will Person CQ win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561345",
+   "slug": "will-person-cr-win-the-2028-us-presidential-election",
+   "question": "Will Person CR win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561346",
+   "slug": "will-person-cs-win-the-2028-us-presidential-election",
+   "question": "Will Person CS win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561347",
+   "slug": "will-person-ct-win-the-2028-us-presidential-election",
+   "question": "Will Person CT win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561348",
+   "slug": "will-person-cu-win-the-2028-us-presidential-election",
+   "question": "Will Person CU win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561349",
+   "slug": "will-person-cv-win-the-2028-us-presidential-election",
+   "question": "Will Person CV win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561350",
+   "slug": "will-person-cw-win-the-2028-us-presidential-election",
+   "question": "Will Person CW win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561351",
+   "slug": "will-person-cx-win-the-2028-us-presidential-election",
+   "question": "Will Person CX win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561352",
+   "slug": "will-person-cy-win-the-2028-us-presidential-election",
+   "question": "Will Person CY win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561353",
+   "slug": "will-person-cz-win-the-2028-us-presidential-election",
+   "question": "Will Person CZ win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561354",
+   "slug": "will-person-da-win-the-2028-us-presidential-election",
+   "question": "Will Person DA win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561355",
+   "slug": "will-person-db-win-the-2028-us-presidential-election",
+   "question": "Will Person DB win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "561357",
+   "slug": "will-another-person-win-the-2028-us-presidential-election-527",
+   "question": "Will another person win the 2028 US Presidential Election?"
+  },
+  {
+   "market_id": "601818",
+   "slug": "will-tarcisio-de-frietas-win-the-2026-brazilian-presidential-election",
+   "question": "Will Tarcisio de Freitas win the 2026 Brazilian presidential election?"
+  },
+  {
+   "market_id": "601819",
+   "slug": "will-luiz-incio-lula-da-silva-win-the-2026-brazilian-presidential-election",
+   "question": "Will Luiz Inácio Lula da Silva win the 2026 Brazilian presidential election?"
+  },
+  {
+   "market_id": "601820",
+   "slug": "will-jair-bolsonaro-win-the-2026-brazilian-presidential-election",
+   "question": "Will Jair Bolsonaro win the 2026 Brazilian presidential election?"
+  },
+  {
+   "market_id": "601821",
+   "slug": "will-fernando-haddad-win-the-2026-brazilian-presidential-election",
+   "question": "Will Fernando Haddad win the 2026 Brazilian presidential election?"
+  },
+  {
+   "market_id": "601822",
+   "slug": "will-michelle-bolsonaro-win-the-2026-brazilian-presidential-election",
+   "question": "Will Michelle Bolsonaro win the 2026 Brazilian presidential election?"
+  },
+  {
+   "market_id": "601823",
+   "slug": "will-eduardo-bolsonaro-win-the-2026-brazilian-presidential-election",
+   "question": "Will Eduardo Bolsonaro win the 2026 Brazilian presidential election?"
+  },
+  {
+   "market_id": "601824",
+   "slug": "will-carlos-roberto-massa-jnior-win-the-2026-brazilian-presidential-election",
+   "question": "Will Carlos Roberto Massa Júnior win the 2026 Brazilian presidential election?"
+  },
+  {
+   "market_id": "601825",
+   "slug": "will-renan-santos-win-the-2026-brazilian-presidential-election",
+   "question": "Will Renan Santos win the 2026 Brazilian presidential election?"
+  },
+  {
+   "market_id": "601826",
+   "slug": "will-flvio-bolsonaro-win-the-2026-brazilian-presidential-election",
+   "question": "Will Flávio Bolsonaro win the 2026 Brazilian presidential election?"
+  },
+  {
+   "market_id": "601827",
+   "slug": "will-ronaldo-caiado-win-the-2026-brazilian-presidential-election",
+   "question": "Will Ronaldo Caiado win the 2026 Brazilian presidential election?"
+  },
+  {
+   "market_id": "601828",
+   "slug": "will-romeu-zema-win-the-2026-brazilian-presidential-election",
+   "question": "Will Romeu Zema win the 2026 Brazilian presidential election?"
+  },
+  {
+   "market_id": "601829",
+   "slug": "will-camilo-santana-win-the-2026-brazilian-presidential-election",
+   "question": "Will Camilo Santana win the 2026 Brazilian presidential election?"
+  },
+  {
+   "market_id": "601830",
+   "slug": "will-geraldo-alckmin-win-the-2026-brazilian-presidential-election",
+   "question": "Will Geraldo Alckmin win the 2026 Brazilian presidential election?"
+  },
+  {
+   "market_id": "601831",
+   "slug": "will-eduardo-leite-win-the-2026-brazilian-presidential-election",
+   "question": "Will Eduardo Leite win the 2026 Brazilian presidential election?"
+  },
+  {
+   "market_id": "601832",
+   "slug": "will-aldo-rebelo-win-the-2026-brazilian-presidential-election",
+   "question": "Will Aldo Rebelo win the 2026 Brazilian presidential election?"
+  },
+  {
+   "market_id": "601833",
+   "slug": "will-tereza-cristina-win-the-2026-brazilian-presidential-election",
+   "question": "Will Tereza Cristina win the 2026 Brazilian presidential election?"
+  },
+  {
+   "market_id": "601834",
+   "slug": "will-helder-barbalho-win-the-2026-brazilian-presidential-election",
+   "question": "Will Helder Barbalho win the 2026 Brazilian presidential election?"
+  },
+  {
+   "market_id": "601835",
+   "slug": "will-pablo-marcal-win-the-2026-brazilian-presidential-election",
+   "question": "Will Pablo Marçal win the 2026 Brazilian presidential election?"
+  },
+  {
+   "market_id": "601836",
+   "slug": "will-augusto-cury-win-the-2026-brazilian-presidential-election",
+   "question": "Will Augusto Cury win the 2026 Brazilian presidential election?"
+  },
+  {
+   "market_id": "601837",
+   "slug": "will-person-o-win-the-2026-brazilian-presidential-election",
+   "question": "Will Person O win the 2026 Brazilian presidential election?"
+  },
+  {
+   "market_id": "601838",
+   "slug": "will-person-p-win-the-2026-brazilian-presidential-election",
+   "question": "Will Person P win the 2026 Brazilian presidential election?"
+  },
+  {
+   "market_id": "601839",
+   "slug": "will-person-q-win-the-2026-brazilian-presidential-election",
+   "question": "Will Person Q win the 2026 Brazilian presidential election?"
+  },
+  {
+   "market_id": "601840",
+   "slug": "will-person-r-win-the-2026-brazilian-presidential-election",
+   "question": "Will Person R win the 2026 Brazilian presidential election?"
+  },
+  {
+   "market_id": "601841",
+   "slug": "will-person-s-win-the-2026-brazilian-presidential-election",
+   "question": "Will Person S win the 2026 Brazilian presidential election?"
+  },
+  {
+   "market_id": "601842",
+   "slug": "will-person-t-win-the-2026-brazilian-presidential-election",
+   "question": "Will Person T win the 2026 Brazilian presidential election?"
+  },
+  {
+   "market_id": "601843",
+   "slug": "will-person-u-win-the-2026-brazilian-presidential-election",
+   "question": "Will Person U win the 2026 Brazilian presidential election?"
+  },
+  {
+   "market_id": "601844",
+   "slug": "will-person-v-win-the-2026-brazilian-presidential-election",
+   "question": "Will Person V win the 2026 Brazilian presidential election?"
+  },
+  {
+   "market_id": "601845",
+   "slug": "will-person-w-win-the-2026-brazilian-presidential-election",
+   "question": "Will Person W win the 2026 Brazilian presidential election?"
+  },
+  {
+   "market_id": "601846",
+   "slug": "will-person-x-win-the-2026-brazilian-presidential-election",
+   "question": "Will Person X win the 2026 Brazilian presidential election?"
+  },
+  {
+   "market_id": "601847",
+   "slug": "will-person-y-win-the-2026-brazilian-presidential-election",
+   "question": "Will Person Y win the 2026 Brazilian presidential election?"
+  },
+  {
+   "market_id": "601848",
+   "slug": "will-person-z-win-the-2026-brazilian-presidential-election",
+   "question": "Will Person Z win the 2026 Brazilian presidential election?"
+  },
+  {
+   "market_id": "601849",
+   "slug": "will-another-person-win-the-2026-brazilian-presidential-election",
+   "question": "Will another person win the 2026 Brazilian presidential election?"
+  },
+  {
+   "market_id": "3866508",
+   "slug": "will-wti-reach-150-in-september-2026",
+   "question": "Will WTI Crude Oil (WTI) hit (HIGH) $150 in September?"
+  },
+  {
+   "market_id": "3866509",
+   "slug": "will-wti-reach-140-in-september-2026",
+   "question": "Will WTI Crude Oil (WTI) hit (HIGH) $140 in September?"
+  },
+  {
+   "market_id": "3866510",
+   "slug": "will-wti-reach-130-in-september-2026",
+   "question": "Will WTI Crude Oil (WTI) hit (HIGH) $130 in September?"
+  },
+  {
+   "market_id": "3866511",
+   "slug": "will-wti-reach-120-in-september-2026",
+   "question": "Will WTI Crude Oil (WTI) hit (HIGH) $120 in September?"
+  },
+  {
+   "market_id": "3866512",
+   "slug": "will-wti-reach-110-in-september-2026",
+   "question": "Will WTI Crude Oil (WTI) hit (HIGH) $110 in September?"
+  },
+  {
+   "market_id": "3866515",
+   "slug": "will-wti-dip-to-80-in-september-2026",
+   "question": "Will WTI Crude Oil (WTI) hit (LOW) $80 in September?"
+  },
+  {
+   "market_id": "3866516",
+   "slug": "will-wti-dip-to-70-in-september-2026",
+   "question": "Will WTI Crude Oil (WTI) hit (LOW) $70 in September?"
+  },
+  {
+   "market_id": "3866517",
+   "slug": "will-wti-dip-to-60-in-september-2026",
+   "question": "Will WTI Crude Oil (WTI) hit (LOW) $60 in September?"
+  },
+  {
+   "market_id": "3866518",
+   "slug": "will-wti-dip-to-50-in-september-2026",
+   "question": "Will WTI Crude Oil (WTI) hit (LOW) $50 in September?"
+  },
+  {
+   "market_id": "3866519",
+   "slug": "will-wti-dip-to-40-in-september-2026",
+   "question": "Will WTI Crude Oil (WTI) hit (LOW) $40 in September?"
+  },
+  {
+   "market_id": "3866520",
+   "slug": "will-wti-dip-to-30-in-september-2026",
+   "question": "Will WTI Crude Oil (WTI) hit (LOW) $30 in September?"
+  },
+  {
+   "market_id": "3866521",
+   "slug": "will-wti-dip-to-20-in-september-2026",
+   "question": "Will WTI Crude Oil (WTI) hit (LOW) $20 in September?"
+  },
+  {
+   "market_id": "3954342",
+   "slug": "will-wti-dip-to-75-in-september-2026",
+   "question": "Will WTI Crude Oil (WTI) hit (LOW) $75 in September?"
+  },
+  {
+   "market_id": "3954344",
+   "slug": "will-wti-dip-to-65-in-september-2026",
+   "question": "Will WTI Crude Oil (WTI) hit (LOW) $65 in September?"
+  },
+  {
+   "market_id": "3954347",
+   "slug": "will-wti-dip-to-55-in-september-2026",
+   "question": "Will WTI Crude Oil (WTI) hit (LOW) $55 in September?"
+  },
+  {
+   "market_id": "4035901",
+   "slug": "will-wti-reach-115-in-september-2026",
+   "question": "Will WTI Crude Oil (WTI) hit (HIGH) $115 in September?"
+  },
+  {
+   "market_id": "4063373",
+   "slug": "will-wti-dip-to-85-in-september-2026",
+   "question": "Will WTI Crude Oil (WTI) hit (LOW) $85 in September?"
+  },
+  {
+   "market_id": "4218286",
+   "slug": "will-wti-dip-to-90-in-september-2026-from-september-4",
+   "question": "Will WTI Crude Oil (WTI) hit (LOW) $90 in September?"
+  },
+  {
+   "market_id": "4413392",
+   "slug": "will-wti-dip-to-95-in-september-2026",
+   "question": "Will WTI Crude Oil (WTI) hit (LOW) $95 in September?"
+  },
+  {
+   "market_id": "4413393",
+   "slug": "will-wti-reach-125-in-september-2026",
+   "question": "Will WTI Crude Oil (WTI) hit (HIGH) $125 in September?"
+  },
+  {
+   "market_id": "4559874",
+   "slug": "will-wti-dip-to-100-in-september-2026-from-september-14",
+   "question": "Will WTI Crude Oil (WTI) hit (LOW) $100 in September?"
+  },
+  {
+   "market_id": "4591051",
+   "slug": "will-wti-reach-135-in-september-2026",
+   "question": "Will WTI Crude Oil (WTI) hit (HIGH) $135 in September?"
+  },
+  {
+   "market_id": "4618778",
+   "slug": "will-wti-reach-105-in-september-2026-from-september-16",
+   "question": "Will WTI Crude Oil (WTI) hit (HIGH) $105 in September?"
+  },
+  {
+   "market_id": "4095052",
+   "slug": "us-x-iran-effective-ceasefire-by-september-4",
+   "question": "US x Iran Effective Ceasefire by September 4?"
+  },
+  {
+   "market_id": "4545818",
+   "slug": "will-bitcoin-reach-92k-september-14-20-2026",
+   "question": "Will Bitcoin reach $92,000 September 14-20?"
+  },
+  {
+   "market_id": "4545820",
+   "slug": "will-bitcoin-reach-90k-september-14-20-2026",
+   "question": "Will Bitcoin reach $90,000 September 14-20?"
+  },
+  {
+   "market_id": "4545822",
+   "slug": "will-bitcoin-reach-88k-september-14-20-2026",
+   "question": "Will Bitcoin reach $88,000 September 14-20?"
+  },
+  {
+   "market_id": "4545824",
+   "slug": "will-bitcoin-reach-86k-september-14-20-2026",
+   "question": "Will Bitcoin reach $86,000 September 14-20?"
+  },
+  {
+   "market_id": "4545826",
+   "slug": "will-bitcoin-reach-84k-september-14-20-2026",
+   "question": "Will Bitcoin reach $84,000 September 14-20?"
+  },
+  {
+   "market_id": "4545828",
+   "slug": "will-bitcoin-reach-82k-september-14-20-2026",
+   "question": "Will Bitcoin reach $82,000 September 14-20?"
+  },
+  {
+   "market_id": "4545830",
+   "slug": "will-bitcoin-reach-80k-september-14-20-2026",
+   "question": "Will Bitcoin reach $80,000 September 14-20?"
+  },
+  {
+   "market_id": "4545834",
+   "slug": "will-bitcoin-dip-to-74k-september-14-20-2026",
+   "question": "Will Bitcoin dip to $74,000 September 14-20?"
+  },
+  {
+   "market_id": "4545837",
+   "slug": "will-bitcoin-dip-to-72k-september-14-20-2026",
+   "question": "Will Bitcoin dip to $72,000 September 14-20?"
+  },
+  {
+   "market_id": "4545839",
+   "slug": "will-bitcoin-dip-to-70k-september-14-20-2026",
+   "question": "Will Bitcoin dip to $70,000 September 14-20?"
+  },
+  {
+   "market_id": "4545841",
+   "slug": "will-bitcoin-dip-to-68k-september-14-20-2026",
+   "question": "Will Bitcoin dip to $68,000 September 14-20?"
+  },
+  {
+   "market_id": "4545843",
+   "slug": "will-bitcoin-dip-to-66k-september-14-20-2026",
+   "question": "Will Bitcoin dip to $66,000 September 14-20?"
+  },
+  {
+   "market_id": "4545845",
+   "slug": "will-bitcoin-dip-to-64k-september-14-20-2026",
+   "question": "Will Bitcoin dip to $64,000 September 14-20?"
+  },
+  {
+   "market_id": "4591280",
+   "slug": "will-bitcoin-reach-78k-september-14-20-2026",
+   "question": "Will Bitcoin reach $78,000 September 14-20?"
   },
   {
    "market_id": "3215005",
@@ -2664,39 +4294,44 @@
    "question": "Will the Fed increase interest rates by 50+ bps after the January 2027 meeting?"
   },
   {
-   "market_id": "4603102",
-   "slug": "btc-updown-5m-1789611000",
-   "question": "Bitcoin Up or Down - September 16, 10:10PM-10:15PM ET"
+   "market_id": "4609280",
+   "slug": "btc-updown-5m-1789632900",
+   "question": "Bitcoin Up or Down - September 17, 4:15AM-4:20AM ET"
   },
   {
-   "market_id": "4603100",
-   "slug": "eth-updown-5m-1789611000",
-   "question": "Ethereum Up or Down - September 16, 10:10PM-10:15PM ET"
+   "market_id": "4609275",
+   "slug": "eth-updown-5m-1789632900",
+   "question": "Ethereum Up or Down - September 17, 4:15AM-4:20AM ET"
   },
   {
-   "market_id": "4603105",
-   "slug": "sol-updown-5m-1789611000",
-   "question": "Solana Up or Down - September 16, 10:10PM-10:15PM ET"
+   "market_id": "4609286",
+   "slug": "sol-updown-5m-1789632900",
+   "question": "Solana Up or Down - September 17, 4:15AM-4:20AM ET"
   },
   {
-   "market_id": "4603045",
-   "slug": "btc-updown-5m-1789610700",
-   "question": "Bitcoin Up or Down - September 16, 10:05PM-10:10PM ET"
+   "market_id": "4609278",
+   "slug": "btc-updown-15m-1789632900",
+   "question": "Bitcoin Up or Down - September 17, 4:15AM-4:30AM ET"
   },
   {
-   "market_id": "4603048",
-   "slug": "eth-updown-5m-1789610700",
-   "question": "Ethereum Up or Down - September 16, 10:05PM-10:10PM ET"
+   "market_id": "4609105",
+   "slug": "btc-updown-5m-1789632600",
+   "question": "Bitcoin Up or Down - September 17, 4:10AM-4:15AM ET"
   },
   {
-   "market_id": "4603050",
-   "slug": "sol-updown-5m-1789610700",
-   "question": "Solana Up or Down - September 16, 10:05PM-10:10PM ET"
+   "market_id": "4609104",
+   "slug": "eth-updown-5m-1789632600",
+   "question": "Ethereum Up or Down - September 17, 4:10AM-4:15AM ET"
   },
   {
-   "market_id": "4603011",
-   "slug": "btc-updown-15m-1789610400",
-   "question": "Bitcoin Up or Down - September 16, 10:00PM-10:15PM ET"
+   "market_id": "4609106",
+   "slug": "sol-updown-5m-1789632600",
+   "question": "Solana Up or Down - September 17, 4:10AM-4:15AM ET"
+  },
+  {
+   "market_id": "4609067",
+   "slug": "btc-updown-15m-1789632000",
+   "question": "Bitcoin Up or Down - September 17, 4:00AM-4:15AM ET"
   }
  ],
  "negrisk": [
@@ -2777,6 +4412,33 @@
     "562013",
     "562014",
     "562015"
+   ]
+  },
+  {
+   "event_id": "986503",
+   "slug": "elon-musk-of-tweets-september-11-september-18-2026",
+   "title": "Elon Musk # tweets September 11 - September 18, 2026?",
+   "n_outcomes": 19,
+   "market_ids": [
+    "4354833",
+    "4354840",
+    "4354848",
+    "4354854",
+    "4354856",
+    "4354860",
+    "4354861",
+    "4354864",
+    "4354865",
+    "4354866",
+    "4354867",
+    "4354868",
+    "4354870",
+    "4354871",
+    "4354872",
+    "4354873",
+    "4354874",
+    "4354876",
+    "4354878"
    ]
   },
   {
@@ -2883,41 +4545,166 @@
    ]
   },
   {
-   "event_id": "960598",
-   "slug": "bra-bot-gre-2026-09-16",
-   "title": "Botafogo FR vs. Grêmio FBPA",
-   "n_outcomes": 2,
+   "event_id": "48361",
+   "slug": "ballon-dor-winner-2026",
+   "title": "Ballon d'Or Winner 2026",
+   "n_outcomes": 19,
    "market_ids": [
-    "4194122",
-    "4194124",
-    "4194125"
+    "608540",
+    "608541",
+    "608542",
+    "608543",
+    "608545",
+    "608546",
+    "608547",
+    "608551",
+    "608552",
+    "608553",
+    "608554",
+    "608559",
+    "608560",
+    "608561",
+    "608562",
+    "608565",
+    "608566",
+    "608567",
+    "608568"
    ]
   },
   {
-   "event_id": "986503",
-   "slug": "elon-musk-of-tweets-september-11-september-18-2026",
-   "title": "Elon Musk # tweets September 11 - September 18, 2026?",
+   "event_id": "79987",
+   "slug": "next-french-presidential-election",
+   "title": "Next French Presidential Election",
+   "n_outcomes": 41,
+   "market_ids": [
+    "679018",
+    "679019",
+    "679020",
+    "679021",
+    "679022",
+    "679023",
+    "679024",
+    "679025",
+    "679026",
+    "679027",
+    "679028",
+    "679029",
+    "679030",
+    "679031",
+    "679032",
+    "679033",
+    "679034",
+    "679035",
+    "679036",
+    "679037",
+    "679038",
+    "679039",
+    "679040",
+    "679041",
+    "679042",
+    "679043",
+    "679044",
+    "679045",
+    "679046",
+    "679047",
+    "679048",
+    "679049",
+    "679051",
+    "679052",
+    "679053",
+    "679054",
+    "679055",
+    "679056",
+    "679057",
+    "679058",
+    "679059"
+   ]
+  },
+  {
+   "event_id": "31552",
+   "slug": "presidential-election-winner-2028",
+   "title": "Presidential Election Winner 2028",
+   "n_outcomes": 52,
+   "market_ids": [
+    "561229",
+    "561230",
+    "561231",
+    "561232",
+    "561233",
+    "561234",
+    "561235",
+    "561236",
+    "561237",
+    "561238",
+    "561239",
+    "561240",
+    "561241",
+    "561242",
+    "561243",
+    "561244",
+    "561245",
+    "561246",
+    "561247",
+    "561248",
+    "561249",
+    "561250",
+    "561251",
+    "561252",
+    "561253",
+    "561254",
+    "561255",
+    "561256",
+    "561257",
+    "561258",
+    "561259",
+    "561260",
+    "561261",
+    "561262",
+    "561263",
+    "561264",
+    "561265",
+    "561266",
+    "561267",
+    "561268",
+    "561269",
+    "561270",
+    "561271",
+    "561272",
+    "561273",
+    "561274",
+    "561275",
+    "561276",
+    "561277",
+    "561278",
+    "561279",
+    "561280"
+   ]
+  },
+  {
+   "event_id": "45915",
+   "slug": "brazil-presidential-election",
+   "title": "Brazil Presidential Election",
    "n_outcomes": 19,
    "market_ids": [
-    "4354833",
-    "4354840",
-    "4354848",
-    "4354854",
-    "4354856",
-    "4354860",
-    "4354861",
-    "4354864",
-    "4354865",
-    "4354866",
-    "4354867",
-    "4354868",
-    "4354870",
-    "4354871",
-    "4354872",
-    "4354873",
-    "4354874",
-    "4354876",
-    "4354878"
+    "601818",
+    "601819",
+    "601820",
+    "601821",
+    "601822",
+    "601823",
+    "601824",
+    "601825",
+    "601826",
+    "601827",
+    "601828",
+    "601829",
+    "601830",
+    "601831",
+    "601832",
+    "601833",
+    "601834",
+    "601835",
+    "601836"
    ]
   },
   {
