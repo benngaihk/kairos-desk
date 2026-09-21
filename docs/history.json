@@ -150,6 +150,17 @@
    "pre_print": [],
    "note_en": "Afternoon refresh. Scan 2026-09-18 16:17 CST: markets 564, raw_edges 0, after_audit 0, corrected_verdict NO_EDGE. Live Fed = October (PM +25bp 0.505 vs CME hike-bin 0.574, gap 6.9pp, mismatch_flag false). Universe 564.",
    "note_zh": "午后刷新。扫描 2026-09-18 16:17 CST：市场 564，生边 0，审计后 0，corrected_verdict NO_EDGE。在轨利率盘为十月（PM +25bp 0.505 对 CME 加息档 0.574，缺口 6.9pp，错配 false）。宇宙 564。"
+  },
+  {
+   "id": "2026-09-21-1038",
+   "as_of_cst": "2026-09-21 10:12 CST",
+   "published_cst": "2026-09-21 10:38 CST",
+   "after_audit": 0,
+   "url": "./history/2026-09-21-1038.json",
+   "kind": "scan",
+   "pre_print": [],
+   "note_en": "Morning refresh. Scan 2026-09-21 10:12 CST: markets 423, raw_edges 0, after_audit 0, corrected_verdict NO_EDGE. Live Fed = October (PM +25bp 0.545 vs CME hike-bin 0.597, gap 5.2pp, mismatch_flag false). Universe 423.",
+   "note_zh": "上午刷新。扫描 2026-09-21 10:12 CST：市场 423，生边 0，审计后 0，corrected_verdict NO_EDGE。在轨利率盘为十月（PM +25bp 0.545 对 CME 加息档 0.597，缺口 5.2pp，错配 false）。宇宙 423。"
   }
  ],
  "universe_url": "./universe.json"

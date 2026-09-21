@@ -1,37 +1,297 @@
 {
- "as_of_utc": "2026-09-18T08:17:05.604538Z",
- "as_of_cst": "2026-09-18 16:17 CST",
- "n_counted": 564,
- "n_completeness": 551,
- "n_negrisk_events": 13,
- "count_rule": "564 = 551 Yes/No completeness books + 13 NegRisk events (not 564 identical objects).",
- "sha256_market_ids": "1fae0364dc10b3a35690fef2761c6fa5830100b4a52184acbfb5ec6177a0a2a4",
- "n_unique_market_ids": 551,
+ "as_of_utc": "2026-09-21T02:12:19.776626Z",
+ "as_of_cst": "2026-09-21 10:12 CST",
+ "n_counted": 423,
+ "n_completeness": 414,
+ "n_negrisk_events": 9,
+ "count_rule": "423 = 414 Yes/No completeness books + 9 NegRisk events (not 423 identical objects).",
+ "sha256_market_ids": "0003e2cf2f3532796a01bcde73c81dd3a666c44026a33dcddc81611111e54ee3",
+ "n_unique_market_ids": 414,
  "completeness": [
   {
-   "market_id": "2589810",
-   "slug": "will-the-fed-decrease-interest-rates-by-50-bps-after-the-october-2026-meeting-20260617190324029",
-   "question": "Will the Fed decrease interest rates by 50+ bps after the October 2026 meeting?"
+   "market_id": "3482783",
+   "slug": "nfl-ind-kc-2026-09-21",
+   "question": "Colts vs. Chiefs"
   },
   {
-   "market_id": "2589811",
-   "slug": "will-the-fed-decrease-interest-rates-by-25-bps-after-the-october-2026-meeting-20260617190324030",
-   "question": "Will the Fed decrease interest rates by 25 bps after the October 2026 meeting?"
+   "market_id": "3516965",
+   "slug": "nfl-ind-kc-2026-09-21-spread-home-3pt5",
+   "question": "Spread: Chiefs (-3.5)"
   },
   {
-   "market_id": "2589812",
-   "slug": "will-there-be-no-change-in-fed-interest-rates-after-the-october-2026-meeting-20260617190324031",
-   "question": "Will there be no change in Fed interest rates after the October 2026 meeting?"
+   "market_id": "3516968",
+   "slug": "nfl-ind-kc-2026-09-21-spread-home-4pt5",
+   "question": "Spread: Chiefs (-4.5)"
   },
   {
-   "market_id": "2589813",
-   "slug": "will-the-fed-increase-interest-rates-by-25-bps-after-the-october-2026-meeting-20260617190324032",
-   "question": "Will the Fed increase interest rates by 25 bps after the October 2026 meeting?"
+   "market_id": "3516972",
+   "slug": "nfl-ind-kc-2026-09-21-spread-home-6pt5",
+   "question": "Spread: Chiefs (-6.5)"
   },
   {
-   "market_id": "2589814",
-   "slug": "will-the-fed-increase-interest-rates-by-50-bps-after-the-october-2026-meeting-20260617190324033",
-   "question": "Will the Fed increase interest rates by 50+ bps after the October 2026 meeting?"
+   "market_id": "3516974",
+   "slug": "nfl-ind-kc-2026-09-21-spread-home-7pt5",
+   "question": "Spread: Chiefs (-7.5)"
+  },
+  {
+   "market_id": "3516976",
+   "slug": "nfl-ind-kc-2026-09-21-spread-home-10pt5",
+   "question": "Spread: Chiefs (-10.5)"
+  },
+  {
+   "market_id": "3516978",
+   "slug": "nfl-ind-kc-2026-09-21-total-44pt5",
+   "question": "Colts vs. Chiefs: O/U 44.5"
+  },
+  {
+   "market_id": "3516980",
+   "slug": "nfl-ind-kc-2026-09-21-total-46pt5",
+   "question": "Colts vs. Chiefs: O/U 46.5"
+  },
+  {
+   "market_id": "3516981",
+   "slug": "nfl-ind-kc-2026-09-21-total-47pt5",
+   "question": "Colts vs. Chiefs: O/U 47.5"
+  },
+  {
+   "market_id": "3516982",
+   "slug": "nfl-ind-kc-2026-09-21-total-49pt5",
+   "question": "Colts vs. Chiefs: O/U 49.5"
+  },
+  {
+   "market_id": "3516983",
+   "slug": "nfl-ind-kc-2026-09-21-total-50pt5",
+   "question": "Colts vs. Chiefs: O/U 50.5"
+  },
+  {
+   "market_id": "3919987",
+   "slug": "nfl-ind-kc-2026-09-21-total-27pt5",
+   "question": "Colts vs. Chiefs: O/U 27.5"
+  },
+  {
+   "market_id": "3919988",
+   "slug": "nfl-ind-kc-2026-09-21-total-29pt5",
+   "question": "Colts vs. Chiefs: O/U 29.5"
+  },
+  {
+   "market_id": "3919989",
+   "slug": "nfl-ind-kc-2026-09-21-total-31pt5",
+   "question": "Colts vs. Chiefs: O/U 31.5"
+  },
+  {
+   "market_id": "3919990",
+   "slug": "nfl-ind-kc-2026-09-21-total-33pt5",
+   "question": "Colts vs. Chiefs: O/U 33.5"
+  },
+  {
+   "market_id": "3919991",
+   "slug": "nfl-ind-kc-2026-09-21-total-35pt5",
+   "question": "Colts vs. Chiefs: O/U 35.5"
+  },
+  {
+   "market_id": "3919992",
+   "slug": "nfl-ind-kc-2026-09-21-total-37pt5",
+   "question": "Colts vs. Chiefs: O/U 37.5"
+  },
+  {
+   "market_id": "3919993",
+   "slug": "nfl-ind-kc-2026-09-21-total-39pt5",
+   "question": "Colts vs. Chiefs: O/U 39.5"
+  },
+  {
+   "market_id": "3919994",
+   "slug": "nfl-ind-kc-2026-09-21-total-41pt5",
+   "question": "Colts vs. Chiefs: O/U 41.5"
+  },
+  {
+   "market_id": "3919995",
+   "slug": "nfl-ind-kc-2026-09-21-total-43pt5",
+   "question": "Colts vs. Chiefs: O/U 43.5"
+  },
+  {
+   "market_id": "3919996",
+   "slug": "nfl-ind-kc-2026-09-21-total-45pt5",
+   "question": "Colts vs. Chiefs: O/U 45.5"
+  },
+  {
+   "market_id": "3919997",
+   "slug": "nfl-ind-kc-2026-09-21-total-51pt5",
+   "question": "Colts vs. Chiefs: O/U 51.5"
+  },
+  {
+   "market_id": "3919998",
+   "slug": "nfl-ind-kc-2026-09-21-total-53pt5",
+   "question": "Colts vs. Chiefs: O/U 53.5"
+  },
+  {
+   "market_id": "3919999",
+   "slug": "nfl-ind-kc-2026-09-21-total-55pt5",
+   "question": "Colts vs. Chiefs: O/U 55.5"
+  },
+  {
+   "market_id": "3920000",
+   "slug": "nfl-ind-kc-2026-09-21-total-57pt5",
+   "question": "Colts vs. Chiefs: O/U 57.5"
+  },
+  {
+   "market_id": "3920001",
+   "slug": "nfl-ind-kc-2026-09-21-total-59pt5",
+   "question": "Colts vs. Chiefs: O/U 59.5"
+  },
+  {
+   "market_id": "3920002",
+   "slug": "nfl-ind-kc-2026-09-21-total-61pt5",
+   "question": "Colts vs. Chiefs: O/U 61.5"
+  },
+  {
+   "market_id": "3920003",
+   "slug": "nfl-ind-kc-2026-09-21-total-63pt5",
+   "question": "Colts vs. Chiefs: O/U 63.5"
+  },
+  {
+   "market_id": "3920004",
+   "slug": "nfl-ind-kc-2026-09-21-total-65pt5",
+   "question": "Colts vs. Chiefs: O/U 65.5"
+  },
+  {
+   "market_id": "3920005",
+   "slug": "nfl-ind-kc-2026-09-21-total-67pt5",
+   "question": "Colts vs. Chiefs: O/U 67.5"
+  },
+  {
+   "market_id": "4314940",
+   "slug": "nfl-ind-kc-2026-09-21-2h-moneyline",
+   "question": "Colts vs. Chiefs: 2H Moneyline"
+  },
+  {
+   "market_id": "4384969",
+   "slug": "nfl-ind-kc-2026-09-21-spread-home-5pt5",
+   "question": "Spread: KC (-5.5)"
+  },
+  {
+   "market_id": "4424950",
+   "slug": "nfl-ind-kc-2026-09-21-total-48pt5",
+   "question": "Colts vs. Chiefs: O/U 48.5"
+  },
+  {
+   "market_id": "4544744",
+   "slug": "nfl-ind-kc-2026-09-21-exact-margin-long-25-plus",
+   "question": "Exact Margin: Colts by 25+"
+  },
+  {
+   "market_id": "4544745",
+   "slug": "nfl-ind-kc-2026-09-21-exact-margin-long-19-24",
+   "question": "Exact Margin: Colts by 19-24"
+  },
+  {
+   "market_id": "4544746",
+   "slug": "nfl-ind-kc-2026-09-21-exact-margin-long-13-18",
+   "question": "Exact Margin: Colts by 13-18"
+  },
+  {
+   "market_id": "4544747",
+   "slug": "nfl-ind-kc-2026-09-21-exact-margin-long-7-12",
+   "question": "Exact Margin: Colts by 7-12"
+  },
+  {
+   "market_id": "4544748",
+   "slug": "nfl-ind-kc-2026-09-21-exact-margin-long-1-6",
+   "question": "Exact Margin: Colts by 1-6"
+  },
+  {
+   "market_id": "4544749",
+   "slug": "nfl-ind-kc-2026-09-21-exact-margin-tie",
+   "question": "Exact Margin: Tie"
+  },
+  {
+   "market_id": "4544750",
+   "slug": "nfl-ind-kc-2026-09-21-exact-margin-short-1-6",
+   "question": "Exact Margin: Chiefs by 1-6"
+  },
+  {
+   "market_id": "4544751",
+   "slug": "nfl-ind-kc-2026-09-21-exact-margin-short-7-13",
+   "question": "Exact Margin: Chiefs by 7-13"
+  },
+  {
+   "market_id": "4544752",
+   "slug": "nfl-ind-kc-2026-09-21-exact-margin-short-14-20",
+   "question": "Exact Margin: Chiefs by 14-20"
+  },
+  {
+   "market_id": "4544753",
+   "slug": "nfl-ind-kc-2026-09-21-exact-margin-short-21-plus",
+   "question": "Exact Margin: Chiefs by 21+"
+  },
+  {
+   "market_id": "4544754",
+   "slug": "nfl-ind-kc-2026-09-21-safety",
+   "question": "Colts vs. Chiefs: Safety?"
+  },
+  {
+   "market_id": "4544755",
+   "slug": "nfl-ind-kc-2026-09-21-longest-field-goal",
+   "question": "Colts vs. Chiefs: Team to Record Longest FG"
+  },
+  {
+   "market_id": "4544756",
+   "slug": "nfl-ind-kc-2026-09-21-1q-btts-points",
+   "question": "Colts vs. Chiefs: Both Teams to Score Points - 1Q"
+  },
+  {
+   "market_id": "4544757",
+   "slug": "nfl-ind-kc-2026-09-21-2q-btts-points",
+   "question": "Colts vs. Chiefs: Both Teams to Score Points - 2Q"
+  },
+  {
+   "market_id": "4544758",
+   "slug": "nfl-ind-kc-2026-09-21-3q-btts-points",
+   "question": "Colts vs. Chiefs: Both Teams to Score Points - 3Q"
+  },
+  {
+   "market_id": "4544759",
+   "slug": "nfl-ind-kc-2026-09-21-4q-btts-points",
+   "question": "Colts vs. Chiefs: Both Teams to Score Points - 4Q"
+  },
+  {
+   "market_id": "4544760",
+   "slug": "nfl-ind-kc-2026-09-21-team-off-yards-ind-350pt5",
+   "question": "Colts Total Offensive Yards: O/U 350.5"
+  },
+  {
+   "market_id": "4544761",
+   "slug": "nfl-ind-kc-2026-09-21-team-off-yards-kc-350pt5",
+   "question": "Chiefs Total Offensive Yards: O/U 350.5"
+  },
+  {
+   "market_id": "4544762",
+   "slug": "nfl-ind-kc-2026-09-21-two-pt-conversions-0pt5",
+   "question": "Colts vs. Chiefs: Total Two-Point Conversions O/U 0.5"
+  },
+  {
+   "market_id": "4569222",
+   "slug": "nfl-ind-kc-2026-09-21-3q-moneyline",
+   "question": "Colts vs. Chiefs: 3Q Moneyline"
+  },
+  {
+   "market_id": "4569223",
+   "slug": "nfl-ind-kc-2026-09-21-4q-moneyline",
+   "question": "Colts vs. Chiefs: 4Q Moneyline"
+  },
+  {
+   "market_id": "4583544",
+   "slug": "nfl-ind-kc-2026-09-21-team-tds-ind-2pt5",
+   "question": "Colts Total Touchdowns: O/U 2.5"
+  },
+  {
+   "market_id": "4583545",
+   "slug": "nfl-ind-kc-2026-09-21-team-tds-kc-3pt5",
+   "question": "Chiefs Total Touchdowns: O/U 3.5"
+  },
+  {
+   "market_id": "4757440",
+   "slug": "nfl-ind-kc-2026-09-21-team-tds-kc-2pt5",
+   "question": "Chiefs Total Touchdowns: O/U 2.5"
   },
   {
    "market_id": "1130012",
@@ -204,1594 +464,279 @@
    "question": "Will Party Z gain the most seats in the next Russian parliamentary election?"
   },
   {
-   "market_id": "4470866",
-   "slug": "bitcoin-above-68k-on-september-18-2026",
-   "question": "Will the price of Bitcoin be above $68,000 on September 18?"
+   "market_id": "4554663",
+   "slug": "nfl-gb-nyj-2026-09-20-1q-moneyline",
+   "question": "Packers vs. Jets: 1Q Moneyline"
   },
   {
-   "market_id": "4470868",
-   "slug": "bitcoin-above-70k-on-september-18-2026",
-   "question": "Will the price of Bitcoin be above $70,000 on September 18?"
+   "market_id": "4559992",
+   "slug": "nfl-gb-nyj-2026-09-20-1h-moneyline",
+   "question": "Packers vs. Jets: 1H Moneyline"
   },
   {
-   "market_id": "4470869",
-   "slug": "bitcoin-above-72k-on-september-18-2026",
-   "question": "Will the price of Bitcoin be above $72,000 on September 18?"
+   "market_id": "4569249",
+   "slug": "nfl-gb-nyj-2026-09-20-2q-moneyline",
+   "question": "Packers vs. Jets: 2Q Moneyline"
   },
   {
-   "market_id": "4470871",
-   "slug": "bitcoin-above-74k-on-september-18-2026",
-   "question": "Will the price of Bitcoin be above $74,000 on September 18?"
+   "market_id": "4541137",
+   "slug": "nfl-was-dal-2026-09-20-longest-field-goal",
+   "question": "Commanders vs. Cowboys: Team to Record Longest FG"
   },
   {
-   "market_id": "4470873",
-   "slug": "bitcoin-above-76k-on-september-18-2026",
-   "question": "Will the price of Bitcoin be above $76,000 on September 18?"
+   "market_id": "4543636",
+   "slug": "nfl-was-dal-2026-09-20-team-off-yards-was-350pt5",
+   "question": "Commanders Total Offensive Yards: O/U 350.5"
   },
   {
-   "market_id": "4470875",
-   "slug": "bitcoin-above-78k-on-september-18-2026",
-   "question": "Will the price of Bitcoin be above $78,000 on September 18?"
+   "market_id": "4543637",
+   "slug": "nfl-was-dal-2026-09-20-team-off-yards-dal-350pt5",
+   "question": "Cowboys Total Offensive Yards: O/U 350.5"
   },
   {
-   "market_id": "4470877",
-   "slug": "bitcoin-above-80k-on-september-18-2026",
-   "question": "Will the price of Bitcoin be above $80,000 on September 18?"
+   "market_id": "4543638",
+   "slug": "nfl-was-dal-2026-09-20-two-pt-conversions-0pt5",
+   "question": "Commanders vs. Cowboys: Total Two-Point Conversions O/U 0.5"
   },
   {
-   "market_id": "4470880",
-   "slug": "bitcoin-above-82k-on-september-18-2026",
-   "question": "Will the price of Bitcoin be above $82,000 on September 18?"
+   "market_id": "4569261",
+   "slug": "nfl-min-chi-2026-09-20-3q-moneyline",
+   "question": "Vikings vs. Bears: 3Q Moneyline"
   },
   {
-   "market_id": "4470881",
-   "slug": "bitcoin-above-84k-on-september-18-2026",
-   "question": "Will the price of Bitcoin be above $84,000 on September 18?"
+   "market_id": "4530778",
+   "slug": "nfl-car-atl-2026-09-20-exact-margin-long-25-plus",
+   "question": "Exact Margin: Panthers by 25+"
   },
   {
-   "market_id": "4470883",
-   "slug": "bitcoin-above-86k-on-september-18-2026",
-   "question": "Will the price of Bitcoin be above $86,000 on September 18?"
+   "market_id": "4530780",
+   "slug": "nfl-car-atl-2026-09-20-exact-margin-long-19-24",
+   "question": "Exact Margin: Panthers by 19-24"
   },
   {
-   "market_id": "4470886",
-   "slug": "bitcoin-above-88k-on-september-18-2026",
-   "question": "Will the price of Bitcoin be above $88,000 on September 18?"
+   "market_id": "4530783",
+   "slug": "nfl-car-atl-2026-09-20-exact-margin-long-13-18",
+   "question": "Exact Margin: Panthers by 13-18"
   },
   {
-   "market_id": "4237382",
-   "slug": "bun-bay-uni-2026-09-18-bay",
-   "question": "Will FC Bayern München win on 2026-09-18?"
+   "market_id": "4530787",
+   "slug": "nfl-car-atl-2026-09-20-exact-margin-long-1-6",
+   "question": "Exact Margin: Panthers by 1-6"
   },
   {
-   "market_id": "4237392",
-   "slug": "bun-bay-uni-2026-09-18-draw",
-   "question": "Will FC Bayern München vs. 1. FC Union Berlin end in a draw?"
+   "market_id": "4530789",
+   "slug": "nfl-car-atl-2026-09-20-exact-margin-tie",
+   "question": "Exact Margin: Tie"
   },
   {
-   "market_id": "4237403",
-   "slug": "bun-bay-uni-2026-09-18-uni",
-   "question": "Will 1. FC Union Berlin win on 2026-09-18?"
+   "market_id": "4530791",
+   "slug": "nfl-car-atl-2026-09-20-exact-margin-short-1-6",
+   "question": "Exact Margin: Falcons by 1-6"
   },
   {
-   "market_id": "4630639",
-   "slug": "wnba-phx-por-2026-09-17-rebounds-alyssa-thomas-7pt5",
-   "question": "Alyssa Thomas: Rebounds O/U 7.5"
+   "market_id": "4530793",
+   "slug": "nfl-car-atl-2026-09-20-exact-margin-short-7-13",
+   "question": "Exact Margin: Falcons by 7-13"
   },
   {
-   "market_id": "4641776",
-   "slug": "wnba-phx-por-2026-09-17-rebounds-alyssa-thomas-8pt5",
-   "question": "Alyssa Thomas: Rebounds O/U 8.5"
+   "market_id": "4530797",
+   "slug": "nfl-car-atl-2026-09-20-exact-margin-short-21-plus",
+   "question": "Exact Margin: Falcons by 21+"
   },
   {
-   "market_id": "4665268",
-   "slug": "wnba-phx-por-2026-09-17-rebounds-emily-engstler-6pt5",
-   "question": "Emily Engstler: Rebounds O/U 6.5"
+   "market_id": "4530809",
+   "slug": "nfl-car-atl-2026-09-20-4q-btts-points",
+   "question": "Panthers vs. Falcons: Both Teams to Score Points - 4Q"
   },
   {
-   "market_id": "608540",
-   "slug": "will-kylian-mbapp-win-the-2026-ballon-dor",
-   "question": "Will Kylian Mbappé win the 2026 Ballon d'Or?"
+   "market_id": "4541169",
+   "slug": "nfl-lv-lac-2026-09-20-longest-field-goal",
+   "question": "Raiders vs. Chargers: Team to Record Longest FG"
   },
   {
-   "market_id": "608541",
-   "slug": "will-erling-haaland-win-the-2026-ballon-dor",
-   "question": "Will Erling Haaland win the 2026 Ballon d'Or?"
+   "market_id": "4543642",
+   "slug": "nfl-lv-lac-2026-09-20-team-off-yards-lv-350pt5",
+   "question": "Raiders Total Offensive Yards: O/U 350.5"
   },
   {
-   "market_id": "608542",
-   "slug": "will-jude-bellingham-win-the-2026-ballon-dor",
-   "question": "Will Jude Bellingham win the 2026 Ballon d'Or?"
+   "market_id": "4543643",
+   "slug": "nfl-lv-lac-2026-09-20-team-off-yards-lac-350pt5",
+   "question": "Chargers Total Offensive Yards: O/U 350.5"
   },
   {
-   "market_id": "608543",
-   "slug": "will-ousmane-dembl-win-the-2026-ballon-dor",
-   "question": "Will Ousmane Dembélé win the 2026 Ballon d'Or?"
+   "market_id": "4543644",
+   "slug": "nfl-lv-lac-2026-09-20-two-pt-conversions-0pt5",
+   "question": "Raiders vs. Chargers: Total Two-Point Conversions O/U 0.5"
   },
   {
-   "market_id": "608545",
-   "slug": "will-lamine-yamal-win-the-2026-ballon-dor",
-   "question": "Will Lamine Yamal win the 2026 Ballon d'Or?"
+   "market_id": "4541185",
+   "slug": "nfl-jax-den-2026-09-20-longest-field-goal",
+   "question": "Jaguars vs. Broncos: Team to Record Longest FG"
   },
   {
-   "market_id": "608546",
-   "slug": "will-vincius-jnior-win-the-2026-ballon-dor",
-   "question": "Will Vinícius Júnior win the 2026 Ballon d'Or?"
+   "market_id": "4543645",
+   "slug": "nfl-jax-den-2026-09-20-team-off-yards-jax-350pt5",
+   "question": "Jaguars Total Offensive Yards: O/U 350.5"
   },
   {
-   "market_id": "608547",
-   "slug": "will-harry-kane-win-the-2026-ballon-dor",
-   "question": "Will Harry Kane win the 2026 Ballon d'Or?"
+   "market_id": "4543646",
+   "slug": "nfl-jax-den-2026-09-20-team-off-yards-den-350pt5",
+   "question": "Broncos Total Offensive Yards: O/U 350.5"
   },
   {
-   "market_id": "608550",
-   "slug": "will-someone-else-win-the-2026-ballon-dor",
-   "question": "Will someone else win the 2026 Ballon d'Or?"
+   "market_id": "4543647",
+   "slug": "nfl-jax-den-2026-09-20-two-pt-conversions-0pt5",
+   "question": "Jaguars vs. Broncos: Total Two-Point Conversions O/U 0.5"
   },
   {
-   "market_id": "608551",
-   "slug": "will-michael-olise-win-the-2026-ballon-dor",
-   "question": "Will Michael Olise win the 2026 Ballon d'Or?"
+   "market_id": "4530530",
+   "slug": "nfl-cle-tb-2026-09-20-exact-margin-long-25-plus",
+   "question": "Exact Margin: Browns by 25+"
   },
   {
-   "market_id": "608552",
-   "slug": "will-declan-rice-win-the-2026-ballon-dor",
-   "question": "Will Declan Rice win the 2026 Ballon d'Or?"
+   "market_id": "4530536",
+   "slug": "nfl-cle-tb-2026-09-20-exact-margin-long-7-12",
+   "question": "Exact Margin: Browns by 7-12"
   },
   {
-   "market_id": "608553",
-   "slug": "will-khvicha-kvaratskhelia-win-the-2026-ballon-dor",
-   "question": "Will Khvicha Kvaratskhelia win the 2026 Ballon d'Or?"
+   "market_id": "4530540",
+   "slug": "nfl-cle-tb-2026-09-20-exact-margin-tie",
+   "question": "Exact Margin: Tie"
   },
   {
-   "market_id": "608554",
-   "slug": "will-vitinha-win-the-2026-ballon-dor",
-   "question": "Will Vitinha win the 2026 Ballon d'Or?"
+   "market_id": "4530542",
+   "slug": "nfl-cle-tb-2026-09-20-exact-margin-short-1-6",
+   "question": "Exact Margin: Buccaneers by 1-6"
   },
   {
-   "market_id": "608559",
-   "slug": "will-achraf-hakimi-win-the-2026-ballon-dor",
-   "question": "Will Achraf Hakimi win the 2026 Ballon d'Or?"
+   "market_id": "4530544",
+   "slug": "nfl-cle-tb-2026-09-20-exact-margin-short-7-13",
+   "question": "Exact Margin: Buccaneers by 7-13"
   },
   {
-   "market_id": "608560",
-   "slug": "will-bruno-fernandes-win-the-2026-ballon-dor",
-   "question": "Will Bruno Fernandes win the 2026 Ballon d'Or?"
+   "market_id": "4530546",
+   "slug": "nfl-cle-tb-2026-09-20-exact-margin-short-14-20",
+   "question": "Exact Margin: Buccaneers by 14-20"
   },
   {
-   "market_id": "608561",
-   "slug": "will-luis-diaz-win-the-2026-ballon-dor",
-   "question": "Will Luis Diaz win the 2026 Ballon d'Or?"
+   "market_id": "4530552",
+   "slug": "nfl-cle-tb-2026-09-20-longest-field-goal",
+   "question": "Browns vs. Buccaneers: Team to Record Longest FG"
   },
   {
-   "market_id": "608562",
-   "slug": "will-lautaro-martinez-win-the-2026-ballon-dor",
-   "question": "Will Lautaro Martinez win the 2026 Ballon d'Or?"
+   "market_id": "4530562",
+   "slug": "nfl-cle-tb-2026-09-20-team-off-yards-cle-350pt5",
+   "question": "Browns Total Offensive Yards: O/U 350.5"
   },
   {
-   "market_id": "608565",
-   "slug": "will-lionel-messi-win-the-2026-ballon-dor",
-   "question": "Will Lionel Messi win the 2026 Ballon d'Or?"
+   "market_id": "4530564",
+   "slug": "nfl-cle-tb-2026-09-20-team-off-yards-tb-350pt5",
+   "question": "Buccaneers Total Offensive Yards: O/U 350.5"
   },
   {
-   "market_id": "608566",
-   "slug": "will-rodri-win-the-2026-ballon-dor",
-   "question": "Will Rodri win the 2026 Ballon d'Or?"
+   "market_id": "4530566",
+   "slug": "nfl-cle-tb-2026-09-20-two-pt-conversions-0pt5",
+   "question": "Browns vs. Buccaneers: Total Two-Point Conversions O/U 0.5"
   },
   {
-   "market_id": "608567",
-   "slug": "will-pau-cubarsi-win-the-2026-ballon-dor",
-   "question": "Will Pau Cubarsi win the 2026 Ballon d'Or?"
+   "market_id": "4541110",
+   "slug": "nfl-mia-sf-2026-09-20-exact-margin-long-25-plus",
+   "question": "Exact Margin: Dolphins by 25+"
   },
   {
-   "market_id": "608568",
-   "slug": "will-fabian-ruiz-win-the-2026-ballon-dor",
-   "question": "Will Fabian Ruiz win the 2026 Ballon d'Or?"
+   "market_id": "4541111",
+   "slug": "nfl-mia-sf-2026-09-20-exact-margin-long-19-24",
+   "question": "Exact Margin: Dolphins by 19-24"
   },
   {
-   "market_id": "608572",
-   "slug": "will-gavi-win-the-2026-ballon-dor",
-   "question": "Will Gavi win the 2026 Ballon d'Or?"
+   "market_id": "4541112",
+   "slug": "nfl-mia-sf-2026-09-20-exact-margin-long-13-18",
+   "question": "Exact Margin: Dolphins by 13-18"
   },
   {
-   "market_id": "608573",
-   "slug": "will-placeholder-w-win-the-2026-ballon-dor",
-   "question": "Will [Placeholder W] win the 2026 Ballon d'Or?"
+   "market_id": "4541113",
+   "slug": "nfl-mia-sf-2026-09-20-exact-margin-long-7-12",
+   "question": "Exact Margin: Dolphins by 7-12"
   },
   {
-   "market_id": "608574",
-   "slug": "will-placeholder-x-win-the-2026-ballon-dor",
-   "question": "Will [Placeholder X] win the 2026 Ballon d'Or?"
+   "market_id": "4541114",
+   "slug": "nfl-mia-sf-2026-09-20-exact-margin-long-1-6",
+   "question": "Exact Margin: Dolphins by 1-6"
   },
   {
-   "market_id": "608575",
-   "slug": "will-placeholder-y-win-the-2026-ballon-dor",
-   "question": "Will [Placeholder Y] win the 2026 Ballon d'Or?"
+   "market_id": "4541115",
+   "slug": "nfl-mia-sf-2026-09-20-exact-margin-tie",
+   "question": "Exact Margin: Tie"
   },
   {
-   "market_id": "608576",
-   "slug": "will-placeholder-z-win-the-2026-ballon-dor",
-   "question": "Will [Placeholder Z] win the 2026 Ballon d'Or?"
+   "market_id": "4541116",
+   "slug": "nfl-mia-sf-2026-09-20-exact-margin-short-1-6",
+   "question": "Exact Margin: 49ers by 1-6"
   },
   {
-   "market_id": "608577",
-   "slug": "will-placeholder-aa-win-the-2026-ballon-dor",
-   "question": "Will [Placeholder AA] win the 2026 Ballon d'Or?"
+   "market_id": "4541117",
+   "slug": "nfl-mia-sf-2026-09-20-exact-margin-short-7-13",
+   "question": "Exact Margin: 49ers by 7-13"
   },
   {
-   "market_id": "608578",
-   "slug": "will-placeholder-ab-win-the-2026-ballon-dor",
-   "question": "Will [Placeholder AB] win the 2026 Ballon d'Or?"
+   "market_id": "4541118",
+   "slug": "nfl-mia-sf-2026-09-20-exact-margin-short-14-20",
+   "question": "Exact Margin: 49ers by 14-20"
   },
   {
-   "market_id": "608579",
-   "slug": "will-placeholder-ac-win-the-2026-ballon-dor",
-   "question": "Will [Placeholder AC] win the 2026 Ballon d'Or?"
+   "market_id": "4541119",
+   "slug": "nfl-mia-sf-2026-09-20-exact-margin-short-21-plus",
+   "question": "Exact Margin: 49ers by 21+"
   },
   {
-   "market_id": "608580",
-   "slug": "will-placeholder-ad-win-the-2026-ballon-dor",
-   "question": "Will [Placeholder AD] win the 2026 Ballon d'Or?"
+   "market_id": "4541121",
+   "slug": "nfl-mia-sf-2026-09-20-longest-field-goal",
+   "question": "Dolphins vs. 49ers: Team to Record Longest FG"
   },
   {
-   "market_id": "608581",
-   "slug": "will-placeholder-ae-win-the-2026-ballon-dor",
-   "question": "Will [Placeholder AE] win the 2026 Ballon d'Or?"
+   "market_id": "4541125",
+   "slug": "nfl-mia-sf-2026-09-20-4q-btts-points",
+   "question": "Dolphins vs. 49ers: Both Teams to Score Points - 4Q"
   },
   {
-   "market_id": "608582",
-   "slug": "will-placeholder-af-win-the-2026-ballon-dor",
-   "question": "Will [Placeholder AF] win the 2026 Ballon d'Or?"
+   "market_id": "4543633",
+   "slug": "nfl-mia-sf-2026-09-20-team-off-yards-mia-350pt5",
+   "question": "Dolphins Total Offensive Yards: O/U 350.5"
   },
   {
-   "market_id": "608583",
-   "slug": "will-placeholder-ag-win-the-2026-ballon-dor",
-   "question": "Will [Placeholder AG] win the 2026 Ballon d'Or?"
+   "market_id": "4543634",
+   "slug": "nfl-mia-sf-2026-09-20-team-off-yards-sf-350pt5",
+   "question": "49ers Total Offensive Yards: O/U 350.5"
   },
   {
-   "market_id": "608584",
-   "slug": "will-placeholder-ah-win-the-2026-ballon-dor",
-   "question": "Will [Placeholder AH] win the 2026 Ballon d'Or?"
+   "market_id": "4543635",
+   "slug": "nfl-mia-sf-2026-09-20-two-pt-conversions-0pt5",
+   "question": "Dolphins vs. 49ers: Total Two-Point Conversions O/U 0.5"
   },
   {
-   "market_id": "608585",
-   "slug": "will-placeholder-ai-win-the-2026-ballon-dor",
-   "question": "Will [Placeholder AI] win the 2026 Ballon d'Or?"
+   "market_id": "4541153",
+   "slug": "nfl-sea-ari-2026-09-20-longest-field-goal",
+   "question": "Seahawks vs. Cardinals: Team to Record Longest FG"
   },
   {
-   "market_id": "608586",
-   "slug": "will-placeholder-aj-win-the-2026-ballon-dor",
-   "question": "Will [Placeholder AJ] win the 2026 Ballon d'Or?"
+   "market_id": "4543639",
+   "slug": "nfl-sea-ari-2026-09-20-team-off-yards-sea-350pt5",
+   "question": "Seahawks Total Offensive Yards: O/U 350.5"
   },
   {
-   "market_id": "608587",
-   "slug": "will-placeholder-ak-win-the-2026-ballon-dor",
-   "question": "Will [Placeholder AK] win the 2026 Ballon d'Or?"
+   "market_id": "4543640",
+   "slug": "nfl-sea-ari-2026-09-20-team-off-yards-ari-350pt5",
+   "question": "Cardinals Total Offensive Yards: O/U 350.5"
   },
   {
-   "market_id": "608588",
-   "slug": "will-placeholder-al-win-the-2026-ballon-dor",
-   "question": "Will [Placeholder AL] win the 2026 Ballon d'Or?"
+   "market_id": "4543641",
+   "slug": "nfl-sea-ari-2026-09-20-two-pt-conversions-0pt5",
+   "question": "Seahawks vs. Cardinals: Total Two-Point Conversions O/U 0.5"
   },
   {
-   "market_id": "608589",
-   "slug": "will-placeholder-am-win-the-2026-ballon-dor",
-   "question": "Will [Placeholder AM] win the 2026 Ballon d'Or?"
-  },
-  {
-   "market_id": "608590",
-   "slug": "will-placeholder-an-win-the-2026-ballon-dor",
-   "question": "Will [Placeholder AN] win the 2026 Ballon d'Or?"
-  },
-  {
-   "market_id": "608591",
-   "slug": "will-placeholder-ao-win-the-2026-ballon-dor",
-   "question": "Will [Placeholder AO] win the 2026 Ballon d'Or?"
-  },
-  {
-   "market_id": "608592",
-   "slug": "will-placeholder-ap-win-the-2026-ballon-dor",
-   "question": "Will [Placeholder AP] win the 2026 Ballon d'Or?"
-  },
-  {
-   "market_id": "608593",
-   "slug": "will-placeholder-aq-win-the-2026-ballon-dor",
-   "question": "Will [Placeholder AQ] win the 2026 Ballon d'Or?"
-  },
-  {
-   "market_id": "608594",
-   "slug": "will-placeholder-ar-win-the-2026-ballon-dor",
-   "question": "Will [Placeholder AR] win the 2026 Ballon d'Or?"
-  },
-  {
-   "market_id": "608595",
-   "slug": "will-placeholder-as-win-the-2026-ballon-dor",
-   "question": "Will [Placeholder AS] win the 2026 Ballon d'Or?"
-  },
-  {
-   "market_id": "608596",
-   "slug": "will-placeholder-at-win-the-2026-ballon-dor",
-   "question": "Will [Placeholder AT] win the 2026 Ballon d'Or?"
-  },
-  {
-   "market_id": "608597",
-   "slug": "will-placeholder-au-win-the-2026-ballon-dor",
-   "question": "Will [Placeholder AU] win the 2026 Ballon d'Or?"
-  },
-  {
-   "market_id": "608598",
-   "slug": "will-placeholder-av-win-the-2026-ballon-dor",
-   "question": "Will [Placeholder AV] win the 2026 Ballon d'Or?"
-  },
-  {
-   "market_id": "608599",
-   "slug": "will-placeholder-aw-win-the-2026-ballon-dor",
-   "question": "Will [Placeholder AW] win the 2026 Ballon d'Or?"
-  },
-  {
-   "market_id": "608600",
-   "slug": "will-placeholder-ax-win-the-2026-ballon-dor",
-   "question": "Will [Placeholder AX] win the 2026 Ballon d'Or?"
-  },
-  {
-   "market_id": "608601",
-   "slug": "will-placeholder-ay-win-the-2026-ballon-dor",
-   "question": "Will [Placeholder AY] win the 2026 Ballon d'Or?"
-  },
-  {
-   "market_id": "608602",
-   "slug": "will-placeholder-az-win-the-2026-ballon-dor",
-   "question": "Will [Placeholder AZ] win the 2026 Ballon d'Or?"
-  },
-  {
-   "market_id": "608603",
-   "slug": "will-placeholder-ba-win-the-2026-ballon-dor",
-   "question": "Will [Placeholder BA] win the 2026 Ballon d'Or?"
-  },
-  {
-   "market_id": "608604",
-   "slug": "will-placeholder-bb-win-the-2026-ballon-dor",
-   "question": "Will [Placeholder BB] win the 2026 Ballon d'Or?"
-  },
-  {
-   "market_id": "608605",
-   "slug": "will-placeholder-bc-win-the-2026-ballon-dor",
-   "question": "Will [Placeholder BC] win the 2026 Ballon d'Or?"
-  },
-  {
-   "market_id": "608606",
-   "slug": "will-placeholder-bd-win-the-2026-ballon-dor",
-   "question": "Will [Placeholder BD] win the 2026 Ballon d'Or?"
-  },
-  {
-   "market_id": "608607",
-   "slug": "will-placeholder-be-win-the-2026-ballon-dor",
-   "question": "Will [Placeholder BE] win the 2026 Ballon d'Or?"
-  },
-  {
-   "market_id": "608608",
-   "slug": "will-placeholder-bf-win-the-2026-ballon-dor",
-   "question": "Will [Placeholder BF] win the 2026 Ballon d'Or?"
-  },
-  {
-   "market_id": "608609",
-   "slug": "will-placeholder-bg-win-the-2026-ballon-dor",
-   "question": "Will [Placeholder BG] win the 2026 Ballon d'Or?"
-  },
-  {
-   "market_id": "608610",
-   "slug": "will-placeholder-bh-win-the-2026-ballon-dor",
-   "question": "Will [Placeholder BH] win the 2026 Ballon d'Or?"
-  },
-  {
-   "market_id": "608611",
-   "slug": "will-placeholder-bi-win-the-2026-ballon-dor",
-   "question": "Will [Placeholder BI] win the 2026 Ballon d'Or?"
-  },
-  {
-   "market_id": "608612",
-   "slug": "will-placeholder-bj-win-the-2026-ballon-dor",
-   "question": "Will [Placeholder BJ] win the 2026 Ballon d'Or?"
-  },
-  {
-   "market_id": "608613",
-   "slug": "will-placeholder-bk-win-the-2026-ballon-dor",
-   "question": "Will [Placeholder BK] win the 2026 Ballon d'Or?"
-  },
-  {
-   "market_id": "608614",
-   "slug": "will-placeholder-bl-win-the-2026-ballon-dor",
-   "question": "Will [Placeholder BL] win the 2026 Ballon d'Or?"
-  },
-  {
-   "market_id": "608615",
-   "slug": "will-placeholder-bm-win-the-2026-ballon-dor",
-   "question": "Will [Placeholder BM] win the 2026 Ballon d'Or?"
-  },
-  {
-   "market_id": "608616",
-   "slug": "will-placeholder-bn-win-the-2026-ballon-dor",
-   "question": "Will [Placeholder BN] win the 2026 Ballon d'Or?"
-  },
-  {
-   "market_id": "608617",
-   "slug": "will-placeholder-bo-win-the-2026-ballon-dor",
-   "question": "Will [Placeholder BO] win the 2026 Ballon d'Or?"
-  },
-  {
-   "market_id": "608618",
-   "slug": "will-placeholder-bp-win-the-2026-ballon-dor",
-   "question": "Will [Placeholder BP] win the 2026 Ballon d'Or?"
-  },
-  {
-   "market_id": "608619",
-   "slug": "will-placeholder-bq-win-the-2026-ballon-dor",
-   "question": "Will [Placeholder BQ] win the 2026 Ballon d'Or?"
-  },
-  {
-   "market_id": "608620",
-   "slug": "will-placeholder-br-win-the-2026-ballon-dor",
-   "question": "Will [Placeholder BR] win the 2026 Ballon d'Or?"
-  },
-  {
-   "market_id": "608621",
-   "slug": "will-placeholder-bs-win-the-2026-ballon-dor",
-   "question": "Will [Placeholder BS] win the 2026 Ballon d'Or?"
-  },
-  {
-   "market_id": "608622",
-   "slug": "will-placeholder-bt-win-the-2026-ballon-dor",
-   "question": "Will [Placeholder BT] win the 2026 Ballon d'Or?"
-  },
-  {
-   "market_id": "608623",
-   "slug": "will-placeholder-bu-win-the-2026-ballon-dor",
-   "question": "Will [Placeholder BU] win the 2026 Ballon d'Or?"
-  },
-  {
-   "market_id": "608624",
-   "slug": "will-placeholder-bv-win-the-2026-ballon-dor",
-   "question": "Will [Placeholder BV] win the 2026 Ballon d'Or?"
-  },
-  {
-   "market_id": "608625",
-   "slug": "will-placeholder-bw-win-the-2026-ballon-dor",
-   "question": "Will [Placeholder BW] win the 2026 Ballon d'Or?"
-  },
-  {
-   "market_id": "608626",
-   "slug": "will-placeholder-bx-win-the-2026-ballon-dor",
-   "question": "Will [Placeholder BX] win the 2026 Ballon d'Or?"
-  },
-  {
-   "market_id": "608627",
-   "slug": "will-placeholder-by-win-the-2026-ballon-dor",
-   "question": "Will [Placeholder BY] win the 2026 Ballon d'Or?"
-  },
-  {
-   "market_id": "608628",
-   "slug": "will-placeholder-bz-win-the-2026-ballon-dor",
-   "question": "Will [Placeholder BZ] win the 2026 Ballon d'Or?"
-  },
-  {
-   "market_id": "4354848",
-   "slug": "elon-musk-of-tweets-september-11-september-18-2026-180-199",
-   "question": "Will Elon Musk post 180-199 tweets from September 11 to September 18, 2026?"
-  },
-  {
-   "market_id": "4354854",
-   "slug": "elon-musk-of-tweets-september-11-september-18-2026-200-219",
-   "question": "Will Elon Musk post 200-219 tweets from September 11 to September 18, 2026?"
-  },
-  {
-   "market_id": "4354856",
-   "slug": "elon-musk-of-tweets-september-11-september-18-2026-220-239",
-   "question": "Will Elon Musk post 220-239 tweets from September 11 to September 18, 2026?"
-  },
-  {
-   "market_id": "4354860",
-   "slug": "elon-musk-of-tweets-september-11-september-18-2026-240-259",
-   "question": "Will Elon Musk post 240-259 tweets from September 11 to September 18, 2026?"
-  },
-  {
-   "market_id": "4354861",
-   "slug": "elon-musk-of-tweets-september-11-september-18-2026-260-279",
-   "question": "Will Elon Musk post 260-279 tweets from September 11 to September 18, 2026?"
-  },
-  {
-   "market_id": "4354864",
-   "slug": "elon-musk-of-tweets-september-11-september-18-2026-280-299",
-   "question": "Will Elon Musk post 280-299 tweets from September 11 to September 18, 2026?"
-  },
-  {
-   "market_id": "4354865",
-   "slug": "elon-musk-of-tweets-september-11-september-18-2026-300-319",
-   "question": "Will Elon Musk post 300-319 tweets from September 11 to September 18, 2026?"
-  },
-  {
-   "market_id": "4354866",
-   "slug": "elon-musk-of-tweets-september-11-september-18-2026-320-339",
-   "question": "Will Elon Musk post 320-339 tweets from September 11 to September 18, 2026?"
-  },
-  {
-   "market_id": "4354867",
-   "slug": "elon-musk-of-tweets-september-11-september-18-2026-340-359",
-   "question": "Will Elon Musk post 340-359 tweets from September 11 to September 18, 2026?"
-  },
-  {
-   "market_id": "4354868",
-   "slug": "elon-musk-of-tweets-september-11-september-18-2026-360-379",
-   "question": "Will Elon Musk post 360-379 tweets from September 11 to September 18, 2026?"
-  },
-  {
-   "market_id": "4354870",
-   "slug": "elon-musk-of-tweets-september-11-september-18-2026-380-399",
-   "question": "Will Elon Musk post 380-399 tweets from September 11 to September 18, 2026?"
-  },
-  {
-   "market_id": "4354871",
-   "slug": "elon-musk-of-tweets-september-11-september-18-2026-400-419",
-   "question": "Will Elon Musk post 400-419 tweets from September 11 to September 18, 2026?"
-  },
-  {
-   "market_id": "4354872",
-   "slug": "elon-musk-of-tweets-september-11-september-18-2026-420-439",
-   "question": "Will Elon Musk post 420-439 tweets from September 11 to September 18, 2026?"
-  },
-  {
-   "market_id": "4354873",
-   "slug": "elon-musk-of-tweets-september-11-september-18-2026-440-459",
-   "question": "Will Elon Musk post 440-459 tweets from September 11 to September 18, 2026?"
-  },
-  {
-   "market_id": "4354874",
-   "slug": "elon-musk-of-tweets-september-11-september-18-2026-460-479",
-   "question": "Will Elon Musk post 460-479 tweets from September 11 to September 18, 2026?"
-  },
-  {
-   "market_id": "4354876",
-   "slug": "elon-musk-of-tweets-september-11-september-18-2026-480-499",
-   "question": "Will Elon Musk post 480-499 tweets from September 11 to September 18, 2026?"
-  },
-  {
-   "market_id": "4354878",
-   "slug": "elon-musk-of-tweets-september-11-september-18-2026-500plus",
-   "question": "Will Elon Musk post 500+ tweets from September 11 to September 18, 2026?"
-  },
-  {
-   "market_id": "2772166",
-   "slug": "will-paris-saint-germain-win-the-2026-27-uefa-champions-league-championship-20260701202025550",
-   "question": "Will Paris Saint-Germain win the 2026-27 UEFA Champions League Championship?"
-  },
-  {
-   "market_id": "2772167",
-   "slug": "will-aston-villa-win-the-2026-27-uefa-champions-league-championship-20260701202025551",
-   "question": "Will Aston Villa win the 2026-27 UEFA Champions League Championship?"
-  },
-  {
-   "market_id": "2772168",
-   "slug": "will-arsenal-win-the-2026-27-uefa-champions-league-championship-20260701202025552",
-   "question": "Will Arsenal win the 2026-27 UEFA Champions League Championship?"
-  },
-  {
-   "market_id": "2772169",
-   "slug": "will-manchester-city-win-the-2026-27-uefa-champions-league-championship-20260701202025553",
-   "question": "Will Manchester City win the 2026-27 UEFA Champions League Championship?"
-  },
-  {
-   "market_id": "2772170",
-   "slug": "will-manchester-united-win-the-2026-27-uefa-champions-league-championship-20260701202025554",
-   "question": "Will Manchester United win the 2026-27 UEFA Champions League Championship?"
-  },
-  {
-   "market_id": "2772171",
-   "slug": "will-liverpool-win-the-2026-27-uefa-champions-league-championship-20260701202025555",
-   "question": "Will Liverpool win the 2026-27 UEFA Champions League Championship?"
-  },
-  {
-   "market_id": "2772172",
-   "slug": "will-inter-milan-win-the-2026-27-uefa-champions-league-championship-20260701202025556",
-   "question": "Will Inter Milan win the 2026-27 UEFA Champions League Championship?"
-  },
-  {
-   "market_id": "2772173",
-   "slug": "will-napoli-win-the-2026-27-uefa-champions-league-championship-20260701202025557",
-   "question": "Will Napoli win the 2026-27 UEFA Champions League Championship?"
-  },
-  {
-   "market_id": "2772174",
-   "slug": "will-roma-win-the-2026-27-uefa-champions-league-championship-20260701202025558",
-   "question": "Will Roma win the 2026-27 UEFA Champions League Championship?"
-  },
-  {
-   "market_id": "2772175",
-   "slug": "will-como-win-the-2026-27-uefa-champions-league-championship-20260701202025559",
-   "question": "Will Como win the 2026-27 UEFA Champions League Championship?"
-  },
-  {
-   "market_id": "2772176",
-   "slug": "will-barcelona-win-the-2026-27-uefa-champions-league-championship-20260701202025560",
-   "question": "Will Barcelona win the 2026-27 UEFA Champions League Championship?"
-  },
-  {
-   "market_id": "2772177",
-   "slug": "will-real-madrid-win-the-2026-27-uefa-champions-league-championship-20260701202025561",
-   "question": "Will Real Madrid win the 2026-27 UEFA Champions League Championship?"
-  },
-  {
-   "market_id": "2772178",
-   "slug": "will-villarreal-win-the-2026-27-uefa-champions-league-championship-20260701202025562",
-   "question": "Will Villarreal win the 2026-27 UEFA Champions League Championship?"
-  },
-  {
-   "market_id": "2772179",
-   "slug": "will-atletico-madrid-win-the-2026-27-uefa-champions-league-championship-20260701202025563",
-   "question": "Will Atlético Madrid win the 2026-27 UEFA Champions League Championship?"
-  },
-  {
-   "market_id": "2772180",
-   "slug": "will-real-betis-win-the-2026-27-uefa-champions-league-championship-20260701202025564",
-   "question": "Will Real Betis win the 2026-27 UEFA Champions League Championship?"
-  },
-  {
-   "market_id": "2772181",
-   "slug": "will-bayern-munich-win-the-2026-27-uefa-champions-league-championship-20260701202025565",
-   "question": "Will Bayern Munich win the 2026-27 UEFA Champions League Championship?"
-  },
-  {
-   "market_id": "2772182",
-   "slug": "will-borussia-dortmund-win-the-2026-27-uefa-champions-league-championship-20260701202025566",
-   "question": "Will Borussia Dortmund win the 2026-27 UEFA Champions League Championship?"
-  },
-  {
-   "market_id": "2772183",
-   "slug": "will-rb-leipzig-win-the-2026-27-uefa-champions-league-championship-20260701202025567",
-   "question": "Will RB Leipzig win the 2026-27 UEFA Champions League Championship?"
-  },
-  {
-   "market_id": "2772184",
-   "slug": "will-vfb-stuttgart-win-the-2026-27-uefa-champions-league-championship-20260701202025568",
-   "question": "Will VfB Stuttgart win the 2026-27 UEFA Champions League Championship?"
-  },
-  {
-   "market_id": "2772185",
-   "slug": "will-lens-win-the-2026-27-uefa-champions-league-championship-20260701202025569",
-   "question": "Will Lens win the 2026-27 UEFA Champions League Championship?"
-  },
-  {
-   "market_id": "2772186",
-   "slug": "will-lille-win-the-2026-27-uefa-champions-league-championship-20260701202025570",
-   "question": "Will Lille win the 2026-27 UEFA Champions League Championship?"
-  },
-  {
-   "market_id": "2772187",
-   "slug": "will-psv-eindhoven-win-the-2026-27-uefa-champions-league-championship-20260701202025571",
-   "question": "Will PSV Eindhoven win the 2026-27 UEFA Champions League Championship?"
-  },
-  {
-   "market_id": "2772188",
-   "slug": "will-feyenoord-win-the-2026-27-uefa-champions-league-championship-20260701202025572",
-   "question": "Will Feyenoord win the 2026-27 UEFA Champions League Championship?"
-  },
-  {
-   "market_id": "2772189",
-   "slug": "will-porto-win-the-2026-27-uefa-champions-league-championship-20260701202025573",
-   "question": "Will Porto win the 2026-27 UEFA Champions League Championship?"
-  },
-  {
-   "market_id": "2772190",
-   "slug": "will-sporting-cp-win-the-2026-27-uefa-champions-league-championship-20260701202025574",
-   "question": "Will Sporting CP win the 2026-27 UEFA Champions League Championship?"
-  },
-  {
-   "market_id": "2772191",
-   "slug": "will-club-brugge-win-the-2026-27-uefa-champions-league-championship-20260701202025575",
-   "question": "Will Club Brugge win the 2026-27 UEFA Champions League Championship?"
-  },
-  {
-   "market_id": "2772192",
-   "slug": "will-slavia-prague-win-the-2026-27-uefa-champions-league-championship-20260701202025576",
-   "question": "Will Slavia Prague win the 2026-27 UEFA Champions League Championship?"
-  },
-  {
-   "market_id": "2772193",
-   "slug": "will-galatasaray-win-the-2026-27-uefa-champions-league-championship-20260701202025577",
-   "question": "Will Galatasaray win the 2026-27 UEFA Champions League Championship?"
-  },
-  {
-   "market_id": "2772194",
-   "slug": "will-shakhtar-donetsk-win-the-2026-27-uefa-champions-league-championship-20260701202025578",
-   "question": "Will Shakhtar Donetsk win the 2026-27 UEFA Champions League Championship?"
-  },
-  {
-   "market_id": "2772195",
-   "slug": "will-fenerbahe-win-the-2026-27-uefa-champions-league-championship",
-   "question": "Will Fenerbahçe win the 2026-27 UEFA Champions League Championship?"
-  },
-  {
-   "market_id": "2772196",
-   "slug": "will-bodglimt-win-the-2026-27-uefa-champions-league-championship",
-   "question": "Will Bodø/Glimt win the 2026-27 UEFA Champions League Championship?"
-  },
-  {
-   "market_id": "2772197",
-   "slug": "will-slovan-bratislava-win-the-2026-27-uefa-champions-league-championship",
-   "question": "Will Slovan Bratislava win the 2026-27 UEFA Champions League Championship?"
-  },
-  {
-   "market_id": "2772198",
-   "slug": "will-aek-athens-win-the-2026-27-uefa-champions-league-championship",
-   "question": "Will AEK Athens win the 2026-27 UEFA Champions League Championship?"
-  },
-  {
-   "market_id": "2772199",
-   "slug": "will-lask-win-the-2026-27-uefa-champions-league-championship",
-   "question": "Will LASK win the 2026-27 UEFA Champions League Championship?"
-  },
-  {
-   "market_id": "2772200",
-   "slug": "will-viking-win-the-2026-27-uefa-champions-league-championship",
-   "question": "Will Viking win the 2026-27 UEFA Champions League Championship?"
-  },
-  {
-   "market_id": "2772201",
-   "slug": "will-sabah-win-the-2026-27-uefa-champions-league-championship",
-   "question": "Will Sabah win the 2026-27 UEFA Champions League Championship?"
-  },
-  {
-   "market_id": "2772202",
-   "slug": "will-another-team-win-the-2026-27-uefa-champions-league-championship-20260701202025586",
-   "question": "Will another team win the 2026-27 UEFA Champions League Championship?"
-  },
-  {
-   "market_id": "2772203",
-   "slug": "will-team-h-win-the-2026-27-uefa-champions-league-championship-20260701212302026",
-   "question": "Will Team H win the 2026-27 UEFA Champions League Championship?"
-  },
-  {
-   "market_id": "2772204",
-   "slug": "will-team-i-win-the-2026-27-uefa-champions-league-championship-20260701212302027",
-   "question": "Will Team I win the 2026-27 UEFA Champions League Championship?"
-  },
-  {
-   "market_id": "2772205",
-   "slug": "will-team-j-win-the-2026-27-uefa-champions-league-championship-20260701212302028",
-   "question": "Will Team J win the 2026-27 UEFA Champions League Championship?"
-  },
-  {
-   "market_id": "2772206",
-   "slug": "will-team-k-win-the-2026-27-uefa-champions-league-championship-20260701212302029",
-   "question": "Will Team K win the 2026-27 UEFA Champions League Championship?"
-  },
-  {
-   "market_id": "2772207",
-   "slug": "will-team-l-win-the-2026-27-uefa-champions-league-championship-20260701212302030",
-   "question": "Will Team L win the 2026-27 UEFA Champions League Championship?"
-  },
-  {
-   "market_id": "567621",
-   "slug": "will-china-invade-taiwan-before-2027",
-   "question": "Will China invade Taiwan by end of 2026?"
-  },
-  {
-   "market_id": "601818",
-   "slug": "will-tarcisio-de-frietas-win-the-2026-brazilian-presidential-election",
-   "question": "Will Tarcisio de Freitas win the 2026 Brazilian presidential election?"
-  },
-  {
-   "market_id": "601819",
-   "slug": "will-luiz-incio-lula-da-silva-win-the-2026-brazilian-presidential-election",
-   "question": "Will Luiz Inácio Lula da Silva win the 2026 Brazilian presidential election?"
-  },
-  {
-   "market_id": "601820",
-   "slug": "will-jair-bolsonaro-win-the-2026-brazilian-presidential-election",
-   "question": "Will Jair Bolsonaro win the 2026 Brazilian presidential election?"
-  },
-  {
-   "market_id": "601821",
-   "slug": "will-fernando-haddad-win-the-2026-brazilian-presidential-election",
-   "question": "Will Fernando Haddad win the 2026 Brazilian presidential election?"
-  },
-  {
-   "market_id": "601822",
-   "slug": "will-michelle-bolsonaro-win-the-2026-brazilian-presidential-election",
-   "question": "Will Michelle Bolsonaro win the 2026 Brazilian presidential election?"
-  },
-  {
-   "market_id": "601823",
-   "slug": "will-eduardo-bolsonaro-win-the-2026-brazilian-presidential-election",
-   "question": "Will Eduardo Bolsonaro win the 2026 Brazilian presidential election?"
-  },
-  {
-   "market_id": "601824",
-   "slug": "will-carlos-roberto-massa-jnior-win-the-2026-brazilian-presidential-election",
-   "question": "Will Carlos Roberto Massa Júnior win the 2026 Brazilian presidential election?"
-  },
-  {
-   "market_id": "601825",
-   "slug": "will-renan-santos-win-the-2026-brazilian-presidential-election",
-   "question": "Will Renan Santos win the 2026 Brazilian presidential election?"
-  },
-  {
-   "market_id": "601826",
-   "slug": "will-flvio-bolsonaro-win-the-2026-brazilian-presidential-election",
-   "question": "Will Flávio Bolsonaro win the 2026 Brazilian presidential election?"
-  },
-  {
-   "market_id": "601827",
-   "slug": "will-ronaldo-caiado-win-the-2026-brazilian-presidential-election",
-   "question": "Will Ronaldo Caiado win the 2026 Brazilian presidential election?"
-  },
-  {
-   "market_id": "601828",
-   "slug": "will-romeu-zema-win-the-2026-brazilian-presidential-election",
-   "question": "Will Romeu Zema win the 2026 Brazilian presidential election?"
-  },
-  {
-   "market_id": "601829",
-   "slug": "will-camilo-santana-win-the-2026-brazilian-presidential-election",
-   "question": "Will Camilo Santana win the 2026 Brazilian presidential election?"
-  },
-  {
-   "market_id": "601830",
-   "slug": "will-geraldo-alckmin-win-the-2026-brazilian-presidential-election",
-   "question": "Will Geraldo Alckmin win the 2026 Brazilian presidential election?"
-  },
-  {
-   "market_id": "601831",
-   "slug": "will-eduardo-leite-win-the-2026-brazilian-presidential-election",
-   "question": "Will Eduardo Leite win the 2026 Brazilian presidential election?"
-  },
-  {
-   "market_id": "601832",
-   "slug": "will-aldo-rebelo-win-the-2026-brazilian-presidential-election",
-   "question": "Will Aldo Rebelo win the 2026 Brazilian presidential election?"
-  },
-  {
-   "market_id": "601833",
-   "slug": "will-tereza-cristina-win-the-2026-brazilian-presidential-election",
-   "question": "Will Tereza Cristina win the 2026 Brazilian presidential election?"
-  },
-  {
-   "market_id": "601834",
-   "slug": "will-helder-barbalho-win-the-2026-brazilian-presidential-election",
-   "question": "Will Helder Barbalho win the 2026 Brazilian presidential election?"
-  },
-  {
-   "market_id": "601835",
-   "slug": "will-pablo-marcal-win-the-2026-brazilian-presidential-election",
-   "question": "Will Pablo Marçal win the 2026 Brazilian presidential election?"
-  },
-  {
-   "market_id": "601836",
-   "slug": "will-augusto-cury-win-the-2026-brazilian-presidential-election",
-   "question": "Will Augusto Cury win the 2026 Brazilian presidential election?"
-  },
-  {
-   "market_id": "601837",
-   "slug": "will-person-o-win-the-2026-brazilian-presidential-election",
-   "question": "Will Person O win the 2026 Brazilian presidential election?"
-  },
-  {
-   "market_id": "601838",
-   "slug": "will-person-p-win-the-2026-brazilian-presidential-election",
-   "question": "Will Person P win the 2026 Brazilian presidential election?"
-  },
-  {
-   "market_id": "601839",
-   "slug": "will-person-q-win-the-2026-brazilian-presidential-election",
-   "question": "Will Person Q win the 2026 Brazilian presidential election?"
-  },
-  {
-   "market_id": "601840",
-   "slug": "will-person-r-win-the-2026-brazilian-presidential-election",
-   "question": "Will Person R win the 2026 Brazilian presidential election?"
-  },
-  {
-   "market_id": "601841",
-   "slug": "will-person-s-win-the-2026-brazilian-presidential-election",
-   "question": "Will Person S win the 2026 Brazilian presidential election?"
-  },
-  {
-   "market_id": "601842",
-   "slug": "will-person-t-win-the-2026-brazilian-presidential-election",
-   "question": "Will Person T win the 2026 Brazilian presidential election?"
-  },
-  {
-   "market_id": "601843",
-   "slug": "will-person-u-win-the-2026-brazilian-presidential-election",
-   "question": "Will Person U win the 2026 Brazilian presidential election?"
-  },
-  {
-   "market_id": "601844",
-   "slug": "will-person-v-win-the-2026-brazilian-presidential-election",
-   "question": "Will Person V win the 2026 Brazilian presidential election?"
-  },
-  {
-   "market_id": "601845",
-   "slug": "will-person-w-win-the-2026-brazilian-presidential-election",
-   "question": "Will Person W win the 2026 Brazilian presidential election?"
-  },
-  {
-   "market_id": "601846",
-   "slug": "will-person-x-win-the-2026-brazilian-presidential-election",
-   "question": "Will Person X win the 2026 Brazilian presidential election?"
-  },
-  {
-   "market_id": "601847",
-   "slug": "will-person-y-win-the-2026-brazilian-presidential-election",
-   "question": "Will Person Y win the 2026 Brazilian presidential election?"
-  },
-  {
-   "market_id": "601848",
-   "slug": "will-person-z-win-the-2026-brazilian-presidential-election",
-   "question": "Will Person Z win the 2026 Brazilian presidential election?"
-  },
-  {
-   "market_id": "601849",
-   "slug": "will-another-person-win-the-2026-brazilian-presidential-election",
-   "question": "Will another person win the 2026 Brazilian presidential election?"
-  },
-  {
-   "market_id": "4331476",
-   "slug": "lol-we-jdg-2026-09-18-game1",
-   "question": "LoL: Team WE vs JD Gaming - Game 1 Winner"
-  },
-  {
-   "market_id": "4331477",
-   "slug": "lol-we-jdg-2026-09-18-game2",
-   "question": "LoL: Team WE vs JD Gaming - Game 2 Winner"
-  },
-  {
-   "market_id": "4331478",
-   "slug": "lol-we-jdg-2026-09-18-game3",
-   "question": "LoL: Team WE vs JD Gaming - Game 3 Winner"
-  },
-  {
-   "market_id": "4331479",
-   "slug": "lol-we-jdg-2026-09-18-game4",
-   "question": "LoL: Team WE vs JD Gaming - Game 4 Winner"
-  },
-  {
-   "market_id": "4331480",
-   "slug": "lol-we-jdg-2026-09-18",
-   "question": "LoL: Team WE vs JD Gaming (BO5) - LPL Regional Finals Playoffs"
-  },
-  {
-   "market_id": "4331481",
-   "slug": "lol-we-jdg-2026-09-18-total-games-3pt5",
-   "question": "Games Total: O/U 3.5"
-  },
-  {
-   "market_id": "4331482",
-   "slug": "lol-we-jdg-2026-09-18-total-games-4pt5",
-   "question": "Games Total: O/U 4.5"
-  },
-  {
-   "market_id": "4331483",
-   "slug": "lol-we-jdg-2026-09-18-game1-both-teams-slay-baron",
-   "question": "Game 1: Both Teams Slay Baron Nashor?"
-  },
-  {
-   "market_id": "4331484",
-   "slug": "lol-we-jdg-2026-09-18-game1-both-teams-slay-dragon",
-   "question": "Game 1: Both Teams Slay a Dragon?"
-  },
-  {
-   "market_id": "4331485",
-   "slug": "lol-we-jdg-2026-09-18-game1-both-teams-destroy-inhibitors",
-   "question": "Game 1: Both Teams Destroy Inhibitors?"
-  },
-  {
-   "market_id": "4331486",
-   "slug": "lol-we-jdg-2026-09-18-game1-any-player-quadra-kill",
-   "question": "Game 1: Any Player Quadra Kill?"
-  },
-  {
-   "market_id": "4331487",
-   "slug": "lol-we-jdg-2026-09-18-game1-any-player-penta-kill",
-   "question": "Game 1: Any Player Penta Kill?"
-  },
-  {
-   "market_id": "4331488",
-   "slug": "lol-we-jdg-2026-09-18-game1-odd-even-total-kills",
-   "question": "Game 1: Odd/Even Total Kills?"
-  },
-  {
-   "market_id": "4331489",
-   "slug": "lol-we-jdg-2026-09-18-game2-both-teams-slay-baron",
-   "question": "Game 2: Both Teams Slay Baron Nashor?"
-  },
-  {
-   "market_id": "4331490",
-   "slug": "lol-we-jdg-2026-09-18-game2-both-teams-slay-dragon",
-   "question": "Game 2: Both Teams Slay a Dragon?"
-  },
-  {
-   "market_id": "4331491",
-   "slug": "lol-we-jdg-2026-09-18-game2-both-teams-destroy-inhibitors",
-   "question": "Game 2: Both Teams Destroy Inhibitors?"
-  },
-  {
-   "market_id": "4331492",
-   "slug": "lol-we-jdg-2026-09-18-game2-any-player-quadra-kill",
-   "question": "Game 2: Any Player Quadra Kill?"
-  },
-  {
-   "market_id": "4331493",
-   "slug": "lol-we-jdg-2026-09-18-game2-any-player-penta-kill",
-   "question": "Game 2: Any Player Penta Kill?"
-  },
-  {
-   "market_id": "4331494",
-   "slug": "lol-we-jdg-2026-09-18-game2-odd-even-total-kills",
-   "question": "Game 2: Odd/Even Total Kills?"
-  },
-  {
-   "market_id": "4331495",
-   "slug": "lol-we-jdg-2026-09-18-game3-both-teams-slay-baron",
-   "question": "Game 3: Both Teams Slay Baron Nashor?"
-  },
-  {
-   "market_id": "4331496",
-   "slug": "lol-we-jdg-2026-09-18-game3-both-teams-slay-dragon",
-   "question": "Game 3: Both Teams Slay a Dragon?"
-  },
-  {
-   "market_id": "4331497",
-   "slug": "lol-we-jdg-2026-09-18-game3-both-teams-destroy-inhibitors",
-   "question": "Game 3: Both Teams Destroy Inhibitors?"
-  },
-  {
-   "market_id": "4331498",
-   "slug": "lol-we-jdg-2026-09-18-game3-any-player-quadra-kill",
-   "question": "Game 3: Any Player Quadra Kill?"
-  },
-  {
-   "market_id": "4331499",
-   "slug": "lol-we-jdg-2026-09-18-game3-any-player-penta-kill",
-   "question": "Game 3: Any Player Penta Kill?"
-  },
-  {
-   "market_id": "4331500",
-   "slug": "lol-we-jdg-2026-09-18-game3-odd-even-total-kills",
-   "question": "Game 3: Odd/Even Total Kills?"
-  },
-  {
-   "market_id": "4331501",
-   "slug": "lol-we-jdg-2026-09-18-game4-both-teams-slay-baron",
-   "question": "Game 4: Both Teams Slay Baron Nashor?"
-  },
-  {
-   "market_id": "4331502",
-   "slug": "lol-we-jdg-2026-09-18-game4-both-teams-slay-dragon",
-   "question": "Game 4: Both Teams Slay a Dragon?"
-  },
-  {
-   "market_id": "4331503",
-   "slug": "lol-we-jdg-2026-09-18-game4-both-teams-destroy-inhibitors",
-   "question": "Game 4: Both Teams Destroy Inhibitors?"
-  },
-  {
-   "market_id": "4331504",
-   "slug": "lol-we-jdg-2026-09-18-game4-any-player-quadra-kill",
-   "question": "Game 4: Any Player Quadra Kill?"
-  },
-  {
-   "market_id": "4331505",
-   "slug": "lol-we-jdg-2026-09-18-game4-any-player-penta-kill",
-   "question": "Game 4: Any Player Penta Kill?"
-  },
-  {
-   "market_id": "4331506",
-   "slug": "lol-we-jdg-2026-09-18-game4-odd-even-total-kills",
-   "question": "Game 4: Odd/Even Total Kills?"
-  },
-  {
-   "market_id": "4331507",
-   "slug": "lol-we-jdg-2026-09-18-game5-both-teams-slay-baron",
-   "question": "Game 5: Both Teams Slay Baron Nashor?"
-  },
-  {
-   "market_id": "4331508",
-   "slug": "lol-we-jdg-2026-09-18-game5-both-teams-slay-dragon",
-   "question": "Game 5: Both Teams Slay a Dragon?"
-  },
-  {
-   "market_id": "4331509",
-   "slug": "lol-we-jdg-2026-09-18-game5-both-teams-destroy-inhibitors",
-   "question": "Game 5: Both Teams Destroy Inhibitors?"
-  },
-  {
-   "market_id": "4331510",
-   "slug": "lol-we-jdg-2026-09-18-game5-any-player-quadra-kill",
-   "question": "Game 5: Any Player Quadra Kill?"
-  },
-  {
-   "market_id": "4331511",
-   "slug": "lol-we-jdg-2026-09-18-game5-any-player-penta-kill",
-   "question": "Game 5: Any Player Penta Kill?"
-  },
-  {
-   "market_id": "4331512",
-   "slug": "lol-we-jdg-2026-09-18-game5-odd-even-total-kills",
-   "question": "Game 5: Odd/Even Total Kills?"
-  },
-  {
-   "market_id": "4635723",
-   "slug": "lol-we-jdg-2026-09-18-game-handicap-home-2pt5",
-   "question": "Game Handicap: JDG (-2.5) vs Team WE (+2.5)"
-  },
-  {
-   "market_id": "4635724",
-   "slug": "lol-we-jdg-2026-09-18-game-handicap-home-1pt5",
-   "question": "Game Handicap: JDG (-1.5) vs Team WE (+1.5)"
-  },
-  {
-   "market_id": "4635725",
-   "slug": "lol-we-jdg-2026-09-18-game3-first-blood",
-   "question": "First Blood in Game 3?"
-  },
-  {
-   "market_id": "4635726",
-   "slug": "lol-we-jdg-2026-09-18-game2-first-blood",
-   "question": "First Blood in Game 2?"
-  },
-  {
-   "market_id": "4635727",
-   "slug": "lol-we-jdg-2026-09-18-game1-first-blood",
-   "question": "First Blood in Game 1?"
-  },
-  {
-   "market_id": "4635728",
-   "slug": "lol-we-jdg-2026-09-18-game4-first-blood",
+   "market_id": "4732907",
+   "slug": "lol-tl2-fly-2026-09-20-game4-first-blood",
    "question": "First Blood in Game 4?"
-  },
-  {
-   "market_id": "4635729",
-   "slug": "lol-we-jdg-2026-09-18-game2-kill-over-27pt5",
-   "question": "Total Kills Over/Under 27.5 in Game 2?"
-  },
-  {
-   "market_id": "4635730",
-   "slug": "lol-we-jdg-2026-09-18-game3-kill-over-27pt5",
-   "question": "Total Kills Over/Under 27.5 in Game 3?"
-  },
-  {
-   "market_id": "4635731",
-   "slug": "lol-we-jdg-2026-09-18-game1-kill-over-27pt5",
-   "question": "Total Kills Over/Under 27.5 in Game 1?"
-  },
-  {
-   "market_id": "4635732",
-   "slug": "lol-we-jdg-2026-09-18-game4-kill-over-27pt5",
-   "question": "Total Kills Over/Under 27.5 in Game 4?"
-  },
-  {
-   "market_id": "4635734",
-   "slug": "lol-we-jdg-2026-09-18-game2-kill-over-30pt5",
-   "question": "Total Kills Over/Under 30.5 in Game 2?"
-  },
-  {
-   "market_id": "4635733",
-   "slug": "lol-we-jdg-2026-09-18-game3-kill-over-30pt5",
-   "question": "Total Kills Over/Under 30.5 in Game 3?"
-  },
-  {
-   "market_id": "4635736",
-   "slug": "lol-we-jdg-2026-09-18-game1-kill-over-30pt5",
-   "question": "Total Kills Over/Under 30.5 in Game 1?"
-  },
-  {
-   "market_id": "4635735",
-   "slug": "lol-we-jdg-2026-09-18-game4-kill-over-30pt5",
-   "question": "Total Kills Over/Under 30.5 in Game 4?"
-  },
-  {
-   "market_id": "1357371",
-   "slug": "will-the-arizona-cardinals-win-the-2027-nfl-league-championship",
-   "question": "Will the Arizona Cardinals win the 2027 NFL league championship?"
-  },
-  {
-   "market_id": "1357372",
-   "slug": "will-the-atlanta-falcons-win-the-2027-nfl-league-championship",
-   "question": "Will the Atlanta Falcons win the 2027 NFL league championship?"
-  },
-  {
-   "market_id": "1357373",
-   "slug": "will-the-baltimore-ravens-win-the-2027-nfl-league-championship",
-   "question": "Will the Baltimore Ravens win the 2027 NFL league championship?"
-  },
-  {
-   "market_id": "1357374",
-   "slug": "will-the-buffalo-bills-win-the-2027-nfl-league-championship",
-   "question": "Will the Buffalo Bills win the 2027 NFL league championship?"
-  },
-  {
-   "market_id": "1357375",
-   "slug": "will-the-carolina-panthers-win-the-2027-nfl-league-championship",
-   "question": "Will the Carolina Panthers win the 2027 NFL league championship?"
-  },
-  {
-   "market_id": "1357376",
-   "slug": "will-the-chicago-bears-win-the-2027-nfl-league-championship",
-   "question": "Will the Chicago Bears win the 2027 NFL league championship?"
-  },
-  {
-   "market_id": "1357377",
-   "slug": "will-the-cincinnati-bengals-win-the-2027-nfl-league-championship",
-   "question": "Will the Cincinnati Bengals win the 2027 NFL league championship?"
-  },
-  {
-   "market_id": "1357378",
-   "slug": "will-the-cleveland-browns-win-the-2027-nfl-league-championship",
-   "question": "Will the Cleveland Browns win the 2027 NFL league championship?"
-  },
-  {
-   "market_id": "1357379",
-   "slug": "will-the-dallas-cowboys-win-the-2027-nfl-league-championship",
-   "question": "Will the Dallas Cowboys win the 2027 NFL league championship?"
-  },
-  {
-   "market_id": "1357380",
-   "slug": "will-the-denver-broncos-win-the-2027-nfl-league-championship",
-   "question": "Will the Denver Broncos win the 2027 NFL league championship?"
-  },
-  {
-   "market_id": "1357381",
-   "slug": "will-the-detroit-lions-win-the-2027-nfl-league-championship",
-   "question": "Will the Detroit Lions win the 2027 NFL league championship?"
-  },
-  {
-   "market_id": "1357382",
-   "slug": "will-the-green-bay-packers-win-the-2027-nfl-league-championship",
-   "question": "Will the Green Bay Packers win the 2027 NFL league championship?"
-  },
-  {
-   "market_id": "1357383",
-   "slug": "will-the-houston-texans-win-the-2027-nfl-league-championship",
-   "question": "Will the Houston Texans win the 2027 NFL league championship?"
-  },
-  {
-   "market_id": "1357384",
-   "slug": "will-the-indianapolis-colts-win-the-2027-nfl-league-championship",
-   "question": "Will the Indianapolis Colts win the 2027 NFL league championship?"
-  },
-  {
-   "market_id": "1357385",
-   "slug": "will-the-jacksonville-jaguars-win-the-2027-nfl-league-championship",
-   "question": "Will the Jacksonville Jaguars win the 2027 NFL league championship?"
-  },
-  {
-   "market_id": "1357386",
-   "slug": "will-the-kansas-city-chiefs-win-the-2027-nfl-league-championship",
-   "question": "Will the Kansas City Chiefs win the 2027 NFL league championship?"
-  },
-  {
-   "market_id": "1357387",
-   "slug": "will-the-las-vegas-raiders-win-the-2027-nfl-league-championship",
-   "question": "Will the Las Vegas Raiders win the 2027 NFL league championship?"
-  },
-  {
-   "market_id": "1357388",
-   "slug": "will-the-los-angeles-chargers-win-the-2027-nfl-league-championship",
-   "question": "Will the Los Angeles Chargers win the 2027 NFL league championship?"
-  },
-  {
-   "market_id": "1357389",
-   "slug": "will-the-los-angeles-rams-win-the-2027-nfl-league-championship",
-   "question": "Will the Los Angeles Rams win the 2027 NFL league championship?"
-  },
-  {
-   "market_id": "1357390",
-   "slug": "will-the-miami-dolphins-win-the-2027-nfl-league-championship",
-   "question": "Will the Miami Dolphins win the 2027 NFL league championship?"
-  },
-  {
-   "market_id": "1357391",
-   "slug": "will-the-minnesota-vikings-win-the-2027-nfl-league-championship",
-   "question": "Will the Minnesota Vikings win the 2027 NFL league championship?"
-  },
-  {
-   "market_id": "1357392",
-   "slug": "will-the-new-england-patriots-win-the-2027-nfl-league-championship",
-   "question": "Will the New England Patriots win the 2027 NFL league championship?"
-  },
-  {
-   "market_id": "1357393",
-   "slug": "will-the-new-orleans-saints-win-the-2027-nfl-league-championship",
-   "question": "Will the New Orleans Saints win the 2027 NFL league championship?"
-  },
-  {
-   "market_id": "1357394",
-   "slug": "will-the-new-york-giants-win-the-2027-nfl-league-championship",
-   "question": "Will the New York Giants win the 2027 NFL league championship?"
-  },
-  {
-   "market_id": "1357395",
-   "slug": "will-the-new-york-jets-win-the-2027-nfl-league-championship",
-   "question": "Will the New York Jets win the 2027 NFL league championship?"
-  },
-  {
-   "market_id": "1357396",
-   "slug": "will-the-philadelphia-eagles-win-the-2027-nfl-league-championship",
-   "question": "Will the Philadelphia Eagles win the 2027 NFL league championship?"
-  },
-  {
-   "market_id": "1357397",
-   "slug": "will-the-pittsburgh-steelers-win-the-2027-nfl-league-championship",
-   "question": "Will the Pittsburgh Steelers win the 2027 NFL league championship?"
-  },
-  {
-   "market_id": "1357398",
-   "slug": "will-the-san-francisco-49ers-win-the-2027-nfl-league-championship",
-   "question": "Will the San Francisco 49ers win the 2027 NFL league championship?"
-  },
-  {
-   "market_id": "1357399",
-   "slug": "will-the-seattle-seahawks-win-the-2027-nfl-league-championship",
-   "question": "Will the Seattle Seahawks win the 2027 NFL league championship?"
-  },
-  {
-   "market_id": "1357400",
-   "slug": "will-the-tampa-bay-buccaneers-win-the-2027-nfl-league-championship",
-   "question": "Will the Tampa Bay Buccaneers win the 2027 NFL league championship?"
-  },
-  {
-   "market_id": "1357401",
-   "slug": "will-the-tennessee-titans-win-the-2027-nfl-league-championship",
-   "question": "Will the Tennessee Titans win the 2027 NFL league championship?"
-  },
-  {
-   "market_id": "1357402",
-   "slug": "will-the-washington-commanders-win-the-2027-nfl-league-championship",
-   "question": "Will the Washington Commanders win the 2027 NFL league championship?"
-  },
-  {
-   "market_id": "1357403",
-   "slug": "will-the-other-win-the-2027-nfl-league-championship",
-   "question": "Will another team win the 2027 NFL league championship?"
-  },
-  {
-   "market_id": "3866508",
-   "slug": "will-wti-reach-150-in-september-2026",
-   "question": "Will WTI Crude Oil (WTI) hit (HIGH) $150 in September?"
-  },
-  {
-   "market_id": "3866509",
-   "slug": "will-wti-reach-140-in-september-2026",
-   "question": "Will WTI Crude Oil (WTI) hit (HIGH) $140 in September?"
-  },
-  {
-   "market_id": "3866510",
-   "slug": "will-wti-reach-130-in-september-2026",
-   "question": "Will WTI Crude Oil (WTI) hit (HIGH) $130 in September?"
-  },
-  {
-   "market_id": "3866511",
-   "slug": "will-wti-reach-120-in-september-2026",
-   "question": "Will WTI Crude Oil (WTI) hit (HIGH) $120 in September?"
-  },
-  {
-   "market_id": "3866512",
-   "slug": "will-wti-reach-110-in-september-2026",
-   "question": "Will WTI Crude Oil (WTI) hit (HIGH) $110 in September?"
-  },
-  {
-   "market_id": "3866515",
-   "slug": "will-wti-dip-to-80-in-september-2026",
-   "question": "Will WTI Crude Oil (WTI) hit (LOW) $80 in September?"
-  },
-  {
-   "market_id": "3866516",
-   "slug": "will-wti-dip-to-70-in-september-2026",
-   "question": "Will WTI Crude Oil (WTI) hit (LOW) $70 in September?"
-  },
-  {
-   "market_id": "3866517",
-   "slug": "will-wti-dip-to-60-in-september-2026",
-   "question": "Will WTI Crude Oil (WTI) hit (LOW) $60 in September?"
-  },
-  {
-   "market_id": "3866518",
-   "slug": "will-wti-dip-to-50-in-september-2026",
-   "question": "Will WTI Crude Oil (WTI) hit (LOW) $50 in September?"
-  },
-  {
-   "market_id": "3866519",
-   "slug": "will-wti-dip-to-40-in-september-2026",
-   "question": "Will WTI Crude Oil (WTI) hit (LOW) $40 in September?"
-  },
-  {
-   "market_id": "3866520",
-   "slug": "will-wti-dip-to-30-in-september-2026",
-   "question": "Will WTI Crude Oil (WTI) hit (LOW) $30 in September?"
-  },
-  {
-   "market_id": "3866521",
-   "slug": "will-wti-dip-to-20-in-september-2026",
-   "question": "Will WTI Crude Oil (WTI) hit (LOW) $20 in September?"
-  },
-  {
-   "market_id": "3954342",
-   "slug": "will-wti-dip-to-75-in-september-2026",
-   "question": "Will WTI Crude Oil (WTI) hit (LOW) $75 in September?"
-  },
-  {
-   "market_id": "3954344",
-   "slug": "will-wti-dip-to-65-in-september-2026",
-   "question": "Will WTI Crude Oil (WTI) hit (LOW) $65 in September?"
-  },
-  {
-   "market_id": "3954347",
-   "slug": "will-wti-dip-to-55-in-september-2026",
-   "question": "Will WTI Crude Oil (WTI) hit (LOW) $55 in September?"
-  },
-  {
-   "market_id": "4035901",
-   "slug": "will-wti-reach-115-in-september-2026",
-   "question": "Will WTI Crude Oil (WTI) hit (HIGH) $115 in September?"
-  },
-  {
-   "market_id": "4063373",
-   "slug": "will-wti-dip-to-85-in-september-2026",
-   "question": "Will WTI Crude Oil (WTI) hit (LOW) $85 in September?"
-  },
-  {
-   "market_id": "4218286",
-   "slug": "will-wti-dip-to-90-in-september-2026-from-september-4",
-   "question": "Will WTI Crude Oil (WTI) hit (LOW) $90 in September?"
-  },
-  {
-   "market_id": "4413392",
-   "slug": "will-wti-dip-to-95-in-september-2026",
-   "question": "Will WTI Crude Oil (WTI) hit (LOW) $95 in September?"
-  },
-  {
-   "market_id": "4413393",
-   "slug": "will-wti-reach-125-in-september-2026",
-   "question": "Will WTI Crude Oil (WTI) hit (HIGH) $125 in September?"
-  },
-  {
-   "market_id": "4559874",
-   "slug": "will-wti-dip-to-100-in-september-2026-from-september-14",
-   "question": "Will WTI Crude Oil (WTI) hit (LOW) $100 in September?"
-  },
-  {
-   "market_id": "4591051",
-   "slug": "will-wti-reach-135-in-september-2026",
-   "question": "Will WTI Crude Oil (WTI) hit (HIGH) $135 in September?"
-  },
-  {
-   "market_id": "4618778",
-   "slug": "will-wti-reach-105-in-september-2026-from-september-16",
-   "question": "Will WTI Crude Oil (WTI) hit (HIGH) $105 in September?"
-  },
-  {
-   "market_id": "560317",
-   "slug": "putin-out-before-2027-346",
-   "question": "Putin out as President of Russia by December 31, 2026?"
-  },
-  {
-   "market_id": "2822005",
-   "slug": "putin-out-as-president-of-russia-by-september-30-2026",
-   "question": "Putin out as President of Russia by September 30, 2026?"
-  },
-  {
-   "market_id": "2822017",
-   "slug": "putin-out-as-president-of-russia-by-june-30-2027",
-   "question": "Putin out as President of Russia by June 30, 2027?"
-  },
-  {
-   "market_id": "4052413",
-   "slug": "will-bitcoin-reach-100k-in-september-2026",
-   "question": "Will Bitcoin reach $100,000 in September?"
-  },
-  {
-   "market_id": "4052414",
-   "slug": "will-bitcoin-reach-97pt5k-in-september-2026",
-   "question": "Will Bitcoin reach $97,500 in September?"
-  },
-  {
-   "market_id": "4052415",
-   "slug": "will-bitcoin-reach-95k-in-september-2026",
-   "question": "Will Bitcoin reach $95,000 in September?"
-  },
-  {
-   "market_id": "4052416",
-   "slug": "will-bitcoin-reach-92pt5k-in-september-2026",
-   "question": "Will Bitcoin reach $92,500 in September?"
-  },
-  {
-   "market_id": "4052417",
-   "slug": "will-bitcoin-reach-90k-in-september-2026",
-   "question": "Will Bitcoin reach $90,000 in September?"
-  },
-  {
-   "market_id": "4052418",
-   "slug": "will-bitcoin-reach-87pt5k-in-september-2026",
-   "question": "Will Bitcoin reach $87,500 in September?"
-  },
-  {
-   "market_id": "4052419",
-   "slug": "will-bitcoin-reach-85k-in-september-2026",
-   "question": "Will Bitcoin reach $85,000 in September?"
-  },
-  {
-   "market_id": "4052420",
-   "slug": "will-bitcoin-reach-82pt5k-in-september-2026",
-   "question": "Will Bitcoin reach $82,500 in September?"
-  },
-  {
-   "market_id": "4052425",
-   "slug": "will-bitcoin-dip-to-72pt5k-in-september-2026",
-   "question": "Will Bitcoin dip to $72,500 in September?"
-  },
-  {
-   "market_id": "4052427",
-   "slug": "will-bitcoin-dip-to-70k-in-september-2026",
-   "question": "Will Bitcoin dip to $70,000 in September?"
-  },
-  {
-   "market_id": "4052429",
-   "slug": "will-bitcoin-dip-to-67pt5k-in-september-2026",
-   "question": "Will Bitcoin dip to $67,500 in September?"
-  },
-  {
-   "market_id": "4052431",
-   "slug": "will-bitcoin-dip-to-65k-in-september-2026",
-   "question": "Will Bitcoin dip to $65,000 in September?"
-  },
-  {
-   "market_id": "4052432",
-   "slug": "will-bitcoin-dip-to-62pt5k-in-september-2026",
-   "question": "Will Bitcoin dip to $62,500 in September?"
-  },
-  {
-   "market_id": "4052434",
-   "slug": "will-bitcoin-dip-to-60k-in-september-2026",
-   "question": "Will Bitcoin dip to $60,000 in September?"
-  },
-  {
-   "market_id": "4052436",
-   "slug": "will-bitcoin-dip-to-57pt5k-in-september-2026",
-   "question": "Will Bitcoin dip to $57,500 in September?"
-  },
-  {
-   "market_id": "4052438",
-   "slug": "will-bitcoin-dip-to-55k-in-september-2026",
-   "question": "Will Bitcoin dip to $55,000 in September?"
-  },
-  {
-   "market_id": "4338638",
-   "slug": "will-bitcoin-reach-80k-in-september-2026-from-september-7",
-   "question": "Will Bitcoin reach $80,000 in September?"
-  },
-  {
-   "market_id": "4617905",
-   "slug": "will-bitcoin-dip-to-75k-in-september-2026-from-september-16",
-   "question": "Will Bitcoin dip to $75,000 in September?"
-  },
-  {
-   "market_id": "3128886",
-   "slug": "us-announces-end-of-iranian-blockade-by-december-31-2026-20260727171803489-375-949-645-919-269-157-255-857",
-   "question": "US announces end of Iranian blockade by December 31, 2026?"
-  },
-  {
-   "market_id": "3128887",
-   "slug": "us-announces-end-of-iranian-blockade-by-september-30-2026-20260727171615364-722-649-646-561-213-644-414-831",
-   "question": "US announces end of Iranian blockade by September 30, 2026?"
-  },
-  {
-   "market_id": "3128888",
-   "slug": "us-announces-end-of-iranian-blockade-by-october-31-2026-20260727171711632-895-372-622-413-171-454-592-696",
-   "question": "US announces end of Iranian blockade by October 31, 2026?"
-  },
-  {
-   "market_id": "3702045",
-   "slug": "us-announces-end-of-iranian-blockade-by-september-21-2026",
-   "question": "US announces end of Iranian blockade by September 21, 2026?"
   },
   {
    "market_id": "559652",
@@ -2434,249 +1379,619 @@
    "question": "Will another person win the 2028 Democratic presidential nomination?"
   },
   {
-   "market_id": "1364102",
-   "slug": "will-cdu-win-the-most-seats-in-the-2026-mecklenburg-vorpommern-parliamentary-elections",
-   "question": "Will CDU win the most seats in the 2026 Mecklenburg-Vorpommern parliamentary elections?"
+   "market_id": "4266759",
+   "slug": "ufc-ale8-jos49-2026-09-19-decision-or-draw",
+   "question": "Will the fight end in a decision or draw?"
   },
   {
-   "market_id": "1364103",
-   "slug": "will-afd-win-the-most-seats-in-the-2026-mecklenburg-vorpommern-parliamentary-elections",
-   "question": "Will AfD win the most seats in the 2026 Mecklenburg-Vorpommern parliamentary elections?"
+   "market_id": "1357371",
+   "slug": "will-the-arizona-cardinals-win-the-2027-nfl-league-championship",
+   "question": "Will the Arizona Cardinals win the 2027 NFL league championship?"
   },
   {
-   "market_id": "1364104",
-   "slug": "will-grne-win-the-most-seats-in-the-2026-mecklenburg-vorpommern-parliamentary-elections",
-   "question": "Will Grüne win the most seats in the 2026 Mecklenburg-Vorpommern parliamentary elections?"
+   "market_id": "1357372",
+   "slug": "will-the-atlanta-falcons-win-the-2027-nfl-league-championship",
+   "question": "Will the Atlanta Falcons win the 2027 NFL league championship?"
   },
   {
-   "market_id": "1364105",
-   "slug": "will-spd-win-the-most-seats-in-the-2026-mecklenburg-vorpommern-parliamentary-elections",
-   "question": "Will SPD win the most seats in the 2026 Mecklenburg-Vorpommern parliamentary elections?"
+   "market_id": "1357373",
+   "slug": "will-the-baltimore-ravens-win-the-2027-nfl-league-championship",
+   "question": "Will the Baltimore Ravens win the 2027 NFL league championship?"
   },
   {
-   "market_id": "1364106",
-   "slug": "will-fdp-win-the-most-seats-in-the-2026-mecklenburg-vorpommern-parliamentary-elections",
-   "question": "Will FDP win the most seats in the 2026 Mecklenburg-Vorpommern parliamentary elections?"
+   "market_id": "1357374",
+   "slug": "will-the-buffalo-bills-win-the-2027-nfl-league-championship",
+   "question": "Will the Buffalo Bills win the 2027 NFL league championship?"
   },
   {
-   "market_id": "1364107",
-   "slug": "will-linke-win-the-most-seats-in-the-2026-mecklenburg-vorpommern-parliamentary-elections",
-   "question": "Will Linke win the most seats in the 2026 Mecklenburg-Vorpommern parliamentary elections?"
+   "market_id": "1357375",
+   "slug": "will-the-carolina-panthers-win-the-2027-nfl-league-championship",
+   "question": "Will the Carolina Panthers win the 2027 NFL league championship?"
   },
   {
-   "market_id": "1364108",
-   "slug": "will-fw-win-the-most-seats-in-the-2026-mecklenburg-vorpommern-parliamentary-elections",
-   "question": "Will FW win the most seats in the 2026 Mecklenburg-Vorpommern parliamentary elections?"
+   "market_id": "1357376",
+   "slug": "will-the-chicago-bears-win-the-2027-nfl-league-championship",
+   "question": "Will the Chicago Bears win the 2027 NFL league championship?"
   },
   {
-   "market_id": "1364109",
-   "slug": "will-bsw-win-the-most-seats-in-the-2026-mecklenburg-vorpommern-parliamentary-elections",
-   "question": "Will BSW win the most seats in the 2026 Mecklenburg-Vorpommern parliamentary elections?"
+   "market_id": "1357377",
+   "slug": "will-the-cincinnati-bengals-win-the-2027-nfl-league-championship",
+   "question": "Will the Cincinnati Bengals win the 2027 NFL league championship?"
   },
   {
-   "market_id": "1364110",
-   "slug": "will-party-a-win-the-most-seats-in-the-2026-mecklenburg-vorpommern-parliamentary-elections",
-   "question": "Will Party A win the most seats in the 2026 Mecklenburg-Vorpommern parliamentary elections?"
+   "market_id": "1357378",
+   "slug": "will-the-cleveland-browns-win-the-2027-nfl-league-championship",
+   "question": "Will the Cleveland Browns win the 2027 NFL league championship?"
   },
   {
-   "market_id": "1364111",
-   "slug": "will-party-b-win-the-most-seats-in-the-2026-mecklenburg-vorpommern-parliamentary-elections",
-   "question": "Will Party B win the most seats in the 2026 Mecklenburg-Vorpommern parliamentary elections?"
+   "market_id": "1357379",
+   "slug": "will-the-dallas-cowboys-win-the-2027-nfl-league-championship",
+   "question": "Will the Dallas Cowboys win the 2027 NFL league championship?"
   },
   {
-   "market_id": "1364112",
-   "slug": "will-party-c-win-the-most-seats-in-the-2026-mecklenburg-vorpommern-parliamentary-elections",
-   "question": "Will Party C win the most seats in the 2026 Mecklenburg-Vorpommern parliamentary elections?"
+   "market_id": "1357380",
+   "slug": "will-the-denver-broncos-win-the-2027-nfl-league-championship",
+   "question": "Will the Denver Broncos win the 2027 NFL league championship?"
   },
   {
-   "market_id": "1364113",
-   "slug": "will-party-d-win-the-most-seats-in-the-2026-mecklenburg-vorpommern-parliamentary-elections",
-   "question": "Will Party D win the most seats in the 2026 Mecklenburg-Vorpommern parliamentary elections?"
+   "market_id": "1357381",
+   "slug": "will-the-detroit-lions-win-the-2027-nfl-league-championship",
+   "question": "Will the Detroit Lions win the 2027 NFL league championship?"
   },
   {
-   "market_id": "1364114",
-   "slug": "will-party-e-win-the-most-seats-in-the-2026-mecklenburg-vorpommern-parliamentary-elections",
-   "question": "Will Party E win the most seats in the 2026 Mecklenburg-Vorpommern parliamentary elections?"
+   "market_id": "1357382",
+   "slug": "will-the-green-bay-packers-win-the-2027-nfl-league-championship",
+   "question": "Will the Green Bay Packers win the 2027 NFL league championship?"
   },
   {
-   "market_id": "1364115",
-   "slug": "will-party-f-win-the-most-seats-in-the-2026-mecklenburg-vorpommern-parliamentary-elections",
-   "question": "Will Party F win the most seats in the 2026 Mecklenburg-Vorpommern parliamentary elections?"
+   "market_id": "1357383",
+   "slug": "will-the-houston-texans-win-the-2027-nfl-league-championship",
+   "question": "Will the Houston Texans win the 2027 NFL league championship?"
   },
   {
-   "market_id": "1364116",
-   "slug": "will-party-g-win-the-most-seats-in-the-2026-mecklenburg-vorpommern-parliamentary-elections",
-   "question": "Will Party G win the most seats in the 2026 Mecklenburg-Vorpommern parliamentary elections?"
+   "market_id": "1357384",
+   "slug": "will-the-indianapolis-colts-win-the-2027-nfl-league-championship",
+   "question": "Will the Indianapolis Colts win the 2027 NFL league championship?"
   },
   {
-   "market_id": "1364117",
-   "slug": "will-party-h-win-the-most-seats-in-the-2026-mecklenburg-vorpommern-parliamentary-elections",
-   "question": "Will Party H win the most seats in the 2026 Mecklenburg-Vorpommern parliamentary elections?"
+   "market_id": "1357385",
+   "slug": "will-the-jacksonville-jaguars-win-the-2027-nfl-league-championship",
+   "question": "Will the Jacksonville Jaguars win the 2027 NFL league championship?"
   },
   {
-   "market_id": "1364118",
-   "slug": "will-party-i-win-the-most-seats-in-the-2026-mecklenburg-vorpommern-parliamentary-elections",
-   "question": "Will Party I win the most seats in the 2026 Mecklenburg-Vorpommern parliamentary elections?"
+   "market_id": "1357386",
+   "slug": "will-the-kansas-city-chiefs-win-the-2027-nfl-league-championship",
+   "question": "Will the Kansas City Chiefs win the 2027 NFL league championship?"
   },
   {
-   "market_id": "1364119",
-   "slug": "will-party-j-win-the-most-seats-in-the-2026-mecklenburg-vorpommern-parliamentary-elections",
-   "question": "Will Party J win the most seats in the 2026 Mecklenburg-Vorpommern parliamentary elections?"
+   "market_id": "1357387",
+   "slug": "will-the-las-vegas-raiders-win-the-2027-nfl-league-championship",
+   "question": "Will the Las Vegas Raiders win the 2027 NFL league championship?"
   },
   {
-   "market_id": "1364120",
-   "slug": "will-party-k-win-the-most-seats-in-the-2026-mecklenburg-vorpommern-parliamentary-elections",
-   "question": "Will Party K win the most seats in the 2026 Mecklenburg-Vorpommern parliamentary elections?"
+   "market_id": "1357388",
+   "slug": "will-the-los-angeles-chargers-win-the-2027-nfl-league-championship",
+   "question": "Will the Los Angeles Chargers win the 2027 NFL league championship?"
   },
   {
-   "market_id": "1364121",
-   "slug": "will-party-l-win-the-most-seats-in-the-2026-mecklenburg-vorpommern-parliamentary-elections",
-   "question": "Will Party L win the most seats in the 2026 Mecklenburg-Vorpommern parliamentary elections?"
+   "market_id": "1357389",
+   "slug": "will-the-los-angeles-rams-win-the-2027-nfl-league-championship",
+   "question": "Will the Los Angeles Rams win the 2027 NFL league championship?"
   },
   {
-   "market_id": "1364122",
-   "slug": "will-party-m-win-the-most-seats-in-the-2026-mecklenburg-vorpommern-parliamentary-elections",
-   "question": "Will Party M win the most seats in the 2026 Mecklenburg-Vorpommern parliamentary elections?"
+   "market_id": "1357390",
+   "slug": "will-the-miami-dolphins-win-the-2027-nfl-league-championship",
+   "question": "Will the Miami Dolphins win the 2027 NFL league championship?"
   },
   {
-   "market_id": "1364123",
-   "slug": "will-party-n-win-the-most-seats-in-the-2026-mecklenburg-vorpommern-parliamentary-elections",
-   "question": "Will Party N win the most seats in the 2026 Mecklenburg-Vorpommern parliamentary elections?"
+   "market_id": "1357391",
+   "slug": "will-the-minnesota-vikings-win-the-2027-nfl-league-championship",
+   "question": "Will the Minnesota Vikings win the 2027 NFL league championship?"
   },
   {
-   "market_id": "1364124",
-   "slug": "will-party-o-win-the-most-seats-in-the-2026-mecklenburg-vorpommern-parliamentary-elections",
-   "question": "Will Party O win the most seats in the 2026 Mecklenburg-Vorpommern parliamentary elections?"
+   "market_id": "1357392",
+   "slug": "will-the-new-england-patriots-win-the-2027-nfl-league-championship",
+   "question": "Will the New England Patriots win the 2027 NFL league championship?"
   },
   {
-   "market_id": "1364125",
-   "slug": "will-another-party-win-the-most-seats-in-the-2026-mecklenburg-vorpommern-parliamentary-elections",
-   "question": "Will another party win the most seats in the 2026 Mecklenburg-Vorpommern parliamentary elections?"
+   "market_id": "1357393",
+   "slug": "will-the-new-orleans-saints-win-the-2027-nfl-league-championship",
+   "question": "Will the New Orleans Saints win the 2027 NFL league championship?"
   },
   {
-   "market_id": "2771324",
-   "slug": "will-arsenal-win-the-2026-27-english-premier-league-epl-championship-20260701200428750",
-   "question": "Will Arsenal win the 2026-27 English Premier League (EPL) Championship?"
+   "market_id": "1357394",
+   "slug": "will-the-new-york-giants-win-the-2027-nfl-league-championship",
+   "question": "Will the New York Giants win the 2027 NFL league championship?"
   },
   {
-   "market_id": "2771325",
-   "slug": "will-aston-villa-win-the-2026-27-english-premier-league-epl-championship-20260701200428751",
-   "question": "Will Aston Villa win the 2026-27 English Premier League (EPL) Championship?"
+   "market_id": "1357395",
+   "slug": "will-the-new-york-jets-win-the-2027-nfl-league-championship",
+   "question": "Will the New York Jets win the 2027 NFL league championship?"
   },
   {
-   "market_id": "2771326",
-   "slug": "will-bournemouth-win-the-2026-27-english-premier-league-epl-championship-20260701200428752",
-   "question": "Will Bournemouth win the 2026-27 English Premier League (EPL) Championship?"
+   "market_id": "1357396",
+   "slug": "will-the-philadelphia-eagles-win-the-2027-nfl-league-championship",
+   "question": "Will the Philadelphia Eagles win the 2027 NFL league championship?"
   },
   {
-   "market_id": "2771327",
-   "slug": "will-brentford-win-the-2026-27-english-premier-league-epl-championship-20260701200428753",
-   "question": "Will Brentford win the 2026-27 English Premier League (EPL) Championship?"
+   "market_id": "1357397",
+   "slug": "will-the-pittsburgh-steelers-win-the-2027-nfl-league-championship",
+   "question": "Will the Pittsburgh Steelers win the 2027 NFL league championship?"
   },
   {
-   "market_id": "2771328",
-   "slug": "will-brighton-win-the-2026-27-english-premier-league-epl-championship-20260701200428754",
-   "question": "Will Brighton win the 2026-27 English Premier League (EPL) Championship?"
+   "market_id": "1357398",
+   "slug": "will-the-san-francisco-49ers-win-the-2027-nfl-league-championship",
+   "question": "Will the San Francisco 49ers win the 2027 NFL league championship?"
   },
   {
-   "market_id": "2771329",
-   "slug": "will-chelsea-win-the-2026-27-english-premier-league-epl-championship-20260701200428755",
-   "question": "Will Chelsea win the 2026-27 English Premier League (EPL) Championship?"
+   "market_id": "1357399",
+   "slug": "will-the-seattle-seahawks-win-the-2027-nfl-league-championship",
+   "question": "Will the Seattle Seahawks win the 2027 NFL league championship?"
   },
   {
-   "market_id": "2771330",
-   "slug": "will-crystal-palace-win-the-2026-27-english-premier-league-epl-championship-20260701200428756",
-   "question": "Will Crystal Palace win the 2026-27 English Premier League (EPL) Championship?"
+   "market_id": "1357400",
+   "slug": "will-the-tampa-bay-buccaneers-win-the-2027-nfl-league-championship",
+   "question": "Will the Tampa Bay Buccaneers win the 2027 NFL league championship?"
   },
   {
-   "market_id": "2771331",
-   "slug": "will-everton-win-the-2026-27-english-premier-league-epl-championship-20260701200428757",
-   "question": "Will Everton win the 2026-27 English Premier League (EPL) Championship?"
+   "market_id": "1357401",
+   "slug": "will-the-tennessee-titans-win-the-2027-nfl-league-championship",
+   "question": "Will the Tennessee Titans win the 2027 NFL league championship?"
   },
   {
-   "market_id": "2771332",
-   "slug": "will-fulham-win-the-2026-27-english-premier-league-epl-championship-20260701200428758",
-   "question": "Will Fulham win the 2026-27 English Premier League (EPL) Championship?"
+   "market_id": "1357402",
+   "slug": "will-the-washington-commanders-win-the-2027-nfl-league-championship",
+   "question": "Will the Washington Commanders win the 2027 NFL league championship?"
   },
   {
-   "market_id": "2771333",
-   "slug": "will-leeds-united-win-the-2026-27-english-premier-league-epl-championship-20260701200428759",
-   "question": "Will Leeds United win the 2026-27 English Premier League (EPL) Championship?"
+   "market_id": "1357403",
+   "slug": "will-the-other-win-the-2027-nfl-league-championship",
+   "question": "Will another team win the 2027 NFL league championship?"
   },
   {
-   "market_id": "2771334",
-   "slug": "will-liverpool-win-the-2026-27-english-premier-league-epl-championship-20260701200428760",
-   "question": "Will Liverpool win the 2026-27 English Premier League (EPL) Championship?"
+   "market_id": "4551980",
+   "slug": "mlb-mil-bal-2026-09-20",
+   "question": "Milwaukee Brewers vs. Baltimore Orioles"
   },
   {
-   "market_id": "2771335",
-   "slug": "will-manchester-city-win-the-2026-27-english-premier-league-epl-championship-20260701200428761",
-   "question": "Will Manchester City win the 2026-27 English Premier League (EPL) Championship?"
+   "market_id": "4729871",
+   "slug": "mlb-mil-bal-2026-09-20-spread-away-1pt5",
+   "question": "Spread: Milwaukee Brewers (-1.5)"
   },
   {
-   "market_id": "2771336",
-   "slug": "will-manchester-united-win-the-2026-27-english-premier-league-epl-championship-20260701200428762",
-   "question": "Will Manchester United win the 2026-27 English Premier League (EPL) Championship?"
+   "market_id": "4729872",
+   "slug": "mlb-mil-bal-2026-09-20-total-7pt5",
+   "question": "Milwaukee Brewers vs. Baltimore Orioles: O/U 7.5"
   },
   {
-   "market_id": "2771337",
-   "slug": "will-newcastle-united-win-the-2026-27-english-premier-league-epl-championship-20260701200428763",
-   "question": "Will Newcastle United win the 2026-27 English Premier League (EPL) Championship?"
+   "market_id": "4729880",
+   "slug": "mlb-mil-bal-2026-09-20-extra-innings",
+   "question": "Will the game go to extra innings?: Milwaukee Brewers vs. Baltimore Orioles"
   },
   {
-   "market_id": "2771338",
-   "slug": "will-nottingham-forest-win-the-2026-27-english-premier-league-epl-championship-20260701200428764",
-   "question": "Will Nottingham Forest win the 2026-27 English Premier League (EPL) Championship?"
+   "market_id": "4729885",
+   "slug": "mlb-mil-bal-2026-09-20-team-total-mil-3pt5",
+   "question": "Milwaukee Brewers Team Total: O/U 3.5"
   },
   {
-   "market_id": "2771339",
-   "slug": "will-tottenham-win-the-2026-27-english-premier-league-epl-championship-20260701200428765",
-   "question": "Will Tottenham win the 2026-27 English Premier League (EPL) Championship?"
+   "market_id": "4729886",
+   "slug": "mlb-mil-bal-2026-09-20-team-total-mil-4pt5",
+   "question": "Milwaukee Brewers Team Total: O/U 4.5"
   },
   {
-   "market_id": "2771340",
-   "slug": "will-sunderland-win-the-2026-27-english-premier-league-epl-championship-20260701200428766",
-   "question": "Will Sunderland win the 2026-27 English Premier League (EPL) Championship?"
+   "market_id": "4729887",
+   "slug": "mlb-mil-bal-2026-09-20-team-total-mil-5pt5",
+   "question": "Milwaukee Brewers Team Total: O/U 5.5"
   },
   {
-   "market_id": "2771341",
-   "slug": "will-coventry-city-win-the-2026-27-english-premier-league-epl-championship-20260701200428767",
-   "question": "Will Coventry City win the 2026-27 English Premier League (EPL) Championship?"
+   "market_id": "4729888",
+   "slug": "mlb-mil-bal-2026-09-20-team-total-mil-6pt5",
+   "question": "Milwaukee Brewers Team Total: O/U 6.5"
   },
   {
-   "market_id": "2771342",
-   "slug": "will-ipswich-town-win-the-2026-27-english-premier-league-epl-championship-20260701200428768",
-   "question": "Will Ipswich Town win the 2026-27 English Premier League (EPL) Championship?"
+   "market_id": "4729889",
+   "slug": "mlb-mil-bal-2026-09-20-team-total-bal-0pt5",
+   "question": "Baltimore Orioles Team Total: O/U 0.5"
   },
   {
-   "market_id": "2771343",
-   "slug": "will-hull-city-win-the-2026-27-english-premier-league-epl-championship-20260701200428769",
-   "question": "Will Hull City win the 2026-27 English Premier League (EPL) Championship?"
+   "market_id": "4729890",
+   "slug": "mlb-mil-bal-2026-09-20-team-total-bal-1pt5",
+   "question": "Baltimore Orioles Team Total: O/U 1.5"
   },
   {
-   "market_id": "2771344",
-   "slug": "will-team-a-win-the-2026-27-english-premier-league-epl-championship-20260702175643760",
-   "question": "Will Team A win the 2026-27 English Premier League (EPL) Championship?"
+   "market_id": "4729891",
+   "slug": "mlb-mil-bal-2026-09-20-team-total-bal-2pt5",
+   "question": "Baltimore Orioles Team Total: O/U 2.5"
   },
   {
-   "market_id": "2771345",
-   "slug": "will-team-b-win-the-2026-27-english-premier-league-epl-championship-20260702175643761",
-   "question": "Will Team B win the 2026-27 English Premier League (EPL) Championship?"
+   "market_id": "4729892",
+   "slug": "mlb-mil-bal-2026-09-20-team-total-bal-3pt5",
+   "question": "Baltimore Orioles Team Total: O/U 3.5"
   },
   {
-   "market_id": "2771346",
-   "slug": "will-team-c-win-the-2026-27-english-premier-league-epl-championship-20260702175643762",
-   "question": "Will Team C win the 2026-27 English Premier League (EPL) Championship?"
+   "market_id": "4729893",
+   "slug": "mlb-mil-bal-2026-09-20-team-total-bal-4pt5",
+   "question": "Baltimore Orioles Team Total: O/U 4.5"
   },
   {
-   "market_id": "2771347",
-   "slug": "will-another-team-win-the-2026-27-english-premier-league-epl-championship-20260702175643763",
-   "question": "Will Another Team win the 2026-27 English Premier League (EPL) Championship?"
+   "market_id": "4729921",
+   "slug": "mlb-mil-bal-2026-09-20-spread-home-2pt5",
+   "question": "Spread: Baltimore Orioles (-2.5)"
   },
   {
-   "market_id": "665374",
-   "slug": "will-the-us-invade-iran-before-2027",
-   "question": "Will the U.S. invade Iran before 2027?"
+   "market_id": "4729922",
+   "slug": "mlb-mil-bal-2026-09-20-spread-home-1pt5",
+   "question": "Spread: Baltimore Orioles (-1.5)"
+  },
+  {
+   "market_id": "4729923",
+   "slug": "mlb-mil-bal-2026-09-20-spread-away-2pt5",
+   "question": "Spread: Milwaukee Brewers (-2.5)"
+  },
+  {
+   "market_id": "4729924",
+   "slug": "mlb-mil-bal-2026-09-20-total-6pt5",
+   "question": "Milwaukee Brewers vs. Baltimore Orioles: O/U 6.5"
+  },
+  {
+   "market_id": "4729925",
+   "slug": "mlb-mil-bal-2026-09-20-total-8pt5",
+   "question": "Milwaukee Brewers vs. Baltimore Orioles: O/U 8.5"
+  },
+  {
+   "market_id": "4778519",
+   "slug": "mlb-mil-bal-2026-09-20-total-5pt5",
+   "question": "Milwaukee Brewers vs. Baltimore Orioles: O/U 5.5"
+  },
+  {
+   "market_id": "4779207",
+   "slug": "mlb-mil-bal-2026-09-20-total-4pt5",
+   "question": "Milwaukee Brewers vs. Baltimore Orioles: O/U 4.5"
+  },
+  {
+   "market_id": "4779808",
+   "slug": "mlb-mil-bal-2026-09-20-spread-away-3pt5",
+   "question": "Spread: Milwaukee Brewers (-3.5)"
+  },
+  {
+   "market_id": "4779921",
+   "slug": "mlb-mil-bal-2026-09-20-total-3pt5",
+   "question": "Milwaukee Brewers vs. Baltimore Orioles: O/U 3.5"
+  },
+  {
+   "market_id": "2772166",
+   "slug": "will-paris-saint-germain-win-the-2026-27-uefa-champions-league-championship-20260701202025550",
+   "question": "Will Paris Saint-Germain win the 2026-27 UEFA Champions League Championship?"
+  },
+  {
+   "market_id": "2772167",
+   "slug": "will-aston-villa-win-the-2026-27-uefa-champions-league-championship-20260701202025551",
+   "question": "Will Aston Villa win the 2026-27 UEFA Champions League Championship?"
+  },
+  {
+   "market_id": "2772168",
+   "slug": "will-arsenal-win-the-2026-27-uefa-champions-league-championship-20260701202025552",
+   "question": "Will Arsenal win the 2026-27 UEFA Champions League Championship?"
+  },
+  {
+   "market_id": "2772169",
+   "slug": "will-manchester-city-win-the-2026-27-uefa-champions-league-championship-20260701202025553",
+   "question": "Will Manchester City win the 2026-27 UEFA Champions League Championship?"
+  },
+  {
+   "market_id": "2772170",
+   "slug": "will-manchester-united-win-the-2026-27-uefa-champions-league-championship-20260701202025554",
+   "question": "Will Manchester United win the 2026-27 UEFA Champions League Championship?"
+  },
+  {
+   "market_id": "2772171",
+   "slug": "will-liverpool-win-the-2026-27-uefa-champions-league-championship-20260701202025555",
+   "question": "Will Liverpool win the 2026-27 UEFA Champions League Championship?"
+  },
+  {
+   "market_id": "2772172",
+   "slug": "will-inter-milan-win-the-2026-27-uefa-champions-league-championship-20260701202025556",
+   "question": "Will Inter Milan win the 2026-27 UEFA Champions League Championship?"
+  },
+  {
+   "market_id": "2772173",
+   "slug": "will-napoli-win-the-2026-27-uefa-champions-league-championship-20260701202025557",
+   "question": "Will Napoli win the 2026-27 UEFA Champions League Championship?"
+  },
+  {
+   "market_id": "2772174",
+   "slug": "will-roma-win-the-2026-27-uefa-champions-league-championship-20260701202025558",
+   "question": "Will Roma win the 2026-27 UEFA Champions League Championship?"
+  },
+  {
+   "market_id": "2772175",
+   "slug": "will-como-win-the-2026-27-uefa-champions-league-championship-20260701202025559",
+   "question": "Will Como win the 2026-27 UEFA Champions League Championship?"
+  },
+  {
+   "market_id": "2772176",
+   "slug": "will-barcelona-win-the-2026-27-uefa-champions-league-championship-20260701202025560",
+   "question": "Will Barcelona win the 2026-27 UEFA Champions League Championship?"
+  },
+  {
+   "market_id": "2772177",
+   "slug": "will-real-madrid-win-the-2026-27-uefa-champions-league-championship-20260701202025561",
+   "question": "Will Real Madrid win the 2026-27 UEFA Champions League Championship?"
+  },
+  {
+   "market_id": "2772178",
+   "slug": "will-villarreal-win-the-2026-27-uefa-champions-league-championship-20260701202025562",
+   "question": "Will Villarreal win the 2026-27 UEFA Champions League Championship?"
+  },
+  {
+   "market_id": "2772179",
+   "slug": "will-atletico-madrid-win-the-2026-27-uefa-champions-league-championship-20260701202025563",
+   "question": "Will Atlético Madrid win the 2026-27 UEFA Champions League Championship?"
+  },
+  {
+   "market_id": "2772180",
+   "slug": "will-real-betis-win-the-2026-27-uefa-champions-league-championship-20260701202025564",
+   "question": "Will Real Betis win the 2026-27 UEFA Champions League Championship?"
+  },
+  {
+   "market_id": "2772181",
+   "slug": "will-bayern-munich-win-the-2026-27-uefa-champions-league-championship-20260701202025565",
+   "question": "Will Bayern Munich win the 2026-27 UEFA Champions League Championship?"
+  },
+  {
+   "market_id": "2772182",
+   "slug": "will-borussia-dortmund-win-the-2026-27-uefa-champions-league-championship-20260701202025566",
+   "question": "Will Borussia Dortmund win the 2026-27 UEFA Champions League Championship?"
+  },
+  {
+   "market_id": "2772183",
+   "slug": "will-rb-leipzig-win-the-2026-27-uefa-champions-league-championship-20260701202025567",
+   "question": "Will RB Leipzig win the 2026-27 UEFA Champions League Championship?"
+  },
+  {
+   "market_id": "2772184",
+   "slug": "will-vfb-stuttgart-win-the-2026-27-uefa-champions-league-championship-20260701202025568",
+   "question": "Will VfB Stuttgart win the 2026-27 UEFA Champions League Championship?"
+  },
+  {
+   "market_id": "2772185",
+   "slug": "will-lens-win-the-2026-27-uefa-champions-league-championship-20260701202025569",
+   "question": "Will Lens win the 2026-27 UEFA Champions League Championship?"
+  },
+  {
+   "market_id": "2772186",
+   "slug": "will-lille-win-the-2026-27-uefa-champions-league-championship-20260701202025570",
+   "question": "Will Lille win the 2026-27 UEFA Champions League Championship?"
+  },
+  {
+   "market_id": "2772187",
+   "slug": "will-psv-eindhoven-win-the-2026-27-uefa-champions-league-championship-20260701202025571",
+   "question": "Will PSV Eindhoven win the 2026-27 UEFA Champions League Championship?"
+  },
+  {
+   "market_id": "2772188",
+   "slug": "will-feyenoord-win-the-2026-27-uefa-champions-league-championship-20260701202025572",
+   "question": "Will Feyenoord win the 2026-27 UEFA Champions League Championship?"
+  },
+  {
+   "market_id": "2772189",
+   "slug": "will-porto-win-the-2026-27-uefa-champions-league-championship-20260701202025573",
+   "question": "Will Porto win the 2026-27 UEFA Champions League Championship?"
+  },
+  {
+   "market_id": "2772190",
+   "slug": "will-sporting-cp-win-the-2026-27-uefa-champions-league-championship-20260701202025574",
+   "question": "Will Sporting CP win the 2026-27 UEFA Champions League Championship?"
+  },
+  {
+   "market_id": "2772191",
+   "slug": "will-club-brugge-win-the-2026-27-uefa-champions-league-championship-20260701202025575",
+   "question": "Will Club Brugge win the 2026-27 UEFA Champions League Championship?"
+  },
+  {
+   "market_id": "2772192",
+   "slug": "will-slavia-prague-win-the-2026-27-uefa-champions-league-championship-20260701202025576",
+   "question": "Will Slavia Prague win the 2026-27 UEFA Champions League Championship?"
+  },
+  {
+   "market_id": "2772193",
+   "slug": "will-galatasaray-win-the-2026-27-uefa-champions-league-championship-20260701202025577",
+   "question": "Will Galatasaray win the 2026-27 UEFA Champions League Championship?"
+  },
+  {
+   "market_id": "2772194",
+   "slug": "will-shakhtar-donetsk-win-the-2026-27-uefa-champions-league-championship-20260701202025578",
+   "question": "Will Shakhtar Donetsk win the 2026-27 UEFA Champions League Championship?"
+  },
+  {
+   "market_id": "2772195",
+   "slug": "will-fenerbahe-win-the-2026-27-uefa-champions-league-championship",
+   "question": "Will Fenerbahçe win the 2026-27 UEFA Champions League Championship?"
+  },
+  {
+   "market_id": "2772196",
+   "slug": "will-bodglimt-win-the-2026-27-uefa-champions-league-championship",
+   "question": "Will Bodø/Glimt win the 2026-27 UEFA Champions League Championship?"
+  },
+  {
+   "market_id": "2772197",
+   "slug": "will-slovan-bratislava-win-the-2026-27-uefa-champions-league-championship",
+   "question": "Will Slovan Bratislava win the 2026-27 UEFA Champions League Championship?"
+  },
+  {
+   "market_id": "2772198",
+   "slug": "will-aek-athens-win-the-2026-27-uefa-champions-league-championship",
+   "question": "Will AEK Athens win the 2026-27 UEFA Champions League Championship?"
+  },
+  {
+   "market_id": "2772199",
+   "slug": "will-lask-win-the-2026-27-uefa-champions-league-championship",
+   "question": "Will LASK win the 2026-27 UEFA Champions League Championship?"
+  },
+  {
+   "market_id": "2772200",
+   "slug": "will-viking-win-the-2026-27-uefa-champions-league-championship",
+   "question": "Will Viking win the 2026-27 UEFA Champions League Championship?"
+  },
+  {
+   "market_id": "2772201",
+   "slug": "will-sabah-win-the-2026-27-uefa-champions-league-championship",
+   "question": "Will Sabah win the 2026-27 UEFA Champions League Championship?"
+  },
+  {
+   "market_id": "2772202",
+   "slug": "will-another-team-win-the-2026-27-uefa-champions-league-championship-20260701202025586",
+   "question": "Will another team win the 2026-27 UEFA Champions League Championship?"
+  },
+  {
+   "market_id": "2772203",
+   "slug": "will-team-h-win-the-2026-27-uefa-champions-league-championship-20260701212302026",
+   "question": "Will Team H win the 2026-27 UEFA Champions League Championship?"
+  },
+  {
+   "market_id": "2772204",
+   "slug": "will-team-i-win-the-2026-27-uefa-champions-league-championship-20260701212302027",
+   "question": "Will Team I win the 2026-27 UEFA Champions League Championship?"
+  },
+  {
+   "market_id": "2772205",
+   "slug": "will-team-j-win-the-2026-27-uefa-champions-league-championship-20260701212302028",
+   "question": "Will Team J win the 2026-27 UEFA Champions League Championship?"
+  },
+  {
+   "market_id": "2772206",
+   "slug": "will-team-k-win-the-2026-27-uefa-champions-league-championship-20260701212302029",
+   "question": "Will Team K win the 2026-27 UEFA Champions League Championship?"
+  },
+  {
+   "market_id": "2772207",
+   "slug": "will-team-l-win-the-2026-27-uefa-champions-league-championship-20260701212302030",
+   "question": "Will Team L win the 2026-27 UEFA Champions League Championship?"
+  },
+  {
+   "market_id": "2046502",
+   "slug": "will-voter-turnout-be-less-than-47-in-the-2026-russian-parliamentary-election",
+   "question": "Will voter turnout be less than 47% in the 2026 Russian parliamentary election?"
+  },
+  {
+   "market_id": "2046503",
+   "slug": "will-voter-turnout-be-between-47-and-50-in-the-2026-russian-parliamentary-election",
+   "question": "Will voter turnout be between 47% and 50% in the 2026 Russian parliamentary election?"
+  },
+  {
+   "market_id": "2046504",
+   "slug": "will-voter-turnout-be-between-50-and-53-in-the-2026-russian-parliamentary-election",
+   "question": "Will voter turnout be between 50% and 53% in the 2026 Russian parliamentary election?"
+  },
+  {
+   "market_id": "2046505",
+   "slug": "will-voter-turnout-be-between-53-and-56-in-the-2026-russian-parliamentary-election",
+   "question": "Will voter turnout be between 53% and 56% in the 2026 Russian parliamentary election?"
+  },
+  {
+   "market_id": "2046506",
+   "slug": "will-voter-turnout-be-between-56-and-59-in-the-2026-russian-parliamentary-election",
+   "question": "Will voter turnout be between 56% and 59% in the 2026 Russian parliamentary election?"
+  },
+  {
+   "market_id": "2046507",
+   "slug": "will-voter-turnout-be-between-59-and-62-in-the-2026-russian-parliamentary-election",
+   "question": "Will voter turnout be between 59% and 62% in the 2026 Russian parliamentary election?"
+  },
+  {
+   "market_id": "2046508",
+   "slug": "will-voter-turnout-be-62-or-higher-in-the-2026-russian-parliamentary-election",
+   "question": "Will voter turnout be 62% or higher in the 2026 Russian parliamentary election?"
+  },
+  {
+   "market_id": "4641062",
+   "slug": "us-x-iran-ceasefire-continues-through-september-20-20260917",
+   "question": "US x Iran ceasefire continues through September 20?"
+  },
+  {
+   "market_id": "4641063",
+   "slug": "us-x-iran-ceasefire-continues-through-september-25-20260917",
+   "question": "US x Iran ceasefire continues through September 25?"
+  },
+  {
+   "market_id": "4641064",
+   "slug": "us-x-iran-ceasefire-continues-through-september-30-20260917",
+   "question": "US x Iran ceasefire continues through September 30?"
+  },
+  {
+   "market_id": "4641065",
+   "slug": "us-x-iran-ceasefire-continues-through-october-31-20260917",
+   "question": "US x Iran ceasefire continues through October 31?"
+  },
+  {
+   "market_id": "4713483",
+   "slug": "us-x-iran-ceasefire-continues-through-november-30-20260918",
+   "question": "US x Iran ceasefire continues through November 30?"
+  },
+  {
+   "market_id": "4713484",
+   "slug": "us-x-iran-ceasefire-continues-through-december-31-20260918",
+   "question": "US x Iran ceasefire continues through December 31?"
+  },
+  {
+   "market_id": "1125100",
+   "slug": "will-united-russia-win-fewer-than-280-seats-in-the-next-russian-state-duma-election",
+   "question": "Will United Russia win fewer than 280 seats in the next Russian State Duma election?"
+  },
+  {
+   "market_id": "1125101",
+   "slug": "will-united-russia-win-between-280-and-294-seats-in-the-next-russian-state-duma-election",
+   "question": "Will United Russia win between 280 and 294 seats in the next Russian State Duma election?"
+  },
+  {
+   "market_id": "1125102",
+   "slug": "will-united-russia-win-between-295-and-309-seats-in-the-next-russian-state-duma-election",
+   "question": "Will United Russia win between 295 and 309 seats in the next Russian State Duma election?"
+  },
+  {
+   "market_id": "1125103",
+   "slug": "will-united-russia-win-between-310-and-324-seats-in-the-next-russian-state-duma-election",
+   "question": "Will United Russia win between 310 and 324 seats in the next Russian State Duma election?"
+  },
+  {
+   "market_id": "1125104",
+   "slug": "will-united-russia-win-between-325-and-339-seats-in-the-next-russian-state-duma-election",
+   "question": "Will United Russia win between 325 and 339 seats in the next Russian State Duma election?"
+  },
+  {
+   "market_id": "1125105",
+   "slug": "will-united-russia-win-between-340-and-354-seats-in-the-next-russian-state-duma-election",
+   "question": "Will United Russia win between 340 and 354 seats in the next Russian State Duma election?"
+  },
+  {
+   "market_id": "1125106",
+   "slug": "will-united-russia-win-355-or-more-seats-in-the-next-russian-state-duma-election",
+   "question": "Will United Russia win 355 or more seats in the next Russian State Duma election?"
+  },
+  {
+   "market_id": "2589810",
+   "slug": "will-the-fed-decrease-interest-rates-by-50-bps-after-the-october-2026-meeting-20260617190324029",
+   "question": "Will the Fed decrease interest rates by 50+ bps after the October 2026 meeting?"
+  },
+  {
+   "market_id": "2589811",
+   "slug": "will-the-fed-decrease-interest-rates-by-25-bps-after-the-october-2026-meeting-20260617190324030",
+   "question": "Will the Fed decrease interest rates by 25 bps after the October 2026 meeting?"
+  },
+  {
+   "market_id": "2589812",
+   "slug": "will-there-be-no-change-in-fed-interest-rates-after-the-october-2026-meeting-20260617190324031",
+   "question": "Will there be no change in Fed interest rates after the October 2026 meeting?"
+  },
+  {
+   "market_id": "2589813",
+   "slug": "will-the-fed-increase-interest-rates-by-25-bps-after-the-october-2026-meeting-20260617190324032",
+   "question": "Will the Fed increase interest rates by 25 bps after the October 2026 meeting?"
+  },
+  {
+   "market_id": "2589814",
+   "slug": "will-the-fed-increase-interest-rates-by-50-bps-after-the-october-2026-meeting-20260617190324033",
+   "question": "Will the Fed increase interest rates by 50+ bps after the October 2026 meeting?"
   },
   {
    "market_id": "3215005",
@@ -2729,55 +2044,42 @@
    "question": "Will the Fed increase interest rates by 50+ bps after the January 2027 meeting?"
   },
   {
-   "market_id": "4635362",
-   "slug": "btc-updown-5m-1789719300",
-   "question": "Bitcoin Up or Down - September 18, 4:15AM-4:20AM ET"
+   "market_id": "4743435",
+   "slug": "btc-updown-5m-1789956600",
+   "question": "Bitcoin Up or Down - September 20, 10:10PM-10:15PM ET"
   },
   {
-   "market_id": "4635369",
-   "slug": "eth-updown-5m-1789719300",
-   "question": "Ethereum Up or Down - September 18, 4:15AM-4:20AM ET"
+   "market_id": "4743439",
+   "slug": "eth-updown-5m-1789956600",
+   "question": "Ethereum Up or Down - September 20, 10:10PM-10:15PM ET"
   },
   {
-   "market_id": "4635361",
-   "slug": "sol-updown-5m-1789719300",
-   "question": "Solana Up or Down - September 18, 4:15AM-4:20AM ET"
+   "market_id": "4743436",
+   "slug": "sol-updown-5m-1789956600",
+   "question": "Solana Up or Down - September 20, 10:10PM-10:15PM ET"
   },
   {
-   "market_id": "4635367",
-   "slug": "btc-updown-15m-1789719300",
-   "question": "Bitcoin Up or Down - September 18, 4:15AM-4:30AM ET"
+   "market_id": "4743431",
+   "slug": "btc-updown-5m-1789956300",
+   "question": "Bitcoin Up or Down - September 20, 10:05PM-10:10PM ET"
   },
   {
-   "market_id": "4635320",
-   "slug": "btc-updown-5m-1789719000",
-   "question": "Bitcoin Up or Down - September 18, 4:10AM-4:15AM ET"
+   "market_id": "4743429",
+   "slug": "eth-updown-5m-1789956300",
+   "question": "Ethereum Up or Down - September 20, 10:05PM-10:10PM ET"
   },
   {
-   "market_id": "4635316",
-   "slug": "sol-updown-5m-1789719000",
-   "question": "Solana Up or Down - September 18, 4:10AM-4:15AM ET"
+   "market_id": "4743425",
+   "slug": "sol-updown-5m-1789956300",
+   "question": "Solana Up or Down - September 20, 10:05PM-10:10PM ET"
   },
   {
-   "market_id": "4635280",
-   "slug": "btc-updown-15m-1789718400",
-   "question": "Bitcoin Up or Down - September 18, 4:00AM-4:15AM ET"
+   "market_id": "4743377",
+   "slug": "btc-updown-15m-1789956000",
+   "question": "Bitcoin Up or Down - September 20, 10:00PM-10:15PM ET"
   }
  ],
  "negrisk": [
-  {
-   "event_id": "606422",
-   "slug": "fed-decision-in-october-20260617190323537",
-   "title": "Fed Decision in October?",
-   "n_outcomes": 5,
-   "market_ids": [
-    "2589810",
-    "2589811",
-    "2589812",
-    "2589813",
-    "2589814"
-   ]
-  },
   {
    "event_id": "149589",
    "slug": "which-party-will-gain-most-seats-in-russian-parliamentary-election",
@@ -2792,180 +2094,6 @@
     "1130017",
     "1130018",
     "1130020"
-   ]
-  },
-  {
-   "event_id": "967956",
-   "slug": "bun-bay-uni-2026-09-18",
-   "title": "FC Bayern München vs. 1. FC Union Berlin",
-   "n_outcomes": 3,
-   "market_ids": [
-    "4237382",
-    "4237392",
-    "4237403"
-   ]
-  },
-  {
-   "event_id": "48361",
-   "slug": "ballon-dor-winner-2026",
-   "title": "Ballon d'Or Winner 2026",
-   "n_outcomes": 19,
-   "market_ids": [
-    "608540",
-    "608541",
-    "608542",
-    "608543",
-    "608545",
-    "608546",
-    "608547",
-    "608551",
-    "608552",
-    "608553",
-    "608554",
-    "608559",
-    "608560",
-    "608561",
-    "608562",
-    "608565",
-    "608566",
-    "608567",
-    "608568"
-   ]
-  },
-  {
-   "event_id": "986503",
-   "slug": "elon-musk-of-tweets-september-11-september-18-2026",
-   "title": "Elon Musk # tweets September 11 - September 18, 2026?",
-   "n_outcomes": 17,
-   "market_ids": [
-    "4354848",
-    "4354854",
-    "4354856",
-    "4354860",
-    "4354861",
-    "4354864",
-    "4354865",
-    "4354866",
-    "4354867",
-    "4354868",
-    "4354870",
-    "4354871",
-    "4354872",
-    "4354873",
-    "4354874",
-    "4354876",
-    "4354878"
-   ]
-  },
-  {
-   "event_id": "659671",
-   "slug": "uefa-champions-league-2027-champion-20260701202025549",
-   "title": "UEFA Champions League: 2027 Champion",
-   "n_outcomes": 36,
-   "market_ids": [
-    "2772166",
-    "2772167",
-    "2772168",
-    "2772169",
-    "2772170",
-    "2772171",
-    "2772172",
-    "2772173",
-    "2772174",
-    "2772175",
-    "2772176",
-    "2772177",
-    "2772178",
-    "2772179",
-    "2772180",
-    "2772181",
-    "2772182",
-    "2772183",
-    "2772184",
-    "2772185",
-    "2772186",
-    "2772187",
-    "2772188",
-    "2772189",
-    "2772190",
-    "2772191",
-    "2772192",
-    "2772193",
-    "2772194",
-    "2772195",
-    "2772196",
-    "2772197",
-    "2772198",
-    "2772199",
-    "2772200",
-    "2772201"
-   ]
-  },
-  {
-   "event_id": "45915",
-   "slug": "brazil-presidential-election",
-   "title": "Brazil Presidential Election",
-   "n_outcomes": 19,
-   "market_ids": [
-    "601818",
-    "601819",
-    "601820",
-    "601821",
-    "601822",
-    "601823",
-    "601824",
-    "601825",
-    "601826",
-    "601827",
-    "601828",
-    "601829",
-    "601830",
-    "601831",
-    "601832",
-    "601833",
-    "601834",
-    "601835",
-    "601836"
-   ]
-  },
-  {
-   "event_id": "202857",
-   "slug": "pro-football-2027-champion-20260729185915366",
-   "title": "Pro Football: 2027 Champion",
-   "n_outcomes": 32,
-   "market_ids": [
-    "1357371",
-    "1357372",
-    "1357373",
-    "1357374",
-    "1357375",
-    "1357376",
-    "1357377",
-    "1357378",
-    "1357379",
-    "1357380",
-    "1357381",
-    "1357382",
-    "1357383",
-    "1357384",
-    "1357385",
-    "1357386",
-    "1357387",
-    "1357388",
-    "1357389",
-    "1357390",
-    "1357391",
-    "1357392",
-    "1357393",
-    "1357394",
-    "1357395",
-    "1357396",
-    "1357397",
-    "1357398",
-    "1357399",
-    "1357400",
-    "1357401",
-    "1357402"
    ]
   },
   {
@@ -3028,47 +2156,130 @@
    ]
   },
   {
-   "event_id": "204566",
-   "slug": "mecklenburg-vorpommern-parliamentary-election-winner",
-   "title": "Mecklenburg-Vorpommern Parliamentary Election Winner",
-   "n_outcomes": 8,
+   "event_id": "202857",
+   "slug": "pro-football-2027-champion-20260729185915366",
+   "title": "Pro Football: 2027 Champion",
+   "n_outcomes": 32,
    "market_ids": [
-    "1364102",
-    "1364103",
-    "1364104",
-    "1364105",
-    "1364106",
-    "1364107",
-    "1364108",
-    "1364109"
+    "1357371",
+    "1357372",
+    "1357373",
+    "1357374",
+    "1357375",
+    "1357376",
+    "1357377",
+    "1357378",
+    "1357379",
+    "1357380",
+    "1357381",
+    "1357382",
+    "1357383",
+    "1357384",
+    "1357385",
+    "1357386",
+    "1357387",
+    "1357388",
+    "1357389",
+    "1357390",
+    "1357391",
+    "1357392",
+    "1357393",
+    "1357394",
+    "1357395",
+    "1357396",
+    "1357397",
+    "1357398",
+    "1357399",
+    "1357400",
+    "1357401",
+    "1357402"
    ]
   },
   {
-   "event_id": "659518",
-   "slug": "epl-2027-champion-20260701200428749",
-   "title": "EPL: 2027 Champion",
-   "n_outcomes": 20,
+   "event_id": "659671",
+   "slug": "uefa-champions-league-2027-champion-20260701202025549",
+   "title": "UEFA Champions League: 2027 Champion",
+   "n_outcomes": 36,
    "market_ids": [
-    "2771324",
-    "2771325",
-    "2771326",
-    "2771327",
-    "2771328",
-    "2771329",
-    "2771330",
-    "2771331",
-    "2771332",
-    "2771333",
-    "2771334",
-    "2771335",
-    "2771336",
-    "2771337",
-    "2771338",
-    "2771339",
-    "2771340",
-    "2771341",
-    "2771342",
-    "2771343"
+    "2772166",
+    "2772167",
+    "2772168",
+    "2772169",
+    "2772170",
+    "2772171",
+    "2772172",
+    "2772173",
+    "2772174",
+    "2772175",
+    "2772176",
+    "2772177",
+    "2772178",
+    "2772179",
+    "2772180",
+    "2772181",
+    "2772182",
+    "2772183",
+    "2772184",
+    "2772185",
+    "2772186",
+    "2772187",
+    "2772188",
+    "2772189",
+    "2772190",
+    "2772191",
+    "2772192",
+    "2772193",
+    "2772194",
+    "2772195",
+    "2772196",
+    "2772197",
+    "2772198",
+    "2772199",
+    "2772200",
+    "2772201"
+   ]
+  },
+  {
+   "event_id": "403985",
+   "slug": "russia-parliamentary-election-turnout",
+   "title": "Russia Parliamentary Election: Turnout",
+   "n_outcomes": 7,
+   "market_ids": [
+    "2046502",
+    "2046503",
+    "2046504",
+    "2046505",
+    "2046506",
+    "2046507",
+    "2046508"
+   ]
+  },
+  {
+   "event_id": "147974",
+   "slug": "how-many-seats-will-united-russia-win-in-the-next-russian-legislative-election",
+   "title": "United Russia seats in the next Russian legislative election?",
+   "n_outcomes": 7,
+   "market_ids": [
+    "1125100",
+    "1125101",
+    "1125102",
+    "1125103",
+    "1125104",
+    "1125105",
+    "1125106"
+   ]
+  },
+  {
+   "event_id": "606422",
+   "slug": "fed-decision-in-october-20260617190323537",
+   "title": "Fed Decision in October?",
+   "n_outcomes": 5,
+   "market_ids": [
+    "2589810",
+    "2589811",
+    "2589812",
+    "2589813",
+    "2589814"
    ]
   },
   {
