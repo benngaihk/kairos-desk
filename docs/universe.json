@@ -1,12 +1,12 @@
 {
-  "as_of_utc": "2026-09-23T02:15:31.306213Z",
-  "as_of_cst": "2026-09-23 10:15 CST",
-  "n_counted": 481,
-  "n_completeness": 475,
-  "n_negrisk_events": 6,
-  "count_rule": "481 = 475 Yes/No completeness books + 6 NegRisk events (not 481 identical objects).",
-  "sha256_market_ids": "41a6f0c317ba0918525a59cad577e991ed5c188ea0e49ab0bf4eb9915a0b216e",
-  "n_unique_market_ids": 475,
+  "as_of_utc": "2026-09-23T08:08:08.462533Z",
+  "as_of_cst": "2026-09-23 16:08 CST",
+  "n_counted": 531,
+  "n_completeness": 523,
+  "n_negrisk_events": 8,
+  "count_rule": "531 = 523 Yes/No completeness books + 8 NegRisk events (not 531 identical objects).",
+  "sha256_market_ids": "a912e90f6bdcaf59bb47fc383a500dc95a3fc2d5a4410be9fbf46c78654cb419",
+  "n_unique_market_ids": 523,
   "completeness": [
     {
       "market_id": "2589810",
@@ -34,94 +34,19 @@
       "question": "Will the Fed increase interest rates by 50+ bps after the October 2026 meeting?"
     },
     {
-      "market_id": "4613529",
-      "slug": "mlb-tb-nyy-2026-09-22",
-      "question": "Tampa Bay Rays vs. New York Yankees"
+      "market_id": "4873005",
+      "slug": "mlb-laa-oak-2026-09-22-total-16pt5",
+      "question": "Los Angeles Angels vs. Athletics: O/U 16.5"
     },
     {
-      "market_id": "4801125",
-      "slug": "mlb-tb-nyy-2026-09-22-spread-home-1pt5",
-      "question": "Spread: New York Yankees (-1.5)"
+      "market_id": "2034729",
+      "slug": "will-the-us-confirm-that-aliens-exist-by-september-30-396",
+      "question": "Will the US confirm that aliens exist by September 30?"
     },
     {
-      "market_id": "4801136",
-      "slug": "mlb-tb-nyy-2026-09-22-extra-innings",
-      "question": "Will the game go to extra innings?: Tampa Bay Rays vs. New York Yankees"
-    },
-    {
-      "market_id": "4801177",
-      "slug": "mlb-tb-nyy-2026-09-22-spread-home-2pt5",
-      "question": "Spread: New York Yankees (-2.5)"
-    },
-    {
-      "market_id": "4801178",
-      "slug": "mlb-tb-nyy-2026-09-22-spread-away-1pt5",
-      "question": "Spread: Tampa Bay Rays (-1.5)"
-    },
-    {
-      "market_id": "4801179",
-      "slug": "mlb-tb-nyy-2026-09-22-spread-away-2pt5",
-      "question": "Spread: Tampa Bay Rays (-2.5)"
-    },
-    {
-      "market_id": "4816410",
-      "slug": "mlb-tb-nyy-2026-09-22-team-total-tb-1pt5",
-      "question": "Tampa Bay Rays Team Total: O/U 1.5"
-    },
-    {
-      "market_id": "4816411",
-      "slug": "mlb-tb-nyy-2026-09-22-team-total-tb-2pt5",
-      "question": "Tampa Bay Rays Team Total: O/U 2.5"
-    },
-    {
-      "market_id": "4816412",
-      "slug": "mlb-tb-nyy-2026-09-22-team-total-tb-3pt5",
-      "question": "Tampa Bay Rays Team Total: O/U 3.5"
-    },
-    {
-      "market_id": "4816413",
-      "slug": "mlb-tb-nyy-2026-09-22-team-total-tb-4pt5",
-      "question": "Tampa Bay Rays Team Total: O/U 4.5"
-    },
-    {
-      "market_id": "4816414",
-      "slug": "mlb-tb-nyy-2026-09-22-team-total-tb-5pt5",
-      "question": "Tampa Bay Rays Team Total: O/U 5.5"
-    },
-    {
-      "market_id": "4816415",
-      "slug": "mlb-tb-nyy-2026-09-22-team-total-nyy-1pt5",
-      "question": "New York Yankees Team Total: O/U 1.5"
-    },
-    {
-      "market_id": "4816416",
-      "slug": "mlb-tb-nyy-2026-09-22-team-total-nyy-2pt5",
-      "question": "New York Yankees Team Total: O/U 2.5"
-    },
-    {
-      "market_id": "4816417",
-      "slug": "mlb-tb-nyy-2026-09-22-team-total-nyy-3pt5",
-      "question": "New York Yankees Team Total: O/U 3.5"
-    },
-    {
-      "market_id": "4816418",
-      "slug": "mlb-tb-nyy-2026-09-22-team-total-nyy-4pt5",
-      "question": "New York Yankees Team Total: O/U 4.5"
-    },
-    {
-      "market_id": "4816419",
-      "slug": "mlb-tb-nyy-2026-09-22-team-total-nyy-5pt5",
-      "question": "New York Yankees Team Total: O/U 5.5"
-    },
-    {
-      "market_id": "4816421",
-      "slug": "mlb-tb-nyy-2026-09-22-total-7pt5",
-      "question": "Tampa Bay Rays vs. New York Yankees: O/U 7.5"
-    },
-    {
-      "market_id": "4869827",
-      "slug": "mlb-cle-bos-2026-09-22-total-3pt5",
-      "question": "Cleveland Guardians vs. Boston Red Sox: O/U 3.5"
+      "market_id": "703257",
+      "slug": "will-the-us-confirm-that-aliens-exist-before-2027-789-924-249",
+      "question": "Will the US confirm that aliens exist before 2027?"
     },
     {
       "market_id": "3128886",
@@ -394,154 +319,154 @@
       "question": "Will another person win the 2026 Brazilian presidential election?"
     },
     {
-      "market_id": "4613547",
-      "slug": "mlb-min-sf-2026-09-22",
-      "question": "Minnesota Twins vs. San Francisco Giants"
+      "market_id": "4847390",
+      "slug": "dota2-1win-pi-2026-09-23-game1",
+      "question": "Dota 2: 1win vs  Pipsqueak+4 - Game 1 Winner"
     },
     {
-      "market_id": "4613548",
-      "slug": "mlb-min-sf-2026-09-22-nrfi",
-      "question": "Will there be a run scored in the first inning?: Minnesota Twins vs. San Francisco Giants"
+      "market_id": "4847391",
+      "slug": "dota2-1win-pi-2026-09-23-game2",
+      "question": "Dota 2: 1win vs  Pipsqueak+4 - Game 2 Winner"
     },
     {
-      "market_id": "4801477",
-      "slug": "mlb-min-sf-2026-09-22-spread-away-1pt5",
-      "question": "Spread: Minnesota Twins (-1.5)"
+      "market_id": "4847392",
+      "slug": "dota2-1win-pi-2026-09-23",
+      "question": "Dota 2: 1win vs  Pipsqueak+4 (BO3) - PGL Wallachia Group Stage"
     },
     {
-      "market_id": "4801478",
-      "slug": "mlb-min-sf-2026-09-22-total-7pt5",
-      "question": "Minnesota Twins vs. San Francisco Giants: O/U 7.5"
+      "market_id": "4847393",
+      "slug": "dota2-1win-pi-2026-09-23-total-games-2pt5",
+      "question": "Games Total: O/U 2.5"
     },
     {
-      "market_id": "4801479",
-      "slug": "mlb-min-sf-2026-09-22-f5-spread-home-1pt5",
-      "question": "1st 5 Innings Spread: San Francisco Giants (-1.5)"
+      "market_id": "4847394",
+      "slug": "dota2-1win-pi-2026-09-23-game-handicap-away-1pt5",
+      "question": "Game Handicap: 1WIN (-1.5) vs  Pipsqueak+4 (+1.5)"
     },
     {
-      "market_id": "4801480",
-      "slug": "mlb-min-sf-2026-09-22-f5-spread-away-1pt5",
-      "question": "1st 5 Innings Spread: Minnesota Twins (-1.5)"
+      "market_id": "4847395",
+      "slug": "dota2-1win-pi-2026-09-23-game1-ends-in-daytime",
+      "question": "Game 1: Ends in Daytime?"
     },
     {
-      "market_id": "4801481",
-      "slug": "mlb-min-sf-2026-09-22-f5-total-2pt5",
-      "question": "Minnesota Twins vs. San Francisco Giants: 1st 5 Innings O/U 2.5"
+      "market_id": "4847396",
+      "slug": "dota2-1win-pi-2026-09-23-game1-both-teams-beat-roshan",
+      "question": "Game 1: Both Teams Beat Roshan?"
     },
     {
-      "market_id": "4801482",
-      "slug": "mlb-min-sf-2026-09-22-f5-total-3pt5",
-      "question": "Minnesota Twins vs. San Francisco Giants: 1st 5 Innings O/U 3.5"
+      "market_id": "4847397",
+      "slug": "dota2-1win-pi-2026-09-23-game1-both-teams-destroy-barracks",
+      "question": "Game 1: Both Teams Destroy Barracks?"
     },
     {
-      "market_id": "4801483",
-      "slug": "mlb-min-sf-2026-09-22-f5-total-4pt5",
-      "question": "Minnesota Twins vs. San Francisco Giants: 1st 5 Innings O/U 4.5"
+      "market_id": "4847398",
+      "slug": "dota2-1win-pi-2026-09-23-game1-any-player-ultra-kill",
+      "question": "Game 1: Any Player Ultra Kill?"
     },
     {
-      "market_id": "4801484",
-      "slug": "mlb-min-sf-2026-09-22-f5-total-5pt5",
-      "question": "Minnesota Twins vs. San Francisco Giants: 1st 5 Innings O/U 5.5"
+      "market_id": "4847399",
+      "slug": "dota2-1win-pi-2026-09-23-game1-any-player-rampage",
+      "question": "Game 1: Any Player Rampage?"
     },
     {
-      "market_id": "4801485",
-      "slug": "mlb-min-sf-2026-09-22-f5-total-6pt5",
-      "question": "Minnesota Twins vs. San Francisco Giants: 1st 5 Innings O/U 6.5"
+      "market_id": "4847400",
+      "slug": "dota2-1win-pi-2026-09-23-game2-ends-in-daytime",
+      "question": "Game 2: Ends in Daytime?"
     },
     {
-      "market_id": "4801486",
-      "slug": "mlb-min-sf-2026-09-22-extra-innings",
-      "question": "Will the game go to extra innings?: Minnesota Twins vs. San Francisco Giants"
+      "market_id": "4847401",
+      "slug": "dota2-1win-pi-2026-09-23-game2-both-teams-beat-roshan",
+      "question": "Game 2: Both Teams Beat Roshan?"
     },
     {
-      "market_id": "4801490",
-      "slug": "mlb-min-sf-2026-09-22-team-total-min-1pt5",
-      "question": "Minnesota Twins Team Total: O/U 1.5"
+      "market_id": "4847402",
+      "slug": "dota2-1win-pi-2026-09-23-game2-both-teams-destroy-barracks",
+      "question": "Game 2: Both Teams Destroy Barracks?"
     },
     {
-      "market_id": "4801491",
-      "slug": "mlb-min-sf-2026-09-22-team-total-min-2pt5",
-      "question": "Minnesota Twins Team Total: O/U 2.5"
+      "market_id": "4847403",
+      "slug": "dota2-1win-pi-2026-09-23-game2-any-player-ultra-kill",
+      "question": "Game 2: Any Player Ultra Kill?"
     },
     {
-      "market_id": "4801492",
-      "slug": "mlb-min-sf-2026-09-22-team-total-min-3pt5",
-      "question": "Minnesota Twins Team Total: O/U 3.5"
+      "market_id": "4847404",
+      "slug": "dota2-1win-pi-2026-09-23-game2-any-player-rampage",
+      "question": "Game 2: Any Player Rampage?"
     },
     {
-      "market_id": "4801493",
-      "slug": "mlb-min-sf-2026-09-22-team-total-min-4pt5",
-      "question": "Minnesota Twins Team Total: O/U 4.5"
+      "market_id": "4847405",
+      "slug": "dota2-1win-pi-2026-09-23-game3-ends-in-daytime",
+      "question": "Game 3: Ends in Daytime?"
     },
     {
-      "market_id": "4801494",
-      "slug": "mlb-min-sf-2026-09-22-team-total-min-5pt5",
-      "question": "Minnesota Twins Team Total: O/U 5.5"
+      "market_id": "4847406",
+      "slug": "dota2-1win-pi-2026-09-23-game3-both-teams-beat-roshan",
+      "question": "Game 3: Both Teams Beat Roshan?"
     },
     {
-      "market_id": "4801495",
-      "slug": "mlb-min-sf-2026-09-22-team-total-sf-1pt5",
-      "question": "San Francisco Giants Team Total: O/U 1.5"
+      "market_id": "4847407",
+      "slug": "dota2-1win-pi-2026-09-23-game3-both-teams-destroy-barracks",
+      "question": "Game 3: Both Teams Destroy Barracks?"
     },
     {
-      "market_id": "4801496",
-      "slug": "mlb-min-sf-2026-09-22-team-total-sf-2pt5",
-      "question": "San Francisco Giants Team Total: O/U 2.5"
+      "market_id": "4847408",
+      "slug": "dota2-1win-pi-2026-09-23-game3-any-player-ultra-kill",
+      "question": "Game 3: Any Player Ultra Kill?"
     },
     {
-      "market_id": "4801497",
-      "slug": "mlb-min-sf-2026-09-22-team-total-sf-3pt5",
-      "question": "San Francisco Giants Team Total: O/U 3.5"
+      "market_id": "4847409",
+      "slug": "dota2-1win-pi-2026-09-23-game3-any-player-rampage",
+      "question": "Game 3: Any Player Rampage?"
     },
     {
-      "market_id": "4801498",
-      "slug": "mlb-min-sf-2026-09-22-team-total-sf-4pt5",
-      "question": "San Francisco Giants Team Total: O/U 4.5"
+      "market_id": "4869427",
+      "slug": "dota2-1win-pi-2026-09-23-game2-first-blood",
+      "question": "First Blood in Game 2?"
     },
     {
-      "market_id": "4801499",
-      "slug": "mlb-min-sf-2026-09-22-team-total-sf-5pt5",
-      "question": "San Francisco Giants Team Total: O/U 5.5"
+      "market_id": "4869428",
+      "slug": "dota2-1win-pi-2026-09-23-game1-first-blood",
+      "question": "First Blood in Game 1?"
     },
     {
-      "market_id": "4801527",
-      "slug": "mlb-min-sf-2026-09-22-spread-home-2pt5",
-      "question": "Spread: San Francisco Giants (-2.5)"
+      "market_id": "4869429",
+      "slug": "dota2-1win-pi-2026-09-23-game2-kill-over-55pt5",
+      "question": "Total Kills Over/Under 55.5 in Game 2?"
     },
     {
-      "market_id": "4801528",
-      "slug": "mlb-min-sf-2026-09-22-spread-home-1pt5",
-      "question": "Spread: San Francisco Giants (-1.5)"
+      "market_id": "4869430",
+      "slug": "dota2-1win-pi-2026-09-23-game1-kill-over-55pt5",
+      "question": "Total Kills Over/Under 55.5 in Game 1?"
     },
     {
-      "market_id": "4801530",
-      "slug": "mlb-min-sf-2026-09-22-spread-away-2pt5",
-      "question": "Spread: Minnesota Twins (-2.5)"
+      "market_id": "4874812",
+      "slug": "dota2-1win-pi-2026-09-23-game1-kill-over-60pt5",
+      "question": "Total Kills Over/Under 60.5 in Game 1?"
     },
     {
-      "market_id": "4801531",
-      "slug": "mlb-min-sf-2026-09-22-total-6pt5",
-      "question": "Minnesota Twins vs. San Francisco Giants: O/U 6.5"
+      "market_id": "4874813",
+      "slug": "dota2-1win-pi-2026-09-23-game2-kill-over-60pt5",
+      "question": "Total Kills Over/Under 60.5 in Game 2?"
     },
     {
-      "market_id": "4801532",
-      "slug": "mlb-min-sf-2026-09-22-total-8pt5",
-      "question": "Minnesota Twins vs. San Francisco Giants: O/U 8.5"
+      "market_id": "4874861",
+      "slug": "dota2-1win-pi-2026-09-23-game1-kill-over-65pt5",
+      "question": "Total Kills Over/Under 65.5 in Game 1?"
     },
     {
-      "market_id": "4870077",
-      "slug": "mlb-min-sf-2026-09-22-total-5pt5",
-      "question": "Minnesota Twins vs. San Francisco Giants: O/U 5.5"
+      "market_id": "4875468",
+      "slug": "dota2-1win-pi-2026-09-23-game1-kill-over-70pt5",
+      "question": "Total Kills Over/Under 70.5 in Game 1?"
     },
     {
-      "market_id": "2034729",
-      "slug": "will-the-us-confirm-that-aliens-exist-by-september-30-396",
-      "question": "Will the US confirm that aliens exist by September 30?"
+      "market_id": "4871518",
+      "slug": "mlb-hou-sea-2026-09-22-spread-away-5pt5",
+      "question": "Spread: Houston Astros (-5.5)"
     },
     {
-      "market_id": "703257",
-      "slug": "will-the-us-confirm-that-aliens-exist-before-2027-789-924-249",
-      "question": "Will the US confirm that aliens exist before 2027?"
+      "market_id": "4871747",
+      "slug": "mlb-hou-sea-2026-09-22-spread-away-6pt5",
+      "question": "Spread: Houston Astros (-6.5)"
     },
     {
       "market_id": "561973",
@@ -1184,269 +1109,89 @@
       "question": "Will another person win the 2028 Republican presidential nomination?"
     },
     {
-      "market_id": "4613533",
-      "slug": "mlb-mia-chc-2026-09-22",
-      "question": "Miami Marlins vs. Chicago Cubs"
-    },
-    {
-      "market_id": "4826771",
-      "slug": "mlb-mia-chc-2026-09-22-spread-home-1pt5",
-      "question": "Spread: Chicago Cubs (-1.5)"
-    },
-    {
-      "market_id": "4826779",
-      "slug": "mlb-mia-chc-2026-09-22-extra-innings",
-      "question": "Will the game go to extra innings?: Miami Marlins vs. Chicago Cubs"
-    },
-    {
-      "market_id": "4826785",
-      "slug": "mlb-mia-chc-2026-09-22-team-total-mia-2pt5",
-      "question": "Miami Marlins Team Total: O/U 2.5"
-    },
-    {
-      "market_id": "4826786",
-      "slug": "mlb-mia-chc-2026-09-22-team-total-mia-3pt5",
-      "question": "Miami Marlins Team Total: O/U 3.5"
-    },
-    {
-      "market_id": "4826787",
-      "slug": "mlb-mia-chc-2026-09-22-team-total-mia-4pt5",
-      "question": "Miami Marlins Team Total: O/U 4.5"
-    },
-    {
-      "market_id": "4826788",
-      "slug": "mlb-mia-chc-2026-09-22-team-total-chc-2pt5",
-      "question": "Chicago Cubs Team Total: O/U 2.5"
-    },
-    {
-      "market_id": "4826789",
-      "slug": "mlb-mia-chc-2026-09-22-team-total-chc-3pt5",
-      "question": "Chicago Cubs Team Total: O/U 3.5"
-    },
-    {
-      "market_id": "4826790",
-      "slug": "mlb-mia-chc-2026-09-22-team-total-chc-4pt5",
-      "question": "Chicago Cubs Team Total: O/U 4.5"
-    },
-    {
-      "market_id": "4826791",
-      "slug": "mlb-mia-chc-2026-09-22-team-total-chc-5pt5",
-      "question": "Chicago Cubs Team Total: O/U 5.5"
-    },
-    {
-      "market_id": "4826792",
-      "slug": "mlb-mia-chc-2026-09-22-team-total-chc-6pt5",
-      "question": "Chicago Cubs Team Total: O/U 6.5"
-    },
-    {
-      "market_id": "4826820",
-      "slug": "mlb-mia-chc-2026-09-22-spread-home-2pt5",
-      "question": "Spread: Chicago Cubs (-2.5)"
-    },
-    {
-      "market_id": "4826821",
-      "slug": "mlb-mia-chc-2026-09-22-spread-away-1pt5",
-      "question": "Spread: Miami Marlins (-1.5)"
-    },
-    {
-      "market_id": "4826822",
-      "slug": "mlb-mia-chc-2026-09-22-spread-away-2pt5",
-      "question": "Spread: Miami Marlins (-2.5)"
-    },
-    {
-      "market_id": "4826823",
-      "slug": "mlb-mia-chc-2026-09-22-total-6pt5",
-      "question": "Miami Marlins vs. Chicago Cubs: O/U 6.5"
-    },
-    {
-      "market_id": "4826824",
-      "slug": "mlb-mia-chc-2026-09-22-total-7pt5",
-      "question": "Miami Marlins vs. Chicago Cubs: O/U 7.5"
-    },
-    {
-      "market_id": "4826825",
-      "slug": "mlb-mia-chc-2026-09-22-total-8pt5",
-      "question": "Miami Marlins vs. Chicago Cubs: O/U 8.5"
-    },
-    {
-      "market_id": "4869217",
-      "slug": "mlb-mia-chc-2026-09-22-total-5pt5",
-      "question": "Miami Marlins vs. Chicago Cubs: O/U 5.5"
-    },
-    {
-      "market_id": "4869439",
-      "slug": "mlb-mia-chc-2026-09-22-total-4pt5",
-      "question": "Miami Marlins vs. Chicago Cubs: O/U 4.5"
-    },
-    {
       "market_id": "665374",
       "slug": "will-the-us-invade-iran-before-2027",
       "question": "Will the U.S. invade Iran before 2027?"
     },
     {
-      "market_id": "4400846",
-      "slug": "wnba-min-ind-2026-09-22",
-      "question": "Minnesota Lynx vs. Indiana Fever"
+      "market_id": "4826143",
+      "slug": "wnba-gsv-por-2026-09-22-points-cecilia-zandalasini-9pt5",
+      "question": "Cecilia Zandalasini: Points O/U 9.5"
     },
     {
-      "market_id": "4782030",
-      "slug": "wnba-min-ind-2026-09-22-spread-away-1pt5",
-      "question": "Spread: Minnesota Lynx (-1.5)"
+      "market_id": "4826486",
+      "slug": "wnba-gsv-por-2026-09-22-assists-carla-leite-6pt5",
+      "question": "Carla Leite: Assists O/U 6.5"
     },
     {
-      "market_id": "4782031",
-      "slug": "wnba-min-ind-2026-09-22-total-188pt5",
-      "question": "Minnesota Lynx vs. Indiana Fever: O/U 188.5"
+      "market_id": "4867734",
+      "slug": "wnba-gsv-por-2026-09-22-assists-carla-leite-5pt5",
+      "question": "Carla Leite: Assists O/U 5.5"
     },
     {
-      "market_id": "4782032",
-      "slug": "wnba-min-ind-2026-09-22-points-caitlin-clark-20pt5",
-      "question": "Caitlin Clark: Points O/U 20.5"
+      "market_id": "4869736",
+      "slug": "wnba-gsv-por-2026-09-22-rebounds-gabby-williams-3pt5",
+      "question": "Gabby Williams: Rebounds O/U 3.5"
     },
     {
-      "market_id": "4782033",
-      "slug": "wnba-min-ind-2026-09-22-points-napheesa-collier-18pt5",
-      "question": "Napheesa Collier: Points O/U 18.5"
+      "market_id": "4870032",
+      "slug": "wnba-gsv-por-2026-09-22-assists-veronica-burton-6pt5",
+      "question": "Veronica Burton: Assists O/U 6.5"
     },
     {
-      "market_id": "4782034",
-      "slug": "wnba-min-ind-2026-09-22-rebounds-napheesa-collier-7pt5",
-      "question": "Napheesa Collier: Rebounds O/U 7.5"
+      "market_id": "4617527",
+      "slug": "bitcoin-above-66k-on-september-23-2026",
+      "question": "Will the price of Bitcoin be above $66,000 on September 23?"
     },
     {
-      "market_id": "4782035",
-      "slug": "wnba-min-ind-2026-09-22-rebounds-caitlin-clark-3pt5",
-      "question": "Caitlin Clark: Rebounds O/U 3.5"
+      "market_id": "4617529",
+      "slug": "bitcoin-above-68k-on-september-23-2026",
+      "question": "Will the price of Bitcoin be above $68,000 on September 23?"
     },
     {
-      "market_id": "4782036",
-      "slug": "wnba-min-ind-2026-09-22-assists-caitlin-clark-9pt5",
-      "question": "Caitlin Clark: Assists O/U 9.5"
+      "market_id": "4617531",
+      "slug": "bitcoin-above-70k-on-september-23-2026",
+      "question": "Will the price of Bitcoin be above $70,000 on September 23?"
     },
     {
-      "market_id": "4782037",
-      "slug": "wnba-min-ind-2026-09-22-assists-napheesa-collier-2pt5",
-      "question": "Napheesa Collier: Assists O/U 2.5"
+      "market_id": "4617533",
+      "slug": "bitcoin-above-72k-on-september-23-2026",
+      "question": "Will the price of Bitcoin be above $72,000 on September 23?"
     },
     {
-      "market_id": "4784146",
-      "slug": "wnba-min-ind-2026-09-22-points-kelsey-mitchell-25pt5",
-      "question": "Kelsey Mitchell: Points O/U 25.5"
+      "market_id": "4617536",
+      "slug": "bitcoin-above-74k-on-september-23-2026",
+      "question": "Will the price of Bitcoin be above $74,000 on September 23?"
     },
     {
-      "market_id": "4784147",
-      "slug": "wnba-min-ind-2026-09-22-points-olivia-miles-19pt5",
-      "question": "Olivia Miles: Points O/U 19.5"
+      "market_id": "4617538",
+      "slug": "bitcoin-above-76k-on-september-23-2026",
+      "question": "Will the price of Bitcoin be above $76,000 on September 23?"
     },
     {
-      "market_id": "4784148",
-      "slug": "wnba-min-ind-2026-09-22-rebounds-olivia-miles-4pt5",
-      "question": "Olivia Miles: Rebounds O/U 4.5"
+      "market_id": "4617540",
+      "slug": "bitcoin-above-78k-on-september-23-2026",
+      "question": "Will the price of Bitcoin be above $78,000 on September 23?"
     },
     {
-      "market_id": "4784149",
-      "slug": "wnba-min-ind-2026-09-22-assists-olivia-miles-5pt5",
-      "question": "Olivia Miles: Assists O/U 5.5"
+      "market_id": "4617542",
+      "slug": "bitcoin-above-80k-on-september-23-2026",
+      "question": "Will the price of Bitcoin be above $80,000 on September 23?"
     },
     {
-      "market_id": "4784150",
-      "slug": "wnba-min-ind-2026-09-22-assists-kelsey-mitchell-2pt5",
-      "question": "Kelsey Mitchell: Assists O/U 2.5"
+      "market_id": "4617544",
+      "slug": "bitcoin-above-82k-on-september-23-2026",
+      "question": "Will the price of Bitcoin be above $82,000 on September 23?"
     },
     {
-      "market_id": "4823908",
-      "slug": "wnba-min-ind-2026-09-22-total-187pt5",
-      "question": "Minnesota Lynx vs. Indiana Fever: O/U 187.5"
+      "market_id": "4617546",
+      "slug": "bitcoin-above-84k-on-september-23-2026",
+      "question": "Will the price of Bitcoin be above $84,000 on September 23?"
     },
     {
-      "market_id": "4824598",
-      "slug": "wnba-min-ind-2026-09-22-points-caitlin-clark-21pt5",
-      "question": "Caitlin Clark: Points O/U 21.5"
-    },
-    {
-      "market_id": "4826152",
-      "slug": "wnba-min-ind-2026-09-22-points-napheesa-collier-19pt5",
-      "question": "Napheesa Collier: Points O/U 19.5"
-    },
-    {
-      "market_id": "4826153",
-      "slug": "wnba-min-ind-2026-09-22-points-olivia-miles-18pt5",
-      "question": "Olivia Miles: Points O/U 18.5"
-    },
-    {
-      "market_id": "4827260",
-      "slug": "wnba-min-ind-2026-09-22-points-aliyah-boston-15pt5",
-      "question": "Aliyah Boston: Points O/U 15.5"
-    },
-    {
-      "market_id": "4827261",
-      "slug": "wnba-min-ind-2026-09-22-points-makayla-timpson-6pt5",
-      "question": "Makayla Timpson: Points O/U 6.5"
-    },
-    {
-      "market_id": "4827262",
-      "slug": "wnba-min-ind-2026-09-22-rebounds-aliyah-boston-8pt5",
-      "question": "Aliyah Boston: Rebounds O/U 8.5"
-    },
-    {
-      "market_id": "4827263",
-      "slug": "wnba-min-ind-2026-09-22-rebounds-makayla-timpson-6pt5",
-      "question": "Makayla Timpson: Rebounds O/U 6.5"
-    },
-    {
-      "market_id": "4827264",
-      "slug": "wnba-min-ind-2026-09-22-assists-aliyah-boston-3pt5",
-      "question": "Aliyah Boston: Assists O/U 3.5"
-    },
-    {
-      "market_id": "4827265",
-      "slug": "wnba-min-ind-2026-09-22-assists-kayla-mcbride-2pt5",
-      "question": "Kayla McBride: Assists O/U 2.5"
-    },
-    {
-      "market_id": "4828082",
-      "slug": "wnba-min-ind-2026-09-22-rebounds-olivia-miles-3pt5",
-      "question": "Olivia Miles: Rebounds O/U 3.5"
-    },
-    {
-      "market_id": "4838628",
-      "slug": "wnba-min-ind-2026-09-22-total-186pt5",
-      "question": "Minnesota Lynx vs. Indiana Fever: O/U 186.5"
-    },
-    {
-      "market_id": "4841419",
-      "slug": "wnba-min-ind-2026-09-22-total-184pt5",
-      "question": "Minnesota Lynx vs. Indiana Fever: O/U 184.5"
-    },
-    {
-      "market_id": "4845455",
-      "slug": "wnba-min-ind-2026-09-22-total-185pt5",
-      "question": "Minnesota Lynx vs. Indiana Fever: O/U 185.5"
-    },
-    {
-      "market_id": "4859595",
-      "slug": "wnba-min-ind-2026-09-22-assists-aliyah-boston-2pt5",
-      "question": "Aliyah Boston: Assists O/U 2.5"
-    },
-    {
-      "market_id": "4867736",
-      "slug": "wnba-min-ind-2026-09-22-spread-home-2pt5",
-      "question": "Spread: Indiana Fever (-2.5)"
-    },
-    {
-      "market_id": "4867737",
-      "slug": "wnba-min-ind-2026-09-22-points-napheesa-collier-21pt5",
-      "question": "Napheesa Collier: Points O/U 21.5"
-    },
-    {
-      "market_id": "4869247",
-      "slug": "wnba-min-ind-2026-09-22-rebounds-kelsey-mitchell-1pt5",
-      "question": "Kelsey Mitchell: Rebounds O/U 1.5"
-    },
-    {
-      "market_id": "4869248",
-      "slug": "wnba-min-ind-2026-09-22-assists-caitlin-clark-8pt5",
-      "question": "Caitlin Clark: Assists O/U 8.5"
+      "market_id": "4617547",
+      "slug": "bitcoin-above-86k-on-september-23-2026",
+      "question": "Will the price of Bitcoin be above $86,000 on September 23?"
     },
     {
       "market_id": "2467206",
@@ -1597,6 +1342,11 @@
       "market_id": "1393070",
       "slug": "will-bitcoin-reach-1000000-by-december-31-2026-946",
       "question": "Will Bitcoin reach $1,000,000 by December 31, 2026?"
+    },
+    {
+      "market_id": "2176270",
+      "slug": "strait-of-hormuz-traffic-returns-to-normal-by-december-31",
+      "question": "Strait of Hormuz traffic returns to normal by December 31?"
     },
     {
       "market_id": "2772166",
@@ -1809,429 +1559,819 @@
       "question": "Will Team L win the 2026-27 UEFA Champions League Championship?"
     },
     {
-      "market_id": "2176270",
-      "slug": "strait-of-hormuz-traffic-returns-to-normal-by-december-31",
-      "question": "Strait of Hormuz traffic returns to normal by December 31?"
+      "market_id": "1357371",
+      "slug": "will-the-arizona-cardinals-win-the-2027-nfl-league-championship",
+      "question": "Will the Arizona Cardinals win the 2027 NFL league championship?"
     },
     {
-      "market_id": "4613539",
-      "slug": "mlb-ari-col-2026-09-22",
-      "question": "Arizona Diamondbacks vs. Colorado Rockies"
+      "market_id": "1357372",
+      "slug": "will-the-atlanta-falcons-win-the-2027-nfl-league-championship",
+      "question": "Will the Atlanta Falcons win the 2027 NFL league championship?"
     },
     {
-      "market_id": "4801322",
-      "slug": "mlb-ari-col-2026-09-22-spread-away-1pt5",
-      "question": "Spread: Arizona Diamondbacks (-1.5)"
+      "market_id": "1357373",
+      "slug": "will-the-baltimore-ravens-win-the-2027-nfl-league-championship",
+      "question": "Will the Baltimore Ravens win the 2027 NFL league championship?"
     },
     {
-      "market_id": "4801323",
-      "slug": "mlb-ari-col-2026-09-22-total-10pt5",
-      "question": "Arizona Diamondbacks vs. Colorado Rockies: O/U 10.5"
+      "market_id": "1357374",
+      "slug": "will-the-buffalo-bills-win-the-2027-nfl-league-championship",
+      "question": "Will the Buffalo Bills win the 2027 NFL league championship?"
     },
     {
-      "market_id": "4801324",
-      "slug": "mlb-ari-col-2026-09-22-f5-spread-home-1pt5",
-      "question": "1st 5 Innings Spread: Colorado Rockies (-1.5)"
+      "market_id": "1357375",
+      "slug": "will-the-carolina-panthers-win-the-2027-nfl-league-championship",
+      "question": "Will the Carolina Panthers win the 2027 NFL league championship?"
     },
     {
-      "market_id": "4801325",
-      "slug": "mlb-ari-col-2026-09-22-f5-spread-away-1pt5",
-      "question": "1st 5 Innings Spread: Arizona Diamondbacks (-1.5)"
+      "market_id": "1357376",
+      "slug": "will-the-chicago-bears-win-the-2027-nfl-league-championship",
+      "question": "Will the Chicago Bears win the 2027 NFL league championship?"
     },
     {
-      "market_id": "4801333",
-      "slug": "mlb-ari-col-2026-09-22-extra-innings",
-      "question": "Will the game go to extra innings?: Arizona Diamondbacks vs. Colorado Rockies"
+      "market_id": "1357377",
+      "slug": "will-the-cincinnati-bengals-win-the-2027-nfl-league-championship",
+      "question": "Will the Cincinnati Bengals win the 2027 NFL league championship?"
     },
     {
-      "market_id": "4801372",
-      "slug": "mlb-ari-col-2026-09-22-spread-home-2pt5",
-      "question": "Spread: Colorado Rockies (-2.5)"
+      "market_id": "1357378",
+      "slug": "will-the-cleveland-browns-win-the-2027-nfl-league-championship",
+      "question": "Will the Cleveland Browns win the 2027 NFL league championship?"
     },
     {
-      "market_id": "4801373",
-      "slug": "mlb-ari-col-2026-09-22-spread-home-1pt5",
-      "question": "Spread: Colorado Rockies (-1.5)"
+      "market_id": "1357379",
+      "slug": "will-the-dallas-cowboys-win-the-2027-nfl-league-championship",
+      "question": "Will the Dallas Cowboys win the 2027 NFL league championship?"
     },
     {
-      "market_id": "4801374",
-      "slug": "mlb-ari-col-2026-09-22-spread-away-2pt5",
-      "question": "Spread: Arizona Diamondbacks (-2.5)"
+      "market_id": "1357380",
+      "slug": "will-the-denver-broncos-win-the-2027-nfl-league-championship",
+      "question": "Will the Denver Broncos win the 2027 NFL league championship?"
     },
     {
-      "market_id": "4801375",
-      "slug": "mlb-ari-col-2026-09-22-total-11pt5",
-      "question": "Arizona Diamondbacks vs. Colorado Rockies: O/U 11.5"
+      "market_id": "1357381",
+      "slug": "will-the-detroit-lions-win-the-2027-nfl-league-championship",
+      "question": "Will the Detroit Lions win the 2027 NFL league championship?"
     },
     {
-      "market_id": "4801376",
-      "slug": "mlb-ari-col-2026-09-22-total-9pt5",
-      "question": "Arizona Diamondbacks vs. Colorado Rockies: O/U 9.5"
+      "market_id": "1357382",
+      "slug": "will-the-green-bay-packers-win-the-2027-nfl-league-championship",
+      "question": "Will the Green Bay Packers win the 2027 NFL league championship?"
     },
     {
-      "market_id": "4806809",
-      "slug": "mlb-ari-col-2026-09-22-team-total-ari-5pt5",
-      "question": "Arizona Diamondbacks Team Total: O/U 5.5"
+      "market_id": "1357383",
+      "slug": "will-the-houston-texans-win-the-2027-nfl-league-championship",
+      "question": "Will the Houston Texans win the 2027 NFL league championship?"
     },
     {
-      "market_id": "4806810",
-      "slug": "mlb-ari-col-2026-09-22-team-total-ari-6pt5",
-      "question": "Arizona Diamondbacks Team Total: O/U 6.5"
+      "market_id": "1357384",
+      "slug": "will-the-indianapolis-colts-win-the-2027-nfl-league-championship",
+      "question": "Will the Indianapolis Colts win the 2027 NFL league championship?"
     },
     {
-      "market_id": "4806811",
-      "slug": "mlb-ari-col-2026-09-22-team-total-ari-7pt5",
-      "question": "Arizona Diamondbacks Team Total: O/U 7.5"
+      "market_id": "1357385",
+      "slug": "will-the-jacksonville-jaguars-win-the-2027-nfl-league-championship",
+      "question": "Will the Jacksonville Jaguars win the 2027 NFL league championship?"
     },
     {
-      "market_id": "4806812",
-      "slug": "mlb-ari-col-2026-09-22-team-total-ari-8pt5",
-      "question": "Arizona Diamondbacks Team Total: O/U 8.5"
+      "market_id": "1357386",
+      "slug": "will-the-kansas-city-chiefs-win-the-2027-nfl-league-championship",
+      "question": "Will the Kansas City Chiefs win the 2027 NFL league championship?"
     },
     {
-      "market_id": "4806814",
-      "slug": "mlb-ari-col-2026-09-22-team-total-col-2pt5",
-      "question": "Colorado Rockies Team Total: O/U 2.5"
+      "market_id": "1357387",
+      "slug": "will-the-las-vegas-raiders-win-the-2027-nfl-league-championship",
+      "question": "Will the Las Vegas Raiders win the 2027 NFL league championship?"
     },
     {
-      "market_id": "4806815",
-      "slug": "mlb-ari-col-2026-09-22-team-total-col-3pt5",
-      "question": "Colorado Rockies Team Total: O/U 3.5"
+      "market_id": "1357388",
+      "slug": "will-the-los-angeles-chargers-win-the-2027-nfl-league-championship",
+      "question": "Will the Los Angeles Chargers win the 2027 NFL league championship?"
     },
     {
-      "market_id": "4806816",
-      "slug": "mlb-ari-col-2026-09-22-team-total-col-4pt5",
-      "question": "Colorado Rockies Team Total: O/U 4.5"
+      "market_id": "1357389",
+      "slug": "will-the-los-angeles-rams-win-the-2027-nfl-league-championship",
+      "question": "Will the Los Angeles Rams win the 2027 NFL league championship?"
     },
     {
-      "market_id": "4806817",
-      "slug": "mlb-ari-col-2026-09-22-team-total-col-5pt5",
-      "question": "Colorado Rockies Team Total: O/U 5.5"
+      "market_id": "1357390",
+      "slug": "will-the-miami-dolphins-win-the-2027-nfl-league-championship",
+      "question": "Will the Miami Dolphins win the 2027 NFL league championship?"
     },
     {
-      "market_id": "4806818",
-      "slug": "mlb-ari-col-2026-09-22-team-total-col-6pt5",
-      "question": "Colorado Rockies Team Total: O/U 6.5"
+      "market_id": "1357391",
+      "slug": "will-the-minnesota-vikings-win-the-2027-nfl-league-championship",
+      "question": "Will the Minnesota Vikings win the 2027 NFL league championship?"
     },
     {
-      "market_id": "4869697",
-      "slug": "mlb-ari-col-2026-09-22-total-12pt5",
-      "question": "Arizona Diamondbacks vs. Colorado Rockies: O/U 12.5"
+      "market_id": "1357392",
+      "slug": "will-the-new-england-patriots-win-the-2027-nfl-league-championship",
+      "question": "Will the New England Patriots win the 2027 NFL league championship?"
     },
     {
-      "market_id": "4869706",
-      "slug": "mlb-ari-col-2026-09-22-spread-away-3pt5",
-      "question": "Spread: Arizona Diamondbacks (-3.5)"
+      "market_id": "1357393",
+      "slug": "will-the-new-orleans-saints-win-the-2027-nfl-league-championship",
+      "question": "Will the New Orleans Saints win the 2027 NFL league championship?"
     },
     {
-      "market_id": "4869707",
-      "slug": "mlb-ari-col-2026-09-22-total-13pt5",
-      "question": "Arizona Diamondbacks vs. Colorado Rockies: O/U 13.5"
+      "market_id": "1357394",
+      "slug": "will-the-new-york-giants-win-the-2027-nfl-league-championship",
+      "question": "Will the New York Giants win the 2027 NFL league championship?"
     },
     {
-      "market_id": "4869727",
-      "slug": "mlb-ari-col-2026-09-22-spread-away-4pt5",
-      "question": "Spread: Arizona Diamondbacks (-4.5)"
+      "market_id": "1357395",
+      "slug": "will-the-new-york-jets-win-the-2027-nfl-league-championship",
+      "question": "Will the New York Jets win the 2027 NFL league championship?"
     },
     {
-      "market_id": "4869739",
-      "slug": "mlb-ari-col-2026-09-22-total-14pt5",
-      "question": "Arizona Diamondbacks vs. Colorado Rockies: O/U 14.5"
+      "market_id": "1357396",
+      "slug": "will-the-philadelphia-eagles-win-the-2027-nfl-league-championship",
+      "question": "Will the Philadelphia Eagles win the 2027 NFL league championship?"
     },
     {
-      "market_id": "4869748",
-      "slug": "mlb-ari-col-2026-09-22-spread-away-5pt5",
-      "question": "Spread: Arizona Diamondbacks (-5.5)"
+      "market_id": "1357397",
+      "slug": "will-the-pittsburgh-steelers-win-the-2027-nfl-league-championship",
+      "question": "Will the Pittsburgh Steelers win the 2027 NFL league championship?"
     },
     {
-      "market_id": "4613545",
-      "slug": "mlb-hou-sea-2026-09-22",
-      "question": "Houston Astros vs. Seattle Mariners"
+      "market_id": "1357398",
+      "slug": "will-the-san-francisco-49ers-win-the-2027-nfl-league-championship",
+      "question": "Will the San Francisco 49ers win the 2027 NFL league championship?"
     },
     {
-      "market_id": "4801431",
-      "slug": "mlb-hou-sea-2026-09-22-spread-home-1pt5",
-      "question": "Spread: Seattle Mariners (-1.5)"
+      "market_id": "1357399",
+      "slug": "will-the-seattle-seahawks-win-the-2027-nfl-league-championship",
+      "question": "Will the Seattle Seahawks win the 2027 NFL league championship?"
     },
     {
-      "market_id": "4801432",
-      "slug": "mlb-hou-sea-2026-09-22-total-7pt5",
-      "question": "Houston Astros vs. Seattle Mariners: O/U 7.5"
+      "market_id": "1357400",
+      "slug": "will-the-tampa-bay-buccaneers-win-the-2027-nfl-league-championship",
+      "question": "Will the Tampa Bay Buccaneers win the 2027 NFL league championship?"
     },
     {
-      "market_id": "4801433",
-      "slug": "mlb-hou-sea-2026-09-22-f5-spread-home-1pt5",
-      "question": "1st 5 Innings Spread: Seattle Mariners (-1.5)"
+      "market_id": "1357401",
+      "slug": "will-the-tennessee-titans-win-the-2027-nfl-league-championship",
+      "question": "Will the Tennessee Titans win the 2027 NFL league championship?"
     },
     {
-      "market_id": "4801434",
-      "slug": "mlb-hou-sea-2026-09-22-f5-spread-away-1pt5",
-      "question": "1st 5 Innings Spread: Houston Astros (-1.5)"
+      "market_id": "1357402",
+      "slug": "will-the-washington-commanders-win-the-2027-nfl-league-championship",
+      "question": "Will the Washington Commanders win the 2027 NFL league championship?"
     },
     {
-      "market_id": "4801435",
-      "slug": "mlb-hou-sea-2026-09-22-f5-total-2pt5",
-      "question": "Houston Astros vs. Seattle Mariners: 1st 5 Innings O/U 2.5"
+      "market_id": "1357403",
+      "slug": "will-the-other-win-the-2027-nfl-league-championship",
+      "question": "Will another team win the 2027 NFL league championship?"
     },
     {
-      "market_id": "4801436",
-      "slug": "mlb-hou-sea-2026-09-22-f5-total-3pt5",
-      "question": "Houston Astros vs. Seattle Mariners: 1st 5 Innings O/U 3.5"
+      "market_id": "4837046",
+      "slug": "wta-tararud-park-2026-09-22-match-total-21pt5",
+      "question": "Tararudee vs. Park: Match O/U 21.5"
     },
     {
-      "market_id": "4801437",
-      "slug": "mlb-hou-sea-2026-09-22-f5-total-4pt5",
-      "question": "Houston Astros vs. Seattle Mariners: 1st 5 Innings O/U 4.5"
+      "market_id": "4837049",
+      "slug": "wta-tararud-park-2026-09-22-match-total-22pt5",
+      "question": "Tararudee vs. Park: Match O/U 22.5"
     },
     {
-      "market_id": "4801438",
-      "slug": "mlb-hou-sea-2026-09-22-f5-total-5pt5",
-      "question": "Houston Astros vs. Seattle Mariners: 1st 5 Innings O/U 5.5"
+      "market_id": "559652",
+      "slug": "will-gavin-newsom-win-the-2028-democratic-presidential-nomination-568",
+      "question": "Will Gavin Newsom win the 2028 Democratic presidential nomination?"
     },
     {
-      "market_id": "4801439",
-      "slug": "mlb-hou-sea-2026-09-22-f5-total-6pt5",
-      "question": "Houston Astros vs. Seattle Mariners: 1st 5 Innings O/U 6.5"
+      "market_id": "559653",
+      "slug": "will-alexandria-ocasio-cortez-win-the-2028-democratic-presidential-nomination-653",
+      "question": "Will Alexandria Ocasio-Cortez win the 2028 Democratic presidential nomination?"
     },
     {
-      "market_id": "4801440",
-      "slug": "mlb-hou-sea-2026-09-22-extra-innings",
-      "question": "Will the game go to extra innings?: Houston Astros vs. Seattle Mariners"
+      "market_id": "559654",
+      "slug": "will-pete-buttigieg-win-the-2028-democratic-presidential-nomination-687",
+      "question": "Will Pete Buttigieg win the 2028 Democratic presidential nomination?"
     },
     {
-      "market_id": "4801471",
-      "slug": "mlb-hou-sea-2026-09-22-spread-home-2pt5",
-      "question": "Spread: Seattle Mariners (-2.5)"
+      "market_id": "559655",
+      "slug": "will-josh-shapiro-win-the-2028-democratic-presidential-nomination-977",
+      "question": "Will Josh Shapiro win the 2028 Democratic presidential nomination?"
     },
     {
-      "market_id": "4801472",
-      "slug": "mlb-hou-sea-2026-09-22-spread-away-1pt5",
-      "question": "Spread: Houston Astros (-1.5)"
+      "market_id": "559656",
+      "slug": "will-wes-moore-win-the-2028-democratic-presidential-nomination-714",
+      "question": "Will Wes Moore win the 2028 Democratic presidential nomination?"
     },
     {
-      "market_id": "4801473",
-      "slug": "mlb-hou-sea-2026-09-22-spread-away-2pt5",
-      "question": "Spread: Houston Astros (-2.5)"
+      "market_id": "559657",
+      "slug": "will-stephen-a-smith-win-the-2028-democratic-presidential-nomination-914",
+      "question": "Will Stephen A. Smith win the 2028 Democratic presidential nomination?"
     },
     {
-      "market_id": "4801474",
-      "slug": "mlb-hou-sea-2026-09-22-total-6pt5",
-      "question": "Houston Astros vs. Seattle Mariners: O/U 6.5"
+      "market_id": "559658",
+      "slug": "will-kamala-harris-win-the-2028-democratic-presidential-nomination-641",
+      "question": "Will Kamala Harris win the 2028 Democratic presidential nomination?"
     },
     {
-      "market_id": "4801475",
-      "slug": "mlb-hou-sea-2026-09-22-total-8pt5",
-      "question": "Houston Astros vs. Seattle Mariners: O/U 8.5"
+      "market_id": "559659",
+      "slug": "will-gretchen-whitmer-win-the-2028-democratic-presidential-nomination-676",
+      "question": "Will Gretchen Whitmer win the 2028 Democratic presidential nomination?"
     },
     {
-      "market_id": "4816434",
-      "slug": "mlb-hou-sea-2026-09-22-team-total-hou-1pt5",
-      "question": "Houston Astros Team Total: O/U 1.5"
+      "market_id": "559660",
+      "slug": "will-andy-beshear-win-the-2028-democratic-presidential-nomination-832",
+      "question": "Will Andy Beshear win the 2028 Democratic presidential nomination?"
     },
     {
-      "market_id": "4816435",
-      "slug": "mlb-hou-sea-2026-09-22-team-total-hou-2pt5",
-      "question": "Houston Astros Team Total: O/U 2.5"
+      "market_id": "559661",
+      "slug": "will-jon-ossoff-win-the-2028-democratic-presidential-nomination-885",
+      "question": "Will Jon Ossoff win the 2028 Democratic presidential nomination?"
     },
     {
-      "market_id": "4816438",
-      "slug": "mlb-hou-sea-2026-09-22-team-total-hou-3pt5",
-      "question": "Houston Astros Team Total: O/U 3.5"
+      "market_id": "559662",
+      "slug": "will-mark-cuban-win-the-2028-democratic-presidential-nomination-329",
+      "question": "Will Mark Cuban win the 2028 Democratic presidential nomination?"
     },
     {
-      "market_id": "4816439",
-      "slug": "mlb-hou-sea-2026-09-22-team-total-hou-4pt5",
-      "question": "Houston Astros Team Total: O/U 4.5"
+      "market_id": "559663",
+      "slug": "will-jb-pritzker-win-the-2028-democratic-presidential-nomination-288",
+      "question": "Will J.B. Pritzker win the 2028 Democratic presidential nomination?"
     },
     {
-      "market_id": "4816440",
-      "slug": "mlb-hou-sea-2026-09-22-team-total-hou-5pt5",
-      "question": "Houston Astros Team Total: O/U 5.5"
+      "market_id": "559664",
+      "slug": "will-raphael-warnock-win-the-2028-democratic-presidential-nomination-914",
+      "question": "Will Raphael Warnock win the 2028 Democratic presidential nomination?"
     },
     {
-      "market_id": "4816442",
-      "slug": "mlb-hou-sea-2026-09-22-team-total-sea-1pt5",
-      "question": "Seattle Mariners Team Total: O/U 1.5"
+      "market_id": "559665",
+      "slug": "will-corey-booker-win-the-2028-democratic-presidential-nomination-125",
+      "question": "Will Cory Booker win the 2028 Democratic presidential nomination?"
     },
     {
-      "market_id": "4816444",
-      "slug": "mlb-hou-sea-2026-09-22-team-total-sea-2pt5",
-      "question": "Seattle Mariners Team Total: O/U 2.5"
+      "market_id": "559666",
+      "slug": "will-tim-walz-win-the-2028-democratic-presidential-nomination-475",
+      "question": "Will Tim Walz win the 2028 Democratic presidential nomination?"
     },
     {
-      "market_id": "4816445",
-      "slug": "mlb-hou-sea-2026-09-22-team-total-sea-3pt5",
-      "question": "Seattle Mariners Team Total: O/U 3.5"
+      "market_id": "559667",
+      "slug": "will-michelle-obama-win-the-2028-democratic-presidential-nomination-777",
+      "question": "Will Michelle Obama win the 2028 Democratic presidential nomination?"
     },
     {
-      "market_id": "4816447",
-      "slug": "mlb-hou-sea-2026-09-22-team-total-sea-4pt5",
-      "question": "Seattle Mariners Team Total: O/U 4.5"
+      "market_id": "559668",
+      "slug": "will-mark-kelly-win-the-2028-democratic-presidential-nomination-479",
+      "question": "Will Mark Kelly win the 2028 Democratic presidential nomination?"
     },
     {
-      "market_id": "4816449",
-      "slug": "mlb-hou-sea-2026-09-22-team-total-sea-5pt5",
-      "question": "Seattle Mariners Team Total: O/U 5.5"
+      "market_id": "559669",
+      "slug": "will-rahm-emanuel-win-the-2028-democratic-presidential-nomination-299",
+      "question": "Will Rahm Emanuel win the 2028 Democratic presidential nomination?"
     },
     {
-      "market_id": "4870002",
-      "slug": "mlb-hou-sea-2026-09-22-total-9pt5",
-      "question": "Houston Astros vs. Seattle Mariners: O/U 9.5"
+      "market_id": "559670",
+      "slug": "will-gina-raimondo-win-the-2028-democratic-presidential-nomination-676",
+      "question": "Will Gina Raimondo win the 2028 Democratic presidential nomination?"
     },
     {
-      "market_id": "4870024",
-      "slug": "mlb-hou-sea-2026-09-22-total-10pt5",
-      "question": "Houston Astros vs. Seattle Mariners: O/U 10.5"
+      "market_id": "559671",
+      "slug": "will-zohran-mamdani-win-the-2028-democratic-presidential-nomination-445",
+      "question": "Will Zohran Mamdani win the 2028 Democratic presidential nomination?"
     },
     {
-      "market_id": "4613535",
-      "slug": "mlb-cws-kc-2026-09-22",
-      "question": "Chicago White Sox vs. Kansas City Royals"
+      "market_id": "559672",
+      "slug": "will-roy-cooper-win-the-2028-democratic-presidential-nomination-286",
+      "question": "Will Roy Cooper win the 2028 Democratic presidential nomination?"
     },
     {
-      "market_id": "4801250",
-      "slug": "mlb-cws-kc-2026-09-22-spread-away-1pt5",
-      "question": "Spread: Chicago White Sox (-1.5)"
+      "market_id": "559673",
+      "slug": "will-john-fetterman-win-the-2028-democratic-presidential-nomination-941",
+      "question": "Will John Fetterman win the 2028 Democratic presidential nomination?"
     },
     {
-      "market_id": "4801261",
-      "slug": "mlb-cws-kc-2026-09-22-extra-innings",
-      "question": "Will the game go to extra innings?: Chicago White Sox vs. Kansas City Royals"
+      "market_id": "559674",
+      "slug": "will-jared-polis-win-the-2028-democratic-presidential-nomination-837",
+      "question": "Will Jared Polis win the 2028 Democratic presidential nomination?"
     },
     {
-      "market_id": "4801276",
-      "slug": "mlb-cws-kc-2026-09-22-team-total-kc-4pt5",
-      "question": "Kansas City Royals Team Total: O/U 4.5"
+      "market_id": "559675",
+      "slug": "will-jon-stewart-win-the-2028-democratic-presidential-nomination-518",
+      "question": "Will Jon Stewart win the 2028 Democratic presidential nomination?"
     },
     {
-      "market_id": "4801277",
-      "slug": "mlb-cws-kc-2026-09-22-team-total-kc-5pt5",
-      "question": "Kansas City Royals Team Total: O/U 5.5"
+      "market_id": "559676",
+      "slug": "will-barack-obama-win-the-2028-democratic-presidential-nomination-265",
+      "question": "Will Barack Obama win the 2028 Democratic presidential nomination?"
     },
     {
-      "market_id": "4801315",
-      "slug": "mlb-cws-kc-2026-09-22-spread-home-2pt5",
-      "question": "Spread: Kansas City Royals (-2.5)"
+      "market_id": "559677",
+      "slug": "will-hillary-clinton-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Hillary Clinton win the 2028 Democratic presidential nomination?"
     },
     {
-      "market_id": "4801316",
-      "slug": "mlb-cws-kc-2026-09-22-spread-home-1pt5",
-      "question": "Spread: Kansas City Royals (-1.5)"
+      "market_id": "559678",
+      "slug": "will-liz-cheney-win-the-2028-democratic-presidential-nomination-551",
+      "question": "Will Liz Cheney win the 2028 Democratic presidential nomination?"
     },
     {
-      "market_id": "4801317",
-      "slug": "mlb-cws-kc-2026-09-22-spread-away-2pt5",
-      "question": "Spread: Chicago White Sox (-2.5)"
+      "market_id": "559679",
+      "slug": "will-bernie-sanders-win-the-2028-democratic-presidential-nomination-879",
+      "question": "Will Bernie Sanders win the 2028 Democratic presidential nomination?"
     },
     {
-      "market_id": "4869314",
-      "slug": "mlb-cws-kc-2026-09-22-spread-away-3pt5",
-      "question": "Spread: Chicago White Sox (-3.5)"
+      "market_id": "559680",
+      "slug": "will-phil-murphy-win-the-2028-democratic-presidential-nomination-611",
+      "question": "Will Phil Murphy win the 2028 Democratic presidential nomination?"
     },
     {
-      "market_id": "4869461",
-      "slug": "mlb-cws-kc-2026-09-22-spread-away-5pt5",
-      "question": "Spread: Chicago White Sox (-5.5)"
+      "market_id": "559681",
+      "slug": "will-lebron-james-win-the-2028-democratic-presidential-nomination",
+      "question": "Will LeBron James win the 2028 Democratic presidential nomination?"
     },
     {
-      "market_id": "4869489",
-      "slug": "mlb-cws-kc-2026-09-22-spread-away-4pt5",
-      "question": "Spread: Chicago White Sox (-4.5)"
+      "market_id": "559682",
+      "slug": "will-person-a-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Hunter Biden win the 2028 Democratic presidential nomination?"
     },
     {
-      "market_id": "4869603",
-      "slug": "mlb-cws-kc-2026-09-22-spread-away-7pt5",
-      "question": "Spread: Chicago White Sox (-7.5)"
+      "market_id": "559683",
+      "slug": "will-george-clooney-win-the-2028-democratic-presidential-nomination",
+      "question": "Will George Clooney win the 2028 Democratic presidential nomination?"
     },
     {
-      "market_id": "4869677",
-      "slug": "mlb-cws-kc-2026-09-22-spread-away-6pt5",
-      "question": "Spread: Chicago White Sox (-6.5)"
+      "market_id": "559684",
+      "slug": "will-chelsea-clinton-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Chelsea Clinton win the 2028 Democratic presidential nomination?"
     },
     {
-      "market_id": "4869955",
-      "slug": "mlb-cws-kc-2026-09-22-spread-away-8pt5",
-      "question": "Spread: Chicago White Sox (-8.5)"
+      "market_id": "559685",
+      "slug": "will-mrbeast-win-the-2028-democratic-presidential-nomination",
+      "question": "Will MrBeast win the 2028 Democratic presidential nomination?"
     },
     {
-      "market_id": "4869956",
-      "slug": "mlb-cws-kc-2026-09-22-total-18pt5",
-      "question": "Chicago White Sox vs. Kansas City Royals: O/U 18.5"
+      "market_id": "559686",
+      "slug": "will-dwayne-the-rock-johnson-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Dwayne 'The Rock' Johnson win the 2028 Democratic presidential nomination?"
     },
     {
-      "market_id": "4869989",
-      "slug": "mlb-cws-kc-2026-09-22-total-20pt5",
-      "question": "Chicago White Sox vs. Kansas City Royals: O/U 20.5"
+      "market_id": "559687",
+      "slug": "will-oprah-winfrey-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Oprah Winfrey win the 2028 Democratic presidential nomination?"
     },
     {
-      "market_id": "4869991",
-      "slug": "mlb-cws-kc-2026-09-22-spread-away-9pt5",
-      "question": "Spread: Chicago White Sox (-9.5)"
+      "market_id": "559688",
+      "slug": "will-andrew-yang-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Andrew Yang win the 2028 Democratic presidential nomination?"
     },
     {
-      "market_id": "4869992",
-      "slug": "mlb-cws-kc-2026-09-22-total-19pt5",
-      "question": "Chicago White Sox vs. Kansas City Royals: O/U 19.5"
+      "market_id": "559689",
+      "slug": "will-beto-orourke-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Beto O’Rourke win the 2028 Democratic presidential nomination?"
     },
     {
-      "market_id": "4870078",
-      "slug": "mlb-cws-kc-2026-09-22-total-21pt5",
-      "question": "Chicago White Sox vs. Kansas City Royals: O/U 21.5"
+      "market_id": "559690",
+      "slug": "will-kim-kardashian-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Kim Kardashian win the 2028 Democratic presidential nomination?"
     },
     {
-      "market_id": "4617527",
-      "slug": "bitcoin-above-66k-on-september-23-2026",
-      "question": "Will the price of Bitcoin be above $66,000 on September 23?"
+      "market_id": "559691",
+      "slug": "will-chris-murphy-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Chris Murphy win the 2028 Democratic presidential nomination?"
     },
     {
-      "market_id": "4617529",
-      "slug": "bitcoin-above-68k-on-september-23-2026",
-      "question": "Will the price of Bitcoin be above $68,000 on September 23?"
+      "market_id": "559692",
+      "slug": "will-jasmine-crockett-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Jasmine Crockett win the 2028 Democratic presidential nomination?"
     },
     {
-      "market_id": "4617531",
-      "slug": "bitcoin-above-70k-on-september-23-2026",
-      "question": "Will the price of Bitcoin be above $70,000 on September 23?"
+      "market_id": "559693",
+      "slug": "will-ruben-gallego-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Ruben Gallego win the 2028 Democratic presidential nomination?"
     },
     {
-      "market_id": "4617533",
-      "slug": "bitcoin-above-72k-on-september-23-2026",
-      "question": "Will the price of Bitcoin be above $72,000 on September 23?"
+      "market_id": "559694",
+      "slug": "will-ro-khanna-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Ro Khanna win the 2028 Democratic presidential nomination?"
     },
     {
-      "market_id": "4617536",
-      "slug": "bitcoin-above-74k-on-september-23-2026",
-      "question": "Will the price of Bitcoin be above $74,000 on September 23?"
+      "market_id": "559695",
+      "slug": "will-james-talarico-win-the-2028-democratic-presidential-nomination",
+      "question": "Will James Talarico win the 2028 Democratic presidential nomination?"
     },
     {
-      "market_id": "4617538",
-      "slug": "bitcoin-above-76k-on-september-23-2026",
-      "question": "Will the price of Bitcoin be above $76,000 on September 23?"
+      "market_id": "559696",
+      "slug": "will-graham-platner-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Graham Platner win the 2028 Democratic presidential nomination?"
     },
     {
-      "market_id": "4617540",
-      "slug": "bitcoin-above-78k-on-september-23-2026",
-      "question": "Will the price of Bitcoin be above $78,000 on September 23?"
+      "market_id": "559697",
+      "slug": "will-abigail-spanberger-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Abigail Spanberger win the 2028 Democratic presidential nomination?"
     },
     {
-      "market_id": "4617542",
-      "slug": "bitcoin-above-80k-on-september-23-2026",
-      "question": "Will the price of Bitcoin be above $80,000 on September 23?"
+      "market_id": "559698",
+      "slug": "will-hakeem-jeffries-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Hakeem Jeffries win the 2028 Democratic presidential nomination?"
     },
     {
-      "market_id": "4617544",
-      "slug": "bitcoin-above-82k-on-september-23-2026",
-      "question": "Will the price of Bitcoin be above $82,000 on September 23?"
+      "market_id": "559699",
+      "slug": "will-elissa-slotkin-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Elissa Slotkin win the 2028 Democratic presidential nomination?"
     },
     {
-      "market_id": "4617546",
-      "slug": "bitcoin-above-84k-on-september-23-2026",
-      "question": "Will the price of Bitcoin be above $84,000 on September 23?"
+      "market_id": "559700",
+      "slug": "will-adam-schiff-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Adam Schiff win the 2028 Democratic presidential nomination?"
     },
     {
-      "market_id": "4617547",
-      "slug": "bitcoin-above-86k-on-september-23-2026",
-      "question": "Will the price of Bitcoin be above $86,000 on September 23?"
+      "market_id": "559701",
+      "slug": "will-josh-stein-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Josh Stein win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559702",
+      "slug": "will-alex-padilla-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Alex Padilla win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559703",
+      "slug": "will-person-v-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person V win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559704",
+      "slug": "will-person-w-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person W win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559705",
+      "slug": "will-person-x-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person X win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559706",
+      "slug": "will-person-y-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person Y win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559707",
+      "slug": "will-person-z-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person Z win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559708",
+      "slug": "will-person-aa-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person AA win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559709",
+      "slug": "will-person-ab-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person AB win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559710",
+      "slug": "will-person-ac-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person AC win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559711",
+      "slug": "will-person-ad-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person AD win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559712",
+      "slug": "will-person-ae-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person AE win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559713",
+      "slug": "will-person-af-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person AF win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559714",
+      "slug": "will-person-ag-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person AG win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559715",
+      "slug": "will-person-ah-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person AH win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559716",
+      "slug": "will-person-ai-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person AI win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559717",
+      "slug": "will-person-aj-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person AJ win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559718",
+      "slug": "will-person-ak-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person AK win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559719",
+      "slug": "will-person-al-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person AL win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559720",
+      "slug": "will-person-am-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person AM win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559721",
+      "slug": "will-person-an-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person AN win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559722",
+      "slug": "will-person-ao-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person AO win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559723",
+      "slug": "will-person-ap-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person AP win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559724",
+      "slug": "will-person-aq-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person AQ win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559725",
+      "slug": "will-person-ar-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person AR win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559726",
+      "slug": "will-person-as-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person AS win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559727",
+      "slug": "will-person-at-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person AT win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559728",
+      "slug": "will-person-au-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person AU win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559729",
+      "slug": "will-person-av-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person AV win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559730",
+      "slug": "will-person-aw-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person AW win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559731",
+      "slug": "will-person-ax-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person AX win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559732",
+      "slug": "will-person-ay-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person AY win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559733",
+      "slug": "will-person-az-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person AZ win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559734",
+      "slug": "will-person-ba-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person BA win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559735",
+      "slug": "will-person-bb-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person BB win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559736",
+      "slug": "will-person-bc-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person BC win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559737",
+      "slug": "will-person-bd-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person BD win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559738",
+      "slug": "will-person-be-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person BE win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559739",
+      "slug": "will-person-bf-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person BF win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559740",
+      "slug": "will-person-bg-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person BG win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559741",
+      "slug": "will-person-bh-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person BH win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559742",
+      "slug": "will-person-bi-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person BI win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559743",
+      "slug": "will-person-bj-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person BJ win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559744",
+      "slug": "will-person-bk-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person BK win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559745",
+      "slug": "will-person-bl-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person BL win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559746",
+      "slug": "will-person-bm-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person BM win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559747",
+      "slug": "will-person-bn-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person BN win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559748",
+      "slug": "will-person-bo-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person BO win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559749",
+      "slug": "will-person-bp-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person BP win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559750",
+      "slug": "will-person-bq-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person BQ win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559751",
+      "slug": "will-person-br-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person BR win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559752",
+      "slug": "will-person-bs-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person BS win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559753",
+      "slug": "will-person-bt-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person BT win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559754",
+      "slug": "will-person-bu-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person BU win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559755",
+      "slug": "will-person-bv-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person BV win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559756",
+      "slug": "will-person-bw-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person BW win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559757",
+      "slug": "will-person-bx-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person BX win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559758",
+      "slug": "will-person-by-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person BY win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559759",
+      "slug": "will-person-bz-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person BZ win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559760",
+      "slug": "will-person-ca-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person CA win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559761",
+      "slug": "will-person-cb-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person CB win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559762",
+      "slug": "will-person-cc-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person CC win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559763",
+      "slug": "will-person-cd-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person CD win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559764",
+      "slug": "will-person-ce-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person CE win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559765",
+      "slug": "will-person-cf-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person CF win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559766",
+      "slug": "will-person-cg-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person CG win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559767",
+      "slug": "will-person-ch-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person CH win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559768",
+      "slug": "will-person-ci-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person CI win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559769",
+      "slug": "will-person-cj-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person CJ win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559770",
+      "slug": "will-person-ck-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person CK win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559771",
+      "slug": "will-person-cl-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person CL win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559772",
+      "slug": "will-person-cm-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person CM win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559773",
+      "slug": "will-person-cn-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person CN win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559774",
+      "slug": "will-person-co-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person CO win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559775",
+      "slug": "will-person-cp-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person CP win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559776",
+      "slug": "will-person-cq-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person CQ win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559777",
+      "slug": "will-person-cr-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person CR win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559778",
+      "slug": "will-person-cs-win-the-2028-democratic-presidential-nomination",
+      "question": "Will Person CS win the 2028 Democratic presidential nomination?"
+    },
+    {
+      "market_id": "559779",
+      "slug": "will-another-person-win-the-2028-democratic-presidential-nomination",
+      "question": "Will another person win the 2028 Democratic presidential nomination?"
     },
     {
       "market_id": "4798983",
@@ -2294,6 +2434,116 @@
       "question": "Game Spread: Clement Tabur (-0.5) vs Murphy Cassone (+0.5)"
     },
     {
+      "market_id": "3866508",
+      "slug": "will-wti-reach-150-in-september-2026",
+      "question": "Will WTI Crude Oil (WTI) hit (HIGH) $150 in September?"
+    },
+    {
+      "market_id": "3866509",
+      "slug": "will-wti-reach-140-in-september-2026",
+      "question": "Will WTI Crude Oil (WTI) hit (HIGH) $140 in September?"
+    },
+    {
+      "market_id": "3866510",
+      "slug": "will-wti-reach-130-in-september-2026",
+      "question": "Will WTI Crude Oil (WTI) hit (HIGH) $130 in September?"
+    },
+    {
+      "market_id": "3866511",
+      "slug": "will-wti-reach-120-in-september-2026",
+      "question": "Will WTI Crude Oil (WTI) hit (HIGH) $120 in September?"
+    },
+    {
+      "market_id": "3866512",
+      "slug": "will-wti-reach-110-in-september-2026",
+      "question": "Will WTI Crude Oil (WTI) hit (HIGH) $110 in September?"
+    },
+    {
+      "market_id": "3866515",
+      "slug": "will-wti-dip-to-80-in-september-2026",
+      "question": "Will WTI Crude Oil (WTI) hit (LOW) $80 in September?"
+    },
+    {
+      "market_id": "3866516",
+      "slug": "will-wti-dip-to-70-in-september-2026",
+      "question": "Will WTI Crude Oil (WTI) hit (LOW) $70 in September?"
+    },
+    {
+      "market_id": "3866517",
+      "slug": "will-wti-dip-to-60-in-september-2026",
+      "question": "Will WTI Crude Oil (WTI) hit (LOW) $60 in September?"
+    },
+    {
+      "market_id": "3866518",
+      "slug": "will-wti-dip-to-50-in-september-2026",
+      "question": "Will WTI Crude Oil (WTI) hit (LOW) $50 in September?"
+    },
+    {
+      "market_id": "3866519",
+      "slug": "will-wti-dip-to-40-in-september-2026",
+      "question": "Will WTI Crude Oil (WTI) hit (LOW) $40 in September?"
+    },
+    {
+      "market_id": "3866520",
+      "slug": "will-wti-dip-to-30-in-september-2026",
+      "question": "Will WTI Crude Oil (WTI) hit (LOW) $30 in September?"
+    },
+    {
+      "market_id": "3866521",
+      "slug": "will-wti-dip-to-20-in-september-2026",
+      "question": "Will WTI Crude Oil (WTI) hit (LOW) $20 in September?"
+    },
+    {
+      "market_id": "3954342",
+      "slug": "will-wti-dip-to-75-in-september-2026",
+      "question": "Will WTI Crude Oil (WTI) hit (LOW) $75 in September?"
+    },
+    {
+      "market_id": "3954344",
+      "slug": "will-wti-dip-to-65-in-september-2026",
+      "question": "Will WTI Crude Oil (WTI) hit (LOW) $65 in September?"
+    },
+    {
+      "market_id": "3954347",
+      "slug": "will-wti-dip-to-55-in-september-2026",
+      "question": "Will WTI Crude Oil (WTI) hit (LOW) $55 in September?"
+    },
+    {
+      "market_id": "4035901",
+      "slug": "will-wti-reach-115-in-september-2026",
+      "question": "Will WTI Crude Oil (WTI) hit (HIGH) $115 in September?"
+    },
+    {
+      "market_id": "4063373",
+      "slug": "will-wti-dip-to-85-in-september-2026",
+      "question": "Will WTI Crude Oil (WTI) hit (LOW) $85 in September?"
+    },
+    {
+      "market_id": "4413393",
+      "slug": "will-wti-reach-125-in-september-2026",
+      "question": "Will WTI Crude Oil (WTI) hit (HIGH) $125 in September?"
+    },
+    {
+      "market_id": "4591051",
+      "slug": "will-wti-reach-135-in-september-2026",
+      "question": "Will WTI Crude Oil (WTI) hit (HIGH) $135 in September?"
+    },
+    {
+      "market_id": "4618778",
+      "slug": "will-wti-reach-105-in-september-2026-from-september-16",
+      "question": "Will WTI Crude Oil (WTI) hit (HIGH) $105 in September?"
+    },
+    {
+      "market_id": "4690431",
+      "slug": "will-wti-reach-100-in-september-2026-from-september-18",
+      "question": "Will WTI Crude Oil (WTI) hit (HIGH) $100 in September?"
+    },
+    {
+      "market_id": "4798765",
+      "slug": "will-wti-reach-95-in-september-2026-from-september-21",
+      "question": "Will WTI Crude Oil (WTI) hit (HIGH) $95 in September?"
+    },
+    {
       "market_id": "3215005",
       "slug": "will-the-fed-decrease-interest-rates-by-50-bps-after-the-december-2026-meeting-20260729232808633",
       "question": "Will the Fed decrease interest rates by 50+ bps after the December 2026 meeting?"
@@ -2344,44 +2594,34 @@
       "question": "Will the Fed increase interest rates by 50+ bps after the January 2027 meeting?"
     },
     {
-      "market_id": "4826752",
-      "slug": "btc-updown-5m-1790129700",
-      "question": "Bitcoin Up or Down - September 22, 10:15PM-10:20PM ET"
+      "market_id": "4834256",
+      "slug": "btc-updown-5m-1790150700",
+      "question": "Bitcoin Up or Down - September 23, 4:05AM-4:10AM ET"
     },
     {
-      "market_id": "4826747",
-      "slug": "eth-updown-5m-1790129700",
-      "question": "Ethereum Up or Down - September 22, 10:15PM-10:20PM ET"
+      "market_id": "4834254",
+      "slug": "eth-updown-5m-1790150700",
+      "question": "Ethereum Up or Down - September 23, 4:05AM-4:10AM ET"
     },
     {
-      "market_id": "4826748",
-      "slug": "sol-updown-5m-1790129700",
-      "question": "Solana Up or Down - September 22, 10:15PM-10:20PM ET"
+      "market_id": "4834253",
+      "slug": "sol-updown-5m-1790150700",
+      "question": "Solana Up or Down - September 23, 4:05AM-4:10AM ET"
     },
     {
-      "market_id": "4826754",
-      "slug": "btc-updown-15m-1790129700",
-      "question": "Bitcoin Up or Down - September 22, 10:15PM-10:30PM ET"
+      "market_id": "4834244",
+      "slug": "btc-updown-5m-1790150400",
+      "question": "Bitcoin Up or Down - September 23, 4:00AM-4:05AM ET"
     },
     {
-      "market_id": "4826736",
-      "slug": "btc-updown-5m-1790129400",
-      "question": "Bitcoin Up or Down - September 22, 10:10PM-10:15PM ET"
+      "market_id": "4834230",
+      "slug": "sol-updown-5m-1790150400",
+      "question": "Solana Up or Down - September 23, 4:00AM-4:05AM ET"
     },
     {
-      "market_id": "4826741",
-      "slug": "eth-updown-5m-1790129400",
-      "question": "Ethereum Up or Down - September 22, 10:10PM-10:15PM ET"
-    },
-    {
-      "market_id": "4826740",
-      "slug": "sol-updown-5m-1790129400",
-      "question": "Solana Up or Down - September 22, 10:10PM-10:15PM ET"
-    },
-    {
-      "market_id": "4826680",
-      "slug": "btc-updown-15m-1790128800",
-      "question": "Bitcoin Up or Down - September 22, 10:00PM-10:15PM ET"
+      "market_id": "4834241",
+      "slug": "btc-updown-15m-1790150400",
+      "question": "Bitcoin Up or Down - September 23, 4:00AM-4:15AM ET"
     }
   ],
   "negrisk": [
@@ -2517,6 +2757,105 @@
         "2772199",
         "2772200",
         "2772201"
+      ]
+    },
+    {
+      "event_id": "202857",
+      "slug": "pro-football-2027-champion-20260729185915366",
+      "title": "Pro Football: 2027 Champion",
+      "n_outcomes": 32,
+      "market_ids": [
+        "1357371",
+        "1357372",
+        "1357373",
+        "1357374",
+        "1357375",
+        "1357376",
+        "1357377",
+        "1357378",
+        "1357379",
+        "1357380",
+        "1357381",
+        "1357382",
+        "1357383",
+        "1357384",
+        "1357385",
+        "1357386",
+        "1357387",
+        "1357388",
+        "1357389",
+        "1357390",
+        "1357391",
+        "1357392",
+        "1357393",
+        "1357394",
+        "1357395",
+        "1357396",
+        "1357397",
+        "1357398",
+        "1357399",
+        "1357400",
+        "1357401",
+        "1357402"
+      ]
+    },
+    {
+      "event_id": "30829",
+      "slug": "democratic-presidential-nominee-2028",
+      "title": "Democratic Presidential Nominee 2028",
+      "n_outcomes": 51,
+      "market_ids": [
+        "559652",
+        "559653",
+        "559654",
+        "559655",
+        "559656",
+        "559657",
+        "559658",
+        "559659",
+        "559660",
+        "559661",
+        "559662",
+        "559663",
+        "559664",
+        "559665",
+        "559666",
+        "559667",
+        "559668",
+        "559669",
+        "559670",
+        "559671",
+        "559672",
+        "559673",
+        "559674",
+        "559675",
+        "559676",
+        "559677",
+        "559678",
+        "559679",
+        "559680",
+        "559681",
+        "559682",
+        "559683",
+        "559684",
+        "559685",
+        "559686",
+        "559687",
+        "559688",
+        "559689",
+        "559690",
+        "559691",
+        "559692",
+        "559693",
+        "559694",
+        "559695",
+        "559696",
+        "559697",
+        "559698",
+        "559699",
+        "559700",
+        "559701",
+        "559702"
       ]
     },
     {
