@@ -1,0 +1,59 @@
+name: Build agent feed and deploy Pages
+
+# Requires Settings → Pages → Source = "GitHub Actions".
+# Nothing is committed: the feed is generated at deploy time, so this never
+# races the desk routine's own pushes to main.
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "17 */2 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+env:
+  SITE_URL: https://benngaihk.github.io/kairos-desk
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm test
+      - name: Build feed (fall back to the last published feed on failure)
+        env:
+          PAID_API_BASE: ${{ vars.PAID_API_BASE }}
+          MAX_EVENTS: ${{ vars.MAX_EVENTS || '300' }}
+        run: |
+          if ! node scripts/build-feed.mjs --out docs/v1; then
+            echo "::warning::feed build failed; republishing the previous feed"
+            mkdir -p docs/v1
+            for f in index markets sets changes; do
+              curl -fsS "$SITE_URL/v1/$f.json" -o "docs/v1/$f.json" || true
+            done
+          fi
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

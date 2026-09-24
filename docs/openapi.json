@@ -1,0 +1,591 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Kairos pre-trade desk",
+    "version": "1.0.0",
+    "description": "Fee-exact breakeven probabilities and NegRisk trap detection for Polymarket, for forecasting agents. The free static feed is on GitHub Pages; the live endpoints are paid per call over x402. Data, not trading advice."
+  },
+  "servers": [
+    {
+      "url": "https://benngaihk.github.io/kairos-desk"
+    }
+  ],
+  "paths": {
+    "/v1/index.json": {
+      "get": {
+        "operationId": "getIndex",
+        "summary": "Build metadata, coverage, stats, flag glossary",
+        "responses": {
+          "200": {
+            "description": "Index",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/markets.json": {
+      "get": {
+        "operationId": "listMarkets",
+        "summary": "Per-market pre-trade thresholds (top ~300 events by 24h volume)",
+        "responses": {
+          "200": {
+            "description": "Markets",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "schema": {
+                      "type": "string"
+                    },
+                    "generated_utc": {
+                      "type": "string"
+                    },
+                    "n": {
+                      "type": "integer"
+                    },
+                    "markets": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/Market"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/sets.json": {
+      "get": {
+        "operationId": "listSets",
+        "summary": "NegRisk set audits",
+        "responses": {
+          "200": {
+            "description": "Sets",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "sets": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/Set"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/changes.json": {
+      "get": {
+        "operationId": "listChanges",
+        "summary": "Mid moves ≥3pp and flag changes since the previous build",
+        "responses": {
+          "200": {
+            "description": "Changes",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/quote": {
+      "get": {
+        "operationId": "liveQuote",
+        "servers": [
+          {
+            "url": "{workerBase}",
+            "variables": {
+              "workerBase": {
+                "default": "https://kairos-pretrade.example.workers.dev",
+                "description": "See v1/index.json → paid_live_api.base"
+              }
+            }
+          }
+        ],
+        "summary": "Live thresholds at any size (paid, $0.01, x402)",
+        "parameters": [
+          {
+            "name": "market",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Market slug or numeric id"
+          },
+          {
+            "name": "usd",
+            "in": "query",
+            "schema": {
+              "type": "number",
+              "default": 100,
+              "maximum": 100000
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Live quote",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "as_of_utc": {
+                      "type": "string"
+                    },
+                    "requested_usd": {
+                      "type": "number"
+                    },
+                    "at_size": {
+                      "type": "object",
+                      "properties": {
+                        "buy_yes_if_p_above": {
+                          "type": [
+                            "number",
+                            "null"
+                          ],
+                          "description": "Breakeven p(YES) for buying YES at this size, fees included"
+                        },
+                        "buy_no_if_p_below": {
+                          "type": [
+                            "number",
+                            "null"
+                          ],
+                          "description": "Buy NO only if p(YES) is below this"
+                        }
+                      }
+                    },
+                    "market": {
+                      "$ref": "#/components/schemas/Market"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "402": {
+            "description": "Payment required (x402). Read the PAYMENT-REQUIRED header, pay in USDC, retry with PAYMENT-SIGNATURE.",
+            "headers": {
+              "PAYMENT-REQUIRED": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "base64 JSON payment requirements"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/set": {
+      "get": {
+        "operationId": "liveSet",
+        "servers": [
+          {
+            "url": "{workerBase}",
+            "variables": {
+              "workerBase": {
+                "default": "https://kairos-pretrade.example.workers.dev",
+                "description": "See v1/index.json → paid_live_api.base"
+              }
+            }
+          }
+        ],
+        "summary": "Live NegRisk set audit (paid, $0.02, x402)",
+        "parameters": [
+          {
+            "name": "event",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "shares",
+            "in": "query",
+            "schema": {
+              "type": "number",
+              "default": 100
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Live set audit",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Set"
+                }
+              }
+            }
+          },
+          "402": {
+            "description": "Payment required (x402). Read the PAYMENT-REQUIRED header, pay in USDC, retry with PAYMENT-SIGNATURE.",
+            "headers": {
+              "PAYMENT-REQUIRED": {
+                "schema": {
+                  "type": "string"
+                },
+                "description": "base64 JSON payment requirements"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Market": {
+        "type": "object",
+        "required": [
+          "id",
+          "slug",
+          "question",
+          "thresholds",
+          "flags",
+          "fee"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "question": {
+            "type": "string"
+          },
+          "outcome": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "event_slug": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "event_title": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "url": {
+            "type": "string"
+          },
+          "end_date": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "neg_risk": {
+            "type": "boolean"
+          },
+          "yes_token": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "no_token": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "bid": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "ask": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "mid": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "spread": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "fee": {
+            "type": "object",
+            "properties": {
+              "rate": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "description": "null = unknown; thresholds are then null"
+              },
+              "exponent": {
+                "type": "number"
+              },
+              "src": {
+                "type": "string"
+              }
+            }
+          },
+          "thresholds": {
+            "type": "object",
+            "properties": {
+              "top": {
+                "type": "object",
+                "properties": {
+                  "buy_yes_if_p_above": {
+                    "type": [
+                      "number",
+                      "null"
+                    ],
+                    "description": "Breakeven p(YES) for buying YES at this size, fees included"
+                  },
+                  "buy_no_if_p_below": {
+                    "type": [
+                      "number",
+                      "null"
+                    ],
+                    "description": "Buy NO only if p(YES) is below this"
+                  }
+                }
+              },
+              "usd100": {
+                "type": "object",
+                "properties": {
+                  "buy_yes_if_p_above": {
+                    "type": [
+                      "number",
+                      "null"
+                    ],
+                    "description": "Breakeven p(YES) for buying YES at this size, fees included"
+                  },
+                  "buy_no_if_p_below": {
+                    "type": [
+                      "number",
+                      "null"
+                    ],
+                    "description": "Buy NO only if p(YES) is below this"
+                  }
+                }
+              },
+              "usd1000": {
+                "type": "object",
+                "properties": {
+                  "buy_yes_if_p_above": {
+                    "type": [
+                      "number",
+                      "null"
+                    ],
+                    "description": "Breakeven p(YES) for buying YES at this size, fees included"
+                  },
+                  "buy_no_if_p_below": {
+                    "type": [
+                      "number",
+                      "null"
+                    ],
+                    "description": "Buy NO only if p(YES) is below this"
+                  }
+                }
+              },
+              "band_width_top": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              }
+            }
+          },
+          "depth_usd_2c": {
+            "type": "object",
+            "properties": {
+              "yes": {
+                "type": "number"
+              },
+              "no": {
+                "type": "number"
+              }
+            }
+          },
+          "no_book_src": {
+            "type": "string",
+            "enum": [
+              "no_token_book",
+              "mirrored_yes_bids",
+              "none"
+            ]
+          },
+          "volume_24h": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "liquidity": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "resolution_source": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "flags": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "FEES_ON",
+                "FEE_UNKNOWN",
+                "WIDE_SPREAD",
+                "THIN",
+                "DUST",
+                "NO_BOOK",
+                "ENDS_SOON",
+                "PAST_END",
+                "NEGRISK_INCOMPLETE",
+                "NEGRISK_PLACEHOLDER"
+              ]
+            }
+          }
+        }
+      },
+      "Set": {
+        "type": "object",
+        "properties": {
+          "event_id": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          },
+          "n_legs": {
+            "type": "integer"
+          },
+          "n_live": {
+            "type": "integer"
+          },
+          "n_missing": {
+            "type": "integer"
+          },
+          "missing": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "label": {
+                  "type": "string"
+                },
+                "market_id": {
+                  "type": "string"
+                },
+                "placeholder": {
+                  "type": "boolean"
+                },
+                "why": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "complete": {
+            "type": "boolean"
+          },
+          "buy_set_gross": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "buy_set_net": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "description": "Cost to buy one share of every live leg at top of book, after fees"
+          },
+          "buy_set_edge": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "buy_set_min_top_shares": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "sum_yes_bid": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "overround_mid": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "verdict": {
+            "type": "string",
+            "enum": [
+              "INCOMPLETE",
+              "NO_EDGE",
+              "CANDIDATE",
+              "FEE_UNKNOWN"
+            ]
+          },
+          "reason": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

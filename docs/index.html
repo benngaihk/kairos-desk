@@ -3,8 +3,11 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Kairos — fee-adjusted edge?</title>
-<meta name="description" content="Is there a fee-adjusted Polymarket edge right now? A freeze-and-receipt desk. Not trading advice."/>
+<title>Kairos Pre-trade Desk</title>
+<meta name="description" content="Polymarket pre-trade check for forecasting agents: the fee-exact probability you must beat to buy YES or NO at your size, and which NegRisk 'arbitrages' are traps. Free JSON feed, live paid API over x402."/>
+<link rel="alternate" type="application/json" title="Agent feed index" href="./v1/index.json"/>
+<link rel="alternate" type="text/plain" title="llms.txt" href="./llms.txt"/>
+<link rel="service-desc" type="application/json" href="./openapi.json"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,600;6..72,700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet"/>
@@ -68,6 +71,32 @@ footer{margin-top:36px;font:11px/1.4 "IBM Plex Mono",monospace;color:var(--muted
 table{width:100%;border-collapse:collapse;font-size:14px;margin-top:6px}
 th{text-align:left;font:11px/1 "IBM Plex Mono",monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);padding:4px 0}
 td{padding:5px 0;border-bottom:1px solid var(--line)}
+.stats{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin:18px 0 6px}
+@media(max-width:800px){.stats{grid-template-columns:repeat(2,1fr)}}
+.stat{background:var(--card);border:1px solid var(--line);padding:12px 14px}
+.stat b{display:block;font-family:Newsreader,serif;font-size:26px;letter-spacing:-.02em}
+.stat span{font:11px/1.3 "IBM Plex Mono",monospace;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.tools{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:0 0 8px}
+.tools input{flex:1;min-width:200px;font:14px "Source Sans 3",sans-serif;padding:9px 10px;border:1px solid var(--ink);background:var(--card);color:var(--ink)}
+.seg{display:flex;border:1px solid var(--ink)}
+.seg button{border:0;background:transparent;font:12px/1 "IBM Plex Mono",monospace;padding:9px 10px;cursor:pointer;color:var(--ink)}
+.seg button.on{background:var(--ink);color:var(--bg)}
+.scroll{overflow-x:auto;border:1px solid var(--line);background:var(--card)}
+.mk{min-width:760px;margin:0}
+.mk th,.mk td{padding:8px 10px;vertical-align:top}
+.mk td.n{font-family:"IBM Plex Mono",monospace;font-size:13px;white-space:nowrap}
+.mk td.q a{text-decoration:none}
+.mk td.q small{display:block;color:var(--muted);font-size:12px}
+.fl{display:inline-block;font:10px/1 "IBM Plex Mono",monospace;border:1px solid var(--line);padding:3px 4px;margin:0 3px 3px 0;color:var(--muted)}
+.fl.bad{border-color:var(--no);color:var(--no)}
+.note{color:var(--muted);font-size:13px;margin:6px 0 0}
+.trap{border-left:3px solid var(--no)}
+.trap .v{color:var(--no)}
+.code{white-space:pre;overflow-x:auto}
+.tiles>*,.board>*,.stats>*{min-width:0}
+@media(max-width:640px){.log .row{grid-template-columns:1fr}}
+.old{margin-top:56px;padding-top:8px;border-top:1px solid var(--ink)}
+.old h1{font-size:clamp(26px,4vw,36px);margin-top:18px}
 </style>
 </head>
 <body>
@@ -80,7 +109,41 @@ td{padding:5px 0;border-bottom:1px solid var(--line)}
   </div>
 </header>
 
+<div class="kicker" data-i="k_pre">Polymarket pre-trade check</div>
+<h1 data-i="h1_pre">What probability do you have to beat?</h1>
+<p class="lede" data-i="lede_pre">For every liquid Polymarket market: the fee-exact breakeven for buying YES or NO at $1, $100 and $1,000, plus the NegRisk “arbitrages” that are really missing legs. Built for forecasting agents. Free JSON, live paid API.</p>
+<div class="stats" id="stats"></div>
+
+<h2 data-i="h_lookup">Look up a market</h2>
+<div class="tools">
+  <input id="qbox" type="search" placeholder="fed, bitcoin, nominee…" aria-label="Filter markets"/>
+  <div class="seg" id="sizes"><button type="button" data-s="top" class="on">1 share</button><button type="button" data-s="usd100">$100</button><button type="button" data-s="usd1000">$1,000</button></div>
+</div>
+<div class="scroll"><table class="mk" id="mk"></table></div>
+<p class="note" data-i="mk_note">Buy YES only if your probability is above the first number; buy NO only if it is below the second. In between, fees and spread eat the edge. — means the book cannot fill that size or the fee rate is unknown.</p>
+
+<h2 data-i="h_traps">Looks like arbitrage, isn’t</h2>
+<div class="tiles" id="traps"></div>
+
+<h2 data-i="h_moves">Moved since the last build</h2>
+<div class="log" id="moves"></div>
+
+<section id="agents">
+<h2 data-i="h_agents">For agents</h2>
+<div class="tiles">
+  <div class="tile"><h3 data-i="ag_free">Free · static JSON</h3>
+    <p data-i="ag_free_p">Rebuilt every ~2 hours from Polymarket’s public APIs. No key, no signup.</p>
+    <pre class="code" id="ag_free_code"></pre></div>
+  <div class="tile"><h3 data-i="ag_paid">Paid · live, any size</h3>
+    <p id="ag_paid_p"></p>
+    <pre class="code" id="ag_paid_code"></pre></div>
+</div>
+<p class="note"><a href="./llms.txt">llms.txt</a> · <a href="./openapi.json">openapi.json</a> · <a href="./v1/index.json">v1/index.json</a> · <a href="https://github.com/benngaihk/kairos-desk">source</a></p>
+</section>
+
+<div class="old">
 <div class="kicker" data-i="kicker">Fee-adjusted edge</div>
+<h2 data-i="h_desk">Desk receipts</h2>
 <h1 id="q">Is there a fee-adjusted Polymarket edge?</h1>
 <p class="lede" id="lede">Loading snapshot…</p>
 <div class="board">
@@ -140,11 +203,24 @@ td{padding:5px 0;border-bottom:1px solid var(--line)}
   <p class="asof" id="hist"></p>
   <p class="asof" id="hpol"></p>
 </section>
+</div>
 <footer><span data-i="foot">Kairos · snapshots only · not trading advice</span> · <a href="https://x.com/benngai123">@benngai123</a></footer>
 </div>
 <script>
 const I = {
   en: {
+    k_pre:"Polymarket pre-trade check", h1_pre:"What probability do you have to beat?",
+    lede_pre:"For every liquid Polymarket market: the fee-exact breakeven for buying YES or NO at $1, $100 and $1,000, plus the NegRisk “arbitrages” that are really missing legs. Built for forecasting agents. Free JSON, live paid API.",
+    h_lookup:"Look up a market", h_traps:"Looks like arbitrage, isn’t", h_moves:"Moved since the last build", h_agents:"For agents", h_desk:"Desk receipts",
+    mk_note:"Buy YES only if your probability is above the first number; buy NO only if it is below the second. In between, fees and spread eat the edge. — means the book cannot fill that size or the fee rate is unknown.",
+    ag_free:"Free · static JSON", ag_free_p:"Rebuilt every ~2 hours from Polymarket’s public APIs. No key, no signup.", ag_paid:"Paid · live, any size",
+    paid_on:(x)=>`Computed live at the size you ask for. Paid per call in USDC over x402 (HTTP 402); x402-aware agents pay automatically. ${x}`,
+    paid_off:"Live endpoints (quote at any size, set audit) are built and waiting to be deployed. Until then, use the free feed.",
+    st_markets:"markets", st_band:"median no-trade band", st_fees:"charge taker fees", st_traps:"fake-arb sets", st_age:"built",
+    th_mkt:"Market", th_mid:"Mid", th_yes:"Buy YES if p >", th_no:"Buy NO if p <", th_band:"Band", th_fee:"Fee", th_depth:"$ ≤2¢", th_flags:"Flags",
+    no_feed:"The agent feed has not been built yet. It is generated on the next Pages deploy.", no_match:"No market matches.",
+    no_traps:"No incomplete sets that look like arbitrage in this build.", no_moves:"No moves of 3pp or more since the previous build.",
+    trap_cost:"cost of the legs you can buy", trap_missing:"missing", ago:(h)=>h<1?"<1h ago":Math.round(h)+"h ago",
     nav:"Open JSON", kicker:"Fee-adjusted edge",
     h_readout:"Signal readout", h_reject:"Last rejected “edge”",
     h_log:"Receipt pulse", h_next:"Next freeze", h_cannot:"What this cannot say",
@@ -171,6 +247,18 @@ const I = {
     fed_gap:(d)=>d.fed.gap_pp.toFixed(1)+" pp"
   },
   zh: {
+    k_pre:"Polymarket 下单前检查", h1_pre:"你的概率要高过多少才值得下单？",
+    lede_pre:"每个有流动性的 Polymarket 市场：按 $1、$100、$1,000 吃单、扣完手续费后，买 YES 或 NO 的盈亏平衡概率；再加上那些看似套利、其实是缺腿的 NegRisk 组。为预测型 AI agent 设计。免费 JSON，实时付费 API。",
+    h_lookup:"查市场", h_traps:"看着像套利，其实不是", h_moves:"比上一次构建变动较大", h_agents:"给 agent 用", h_desk:"研究台回执",
+    mk_note:"你的概率高于第一个数才买 YES；低于第二个数才买 NO。中间这段会被手续费和价差吃掉。— 表示盘口吃不下这个规模，或费率未知。",
+    ag_free:"免费 · 静态 JSON", ag_free_p:"每约 2 小时用 Polymarket 公开接口重建。不用 key，不用注册。", ag_paid:"付费 · 实时 · 任意规模",
+    paid_on:(x)=>`按你给的规模实时计算。按次用 USDC 通过 x402（HTTP 402）付费，支持 x402 的 agent 会自动付款。${x}`,
+    paid_off:"实时接口（任意规模报价、互斥组审计）已写好，等待部署。在那之前请用免费 feed。",
+    st_markets:"个市场", st_band:"中位不交易带宽", st_fees:"收 taker 手续费", st_traps:"假套利组", st_age:"构建于",
+    th_mkt:"市场", th_mid:"中间价", th_yes:"p > 才买 YES", th_no:"p < 才买 NO", th_band:"带宽", th_fee:"费率", th_depth:"2¢内 $", th_flags:"标记",
+    no_feed:"agent feed 还没构建，会在下一次 Pages 部署时生成。", no_match:"没有匹配的市场。",
+    no_traps:"本次构建没有看似套利的不完整互斥组。", no_moves:"与上次构建相比没有 ≥3pp 的变动。",
+    trap_cost:"能买到的腿合计成本", trap_missing:"缺", ago:(h)=>h<1?"不到 1 小时前":Math.round(h)+" 小时前",
     nav:"打开 JSON", kicker:"扣费后优势",
     h_readout:"信号读数", h_reject:"最近一条被毙的「优势」",
     h_log:"回执", h_next:"下一场冻盘", h_cannot:"这页不能说什么",
@@ -200,7 +288,7 @@ const I = {
 let lang = localStorage.getItem("kairos-lang")==="zh"?"zh":"en";
 let D = null;
 let ui = "loading";
-const t = k => { const v=I[lang][k]; return typeof v==="function"?v(D):v; };
+const t = (k, ...a) => { const v=I[lang][k]; return typeof v==="function"?(a.length?v(...a):v(D)):v; };
 function cents(x){return (x*100).toFixed(1)+"¢";}
 function pct(x){return (x*100).toFixed(1)+"%";}
 function hoursOld(iso){
@@ -233,6 +321,7 @@ function ledeText(){
 
 function apply(){
   document.documentElement.lang = lang;
+  if(typeof paintFeed==="function" && document.getElementById("stats")) try{ paintFeed(); }catch(e){}
   document.getElementById("btn-en").className = lang==="en"?"on":"";
   document.getElementById("btn-zh").className = lang==="zh"?"on":"";
   document.querySelectorAll("[data-i]").forEach(el=>{
@@ -368,9 +457,85 @@ function loadHist(){
     document.getElementById("hist").innerHTML = rows+link;
   }).catch(()=>{});
 }
+
+// ---------- agent feed (docs/v1, built by .github/workflows/pages.yml) ----------
+let F = null, FM = null, FS = null, FC = null, size = "top";
+const esc = x => String(x ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const pp = x => x==null ? "—" : (x*100).toFixed(1);
+const BAD = new Set(["FEE_UNKNOWN","NEGRISK_INCOMPLETE","PAST_END","NO_BOOK"]);
+function paintFeed(){
+  const st = document.getElementById("stats");
+  if(!F){ st.innerHTML = `<div class="stat" style="grid-column:1/-1"><span>${t("no_feed")}</span></div>`; paintAgents(); return; }
+  const s = F.stats, h = hoursOld(F.generated_utc);
+  const cell = (v,l) => `<div class="stat"><b>${v}</b><span>${l}</span></div>`;
+  st.innerHTML = cell(F.coverage.markets, t("st_markets")) +
+    cell(s.median_band_width_top==null?"—":pp(s.median_band_width_top)+"pp", t("st_band")) +
+    cell(s.fees_on, t("st_fees")) + cell(s.negrisk_incomplete_sets, t("st_traps")) +
+    cell(t("ago", h), t("st_age"));
+  paintTable(); paintTraps(); paintMoves(); paintAgents();
+}
+function paintTable(){
+  const el = document.getElementById("mk");
+  if(!FM){ el.innerHTML = `<tr><td>${t("no_feed")}</td></tr>`; return; }
+  const q = document.getElementById("qbox").value.trim().toLowerCase();
+  let rows = FM.markets;
+  if(q) rows = rows.filter(m => (m.question+" "+(m.event_title||"")+" "+(m.outcome||"")+" "+m.slug).toLowerCase().includes(q));
+  else rows = rows.filter(m => !m.flags.includes("DUST"));
+  rows = rows.slice().sort((a,b)=>(b.volume_24h||0)-(a.volume_24h||0)).slice(0,80);
+  const head = `<tr><th>${t("th_mkt")}</th><th>${t("th_mid")}</th><th>${t("th_yes")}</th><th>${t("th_no")}</th><th>${t("th_band")}</th><th>${t("th_fee")}</th><th>${t("th_depth")}</th><th>${t("th_flags")}</th></tr>`;
+  if(!rows.length){ el.innerHTML = head + `<tr><td colspan="8">${t("no_match")}</td></tr>`; return; }
+  el.innerHTML = head + rows.map(m=>{
+    const th = m.thresholds[size] || {};
+    const y = th.buy_yes_if_p_above, n = th.buy_no_if_p_below;
+    const band = (y!=null && n!=null) ? pp(y-n) : "—";
+    const fee = m.fee.rate==null ? "?" : (m.fee.rate*100).toFixed(m.fee.rate*100%1?1:0)+"%";
+    const title = m.outcome && m.event_title ? `${esc(m.event_title)} — ${esc(m.outcome)}` : esc(m.question);
+    const fl = m.flags.filter(f=>f!=="FEES_ON").map(f=>`<span class="fl${BAD.has(f)?" bad":""}" title="${esc(F.flags[f]||"")}">${f}</span>`).join("");
+    return `<tr><td class="q"><a href="${esc(m.url)}" target="_blank" rel="noopener">${title}</a><small>${esc(m.slug)}</small></td>`+
+      `<td class="n">${pp(m.mid)}</td><td class="n"><b>${pp(y)}</b></td><td class="n"><b>${pp(n)}</b></td><td class="n">${band}</td>`+
+      `<td class="n">${fee}</td><td class="n">${Math.round(m.depth_usd_2c.yes)}/${Math.round(m.depth_usd_2c.no)}</td><td>${fl}</td></tr>`;
+  }).join("");
+}
+function paintTraps(){
+  const el = document.getElementById("traps");
+  if(!FS){ el.innerHTML = ""; return; }
+  const sets = FS.sets.filter(x=>x.verdict==="INCOMPLETE" && x.buy_set_net!=null && x.buy_set_net<1)
+    .sort((a,b)=>a.buy_set_net-b.buy_set_net).slice(0,6);
+  el.innerHTML = sets.length ? sets.map(x=>`<div class="tile trap"><h3><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a></h3>
+    <div class="v">${x.buy_set_net.toFixed(3)}</div><p>${t("trap_cost")} · ${x.n_live}/${x.n_live + x.n_missing} · ${t("trap_missing")}: ${esc(x.missing.slice(0,4).map(m=>m.label).join(", "))}${x.n_missing>4?"…":""}</p>
+    <p>${esc(x.reason)}</p></div>`).join("") : `<div class="tile"><p>${t("no_traps")}</p></div>`;
+}
+function paintMoves(){
+  const el = document.getElementById("moves");
+  if(!FC || !FC.moves.length){ el.innerHTML = `<div class="row"><div class="k">—</div><div>${t("no_moves")}</div><div></div></div>`; return; }
+  el.innerHTML = FC.moves.slice(0,8).map(m=>`<div class="row"><div class="k">${m.delta>0?"+":""}${pp(m.delta)}pp</div><div><a href="${esc(m.url)}" target="_blank" rel="noopener">${esc(m.question)}</a></div><div class="stamp">${pp(m.mid_before)} → ${pp(m.mid_now)}</div></div>`).join("");
+}
+function paintAgents(){
+  const base = location.origin + location.pathname.replace(/[^/]*$/, "");
+  document.getElementById("ag_free_code").textContent =
+    `curl -s ${base}v1/markets.json \\\n | jq '.markets[] | select(.slug|test("fed"))\n   | {slug, yes: .thresholds.usd100.buy_yes_if_p_above,\n      no: .thresholds.usd100.buy_no_if_p_below, flags}'`;
+  const paid = F && F.paid_live_api;
+  document.getElementById("ag_paid_p").textContent = paid ? t("paid_on", "") : t("paid_off");
+  document.getElementById("ag_paid_code").textContent = paid
+    ? `GET ${paid.base}/v1/quote?market=<slug>&usd=2500\nGET ${paid.base}/v1/set?event=<slug>\n# 402 → pay (x402, USDC) → 200`
+    : `GET <worker>/v1/quote?market=<slug>&usd=2500\nGET <worker>/v1/set?event=<slug>\n# see worker/README.md`;
+}
+function loadFeed(){
+  const get = f => fetch("./v1/"+f,{cache:"no-store"}).then(r=>{ if(!r.ok) throw new Error(r.status); return r.json(); });
+  get("index.json").then(ix=>{ F=ix; paintFeed();
+    return Promise.all([get("markets.json").then(x=>FM=x), get("sets.json").then(x=>FS=x).catch(()=>{}), get("changes.json").then(x=>FC=x).catch(()=>{})]);
+  }).then(()=>paintFeed()).catch(()=>{ F=null; paintFeed(); });
+}
+document.getElementById("qbox").addEventListener("input", paintTable);
+document.querySelectorAll("#sizes button").forEach(b=>b.onclick=()=>{
+  size=b.getAttribute("data-s");
+  document.querySelectorAll("#sizes button").forEach(x=>x.className=x===b?"on":"");
+  paintTable();
+});
 document.getElementById("btn-en").onclick=()=>{lang="en";localStorage.setItem("kairos-lang","en");apply();};
 document.getElementById("btn-zh").onclick=()=>{lang="zh";localStorage.setItem("kairos-lang","zh");apply();};
 apply();
+loadFeed();
 fetch("./desk.json",{cache:"no-store"}).then(r=>{
   if(!r.ok) throw new Error(String(r.status));
   return r.json();
