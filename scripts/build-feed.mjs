@@ -122,7 +122,9 @@ export function diff(prev, markets, now) {
       fresh++;
       continue;
     }
-    if (m.mid !== null && o.mid !== null && Math.abs(m.mid - o.mid) >= 0.03)
+    // A mid only means something on a tight, live book; skip wide, empty and dust markets on either side.
+    const meaningful = (x) => x.mid !== null && x.spread !== null && x.spread < 0.05 && !(x.flags || []).some((f) => f === "DUST" || f === "NO_BOOK");
+    if (meaningful(m) && meaningful(o) && Math.abs(m.mid - o.mid) >= 0.03)
       moves.push({ id: m.id, slug: m.slug, question: m.question, url: m.url, mid_before: o.mid, mid_now: m.mid, delta: Math.round((m.mid - o.mid) * 1e4) / 1e4 });
     const a = new Set(o.flags || []),
       b = new Set(m.flags || []);
