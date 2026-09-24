@@ -523,10 +523,15 @@ function paintAgents(){
 function loadFeed(){
   const get = f => fetch("./v1/"+f,{cache:"no-store"}).then(r=>{ if(!r.ok) throw new Error(r.status); return r.json(); });
   get("index.json").then(ix=>{ F=ix; paintFeed();
-    return Promise.all([get("markets.json").then(x=>FM=x), get("sets.json").then(x=>FS=x).catch(()=>{}), get("changes.json").then(x=>FC=x).catch(()=>{})]);
+    return Promise.all([get("top.json").catch(()=>get("markets.json")).then(x=>FM=x), get("sets.json").then(x=>FS=x).catch(()=>{}), get("changes.json").then(x=>FC=x).catch(()=>{})]);
   }).then(()=>paintFeed()).catch(()=>{ F=null; paintFeed(); });
 }
-document.getElementById("qbox").addEventListener("input", paintTable);
+let full = null;
+document.getElementById("qbox").addEventListener("input", ()=>{
+  // top.json holds the 400 busiest markets; fetch the full list once, on the first search.
+  if(!full && F){ full = fetch("./v1/markets.json",{cache:"no-store"}).then(r=>r.json()).then(x=>{ FM=x; paintTable(); }).catch(()=>{}); }
+  paintTable();
+});
 document.querySelectorAll("#sizes button").forEach(b=>b.onclick=()=>{
   size=b.getAttribute("data-s");
   document.querySelectorAll("#sizes button").forEach(x=>x.className=x===b?"on":"");

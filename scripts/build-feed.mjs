@@ -174,6 +174,7 @@ export function summarize({ markets, sets, changes, generated, paidApiBase, site
     flags: FLAG_DOC,
     files: {
       markets: `${base}/markets.json`,
+      top: `${base}/top.json`,
       sets: `${base}/sets.json`,
       changes: `${base}/changes.json`,
       openapi: siteUrl ? siteUrl.replace(/\/$/, "") + "/openapi.json" : "./openapi.json",
@@ -184,6 +185,33 @@ export function summarize({ markets, sets, changes, generated, paidApiBase, site
     cadence: "rebuilt on every publish and on a schedule (see .github/workflows/pages.yml); not a real-time feed",
     disclaimer: "Data, not trading advice. Thresholds ignore gas, resolution risk and your own execution latency.",
   };
+}
+
+/** The page's default table: highest-volume non-dust markets. The full file is loaded only on search. */
+export function topMarkets(markets, n) {
+  return markets
+    .filter((m) => !m.flags.includes("DUST"))
+    .sort((a, b) => (b.volume_24h || 0) - (a.volume_24h || 0))
+    .slice(0, n);
+}
+
+/** Human-readable summary in the Actions log, so data problems are visible without downloading the feed. */
+function diagnostics(feed) {
+  const sets = feed.sets.sets;
+  const by = (arr, f) => arr.reduce((o, x) => ((o[f(x)] = (o[f(x)] || 0) + 1), o), {});
+  console.log("sets by verdict:", JSON.stringify(by(sets, (x) => x.verdict)));
+  const miss = sets.flatMap((x) => x.missing);
+  console.log("missing legs by reason:", JSON.stringify(by(miss, (m) => m.why + (m.placeholder ? "+placeholder" : ""))));
+  for (const x of sets.filter((x) => x.verdict === "INCOMPLETE").slice(0, 8))
+    console.log(`  INCOMPLETE ${x.slug}: live ${x.n_live}/${x.n_legs}, net ${x.buy_set_net}, missing: ${x.missing.slice(0, 5).map((m) => `${m.label} (${m.why})`).join("; ")}`);
+  for (const x of sets.filter((x) => x.verdict === "CANDIDATE"))
+    console.log(`  CANDIDATE ${x.slug}: net ${x.buy_set_net}, gross ${x.buy_set_gross}, min top ${x.buy_set_min_top_shares} sh, 100sh ${x.buy_set_net_100sh}, legs ${x.n_live}/${x.n_legs}`);
+  const ms = feed.markets.markets;
+  console.log("markets by flag:", JSON.stringify(by(ms.flatMap((m) => m.flags), (f) => f)));
+  const bw = ms.map((m) => m.thresholds.band_width_top).filter((x) => x !== null).sort((a, b) => a - b);
+  console.log(`band_width_top p10/p50/p90: ${bw[Math.floor(bw.length * 0.1)]} / ${bw[Math.floor(bw.length * 0.5)]} / ${bw[Math.floor(bw.length * 0.9)]}; negative: ${bw.filter((x) => x < 0).length}`);
+  const fees = by(ms.filter((m) => m.fee.rate !== null), (m) => m.fee.rate);
+  console.log("fee rates:", JSON.stringify(fees));
 }
 
 async function main() {
@@ -206,7 +234,10 @@ async function main() {
   const feed = await buildFeed({ maxEvents, prev, paidApiBase: process.env.PAID_API_BASE || null, siteUrl });
   await mkdir(out, { recursive: true });
   const w = (f, o) => writeFile(join(out, f), JSON.stringify(o) + "\n");
-  await Promise.all([w("index.json", feed.index), w("markets.json", feed.markets), w("sets.json", feed.sets), w("changes.json", feed.changes)]);
+  const top = { ...feed.markets, markets: topMarkets(feed.markets.markets, 400) };
+  top.n = top.markets.length;
+  await Promise.all([w("index.json", feed.index), w("markets.json", feed.markets), w("top.json", top), w("sets.json", feed.sets), w("changes.json", feed.changes)]);
+  diagnostics(feed);
   const s = feed.index.stats;
   console.log(
     `feed: ${feed.index.coverage.events} events, ${feed.markets.n} markets, ${feed.sets.n} sets in ${((Date.now() - t0) / 1000).toFixed(1)}s; ` +

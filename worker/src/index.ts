@@ -118,7 +118,15 @@ function build(env: Env) {
   });
 
   app.get("/", (c) => c.json(describe(env, new URL(c.req.url).origin)));
-  app.get("/health", (c) => c.json({ ok: true }));
+  app.get("/health", async (c) => {
+    if (c.req.query("deep") !== "1") return c.json({ ok: true });
+    // Proves upstream reachability from Cloudflare; returns no market data.
+    const t0 = Date.now();
+    const ms = await j(`${GAMMA}/markets?limit=1&active=true&closed=false`);
+    const [y] = parseJsonArray(ms?.[0]?.clobTokenIds).map(String);
+    const bk = y ? await books([y]) : new Map();
+    return c.json({ ok: true, gamma: Array.isArray(ms) && ms.length > 0, clob: bk.size > 0, ms: Date.now() - t0, pay_to_configured: Boolean(env.PAY_TO), network });
+  });
 
   if (!env.PAY_TO) {
     // Fail closed: never serve paid routes for free because a secret is missing.
