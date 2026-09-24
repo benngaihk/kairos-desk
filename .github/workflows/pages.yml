@@ -12,7 +12,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write # pushes the Jev paper-trading ledger to the `ledger` branch (never to main)
   pages: write
   id-token: write
 
@@ -41,10 +41,38 @@ jobs:
           if ! node scripts/build-feed.mjs --out docs/v1; then
             echo "::warning::feed build failed; republishing the previous feed"
             mkdir -p docs/v1
-            for f in index markets top sets changes proof; do
+            for f in index markets top sets changes proof jev; do
               curl -fsS "$SITE_URL/v1/$f.json" -o "docs/v1/$f.json" || true
             done
           fi
+      - name: Jev paper-trading ledger (runs only if the TYPESAFE_API_KEY secret exists)
+        continue-on-error: true
+        env:
+          TYPESAFE_API_KEY: ${{ secrets.TYPESAFE_API_KEY }}
+          JEV_MAX: ${{ vars.JEV_MAX || '30' }}
+        run: |
+          if [ -z "$TYPESAFE_API_KEY" ]; then echo "no TYPESAFE_API_KEY; skipping"; exit 0; fi
+          [ -f docs/v1/markets.json ] || { echo "no feed; skipping"; exit 0; }
+          # Only start a new ledger if the branch is definitely absent (exit 2); any other error aborts.
+          set +e; git ls-remote --exit-code --heads origin ledger >/dev/null; rc=$?; set -e
+          if [ $rc -eq 0 ]; then
+            git fetch --depth=1 origin ledger:ledger
+            git worktree add ledger ledger
+          elif [ $rc -eq 2 ]; then
+            git worktree add --orphan -b ledger ledger
+          else
+            echo "::warning::cannot read ledger branch (rc=$rc); skipping"; exit 0
+          fi
+          node scripts/jev-run.mjs --feed docs/v1 --ledger ledger/jev-ledger.json --public docs/v1/jev.json
+          cd ledger
+          git config user.name "kairos-ledger-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add jev-ledger.json
+          if git diff --cached --quiet; then echo "ledger unchanged"; exit 0; fi
+          git commit -q -m "Jev ledger $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push origin ledger
+      - name: Keep the last published Jev ledger view if this run produced none
+        run: '[ -f docs/v1/jev.json ] || curl -fsS "$SITE_URL/v1/jev.json" -o docs/v1/jev.json || true'
       - uses: actions/upload-pages-artifact@v3
         with:
           path: docs
