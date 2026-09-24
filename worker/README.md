@@ -10,7 +10,19 @@ Live versions of the free feed's pre-trade numbers, computed at the size the cal
 
 The math is `../lib/pretrade.mjs`, the same file that builds the free feed.
 
-## Deploy (about 10 minutes)
+## Deploy with GitHub Actions (recommended)
+
+Add these under repo **Settings → Secrets and variables → Actions → Secrets**:
+
+| Secret | Where to get it |
+|---|---|
+| `CLOUDFLARE_API_TOKEN` | dash.cloudflare.com → My Profile → API Tokens → Create Token → template **Edit Cloudflare Workers** |
+| `CLOUDFLARE_ACCOUNT_ID` | dash.cloudflare.com → Workers & Pages → right sidebar "Account ID" |
+| `PAY_TO` | the 0x address that should receive USDC (on Base) |
+
+Then run **Actions → Deploy paid API worker → Run workflow**. That workflow deploys the worker and checks that it can reach Polymarket and that it answers unpaid calls with 402. The job summary prints the worker URL. Every later push to `worker/**` or `lib/**` redeploys.
+
+## Deploy by hand (about 10 minutes)
 
 ```bash
 cd worker

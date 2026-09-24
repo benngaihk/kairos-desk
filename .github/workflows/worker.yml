@@ -1,0 +1,75 @@
+name: Deploy paid API worker
+
+# One-time setup (Settings → Secrets and variables → Actions):
+#   Secrets:   CLOUDFLARE_API_TOKEN  (template "Edit Cloudflare Workers")
+#              CLOUDFLARE_ACCOUNT_ID
+#              PAY_TO                (your USDC receiving address, 0x…)
+#   Optional:  CDP_API_KEY_ID, CDP_API_KEY_SECRET (needed for Base mainnet)
+#   Variable:  X402_NETWORK = eip155:8453 for mainnet (default: eip155:84532 Base Sepolia)
+# Without the Cloudflare secrets this workflow skips instead of failing.
+
+on:
+  push:
+    branches: [main]
+    paths: ["worker/**", "lib/**", ".github/workflows/worker.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: worker
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      PAY_TO: ${{ secrets.PAY_TO }}
+      CDP_API_KEY_ID: ${{ secrets.CDP_API_KEY_ID }}
+      CDP_API_KEY_SECRET: ${{ secrets.CDP_API_KEY_SECRET }}
+      X402_NETWORK: ${{ vars.X402_NETWORK || 'eip155:84532' }}
+    defaults:
+      run:
+        working-directory: worker
+    steps:
+      - name: Check secrets
+        id: gate
+        working-directory: .
+        run: |
+          missing=""
+          for k in CLOUDFLARE_API_TOKEN CLOUDFLARE_ACCOUNT_ID PAY_TO; do [ -n "${!k}" ] || missing="$missing $k"; done
+          if [ -n "$missing" ]; then echo "::notice::Skipping deploy; missing secrets:$missing"; echo "go=false" >> "$GITHUB_OUTPUT"; else echo "go=true" >> "$GITHUB_OUTPUT"; fi
+          if [ "$X402_NETWORK" = "eip155:8453" ] && { [ -z "$CDP_API_KEY_ID" ] || [ -z "$CDP_API_KEY_SECRET" ]; }; then
+            echo "::error::Base mainnet needs CDP_API_KEY_ID and CDP_API_KEY_SECRET"; exit 1; fi
+      - uses: actions/checkout@v4
+        if: steps.gate.outputs.go == 'true'
+      - uses: actions/setup-node@v4
+        if: steps.gate.outputs.go == 'true'
+        with:
+          node-version: 22
+      - if: steps.gate.outputs.go == 'true'
+        run: npm ci && npx tsc --noEmit
+      - name: Deploy
+        id: deploy
+        if: steps.gate.outputs.go == 'true'
+        run: |
+          npx wrangler deploy --var "PAY_TO:$PAY_TO" --var "X402_NETWORK:$X402_NETWORK" | tee deploy.log
+          url=$(grep -oE 'https://[a-z0-9.-]+\.workers\.dev' deploy.log | head -1)
+          echo "url=$url" >> "$GITHUB_OUTPUT"
+          if [ -n "$CDP_API_KEY_ID" ] && [ -n "$CDP_API_KEY_SECRET" ]; then
+            node -e 'console.log(JSON.stringify({CDP_API_KEY_ID:process.env.CDP_API_KEY_ID,CDP_API_KEY_SECRET:process.env.CDP_API_KEY_SECRET}))' | npx wrangler secret bulk
+          fi
+      - name: Smoke test
+        if: steps.gate.outputs.go == 'true' && steps.deploy.outputs.url != ''
+        env:
+          URL: ${{ steps.deploy.outputs.url }}
+        run: |
+          sleep 5
+          echo "::notice::Worker URL: $URL  (set repo variable PAID_API_BASE to this)"
+          curl -fsS "$URL/health?deep=1" | tee /dev/stderr | grep -q '"clob":true'
+          code=$(curl -s -o /dev/null -w '%{http_code}' "$URL/v1/quote?market=smoke-test")
+          echo "unpaid /v1/quote -> $code"; [ "$code" = "402" ]
