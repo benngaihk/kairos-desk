@@ -194,6 +194,28 @@
       "pre_print": [],
       "note_en": "Afternoon refresh. Scan 2026-09-23 16:08 CST: markets 531, raw_edges 2 rejected (republican-2028 + democratic-2028 Person-placeholders), after_audit 0, corrected_verdict NO_EDGE. Live Fed = October (PM +25bp 0.535 vs CME hike-bin 0.574, gap 3.9pp, mismatch_flag false). Universe 531.",
       "note_zh": "下午刷新。扫描 2026-09-23 16:08 CST：市场 531，原始优势 2 条已否（共和党/民主党 2028 Person 占位），审计后 0，corrected_verdict NO_EDGE。在轨美联储=十月（PM +25bp 0.535 对 CME 加息档 0.574，缺口 3.9pp，mismatch_flag false）。全集 531。"
+    },
+    {
+      "id": "2026-09-24-1045",
+      "as_of_cst": "2026-09-24 10:12 CST",
+      "published_cst": "2026-09-24 10:45 CST",
+      "after_audit": 0,
+      "url": "./history/2026-09-24-1045.json",
+      "kind": "scan",
+      "pre_print": [],
+      "note_en": "Morning refresh. Scan 2026-09-24 10:12 CST: markets 700, raw_edges 0, after_audit 0, corrected_verdict ECON_MISMATCH. Live Fed = October (PM +25bp 0.645 vs CME hike-bin 0.758, gap 11.3pp, mismatch_flag true). Universe 700.",
+      "note_zh": "上午刷新。扫描 2026-09-24 10:12 CST：市场 700，生边 0，审计后 0，corrected_verdict ECON_MISMATCH。在轨美联储=十月（PM +25bp 0.645 对 CME 加息档 0.758，缺口 11.3pp，mismatch_flag true）。全集 700。"
+    },
+    {
+      "id": "2026-09-24-1652",
+      "as_of_cst": "2026-09-24 16:14 CST",
+      "published_cst": "2026-09-24 16:52 CST",
+      "after_audit": 0,
+      "url": "./history/2026-09-24-1652.json",
+      "kind": "scan",
+      "pre_print": [],
+      "note_en": "Afternoon refresh. Scan 2026-09-24 16:14 CST: markets 842, raw_edges 2 rejected (democratic-2028 + presidential-winner-2028 Person-placeholders), after_audit 0, corrected_verdict NO_EDGE. Live Fed = October (PM +25bp 0.655 vs CME hike-bin 0.712, gap 5.7pp, mismatch_flag false). Universe 842.",
+      "note_zh": "下午刷新。扫描 2026-09-24 16:14 CST：市场 842，原始优势 2 条已否（民主党 2028 + 总统胜选 2028 Person 占位），审计后 0，corrected_verdict NO_EDGE。在轨美联储=十月（PM +25bp 0.655 对 CME 加息档 0.712，缺口 5.7pp，mismatch_flag false）。全集 842。"
     }
   ],
   "universe_url": "./universe.json"
