@@ -94,6 +94,8 @@ td{padding:5px 0;border-bottom:1px solid var(--line)}
 .trap .v{color:var(--no)}
 .code{white-space:pre;overflow-x:auto}
 .tiles>*,.board>*,.stats>*{min-width:0}
+#proof{grid-template-columns:repeat(4,1fr)}
+@media(max-width:800px){#proof{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:640px){.log .row{grid-template-columns:1fr}}
 .old{margin-top:56px;padding-top:8px;border-top:1px solid var(--ink)}
 .old h1{font-size:clamp(26px,4vw,36px);margin-top:18px}
@@ -113,6 +115,14 @@ td{padding:5px 0;border-bottom:1px solid var(--line)}
 <h1 data-i="h1_pre">What probability do you have to beat?</h1>
 <p class="lede" data-i="lede_pre">For every liquid Polymarket market: the fee-exact breakeven for buying YES or NO at $1, $100 and $1,000, plus the NegRisk “arbitrages” that are really missing legs. Built for forecasting agents. Free JSON, live paid API.</p>
 <div class="stats" id="stats"></div>
+
+<h2 data-i="h_proof">Evidence: what an agent that skips this check gets wrong right now</h2>
+<div class="stats" id="proof"></div>
+<p class="note" id="proof_hist"></p>
+
+<h2 data-i="h_cheap">Cheapest markets to forecast</h2>
+<div class="scroll"><table class="mk" id="cheap"></table></div>
+<p class="note" data-i="cheap_note">Tightest no-trade band with at least $1,000 resting within 2¢ on both sides. This is where a small forecasting edge survives costs.</p>
 
 <h2 data-i="h_lookup">Look up a market</h2>
 <div class="tools">
@@ -209,6 +219,14 @@ td{padding:5px 0;border-bottom:1px solid var(--line)}
 <script>
 const I = {
   en: {
+    h_proof:"Evidence: what an agent that skips this check gets wrong right now", h_cheap:"Cheapest markets to forecast",
+    cheap_note:"Tightest no-trade band with at least $1,000 resting within 2¢ on both sides. This is where a small forecasting edge survives costs.",
+    pf_eaten:(x)=>`of ${x} liquid markets: a forecast 3pp off the mid still has no +EV trade`,
+    pf_hurdle:(a,b)=>`median distance from mid before either side pays (1 share; ${b} at $1,000)`,
+    pf_fake:(r)=>`NegRisk sets a naive arb bot would buy today. Real arbitrage: ${r}`,
+    pf_fee:"liquid markets where the taker fee alone is ≥ 1pp at the ask",
+    pf_hist:(n,d,avg,real)=>`Tracked over ${n} build${n===1?"":"s"} since ${d}: ${avg} fake arbitrages per build on average, ${real} real ones in total. Full data: v1/proof.json.`,
+    th_why:"Why it is not arbitrage",
     k_pre:"Polymarket pre-trade check", h1_pre:"What probability do you have to beat?",
     lede_pre:"For every liquid Polymarket market: the fee-exact breakeven for buying YES or NO at $1, $100 and $1,000, plus the NegRisk “arbitrages” that are really missing legs. Built for forecasting agents. Free JSON, live paid API.",
     h_lookup:"Look up a market", h_traps:"Looks like arbitrage, isn’t", h_moves:"Moved since the last build", h_agents:"For agents", h_desk:"Desk receipts",
@@ -247,6 +265,14 @@ const I = {
     fed_gap:(d)=>d.fed.gap_pp.toFixed(1)+" pp"
   },
   zh: {
+    h_proof:"证据：不做这一步检查的 agent，此刻会错在哪", h_cheap:"最便宜下注的市场",
+    cheap_note:"不交易带最窄、且两边 2¢ 内各有至少 $1,000 挂单的市场。小幅预测优势只有在这里才不会被成本吃掉。",
+    pf_eaten:(x)=>`在 ${x} 个有流动性的市场里：预测偏离中间价 3pp 仍然没有正期望的交易`,
+    pf_hurdle:(a,b)=>`中位门槛：离中间价多远才值得下单（1 股；$1,000 时为 ${b}）`,
+    pf_fake:(r)=>`个 NegRisk 组会被“天真套利机器人”买入。真正的套利：${r}`,
+    pf_fee:"个有流动性的市场，光 taker 手续费在卖一价就 ≥ 1pp",
+    pf_hist:(n,d,avg,real)=>`自 ${d} 起共 ${n} 次构建：平均每次 ${avg} 个假套利，真套利合计 ${real} 个。完整数据：v1/proof.json。`,
+    th_why:"为什么不是套利",
     k_pre:"Polymarket 下单前检查", h1_pre:"你的概率要高过多少才值得下单？",
     lede_pre:"每个有流动性的 Polymarket 市场：按 $1、$100、$1,000 吃单、扣完手续费后，买 YES 或 NO 的盈亏平衡概率；再加上那些看似套利、其实是缺腿的 NegRisk 组。为预测型 AI agent 设计。免费 JSON，实时付费 API。",
     h_lookup:"查市场", h_traps:"看着像套利，其实不是", h_moves:"比上一次构建变动较大", h_agents:"给 agent 用", h_desk:"研究台回执",
@@ -465,14 +491,14 @@ const pp = x => x==null ? "—" : (x*100).toFixed(1);
 const BAD = new Set(["FEE_UNKNOWN","NEGRISK_INCOMPLETE","PAST_END","NO_BOOK"]);
 function paintFeed(){
   const st = document.getElementById("stats");
-  if(!F){ st.innerHTML = `<div class="stat" style="grid-column:1/-1"><span>${t("no_feed")}</span></div>`; paintAgents(); return; }
+  if(!F){ st.innerHTML = `<div class="stat" style="grid-column:1/-1"><span>${t("no_feed")}</span></div>`; paintProof(); paintAgents(); return; }
   const s = F.stats, h = hoursOld(F.generated_utc);
   const cell = (v,l) => `<div class="stat"><b>${v}</b><span>${l}</span></div>`;
   st.innerHTML = cell(F.coverage.markets, t("st_markets")) +
     cell(s.median_band_width_top==null?"—":pp(s.median_band_width_top)+"pp", t("st_band")) +
     cell(s.fees_on, t("st_fees")) + cell(s.negrisk_incomplete_sets, t("st_traps")) +
     cell(t("ago", h), t("st_age"));
-  paintTable(); paintTraps(); paintMoves(); paintAgents();
+  paintProof(); paintTable(); paintTraps(); paintMoves(); paintAgents();
 }
 function paintTable(){
   const el = document.getElementById("mk");
@@ -496,14 +522,35 @@ function paintTable(){
       `<td class="n">${fee}</td><td class="n">${Math.round(m.depth_usd_2c.yes)}/${Math.round(m.depth_usd_2c.no)}</td><td>${fl}</td></tr>`;
   }).join("");
 }
+
+let P = null;
+function paintProof(){
+  const el = document.getElementById("proof"), hist = document.getElementById("proof_hist"), ch = document.getElementById("cheap");
+  if(!P){ el.innerHTML = `<div class="stat" style="grid-column:1/-1"><span>${t("no_feed")}</span></div>`; hist.textContent=""; ch.innerHTML=""; return; }
+  const s = P.summary, pc = x => x==null ? "—" : Math.round(x*100)+"%";
+  const cell = (v,l) => `<div class="stat"><b>${v}</b><span>${l}</span></div>`;
+  el.innerHTML = cell(pc(s.share_3pp_edge_untradeable), t("pf_eaten", s.liquid_markets)) +
+    cell(pp(s.median_hurdle_top)+"pp", t("pf_hurdle", pp(s.median_hurdle_top), s.median_hurdle_usd1000==null?"—":pp(s.median_hurdle_usd1000)+"pp")) +
+    cell(s.fake_arbs, t("pf_fake", s.real_candidates)) +
+    cell(s.fee_at_ask_over_1pp, t("pf_fee"));
+  const H = P.history || [];
+  if(H.length){
+    const avg = (H.reduce((a,x)=>a+(x.fake||0),0)/H.length).toFixed(1);
+    const real = H.reduce((a,x)=>a+(x.real||0),0);
+    hist.textContent = t("pf_hist", H.length, String(H[0].t||"").slice(0,10), avg, real);
+  }
+  const rows = P.cheapest_to_trade || [];
+  ch.innerHTML = `<tr><th>${t("th_mkt")}</th><th>${t("th_mid")}</th><th>${t("th_yes")}</th><th>${t("th_no")}</th><th>${t("th_band")}</th><th>${t("th_fee")}</th><th>${t("th_depth")}</th></tr>` +
+    rows.map(m=>`<tr><td class="q"><a href="${esc(m.url)}" target="_blank" rel="noopener">${esc(m.title)}</a></td><td class="n">${pp(m.mid)}</td>`+
+      `<td class="n"><b>${pp(m.buy_yes_if_p_above)}</b></td><td class="n"><b>${pp(m.buy_no_if_p_below)}</b></td><td class="n">${pp(m.band)}</td>`+
+      `<td class="n">${m.fee_rate==null?"?":(m.fee_rate*100).toFixed(m.fee_rate*100%1?1:0)+"%"}</td><td class="n">${Math.round(m.depth_usd_2c.yes)}/${Math.round(m.depth_usd_2c.no)}</td></tr>`).join("");
+}
 function paintTraps(){
   const el = document.getElementById("traps");
-  if(!FS){ el.innerHTML = ""; return; }
-  const sets = FS.sets.filter(x=>x.verdict==="INCOMPLETE" && x.buy_set_net!=null && x.buy_set_net<1)
-    .sort((a,b)=>a.buy_set_net-b.buy_set_net).slice(0,6);
-  el.innerHTML = sets.length ? sets.map(x=>`<div class="tile trap"><h3><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a></h3>
-    <div class="v">${x.buy_set_net.toFixed(3)}</div><p>${t("trap_cost")} · ${x.n_live}/${x.n_live + x.n_missing} · ${t("trap_missing")}: ${esc(x.missing.slice(0,4).map(m=>m.label).join(", "))}${x.n_missing>4?"…":""}</p>
-    <p>${esc(x.reason)}</p></div>`).join("") : `<div class="tile"><p>${t("no_traps")}</p></div>`;
+  const list = P ? P.fake_arbs.slice(0,6) : [];
+  el.innerHTML = list.length ? list.map(x=>`<div class="tile trap"><h3><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a></h3>
+    <div class="v">${x.naive_cost.toFixed(3)}</div><p><span class="stamp no">${esc(x.verdict)}</span> +${(x.naive_claimed_profit*100).toFixed(1)}¢/set?</p>
+    <p><b>${t("th_why")}:</b> ${esc(x.why)}</p></div>`).join("") : `<div class="tile"><p>${t("no_traps")}</p></div>`;
 }
 function paintMoves(){
   const el = document.getElementById("moves");
@@ -523,7 +570,7 @@ function paintAgents(){
 function loadFeed(){
   const get = f => fetch("./v1/"+f,{cache:"no-store"}).then(r=>{ if(!r.ok) throw new Error(r.status); return r.json(); });
   get("index.json").then(ix=>{ F=ix; paintFeed();
-    return Promise.all([get("top.json").catch(()=>get("markets.json")).then(x=>FM=x), get("sets.json").then(x=>FS=x).catch(()=>{}), get("changes.json").then(x=>FC=x).catch(()=>{})]);
+    return Promise.all([get("top.json").catch(()=>get("markets.json")).then(x=>FM=x), get("sets.json").then(x=>FS=x).catch(()=>{}), get("changes.json").then(x=>FC=x).catch(()=>{}), get("proof.json").then(x=>P=x).catch(()=>{})]);
   }).then(()=>paintFeed()).catch(()=>{ F=null; paintFeed(); });
 }
 let full = null;

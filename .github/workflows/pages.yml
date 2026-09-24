@@ -41,7 +41,7 @@ jobs:
           if ! node scripts/build-feed.mjs --out docs/v1; then
             echo "::warning::feed build failed; republishing the previous feed"
             mkdir -p docs/v1
-            for f in index markets sets changes; do
+            for f in index markets top sets changes proof; do
               curl -fsS "$SITE_URL/v1/$f.json" -o "docs/v1/$f.json" || true
             done
           fi

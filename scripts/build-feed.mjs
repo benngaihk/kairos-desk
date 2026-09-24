@@ -8,6 +8,7 @@ import { mkdir, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 import { pathToFileURL } from "node:url";
 import { marketRow, auditSet, normBook, feeModel, parseJsonArray, FLAG_DOC, SIZES_USD } from "../lib/pretrade.mjs";
+import { buildProof } from "../lib/proof.mjs";
 
 export const SCHEMA_VERSION = "1.0";
 const GAMMA = "https://gamma-api.polymarket.com";
@@ -69,7 +70,7 @@ export async function fetchBooks(fetchImpl, tokenIds, chunk = 100, concurrency =
 const wantMarket = (m) => m && m.closed !== true && m.enableOrderBook !== false && parseJsonArray(m.clobTokenIds).length === 2;
 
 /** Pure-ish core: everything except file writes. `prev` is the last published markets.json (or null). */
-export async function buildFeed({ fetchImpl = fetch, now = Date.now(), maxEvents = 300, prev = null, paidApiBase = null, siteUrl = null } = {}) {
+export async function buildFeed({ fetchImpl = fetch, now = Date.now(), maxEvents = 300, prev = null, prevProof = null, paidApiBase = null, siteUrl = null } = {}) {
   const events = await fetchEvents(fetchImpl, maxEvents);
   const tokens = [];
   for (const e of events)
@@ -101,8 +102,11 @@ export async function buildFeed({ fetchImpl = fetch, now = Date.now(), maxEvents
   const generated = new Date(now).toISOString();
   const changes = diff(prev, markets, now);
   const index = summarize({ markets, sets, changes, generated, paidApiBase, siteUrl, nEvents: events.length, nBooks: books.size });
+  const proof = buildProof({ markets, sets, generated, prevHistory: prevProof?.history });
+  index.proof = proof.summary;
   return {
     index,
+    proof,
     markets: { schema: SCHEMA_VERSION, generated_utc: generated, n: markets.length, markets },
     sets: { schema: SCHEMA_VERSION, generated_utc: generated, n: sets.length, sets },
     changes,
@@ -179,6 +183,7 @@ export function summarize({ markets, sets, changes, generated, paidApiBase, site
       top: `${base}/top.json`,
       sets: `${base}/sets.json`,
       changes: `${base}/changes.json`,
+      proof: `${base}/proof.json`,
       openapi: siteUrl ? siteUrl.replace(/\/$/, "") + "/openapi.json" : "./openapi.json",
     },
     paid_live_api: paidApiBase
@@ -214,6 +219,11 @@ function diagnostics(feed) {
   console.log(`band_width_top p10/p50/p90: ${bw[Math.floor(bw.length * 0.1)]} / ${bw[Math.floor(bw.length * 0.5)]} / ${bw[Math.floor(bw.length * 0.9)]}; negative: ${bw.filter((x) => x < 0).length}`);
   const fees = by(ms.filter((m) => m.fee.rate !== null), (m) => m.fee.rate);
   console.log("fee rates:", JSON.stringify(fees));
+  const p = feed.proof;
+  console.log("proof:", JSON.stringify(p.summary), `history=${p.history.length}`);
+  for (const x of p.fake_arbs.slice(0, 6)) console.log(`  fake arb ${x.slug}: naive cost ${x.naive_cost} (claims ${x.naive_claimed_profit}/set) -> ${x.verdict}: ${x.why}`);
+  for (const x of p.fee_heavy.slice(0, 4)) console.log(`  fee-heavy ${x.title}: ask ${x.ask}, rate ${x.fee_rate}, fee ${x.fee_at_ask}`);
+  for (const x of p.cheapest_to_trade.slice(0, 6)) console.log(`  cheapest ${x.title}: mid ${x.mid}, band ${x.band}, depth ${x.depth_usd_2c.yes}/${x.depth_usd_2c.no}`);
 }
 
 async function main() {
@@ -225,20 +235,23 @@ async function main() {
   const out = arg("--out", "docs/v1");
   const maxEvents = Number(arg("--max-events", process.env.MAX_EVENTS || 300));
   const siteUrl = process.env.SITE_URL || null;
-  let prev = null;
-  if (siteUrl) {
+  const prevFile = async (f) => {
+    if (!siteUrl) return null;
     try {
-      const r = await fetch(siteUrl.replace(/\/$/, "") + "/v1/markets.json", { headers: { "cache-control": "no-cache" } });
-      if (r.ok) prev = await r.json();
-    } catch {}
-  }
+      const r = await fetch(siteUrl.replace(/\/$/, "") + "/v1/" + f, { headers: { "cache-control": "no-cache" } });
+      return r.ok ? await r.json() : null;
+    } catch {
+      return null;
+    }
+  };
+  const [prev, prevProof] = await Promise.all([prevFile("markets.json"), prevFile("proof.json")]);
   const t0 = Date.now();
-  const feed = await buildFeed({ maxEvents, prev, paidApiBase: process.env.PAID_API_BASE || null, siteUrl });
+  const feed = await buildFeed({ maxEvents, prev, prevProof, paidApiBase: process.env.PAID_API_BASE || null, siteUrl });
   await mkdir(out, { recursive: true });
   const w = (f, o) => writeFile(join(out, f), JSON.stringify(o) + "\n");
   const top = { ...feed.markets, markets: topMarkets(feed.markets.markets, 400) };
   top.n = top.markets.length;
-  await Promise.all([w("index.json", feed.index), w("markets.json", feed.markets), w("top.json", top), w("sets.json", feed.sets), w("changes.json", feed.changes)]);
+  await Promise.all([w("index.json", feed.index), w("markets.json", feed.markets), w("top.json", top), w("sets.json", feed.sets), w("changes.json", feed.changes), w("proof.json", feed.proof)]);
   diagnostics(feed);
   const s = feed.index.stats;
   console.log(
