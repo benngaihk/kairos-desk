@@ -221,9 +221,9 @@ const I = {
   en: {
     h_proof:"Evidence: what an agent that skips this check gets wrong right now", h_cheap:"Cheapest markets to forecast",
     cheap_note:"Tightest no-trade band with at least $1,000 resting within 2¢ on both sides. This is where a small forecasting edge survives costs.",
-    pf_eaten:(x)=>`of ${x} liquid markets: a forecast 3pp off the mid still has no +EV trade`,
-    pf_hurdle:(a,b)=>`median distance from mid before either side pays (1 share; ${b} at $1,000)`,
-    pf_fake:(r)=>`NegRisk sets a naive arb bot would buy today. Real arbitrage: ${r}`,
+    pf_illiq:(n,h)=>`of ${n} markets with a book are illiquid; there the median hurdle is ${h}`,
+    pf_eaten:(n,h)=>`of ${n} liquid markets: a 1pp forecast edge has no +EV trade (median hurdle ${h})`,
+    pf_fake:(r)=>`NegRisk sets that look like free money to a naive arb bot today. Real arbitrage: ${r}`,
     pf_fee:"liquid markets where the taker fee alone is ≥ 1pp at the ask",
     pf_hist:(n,d,avg,real)=>`Tracked over ${n} build${n===1?"":"s"} since ${d}: ${avg} fake arbitrages per build on average, ${real} real ones in total. Full data: v1/proof.json.`,
     th_why:"Why it is not arbitrage",
@@ -234,7 +234,7 @@ const I = {
     ag_free:"Free · static JSON", ag_free_p:"Rebuilt every ~2 hours from Polymarket’s public APIs. No key, no signup.", ag_paid:"Paid · live, any size",
     paid_on:(x)=>`Computed live at the size you ask for. Paid per call in USDC over x402 (HTTP 402); x402-aware agents pay automatically. ${x}`,
     paid_off:"Live endpoints (quote at any size, set audit) are built and waiting to be deployed. Until then, use the free feed.",
-    st_markets:"markets", st_band:"median no-trade band", st_fees:"charge taker fees", st_traps:"fake-arb sets", st_age:"built",
+    st_markets:"markets", st_band:"median no-trade band", st_fees:"charge taker fees", st_traps:"incomplete NegRisk sets", st_age:"built",
     th_mkt:"Market", th_mid:"Mid", th_yes:"Buy YES if p >", th_no:"Buy NO if p <", th_band:"Band", th_fee:"Fee", th_depth:"$ ≤2¢", th_flags:"Flags",
     no_feed:"The agent feed has not been built yet. It is generated on the next Pages deploy.", no_match:"No market matches.",
     no_traps:"No incomplete sets that look like arbitrage in this build.", no_moves:"No moves of 3pp or more since the previous build.",
@@ -267,8 +267,8 @@ const I = {
   zh: {
     h_proof:"证据：不做这一步检查的 agent，此刻会错在哪", h_cheap:"最便宜下注的市场",
     cheap_note:"不交易带最窄、且两边 2¢ 内各有至少 $1,000 挂单的市场。小幅预测优势只有在这里才不会被成本吃掉。",
-    pf_eaten:(x)=>`在 ${x} 个有流动性的市场里：预测偏离中间价 3pp 仍然没有正期望的交易`,
-    pf_hurdle:(a,b)=>`中位门槛：离中间价多远才值得下单（1 股；$1,000 时为 ${b}）`,
+    pf_illiq:(n,h)=>`在 ${n} 个有盘口的市场里缺乏流动性；这些市场的中位门槛是 ${h}`,
+    pf_eaten:(n,h)=>`在 ${n} 个流动市场里：1pp 的预测优势没有正期望交易（中位门槛 ${h}）`,
     pf_fake:(r)=>`个 NegRisk 组会被“天真套利机器人”买入。真正的套利：${r}`,
     pf_fee:"个有流动性的市场，光 taker 手续费在卖一价就 ≥ 1pp",
     pf_hist:(n,d,avg,real)=>`自 ${d} 起共 ${n} 次构建：平均每次 ${avg} 个假套利，真套利合计 ${real} 个。完整数据：v1/proof.json。`,
@@ -280,7 +280,7 @@ const I = {
     ag_free:"免费 · 静态 JSON", ag_free_p:"每约 2 小时用 Polymarket 公开接口重建。不用 key，不用注册。", ag_paid:"付费 · 实时 · 任意规模",
     paid_on:(x)=>`按你给的规模实时计算。按次用 USDC 通过 x402（HTTP 402）付费，支持 x402 的 agent 会自动付款。${x}`,
     paid_off:"实时接口（任意规模报价、互斥组审计）已写好，等待部署。在那之前请用免费 feed。",
-    st_markets:"个市场", st_band:"中位不交易带宽", st_fees:"收 taker 手续费", st_traps:"假套利组", st_age:"构建于",
+    st_markets:"个市场", st_band:"中位不交易带宽", st_fees:"收 taker 手续费", st_traps:"不完整 NegRisk 组", st_age:"构建于",
     th_mkt:"市场", th_mid:"中间价", th_yes:"p > 才买 YES", th_no:"p < 才买 NO", th_band:"带宽", th_fee:"费率", th_depth:"2¢内 $", th_flags:"标记",
     no_feed:"agent feed 还没构建，会在下一次 Pages 部署时生成。", no_match:"没有匹配的市场。",
     no_traps:"本次构建没有看似套利的不完整互斥组。", no_moves:"与上次构建相比没有 ≥3pp 的变动。",
@@ -529,8 +529,8 @@ function paintProof(){
   if(!P){ el.innerHTML = `<div class="stat" style="grid-column:1/-1"><span>${t("no_feed")}</span></div>`; hist.textContent=""; ch.innerHTML=""; return; }
   const s = P.summary, pc = x => x==null ? "—" : Math.round(x*100)+"%";
   const cell = (v,l) => `<div class="stat"><b>${v}</b><span>${l}</span></div>`;
-  el.innerHTML = cell(pc(s.share_3pp_edge_untradeable), t("pf_eaten", s.liquid_markets)) +
-    cell(pp(s.median_hurdle_top)+"pp", t("pf_hurdle", pp(s.median_hurdle_top), s.median_hurdle_usd1000==null?"—":pp(s.median_hurdle_usd1000)+"pp")) +
+  el.innerHTML = cell(pc(s.share_illiquid), t("pf_illiq", s.markets_with_book, pp(s.median_hurdle_illiquid)+"pp")) +
+    cell(pc(s.share_1pp_edge_untradeable), t("pf_eaten", s.liquid_markets, pp(s.median_hurdle_top)+"pp")) +
     cell(s.fake_arbs, t("pf_fake", s.real_candidates)) +
     cell(s.fee_at_ask_over_1pp, t("pf_fee"));
   const H = P.history || [];
