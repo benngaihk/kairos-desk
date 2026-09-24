@@ -29,17 +29,21 @@ test("wide, thin and dust markets are not counted as liquid", () => {
 test("buildProof: fake arbs, fee-heavy markets, cheapest list and appended history", () => {
   const markets = [mk(1, 0.49, 0.51, 5000), mk(5, 0.5, 0.505, 9000, { feesEnabled: false }), mk(6, 0.2, 0.26, 5000)];
   const sets = [
-    { slug: "dem", title: "Dem", url: "u", buy_set_gross: 0.927, buy_set_net: 0.9604, verdict: "INCOMPLETE", n_missing: 75 },
-    { slug: "boe", title: "BoE", url: "u", buy_set_gross: 0.981, buy_set_net: 0.9935, verdict: "TOP_OF_BOOK_ONLY", buy_set_min_top_shares: 5, buy_set_net_100sh: 1.0203 },
-    { slug: "fed", title: "Fed", url: "u", buy_set_gross: 0.99, buy_set_net: 1.013, verdict: "NO_EDGE" },
-    { slug: "fine", title: "Fine", url: "u", buy_set_gross: 1.02, buy_set_net: 1.04, verdict: "NO_EDGE" },
+    { slug: "dem", title: "Dem", url: "u", buy_set_gross: 0.927, buy_set_net: 0.9604, verdict: "INCOMPLETE", n_missing: 75, n_live: 53 },
+    { slug: "boe", title: "BoE", url: "u", buy_set_gross: 0.981, buy_set_net: 0.9935, verdict: "TOP_OF_BOOK_ONLY", buy_set_min_top_shares: 5, buy_set_net_100sh: 1.0203, n_live: 5 },
+    { slug: "fed", title: "Fed", url: "u", buy_set_gross: 0.99, buy_set_net: 1.013, verdict: "NO_EDGE", n_live: 5 },
+    { slug: "fine", title: "Fine", url: "u", buy_set_gross: 1.02, buy_set_net: 1.04, verdict: "NO_EDGE", n_live: 5 },
+    { slug: "seoul-temp", title: "Seoul temp today", url: "u", buy_set_gross: 0.01, buy_set_net: 0.0104, verdict: "INCOMPLETE", n_missing: 1, n_live: 9 },
   ];
   const p = buildProof({ markets, sets, generated: "2026-09-24T00:00:00Z", prevHistory: [{ t: "old" }] });
   assert.equal(p.summary.liquid_markets, 2);
   assert.equal(p.summary.fake_arbs, 3);
-  assert.deepEqual(p.fake_arbs.map((x) => x.slug), ["dem", "boe", "fed"]);
-  assert.match(p.fake_arbs[0].why, /75 outcome/);
-  assert.match(p.fake_arbs[2].why, /fees/);
+  assert.deepEqual(p.fake_arbs.map((x) => x.slug), ["fed", "boe", "dem"], "most convincing (closest to $1) first");
+  assert.equal(p.summary.degenerate_sub_dollar_sets, 1, "settled same-day sets are kept out of the headline");
+  assert.match(p.fake_arbs[2].why, /75 outcome/);
+  assert.match(p.fake_arbs[0].why, /fees/);
+  assert.equal(p.summary.markets_with_book, 3);
+  assert.ok(Math.abs(p.summary.share_illiquid - 1 / 3) < 1e-3);
   assert.equal(p.summary.fee_at_ask_over_1pp, 1);
   assert.equal(p.cheapest_to_trade[0].id, "5"); // no fee, half-cent spread
   assert.equal(p.history.length, 2);
