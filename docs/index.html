@@ -120,6 +120,13 @@ td{padding:5px 0;border-bottom:1px solid var(--line)}
 <div class="stats" id="proof"></div>
 <p class="note" id="proof_hist"></p>
 
+<section id="jev" hidden>
+<h2 data-i="h_jev">Jev paper trades: what a model would buy now (unproven)</h2>
+<p class="note" id="jev_board"></p>
+<div class="scroll"><table class="mk" id="jev_tbl"></table></div>
+<p class="note" id="jev_method"></p>
+</section>
+
 <h2 data-i="h_cheap">Cheapest markets to forecast</h2>
 <div class="scroll"><table class="mk" id="cheap"></table></div>
 <p class="note" data-i="cheap_note">Tightest no-trade band with at least $1,000 resting within 2¢ on both sides. This is where a small forecasting edge survives costs.</p>
@@ -219,6 +226,9 @@ td{padding:5px 0;border-bottom:1px solid var(--line)}
 <script>
 const I = {
   en: {
+    h_jev:"Jev paper trades: what a model would buy now (unproven)",
+    jev_board:(b)=>`${b.forecasts} blind forecasts, ${b.resolved} resolved. Brier: Jev ${b.brier_model??"—"} vs market ${b.brier_market??"—"} (lower is better). Paper trades: ${b.trades} (${b.open_trades} open), P&L $${b.pnl_usd} on ${b.settled_trades} settled${b.roi!=null?", ROI "+(b.roi*100).toFixed(1)+"%":""}.`,
+    th_side:"Side", th_jev:"Jev p", th_edge:"Edge", th_ends:"Ends", no_jev_trades:"No open paper trades: every forecast so far falls inside the no-trade band.",
     h_proof:"Evidence: what an agent that skips this check gets wrong right now", h_cheap:"Cheapest markets to forecast",
     cheap_note:"Tightest no-trade band with at least $1,000 resting within 2¢ on both sides. This is where a small forecasting edge survives costs.",
     pf_illiq:(n,h)=>`of ${n} markets with a book are illiquid; there the median hurdle is ${h}`,
@@ -265,6 +275,9 @@ const I = {
     fed_gap:(d)=>d.fed.gap_pp.toFixed(1)+" pp"
   },
   zh: {
+    h_jev:"Jev 模拟盘：模型现在会买什么（未经验证）",
+    jev_board:(b)=>`盲测预测 ${b.forecasts} 个，已结算 ${b.resolved} 个。Brier：Jev ${b.brier_model??"—"} 对市场 ${b.brier_market??"—"}（越低越好）。模拟单 ${b.trades} 笔（未平 ${b.open_trades}），已结算 ${b.settled_trades} 笔盈亏 $${b.pnl_usd}${b.roi!=null?"，回报 "+(b.roi*100).toFixed(1)+"%":""}。`,
+    th_side:"方向", th_jev:"Jev 概率", th_edge:"优势", th_ends:"结算", no_jev_trades:"暂无模拟单：目前所有预测都落在不交易带里。",
     h_proof:"证据：不做这一步检查的 agent，此刻会错在哪", h_cheap:"最便宜下注的市场",
     cheap_note:"不交易带最窄、且两边 2¢ 内各有至少 $1,000 挂单的市场。小幅预测优势只有在这里才不会被成本吃掉。",
     pf_illiq:(n,h)=>`在 ${n} 个有盘口的市场里缺乏流动性；这些市场的中位门槛是 ${h}`,
@@ -498,7 +511,7 @@ function paintFeed(){
     cell(s.median_band_width_top==null?"—":pp(s.median_band_width_top)+"pp", t("st_band")) +
     cell(s.fees_on, t("st_fees")) + cell(s.negrisk_incomplete_sets, t("st_traps")) +
     cell(t("ago", h), t("st_age"));
-  paintProof(); paintTable(); paintTraps(); paintMoves(); paintAgents();
+  paintProof(); paintJev(); paintTable(); paintTraps(); paintMoves(); paintAgents();
 }
 function paintTable(){
   const el = document.getElementById("mk");
@@ -545,6 +558,21 @@ function paintProof(){
       `<td class="n"><b>${pp(m.buy_yes_if_p_above)}</b></td><td class="n"><b>${pp(m.buy_no_if_p_below)}</b></td><td class="n">${pp(m.band)}</td>`+
       `<td class="n">${m.fee_rate==null?"?":(m.fee_rate*100).toFixed(m.fee_rate*100%1?1:0)+"%"}</td><td class="n">${Math.round(m.depth_usd_2c.yes)}/${Math.round(m.depth_usd_2c.no)}</td></tr>`).join("");
 }
+
+let J = null;
+function paintJev(){
+  const sec = document.getElementById("jev");
+  if(!J){ sec.hidden = true; return; }
+  sec.hidden = false;
+  document.getElementById("jev_board").textContent = t("jev_board", J.scoreboard);
+  document.getElementById("jev_method").innerHTML = esc(J.method) + ` <a href="${esc(J.ledger_url)}">ledger</a> · <a href="./v1/jev.json">v1/jev.json</a>`;
+  const rows = J.open_trades || [];
+  const el = document.getElementById("jev_tbl");
+  if(!rows.length){ el.innerHTML = `<tr><td>${t("no_jev_trades")}</td></tr>`; return; }
+  el.innerHTML = `<tr><th>${t("th_mkt")}</th><th>${t("th_side")}</th><th>${t("th_jev")}</th><th>${t("th_mid")}</th><th>${t("th_yes")}</th><th>${t("th_no")}</th><th>${t("th_edge")}</th><th>${t("th_ends")}</th></tr>` +
+    rows.slice(0,20).map(e=>`<tr><td class="q"><a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.outcome_label && e.event_title ? e.event_title+" — "+e.outcome_label : e.question)}</a><small>${esc(String(e.t).slice(0,16).replace("T"," "))} UTC</small></td>`+
+      `<td class="n"><span class="stamp">${e.side}</span></td><td class="n"><b>${pp(e.p_model)}</b></td><td class="n">${pp(e.mid)}</td><td class="n">${pp(e.buy_yes_if_p_above)}</td><td class="n">${pp(e.buy_no_if_p_below)}</td><td class="n">${pp(e.edge)}</td><td class="n">${esc(String(e.end_date||"").slice(0,10))}</td></tr>`).join("");
+}
 function paintTraps(){
   const el = document.getElementById("traps");
   const list = P ? P.fake_arbs.slice(0,6) : [];
@@ -570,7 +598,7 @@ function paintAgents(){
 function loadFeed(){
   const get = f => fetch("./v1/"+f,{cache:"no-store"}).then(r=>{ if(!r.ok) throw new Error(r.status); return r.json(); });
   get("index.json").then(ix=>{ F=ix; paintFeed();
-    return Promise.all([get("top.json").catch(()=>get("markets.json")).then(x=>FM=x), get("sets.json").then(x=>FS=x).catch(()=>{}), get("changes.json").then(x=>FC=x).catch(()=>{}), get("proof.json").then(x=>P=x).catch(()=>{})]);
+    return Promise.all([get("top.json").catch(()=>get("markets.json")).then(x=>FM=x), get("sets.json").then(x=>FS=x).catch(()=>{}), get("changes.json").then(x=>FC=x).catch(()=>{}), get("proof.json").then(x=>P=x).catch(()=>{}), get("jev.json").then(x=>J=x).catch(()=>{})]);
   }).then(()=>paintFeed()).catch(()=>{ F=null; paintFeed(); });
 }
 let full = null;
