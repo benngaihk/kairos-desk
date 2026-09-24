@@ -1,0 +1,13 @@
+name = "kairos-pretrade"
+main = "src/index.ts"
+compatibility_date = "2026-09-01"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+# Base Sepolia by default so you can test with faucet USDC. For real money:
+#   X402_NETWORK = "eip155:8453" and `wrangler secret put CDP_API_KEY_ID` / `CDP_API_KEY_SECRET`.
+X402_NETWORK = "eip155:84532"
+PRICE_QUOTE = "$0.01"
+PRICE_SET = "$0.02"
+FREE_FEED_URL = "https://benngaihk.github.io/kairos-desk/v1/index.json"
+# PAY_TO is set with `wrangler secret put PAY_TO` (or add it here). Paid routes return 503 until it is set.

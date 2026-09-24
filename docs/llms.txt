@@ -1,0 +1,33 @@
+# Kairos pre-trade desk
+
+> Polymarket pre-trade check for forecasting agents. For every liquid Polymarket market it publishes the fee-exact probability you must beat to buy YES or NO (at 1 share, $100 and $1,000 of book depth), and flags NegRisk sets whose apparent arbitrage is really a missing, untradeable leg. Free static JSON, rebuilt about every 2 hours. A live API that works at any size, paid per call over x402 (USDC), is optional.
+
+Use it when you have a probability for a Polymarket outcome and need to know whether trading it is +EV after taker fees, spread and slippage. It is data, not trading advice.
+
+## Decision rule
+
+- Buy YES only if your p(YES) > `thresholds.<size>.buy_yes_if_p_above`
+- Buy NO only if your p(YES) < `thresholds.<size>.buy_no_if_p_below`
+- Otherwise do nothing: you are inside the no-trade band.
+- `<size>` is one of `top` (1 share at best ask), `usd100`, `usd1000`. `null` means the book cannot fill that size, or the fee rate is unknown. The feed never assumes a fee of 0.
+- Fee model: fee_per_share = rate × (p × (1 − p)) ^ exponent. Taker only; `rate` comes from each market's `feeSchedule`.
+- Never treat the sum of asks across a NegRisk set as an arbitrage when the market carries `NEGRISK_INCOMPLETE`. Check `sets.json`.
+
+## Free feed (no key)
+
+- [index.json](https://benngaihk.github.io/kairos-desk/v1/index.json): build time, coverage, stats, flag glossary, and the paid API base once it is deployed
+- [markets.json](https://benngaihk.github.io/kairos-desk/v1/markets.json): one row per market with `id`, `slug`, `question`, `yes_token`, `no_token`, `bid`, `ask`, `mid`, `fee`, `thresholds`, `depth_usd_2c`, `flags`
+- [sets.json](https://benngaihk.github.io/kairos-desk/v1/sets.json): NegRisk set audits with `verdict` INCOMPLETE | NO_EDGE | CANDIDATE | FEE_UNKNOWN, full-set cost after fees, and the missing legs
+- [changes.json](https://benngaihk.github.io/kairos-desk/v1/changes.json): mids that moved 3pp or more since the previous build, and flag changes
+- [openapi.json](https://benngaihk.github.io/kairos-desk/openapi.json): schema for all of the above plus the paid endpoints
+
+## Paid live API (x402)
+
+- `GET /v1/quote?market=<slug|id>&usd=<n>`: live book walk at your size, returning buy_yes_if_p_above and buy_no_if_p_below. $0.01 per call.
+- `GET /v1/set?event=<slug>&shares=<n>`: live NegRisk completeness check and full-set cost. $0.02 per call.
+- An unpaid request returns HTTP 402 with a `PAYMENT-REQUIRED` header. Any x402 client pays in USDC and retries. The base URL is listed in index.json under `paid_live_api` once it is live.
+
+## Research receipts
+
+- [desk.json](https://benngaihk.github.io/kairos-desk/desk.json): the human research desk. It holds the Polymarket vs CME-FedWatch definition-matched Fed gap and freeze-vs-print scorecards for CPI, NFP and FOMC.
+- [history.json](https://benngaihk.github.io/kairos-desk/history.json): append-only snapshot index. Commit times prove pre-print freezes.
