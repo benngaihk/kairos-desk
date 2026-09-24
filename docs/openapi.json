@@ -577,6 +577,7 @@
             "enum": [
               "INCOMPLETE",
               "NO_EDGE",
+              "TOP_OF_BOOK_ONLY",
               "CANDIDATE",
               "FEE_UNKNOWN"
             ]

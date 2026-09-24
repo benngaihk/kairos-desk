@@ -80,6 +80,20 @@ test("complete Fed-style set over $1 after fees is NO_EDGE", () => {
   assert.ok(s.buy_set_net > 1.04);
 });
 
+test("sub-$1 set that only holds at the best asks is TOP_OF_BOOK_ONLY (BoE Nov case)", () => {
+  // Top of book sums under $1, but one leg has 5 shares and the next level is far higher.
+  const L = (id, levels) => ({
+    market: { id, groupItemTitle: String(id), active: true, closed: false, acceptingOrders: true, enableOrderBook: true },
+    yesBook: normBook({ bids: [], asks: levels.map(([p, sz]) => ({ price: String(p), size: String(sz) })) }),
+    fee: { rate: 0, exponent: 1 },
+  });
+  const s = auditSet({ id: 4, slug: "boe", title: "BoE" }, [L(1, [[0.3, 500]]), L(2, [[0.3, 500]]), L(3, [[0.381, 5], [0.45, 500]])]);
+  assert.equal(s.verdict, "TOP_OF_BOOK_ONLY");
+  assert.ok(s.buy_set_net < 1);
+  assert.ok(s.buy_set_net_100sh > 1);
+  assert.match(s.reason, /at most \$0\.10\b/);
+});
+
 test("complete set under $1 after fees is only a CANDIDATE", () => {
   const s = auditSet({ id: 3, slug: "x", title: "x" }, [leg(1, "A", 0.3), leg(2, "B", 0.3), leg(3, "C", 0.3)]);
   assert.equal(s.verdict, "CANDIDATE");
@@ -143,6 +157,9 @@ test("buildFeed end-to-end against mocked Gamma + CLOB", async () => {
   assert.equal(f.index.coverage.markets, 3);
   assert.ok(f.index.how_to_use.length > 0);
 
+  const wide = structuredClone(f.markets);
+  Object.assign(wide.markets.find((m) => m.id === "c"), { mid: 0.5, spread: 0.9 });
+  assert.equal(diff(wide, f.markets.markets, Date.now()).moves.length, 0, "moves on a wide book are noise");
   const moved = structuredClone(f.markets);
   moved.markets.find((m) => m.id === "c").mid = 0.2;
   const d = diff(moved, f.markets.markets, Date.now());

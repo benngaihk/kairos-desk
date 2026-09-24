@@ -18,7 +18,7 @@ Use it when you have a probability for a Polymarket outcome and need to know whe
 - [index.json](https://benngaihk.github.io/kairos-desk/v1/index.json): build time, coverage, stats, flag glossary, and the paid API base once it is deployed
 - [markets.json](https://benngaihk.github.io/kairos-desk/v1/markets.json): one row per market with `id`, `slug`, `question`, `yes_token`, `no_token`, `bid`, `ask`, `mid`, `fee`, `thresholds`, `depth_usd_2c`, `flags`
 - [top.json](https://benngaihk.github.io/kairos-desk/v1/top.json): same rows, only the 400 busiest non-dust markets (small; good default)
-- [sets.json](https://benngaihk.github.io/kairos-desk/v1/sets.json): NegRisk set audits with `verdict` INCOMPLETE | NO_EDGE | CANDIDATE | FEE_UNKNOWN, full-set cost after fees, and the missing legs
+- [sets.json](https://benngaihk.github.io/kairos-desk/v1/sets.json): NegRisk set audits with `verdict` INCOMPLETE | NO_EDGE | TOP_OF_BOOK_ONLY | CANDIDATE | FEE_UNKNOWN (CANDIDATE requires the set to cost < $1 at 100 shares per leg), full-set cost after fees, and the missing legs
 - [changes.json](https://benngaihk.github.io/kairos-desk/v1/changes.json): mids that moved 3pp or more since the previous build, and flag changes
 - [openapi.json](https://benngaihk.github.io/kairos-desk/openapi.json): schema for all of the above plus the paid endpoints
 
