@@ -216,6 +216,17 @@
       "pre_print": [],
       "note_en": "Afternoon refresh. Scan 2026-09-24 16:14 CST: markets 842, raw_edges 2 rejected (democratic-2028 + presidential-winner-2028 Person-placeholders), after_audit 0, corrected_verdict NO_EDGE. Live Fed = October (PM +25bp 0.655 vs CME hike-bin 0.712, gap 5.7pp, mismatch_flag false). Universe 842.",
       "note_zh": "下午刷新。扫描 2026-09-24 16:14 CST：市场 842，原始优势 2 条已否（民主党 2028 + 总统胜选 2028 Person 占位），审计后 0，corrected_verdict NO_EDGE。在轨美联储=十月（PM +25bp 0.655 对 CME 加息档 0.712，缺口 5.7pp，mismatch_flag false）。全集 842。"
+    },
+    {
+      "id": "2026-09-25-1040",
+      "as_of_cst": "2026-09-25 10:01 CST",
+      "published_cst": "2026-09-25 10:40 CST",
+      "after_audit": 0,
+      "url": "./history/2026-09-25-1040.json",
+      "kind": "scan",
+      "pre_print": [],
+      "note_en": "Morning refresh. Scan 2026-09-25 10:01 CST: markets 1016, raw_edges 2 rejected (democratic-2028 + republican-2028 Person-placeholders), after_audit 0, corrected_verdict NO_EDGE. Live Fed = October (PM +25bp 0.665 vs CME hike-bin 0.735, gap 7.0pp, mismatch_flag false). Universe 1016.",
+      "note_zh": "上午刷新。扫描 2026-09-25 10:01 CST：市场 1016，原始优势 2 条已否（民主党 2028 + 共和党 2028 Person 占位），审计后 0，corrected_verdict NO_EDGE。在轨美联储=十月（PM +25bp 0.665 对 CME 加息档 0.735，缺口 7.0pp，mismatch_flag false）。全集 1016。"
     }
   ],
   "universe_url": "./universe.json"
