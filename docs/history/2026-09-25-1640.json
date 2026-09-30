@@ -1,0 +1,656 @@
+{
+  "as_of_cst": "2026-09-25 16:03 CST",
+  "as_of_utc": "2026-09-25T08:03:53.158001Z",
+  "question_en": "Is there a fee-adjusted Polymarket edge?",
+  "question_zh": "Polymarket 上有没有扣完费的优势？",
+  "verdict": "NO",
+  "signal": "LOW",
+  "headline_en": "0 after audit · Oct Fed gap 9.3pp",
+  "headline_zh": "审计后 0 条 · 十月美联储缺口 9.3pp",
+  "sub_en": "582 markets scanned. 1 raw “edge.” 0 survived fees and a full exclusive set. Economic mismatch flag: PM +25bp mid 0.665 vs CME hike-bin 0.758 (gap 9.3pp).",
+  "sub_zh": "扫描 582 个市场。原始“优势” 1 条。扣费且互斥组完整后 0 条。经济错配标记：PM +25bp mid 0.665 对 CME 加息档 0.758（缺口 9.3pp）。",
+  "json_url": "https://benngaihk.github.io/kairos-desk/desk.json",
+  "history_url": "https://benngaihk.github.io/kairos-desk/history.json",
+  "fee": {
+    "formula": "fee = C × feeRate × p × (1 − p)",
+    "rebate": "maker rebate ignored (not immediate)",
+    "docs": "https://docs.polymarket.com/trading/fees",
+    "note_en": "Use each market’s feeSchedule.rate when feesEnabled. Never assume 0.",
+    "note_zh": "feesEnabled 时用该市场 feeSchedule.rate，不默认 0。"
+  },
+  "fed": {
+    "event_en": "FOMC 28 Oct",
+    "event_zh": "10月28日 FOMC",
+    "slug": "fed-decision-in-october-20260617190323537",
+    "url": "https://polymarket.com/event/fed-decision-in-october-20260617190323537",
+    "pm_hike25": 0.665,
+    "pm_hold": 0.325,
+    "cme_hike_bin": 0.758,
+    "cme_hold_bin": 0.242,
+    "cme_future": 96.105,
+    "cme_asof_utc": "2026-09-25T07:45:00Z",
+    "cme_source": "Investing Fed rate monitor PRIMARY / ZQV26 96.105 (Altınla bins post-FOMC secondary)",
+    "gap_pp": 9.3,
+    "mismatch_flag": true,
+    "negrisk_gross": 1.021,
+    "negrisk_net_cps": 1.0441509999999998,
+    "fee_rate": 0.05,
+    "fee_rate_src": "feeSchedule.rate",
+    "books": {
+      "hike25": {
+        "bid": 0.66,
+        "ask": 0.67,
+        "mid": 0.665,
+        "n_bids": 52,
+        "n_asks": 27
+      },
+      "hold": {
+        "bid": 0.32,
+        "ask": 0.33,
+        "mid": 0.325,
+        "n_bids": 28,
+        "n_asks": 58
+      },
+      "hike50": {
+        "bid": 0.012,
+        "ask": 0.013,
+        "mid": 0.0125,
+        "n_bids": 11,
+        "n_asks": 82
+      },
+      "cut25": {
+        "bid": 0.004,
+        "ask": 0.005,
+        "mid": 0.0045000000000000005,
+        "n_bids": 4,
+        "n_asks": 80
+      },
+      "cut50": {
+        "bid": 0.002,
+        "ask": 0.003,
+        "mid": 0.0025,
+        "n_bids": 2,
+        "n_asks": 79
+      }
+    },
+    "note_en": "October watch. PM exclusive +25bp mid 0.665 vs CME-method hike-bin 0.758 (gap 9.3pp) — mismatch_flag true (≥~8–10pp). Buying the whole NegRisk set costs 1.0442 after 5% fees — no edge. September FOMC resolved +25bp; prior mismatch retired.",
+    "note_zh": "十月观察。PM 独家 +25bp mid 0.665 对 CME 方法加息档 0.758（缺口 9.3 个百分点）——错配标记 true（≥约 8–10pp）。整组 NegRisk 扣 5% 费后成本 1.0442，无边。九月 FOMC 已公布 +25bp，先前错配已退役。",
+    "recheck_en": "Re-check if: (1) contracts are definition-matched, AND (2) NegRisk net cost/share < 1 after live feeSchedule, AND (3) the expensive legs still have size, OR |PM−CME gap| ≥ ~8–10pp on matched bins.",
+    "recheck_zh": "重检条件：定义对齐，且 NegRisk 扣现费后净成本 < 1，且贵的那几条仍有深度；或对齐档上 |PM−CME| 缺口 ≥ 约 8–10 个百分点。"
+  },
+  "receipt": {
+    "title": "Republican Presidential Nominee 2028",
+    "slug": "republican-presidential-nominee-2028",
+    "url": "https://polymarket.com/event/republican-presidential-nominee-2028",
+    "event_id": "31875",
+    "captured_utc": "2026-09-25T08:03:53.158001Z",
+    "method": "negrisk_exclusive_yes_sum",
+    "fee_rate": 0.04,
+    "fee_rate_src": "feeSchedule.rate",
+    "feesEnabled": true,
+    "C": 10.0,
+    "n_outcomes_with_ask": 42,
+    "n_markets_in_event_est": 128,
+    "missing": "Person-* / Other inactive placeholder legs (incomplete exclusive-Yes partition)",
+    "gross_ask_sum": 0.8900000000000002,
+    "net_cost_per_share": 0.9140560000000002,
+    "raw_edge_per_share": 0.0859439999999998,
+    "verdict": "REJECTED",
+    "reason_en": "Scanner/watch counted 42 named asks only. Inactive Person-*/Other legs mean the exclusive set is incomplete. Apparent fee-adjusted edge is a missing-outcome artifact, not a misprice.",
+    "reason_zh": "只计入 42 条具名卖一。未激活的 Person-*/Other 腿使互斥组不完整。表面上的扣费后优势是缺腿，不是错价。",
+    "recheck_en": "Re-check if every required nominee (including Person-*/Other placeholders that can still win) shows a live ask, the set is exhaustive vs the event market count, and sum(ask)+fees < 1 with displayed size on every leg.",
+    "recheck_zh": "重检条件：每个必须覆盖的提名人（含仍可能胜出的 Person-*/Other）都有卖一、集合相对事件市场数穷尽、每条有深度，且 ask+费 < 1。",
+    "legs": [
+      {
+        "label": "Donald Trump",
+        "ask": 0.021,
+        "fee": 0.00822,
+        "size": 42373.43,
+        "market_id": "561973"
+      },
+      {
+        "label": "J.D. Vance",
+        "ask": 0.511,
+        "fee": 0.09995,
+        "size": 27088.91,
+        "market_id": "561974"
+      },
+      {
+        "label": "Marco Rubio",
+        "ask": 0.154,
+        "fee": 0.05211,
+        "size": 4385.38,
+        "market_id": "561975"
+      },
+      {
+        "label": "Tulsi Gabbard",
+        "ask": 0.006,
+        "fee": 0.00239,
+        "size": 10175.76,
+        "market_id": "561976"
+      },
+      {
+        "label": "Glenn Youngkin",
+        "ask": 0.005,
+        "fee": 0.00199,
+        "size": 615.29,
+        "market_id": "561977"
+      },
+      {
+        "label": "Donald Trump Jr.",
+        "ask": 0.02,
+        "fee": 0.00784,
+        "size": 2642.39,
+        "market_id": "561978"
+      },
+      {
+        "label": "Ron DeSantis",
+        "ask": 0.029,
+        "fee": 0.01126,
+        "size": 4400.96,
+        "market_id": "561979"
+      },
+      {
+        "label": "Nikki Haley",
+        "ask": 0.002,
+        "fee": 0.0008,
+        "size": 96937.29,
+        "market_id": "561980"
+      },
+      {
+        "label": "Vivek Ramaswamy",
+        "ask": 0.003,
+        "fee": 0.0012,
+        "size": 29809.68,
+        "market_id": "561981"
+      },
+      {
+        "label": "Sarah Huckabee Sanders",
+        "ask": 0.001,
+        "fee": 0.0004,
+        "size": 672108.47,
+        "market_id": "561982"
+      },
+      {
+        "label": "Greg Abbott",
+        "ask": 0.003,
+        "fee": 0.0012,
+        "size": 212.89,
+        "market_id": "561983"
+      },
+      {
+        "label": "Robert F. Kennedy Jr.",
+        "ask": 0.003,
+        "fee": 0.0012,
+        "size": 52729.92,
+        "market_id": "561984"
+      },
+      {
+        "label": "Brian Kemp",
+        "ask": 0.004,
+        "fee": 0.00159,
+        "size": 20332.32,
+        "market_id": "561985"
+      },
+      {
+        "label": "Byron Donalds",
+        "ask": 0.003,
+        "fee": 0.0012,
+        "size": 162017.87,
+        "market_id": "561986"
+      },
+      {
+        "label": "Elise Stefanik",
+        "ask": 0.002,
+        "fee": 0.0008,
+        "size": 170493.86,
+        "market_id": "561987"
+      },
+      {
+        "label": "Josh Hawley",
+        "ask": 0.004,
+        "fee": 0.00159,
+        "size": 82046.8,
+        "market_id": "561988"
+      },
+      {
+        "label": "Ted Cruz",
+        "ask": 0.021,
+        "fee": 0.00822,
+        "size": 5339.05,
+        "market_id": "561989"
+      },
+      {
+        "label": "Elon Musk",
+        "ask": 0.002,
+        "fee": 0.0008,
+        "size": 481856.85,
+        "market_id": "561990"
+      },
+      {
+        "label": "Matt Gaetz",
+        "ask": 0.001,
+        "fee": 0.0004,
+        "size": 564586.53,
+        "market_id": "561991"
+      },
+      {
+        "label": "Katie Britt",
+        "ask": 0.003,
+        "fee": 0.0012,
+        "size": 37855.73,
+        "market_id": "561992"
+      },
+      {
+        "label": "John Thune",
+        "ask": 0.001,
+        "fee": 0.0004,
+        "size": 1479072.44,
+        "market_id": "561993"
+      },
+      {
+        "label": "Kristi Noem",
+        "ask": 0.002,
+        "fee": 0.0008,
+        "size": 651802.87,
+        "market_id": "561994"
+      },
+      {
+        "label": "Mike Pence",
+        "ask": 0.002,
+        "fee": 0.0008,
+        "size": 892586.43,
+        "market_id": "561995"
+      },
+      {
+        "label": "Tucker Carlson",
+        "ask": 0.036,
+        "fee": 0.01388,
+        "size": 4478.88,
+        "market_id": "561996"
+      },
+      {
+        "label": "Ivanka Trump",
+        "ask": 0.009,
+        "fee": 0.00357,
+        "size": 6268.69,
+        "market_id": "561998"
+      },
+      {
+        "label": "Tom Brady",
+        "ask": 0.001,
+        "fee": 0.0004,
+        "size": 150385.86,
+        "market_id": "561999"
+      },
+      {
+        "label": "Rand Paul",
+        "ask": 0.003,
+        "fee": 0.0012,
+        "size": 219726.55,
+        "market_id": "562000"
+      },
+      {
+        "label": "Steve Bannon",
+        "ask": 0.002,
+        "fee": 0.0008,
+        "size": 14276.0,
+        "market_id": "562001"
+      },
+      {
+        "label": "Erika Kirk",
+        "ask": 0.001,
+        "fee": 0.0004,
+        "size": 102493.77,
+        "market_id": "562002"
+      },
+      {
+        "label": "Kim Kardashian",
+        "ask": 0.002,
+        "fee": 0.0008,
+        "size": 228446.81,
+        "market_id": "562003"
+      },
+      {
+        "label": "Marjorie Taylor Greene",
+        "ask": 0.004,
+        "fee": 0.00159,
+        "size": 50589.29,
+        "market_id": "562004"
+      },
+      {
+        "label": "Thomas Massie",
+        "ask": 0.008,
+        "fee": 0.00317,
+        "size": 20723.65,
+        "market_id": "562005"
+      },
+      {
+        "label": "Eric Trump",
+        "ask": 0.002,
+        "fee": 0.0008,
+        "size": 9438.77,
+        "market_id": "562006"
+      },
+      {
+        "label": "Joe Kent",
+        "ask": 0.002,
+        "fee": 0.0008,
+        "size": 76390.67,
+        "market_id": "562007"
+      },
+      {
+        "label": "Pete Hegseth",
+        "ask": 0.006,
+        "fee": 0.00239,
+        "size": 12206.62,
+        "market_id": "562008"
+      },
+      {
+        "label": "Candace Owens",
+        "ask": 0.003,
+        "fee": 0.0012,
+        "size": 727970.92,
+        "market_id": "562009"
+      },
+      {
+        "label": "Tim Scott",
+        "ask": 0.001,
+        "fee": 0.0004,
+        "size": 858920.24,
+        "market_id": "562010"
+      },
+      {
+        "label": "Mike Johnson",
+        "ask": 0.001,
+        "fee": 0.0004,
+        "size": 978758.04,
+        "market_id": "562011"
+      },
+      {
+        "label": "Doug Burgum",
+        "ask": 0.001,
+        "fee": 0.0004,
+        "size": 477296.92,
+        "market_id": "562012"
+      },
+      {
+        "label": "Tom Cotton",
+        "ask": 0.002,
+        "fee": 0.0008,
+        "size": 90069.45,
+        "market_id": "562013"
+      },
+      {
+        "label": "John N. Kennedy",
+        "ask": 0.002,
+        "fee": 0.0008,
+        "size": 643366.11,
+        "market_id": "562014"
+      },
+      {
+        "label": "Rick Scott",
+        "ask": 0.001,
+        "fee": 0.0004,
+        "size": 461084.71,
+        "market_id": "562015"
+      }
+    ]
+  },
+  "scan": {
+    "markets": 582,
+    "raw_edges": 1,
+    "after_audit": 0,
+    "near_misses": 221,
+    "raw_verdict": "EDGE_FOUND",
+    "corrected_verdict": "ECON_MISMATCH",
+    "captured_utc": "2026-09-25T08:03:53.158001Z",
+    "near_miss_filter_en": "Raw near-misses are Yes+No (or exclusive-set) net within a few cents of $1. Most are longshot dust. Watch list keeps incomplete partitions and the live Fed book.",
+    "near_miss_filter_zh": "原始近失是 Yes+No（或互斥组）扣费后净成本离 $1 只差几分。多数是长尾尘埃。观察名单只留分区不完整、以及在轨的美联储盘。",
+    "completeness_tested": 572,
+    "negrisk_tested": 10,
+    "n_unique_market_ids": 572,
+    "universe_sha256": "ee06545f26978e99bd3c5206a5b206f58ce17ffa8669e2ca00c89e4db8726d40",
+    "count_rule_en": "582 = 572 Yes/No books + 10 NegRisk events. Full set in universe.json.",
+    "count_rule_zh": "582 = 572 个 Yes/No 盘 + 10 个 NegRisk 事件。全集在 universe.json。"
+  },
+  "scorecards": {
+    "cpi": {
+      "print_en": "11 Sep CPI",
+      "print_zh": "9月11日 CPI",
+      "freeze_utc": "2026-09-11T10:39:11Z",
+      "freeze_cst": "2026-09-11 18:39 CST",
+      "hits": 3,
+      "n": 4,
+      "note_en": "Internal T−2h freeze 11 Sep 18:39 CST; first public copy 14 Sep. n=1 day. Not a track record.",
+      "note_zh": "内部 T−2h 冻结 9/11 18:39 CST；第一次公开是 9/14。n=1，不是战绩。",
+      "rows": [
+        {
+          "name_en": "H YoY",
+          "name_zh": "整体同比",
+          "slug": "august-inflation-us-annual-1786474662954",
+          "modal": "3.4%",
+          "freeze_p": 0.485,
+          "bid": 0.48,
+          "ask": 0.49,
+          "actual": "3.4%",
+          "result": "WIN"
+        },
+        {
+          "name_en": "H MoM",
+          "name_zh": "整体环比",
+          "slug": "august-inflation-us-monthly-1786474662954",
+          "modal": "0.4%",
+          "freeze_p": 0.53,
+          "bid": 0.52,
+          "ask": 0.54,
+          "actual": "0.4%",
+          "result": "WIN"
+        },
+        {
+          "name_en": "C YoY",
+          "name_zh": "核心同比",
+          "slug": "core-cpi-yoy-august-2026-1786474662954",
+          "modal": "2.4%",
+          "freeze_p": 0.49,
+          "bid": 0.47,
+          "ask": 0.51,
+          "actual": "2.4%",
+          "result": "WIN"
+        },
+        {
+          "name_en": "C MoM",
+          "name_zh": "核心环比",
+          "slug": "core-cpi-mom-august-2026-1786474662954",
+          "modal": "0.2%",
+          "freeze_p": 0.675,
+          "bid": 0.66,
+          "ask": 0.69,
+          "actual": "0.3%",
+          "result": "LOSE"
+        }
+      ],
+      "public_before_print": false,
+      "first_public_commit": "c32856a"
+    },
+    "nfp": {
+      "print_en": "4 Sep jobs",
+      "print_zh": "9月4日非农",
+      "freeze_utc": "2026-09-04T10:23:56Z",
+      "freeze_cst": "2026-09-04 18:24 CST",
+      "hits": 1,
+      "n": 2,
+      "note_en": "Internal T−2h freeze 4 Sep 18:24 CST; first public copy 14 Sep. Street +56k. Print +162k landed in 150k+.",
+      "note_zh": "内部 T−2h 冻结 9/4 18:24 CST；第一次公开是 9/14。街上 +56k。公布 +162k 落在 150k+。",
+      "rows": [
+        {
+          "name_en": "NFP",
+          "name_zh": "非农",
+          "slug": "how-many-jobs-added-in-august-1786116586124",
+          "modal": "0–50k",
+          "freeze_p": 0.38,
+          "actual": "+162k",
+          "result": "LOSE",
+          "bid": 0.35,
+          "ask": 0.41,
+          "consensus": "+56k",
+          "consensus_bucket": "50–100k",
+          "consensus_p": 0.305
+        },
+        {
+          "name_en": "U-3",
+          "name_zh": "失业率",
+          "slug": "august-unemployment-rate-1786116586124",
+          "modal": "4.1%",
+          "freeze_p": 0.41,
+          "actual": "4.1%",
+          "result": "WIN",
+          "bid": 0.4,
+          "ask": 0.42
+        }
+      ],
+      "public_before_print": false,
+      "first_public_commit": "c32856a"
+    },
+    "fomc": {
+      "print_en": "15–16 Sep FOMC",
+      "print_zh": "9月15–16日 FOMC",
+      "freeze_utc": "2026-09-16T08:06:25.952564Z",
+      "freeze_cst": "2026-09-16 16:06 CST",
+      "public_freeze_id": "2026-09-16-1637",
+      "public_before_print": true,
+      "hits": 1,
+      "n": 1,
+      "note_en": "Public pre-print freezes 14–16 Sep (last 2026-09-16-1637). Official +25bp. Countable freeze-vs-print starts here. Mismatch watch retired post-print.",
+      "note_zh": "9/14–16 公开事前冻结（末次 2026-09-16-1637）。官方 +25bp。可计分冻盘对公布从此开始。错配观察在公布后退役。",
+      "rows": [
+        {
+          "name_en": "+25bp",
+          "name_zh": "+25bp",
+          "slug": "fed-decision-in-september-762",
+          "modal": "+25bp",
+          "freeze_p": 0.875,
+          "bid": 0.87,
+          "ask": 0.88,
+          "cme_bin": 0.964,
+          "actual": "+25bp",
+          "result": "WIN"
+        },
+        {
+          "name_en": "Hold",
+          "name_zh": "维持",
+          "slug": "fed-decision-in-september-762",
+          "modal": "hold",
+          "freeze_p": 0.125,
+          "bid": 0.12,
+          "ask": 0.13,
+          "cme_bin": 0.036,
+          "actual": "no",
+          "result": "LOSE_as_modal_was_hike"
+        }
+      ],
+      "official": "+25bp to 3.75–4.00% (unanimous); effective 2026-09-17",
+      "freeze_gap_pp": 8.9,
+      "freeze_mismatch_flag": true
+    }
+  },
+  "upcoming": [
+    {
+      "id": "fomc-sep",
+      "en": "FOMC Sep",
+      "zh": "9月FOMC",
+      "when": "15–16 Sep",
+      "status": "RESOLVED",
+      "print": "+25bp",
+      "public_freeze": true,
+      "public_freeze_id": "2026-09-16-1637"
+    },
+    {
+      "id": "fomc-oct",
+      "en": "FOMC Oct",
+      "zh": "10月FOMC",
+      "when": "28 Oct",
+      "status": "NEXT"
+    },
+    {
+      "id": "nfp",
+      "en": "Sep NFP",
+      "zh": "9月非农",
+      "when": "2 Oct",
+      "status": "NEXT"
+    },
+    {
+      "id": "cpi",
+      "en": "Sep CPI",
+      "zh": "9月CPI",
+      "when": "14 Oct",
+      "status": "NEXT"
+    }
+  ],
+  "method": {
+    "en": "Audit, not a teaser. Scan exclusive NegRisk Yes-asks; reject any incomplete partition; apply that market’s feeSchedule.rate (fee = C × rate × p × (1−p); rebate ignored). A Fed gap counts only if contracts are definition-matched. Scorecards freeze T−2h modal Yes mid vs BLS first print. Engine stays private; every number on this page is in desk.json.",
+    "zh": "这是审计，不是预告页。扫互斥 NegRisk 的 Yes 卖一；分区不完整就否；用该市场 feeSchedule.rate（fee = C × rate × p × (1−p)，忽略返佣）。利率缺口只在定义对齐时才算。记分卡用 T−2h 众数 Yes mid 对 BLS 首次。引擎不公开；这页每个数都在 desk.json。"
+  },
+  "stale_after_hours": 36,
+  "publish_log": "https://github.com/benngaihk/kairos-desk/commits/main",
+  "watch": [
+    {
+      "id": "dem-2028-negrisk",
+      "title": "Democratic Presidential Nominee 2028",
+      "url": "https://polymarket.com/event/democratic-presidential-nominee-2028",
+      "net_cps": 0.9840823045267492,
+      "threshold": 1.0,
+      "distance_cps": -0.015917695473250837,
+      "missing_en": "NegRisk net_cps 0.9841 after fees — Person-placeholder / incomplete partition (53 named asks), not a clean fee-adjusted edge.",
+      "missing_zh": "NegRisk 净成本 0.9841（扣费后）——Person 占位 / 分区不完整（计入 53 条具名卖一），不是干净的扣费后优势。",
+      "distance_en": "Not a price miss — required outcomes are off the live exclusive set (apparent under-$1 is a missing-leg artifact).",
+      "distance_zh": "不是价差，是缺腿（表面上低于 $1 是缺腿假象）。",
+      "recheck_en": "When the exclusive set is exhaustive AND net cost/share < 1 after live feeSchedule AND expensive legs still have size.",
+      "recheck_zh": "互斥组穷尽，且扣现费后净成本 < 1，且贵的腿仍有深度。"
+    },
+    {
+      "id": "rep-2028-negrisk",
+      "title": "Republican Presidential Nominee 2028",
+      "url": "https://polymarket.com/event/republican-presidential-nominee-2028",
+      "net_cps": 0.9140560000000002,
+      "threshold": 1.0,
+      "distance_cps": -0.0859439999999998,
+      "missing_en": "NegRisk net_cps 0.9141 after fees — Person-placeholder / incomplete partition (42 named asks of ~128 markets), not a clean fee-adjusted edge.",
+      "missing_zh": "NegRisk 净成本 0.9141（扣费后）——Person 占位 / 分区不完整（约 128 个市场只计入 42 条具名卖一），不是干净的扣费后优势。",
+      "distance_en": "Not a price miss — required outcomes are off the live exclusive set (apparent under-$1 is a missing-leg artifact).",
+      "distance_zh": "不是价差，是缺腿（表面上低于 $1 是缺腿假象）。",
+      "recheck_en": "When the exclusive set is exhaustive AND net cost/share < 1 after live feeSchedule AND expensive legs still have size.",
+      "recheck_zh": "互斥组穷尽，且扣现费后净成本 < 1，且贵的腿仍有深度。"
+    },
+    {
+      "id": "fed-oct-negrisk",
+      "title": "Fed Decision in October?",
+      "url": "https://polymarket.com/event/fed-decision-in-october-20260617190323537",
+      "net_cps": 1.0441509999999998,
+      "threshold": 1.0,
+      "distance_cps": 0.04415099999999983,
+      "missing_en": "NegRisk net 4.42¢ over $1 after 5% fees. PM−CME hike gap 9.3pp (mismatch_flag true).",
+      "missing_zh": "NegRisk 扣 5% 费后净成本比 $1 贵 4.42¢。PM−CME 加息缺口 9.3pp（错配标记 true）。",
+      "distance_en": "4.42¢ / share above the $1 payout after fees.",
+      "distance_zh": "扣费后每股比 $1 赔付贵 4.42¢。",
+      "recheck_en": "When contracts are definition-matched AND net cost/share < 1 after live feeSchedule AND expensive legs still have size.",
+      "recheck_zh": "定义对齐，且扣现费后净成本 < 1，且贵的腿仍有深度。"
+    }
+  ],
+  "history_policy": {
+    "en": "A freeze is pre-print only if the GitHub commit time is before the official release. CPI 11 Sep and NFP 4 Sep freezes were internal; first public copy is the 14 Sep 10:20 snapshot (commit c32856a). Later snapshots on 14–16 Sep are additional public pre-print freezes for FOMC 15–16 Sep. After the FOMC print (+25bp), this publish appends a result snapshot without rewriting freeze files. Countable freeze-vs-print starts at FOMC 15–16 Sep.",
+    "zh": "只有 GitHub commit 时间早于官方公布，冻盘才算事前。CPI 9/11 和非农 9/4 的冻结当时只在内部；第一次公开是 9/14 10:20 快照（commit c32856a）。9/14–16 的后续快照是 9/15–16 FOMC 的追加事前公开冻结。FOMC 公布（+25bp）后，本次只追加结果快照，不改写冻结文件。可计分的冻盘对公布从 9/15–16 FOMC 开始。"
+  },
+  "notify": {
+    "en": "No push alerts. Poll desk.json. If verdict or scan.after_audit changes, the conclusion changed. GitHub commits are the publish log.",
+    "zh": "没有推送。轮询 desk.json。verdict 或 scan.after_audit 变了就是结论变了。GitHub commit 是发布记录。"
+  },
+  "published_cst": "2026-09-25 16:39 CST",
+  "published_note_en": "Afternoon refresh from routine-20260925-1602 (scan ~2026-09-25 16:03 CST). after_audit 0 / ECON_MISMATCH (Oct Fed gap 9.3pp, mismatch_flag true). Freezes untouched; no pre-print freeze due (>48h to next prints).",
+  "published_note_zh": "下午刷新，来自 routine-20260925-1602（扫描约 2026-09-25 16:03 CST）。审计后 0 / ECON_MISMATCH（十月美联储缺口 9.3pp，mismatch_flag true）。冻盘未改写；距下次公布 >48h，非事前冻盘。",
+  "universe_url": "https://benngaihk.github.io/kairos-desk/universe.json",
+  "track": {
+    "en": "Countable freeze-vs-print starts at FOMC 15–16 Sep. CPI 11 Sep and NFP 4 Sep were internal.",
+    "zh": "可计分的冻盘对公布从 9/15–16 FOMC 开始。CPI 9/11 和非农 9/4 当时未公开。"
+  }
+}
