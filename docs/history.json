@@ -1,6 +1,6 @@
 {
-  "policy_en": "A freeze is pre-print only if the GitHub commit time is before the official release. CPI 11 Sep and NFP 4 Sep freezes were internal; first public copy is the 14 Sep 10:20 snapshot (commit c32856a). Later snapshots on 14–16 Sep are additional public pre-print freezes for FOMC 15–16 Sep. After the FOMC print (+25bp), this publish appends a result snapshot without rewriting freeze files. Countable freeze-vs-print starts at FOMC 15–16 Sep.",
-  "policy_zh": "只有 GitHub commit 时间早于官方公布，冻盘才算事前。CPI 9/11 和非农 9/4 的冻结当时只在内部；第一次公开是 9/14 10:20 快照（commit c32856a）。9/14–16 的后续快照是 9/15–16 FOMC 的追加事前公开冻结。FOMC 公布（+25bp）后，本次只追加结果快照，不改写冻结文件。可计分的冻盘对公布从 9/15–16 FOMC 开始。",
+  "policy_en": "A freeze is pre-print only if the GitHub commit time is before the official release. CPI 11 Sep and NFP 4 Sep freezes were internal; first public copy is the 14 Sep 10:20 snapshot (commit c32856a). Later snapshots on 14–16 Sep are additional public pre-print freezes for FOMC 15–16 Sep. This ship (2026-10-01-1051) is the forced public pre_print freeze for September NFP (print 2026-10-02 08:30 ET). Countable freeze-vs-print starts at FOMC 15–16 Sep; Sep NFP 2026-10-02 joins once this commit is on main before print.",
+  "policy_zh": "只有 GitHub commit 时间早于官方公布，冻盘才算事前。CPI 9/11 和非农 9/4 的冻结当时只在内部；第一次公开是 9/14 10:20 快照（commit c32856a）。9/14–16 的后续快照是 9/15–16 FOMC 的追加事前公开冻结。本船 (2026-10-01-1051) 是 9 月非农（公布 2026-10-02 08:30 ET）的强制公开事前冻盘。可计分的冻盘对公布从 9/15–16 FOMC 开始；本 commit 在公布前登上 main 后，9 月非农一并计入。",
   "commits_url": "https://github.com/benngaihk/kairos-desk/commits/main",
   "snapshots": [
     {
@@ -260,6 +260,19 @@
       "pre_print": [],
       "note_en": "Afternoon refresh. Scan 2026-09-30 16:08 CST: markets 680, raw_edges 2 rejected (israel-pm incomplete + presidential-2028 Person-placeholders), after_audit 0, corrected_verdict ECON_MISMATCH. Live Fed = October (PM +25bp 0.415 vs CME hike-bin 0.723, gap 30.8pp, mismatch_flag true). Universe 680. Sep NFP modal 50k to 100k mid 0.35.",
       "note_zh": "下午刷新。扫描 2026-09-30 16:08 CST：市场 680，原始优势 2 条已否（以色列总理分区不完整 + 总统 2028 Person 占位），审计后 0，corrected_verdict ECON_MISMATCH。在轨美联储=十月（PM +25bp 0.415 对 CME 加息档 0.723，缺口 30.8pp，mismatch_flag true）。全集 680。9月非农众数 50k to 100k mid 0.35。"
+    },
+    {
+      "id": "2026-10-01-1051",
+      "as_of_cst": "2026-10-01 10:03 CST",
+      "published_cst": "2026-10-01 10:51 CST",
+      "after_audit": 0,
+      "url": "./history/2026-10-01-1051.json",
+      "kind": "pre_print_freeze",
+      "pre_print": [
+        "nfp-2026-10-02"
+      ],
+      "note_en": "FORCED Sep NFP pre_print freeze + morning refresh. Scan 2026-10-01 10:03 CST: markets 700, raw_edges 2 rejected (presidential-2028 Person-placeholders + post-match sports), after_audit 0, corrected_verdict NO_EDGE. Live Fed = October (PM +25bp 0.335 vs Investing CME hike-bin 0.356, gap 2.1pp, mismatch_flag false). NFP modal 50k to 100k mid 0.355. Universe 700.",
+      "note_zh": "强制 9 月非农事前冻盘 + 上午刷新。扫描 2026-10-01 10:03 CST：市场 700，原始优势 2 条已否（总统 2028 Person 占位 + 赛后体育），审计后 0，corrected_verdict NO_EDGE。在轨美联储=十月（PM +25bp 0.335 对 Investing CME 加息档 0.356，缺口 2.1pp，mismatch_flag false）。非农众数 50k to 100k mid 0.355。全集 700。"
     }
   ],
   "universe_url": "./universe.json"
