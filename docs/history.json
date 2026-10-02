@@ -283,6 +283,16 @@
       "kind": "scan",
       "note_en": "Afternoon refresh. Scan 2026-10-01 16:07 CST: markets 594 (completeness 581+negrisk 13), raw_edges 1 rejected (presidential-2028 Person-placeholders), after_audit 0, corrected_verdict NO_EDGE. Live Fed = October (PM +25bp 0.335 vs Investing CME hike-bin 0.402, gap 6.7pp, mismatch_flag false). Sep NFP freeze remains ship 2026-10-01-1051 (already public). Universe 594.",
       "note_zh": "下午刷新。扫描 2026-10-01 16:07 CST：市场 594（completeness 581+negrisk 13），原始优势 1 条已否（总统 2028 Person 占位），审计后 0，corrected_verdict NO_EDGE。在轨美联储=十月（PM +25bp 0.335 对 Investing CME 加息档 0.402，缺口 6.7pp，mismatch_flag false）。9 月非农冻盘仍为船 2026-10-01-1051（已公开）。全集 594。"
+    },
+    {
+      "id": "2026-10-02-1040",
+      "as_of_cst": "2026-10-02 10:16 CST",
+      "published_cst": "2026-10-02 10:40 CST",
+      "after_audit": 0,
+      "url": "./history/2026-10-02-1040.json",
+      "kind": "scan",
+      "note_en": "Morning refresh. Scan 2026-10-02 10:16 CST: markets 1302 (completeness 1290+negrisk 12), raw_edges 2 rejected (presidential-2028 + democratic-2028 Person-placeholders), after_audit 0, corrected_verdict NO_EDGE. Live Fed = October (PM +25bp 0.245 vs Altınla CME hike-bin 0.31, gap 6.5pp, mismatch_flag false). Sep NFP freeze remains ship 2026-10-01-1051 (already public). Universe 1302.",
+      "note_zh": "上午刷新。扫描 2026-10-02 10:16 CST：市场 1302（completeness 1290+negrisk 12），原始优势 2 条已否（总统 2028 + 民主党提名人 2028 Person 占位），审计后 0，corrected_verdict NO_EDGE。在轨美联储=十月（PM +25bp 0.245 对 Altınla CME 加息档 0.31，缺口 6.5pp，mismatch_flag false）。9 月非农冻盘仍为船 2026-10-01-1051（已公开）。全集 1302。"
     }
   ],
   "universe_url": "./universe.json"
