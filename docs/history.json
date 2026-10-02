@@ -1,6 +1,6 @@
 {
-  "policy_en": "A freeze is pre-print only if the GitHub commit time is before the official release. CPI 11 Sep and NFP 4 Sep freezes were internal; first public copy is the 14 Sep 10:20 snapshot (commit c32856a). Later snapshots on 14–16 Sep are additional public pre-print freezes for FOMC 15–16 Sep. Sep NFP public pre_print freeze ship_id remains 2026-10-01-1051 (commit c416920; forced while <48h to print). This afternoon ship (2026-10-01-1640) is a scan refresh only — freeze row prices stay locked from the morning freeze.",
-  "policy_zh": "只有 GitHub commit 时间早于官方公布，冻盘才算事前。CPI 9/11 和非农 9/4 的冻结当时只在内部；第一次公开是 9/14 10:20 快照（commit c32856a）。9/14–16 的后续快照是 9/15–16 FOMC 的追加事前公开冻结。9 月非农公开事前冻盘 ship_id 仍为 2026-10-01-1051（commit c416920；距公布 <48h 强制上船）。本下午船 (2026-10-01-1640) 仅为扫描刷新——冻盘行价格保持上午锁定不变。",
+  "policy_en": "A freeze is pre-print only if the GitHub commit time is before the official release. CPI 11 Sep and NFP 4 Sep freezes were internal; first public copy is the 14 Sep 10:20 snapshot (commit c32856a). Later snapshots on 14–16 Sep are additional public pre-print freezes for FOMC 15–16 Sep. Sep NFP public pre_print freeze ship_id remains 2026-10-01-1051 (commit c416920; forced while <48h to print). This afternoon ship (2026-10-02-1643) is a scan refresh only — freeze row prices stay locked from the morning freeze.",
+  "policy_zh": "只有 GitHub commit 时间早于官方公布，冻盘才算事前。CPI 9/11 和非农 9/4 的冻结当时只在内部；第一次公开是 9/14 10:20 快照（commit c32856a）。9/14–16 的后续快照是 9/15–16 FOMC 的追加事前公开冻结。9 月非农公开事前冻盘 ship_id 仍为 2026-10-01-1051（commit c416920；距公布 <48h 强制上船）。本下午船 (2026-10-02-1643) 仅为扫描刷新——冻盘行价格保持上午锁定不变。",
   "commits_url": "https://github.com/benngaihk/kairos-desk/commits/main",
   "snapshots": [
     {
@@ -293,6 +293,16 @@
       "kind": "scan",
       "note_en": "Morning refresh. Scan 2026-10-02 10:16 CST: markets 1302 (completeness 1290+negrisk 12), raw_edges 2 rejected (presidential-2028 + democratic-2028 Person-placeholders), after_audit 0, corrected_verdict NO_EDGE. Live Fed = October (PM +25bp 0.245 vs Altınla CME hike-bin 0.31, gap 6.5pp, mismatch_flag false). Sep NFP freeze remains ship 2026-10-01-1051 (already public). Universe 1302.",
       "note_zh": "上午刷新。扫描 2026-10-02 10:16 CST：市场 1302（completeness 1290+negrisk 12），原始优势 2 条已否（总统 2028 + 民主党提名人 2028 Person 占位），审计后 0，corrected_verdict NO_EDGE。在轨美联储=十月（PM +25bp 0.245 对 Altınla CME 加息档 0.31，缺口 6.5pp，mismatch_flag false）。9 月非农冻盘仍为船 2026-10-01-1051（已公开）。全集 1302。"
+    },
+    {
+      "id": "2026-10-02-1643",
+      "as_of_cst": "2026-10-02 16:11 CST",
+      "published_cst": "2026-10-02 16:43 CST",
+      "after_audit": 0,
+      "url": "./history/2026-10-02-1643.json",
+      "kind": "scan",
+      "note_en": "Afternoon refresh. Scan 2026-10-02 16:11 CST: markets 817 (completeness 806+negrisk 11), raw_edges 2 rejected (republican-2028 + presidential-2028 Person-placeholders), after_audit 0, corrected_verdict NO_EDGE. Live Fed = October (PM +25bp 0.245 vs Altınla CME hike-bin 0.31, gap 6.5pp, mismatch_flag false; Investing now matches 0.31). Sep NFP freeze remains ship 2026-10-01-1051 (already public). Universe 817.",
+      "note_zh": "下午刷新。扫描 2026-10-02 16:11 CST：市场 817（completeness 806+negrisk 11），原始优势 2 条已否（共和党提名人 2028 + 总统 2028 Person 占位），审计后 0，corrected_verdict NO_EDGE。在轨美联储=十月（PM +25bp 0.245 对 Altınla CME 加息档 0.31，缺口 6.5pp，mismatch_flag false；Investing 现一致 0.31）。9 月非农冻盘仍为船 2026-10-01-1051（已公开）。全集 817。"
     }
   ],
   "universe_url": "./universe.json"
