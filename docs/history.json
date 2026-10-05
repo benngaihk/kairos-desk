@@ -1,309 +1,333 @@
 {
-  "policy_en": "A freeze is pre-print only if the GitHub commit time is before the official release. CPI 11 Sep and NFP 4 Sep freezes were internal; first public copy is the 14 Sep 10:20 snapshot (commit c32856a). Later snapshots on 14–16 Sep are additional public pre-print freezes for FOMC 15–16 Sep. Sep NFP public pre_print freeze ship_id remains 2026-10-01-1051 (commit c416920; forced while <48h to print). This afternoon ship (2026-10-02-1643) is a scan refresh only — freeze row prices stay locked from the morning freeze.",
-  "policy_zh": "只有 GitHub commit 时间早于官方公布，冻盘才算事前。CPI 9/11 和非农 9/4 的冻结当时只在内部；第一次公开是 9/14 10:20 快照（commit c32856a）。9/14–16 的后续快照是 9/15–16 FOMC 的追加事前公开冻结。9 月非农公开事前冻盘 ship_id 仍为 2026-10-01-1051（commit c416920；距公布 <48h 强制上船）。本下午船 (2026-10-02-1643) 仅为扫描刷新——冻盘行价格保持上午锁定不变。",
-  "commits_url": "https://github.com/benngaihk/kairos-desk/commits/main",
-  "snapshots": [
-    {
-      "id": "2026-09-14-1020",
-      "as_of_cst": "2026-09-14 10:20 CST",
-      "after_audit": 0,
-      "url": "./history/2026-09-14-1020.json",
-      "kind": "scan",
-      "pre_print": [
-        "fomc-2026-09-15"
-      ],
-      "first_public_commit": "c32856a",
-      "note_en": "First public snapshot. CPI/NFP freezes inside were internal before this commit.",
-      "note_zh": "第一次公开快照。其中 CPI/非农冻结在此 commit 之前只在内部。"
-    },
-    {
-      "id": "2026-09-14-1452",
-      "as_of_cst": "2026-09-14 10:20 CST",
-      "published_cst": "2026-09-14 14:52 CST",
-      "after_audit": 0,
-      "url": "./history/2026-09-14-1452.json",
-      "kind": "scan+receipts",
-      "pre_print": [
-        "fomc-2026-09-15"
-      ],
-      "note_en": "Adds watch list, status fields, and pre-print labeling. Same 10:20 scan.",
-      "note_zh": "补观察名单、状态字段和事前标记。扫描仍是 10:20。"
-    },
-    {
-      "id": "2026-09-14-1636",
-      "as_of_cst": "2026-09-14 16:24 CST",
-      "published_cst": "2026-09-14 16:36 CST",
-      "after_audit": 0,
-      "url": "./history/2026-09-14-1636.json",
-      "kind": "pre-print-freeze",
-      "pre_print": [
-        "fomc-2026-09-15"
-      ],
-      "note_en": "Forced FOMC pre-print freeze within 48h. Scan 16:24 CST: CME hike-bin 92.1% vs PM +25bp 79.5% (gap 12.6pp). after_audit 0.",
-      "note_zh": "距 FOMC 不足 48 小时强制事前冻结。16:24 CST 扫描：CME 加息档 92.1% 对 PM +25bp 79.5%（缺口 12.6pp）。审计后 0。"
-    },
-    {
-      "id": "2026-09-15-1044",
-      "as_of_cst": "2026-09-15 10:16 CST",
-      "published_cst": "2026-09-15 10:44 CST",
-      "after_audit": 0,
-      "url": "./history/2026-09-15-1044.json",
-      "kind": "pre-print-freeze",
-      "pre_print": [
-        "fomc-2026-09-15"
-      ],
-      "note_en": "Forced FOMC pre-print freeze on decision window. Scan 10:16 CST: CME hike-bin 98.6% vs PM +25bp 87.5% (gap 11.1pp). after_audit 0. Universe 830.",
-      "note_zh": "FOMC 决策窗口内强制事前冻结。10:16 CST 扫描：CME 加息档 98.6% 对 PM +25bp 87.5%（缺口 11.1pp）。审计后 0。宇宙 830。"
-    },
-    {
-      "id": "2026-09-15-1636",
-      "as_of_cst": "2026-09-15 16:11 CST",
-      "published_cst": "2026-09-15 16:36 CST",
-      "after_audit": 0,
-      "url": "./history/2026-09-15-1636.json",
-      "kind": "pre-print-freeze",
-      "pre_print": [
-        "fomc-2026-09-15"
-      ],
-      "note_en": "Forced FOMC pre-print freeze on decision window. Scan 2026-09-15 16:11 CST: CME hike-bin 96.4% vs PM +25bp 87.5% (gap 8.9pp). after_audit 0. Universe 663.",
-      "note_zh": "FOMC 决策窗口内强制事前冻结。2026-09-15 16:11 CST 扫描：CME 加息档 96.4% 对 PM +25bp 87.5%（缺口 8.9pp）。审计后 0。宇宙 663。"
-    },
-    {
-      "id": "2026-09-16-1039",
-      "as_of_cst": "2026-09-16 10:05 CST",
-      "published_cst": "2026-09-16 10:39 CST",
-      "after_audit": 0,
-      "url": "./history/2026-09-16-1039.json",
-      "kind": "pre-print-freeze",
-      "pre_print": [
-        "fomc-2026-09-15"
-      ],
-      "note_en": "Forced FOMC pre-print freeze on decision window. Scan 2026-09-16 10:05 CST: CME hike-bin 94.3% vs PM +25bp 87.5% (gap 6.8pp). after_audit 0. Universe 629.",
-      "note_zh": "FOMC 决策窗口内强制事前冻结。2026-09-16 10:05 CST 扫描：CME 加息档 94.3% 对 PM +25bp 87.5%（缺口 6.8pp）。审计后 0。宇宙 629。"
-    },
-    {
-      "id": "2026-09-16-1637",
-      "as_of_cst": "2026-09-16 16:06 CST",
-      "published_cst": "2026-09-16 16:37 CST",
-      "after_audit": 0,
-      "url": "./history/2026-09-16-1637.json",
-      "kind": "pre-print-freeze",
-      "pre_print": [
-        "fomc-2026-09-15"
-      ],
-      "note_en": "Forced FOMC pre-print freeze on decision window. Scan 2026-09-16 16:06 CST: CME hike-bin 0.964 vs PM +25bp 0.875 (gap 8.9pp). after_audit 0. Universe 572.",
-      "note_zh": "FOMC 决策窗口内强制事前冻结。2026-09-16 16:06 CST 扫描：CME 加息档 0.964 对 PM +25bp 0.875（缺口 8.9pp）。审计后 0。宇宙 572。"
-    },
-    {
-      "id": "2026-09-17-fomc-print",
-      "as_of_cst": "2026-09-17 10:20 CST",
-      "published_cst": "2026-09-17 10:42 CST",
-      "after_audit": 0,
-      "url": "./history/2026-09-17-fomc-print.json",
-      "kind": "result",
-      "event": "fomc-2026-09-15",
-      "print": "+25bp",
-      "public_freeze_id": "2026-09-16-1637",
-      "note_en": "FOMC 15–16 Sep print result appended. Official +25bp vs freeze PM 0.875 / CME 0.964. Freeze files untouched.",
-      "note_zh": "追加 9/15–16 FOMC 公布结果。官方 +25bp，对照冻结 PM 0.875 / CME 0.964。冻结文件未改。"
-    },
-    {
-      "id": "2026-09-17-1039",
-      "as_of_cst": "2026-09-17 10:20 CST",
-      "published_cst": "2026-09-17 10:42 CST",
-      "after_audit": 0,
-      "url": "./history/2026-09-17-1039.json",
-      "kind": "scan",
-      "pre_print": [],
-      "note_en": "Post-FOMC refresh. Scan 2026-09-17 10:20 CST: markets 547, raw_edges 2 rejected (2028 placeholders + incomplete sports), after_audit 0, corrected_verdict NO_EDGE. Live Fed = October (PM +25bp 0.455 vs CME hike-bin 0.505, gap 5.0pp, mismatch_flag false). Universe 547.",
-      "note_zh": "FOMC 公布后刷新。扫描 2026-09-17 10:20 CST：市场 547，生边 2 条已否（2028 占位 + 赛后不完整体育），审计后 0，corrected_verdict NO_EDGE。在轨利率盘为十月（PM +25bp 0.455 对 CME 加息档 0.505，缺口 5.0pp，错配 false）。宇宙 547。"
-    },
-    {
-      "id": "2026-09-17-1631",
-      "as_of_cst": "2026-09-17 16:17 CST",
-      "published_cst": "2026-09-17 16:35 CST",
-      "after_audit": 0,
-      "url": "./history/2026-09-17-1631.json",
-      "kind": "scan",
-      "pre_print": [],
-      "note_en": "Afternoon refresh. Scan 2026-09-17 16:17 CST: markets 877, raw_edges 1 rejected (republican-2028 Person-placeholders), after_audit 0, corrected_verdict ECON_MISMATCH. Live Fed = October (PM +25bp 0.445 vs CME hike-bin 0.551, gap 10.6pp, mismatch_flag true). Universe 877.",
-      "note_zh": "午后刷新。扫描 2026-09-17 16:17 CST：市场 877，生边 1 条已否（republican-2028 Person 占位），审计后 0，corrected_verdict ECON_MISMATCH。在轨利率盘为十月（PM +25bp 0.445 对 CME 加息档 0.551，缺口 10.6pp，错配 true）。宇宙 877。"
-    },
-    {
-      "id": "2026-09-18-1041",
-      "as_of_cst": "2026-09-18 10:03 CST",
-      "published_cst": "2026-09-18 10:45 CST",
-      "after_audit": 0,
-      "url": "./history/2026-09-18-1041.json",
-      "kind": "scan",
-      "pre_print": [],
-      "note_en": "Morning refresh. Scan 2026-09-18 10:03 CST: markets 718, raw_edges 0, after_audit 0, corrected_verdict NO_EDGE. Live Fed = October (PM +25bp 0.505 vs CME hike-bin 0.574, gap 6.9pp, mismatch_flag false). Universe 718.",
-      "note_zh": "上午刷新。扫描 2026-09-18 10:03 CST：市场 718，生边 0，审计后 0，corrected_verdict NO_EDGE。在轨利率盘为十月（PM +25bp 0.505 对 CME 加息档 0.574，缺口 6.9pp，错配 false）。宇宙 718。"
-    },
-    {
-      "id": "2026-09-18-1646",
-      "as_of_cst": "2026-09-18 16:17 CST",
-      "published_cst": "2026-09-18 16:46 CST",
-      "after_audit": 0,
-      "url": "./history/2026-09-18-1646.json",
-      "kind": "scan",
-      "pre_print": [],
-      "note_en": "Afternoon refresh. Scan 2026-09-18 16:17 CST: markets 564, raw_edges 0, after_audit 0, corrected_verdict NO_EDGE. Live Fed = October (PM +25bp 0.505 vs CME hike-bin 0.574, gap 6.9pp, mismatch_flag false). Universe 564.",
-      "note_zh": "午后刷新。扫描 2026-09-18 16:17 CST：市场 564，生边 0，审计后 0，corrected_verdict NO_EDGE。在轨利率盘为十月（PM +25bp 0.505 对 CME 加息档 0.574，缺口 6.9pp，错配 false）。宇宙 564。"
-    },
-    {
-      "id": "2026-09-21-1038",
-      "as_of_cst": "2026-09-21 10:12 CST",
-      "published_cst": "2026-09-21 10:38 CST",
-      "after_audit": 0,
-      "url": "./history/2026-09-21-1038.json",
-      "kind": "scan",
-      "pre_print": [],
-      "note_en": "Morning refresh. Scan 2026-09-21 10:12 CST: markets 423, raw_edges 0, after_audit 0, corrected_verdict NO_EDGE. Live Fed = October (PM +25bp 0.545 vs CME hike-bin 0.597, gap 5.2pp, mismatch_flag false). Universe 423.",
-      "note_zh": "上午刷新。扫描 2026-09-21 10:12 CST：市场 423，生边 0，审计后 0，corrected_verdict NO_EDGE。在轨利率盘为十月（PM +25bp 0.545 对 CME 加息档 0.597，缺口 5.2pp，错配 false）。宇宙 423。"
-    },
-    {
-      "id": "2026-09-21-1649",
-      "as_of_cst": "2026-09-21 16:10 CST",
-      "published_cst": "2026-09-21 16:49 CST",
-      "after_audit": 0,
-      "url": "./history/2026-09-21-1649.json",
-      "kind": "scan",
-      "pre_print": [],
-      "note_en": "Afternoon refresh. Scan 2026-09-21 16:10 CST: markets 415, raw_edges 1, after_audit 0, corrected_verdict NO_EDGE. Live Fed = October (PM +25bp 0.535 vs CME hike-bin 0.574, gap 3.9pp, mismatch_flag false). Universe 415.",
-      "note_zh": "午后刷新。扫描 2026-09-21 16:10 CST：市场 415，生边 1，审计后 0，corrected_verdict NO_EDGE。在轨利率盘为十月（PM +25bp 0.535 对 CME 加息档 0.574，缺口 3.9pp，错配 false）。宇宙 415。"
-    },
-    {
-      "id": "2026-09-23-1048",
-      "as_of_cst": "2026-09-23 10:15 CST",
-      "published_cst": "2026-09-23 10:48 CST",
-      "after_audit": 0,
-      "url": "./history/2026-09-23-1048.json",
-      "kind": "scan",
-      "pre_print": [],
-      "note_en": "Morning refresh. Scan 2026-09-23 10:15 CST: markets 481, raw_edges 1 rejected (republican-2028 Person-placeholders), after_audit 0, corrected_verdict NO_EDGE. Live Fed = October (PM +25bp 0.525 vs CME hike-bin 0.551, gap 2.6pp, mismatch_flag false). Universe 481.",
-      "note_zh": "上午刷新。扫描 2026-09-23 10:15 CST：市场 481，生边 1 条已否（republican-2028 Person 占位），审计后 0，corrected_verdict NO_EDGE。在轨利率盘为十月（PM +25bp 0.525 对 CME 加息档 0.551，缺口 2.6pp，错配 false）。宇宙 481。"
-    },
-    {
-      "id": "2026-09-23-1643",
-      "as_of_cst": "2026-09-23 16:08 CST",
-      "published_cst": "2026-09-23 16:43 CST",
-      "after_audit": 0,
-      "url": "./history/2026-09-23-1643.json",
-      "kind": "scan",
-      "pre_print": [],
-      "note_en": "Afternoon refresh. Scan 2026-09-23 16:08 CST: markets 531, raw_edges 2 rejected (republican-2028 + democratic-2028 Person-placeholders), after_audit 0, corrected_verdict NO_EDGE. Live Fed = October (PM +25bp 0.535 vs CME hike-bin 0.574, gap 3.9pp, mismatch_flag false). Universe 531.",
-      "note_zh": "下午刷新。扫描 2026-09-23 16:08 CST：市场 531，原始优势 2 条已否（共和党/民主党 2028 Person 占位），审计后 0，corrected_verdict NO_EDGE。在轨美联储=十月（PM +25bp 0.535 对 CME 加息档 0.574，缺口 3.9pp，mismatch_flag false）。全集 531。"
-    },
-    {
-      "id": "2026-09-24-1045",
-      "as_of_cst": "2026-09-24 10:12 CST",
-      "published_cst": "2026-09-24 10:45 CST",
-      "after_audit": 0,
-      "url": "./history/2026-09-24-1045.json",
-      "kind": "scan",
-      "pre_print": [],
-      "note_en": "Morning refresh. Scan 2026-09-24 10:12 CST: markets 700, raw_edges 0, after_audit 0, corrected_verdict ECON_MISMATCH. Live Fed = October (PM +25bp 0.645 vs CME hike-bin 0.758, gap 11.3pp, mismatch_flag true). Universe 700.",
-      "note_zh": "上午刷新。扫描 2026-09-24 10:12 CST：市场 700，生边 0，审计后 0，corrected_verdict ECON_MISMATCH。在轨美联储=十月（PM +25bp 0.645 对 CME 加息档 0.758，缺口 11.3pp，mismatch_flag true）。全集 700。"
-    },
-    {
-      "id": "2026-09-24-1652",
-      "as_of_cst": "2026-09-24 16:14 CST",
-      "published_cst": "2026-09-24 16:52 CST",
-      "after_audit": 0,
-      "url": "./history/2026-09-24-1652.json",
-      "kind": "scan",
-      "pre_print": [],
-      "note_en": "Afternoon refresh. Scan 2026-09-24 16:14 CST: markets 842, raw_edges 2 rejected (democratic-2028 + presidential-winner-2028 Person-placeholders), after_audit 0, corrected_verdict NO_EDGE. Live Fed = October (PM +25bp 0.655 vs CME hike-bin 0.712, gap 5.7pp, mismatch_flag false). Universe 842.",
-      "note_zh": "下午刷新。扫描 2026-09-24 16:14 CST：市场 842，原始优势 2 条已否（民主党 2028 + 总统胜选 2028 Person 占位），审计后 0，corrected_verdict NO_EDGE。在轨美联储=十月（PM +25bp 0.655 对 CME 加息档 0.712，缺口 5.7pp，mismatch_flag false）。全集 842。"
-    },
-    {
-      "id": "2026-09-25-1040",
-      "as_of_cst": "2026-09-25 10:01 CST",
-      "published_cst": "2026-09-25 10:40 CST",
-      "after_audit": 0,
-      "url": "./history/2026-09-25-1040.json",
-      "kind": "scan",
-      "pre_print": [],
-      "note_en": "Morning refresh. Scan 2026-09-25 10:01 CST: markets 1016, raw_edges 2 rejected (democratic-2028 + republican-2028 Person-placeholders), after_audit 0, corrected_verdict NO_EDGE. Live Fed = October (PM +25bp 0.665 vs CME hike-bin 0.735, gap 7.0pp, mismatch_flag false). Universe 1016.",
-      "note_zh": "上午刷新。扫描 2026-09-25 10:01 CST：市场 1016，原始优势 2 条已否（民主党 2028 + 共和党 2028 Person 占位），审计后 0，corrected_verdict NO_EDGE。在轨美联储=十月（PM +25bp 0.665 对 CME 加息档 0.735，缺口 7.0pp，mismatch_flag false）。全集 1016。"
-    },
-    {
-      "id": "2026-09-25-1640",
-      "as_of_cst": "2026-09-25 16:03 CST",
-      "published_cst": "2026-09-25 16:39 CST",
-      "after_audit": 0,
-      "url": "./history/2026-09-25-1640.json",
-      "kind": "scan",
-      "pre_print": [],
-      "note_en": "Afternoon refresh. Scan 2026-09-25 16:03 CST: markets 582, raw_edges 1 rejected (republican-2028 Person-placeholders), after_audit 0, corrected_verdict ECON_MISMATCH. Live Fed = October (PM +25bp 0.665 vs CME hike-bin 0.758, gap 9.3pp, mismatch_flag true). Universe 582.",
-      "note_zh": "下午刷新。扫描 2026-09-25 16:03 CST：市场 582，原始优势 1 条已否（共和党 2028 Person 占位），审计后 0，corrected_verdict ECON_MISMATCH。在轨美联储=十月（PM +25bp 0.665 对 CME 加息档 0.758，缺口 9.3pp，mismatch_flag true）。宇宙 582。"
-    },
-    {
-      "id": "2026-09-30-1041",
-      "as_of_cst": "2026-09-30 10:12 CST",
-      "published_cst": "2026-09-30 10:41 CST",
-      "after_audit": 0,
-      "url": "./history/2026-09-30-1041.json",
-      "kind": "scan",
-      "pre_print": [],
-      "note_en": "Morning refresh. Scan 2026-09-30 10:12 CST: markets 699, raw_edges 1 rejected (presidential-election-winner-2028 Person-placeholders), after_audit 0, corrected_verdict ECON_MISMATCH. Live Fed = October (PM +25bp 0.435 vs CME hike-bin 0.723, gap 28.8pp, mismatch_flag true). Universe 699.",
-      "note_zh": "上午刷新。扫描 2026-09-30 10:12 CST：市场 699，原始优势 1 条已否（总统胜选 2028 Person 占位），审计后 0，corrected_verdict ECON_MISMATCH。在轨美联储=十月（PM +25bp 0.435 对 CME 加息档 0.723，缺口 28.8pp，mismatch_flag true）。全集 699。"
-    },
-    {
-      "id": "2026-09-30-1642",
-      "as_of_cst": "2026-09-30 16:08 CST",
-      "published_cst": "2026-09-30 16:42 CST",
-      "after_audit": 0,
-      "url": "./history/2026-09-30-1642.json",
-      "kind": "scan",
-      "pre_print": [],
-      "note_en": "Afternoon refresh. Scan 2026-09-30 16:08 CST: markets 680, raw_edges 2 rejected (israel-pm incomplete + presidential-2028 Person-placeholders), after_audit 0, corrected_verdict ECON_MISMATCH. Live Fed = October (PM +25bp 0.415 vs CME hike-bin 0.723, gap 30.8pp, mismatch_flag true). Universe 680. Sep NFP modal 50k to 100k mid 0.35.",
-      "note_zh": "下午刷新。扫描 2026-09-30 16:08 CST：市场 680，原始优势 2 条已否（以色列总理分区不完整 + 总统 2028 Person 占位），审计后 0，corrected_verdict ECON_MISMATCH。在轨美联储=十月（PM +25bp 0.415 对 CME 加息档 0.723，缺口 30.8pp，mismatch_flag true）。全集 680。9月非农众数 50k to 100k mid 0.35。"
-    },
-    {
-      "id": "2026-10-01-1051",
-      "as_of_cst": "2026-10-01 10:03 CST",
-      "published_cst": "2026-10-01 10:51 CST",
-      "after_audit": 0,
-      "url": "./history/2026-10-01-1051.json",
-      "kind": "pre_print_freeze",
-      "pre_print": [
-        "nfp-2026-10-02"
-      ],
-      "note_en": "FORCED Sep NFP pre_print freeze + morning refresh. Scan 2026-10-01 10:03 CST: markets 700, raw_edges 2 rejected (presidential-2028 Person-placeholders + post-match sports), after_audit 0, corrected_verdict NO_EDGE. Live Fed = October (PM +25bp 0.335 vs Investing CME hike-bin 0.356, gap 2.1pp, mismatch_flag false). NFP modal 50k to 100k mid 0.355. Universe 700.",
-      "note_zh": "强制 9 月非农事前冻盘 + 上午刷新。扫描 2026-10-01 10:03 CST：市场 700，原始优势 2 条已否（总统 2028 Person 占位 + 赛后体育），审计后 0，corrected_verdict NO_EDGE。在轨美联储=十月（PM +25bp 0.335 对 Investing CME 加息档 0.356，缺口 2.1pp，mismatch_flag false）。非农众数 50k to 100k mid 0.355。全集 700。"
-    },
-    {
-      "id": "2026-10-01-1640",
-      "as_of_cst": "2026-10-01 16:07 CST",
-      "published_cst": "2026-10-01 16:40 CST",
-      "after_audit": 0,
-      "url": "./history/2026-10-01-1640.json",
-      "kind": "scan",
-      "note_en": "Afternoon refresh. Scan 2026-10-01 16:07 CST: markets 594 (completeness 581+negrisk 13), raw_edges 1 rejected (presidential-2028 Person-placeholders), after_audit 0, corrected_verdict NO_EDGE. Live Fed = October (PM +25bp 0.335 vs Investing CME hike-bin 0.402, gap 6.7pp, mismatch_flag false). Sep NFP freeze remains ship 2026-10-01-1051 (already public). Universe 594.",
-      "note_zh": "下午刷新。扫描 2026-10-01 16:07 CST：市场 594（completeness 581+negrisk 13），原始优势 1 条已否（总统 2028 Person 占位），审计后 0，corrected_verdict NO_EDGE。在轨美联储=十月（PM +25bp 0.335 对 Investing CME 加息档 0.402，缺口 6.7pp，mismatch_flag false）。9 月非农冻盘仍为船 2026-10-01-1051（已公开）。全集 594。"
-    },
-    {
-      "id": "2026-10-02-1040",
-      "as_of_cst": "2026-10-02 10:16 CST",
-      "published_cst": "2026-10-02 10:40 CST",
-      "after_audit": 0,
-      "url": "./history/2026-10-02-1040.json",
-      "kind": "scan",
-      "note_en": "Morning refresh. Scan 2026-10-02 10:16 CST: markets 1302 (completeness 1290+negrisk 12), raw_edges 2 rejected (presidential-2028 + democratic-2028 Person-placeholders), after_audit 0, corrected_verdict NO_EDGE. Live Fed = October (PM +25bp 0.245 vs Altınla CME hike-bin 0.31, gap 6.5pp, mismatch_flag false). Sep NFP freeze remains ship 2026-10-01-1051 (already public). Universe 1302.",
-      "note_zh": "上午刷新。扫描 2026-10-02 10:16 CST：市场 1302（completeness 1290+negrisk 12），原始优势 2 条已否（总统 2028 + 民主党提名人 2028 Person 占位），审计后 0，corrected_verdict NO_EDGE。在轨美联储=十月（PM +25bp 0.245 对 Altınla CME 加息档 0.31，缺口 6.5pp，mismatch_flag false）。9 月非农冻盘仍为船 2026-10-01-1051（已公开）。全集 1302。"
-    },
-    {
-      "id": "2026-10-02-1643",
-      "as_of_cst": "2026-10-02 16:11 CST",
-      "published_cst": "2026-10-02 16:43 CST",
-      "after_audit": 0,
-      "url": "./history/2026-10-02-1643.json",
-      "kind": "scan",
-      "note_en": "Afternoon refresh. Scan 2026-10-02 16:11 CST: markets 817 (completeness 806+negrisk 11), raw_edges 2 rejected (republican-2028 + presidential-2028 Person-placeholders), after_audit 0, corrected_verdict NO_EDGE. Live Fed = October (PM +25bp 0.245 vs Altınla CME hike-bin 0.31, gap 6.5pp, mismatch_flag false; Investing now matches 0.31). Sep NFP freeze remains ship 2026-10-01-1051 (already public). Universe 817.",
-      "note_zh": "下午刷新。扫描 2026-10-02 16:11 CST：市场 817（completeness 806+negrisk 11），原始优势 2 条已否（共和党提名人 2028 + 总统 2028 Person 占位），审计后 0，corrected_verdict NO_EDGE。在轨美联储=十月（PM +25bp 0.245 对 Altınla CME 加息档 0.31，缺口 6.5pp，mismatch_flag false；Investing 现一致 0.31）。9 月非农冻盘仍为船 2026-10-01-1051（已公开）。全集 817。"
-    }
-  ],
-  "universe_url": "./universe.json"
+ "policy_en": "A freeze is pre-print only if the GitHub commit time is before the official release. CPI 11 Sep and NFP 4 Sep freezes were internal; first public copy is the 14 Sep 10:20 snapshot (commit c32856a). 14–16 Sep snapshots are public pre-print freezes for FOMC 15–16 Sep. Sep NFP public pre-print freeze is ship 2026-10-01-1051 (commit c416920); its print result is appended as 2026-10-05-nfp-print without rewriting freeze rows. Results are append-only.",
+ "policy_zh": "只有 GitHub commit 时间早于官方公布，冻盘才算事前。CPI 9/11 和非农 9/4 的冻结当时只在内部；第一次公开是 9/14 10:20 快照（commit c32856a）。9/14–16 快照是 9/15–16 FOMC 的事前公开冻结。9 月非农公开事前冻盘是船 2026-10-01-1051（commit c416920）；其公布结果以 2026-10-05-nfp-print 追加，冻盘行不改写。结果只追加。",
+ "commits_url": "https://github.com/benngaihk/kairos-desk/commits/main",
+ "snapshots": [
+  {
+   "id": "2026-09-14-1020",
+   "as_of_cst": "2026-09-14 10:20 CST",
+   "after_audit": 0,
+   "url": "./history/2026-09-14-1020.json",
+   "kind": "scan",
+   "pre_print": [
+    "fomc-2026-09-15"
+   ],
+   "first_public_commit": "c32856a",
+   "note_en": "First public snapshot. CPI/NFP freezes inside were internal before this commit.",
+   "note_zh": "第一次公开快照。其中 CPI/非农冻结在此 commit 之前只在内部。"
+  },
+  {
+   "id": "2026-09-14-1452",
+   "as_of_cst": "2026-09-14 10:20 CST",
+   "published_cst": "2026-09-14 14:52 CST",
+   "after_audit": 0,
+   "url": "./history/2026-09-14-1452.json",
+   "kind": "scan+receipts",
+   "pre_print": [
+    "fomc-2026-09-15"
+   ],
+   "note_en": "Adds watch list, status fields, and pre-print labeling. Same 10:20 scan.",
+   "note_zh": "补观察名单、状态字段和事前标记。扫描仍是 10:20。"
+  },
+  {
+   "id": "2026-09-14-1636",
+   "as_of_cst": "2026-09-14 16:24 CST",
+   "published_cst": "2026-09-14 16:36 CST",
+   "after_audit": 0,
+   "url": "./history/2026-09-14-1636.json",
+   "kind": "pre-print-freeze",
+   "pre_print": [
+    "fomc-2026-09-15"
+   ],
+   "note_en": "Forced FOMC pre-print freeze within 48h. Scan 16:24 CST: CME hike-bin 92.1% vs PM +25bp 79.5% (gap 12.6pp). after_audit 0.",
+   "note_zh": "距 FOMC 不足 48 小时强制事前冻结。16:24 CST 扫描：CME 加息档 92.1% 对 PM +25bp 79.5%（缺口 12.6pp）。审计后 0。"
+  },
+  {
+   "id": "2026-09-15-1044",
+   "as_of_cst": "2026-09-15 10:16 CST",
+   "published_cst": "2026-09-15 10:44 CST",
+   "after_audit": 0,
+   "url": "./history/2026-09-15-1044.json",
+   "kind": "pre-print-freeze",
+   "pre_print": [
+    "fomc-2026-09-15"
+   ],
+   "note_en": "Forced FOMC pre-print freeze on decision window. Scan 10:16 CST: CME hike-bin 98.6% vs PM +25bp 87.5% (gap 11.1pp). after_audit 0. Universe 830.",
+   "note_zh": "FOMC 决策窗口内强制事前冻结。10:16 CST 扫描：CME 加息档 98.6% 对 PM +25bp 87.5%（缺口 11.1pp）。审计后 0。宇宙 830。"
+  },
+  {
+   "id": "2026-09-15-1636",
+   "as_of_cst": "2026-09-15 16:11 CST",
+   "published_cst": "2026-09-15 16:36 CST",
+   "after_audit": 0,
+   "url": "./history/2026-09-15-1636.json",
+   "kind": "pre-print-freeze",
+   "pre_print": [
+    "fomc-2026-09-15"
+   ],
+   "note_en": "Forced FOMC pre-print freeze on decision window. Scan 2026-09-15 16:11 CST: CME hike-bin 96.4% vs PM +25bp 87.5% (gap 8.9pp). after_audit 0. Universe 663.",
+   "note_zh": "FOMC 决策窗口内强制事前冻结。2026-09-15 16:11 CST 扫描：CME 加息档 96.4% 对 PM +25bp 87.5%（缺口 8.9pp）。审计后 0。宇宙 663。"
+  },
+  {
+   "id": "2026-09-16-1039",
+   "as_of_cst": "2026-09-16 10:05 CST",
+   "published_cst": "2026-09-16 10:39 CST",
+   "after_audit": 0,
+   "url": "./history/2026-09-16-1039.json",
+   "kind": "pre-print-freeze",
+   "pre_print": [
+    "fomc-2026-09-15"
+   ],
+   "note_en": "Forced FOMC pre-print freeze on decision window. Scan 2026-09-16 10:05 CST: CME hike-bin 94.3% vs PM +25bp 87.5% (gap 6.8pp). after_audit 0. Universe 629.",
+   "note_zh": "FOMC 决策窗口内强制事前冻结。2026-09-16 10:05 CST 扫描：CME 加息档 94.3% 对 PM +25bp 87.5%（缺口 6.8pp）。审计后 0。宇宙 629。"
+  },
+  {
+   "id": "2026-09-16-1637",
+   "as_of_cst": "2026-09-16 16:06 CST",
+   "published_cst": "2026-09-16 16:37 CST",
+   "after_audit": 0,
+   "url": "./history/2026-09-16-1637.json",
+   "kind": "pre-print-freeze",
+   "pre_print": [
+    "fomc-2026-09-15"
+   ],
+   "note_en": "Forced FOMC pre-print freeze on decision window. Scan 2026-09-16 16:06 CST: CME hike-bin 0.964 vs PM +25bp 0.875 (gap 8.9pp). after_audit 0. Universe 572.",
+   "note_zh": "FOMC 决策窗口内强制事前冻结。2026-09-16 16:06 CST 扫描：CME 加息档 0.964 对 PM +25bp 0.875（缺口 8.9pp）。审计后 0。宇宙 572。"
+  },
+  {
+   "id": "2026-09-17-fomc-print",
+   "as_of_cst": "2026-09-17 10:20 CST",
+   "published_cst": "2026-09-17 10:42 CST",
+   "after_audit": 0,
+   "url": "./history/2026-09-17-fomc-print.json",
+   "kind": "result",
+   "event": "fomc-2026-09-15",
+   "print": "+25bp",
+   "public_freeze_id": "2026-09-16-1637",
+   "note_en": "FOMC 15–16 Sep print result appended. Official +25bp vs freeze PM 0.875 / CME 0.964. Freeze files untouched.",
+   "note_zh": "追加 9/15–16 FOMC 公布结果。官方 +25bp，对照冻结 PM 0.875 / CME 0.964。冻结文件未改。"
+  },
+  {
+   "id": "2026-09-17-1039",
+   "as_of_cst": "2026-09-17 10:20 CST",
+   "published_cst": "2026-09-17 10:42 CST",
+   "after_audit": 0,
+   "url": "./history/2026-09-17-1039.json",
+   "kind": "scan",
+   "pre_print": [],
+   "note_en": "Post-FOMC refresh. Scan 2026-09-17 10:20 CST: markets 547, raw_edges 2 rejected (2028 placeholders + incomplete sports), after_audit 0, corrected_verdict NO_EDGE. Live Fed = October (PM +25bp 0.455 vs CME hike-bin 0.505, gap 5.0pp, mismatch_flag false). Universe 547.",
+   "note_zh": "FOMC 公布后刷新。扫描 2026-09-17 10:20 CST：市场 547，生边 2 条已否（2028 占位 + 赛后不完整体育），审计后 0，corrected_verdict NO_EDGE。在轨利率盘为十月（PM +25bp 0.455 对 CME 加息档 0.505，缺口 5.0pp，错配 false）。宇宙 547。"
+  },
+  {
+   "id": "2026-09-17-1631",
+   "as_of_cst": "2026-09-17 16:17 CST",
+   "published_cst": "2026-09-17 16:35 CST",
+   "after_audit": 0,
+   "url": "./history/2026-09-17-1631.json",
+   "kind": "scan",
+   "pre_print": [],
+   "note_en": "Afternoon refresh. Scan 2026-09-17 16:17 CST: markets 877, raw_edges 1 rejected (republican-2028 Person-placeholders), after_audit 0, corrected_verdict ECON_MISMATCH. Live Fed = October (PM +25bp 0.445 vs CME hike-bin 0.551, gap 10.6pp, mismatch_flag true). Universe 877.",
+   "note_zh": "午后刷新。扫描 2026-09-17 16:17 CST：市场 877，生边 1 条已否（republican-2028 Person 占位），审计后 0，corrected_verdict ECON_MISMATCH。在轨利率盘为十月（PM +25bp 0.445 对 CME 加息档 0.551，缺口 10.6pp，错配 true）。宇宙 877。"
+  },
+  {
+   "id": "2026-09-18-1041",
+   "as_of_cst": "2026-09-18 10:03 CST",
+   "published_cst": "2026-09-18 10:45 CST",
+   "after_audit": 0,
+   "url": "./history/2026-09-18-1041.json",
+   "kind": "scan",
+   "pre_print": [],
+   "note_en": "Morning refresh. Scan 2026-09-18 10:03 CST: markets 718, raw_edges 0, after_audit 0, corrected_verdict NO_EDGE. Live Fed = October (PM +25bp 0.505 vs CME hike-bin 0.574, gap 6.9pp, mismatch_flag false). Universe 718.",
+   "note_zh": "上午刷新。扫描 2026-09-18 10:03 CST：市场 718，生边 0，审计后 0，corrected_verdict NO_EDGE。在轨利率盘为十月（PM +25bp 0.505 对 CME 加息档 0.574，缺口 6.9pp，错配 false）。宇宙 718。"
+  },
+  {
+   "id": "2026-09-18-1646",
+   "as_of_cst": "2026-09-18 16:17 CST",
+   "published_cst": "2026-09-18 16:46 CST",
+   "after_audit": 0,
+   "url": "./history/2026-09-18-1646.json",
+   "kind": "scan",
+   "pre_print": [],
+   "note_en": "Afternoon refresh. Scan 2026-09-18 16:17 CST: markets 564, raw_edges 0, after_audit 0, corrected_verdict NO_EDGE. Live Fed = October (PM +25bp 0.505 vs CME hike-bin 0.574, gap 6.9pp, mismatch_flag false). Universe 564.",
+   "note_zh": "午后刷新。扫描 2026-09-18 16:17 CST：市场 564，生边 0，审计后 0，corrected_verdict NO_EDGE。在轨利率盘为十月（PM +25bp 0.505 对 CME 加息档 0.574，缺口 6.9pp，错配 false）。宇宙 564。"
+  },
+  {
+   "id": "2026-09-21-1038",
+   "as_of_cst": "2026-09-21 10:12 CST",
+   "published_cst": "2026-09-21 10:38 CST",
+   "after_audit": 0,
+   "url": "./history/2026-09-21-1038.json",
+   "kind": "scan",
+   "pre_print": [],
+   "note_en": "Morning refresh. Scan 2026-09-21 10:12 CST: markets 423, raw_edges 0, after_audit 0, corrected_verdict NO_EDGE. Live Fed = October (PM +25bp 0.545 vs CME hike-bin 0.597, gap 5.2pp, mismatch_flag false). Universe 423.",
+   "note_zh": "上午刷新。扫描 2026-09-21 10:12 CST：市场 423，生边 0，审计后 0，corrected_verdict NO_EDGE。在轨利率盘为十月（PM +25bp 0.545 对 CME 加息档 0.597，缺口 5.2pp，错配 false）。宇宙 423。"
+  },
+  {
+   "id": "2026-09-21-1649",
+   "as_of_cst": "2026-09-21 16:10 CST",
+   "published_cst": "2026-09-21 16:49 CST",
+   "after_audit": 0,
+   "url": "./history/2026-09-21-1649.json",
+   "kind": "scan",
+   "pre_print": [],
+   "note_en": "Afternoon refresh. Scan 2026-09-21 16:10 CST: markets 415, raw_edges 1, after_audit 0, corrected_verdict NO_EDGE. Live Fed = October (PM +25bp 0.535 vs CME hike-bin 0.574, gap 3.9pp, mismatch_flag false). Universe 415.",
+   "note_zh": "午后刷新。扫描 2026-09-21 16:10 CST：市场 415，生边 1，审计后 0，corrected_verdict NO_EDGE。在轨利率盘为十月（PM +25bp 0.535 对 CME 加息档 0.574，缺口 3.9pp，错配 false）。宇宙 415。"
+  },
+  {
+   "id": "2026-09-23-1048",
+   "as_of_cst": "2026-09-23 10:15 CST",
+   "published_cst": "2026-09-23 10:48 CST",
+   "after_audit": 0,
+   "url": "./history/2026-09-23-1048.json",
+   "kind": "scan",
+   "pre_print": [],
+   "note_en": "Morning refresh. Scan 2026-09-23 10:15 CST: markets 481, raw_edges 1 rejected (republican-2028 Person-placeholders), after_audit 0, corrected_verdict NO_EDGE. Live Fed = October (PM +25bp 0.525 vs CME hike-bin 0.551, gap 2.6pp, mismatch_flag false). Universe 481.",
+   "note_zh": "上午刷新。扫描 2026-09-23 10:15 CST：市场 481，生边 1 条已否（republican-2028 Person 占位），审计后 0，corrected_verdict NO_EDGE。在轨利率盘为十月（PM +25bp 0.525 对 CME 加息档 0.551，缺口 2.6pp，错配 false）。宇宙 481。"
+  },
+  {
+   "id": "2026-09-23-1643",
+   "as_of_cst": "2026-09-23 16:08 CST",
+   "published_cst": "2026-09-23 16:43 CST",
+   "after_audit": 0,
+   "url": "./history/2026-09-23-1643.json",
+   "kind": "scan",
+   "pre_print": [],
+   "note_en": "Afternoon refresh. Scan 2026-09-23 16:08 CST: markets 531, raw_edges 2 rejected (republican-2028 + democratic-2028 Person-placeholders), after_audit 0, corrected_verdict NO_EDGE. Live Fed = October (PM +25bp 0.535 vs CME hike-bin 0.574, gap 3.9pp, mismatch_flag false). Universe 531.",
+   "note_zh": "下午刷新。扫描 2026-09-23 16:08 CST：市场 531，原始优势 2 条已否（共和党/民主党 2028 Person 占位），审计后 0，corrected_verdict NO_EDGE。在轨美联储=十月（PM +25bp 0.535 对 CME 加息档 0.574，缺口 3.9pp，mismatch_flag false）。全集 531。"
+  },
+  {
+   "id": "2026-09-24-1045",
+   "as_of_cst": "2026-09-24 10:12 CST",
+   "published_cst": "2026-09-24 10:45 CST",
+   "after_audit": 0,
+   "url": "./history/2026-09-24-1045.json",
+   "kind": "scan",
+   "pre_print": [],
+   "note_en": "Morning refresh. Scan 2026-09-24 10:12 CST: markets 700, raw_edges 0, after_audit 0, corrected_verdict ECON_MISMATCH. Live Fed = October (PM +25bp 0.645 vs CME hike-bin 0.758, gap 11.3pp, mismatch_flag true). Universe 700.",
+   "note_zh": "上午刷新。扫描 2026-09-24 10:12 CST：市场 700，生边 0，审计后 0，corrected_verdict ECON_MISMATCH。在轨美联储=十月（PM +25bp 0.645 对 CME 加息档 0.758，缺口 11.3pp，mismatch_flag true）。全集 700。"
+  },
+  {
+   "id": "2026-09-24-1652",
+   "as_of_cst": "2026-09-24 16:14 CST",
+   "published_cst": "2026-09-24 16:52 CST",
+   "after_audit": 0,
+   "url": "./history/2026-09-24-1652.json",
+   "kind": "scan",
+   "pre_print": [],
+   "note_en": "Afternoon refresh. Scan 2026-09-24 16:14 CST: markets 842, raw_edges 2 rejected (democratic-2028 + presidential-winner-2028 Person-placeholders), after_audit 0, corrected_verdict NO_EDGE. Live Fed = October (PM +25bp 0.655 vs CME hike-bin 0.712, gap 5.7pp, mismatch_flag false). Universe 842.",
+   "note_zh": "下午刷新。扫描 2026-09-24 16:14 CST：市场 842，原始优势 2 条已否（民主党 2028 + 总统胜选 2028 Person 占位），审计后 0，corrected_verdict NO_EDGE。在轨美联储=十月（PM +25bp 0.655 对 CME 加息档 0.712，缺口 5.7pp，mismatch_flag false）。全集 842。"
+  },
+  {
+   "id": "2026-09-25-1040",
+   "as_of_cst": "2026-09-25 10:01 CST",
+   "published_cst": "2026-09-25 10:40 CST",
+   "after_audit": 0,
+   "url": "./history/2026-09-25-1040.json",
+   "kind": "scan",
+   "pre_print": [],
+   "note_en": "Morning refresh. Scan 2026-09-25 10:01 CST: markets 1016, raw_edges 2 rejected (democratic-2028 + republican-2028 Person-placeholders), after_audit 0, corrected_verdict NO_EDGE. Live Fed = October (PM +25bp 0.665 vs CME hike-bin 0.735, gap 7.0pp, mismatch_flag false). Universe 1016.",
+   "note_zh": "上午刷新。扫描 2026-09-25 10:01 CST：市场 1016，原始优势 2 条已否（民主党 2028 + 共和党 2028 Person 占位），审计后 0，corrected_verdict NO_EDGE。在轨美联储=十月（PM +25bp 0.665 对 CME 加息档 0.735，缺口 7.0pp，mismatch_flag false）。全集 1016。"
+  },
+  {
+   "id": "2026-09-25-1640",
+   "as_of_cst": "2026-09-25 16:03 CST",
+   "published_cst": "2026-09-25 16:39 CST",
+   "after_audit": 0,
+   "url": "./history/2026-09-25-1640.json",
+   "kind": "scan",
+   "pre_print": [],
+   "note_en": "Afternoon refresh. Scan 2026-09-25 16:03 CST: markets 582, raw_edges 1 rejected (republican-2028 Person-placeholders), after_audit 0, corrected_verdict ECON_MISMATCH. Live Fed = October (PM +25bp 0.665 vs CME hike-bin 0.758, gap 9.3pp, mismatch_flag true). Universe 582.",
+   "note_zh": "下午刷新。扫描 2026-09-25 16:03 CST：市场 582，原始优势 1 条已否（共和党 2028 Person 占位），审计后 0，corrected_verdict ECON_MISMATCH。在轨美联储=十月（PM +25bp 0.665 对 CME 加息档 0.758，缺口 9.3pp，mismatch_flag true）。宇宙 582。"
+  },
+  {
+   "id": "2026-09-30-1041",
+   "as_of_cst": "2026-09-30 10:12 CST",
+   "published_cst": "2026-09-30 10:41 CST",
+   "after_audit": 0,
+   "url": "./history/2026-09-30-1041.json",
+   "kind": "scan",
+   "pre_print": [],
+   "note_en": "Morning refresh. Scan 2026-09-30 10:12 CST: markets 699, raw_edges 1 rejected (presidential-election-winner-2028 Person-placeholders), after_audit 0, corrected_verdict ECON_MISMATCH. Live Fed = October (PM +25bp 0.435 vs CME hike-bin 0.723, gap 28.8pp, mismatch_flag true). Universe 699.",
+   "note_zh": "上午刷新。扫描 2026-09-30 10:12 CST：市场 699，原始优势 1 条已否（总统胜选 2028 Person 占位），审计后 0，corrected_verdict ECON_MISMATCH。在轨美联储=十月（PM +25bp 0.435 对 CME 加息档 0.723，缺口 28.8pp，mismatch_flag true）。全集 699。"
+  },
+  {
+   "id": "2026-09-30-1642",
+   "as_of_cst": "2026-09-30 16:08 CST",
+   "published_cst": "2026-09-30 16:42 CST",
+   "after_audit": 0,
+   "url": "./history/2026-09-30-1642.json",
+   "kind": "scan",
+   "pre_print": [],
+   "note_en": "Afternoon refresh. Scan 2026-09-30 16:08 CST: markets 680, raw_edges 2 rejected (israel-pm incomplete + presidential-2028 Person-placeholders), after_audit 0, corrected_verdict ECON_MISMATCH. Live Fed = October (PM +25bp 0.415 vs CME hike-bin 0.723, gap 30.8pp, mismatch_flag true). Universe 680. Sep NFP modal 50k to 100k mid 0.35.",
+   "note_zh": "下午刷新。扫描 2026-09-30 16:08 CST：市场 680，原始优势 2 条已否（以色列总理分区不完整 + 总统 2028 Person 占位），审计后 0，corrected_verdict ECON_MISMATCH。在轨美联储=十月（PM +25bp 0.415 对 CME 加息档 0.723，缺口 30.8pp，mismatch_flag true）。全集 680。9月非农众数 50k to 100k mid 0.35。"
+  },
+  {
+   "id": "2026-10-01-1051",
+   "as_of_cst": "2026-10-01 10:03 CST",
+   "published_cst": "2026-10-01 10:51 CST",
+   "after_audit": 0,
+   "url": "./history/2026-10-01-1051.json",
+   "kind": "pre_print_freeze",
+   "pre_print": [
+    "nfp-2026-10-02"
+   ],
+   "note_en": "FORCED Sep NFP pre_print freeze + morning refresh. Scan 2026-10-01 10:03 CST: markets 700, raw_edges 2 rejected (presidential-2028 Person-placeholders + post-match sports), after_audit 0, corrected_verdict NO_EDGE. Live Fed = October (PM +25bp 0.335 vs Investing CME hike-bin 0.356, gap 2.1pp, mismatch_flag false). NFP modal 50k to 100k mid 0.355. Universe 700.",
+   "note_zh": "强制 9 月非农事前冻盘 + 上午刷新。扫描 2026-10-01 10:03 CST：市场 700，原始优势 2 条已否（总统 2028 Person 占位 + 赛后体育），审计后 0，corrected_verdict NO_EDGE。在轨美联储=十月（PM +25bp 0.335 对 Investing CME 加息档 0.356，缺口 2.1pp，mismatch_flag false）。非农众数 50k to 100k mid 0.355。全集 700。"
+  },
+  {
+   "id": "2026-10-01-1640",
+   "as_of_cst": "2026-10-01 16:07 CST",
+   "published_cst": "2026-10-01 16:40 CST",
+   "after_audit": 0,
+   "url": "./history/2026-10-01-1640.json",
+   "kind": "scan",
+   "note_en": "Afternoon refresh. Scan 2026-10-01 16:07 CST: markets 594 (completeness 581+negrisk 13), raw_edges 1 rejected (presidential-2028 Person-placeholders), after_audit 0, corrected_verdict NO_EDGE. Live Fed = October (PM +25bp 0.335 vs Investing CME hike-bin 0.402, gap 6.7pp, mismatch_flag false). Sep NFP freeze remains ship 2026-10-01-1051 (already public). Universe 594.",
+   "note_zh": "下午刷新。扫描 2026-10-01 16:07 CST：市场 594（completeness 581+negrisk 13），原始优势 1 条已否（总统 2028 Person 占位），审计后 0，corrected_verdict NO_EDGE。在轨美联储=十月（PM +25bp 0.335 对 Investing CME 加息档 0.402，缺口 6.7pp，mismatch_flag false）。9 月非农冻盘仍为船 2026-10-01-1051（已公开）。全集 594。"
+  },
+  {
+   "id": "2026-10-02-1040",
+   "as_of_cst": "2026-10-02 10:16 CST",
+   "published_cst": "2026-10-02 10:40 CST",
+   "after_audit": 0,
+   "url": "./history/2026-10-02-1040.json",
+   "kind": "scan",
+   "note_en": "Morning refresh. Scan 2026-10-02 10:16 CST: markets 1302 (completeness 1290+negrisk 12), raw_edges 2 rejected (presidential-2028 + democratic-2028 Person-placeholders), after_audit 0, corrected_verdict NO_EDGE. Live Fed = October (PM +25bp 0.245 vs Altınla CME hike-bin 0.31, gap 6.5pp, mismatch_flag false). Sep NFP freeze remains ship 2026-10-01-1051 (already public). Universe 1302.",
+   "note_zh": "上午刷新。扫描 2026-10-02 10:16 CST：市场 1302（completeness 1290+negrisk 12），原始优势 2 条已否（总统 2028 + 民主党提名人 2028 Person 占位），审计后 0，corrected_verdict NO_EDGE。在轨美联储=十月（PM +25bp 0.245 对 Altınla CME 加息档 0.31，缺口 6.5pp，mismatch_flag false）。9 月非农冻盘仍为船 2026-10-01-1051（已公开）。全集 1302。"
+  },
+  {
+   "id": "2026-10-02-1643",
+   "as_of_cst": "2026-10-02 16:11 CST",
+   "published_cst": "2026-10-02 16:43 CST",
+   "after_audit": 0,
+   "url": "./history/2026-10-02-1643.json",
+   "kind": "scan",
+   "note_en": "Afternoon refresh. Scan 2026-10-02 16:11 CST: markets 817 (completeness 806+negrisk 11), raw_edges 2 rejected (republican-2028 + presidential-2028 Person-placeholders), after_audit 0, corrected_verdict NO_EDGE. Live Fed = October (PM +25bp 0.245 vs Altınla CME hike-bin 0.31, gap 6.5pp, mismatch_flag false; Investing now matches 0.31). Sep NFP freeze remains ship 2026-10-01-1051 (already public). Universe 817.",
+   "note_zh": "下午刷新。扫描 2026-10-02 16:11 CST：市场 817（completeness 806+negrisk 11），原始优势 2 条已否（共和党提名人 2028 + 总统 2028 Person 占位），审计后 0，corrected_verdict NO_EDGE。在轨美联储=十月（PM +25bp 0.245 对 Altınla CME 加息档 0.31，缺口 6.5pp，mismatch_flag false；Investing 现一致 0.31）。9 月非农冻盘仍为船 2026-10-01-1051（已公开）。全集 817。"
+  },
+  {
+   "id": "2026-10-05-nfp-print",
+   "as_of_cst": "2026-10-05 10:00 CST",
+   "published_cst": "2026-10-05 10:46 CST",
+   "after_audit": 0,
+   "url": "./history/2026-10-05-nfp-print.json",
+   "kind": "result",
+   "event": "nfp-2026-10-02",
+   "print": "+29k",
+   "public_freeze_id": "2026-10-01-1051",
+   "note_en": "Sep NFP print result appended. +29k (0–50k) vs public freeze modal 50k–100k @ 0.355 → LOSE. U-3 4.2%. Freeze files untouched.",
+   "note_zh": "追加 9 月非农公布结果。+29k（0–50k）对公开冻盘众数 50k–100k @ 0.355 → 未中。失业率 4.2%。冻盘文件未改。"
+  },
+  {
+   "id": "2026-10-05-1046",
+   "as_of_cst": "2026-10-05 10:00 CST",
+   "published_cst": "2026-10-05 10:46 CST",
+   "after_audit": 0,
+   "url": "./history/2026-10-05-1046.json",
+   "kind": "scan+result",
+   "pre_print": [],
+   "note_en": "Morning refresh. Scan 2026-10-05 10:00 CST: markets 762 (completeness 752+negrisk 10), raw_edges 2 rejected (Brazil 1st-round winner + 2nd-place, missing-leg partitions), after_audit 0, NO_EDGE. Live Fed = October (PM +25bp 0.165 vs Altınla CME hike-bin 0.207, gap 4.2pp, mismatch_flag false). Sep NFP scorecard appended. Universe 762.",
+   "note_zh": "上午刷新。扫描 2026-10-05 10:00 CST：市场 762（completeness 752+negrisk 10），原始优势 2 条已否（巴西首轮胜者 + 第二名，缺腿分区），审计后 0，NO_EDGE。在轨美联储=十月（PM +25bp 0.165 对 Altınla CME 加息档 0.207，缺口 4.2pp，mismatch_flag false）。追加 9 月非农记分。全集 762。"
+  }
+ ],
+ "universe_url": "./universe.json"
 }

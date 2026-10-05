@@ -292,7 +292,7 @@ function apply(){
     `<div class="row"><div class="k">fed NegRisk</div><div>net ${D.fed.negrisk_net_cps.toFixed(4)} @ ${D.fed.fee_rate*100}% ${D.fed.fee_rate_src}</div>${stamp(D.scan.corrected_verdict,"no")}</div>`+
     `<div class="row"><div class="k">scan</div><div>${D.scan.markets} markets · raw ${D.scan.raw_edges} · ${D.scan.captured_utc}</div>${stamp(String(D.scan.after_audit), D.scan.after_audit>0?"ok":"no")}</div>`;
   document.getElementById("cal").innerHTML = D.upcoming.map(u=>
-    `<div class="pill"><b>${lang==="zh"?u.zh:u.en}</b><span>${u.when} · ${u.status==="FROZEN"?t("frozen"):t("next")}${u.public_freeze?" · public":""}</span></div>`
+    `<div class="pill"><b>${lang==="zh"?u.zh:u.en}</b><span>${u.when} · ${u.status==="FROZEN"?t("frozen"):(u.status==="RESOLVED"?("print "+(u.print||"")):t("next"))}${u.public_freeze?" · public":""}</span></div>`
   ).join("");
   paintWatch();
   if(D.method) document.getElementById("method").textContent = lang==="zh"?D.method.zh:D.method.en;

@@ -1,0 +1,156 @@
+{
+ "id": "2026-10-05-nfp-print",
+ "kind": "result",
+ "event": "nfp-2026-10-02",
+ "as_of_cst": "2026-10-05 10:00 CST",
+ "published_cst": "2026-10-05 10:46 CST",
+ "public_freeze_id": "2026-10-01-1051",
+ "public_freeze_commit": "c416920",
+ "official": "Nonfarm payrolls +29k (BLS first print); unemployment rate 4.2%",
+ "pm_resolution": "0 to 50k resolved Yes; all other buckets No (gamma-api, closed)",
+ "freeze_ref": {
+  "id": "2026-10-01-1051",
+  "as_of_cst": "2026-10-01 10:51 CST",
+  "modal": "50k to 100k",
+  "modal_freeze_p": 0.355,
+  "rows": [
+   {
+    "name_en": "50k to 100k",
+    "slug": "will-the-us-add-between-50k-and-100k-jobs-in-september-2026",
+    "freeze_p": 0.355,
+    "bid": 0.34,
+    "ask": 0.37
+   },
+   {
+    "name_en": "100k to 150k",
+    "slug": "will-the-us-add-between-100k-and-150k-jobs-in-september-2026",
+    "freeze_p": 0.32,
+    "bid": 0.29,
+    "ask": 0.35
+   },
+   {
+    "name_en": "0 to 50k",
+    "slug": "will-the-us-add-between-0-and-50k-jobs-in-september-2026",
+    "freeze_p": 0.235,
+    "bid": 0.22,
+    "ask": 0.25
+   },
+   {
+    "name_en": "<-50k",
+    "slug": "will-the-us-lose-more-than-50k-jobs-in-september-2026",
+    "freeze_p": 0.07,
+    "bid": 0.04,
+    "ask": 0.1
+   },
+   {
+    "name_en": "150k to 200k",
+    "slug": "will-the-us-add-at-least-150k-jobs-in-september-2026",
+    "freeze_p": 0.066,
+    "bid": 0.017,
+    "ask": 0.115
+   },
+   {
+    "name_en": "-50k to 0",
+    "slug": "will-the-us-lose-between-0-and-50k-jobs-in-september-2026",
+    "freeze_p": 0.065,
+    "bid": 0.05,
+    "ask": 0.08
+   },
+   {
+    "name_en": "200k+",
+    "slug": "will-the-us-add-at-least-200k-jobs-in-september",
+    "freeze_p": 0.0465,
+    "bid": 0.01,
+    "ask": 0.083
+   }
+  ]
+ },
+ "note_en": "Append-only print result. Freeze file 2026-10-01-1051 not rewritten. Modal 50k–100k @ 0.355 vs print +29k (0–50k) → LOSE. U-3 4.2% recorded, not scored.",
+ "note_zh": "只追加公布结果。冻盘文件 2026-10-01-1051 未改写。众数 50k–100k @ 0.355 对公布 +29k（0–50k）→ 未中。失业率 4.2% 记录不计分。",
+ "scorecard": {
+  "print_en": "2 Oct jobs (Sep NFP)",
+  "print_zh": "10月2日非农（9月）",
+  "event_slug": "how-many-jobs-added-in-september-2026",
+  "print_cst": "2026-10-02 20:30 CST",
+  "print_et": "2026-10-02T08:30:00-04:00",
+  "freeze_cst": "2026-10-01 10:51 CST",
+  "public_freeze_id": "2026-10-01-1051",
+  "public_freeze_commit": "c416920",
+  "public_freeze_commit_utc": "2026-10-01T02:53:08Z",
+  "public_before_print": true,
+  "hits": 0,
+  "n": 1,
+  "official": "Nonfarm payrolls +29k (BLS first print); unemployment rate 4.2%",
+  "u3_actual": "4.2%",
+  "u3_leg": "not frozen (no U-3 leg in public freeze 2026-10-01-1051) — recorded, not scored",
+  "pm_resolution": "0 to 50k resolved Yes; all other buckets No (gamma-api, closed)",
+  "actual_bucket": "0 to 50k",
+  "actual_bucket_freeze_p": 0.235,
+  "rows": [
+   {
+    "name_en": "NFP",
+    "name_zh": "非农",
+    "slug": "how-many-jobs-added-in-september-2026",
+    "modal": "50k to 100k",
+    "freeze_p": 0.355,
+    "bid": 0.34,
+    "ask": 0.37,
+    "actual": "+29k (0–50k)",
+    "result": "LOSE"
+   }
+  ],
+  "freeze_rows": [
+   {
+    "name_en": "50k to 100k",
+    "slug": "will-the-us-add-between-50k-and-100k-jobs-in-september-2026",
+    "freeze_p": 0.355,
+    "bid": 0.34,
+    "ask": 0.37
+   },
+   {
+    "name_en": "100k to 150k",
+    "slug": "will-the-us-add-between-100k-and-150k-jobs-in-september-2026",
+    "freeze_p": 0.32,
+    "bid": 0.29,
+    "ask": 0.35
+   },
+   {
+    "name_en": "0 to 50k",
+    "slug": "will-the-us-add-between-0-and-50k-jobs-in-september-2026",
+    "freeze_p": 0.235,
+    "bid": 0.22,
+    "ask": 0.25
+   },
+   {
+    "name_en": "<-50k",
+    "slug": "will-the-us-lose-more-than-50k-jobs-in-september-2026",
+    "freeze_p": 0.07,
+    "bid": 0.04,
+    "ask": 0.1
+   },
+   {
+    "name_en": "150k to 200k",
+    "slug": "will-the-us-add-at-least-150k-jobs-in-september-2026",
+    "freeze_p": 0.066,
+    "bid": 0.017,
+    "ask": 0.115
+   },
+   {
+    "name_en": "-50k to 0",
+    "slug": "will-the-us-lose-between-0-and-50k-jobs-in-september-2026",
+    "freeze_p": 0.065,
+    "bid": 0.05,
+    "ask": 0.08
+   },
+   {
+    "name_en": "200k+",
+    "slug": "will-the-us-add-at-least-200k-jobs-in-september",
+    "freeze_p": 0.0465,
+    "bid": 0.01,
+    "ask": 0.083
+   }
+  ],
+  "note_en": "Public pre-print freeze ship 2026-10-01-1051 (commit c416920, 2026-10-01 10:53 CST, ~33.6h before print). Modal 50k–100k @ 0.355 missed; print +29k landed in 0–50k, priced 0.235 at freeze. U-3 4.2% recorded, not scored. Freeze rows untouched.",
+  "note_zh": "公开事前冻盘船 2026-10-01-1051（commit c416920，2026-10-01 10:53 CST，约公布前 33.6 小时）。众数 50k–100k @ 0.355 未中；公布 +29k 落在 0–50k 档，冻盘时价 0.235。失业率 4.2% 记录但不计分。冻盘行未改。"
+ }
+}
