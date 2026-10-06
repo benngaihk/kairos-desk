@@ -327,6 +327,17 @@
    "pre_print": [],
    "note_en": "Morning refresh. Scan 2026-10-05 10:00 CST: markets 762 (completeness 752+negrisk 10), raw_edges 2 rejected (Brazil 1st-round winner + 2nd-place, missing-leg partitions), after_audit 0, NO_EDGE. Live Fed = October (PM +25bp 0.165 vs Altınla CME hike-bin 0.207, gap 4.2pp, mismatch_flag false). Sep NFP scorecard appended. Universe 762.",
    "note_zh": "上午刷新。扫描 2026-10-05 10:00 CST：市场 762（completeness 752+negrisk 10），原始优势 2 条已否（巴西首轮胜者 + 第二名，缺腿分区），审计后 0，NO_EDGE。在轨美联储=十月（PM +25bp 0.165 对 Altınla CME 加息档 0.207，缺口 4.2pp，mismatch_flag false）。追加 9 月非农记分。全集 762。"
+  },
+  {
+   "id": "2026-10-06-1700",
+   "as_of_cst": "2026-10-06 16:46 CST",
+   "published_cst": "2026-10-06 17:00 CST",
+   "after_audit": 0,
+   "url": "./history/2026-10-06-1700.json",
+   "kind": "scan",
+   "pre_print": [],
+   "note_en": "Afternoon refresh. Scan 2026-10-06 16:46 CST: markets 730 (completeness 717+negrisk 13), raw_edges 1 rejected (Romania PM, 11 placeholder legs), after_audit 0, NO_EDGE. Oct Fed PM +25bp 0.195 vs Altınla 0.31 (gap 11.5pp, mismatch_flag true) / Investing 0.241 (4.6pp). Universe 730.",
+   "note_zh": "下午刷新。扫描 2026-10-06 16:46 CST：市场 730（completeness 717+negrisk 13），原始优势 1 条已否（罗马尼亚总理，11 条占位腿），审计后 0，NO_EDGE。十月美联储 PM +25bp 0.195 对 Altınla 0.31（缺口 11.5pp，mismatch_flag true）/ Investing 0.241（4.6pp）。全集 730。"
   }
  ],
  "universe_url": "./universe.json"
