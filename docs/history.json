@@ -338,6 +338,17 @@
    "pre_print": [],
    "note_en": "Afternoon refresh. Scan 2026-10-06 16:46 CST: markets 730 (completeness 717+negrisk 13), raw_edges 1 rejected (Romania PM, 11 placeholder legs), after_audit 0, NO_EDGE. Oct Fed PM +25bp 0.195 vs Altınla 0.31 (gap 11.5pp, mismatch_flag true) / Investing 0.241 (4.6pp). Universe 730.",
    "note_zh": "下午刷新。扫描 2026-10-06 16:46 CST：市场 730（completeness 717+negrisk 13），原始优势 1 条已否（罗马尼亚总理，11 条占位腿），审计后 0，NO_EDGE。十月美联储 PM +25bp 0.195 对 Altınla 0.31（缺口 11.5pp，mismatch_flag true）/ Investing 0.241（4.6pp）。全集 730。"
+  },
+  {
+   "id": "2026-10-07-1100",
+   "as_of_cst": "2026-10-07 10:45 CST",
+   "published_cst": "2026-10-07 11:00 CST",
+   "after_audit": 0,
+   "url": "./history/2026-10-07-1100.json",
+   "kind": "scan",
+   "pre_print": [],
+   "note_en": "Morning refresh. Scan 2026-10-07 10:45 CST: markets 645 (completeness 632+negrisk 13), raw_edges 1 rejected (Argentina vs Benin post-match, missing leg), after_audit 0, NO_EDGE. Oct Fed PM +25bp 0.155 vs Altınla 0.31 (gap 15.5pp, mismatch_flag true) / Investing 0.218 (6.3pp). Universe 645.",
+   "note_zh": "上午刷新。扫描 2026-10-07 10:45 CST：市场 645（completeness 632+negrisk 13），原始优势 1 条已否（阿根廷对贝宁赛后缺腿），审计后 0，NO_EDGE。十月美联储 PM +25bp 0.155 对 Altınla 0.31（缺口 15.5pp，mismatch_flag true）/ Investing 0.218（6.3pp）。全集 645。"
   }
  ],
  "universe_url": "./universe.json"
