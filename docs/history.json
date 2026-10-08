@@ -360,6 +360,17 @@
    "pre_print": [],
    "note_en": "Morning refresh. Scan 2026-10-08 10:37 CST: markets 772 (completeness 761+negrisk 11), raw_edges 2 rejected (inactive Other/placeholder legs), after_audit 0, NO_EDGE. Oct Fed PM +25bp 0.155 vs Altınla 0.413 (gap 25.8pp, mismatch_flag true) / Investing 0.184 (2.9pp). Universe 772.",
    "note_zh": "上午刷新。扫描 2026-10-08 10:37 CST：市场 772（completeness 761+negrisk 11），原始优势 2 条已否（“其他”/占位腿未激活），审计后 0，NO_EDGE。十月美联储 PM +25bp 0.155 对 Altınla 0.413（缺口 25.8pp，mismatch_flag true）/ Investing 0.184（2.9pp）。全集 772。"
+  },
+  {
+   "id": "2026-10-08-1124",
+   "as_of_cst": "2026-10-08 10:37 CST",
+   "published_cst": "2026-10-08 11:25 CST",
+   "after_audit": 0,
+   "url": "./history/2026-10-08-1124.json",
+   "kind": "depth_walk",
+   "pre_print": [],
+   "note_en": "Depth-walk add-on (same 10:37 scan, books 2026-10-08 11:24 CST). Book depth checked at $100/$500 (as of 2026-10-08 11:24 CST). Nobel set (not exhaustive) best-quote 0.8920 → $100 walk 1.2114/set, nominal edge gone past 10.28 sets; Oct Fed set 1.0271/1.0271 at $100/$500, 0 profitable sets.",
+   "note_zh": "盘口深度补充（同一 10:37 扫描，盘口 2026-10-08 11:24 CST）。盘口深度已按 $100/$500 核验（截至 2026-10-08 11:24 CST）。诺贝尔集合（不穷尽）卖一 0.8920 → $100 回溯 1.2114/组，超过 10.28 组名义优势即消失；十月美联储整组 $100/$500 为 1.0271/1.0271，可盈利组数 0。"
   }
  ],
  "universe_url": "./universe.json"

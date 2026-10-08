@@ -99,6 +99,10 @@ td{padding:5px 0;border-bottom:1px solid var(--line)}
 <h2 data-i="h_watch">Watch</h2>
 <div class="tiles" id="watch"></div>
 
+<h2 data-i="h_depth">Book depth</h2>
+<p class="cannot" id="depth_line"></p>
+<div id="depth"></div>
+
 <h2 data-i="h_readout">Signal readout</h2>
 <div class="tiles">
   <div class="tile">
@@ -130,7 +134,7 @@ td{padding:5px 0;border-bottom:1px solid var(--line)}
 <p class="cannot" id="method"></p>
 
 <h2 data-i="h_cannot">What this cannot say</h2>
-<p class="cannot" data-i="cannot">A gap between Polymarket and a CME-method bin is not a trade. A raw NegRisk sum is not an edge until every outcome is on the book. Fee-adjusted is not fillable: this page does not show slippage or size you can actually get. Two freeze days are not a win rate. This page is a receipt, not a signal shop.</p>
+<p class="cannot" data-i="cannot">A gap between Polymarket and a CME-method bin is not a trade. A raw NegRisk sum is not an edge until every outcome is on the book. The depth walk reads visible asks once; it is not a fill you can count on. Two freeze days are not a win rate. This page is a receipt, not a signal shop.</p>
 
 <section id="data">
   <h2 data-i="acc_h">Data</h2>
@@ -148,8 +152,8 @@ const I = {
     nav:"Open JSON", kicker:"Fee-adjusted edge",
     h_readout:"Signal readout", h_reject:"Last rejected “edge”",
     h_log:"Receipt pulse", h_next:"Next freeze", h_cannot:"What this cannot say",
-    h_method:"How we audit", h_watch:"Watch",
-    cannot:"A gap between Polymarket and a CME-method bin is not a trade. A raw NegRisk sum is not an edge until every outcome is on the book. Fee-adjusted is not fillable: this page does not show slippage or size you can actually get. Two freeze days are not a win rate. This page is a receipt, not a signal shop.",
+    h_method:"How we audit", h_watch:"Watch", h_depth:"Book depth",
+    cannot:"A gap between Polymarket and a CME-method bin is not a trade. A raw NegRisk sum is not an edge until every outcome is on the book. The depth walk reads visible asks once; it is not a fill you can count on. Two freeze days are not a win rate. This page is a receipt, not a signal shop.",
     acc_h:"Data", acc_p:"No signup. Snapshots are public JSON. History is appended when data updates.",
     verify:"Verify", recheck:"Re-check when", freeze:"Freeze", print:"Print",
     foot:"Kairos · snapshots only · not trading advice",
@@ -174,8 +178,8 @@ const I = {
     nav:"打开 JSON", kicker:"扣费后优势",
     h_readout:"信号读数", h_reject:"最近一条被毙的「优势」",
     h_log:"回执", h_next:"下一场冻盘", h_cannot:"这页不能说什么",
-    h_method:"怎么审", h_watch:"继续观察",
-    cannot:"Polymarket 和 CME 方法档之间的缺口不是交易。NegRisk 加总在每个结果都有卖一之前不是优势。扣费后不等于能成交：这页不展示滑点和可成交量。两个冻盘日不是胜率。这是回执，不是信号店。",
+    h_method:"怎么审", h_watch:"继续观察", h_depth:"盘口深度",
+    cannot:"Polymarket 和 CME 方法档之间的缺口不是交易。NegRisk 加总在每个结果都有卖一之前不是优势。深度回溯只读一次可见卖单，不保证能成交。两个冻盘日不是胜率。这是回执，不是信号店。",
     acc_h:"数据", acc_p:"不用注册。快照是公开 JSON。数据更新时追加历史。",
     verify:"复核", recheck:"何时重检", freeze:"冻结", print:"公布",
     foot:"Kairos · 只展示快照 · 非交易建议",
@@ -217,16 +221,43 @@ function derive(d){
   if (stale) return has ? "stale_edge" : "stale";
   return has ? "edge" : "no_edge";
 }
+function depthLine(){
+  const c=D&&D.depth_check;
+  if(!c||c.status!=="checked") return lang==="zh"?"盘口深度未核验":"book depth unverified";
+  const st=c.stakes_usd.map(v=>"$"+v).join("/");
+  return lang==="zh"?`盘口深度已按 ${st} 核验（截至 ${c.books_fetched_cst}）`:`book depth checked at ${st} (as of ${c.books_fetched_cst})`;
+}
+function paintDepth(){
+  const c=D.depth_check, el=document.getElementById("depth");
+  const zh=lang==="zh";
+  document.getElementById("depth_line").textContent = depthLine().replace(/^b/,"B")+(c&&c.status==="checked"?(zh?"。每组等股数沿卖单买到本金花完，含费。":". Equal shares per leg down the asks until the stake is spent, fees included."):"");
+  if(!c||!c.candidates){el.innerHTML="";return;}
+  const f=v=>v==null?"—":Number(v).toFixed(4);
+  el.innerHTML=c.candidates.map(k=>{
+    const w=k.depth_walk;
+    if(w.status!=="ok") return `<details><summary>${k.title} · ${zh?"盘口未取到":"books not fetched"}</summary></details>`;
+    const s0=w.stakes[0];
+    const nom=k.set_complete===false?` · ${zh?"集合不穷尽，名义值":"not exhaustive, nominal"}`:"";
+    const rows=w.stakes.map(s=>`<tr><td>$${s.stake_usd}</td><td>${s.sets}</td><td>${f(s.avg_cost_after_fees)}</td><td>${f(s.net_edge_per_set)}</td><td>${s.net_edge_usd}</td><td>${s.insufficient_depth?(zh?"深度不足：":"insufficient depth: ")+s.insufficient_legs.map(l=>l.label+" "+l.fillable_shares+" sh / $"+l.fillable_usd).join(", "):"ok"}</td></tr>`).join("");
+    const legs=(w.legs||[]).map(l=>`<tr><td>${l.label}</td><td>${f(l.vwap_100)}</td><td>${f(l.vwap_500)}</td><td>${l.depth_shares}</td></tr>`).join("");
+    return `<details><summary>${k.title} · $${s0.stake_usd} ${f(s0.avg_cost_after_fees)}/set${nom}</summary>
+      <p><a href="${k.url}">${k.url.replace("https://polymarket.com/event/","")}</a> · ${k.audit} · ${w.n_legs} legs · rate ${w.fee_rate} (${w.fee_rate_src}) · books ${w.books_fetched_utc}</p>
+      <p>${zh?"卖一扣费成本":"best-quote cost after fees"} ${f(w.best_quote_cost_after_fees)} · max_profitable_sets ${w.max_profitable_sets} · peak ${zh?"名义净额":"net"} $${w.peak_net_edge_usd} @ ${w.peak_edge_sets} · max_fillable_sets ${w.max_fillable_sets}</p>
+      <table><tr><th>stake</th><th>sets</th><th>avg cost</th><th>net/set</th><th>net $</th><th>depth</th></tr>${rows}</table>
+      <table><tr><th>leg</th><th>vwap $100</th><th>vwap $500</th><th>ask depth sh</th></tr>${legs}</table>
+    </details>`;
+  }).join("");
+}
 function ledeText(){
   if(ui==="loading") return t("lede_load");
   if(ui==="error") return t("lede_err");
   const n = D.scan.markets, a = D.scan.after_audit;
   if(lang==="zh"){
-    let s = `本次扫描 ${n} 个市场，发现 ${a} 个通过完整性与费用检查的候选机会。\n快照时间：${D.as_of_cst}｜成交深度尚未验证`;
+    let s = `本次扫描 ${n} 个市场，发现 ${a} 个通过完整性与费用检查的候选机会。\n快照时间：${D.as_of_cst}｜${depthLine()}`;
     if(ui.startsWith("stale")) s += "\n"+t("stale");
     return s;
   }
-  let s = `This scan covered ${n} markets. ${a} candidate${a===1?"":"s"} passed completeness and fee checks.\nSnapshot: ${D.as_of_cst} · fill depth not verified`;
+  let s = `This scan covered ${n} markets. ${a} candidate${a===1?"":"s"} passed completeness and fee checks.\nSnapshot: ${D.as_of_cst} · ${depthLine()}`;
   if(ui.startsWith("stale")) s += "\n"+t("stale");
   return s;
 }
@@ -295,6 +326,7 @@ function apply(){
     `<div class="pill"><b>${lang==="zh"?u.zh:u.en}</b><span>${u.when} · ${u.status==="FROZEN"?t("frozen"):(u.status==="RESOLVED"?("print "+(u.print||"")):t("next"))}${u.public_freeze?" · public":""}</span></div>`
   ).join("");
   paintWatch();
+  paintDepth();
   if(D.method) document.getElementById("method").textContent = lang==="zh"?D.method.zh:D.method.en;
   if(D.notify) document.getElementById("notify").textContent = lang==="zh"?D.notify.zh:D.notify.en;
   document.getElementById("curl").textContent = ["GET "+D.json_url,"GET "+D.history_url].concat(D.universe_url?["GET "+D.universe_url]:[]).join("\n");
