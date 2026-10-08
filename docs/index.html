@@ -58,6 +58,8 @@ h2{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.14em;tex
 .pill b{display:block;font-family:Newsreader,serif;font-size:18px}
 .pill span{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--muted)}
 .cannot{color:var(--muted);font-size:14px;max-width:40em}
+.exec{font-size:15px;font-weight:600;max-width:40em;border-left:3px solid var(--stale);padding-left:.6em}
+.exec .asof{font-weight:400}
 #data{margin-top:48px;padding-top:20px;border-top:1px solid var(--ink)}
 details{margin-top:8px;font-size:13px;color:var(--muted)}
 details summary{cursor:pointer;font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink)}
@@ -106,6 +108,7 @@ td{padding:5px 0;border-bottom:1px solid var(--line)}
 
 <h2 data-i="h_depth">Book depth</h2>
 <p class="cannot" id="depth_line"></p>
+<div class="exec" id="depth_exec"></div>
 <div id="depth"></div>
 <p class="cap" id="depth_lim_h"></p>
 <ul class="dlim" id="depth_lim"></ul>
@@ -141,7 +144,7 @@ td{padding:5px 0;border-bottom:1px solid var(--line)}
 <p class="cannot" id="method"></p>
 
 <h2 data-i="h_cannot">What this cannot say</h2>
-<p class="cannot" data-i="cannot">A gap between Polymarket and a CME-method bin is not a trade. A raw NegRisk sum is not an edge until every outcome is on the book. The depth walk reads visible bids and asks once per snapshot, and legs do not fill atomically; a set that passes is not a fill you can count on, and a set that fails any leg is rejected, not partly filled. Two freeze days are not a win rate. This page is a receipt, not a signal shop.</p>
+<p class="cannot" data-i="cannot">A gap between Polymarket and a CME-method bin is not a trade. A raw NegRisk sum is not an edge until every outcome is on the book. The depth walk reads visible bids and asks once per snapshot, and legs do not fill atomically; a set that passes is a size check on a snapshot, not a fill guarantee (legs go out as separate orders), and a set that fails any leg is rejected, not partly filled. Two freeze days are not a win rate. This page is a receipt, not a signal shop.</p>
 
 <section id="data">
   <h2 data-i="acc_h">Data</h2>
@@ -160,7 +163,7 @@ const I = {
     h_readout:"Signal readout", h_reject:"Last rejected “edge”",
     h_log:"Receipt pulse", h_next:"Next freeze", h_cannot:"What this cannot say",
     h_method:"How we audit", h_watch:"Watch", h_depth:"Book depth",
-    cannot:"A gap between Polymarket and a CME-method bin is not a trade. A raw NegRisk sum is not an edge until every outcome is on the book. The depth walk reads visible bids and asks once per snapshot, and legs do not fill atomically; a set that passes is not a fill you can count on, and a set that fails any leg is rejected, not partly filled. Two freeze days are not a win rate. This page is a receipt, not a signal shop.",
+    cannot:"A gap between Polymarket and a CME-method bin is not a trade. A raw NegRisk sum is not an edge until every outcome is on the book. The depth walk reads visible bids and asks once per snapshot, and legs do not fill atomically; a set that passes is a size check on a snapshot, not a fill guarantee (legs go out as separate orders), and a set that fails any leg is rejected, not partly filled. Two freeze days are not a win rate. This page is a receipt, not a signal shop.",
     acc_h:"Data", acc_p:"No signup. Snapshots are public JSON. History is appended when data updates.",
     verify:"Verify", recheck:"Re-check when", freeze:"Freeze", print:"Print",
     foot:"Kairos · snapshots only · not trading advice",
@@ -186,7 +189,7 @@ const I = {
     h_readout:"信号读数", h_reject:"最近一条被毙的「优势」",
     h_log:"回执", h_next:"下一场冻盘", h_cannot:"这页不能说什么",
     h_method:"怎么审", h_watch:"继续观察", h_depth:"盘口深度",
-    cannot:"Polymarket 和 CME 方法档之间的缺口不是交易。NegRisk 加总在每个结果都有卖一之前不是优势。深度回溯每次快照只读一次可见买卖盘，且各条腿不是原子成交；通过的整组也不保证能成交，任何一条腿不达标的整组直接被否，不记部分成交。两个冻盘日不是胜率。这是回执，不是信号店。",
+    cannot:"Polymarket 和 CME 方法档之间的缺口不是交易。NegRisk 加总在每个结果都有卖一之前不是优势。深度回溯每次快照只读一次可见买卖盘，且各条腿不是原子成交；通过的整组只是对快照的规模检查，不保证成交（各腿是分开下单），任何一条腿不达标的整组直接被否，不记部分成交。两个冻盘日不是胜率。这是回执，不是信号店。",
     acc_h:"数据", acc_p:"不用注册。快照是公开 JSON。数据更新时追加历史。",
     verify:"复核", recheck:"何时重检", freeze:"冻结", print:"公布",
     foot:"Kairos · 只展示快照 · 非交易建议",
@@ -243,6 +246,11 @@ function paintDepth(){
   const lh=document.getElementById("depth_lim_h"), ll=document.getElementById("depth_lim");
   const ok=c&&(c.status==="checked"||c.status==="partial");
   const line=depthLine();
+  const exn=c&&(zh?c.execution_note_zh:c.execution_note_en), lgm=c&&(zh?c.legging_model_zh:c.legging_model_en);
+  document.getElementById("depth_exec").innerHTML = exn?`${esc(exn)}${lgm?`<p class="asof">${esc(lgm)}</p>`:""}`:"";
+  const lg=(r,sg)=>r.legging_1tick_extra_per_set==null?"—":`<span title="${esc((zh?"最差腿：":"worst leg: ")+(r.legging_worst_leg||""))}">${sg}${Number(r.legging_1tick_extra_per_set).toFixed(4)}</span>`;
+  const be=r=>r.status!=="OK"||r.legging_status==null?"—":r.breakeven_ticks_worst_leg!=null?String(r.breakeven_ticks_worst_leg)
+    :r.legging_status==="no_edge"?`<span class="warn">n/a (${r.edge_in_worst_leg_ticks!=null?(r.edge_in_worst_leg_ticks>0?"+":"")+r.edge_in_worst_leg_ticks:"—"})</span>`:(zh?"价格界内抹不平":"not wiped in price bounds");
   const n2=v=>v==null?"—":Number(v).toLocaleString("en-US",{maximumFractionDigits:2});
   const R=c&&c.rejections, xs=(s)=>R[s].rows_rejected_stale!=null?(zh?`，过时 ${R[s].rows_rejected_stale}，盘口异常 ${R[s].rows_rejected_book}`:`, stale ${R[s].rows_rejected_stale}, book ${R[s].rows_rejected_book}`):"", rj=(s)=>R&&R[s]?(zh?`${s==="buy"?"买":"卖"}方 ${R[s].rows_rejected}/${R[s].rows} 档被否（最小下单量 ${R[s].rows_rejected_min_order}，深度 ${R[s].rows_rejected_depth}${xs(s)}）`:`${s} ${R[s].rows_rejected}/${R[s].rows} rows rejected (min order ${R[s].rows_rejected_min_order}, depth ${R[s].rows_rejected_depth}${xs(s)})`):"";
   const thr=c&&c.stale_threshold_ms!=null?c.stale_threshold_ms/1000:null;
@@ -281,8 +289,8 @@ function paintDepth(){
     const B=w.buy, S=w.sell, m=mech[k.kind]||{};
     const b100=B.ladder.find(r=>r.stake_usd===100)||B.ladder[0], s100=S.ladder.find(r=>r.stake_usd===100)||S.ladder[0];
     const nom=B.applicable==="nominal_not_exhaustive"?` · <span class="warn">${zh?"不穷尽":"not exhaustive"}</span>`:"";
-    const brows=B.ladder.map(r=>`<tr><td>$${r.stake_usd}</td><td>${n2(r.status==="REJECTED"?r.target_sets:r.sets)}</td><td>${val(r,"avg_cost_after_fees")}</td><td>${r.status==="REJECTED"?"—":sgn(r.net_edge_per_set)}</td><td>${r.status==="REJECTED"?"—":n2(r.net_edge_usd)}</td><td>${val(r,"tick_stress_avg_cost")}</td><td>${st(r)}</td></tr>`).join("");
-    const srows=S.ladder.map(r=>`<tr><td>$${r.stake_usd}</td><td>${n2(r.status==="REJECTED"?r.stake_usd:r.sets)}</td><td>${val(r,"avg_proceeds_after_fees")}</td><td>${r.status==="REJECTED"?"—":sgn(r.net_edge_per_set)}</td><td>${r.status==="REJECTED"?"—":n2(r.net_edge_usd)}</td><td>${val(r,"tick_stress_avg_proceeds")}</td><td>${st(r)}</td></tr>`).join("");
+    const brows=B.ladder.map(r=>`<tr><td>$${r.stake_usd}</td><td>${n2(r.status==="REJECTED"?r.target_sets:r.sets)}</td><td>${val(r,"avg_cost_after_fees")}</td><td>${r.status==="REJECTED"?"—":sgn(r.net_edge_per_set)}</td><td>${r.status==="REJECTED"?"—":n2(r.net_edge_usd)}</td><td>${val(r,"tick_stress_avg_cost")}</td><td>${lg(r,"+")}</td><td>${be(r)}</td><td>${st(r)}</td></tr>`).join("");
+    const srows=S.ladder.map(r=>`<tr><td>$${r.stake_usd}</td><td>${n2(r.status==="REJECTED"?r.stake_usd:r.sets)}</td><td>${val(r,"avg_proceeds_after_fees")}</td><td>${r.status==="REJECTED"?"—":sgn(r.net_edge_per_set)}</td><td>${r.status==="REJECTED"?"—":n2(r.net_edge_usd)}</td><td>${val(r,"tick_stress_avg_proceeds")}</td><td>${lg(r,"−")}</td><td>${be(r)}</td><td>${st(r)}</td></tr>`).join("");
     const MB=B.max_profitable, MS=S.max_profitable;
     const cons=M=>M.constraint?(M.constraint==="min_order_binding"?(zh?"（最小下单量约束生效）":" (min order binding)"):` <span class="warn">(${esc(M.constraint)})</span>`):"";
     const cols=w.leg_cols||[], ix=n=>cols.indexOf(n), g=(L,n)=>ix(n)<0?null:L[ix(n)];
@@ -295,11 +303,11 @@ function paintDepth(){
       <p class="asof">${ts}</p>
       <p><b>${zh?"买入整组":"Buy full set"}</b> (${appL[B.applicable]||B.applicable}) — ${esc(zh?m.buy_zh:m.buy_en)}</p>
       <p>${zh?"卖一扣费":"best quote"} ${f(B.best_quote_cost_after_fees)} → +1 tick ${f(B.best_quote_tick_stress_cost)} · ${zh?"缓冲":"buffer"} ${B.ticks_of_buffer_all_legs} tick${B.min_order_set_sets!=null?` · ${zh?"最小合规组":"smallest legal set"} ${n2(B.min_order_set_sets)} ${zh?"组":"sets"} ${f(B.min_order_set_cost_after_fees)}`:""} · max_profitable ${n2(MB.sets)} ${zh?"组":"sets"} / $${n2(MB.cost_usd)} / ${zh?"净":"net"} $${n2(MB.net_edge_usd)}${MB.depth_limited?(zh?"（受深度限制）":" (depth-limited)"):""}${cons(MB)} · breakeven ${n2(MB.breakeven_sets)} · ${zh?"+1 tick 下":"under +1 tick"} ${n2(MB.sets_under_tick_stress)}</p>
-      <div class="dscroll"><table class="dtbl"><tr><th>stake</th><th>sets</th><th>${zh?"每组成本":"cost/set"}</th><th>net/set</th><th>net $</th><th>+1 tick</th><th>${zh?"状态":"status"}</th></tr>${brows}</table></div>
+      <div class="dscroll"><table class="dtbl"><tr><th>stake</th><th>sets</th><th>${zh?"每组成本":"cost/set"}</th><th>net/set</th><th>net $</th><th>+1 tick</th><th>${zh?"最差腿 +1 tick":"+1 tick, worst leg"}</th><th>${zh?"盈亏平衡 tick":"break-even ticks"}</th><th>${zh?"状态":"status"}</th></tr>${brows}</table></div>
       <p><b>${zh?"卖出整组":"Sell full set"}</b> (${appL[S.applicable]||S.applicable}) — ${esc(zh?m.sell_zh:m.sell_en)}</p>
       ${S.mint_cost_per_set_usd!=null?`<p class="asof">${zh?`铸造成本 $${S.mint_cost_per_set_usd}/组已计入（净额 = 扣费后所得 − $1 × 组数；不计 gas）`:`Mint cost $${S.mint_cost_per_set_usd}/set included (net = proceeds after fees − $1 × sets; gas excluded)`}</p>`:""}
       <p>${zh?"买一扣费":"best quote"} ${f(S.best_quote_proceeds_after_fees)} → −1 tick ${f(S.best_quote_tick_stress_proceeds)} · ${zh?"缓冲":"buffer"} ${S.ticks_of_buffer_all_legs} tick · ${zh?"整组可卖":"full-set sellable"} ${n2(S.max_full_sell_sets)} · max_profitable ${n2(MS.sets)} ${zh?"组":"sets"} / ${zh?"净":"net"} $${n2(MS.net_edge_usd)}${cons(MS)} · ${zh?"−1 tick 下":"under −1 tick"} ${n2(MS.sets_under_tick_stress)}</p>
-      <div class="dscroll"><table class="dtbl"><tr><th>stake</th><th>sets</th><th>${zh?"每组所得":"proceeds/set"}</th><th>net/set</th><th>net $</th><th>−1 tick</th><th>${zh?"状态":"status"}</th></tr>${srows}</table></div>
+      <div class="dscroll"><table class="dtbl"><tr><th>stake</th><th>sets</th><th>${zh?"每组所得":"proceeds/set"}</th><th>net/set</th><th>net $</th><th>−1 tick</th><th>${zh?"最差腿 −1 tick":"−1 tick, worst leg"}</th><th>${zh?"盈亏平衡 tick":"break-even ticks"}</th><th>${zh?"状态":"status"}</th></tr>${srows}</table></div>
       <details><summary>${zh?"逐腿":"Per leg"} (${w.n_legs})</summary><div class="dscroll"><table class="dtbl"><tr><th>leg</th><th>tick</th><th>min</th><th>bid</th><th>ask</th><th>bid sh</th><th>ask sh</th><th>buy $100</th><th>buy $1000</th><th>sell $100</th><th>sell $1000</th><th>${zh?"不足于":"short at"} buy/sell</th><th>${zh?"抓取 CST":"fetched CST"}</th><th>${zh?"服务器时间戳":"book ts"}</th></tr>${lrows}</table></div></details>
     </details>`;
   }).join("");
