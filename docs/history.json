@@ -371,6 +371,17 @@
    "pre_print": [],
    "note_en": "Depth-walk add-on (same 10:37 scan, books 2026-10-08 11:24 CST). Book depth checked at $100/$500 (as of 2026-10-08 11:24 CST). Nobel set (not exhaustive) best-quote 0.8920 → $100 walk 1.2114/set, nominal edge gone past 10.28 sets; Oct Fed set 1.0271/1.0271 at $100/$500, 0 profitable sets.",
    "note_zh": "盘口深度补充（同一 10:37 扫描，盘口 2026-10-08 11:24 CST）。盘口深度已按 $100/$500 核验（截至 2026-10-08 11:24 CST）。诺贝尔集合（不穷尽）卖一 0.8920 → $100 回溯 1.2114/组，超过 10.28 组名义优势即消失；十月美联储整组 $100/$500 为 1.0271/1.0271，可盈利组数 0。"
+  },
+  {
+   "id": "2026-10-08-1149",
+   "as_of_cst": "2026-10-08 10:37 CST",
+   "published_cst": "2026-10-08 11:51 CST",
+   "after_audit": 0,
+   "url": "./history/2026-10-08-1149.json",
+   "kind": "depth_walk_v2",
+   "pre_print": [],
+   "note_en": "Depth-walk v2 add-on (same 10:37 scan, books 2026-10-08 11:51 CST). Book depth checked both sides at $50–$1000 (as of 2026-10-08 11:51 CST). 14 sets walked both ways at $50–$1000. Oct Fed set: buy 1.0260–1.0260/set (0 profitable sets; +1 tick 1.0492), sell 0.9748–0.9742/set (−1 tick 0.9517). Sets with a profitable sell side: 0. Exhaustive sets with a profitable buy side: 0. Only nominal buy-side discounts are on non-exhaustive sets: Nobel 7 sets / $0.68 nominal (under +1 tick: 7); Pres 2028 5,718 sets / $89.94 nominal (under +1 tick: 0). Yes/No pairs are one mirrored book (3 of 3), so their sell side is 1 − spread − fees by construction.",
+   "note_zh": "盘口深度 v2 补充（同一 10:37 扫描，盘口 2026-10-08 11:51 CST）。盘口深度已双向核验 $50–$1000（截至 2026-10-08 11:51 CST）。14 个整组买卖双向回溯 $50–$1000。十月美联储整组：买入 1.0260–1.0260/组（可盈利 0 组；+1 tick 1.0492），卖出 0.9748–0.9742/组（−1 tick 0.9517）。卖方可盈利的整组：0 个。穷尽集合中买方可盈利的：0 个。买方名义折价只出现在不穷尽集合：诺贝尔 7 组 / 名义净 $0.68（+1 tick 下 7 组）；2028 总统 5,718 组 / 名义净 $89.94（+1 tick 下 0 组）。Yes/No 对是同一本镜像盘口（3/3），所以卖方结构上就是 1 − 价差 − 费。"
   }
  ],
  "universe_url": "./universe.json"
