@@ -393,7 +393,140 @@
    "pre_print": [],
    "note_en": "Depth-walk v2.1 add-on (same 10:37 scan, books 2026-10-08 15:54 CST). Book depth checked both sides at $50–$1000 (as of 2026-10-08 15:54 CST). v2.1: sets are all-or-nothing — shares rounded down to 0.01, every leg must meet its book min_order_size and fill the full count, else the row is REJECTED with the leg and reason (no partial fills). 14 sets × 5 stakes × 2 sides: buy 0/70 rows rejected (min order 0, depth 0); sell 20/70 (min order 0, depth 20: 4 sets have a leg with no bids). Oct Fed buy 1.0364/set, sell 0.9839–0.9845/set, 0 profitable. Profitable sell sets: 0; exhaustive profitable buy sets: 0. Each set now carries its book fetch times (leg spread 104–2096 ms) and server book timestamps.",
    "note_zh": "盘口深度 v2.1 补充（同一 10:37 扫描，盘口 2026-10-08 15:54 CST）。盘口深度已双向核验 $50–$1000（截至 2026-10-08 15:54 CST）。v2.1：整组全有或全无——股数向下取整到 0.01，每条腿须满足盘口 min_order_size 且能成交全部股数，否则该档被否并写明腿和原因（不记部分成交）。14 组 × 5 档 × 双向：买方 0/70 档被否（最小下单量 0，深度 0）；卖方 20/70（最小下单量 0，深度 20：4 组有腿没有买单）。十月美联储买入 1.0364/组，卖出 0.9839–0.9845/组，可盈利 0。卖方可盈利整组 0 个；穷尽集合买方可盈利 0 个。每组现在附盘口抓取时间（腿间隔 104–2096 毫秒）和服务器盘口时间戳。"
+  },
+  {
+   "id": "2026-10-08-1737",
+   "as_of_cst": "2026-10-08 10:37 CST",
+   "published_cst": "2026-10-08 17:38 CST",
+   "after_audit": 0,
+   "url": "./history/2026-10-08-1737.json",
+   "kind": "depth_walk_v2_2",
+   "pre_print": [],
+   "note_en": "Depth-walk v2.2 add-on (same 10:37 scan, books 2026-10-08 17:38 CST). Book depth checked both sides at $50–$1000 (as of 2026-10-08 17:38 CST). v2.2: fees rounded to 5 dp per fill; each buy leg must also be ≥ $1 notional; legs of a set are read in one batch and a set whose reads are > 5 s apart is REJECTED_STALE; crossed books are rejected; sell side counts the $1/set mint cost. 14 sets × 5 stakes × 2 sides: buy 36/70 rows rejected (min order 36, depth 0, stale 0, book 0); sell 20/70 (min order 0, depth 20, stale 0, book 0). Sell rows where a leg would be under $1 (flag only; $1 rule confirmed for buys): 17. Max per-set read spread 0 ms. Oct Fed buy 1.0236/set, sell 0.9756/set, 0 profitable. Profitable sell sets: 0; exhaustive profitable buy sets: 0.",
+   "note_zh": "盘口深度 v2.2 补充（同一 10:37 扫描，盘口 2026-10-08 17:38 CST）。盘口深度已双向核验 $50–$1000（截至 2026-10-08 17:38 CST）。v2.2：费用按每笔成交取整到 5 位小数；每条买入腿名义金额还须 ≥ $1；同组各腿一次批量读取，读取相隔 > 5 秒判为 REJECTED_STALE；交叉盘口即否；卖方计入每组 $1 铸造成本。14 组 × 5 档 × 双向：买方 36/70 档被否（最小下单量 36，深度 0，过时 0，盘口 0）；卖方 20/70（最小下单量 0，深度 20，过时 0，盘口 0）。卖方有腿不足 $1 的档（仅标记；$1 规则只证实适用于买单）：17。单组最大读取间隔 0 毫秒。十月美联储买入 1.0236/组，卖出 0.9756/组，可盈利 0。卖方可盈利整组 0 个；穷尽集合买方可盈利 0 个。"
   }
  ],
- "universe_url": "./universe.json"
+ "universe_url": "./universe.json",
+ "depth_replays": [
+  {
+   "id": "2026-10-08-1124",
+   "methodology_version": "v1",
+   "status": "checked",
+   "scan_dir": null,
+   "books_fetched_cst": "2026-10-08 11:24 CST",
+   "books_fetch_first_cst": null,
+   "books_fetch_last_cst": null,
+   "max_set_fetch_spread_ms": null,
+   "stale_threshold_ms": null,
+   "n_sets_stale": null,
+   "oldest_book_ts_age_s": null,
+   "n_sets": 5,
+   "n_books": 156,
+   "n_books_failed": 0,
+   "rows": null,
+   "rows_rejected": null,
+   "rows_rejected_by_reason": null,
+   "url": "history/2026-10-08-1124.json"
+  },
+  {
+   "id": "2026-10-08-1149",
+   "methodology_version": "v2",
+   "status": "checked",
+   "scan_dir": "routine-20261008-1040",
+   "books_fetched_cst": "2026-10-08 11:51 CST",
+   "books_fetch_first_cst": null,
+   "books_fetch_last_cst": null,
+   "max_set_fetch_spread_ms": null,
+   "stale_threshold_ms": null,
+   "n_sets_stale": null,
+   "oldest_book_ts_age_s": null,
+   "n_sets": 14,
+   "n_books": 235,
+   "n_books_failed": 0,
+   "rows": null,
+   "rows_rejected": null,
+   "rows_rejected_by_reason": null,
+   "url": "history/2026-10-08-1149.json"
+  },
+  {
+   "id": "2026-10-08-1552",
+   "methodology_version": "v2.1",
+   "status": "checked",
+   "scan_dir": "routine-20261008-1040",
+   "books_fetched_cst": "2026-10-08 15:54 CST",
+   "books_fetch_first_cst": "2026-10-08 15:54:31 CST",
+   "books_fetch_last_cst": "2026-10-08 15:54:33 CST",
+   "max_set_fetch_spread_ms": 2096,
+   "stale_threshold_ms": null,
+   "n_sets_stale": null,
+   "oldest_book_ts_age_s": 356,
+   "n_sets": 14,
+   "n_books": 234,
+   "n_books_failed": 0,
+   "rows": {
+    "buy": 70,
+    "sell": 70
+   },
+   "rows_rejected": {
+    "buy": 0,
+    "sell": 20
+   },
+   "rows_rejected_by_reason": {
+    "buy": {
+     "min_order": 0,
+     "depth": 0,
+     "stale": null,
+     "book": null
+    },
+    "sell": {
+     "min_order": 0,
+     "depth": 20,
+     "stale": null,
+     "book": null
+    }
+   },
+   "url": "history/2026-10-08-1552.json"
+  },
+  {
+   "id": "2026-10-08-1737",
+   "methodology_version": "v2.2",
+   "status": "checked",
+   "scan_dir": "routine-20261008-1040",
+   "books_fetched_cst": "2026-10-08 17:38 CST",
+   "books_fetch_first_cst": "2026-10-08 17:38:00 CST",
+   "books_fetch_last_cst": "2026-10-08 17:38:01 CST",
+   "max_set_fetch_spread_ms": 0,
+   "stale_threshold_ms": 5000,
+   "n_sets_stale": 0,
+   "oldest_book_ts_age_s": 796,
+   "n_sets": 14,
+   "n_books": 234,
+   "n_books_failed": 0,
+   "rows": {
+    "buy": 70,
+    "sell": 70
+   },
+   "rows_rejected": {
+    "buy": 36,
+    "sell": 20
+   },
+   "rows_rejected_by_reason": {
+    "buy": {
+     "min_order": 36,
+     "depth": 0,
+     "stale": 0,
+     "book": 0
+    },
+    "sell": {
+     "min_order": 0,
+     "depth": 20,
+     "stale": 0,
+     "book": 0
+    }
+   },
+   "url": "history/2026-10-08-1737.json"
+  }
+ ],
+ "depth_replays_note_en": "One row per book-depth replay: ship id, methodology version, first/last book read (CST), max per-set read spread vs the stale threshold, and rows rejected by reason (a row can carry several reasons). null = not recorded by that version.",
+ "depth_replays_note_zh": "每次盘口深度回放一行：快照编号、方法版本、最早/最晚盘口读取时间（CST）、单组最大读取间隔与过时阈值、按原因统计的被否档数（一档可有多个原因）。null = 该版本未记录。"
 }
