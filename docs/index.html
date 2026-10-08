@@ -141,7 +141,7 @@ td{padding:5px 0;border-bottom:1px solid var(--line)}
 <p class="cannot" id="method"></p>
 
 <h2 data-i="h_cannot">What this cannot say</h2>
-<p class="cannot" data-i="cannot">A gap between Polymarket and a CME-method bin is not a trade. A raw NegRisk sum is not an edge until every outcome is on the book. The depth walk reads visible bids and asks once per snapshot, and legs do not fill atomically; it is not a fill you can count on. Two freeze days are not a win rate. This page is a receipt, not a signal shop.</p>
+<p class="cannot" data-i="cannot">A gap between Polymarket and a CME-method bin is not a trade. A raw NegRisk sum is not an edge until every outcome is on the book. The depth walk reads visible bids and asks once per snapshot, and legs do not fill atomically; a set that passes is not a fill you can count on, and a set that fails any leg is rejected, not partly filled. Two freeze days are not a win rate. This page is a receipt, not a signal shop.</p>
 
 <section id="data">
   <h2 data-i="acc_h">Data</h2>
@@ -160,7 +160,7 @@ const I = {
     h_readout:"Signal readout", h_reject:"Last rejected “edge”",
     h_log:"Receipt pulse", h_next:"Next freeze", h_cannot:"What this cannot say",
     h_method:"How we audit", h_watch:"Watch", h_depth:"Book depth",
-    cannot:"A gap between Polymarket and a CME-method bin is not a trade. A raw NegRisk sum is not an edge until every outcome is on the book. The depth walk reads visible bids and asks once per snapshot, and legs do not fill atomically; it is not a fill you can count on. Two freeze days are not a win rate. This page is a receipt, not a signal shop.",
+    cannot:"A gap between Polymarket and a CME-method bin is not a trade. A raw NegRisk sum is not an edge until every outcome is on the book. The depth walk reads visible bids and asks once per snapshot, and legs do not fill atomically; a set that passes is not a fill you can count on, and a set that fails any leg is rejected, not partly filled. Two freeze days are not a win rate. This page is a receipt, not a signal shop.",
     acc_h:"Data", acc_p:"No signup. Snapshots are public JSON. History is appended when data updates.",
     verify:"Verify", recheck:"Re-check when", freeze:"Freeze", print:"Print",
     foot:"Kairos · snapshots only · not trading advice",
@@ -186,7 +186,7 @@ const I = {
     h_readout:"信号读数", h_reject:"最近一条被毙的「优势」",
     h_log:"回执", h_next:"下一场冻盘", h_cannot:"这页不能说什么",
     h_method:"怎么审", h_watch:"继续观察", h_depth:"盘口深度",
-    cannot:"Polymarket 和 CME 方法档之间的缺口不是交易。NegRisk 加总在每个结果都有卖一之前不是优势。深度回溯每次快照只读一次可见买卖盘，且各条腿不是原子成交，不保证能成交。两个冻盘日不是胜率。这是回执，不是信号店。",
+    cannot:"Polymarket 和 CME 方法档之间的缺口不是交易。NegRisk 加总在每个结果都有卖一之前不是优势。深度回溯每次快照只读一次可见买卖盘，且各条腿不是原子成交；通过的整组也不保证能成交，任何一条腿不达标的整组直接被否，不记部分成交。两个冻盘日不是胜率。这是回执，不是信号店。",
     acc_h:"数据", acc_p:"不用注册。快照是公开 JSON。数据更新时追加历史。",
     verify:"复核", recheck:"何时重检", freeze:"冻结", print:"公布",
     foot:"Kairos · 只展示快照 · 非交易建议",
@@ -243,40 +243,57 @@ function paintDepth(){
   const lh=document.getElementById("depth_lim_h"), ll=document.getElementById("depth_lim");
   const ok=c&&(c.status==="checked"||c.status==="partial");
   const line=depthLine();
+  const n2=v=>v==null?"—":Number(v).toLocaleString("en-US",{maximumFractionDigits:2});
+  const R=c&&c.rejections, rj=(s)=>R&&R[s]?(zh?`${s==="buy"?"买":"卖"}方 ${R[s].rows_rejected}/${R[s].rows} 档被否（最小下单量 ${R[s].rows_rejected_min_order}，深度 ${R[s].rows_rejected_depth}）`:`${s} ${R[s].rows_rejected}/${R[s].rows} rows rejected (min order ${R[s].rows_rejected_min_order}, depth ${R[s].rows_rejected_depth})`):"";
+  const aon=c&&c.all_or_nothing?(zh?"取整后强制最小下单量；整组全有或全无：任何一条腿低于最小下单量或深度不够全部股数，该档即被否，绝不记部分成交。":"Min order size enforced after rounding; sets are all-or-nothing: if any leg is below its minimum or lacks depth for the full share count the set is rejected, never partially filled. "):"";
   document.getElementById("depth_line").textContent = line.charAt(0).toUpperCase()+line.slice(1)+(ok?(zh?
-    `。买方：每条腿等股数沿卖单买到本金花完（含费），每组成本 < $1 才算优势；卖方：以 $1 铸造整组、每条腿沿买单卖出，每组所得 > $1 才算优势。${c.non_atomic_zh||""}±1 价位压力列给出非原子执行后还剩多少缓冲。抓取窗口 ${c.fetch_window_s??"—"} 秒，${c.n_books_failed} 本盘口失败。`:
-    `. Buy: equal shares per leg down the asks until the stake is spent, fees included; edge only if cost/set < $1. Sell: mint $1 sets and sell every leg down the bids; edge only if proceeds/set > $1. ${c.non_atomic_en||""} The ±1-tick columns show what buffer survives non-atomic execution. Fetch window ${c.fetch_window_s??"—"}s, ${c.n_books_failed} books failed.`):"");
+    `。买方：每条腿等股数沿卖单买到本金花完（含费），每组成本 < $1 才算优势；卖方：以 $1 铸造整组、每条腿沿买单卖出，每组所得 > $1 才算优势。${aon}${c.non_atomic_zh||""}±1 价位压力列给出非原子执行后还剩多少缓冲。抓取窗口 ${c.fetch_window_s??"—"} 秒，${c.n_books_failed} 本盘口失败。${R?"本次："+rj("buy")+"；"+rj("sell")+"。":""}`:
+    `. Buy: equal shares per leg down the asks until the stake is spent, fees included; edge only if cost/set < $1. Sell: mint $1 sets and sell every leg down the bids; edge only if proceeds/set > $1. ${aon}${c.non_atomic_en||""} The ±1-tick columns show what buffer survives non-atomic execution. Fetch window ${c.fetch_window_s??"—"}s, ${c.n_books_failed} books failed.${R?" This run: "+rj("buy")+"; "+rj("sell")+".":""}`):"");
   const lim=c&&(zh?c.limits_zh:c.limits_en);
   lh.textContent = lim?(zh?"局限":"Limits"):""; ll.innerHTML = lim?lim.map(s=>`<li>${esc(s)}</li>`).join(""):"";
   if(!c||!c.candidates){el.innerHTML="";return;}
-  const f=v=>v==null?"—":Number(v).toFixed(4), n2=v=>v==null?"—":Number(v).toLocaleString("en-US",{maximumFractionDigits:2});
+  const f=v=>v==null?"—":Number(v).toFixed(4);
   const sgn=v=>v==null?"—":(v>=0?"+":"")+Number(v).toFixed(4);
   const mech=c.mechanics||{};
   const roleL={raw_edge:zh?"原始命中（已否）":"raw hit (rejected)",fed_set:zh?"本次美联储整组":"live Fed set",watch:zh?"观察":"watch",fed_set_other:zh?"其他美联储整组":"other Fed set",scan_set:zh?"NegRisk 整组":"NegRisk set",near_miss:zh?"Yes/No 近似命中":"Yes/No near miss"};
   const appL={yes:zh?"适用":"applicable",merge_now:zh?"适用（可立即合并）":"applicable (merge now)",nominal_not_exhaustive:zh?"名义值：集合不穷尽":"nominal: set not exhaustive",unknown_exhaustiveness:zh?"穷尽性未知":"exhaustiveness unknown",
     yes_mint_or_buy_all_no:zh?"适用（铸造或买齐 No）":"applicable (mint, or buy every No)",structural_no_mirrored_book:zh?"不适用：Yes/No 镜像盘口":"not applicable: mirrored Yes/No book",yes_binary_unmirrored:zh?"适用（未镜像）":"applicable (unmirrored)"};
+  const why=r=>r.reason==="below_min_order"?(zh?`${esc(r.leg)}：${n2(r.have)} 股 < 最小下单 ${n2(r.required)}`:`${esc(r.leg)}: ${n2(r.have)} sh < min order ${n2(r.required)}`)
+    :r.reason==="no_quotes"?(zh?`${esc(r.leg)}：无报价（需 ${n2(r.required)} 股）`:`${esc(r.leg)}: no quotes (needs ${n2(r.required)} sh)`)
+    :(zh?`${esc(r.leg)}：需 ${n2(r.required)} 股，可用 ${n2(r.available)}`:`${esc(r.leg)}: needs ${n2(r.required)} sh, ${n2(r.available)} available`);
+  const st=r=>{
+    if(r.status==="REJECTED"){const rr=r.reject_reasons||[];const more=(r.n_reject_reasons||rr.length)-rr.length;
+      return `<span class="warn">${zh?"被否":"REJECTED"}: ${rr.slice(0,3).map(why).join("; ")}${(rr.length>3||more>0)?(zh?` 等 ${r.n_reject_reasons||rr.length} 条`:` … ${r.n_reject_reasons||rr.length} reasons`):""}</span>`;}
+    if(r.status==="OK") return "OK";
+    return r.insufficient_depth?`<span class="warn">${zh?"深度不足":"short"}</span>`:"ok";
+  };
+  const val=(r,k)=>r.status==="REJECTED"?`<span class="warn">${zh?"被否":"rej."}</span>`:f(r[k]);
   el.innerHTML=c.candidates.map(k=>{
     const w=k.depth_walk;
-    if(!w||w.status!=="ok") return `<details><summary>${esc(k.title)} · ${zh?"盘口未取到":"books not fetched"}</summary></details>`;
+    if(!w||w.status!=="ok") return `<details><summary>${esc(k.title)} · ${w&&w.status==="resolved"?(zh?"已结算":"resolved"):(zh?"盘口未取到":"books not fetched")}</summary></details>`;
     if(!w.buy) return `<details><summary>${esc(k.title)}</summary></details>`;
     const B=w.buy, S=w.sell, m=mech[k.kind]||{};
     const b100=B.ladder.find(r=>r.stake_usd===100)||B.ladder[0], s100=S.ladder.find(r=>r.stake_usd===100)||S.ladder[0];
     const nom=B.applicable==="nominal_not_exhaustive"?` · <span class="warn">${zh?"不穷尽":"not exhaustive"}</span>`:"";
-    const dep=(r,side)=>r.insufficient_depth?`<span class="warn">${zh?"深度不足 ":"short "}${r.n_insufficient_legs??r.insufficient_legs.length}: ${r.insufficient_legs.map(l=>esc(l.label)+" "+n2(l.fillable_shares)).join(", ")}${(r.n_insufficient_legs||0)>r.insufficient_legs.length?" …":""}</span>`:"ok";
-    const brows=B.ladder.map(r=>`<tr><td>$${r.stake_usd}</td><td>${n2(r.sets)}</td><td>${f(r.avg_cost_after_fees)}</td><td>${sgn(r.net_edge_per_set)}</td><td>${n2(r.net_edge_usd)}</td><td>${f(r.tick_stress_avg_cost)}</td><td>${dep(r)}</td></tr>`).join("");
-    const srows=S.ladder.map(r=>`<tr><td>$${r.stake_usd}</td><td>${n2(r.sets)}</td><td>${f(r.avg_proceeds_after_fees)}</td><td>${sgn(r.net_edge_per_set)}</td><td>${n2(r.net_edge_usd)}</td><td>${f(r.tick_stress_avg_proceeds)}</td><td>${dep(r)}</td></tr>`).join("");
+    const brows=B.ladder.map(r=>`<tr><td>$${r.stake_usd}</td><td>${n2(r.status==="REJECTED"?r.target_sets:r.sets)}</td><td>${val(r,"avg_cost_after_fees")}</td><td>${r.status==="REJECTED"?"—":sgn(r.net_edge_per_set)}</td><td>${r.status==="REJECTED"?"—":n2(r.net_edge_usd)}</td><td>${val(r,"tick_stress_avg_cost")}</td><td>${st(r)}</td></tr>`).join("");
+    const srows=S.ladder.map(r=>`<tr><td>$${r.stake_usd}</td><td>${n2(r.status==="REJECTED"?r.stake_usd:r.sets)}</td><td>${val(r,"avg_proceeds_after_fees")}</td><td>${r.status==="REJECTED"?"—":sgn(r.net_edge_per_set)}</td><td>${r.status==="REJECTED"?"—":n2(r.net_edge_usd)}</td><td>${val(r,"tick_stress_avg_proceeds")}</td><td>${st(r)}</td></tr>`).join("");
     const MB=B.max_profitable, MS=S.max_profitable;
-    const cols=w.leg_cols||[], ix=n=>cols.indexOf(n);
-    const lrows=(w.legs||[]).map(L=>`<tr><td>${esc(L[ix("label")])}</td><td>${L[ix("tick")]}</td><td>${L[ix("best_bid")]??"—"}</td><td>${L[ix("best_ask")]??"—"}</td><td>${n2(L[ix("bid_depth_sh")])}</td><td>${n2(L[ix("ask_depth_sh")])}</td><td>${f(L[ix("buy_vwap_100")])}</td><td>${f(L[ix("buy_vwap_1000")])}</td><td>${f(L[ix("sell_vwap_100")])}</td><td>${f(L[ix("sell_vwap_1000")])}</td><td>${L[ix("buy_short_at_usd")]!=null?"$"+L[ix("buy_short_at_usd")]:"—"} / ${L[ix("sell_short_at_usd")]!=null?"$"+L[ix("sell_short_at_usd")]:"—"}</td></tr>`).join("");
-    return `<details><summary>${esc(k.title)} · ${zh?"买":"buy"} $${b100.stake_usd} ${f(b100.avg_cost_after_fees)} · ${zh?"卖":"sell"} $${s100.stake_usd} ${f(s100.avg_proceeds_after_fees)} · ${zh?"可盈利组数 买/卖":"max sets buy/sell"} ${n2(MB.sets)}/${n2(MS.sets)}${nom}</summary>
-      <p><a href="${esc(k.url)}">${esc(k.url.replace("https://polymarket.com/event/",""))}</a> · ${roleL[k.role]||k.role} · ${w.n_legs} legs · rate ${w.fee_rate} (${w.fee_rate_src}) · tick ${(w.tick_sizes||[]).join("/")} · books ${w.books_fetched_utc} · ${esc(k.completeness_note_en||"")}</p>
+    const cons=M=>M.constraint?(M.constraint==="min_order_binding"?(zh?"（最小下单量约束生效）":" (min order binding)"):` <span class="warn">(${esc(M.constraint)})</span>`):"";
+    const cols=w.leg_cols||[], ix=n=>cols.indexOf(n), g=(L,n)=>ix(n)<0?null:L[ix(n)];
+    const lrows=(w.legs||[]).map(L=>`<tr><td>${esc(g(L,"label"))}</td><td>${g(L,"tick")}</td><td>${n2(g(L,"min_order_sh"))}</td><td>${g(L,"best_bid")??"—"}</td><td>${g(L,"best_ask")??"—"}</td><td>${n2(g(L,"bid_depth_sh"))}</td><td>${n2(g(L,"ask_depth_sh"))}</td><td>${f(g(L,"buy_vwap_100"))}</td><td>${f(g(L,"buy_vwap_1000"))}</td><td>${f(g(L,"sell_vwap_100"))}</td><td>${f(g(L,"sell_vwap_1000"))}</td><td>${g(L,"buy_short_at_usd")!=null?"$"+g(L,"buy_short_at_usd"):"—"} / ${g(L,"sell_short_at_usd")!=null?"$"+g(L,"sell_short_at_usd"):"—"}</td><td>${g(L,"fetched_cst")??"—"}${g(L,"fetch_offset_ms")!=null?" +"+g(L,"fetch_offset_ms")+"ms":""}</td><td>${g(L,"book_ts_cst")??"—"}</td></tr>`).join("");
+    const ts=w.books_fetch_first_cst?(zh?`盘口抓取 ${w.books_fetch_first_cst.slice(11,19)}–${w.books_fetch_last_cst.slice(11)}（间隔 ${n2(w.books_fetch_spread_ms)} 毫秒）· 服务器盘口时间戳 ${(w.book_ts_oldest_cst||"").slice(11,19)}–${(w.book_ts_newest_cst||"").slice(11)}（最旧比抓取早 ${w.book_ts_oldest_age_s??"—"} 秒）`
+      :`Books fetched ${w.books_fetch_first_cst.slice(11,19)}–${w.books_fetch_last_cst.slice(11)} (spread ${n2(w.books_fetch_spread_ms)} ms) · server book timestamps ${(w.book_ts_oldest_cst||"").slice(11,19)}–${(w.book_ts_newest_cst||"").slice(11)} (oldest ${w.book_ts_oldest_age_s??"—"}s before fetch)`):`books ${w.books_fetched_utc}`;
+    const sm=(r,k)=>r.status==="REJECTED"?(zh?"被否":"REJECTED"):f(r[k]);
+    return `<details><summary>${esc(k.title)} · ${zh?"买":"buy"} $${b100.stake_usd} ${sm(b100,"avg_cost_after_fees")} · ${zh?"卖":"sell"} $${s100.stake_usd} ${sm(s100,"avg_proceeds_after_fees")} · ${zh?"可盈利组数 买/卖":"max sets buy/sell"} ${n2(MB.sets)}/${n2(MS.sets)}${nom}</summary>
+      <p><a href="${esc(k.url)}">${esc(k.url.replace("https://polymarket.com/event/",""))}</a> · ${roleL[k.role]||k.role} · ${w.n_legs} legs · rate ${w.fee_rate} (${w.fee_rate_src}) · tick ${(w.tick_sizes||[]).join("/")} · ${zh?"最小下单":"min order"} ${(w.min_order_sizes||[]).join("/")} ${zh?"股":"sh"} · ${esc(k.completeness_note_en||"")}${(k.legs_closed_since_scan||[]).length?` · ${zh?"扫描后已关闭（不再走）的腿":"legs closed since scan (dropped)"}: ${k.legs_closed_since_scan.map(esc).join(", ")}`:""}</p>
+      <p class="asof">${ts}</p>
       <p><b>${zh?"买入整组":"Buy full set"}</b> (${appL[B.applicable]||B.applicable}) — ${esc(zh?m.buy_zh:m.buy_en)}</p>
-      <p>${zh?"卖一扣费":"best quote"} ${f(B.best_quote_cost_after_fees)} → +1 tick ${f(B.best_quote_tick_stress_cost)} · ${zh?"缓冲":"buffer"} ${B.ticks_of_buffer_all_legs} tick · max_profitable ${n2(MB.sets)} ${zh?"组":"sets"} / $${n2(MB.cost_usd)} / ${zh?"净":"net"} $${n2(MB.net_edge_usd)}${MB.depth_limited?(zh?"（受深度限制）":" (depth-limited)"):""} · breakeven ${n2(MB.breakeven_sets)} · ${zh?"+1 tick 下":"under +1 tick"} ${n2(MB.sets_under_tick_stress)}</p>
-      <div class="dscroll"><table class="dtbl"><tr><th>stake</th><th>sets</th><th>${zh?"每组成本":"cost/set"}</th><th>net/set</th><th>net $</th><th>+1 tick</th><th>depth</th></tr>${brows}</table></div>
+      <p>${zh?"卖一扣费":"best quote"} ${f(B.best_quote_cost_after_fees)} → +1 tick ${f(B.best_quote_tick_stress_cost)} · ${zh?"缓冲":"buffer"} ${B.ticks_of_buffer_all_legs} tick${B.min_order_set_sets!=null?` · ${zh?"最小合规组":"smallest legal set"} ${n2(B.min_order_set_sets)} ${zh?"组":"sets"} ${f(B.min_order_set_cost_after_fees)}`:""} · max_profitable ${n2(MB.sets)} ${zh?"组":"sets"} / $${n2(MB.cost_usd)} / ${zh?"净":"net"} $${n2(MB.net_edge_usd)}${MB.depth_limited?(zh?"（受深度限制）":" (depth-limited)"):""}${cons(MB)} · breakeven ${n2(MB.breakeven_sets)} · ${zh?"+1 tick 下":"under +1 tick"} ${n2(MB.sets_under_tick_stress)}</p>
+      <div class="dscroll"><table class="dtbl"><tr><th>stake</th><th>sets</th><th>${zh?"每组成本":"cost/set"}</th><th>net/set</th><th>net $</th><th>+1 tick</th><th>${zh?"状态":"status"}</th></tr>${brows}</table></div>
       <p><b>${zh?"卖出整组":"Sell full set"}</b> (${appL[S.applicable]||S.applicable}) — ${esc(zh?m.sell_zh:m.sell_en)}</p>
-      <p>${zh?"买一扣费":"best quote"} ${f(S.best_quote_proceeds_after_fees)} → −1 tick ${f(S.best_quote_tick_stress_proceeds)} · ${zh?"缓冲":"buffer"} ${S.ticks_of_buffer_all_legs} tick · max_profitable ${n2(MS.sets)} ${zh?"组":"sets"} / ${zh?"净":"net"} $${n2(MS.net_edge_usd)} · ${zh?"−1 tick 下":"under −1 tick"} ${n2(MS.sets_under_tick_stress)}</p>
-      <div class="dscroll"><table class="dtbl"><tr><th>stake</th><th>sets</th><th>${zh?"每组所得":"proceeds/set"}</th><th>net/set</th><th>net $</th><th>−1 tick</th><th>depth</th></tr>${srows}</table></div>
-      <details><summary>${zh?"逐腿":"Per leg"} (${w.n_legs})</summary><div class="dscroll"><table class="dtbl"><tr><th>leg</th><th>tick</th><th>bid</th><th>ask</th><th>bid sh</th><th>ask sh</th><th>buy $100</th><th>buy $1000</th><th>sell $100</th><th>sell $1000</th><th>${zh?"不足于":"short at"} buy/sell</th></tr>${lrows}</table></div></details>
+      <p>${zh?"买一扣费":"best quote"} ${f(S.best_quote_proceeds_after_fees)} → −1 tick ${f(S.best_quote_tick_stress_proceeds)} · ${zh?"缓冲":"buffer"} ${S.ticks_of_buffer_all_legs} tick · ${zh?"整组可卖":"full-set sellable"} ${n2(S.max_full_sell_sets)} · max_profitable ${n2(MS.sets)} ${zh?"组":"sets"} / ${zh?"净":"net"} $${n2(MS.net_edge_usd)}${cons(MS)} · ${zh?"−1 tick 下":"under −1 tick"} ${n2(MS.sets_under_tick_stress)}</p>
+      <div class="dscroll"><table class="dtbl"><tr><th>stake</th><th>sets</th><th>${zh?"每组所得":"proceeds/set"}</th><th>net/set</th><th>net $</th><th>−1 tick</th><th>${zh?"状态":"status"}</th></tr>${srows}</table></div>
+      <details><summary>${zh?"逐腿":"Per leg"} (${w.n_legs})</summary><div class="dscroll"><table class="dtbl"><tr><th>leg</th><th>tick</th><th>min</th><th>bid</th><th>ask</th><th>bid sh</th><th>ask sh</th><th>buy $100</th><th>buy $1000</th><th>sell $100</th><th>sell $1000</th><th>${zh?"不足于":"short at"} buy/sell</th><th>${zh?"抓取 CST":"fetched CST"}</th><th>${zh?"服务器时间戳":"book ts"}</th></tr>${lrows}</table></div></details>
     </details>`;
   }).join("");
 }

@@ -382,6 +382,17 @@
    "pre_print": [],
    "note_en": "Depth-walk v2 add-on (same 10:37 scan, books 2026-10-08 11:51 CST). Book depth checked both sides at $50–$1000 (as of 2026-10-08 11:51 CST). 14 sets walked both ways at $50–$1000. Oct Fed set: buy 1.0260–1.0260/set (0 profitable sets; +1 tick 1.0492), sell 0.9748–0.9742/set (−1 tick 0.9517). Sets with a profitable sell side: 0. Exhaustive sets with a profitable buy side: 0. Only nominal buy-side discounts are on non-exhaustive sets: Nobel 7 sets / $0.68 nominal (under +1 tick: 7); Pres 2028 5,718 sets / $89.94 nominal (under +1 tick: 0). Yes/No pairs are one mirrored book (3 of 3), so their sell side is 1 − spread − fees by construction.",
    "note_zh": "盘口深度 v2 补充（同一 10:37 扫描，盘口 2026-10-08 11:51 CST）。盘口深度已双向核验 $50–$1000（截至 2026-10-08 11:51 CST）。14 个整组买卖双向回溯 $50–$1000。十月美联储整组：买入 1.0260–1.0260/组（可盈利 0 组；+1 tick 1.0492），卖出 0.9748–0.9742/组（−1 tick 0.9517）。卖方可盈利的整组：0 个。穷尽集合中买方可盈利的：0 个。买方名义折价只出现在不穷尽集合：诺贝尔 7 组 / 名义净 $0.68（+1 tick 下 7 组）；2028 总统 5,718 组 / 名义净 $89.94（+1 tick 下 0 组）。Yes/No 对是同一本镜像盘口（3/3），所以卖方结构上就是 1 − 价差 − 费。"
+  },
+  {
+   "id": "2026-10-08-1552",
+   "as_of_cst": "2026-10-08 10:37 CST",
+   "published_cst": "2026-10-08 15:54 CST",
+   "after_audit": 0,
+   "url": "./history/2026-10-08-1552.json",
+   "kind": "depth_walk_v2_1",
+   "pre_print": [],
+   "note_en": "Depth-walk v2.1 add-on (same 10:37 scan, books 2026-10-08 15:54 CST). Book depth checked both sides at $50–$1000 (as of 2026-10-08 15:54 CST). v2.1: sets are all-or-nothing — shares rounded down to 0.01, every leg must meet its book min_order_size and fill the full count, else the row is REJECTED with the leg and reason (no partial fills). 14 sets × 5 stakes × 2 sides: buy 0/70 rows rejected (min order 0, depth 0); sell 20/70 (min order 0, depth 20: 4 sets have a leg with no bids). Oct Fed buy 1.0364/set, sell 0.9839–0.9845/set, 0 profitable. Profitable sell sets: 0; exhaustive profitable buy sets: 0. Each set now carries its book fetch times (leg spread 104–2096 ms) and server book timestamps.",
+   "note_zh": "盘口深度 v2.1 补充（同一 10:37 扫描，盘口 2026-10-08 15:54 CST）。盘口深度已双向核验 $50–$1000（截至 2026-10-08 15:54 CST）。v2.1：整组全有或全无——股数向下取整到 0.01，每条腿须满足盘口 min_order_size 且能成交全部股数，否则该档被否并写明腿和原因（不记部分成交）。14 组 × 5 档 × 双向：买方 0/70 档被否（最小下单量 0，深度 0）；卖方 20/70（最小下单量 0，深度 20：4 组有腿没有买单）。十月美联储买入 1.0364/组，卖出 0.9839–0.9845/组，可盈利 0。卖方可盈利整组 0 个；穷尽集合买方可盈利 0 个。每组现在附盘口抓取时间（腿间隔 104–2096 毫秒）和服务器盘口时间戳。"
   }
  ],
  "universe_url": "./universe.json"
