@@ -1,0 +1,484 @@
+{
+ "id": "2026-10-14-2218-cpi-print",
+ "kind": "result",
+ "event": "cpi-2026-10-14",
+ "as_of_cst": "2026-10-14 22:16 CST",
+ "published_cst": "2026-10-14 22:17 CST",
+ "public_freeze_id": "2026-10-14-1042",
+ "public_freeze_commit": "d7dd8d4",
+ "official": "BLS CPI-U Sep 2026 (USDL-26-1574, 2026-10-14 08:30 ET): headline MoM +0.6%, YoY +3.7%; core MoM +0.3%, YoY +2.6%. Polymarket gamma Yes≈0.9995 on 0.6% / 3.7% / 0.3% / 2.6% buckets.",
+ "pm_resolution": "H MoM 0.6% / H YoY 3.7% / C MoM 0.3% / C YoY 2.6% Yes≈1 (gamma-api, not yet closed)",
+ "freeze_ref": {
+  "id": "2026-10-14-1042",
+  "as_of_cst": "2026-10-14 10:43 CST",
+  "modal": "H MoM 0.6%",
+  "modal_freeze_p": 0.53,
+  "legs": [
+   {
+    "name_en": "H MoM",
+    "name_zh": "H 环比",
+    "event_slug": "september-inflation-us-monthly",
+    "modal": "0.6%",
+    "freeze_p": 0.53,
+    "bid": 0.51,
+    "ask": 0.55,
+    "slug": "will-monthly-inflation-increase-by-0pt6-in-september-2026",
+    "n_buckets": 9
+   },
+   {
+    "name_en": "H YoY",
+    "name_zh": "H 同比",
+    "event_slug": "september-inflation-us-annual",
+    "modal": "3.6%",
+    "freeze_p": 0.44,
+    "bid": 0.43,
+    "ask": 0.45,
+    "slug": "will-annual-inflation-be-3pt6-in-september-2026",
+    "n_buckets": 12
+   },
+   {
+    "name_en": "C MoM",
+    "name_zh": "C 环比",
+    "event_slug": "core-cpi-mom-september-2026",
+    "modal": "0.2%",
+    "freeze_p": 0.505,
+    "bid": 0.5,
+    "ask": 0.51,
+    "slug": "will-core-cpi-mom-be-0pt2-in-september-2026",
+    "n_buckets": 7
+   },
+   {
+    "name_en": "C YoY",
+    "name_zh": "C 同比",
+    "event_slug": "core-cpi-yoy-september-2026",
+    "modal": "2.4%",
+    "freeze_p": 0.435,
+    "bid": 0.43,
+    "ask": 0.44,
+    "slug": "will-core-cpi-yoy-be-2pt4-in-september-2026",
+    "n_buckets": 10
+   }
+  ]
+ },
+ "note_en": "Append-only print result. Freeze file 2026-10-14-1042 not rewritten. Modal H MoM 0.6% @ 0.53 vs print 0.6% → WIN. Legs 1/4.",
+ "note_zh": "只追加公布结果。冻盘文件 2026-10-14-1042 未改写。主众数 H 环比 0.6% @ 0.53 对公布 0.6% → 中。腿 1/4。",
+ "scorecard": {
+  "print_en": "14 Oct CPI (Sep)",
+  "print_zh": "10月14日 CPI（9月）",
+  "print_cst": "2026-10-14 20:30 CST",
+  "print_et": "2026-10-14T08:30:00-04:00",
+  "freeze_cst": "2026-10-14 10:43 CST",
+  "public_freeze_id": "2026-10-14-1042",
+  "public_freeze_commit": "d7dd8d4",
+  "public_freeze_commit_utc": "2026-10-14T02:47:06Z",
+  "public_before_print": true,
+  "hits": 1,
+  "n": 4,
+  "official": "BLS CPI-U Sep 2026 (USDL-26-1574, 2026-10-14 08:30 ET): headline MoM +0.6%, YoY +3.7%; core MoM +0.3%, YoY +2.6%. Polymarket gamma Yes≈0.9995 on 0.6% / 3.7% / 0.3% / 2.6% buckets.",
+  "pm_resolution": "H MoM 0.6% / H YoY 3.7% / C MoM 0.3% / C YoY 2.6% Yes≈1 (gamma-api, not yet closed)",
+  "modal_primary": "H MoM",
+  "modal_result": "WIN",
+  "rows": [
+   {
+    "name_en": "H MoM",
+    "name_zh": "H 环比",
+    "slug": "will-monthly-inflation-increase-by-0pt6-in-september-2026",
+    "event_slug": "september-inflation-us-monthly",
+    "modal": "0.6%",
+    "freeze_p": 0.53,
+    "bid": 0.51,
+    "ask": 0.55,
+    "actual": "0.6%",
+    "result": "WIN"
+   },
+   {
+    "name_en": "H YoY",
+    "name_zh": "H 同比",
+    "slug": "will-annual-inflation-be-3pt6-in-september-2026",
+    "event_slug": "september-inflation-us-annual",
+    "modal": "3.6%",
+    "freeze_p": 0.44,
+    "bid": 0.43,
+    "ask": 0.45,
+    "actual": "3.7%",
+    "result": "LOSE"
+   },
+   {
+    "name_en": "C MoM",
+    "name_zh": "C 环比",
+    "slug": "will-core-cpi-mom-be-0pt2-in-september-2026",
+    "event_slug": "core-cpi-mom-september-2026",
+    "modal": "0.2%",
+    "freeze_p": 0.505,
+    "bid": 0.5,
+    "ask": 0.51,
+    "actual": "0.3%",
+    "result": "LOSE"
+   },
+   {
+    "name_en": "C YoY",
+    "name_zh": "C 同比",
+    "slug": "will-core-cpi-yoy-be-2pt4-in-september-2026",
+    "event_slug": "core-cpi-yoy-september-2026",
+    "modal": "2.4%",
+    "freeze_p": 0.435,
+    "bid": 0.43,
+    "ask": 0.44,
+    "actual": "2.6%",
+    "result": "LOSE"
+   }
+  ],
+  "freeze_legs": [
+   {
+    "name_en": "H MoM",
+    "name_zh": "H 环比",
+    "event_slug": "september-inflation-us-monthly",
+    "modal": "0.6%",
+    "freeze_p": 0.53,
+    "bid": 0.51,
+    "ask": 0.55,
+    "slug": "will-monthly-inflation-increase-by-0pt6-in-september-2026",
+    "n_buckets": 9
+   },
+   {
+    "name_en": "H YoY",
+    "name_zh": "H 同比",
+    "event_slug": "september-inflation-us-annual",
+    "modal": "3.6%",
+    "freeze_p": 0.44,
+    "bid": 0.43,
+    "ask": 0.45,
+    "slug": "will-annual-inflation-be-3pt6-in-september-2026",
+    "n_buckets": 12
+   },
+   {
+    "name_en": "C MoM",
+    "name_zh": "C 环比",
+    "event_slug": "core-cpi-mom-september-2026",
+    "modal": "0.2%",
+    "freeze_p": 0.505,
+    "bid": 0.5,
+    "ask": 0.51,
+    "slug": "will-core-cpi-mom-be-0pt2-in-september-2026",
+    "n_buckets": 7
+   },
+   {
+    "name_en": "C YoY",
+    "name_zh": "C 同比",
+    "event_slug": "core-cpi-yoy-september-2026",
+    "modal": "2.4%",
+    "freeze_p": 0.435,
+    "bid": 0.43,
+    "ask": 0.44,
+    "slug": "will-core-cpi-yoy-be-2pt4-in-september-2026",
+    "n_buckets": 10
+   }
+  ],
+  "freeze_events": [
+   {
+    "leg": "H MoM",
+    "event_slug": "september-inflation-us-monthly",
+    "title": "September Inflation US - Monthly",
+    "modal": "0.6%",
+    "modal_freeze_p": 0.53,
+    "rows": [
+     {
+      "name_en": "0.6%",
+      "slug": "will-monthly-inflation-increase-by-0pt6-in-september-2026",
+      "freeze_p": 0.53,
+      "bid": 0.51,
+      "ask": 0.55
+     },
+     {
+      "name_en": "0.5%",
+      "slug": "will-monthly-inflation-increase-by-0pt5-in-september-2026",
+      "freeze_p": 0.275,
+      "bid": 0.26,
+      "ask": 0.29
+     },
+     {
+      "name_en": "0.7%",
+      "slug": "will-monthly-inflation-increase-by-0pt7-in-september-2026",
+      "freeze_p": 0.135,
+      "bid": 0.12,
+      "ask": 0.15
+     },
+     {
+      "name_en": "0.4%",
+      "slug": "will-monthly-inflation-increase-by-0pt4-in-september-2026",
+      "freeze_p": 0.072,
+      "bid": 0.059,
+      "ask": 0.085
+     },
+     {
+      "name_en": "≥0.8%",
+      "slug": "will-monthly-inflation-increase-by-0pt8-or-more-in-september-2026",
+      "freeze_p": 0.0045,
+      "bid": 0.001,
+      "ask": 0.008
+     },
+     {
+      "name_en": "≤0.0%",
+      "slug": "will-monthly-inflation-be-0pt0-or-less-in-september-2026",
+      "freeze_p": 0.0025,
+      "bid": 0.002,
+      "ask": 0.003
+     },
+     {
+      "name_en": "0.2%",
+      "slug": "will-monthly-inflation-increase-by-0pt2-in-september-2026",
+      "freeze_p": 0.0025,
+      "bid": 0.001,
+      "ask": 0.004
+     },
+     {
+      "name_en": "0.3%",
+      "slug": "will-monthly-inflation-increase-by-0pt3-in-september-2026",
+      "freeze_p": 0.0025,
+      "bid": 0.002,
+      "ask": 0.003
+     },
+     {
+      "name_en": "0.1%",
+      "slug": "will-monthly-inflation-increase-by-0pt1-in-september-2026",
+      "freeze_p": 0.0015,
+      "bid": 0.001,
+      "ask": 0.002
+     }
+    ]
+   },
+   {
+    "leg": "H YoY",
+    "event_slug": "september-inflation-us-annual",
+    "title": "September Inflation US - Annual",
+    "modal": "3.6%",
+    "modal_freeze_p": 0.44,
+    "rows": [
+     {
+      "name_en": "3.6%",
+      "slug": "will-annual-inflation-be-3pt6-in-september-2026",
+      "freeze_p": 0.44,
+      "bid": 0.43,
+      "ask": 0.45
+     },
+     {
+      "name_en": "3.7%",
+      "slug": "will-annual-inflation-be-3pt7-in-september-2026",
+      "freeze_p": 0.37,
+      "bid": 0.36,
+      "ask": 0.38
+     },
+     {
+      "name_en": "3.8%",
+      "slug": "will-annual-inflation-be-3pt8-in-september-2026",
+      "freeze_p": 0.091,
+      "bid": 0.086,
+      "ask": 0.096
+     },
+     {
+      "name_en": "3.5%",
+      "slug": "will-annual-inflation-be-3pt5-in-september-2026",
+      "freeze_p": 0.0725,
+      "bid": 0.07,
+      "ask": 0.075
+     },
+     {
+      "name_en": "3.4%",
+      "slug": "will-annual-inflation-be-3pt4-in-september-2026",
+      "freeze_p": 0.0115,
+      "bid": 0.01,
+      "ask": 0.013
+     },
+     {
+      "name_en": "3.9%",
+      "slug": "will-annual-inflation-be-3pt9-in-september-2026",
+      "freeze_p": 0.0075,
+      "bid": 0.002,
+      "ask": 0.013
+     },
+     {
+      "name_en": "≤2.9%",
+      "slug": "will-annual-inflation-be-2pt9-or-less-in-september-2026",
+      "freeze_p": 0.0015,
+      "bid": 0.001,
+      "ask": 0.002
+     },
+     {
+      "name_en": "3.0%",
+      "slug": "will-annual-inflation-be-3pt0-in-september-2026",
+      "freeze_p": 0.0015,
+      "bid": 0.001,
+      "ask": 0.002
+     },
+     {
+      "name_en": "3.1%",
+      "slug": "will-annual-inflation-be-3pt1-in-september-2026",
+      "freeze_p": 0.0015,
+      "bid": 0.001,
+      "ask": 0.002
+     },
+     {
+      "name_en": "3.2%",
+      "slug": "will-annual-inflation-be-3pt2-in-september-2026",
+      "freeze_p": 0.0015,
+      "bid": 0.001,
+      "ask": 0.002
+     },
+     {
+      "name_en": "3.3%",
+      "slug": "will-annual-inflation-be-3pt3-in-september-2026",
+      "freeze_p": 0.0015,
+      "bid": 0.001,
+      "ask": 0.002
+     },
+     {
+      "name_en": "≥4.0%",
+      "slug": "will-annual-inflation-be-4pt0-or-more-in-september-2026",
+      "freeze_p": 0.001,
+      "bid": null,
+      "ask": 0.002
+     }
+    ]
+   },
+   {
+    "leg": "C MoM",
+    "event_slug": "core-cpi-mom-september-2026",
+    "title": "Core CPI MoM - September 2026",
+    "modal": "0.2%",
+    "modal_freeze_p": 0.505,
+    "rows": [
+     {
+      "name_en": "0.2%",
+      "slug": "will-core-cpi-mom-be-0pt2-in-september-2026",
+      "freeze_p": 0.505,
+      "bid": 0.5,
+      "ask": 0.51
+     },
+     {
+      "name_en": "0.3%",
+      "slug": "will-core-cpi-mom-be-0pt3-in-september-2026",
+      "freeze_p": 0.305,
+      "bid": 0.29,
+      "ask": 0.32
+     },
+     {
+      "name_en": "0.1%",
+      "slug": "will-core-cpi-mom-be-0pt1-in-september-2026",
+      "freeze_p": 0.12,
+      "bid": 0.11,
+      "ask": 0.13
+     },
+     {
+      "name_en": "0.4%",
+      "slug": "will-core-cpi-mom-be-0pt4-in-september-2026",
+      "freeze_p": 0.046,
+      "bid": 0.038,
+      "ask": 0.054
+     },
+     {
+      "name_en": "≤0.0%",
+      "slug": "will-core-cpi-mom-be-0pt0-or-less-in-september-2026",
+      "freeze_p": 0.045,
+      "bid": 0.03,
+      "ask": 0.06
+     },
+     {
+      "name_en": "0.5%",
+      "slug": "will-core-cpi-mom-be-0pt5-in-september-2026",
+      "freeze_p": 0.006,
+      "bid": null,
+      "ask": 0.012
+     },
+     {
+      "name_en": "0.6%+",
+      "slug": "will-core-cpi-mom-be-0pt6-or-more-in-september-2026",
+      "freeze_p": 0.003,
+      "bid": 0.001,
+      "ask": 0.005
+     }
+    ]
+   },
+   {
+    "leg": "C YoY",
+    "event_slug": "core-cpi-yoy-september-2026",
+    "title": "Core CPI YoY - September 2026",
+    "modal": "2.4%",
+    "modal_freeze_p": 0.435,
+    "rows": [
+     {
+      "name_en": "2.4%",
+      "slug": "will-core-cpi-yoy-be-2pt4-in-september-2026",
+      "freeze_p": 0.435,
+      "bid": 0.43,
+      "ask": 0.44
+     },
+     {
+      "name_en": "2.5%",
+      "slug": "will-core-cpi-yoy-be-2pt5-in-september-2026",
+      "freeze_p": 0.345,
+      "bid": 0.33,
+      "ask": 0.36
+     },
+     {
+      "name_en": "2.3%",
+      "slug": "will-core-cpi-yoy-be-2pt3-in-september-2026",
+      "freeze_p": 0.095,
+      "bid": 0.08,
+      "ask": 0.11
+     },
+     {
+      "name_en": "2.6%",
+      "slug": "will-core-cpi-yoy-be-2pt6-in-september-2026",
+      "freeze_p": 0.09,
+      "bid": 0.08,
+      "ask": 0.1
+     },
+     {
+      "name_en": "≤2.0%",
+      "slug": "will-core-cpi-yoy-be-2pt0-or-less-in-september-2026",
+      "freeze_p": 0.005,
+      "bid": 0.002,
+      "ask": 0.008
+     },
+     {
+      "name_en": "2.1%",
+      "slug": "will-core-cpi-yoy-be-2pt1-in-september-2026",
+      "freeze_p": 0.005,
+      "bid": 0.002,
+      "ask": 0.008
+     },
+     {
+      "name_en": "2.7%",
+      "slug": "will-core-cpi-yoy-be-2pt7-in-september-2026",
+      "freeze_p": 0.003,
+      "bid": 0.001,
+      "ask": 0.005
+     },
+     {
+      "name_en": "2.8%",
+      "slug": "will-core-cpi-yoy-be-2pt8-in-september-2026",
+      "freeze_p": 0.0025,
+      "bid": 0.001,
+      "ask": 0.004
+     },
+     {
+      "name_en": "2.2%",
+      "slug": "will-core-cpi-yoy-be-2pt2-in-september-2026",
+      "freeze_p": 0.001,
+      "bid": null,
+      "ask": 0.002
+     },
+     {
+      "name_en": "≥2.9%",
+      "slug": "will-core-cpi-yoy-be-2pt9-or-more-in-september-2026",
+      "freeze_p": 0.0005,
+      "bid": null,
+      "ask": 0.001
+     }
+    ]
+   }
+  ],
+  "note_en": "Public pre-print freeze ship 2026-10-14-1042 (commit d7dd8d4, 2026-10-14T02:47:06Z, ~9.7h before print). Modal primary H MoM 0.6% @ 0.53 → WIN. H YoY modal 3.6% missed (print 3.7% @ freeze 0.37). C MoM modal 0.2% missed (print 0.3% @ freeze 0.305). C YoY modal 2.4% missed (print 2.6% @ freeze 0.09). Legs 1/4. Freeze rows untouched.",
+  "note_zh": "公开事前冻盘船 2026-10-14-1042（commit d7dd8d4，2026-10-14T02:47:06Z，约公布前 9.7 小时）。主众数 H 环比 0.6% @ 0.53 → 中。H 同比众数 3.6% 未中（公布 3.7%，冻盘价 0.37）。C 环比众数 0.2% 未中（公布 0.3%，冻盘价 0.305）。C 同比众数 2.4% 未中（公布 2.6%，冻盘价 0.09）。腿 1/4。冻盘行未改。"
+ }
+}

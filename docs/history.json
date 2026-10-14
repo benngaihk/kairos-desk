@@ -1,6 +1,6 @@
 {
- "policy_en": "A freeze is pre-print only if the GitHub commit time is before the official release. CPI 11 Sep and NFP 4 Sep freezes were internal; first public copy is the 14 Sep 10:20 snapshot (commit c32856a). 14–16 Sep snapshots are public pre-print freezes for FOMC 15–16 Sep. Sep NFP public pre-print freeze is ship 2026-10-01-1051 (commit c416920); its print result is appended as 2026-10-05-nfp-print without rewriting freeze rows. Results are append-only.",
- "policy_zh": "只有 GitHub commit 时间早于官方公布，冻盘才算事前。CPI 9/11 和非农 9/4 的冻结当时只在内部；第一次公开是 9/14 10:20 快照（commit c32856a）。9/14–16 快照是 9/15–16 FOMC 的事前公开冻结。9 月非农公开事前冻盘是船 2026-10-01-1051（commit c416920）；其公布结果以 2026-10-05-nfp-print 追加，冻盘行不改写。结果只追加。",
+ "policy_en": "A freeze is pre-print only if the GitHub commit time is before the official release. CPI 11 Sep and NFP 4 Sep freezes were internal; first public copy is the 14 Sep 10:20 snapshot (commit c32856a). 14–16 Sep snapshots are public pre-print freezes for FOMC 15–16 Sep. Sep NFP public pre-print freeze is ship 2026-10-01-1051 (commit c416920). Sep CPI public pre-print freeze is ship 2026-10-14-1042 (commit d7dd8d4); its print result is appended as 2026-10-14-2218-cpi-print / scorecards.cpi without rewriting freeze rows. Results are append-only.",
+ "policy_zh": "只有 GitHub commit 时间早于官方公布，冻盘才算事前。CPI 9/11 和非农 9/4 的冻结当时只在内部；第一次公开是 9/14 10:20 快照（commit c32856a）。9/14–16 快照是 9/15–16 FOMC 的事前公开冻结。9 月非农公开事前冻盘是船 2026-10-01-1051（commit c416920）。九月 CPI 公开事前冻盘是船 2026-10-14-1042（commit d7dd8d4）；其公布结果以 2026-10-14-2218-cpi-print / scorecards.cpi 追加，冻盘行不改写。结果只追加。",
  "commits_url": "https://github.com/benngaihk/kairos-desk/commits/main",
  "snapshots": [
   {
@@ -449,6 +449,30 @@
    "kind": "scan",
    "note_en": "Afternoon refresh. Scan 2026-10-14 16:07 CST: markets 747 (completeness 736+negrisk 11), raw_edges 0, after_audit 0, NO_EDGE. Oct Fed PM +25bp 0.185 vs Investing 0.241 (gap 5.6pp, mismatch_flag false); Altınla 0.413 ghost_override. Sep CPI freeze unchanged (public at 2026-10-14-1042). Book depth unverified pending depth_walk.",
    "note_zh": "下午刷新。扫描 2026-10-14 16:07 CST：市场 747（completeness 736+negrisk 11），原始优势 0，审计后 0，NO_EDGE。十月美联储 PM +25bp 0.185 对 Investing 0.241（缺口 5.6pp，mismatch_flag false）；Altınla 0.413 ghost_override。九月 CPI 冻盘未动（已于 2026-10-14-1042 公开）。盘口深度待 depth_walk 核验。"
+  },
+  {
+   "id": "2026-10-14-2218-cpi-print",
+   "as_of_cst": "2026-10-14 22:16 CST",
+   "published_cst": "2026-10-14 22:17 CST",
+   "after_audit": 0,
+   "url": "./history/2026-10-14-2218-cpi-print.json",
+   "kind": "result",
+   "event": "cpi-2026-10-14",
+   "print": "H 0.6%/3.7% · C 0.3%/2.6%",
+   "public_freeze_id": "2026-10-14-1042",
+   "note_en": "Sep CPI print result appended. Legs 1/4: H MoM WIN, H YoY/C MoM/C YoY LOSE. Modal primary WIN. Freeze files untouched.",
+   "note_zh": "追加九月 CPI 公布结果。腿 1/4：H 环比中，H 同比/C 环比/C 同比未中。主众数中。冻盘文件未改。"
+  },
+  {
+   "id": "2026-10-14-2218",
+   "as_of_cst": "2026-10-14 22:16 CST",
+   "published_cst": "2026-10-14 22:17 CST",
+   "after_audit": 0,
+   "url": "./history/2026-10-14-2218.json",
+   "kind": "scan+result",
+   "pre_print": [],
+   "note_en": "Evening CPI scorecard + Fed refresh. Overlay 2026-10-14 22:16 CST on afternoon scan (747 mkts, NO_EDGE). Freeze 2026-10-14-1042 scored 1/4 modal WIN; track 2/3. Fed PM 0.395 vs Investing 0.482 gap 8.7pp mismatch_flag true. Depth pending.",
+   "note_zh": "晚间 CPI 记分 + 美联储刷新。叠加 2026-10-14 22:16 CST 于下午扫描（747 市，NO_EDGE）。冻盘 2026-10-14-1042 计分 1/4 主众数中；战绩 2/3。美联储 PM 0.395 对 Investing 0.482 缺口 8.7pp 错配 true。深度待核验。"
   }
  ],
  "universe_url": "./universe.json",
@@ -726,6 +750,45 @@
     }
    },
    "url": "history/2026-10-14-1646.json"
+  },
+  {
+   "id": "2026-10-14-2218",
+   "methodology_version": "v2.3",
+   "status": "checked",
+   "scan_dir": "routine-20261014-1605",
+   "books_fetched_cst": "2026-10-14 22:17 CST",
+   "books_fetch_first_cst": "2026-10-14 22:17:26 CST",
+   "books_fetch_last_cst": "2026-10-14 22:17:27 CST",
+   "max_set_fetch_spread_ms": 0,
+   "stale_threshold_ms": 5000,
+   "n_sets_stale": 0,
+   "oldest_book_ts_age_s": 124,
+   "n_sets": 14,
+   "n_books": 151,
+   "n_books_failed": 0,
+   "rows": {
+    "buy": 70,
+    "sell": 70
+   },
+   "rows_rejected": {
+    "buy": 46,
+    "sell": 20
+   },
+   "rows_rejected_by_reason": {
+    "buy": {
+     "min_order": 46,
+     "depth": 0,
+     "stale": 0,
+     "book": 0
+    },
+    "sell": {
+     "min_order": 0,
+     "depth": 20,
+     "stale": 0,
+     "book": 0
+    }
+   },
+   "url": "history/2026-10-14-2218.json"
   }
  ],
  "depth_replays_note_en": "One row per book-depth replay: ship id, methodology version, first/last book read (CST), max per-set read spread vs the stale threshold, and rows rejected by reason (a row can carry several reasons). null = not recorded by that version.",
