@@ -439,6 +439,16 @@
    ],
    "note_en": "Morning refresh + FORCED Sep CPI public pre-print freeze. Scan 2026-10-14 10:02 CST: markets 1050 (completeness 1040+negrisk 10), raw_edges 0, after_audit 0, NO_EDGE. Oct Fed PM +25bp 0.195 vs Investing 0.23 (gap 3.5pp, mismatch_flag false); Altınla 0.413 ghost_override. pending_freeze.cpi_2026_10_14 (H MoM modal 0.6%@0.53). Book depth checked both sides at $50–$1000 (as of 2026-10-14 10:44 CST), methodology v2.3.",
    "note_zh": "上午刷新 + 强制九月 CPI 公开事前冻盘。扫描 2026-10-14 10:02 CST：市场 1050（completeness 1040+negrisk 10），原始优势 0，审计后 0，NO_EDGE。十月美联储 PM +25bp 0.195 对 Investing 0.23（缺口 3.5pp，mismatch_flag false）；Altınla 0.413 ghost_override。pending_freeze.cpi_2026_10_14（H 环比众数 0.6%@0.53）。盘口深度已核验（截至 2026-10-14 10:44 CST），methodology v2.3。"
+  },
+  {
+   "id": "2026-10-14-1646",
+   "as_of_cst": "2026-10-14 16:07 CST",
+   "published_cst": "2026-10-14 16:46 CST",
+   "after_audit": 0,
+   "url": "./history/2026-10-14-1646.json",
+   "kind": "scan",
+   "note_en": "Afternoon refresh. Scan 2026-10-14 16:07 CST: markets 747 (completeness 736+negrisk 11), raw_edges 0, after_audit 0, NO_EDGE. Oct Fed PM +25bp 0.185 vs Investing 0.241 (gap 5.6pp, mismatch_flag false); Altınla 0.413 ghost_override. Sep CPI freeze unchanged (public at 2026-10-14-1042). Book depth unverified pending depth_walk.",
+   "note_zh": "下午刷新。扫描 2026-10-14 16:07 CST：市场 747（completeness 736+negrisk 11），原始优势 0，审计后 0，NO_EDGE。十月美联储 PM +25bp 0.185 对 Investing 0.241（缺口 5.6pp，mismatch_flag false）；Altınla 0.413 ghost_override。九月 CPI 冻盘未动（已于 2026-10-14-1042 公开）。盘口深度待 depth_walk 核验。"
   }
  ],
  "universe_url": "./universe.json",
@@ -677,6 +687,45 @@
     }
    },
    "url": "history/2026-10-14-1042.json"
+  },
+  {
+   "id": "2026-10-14-1646",
+   "methodology_version": "v2.3",
+   "status": "checked",
+   "scan_dir": "routine-20261014-1605",
+   "books_fetched_cst": "2026-10-14 16:47 CST",
+   "books_fetch_first_cst": "2026-10-14 16:47:18 CST",
+   "books_fetch_last_cst": "2026-10-14 16:47:19 CST",
+   "max_set_fetch_spread_ms": 0,
+   "stale_threshold_ms": 5000,
+   "n_sets_stale": 0,
+   "oldest_book_ts_age_s": 132,
+   "n_sets": 14,
+   "n_books": 151,
+   "n_books_failed": 0,
+   "rows": {
+    "buy": 70,
+    "sell": 70
+   },
+   "rows_rejected": {
+    "buy": 46,
+    "sell": 20
+   },
+   "rows_rejected_by_reason": {
+    "buy": {
+     "min_order": 46,
+     "depth": 0,
+     "stale": 0,
+     "book": 0
+    },
+    "sell": {
+     "min_order": 0,
+     "depth": 20,
+     "stale": 0,
+     "book": 0
+    }
+   },
+   "url": "history/2026-10-14-1646.json"
   }
  ],
  "depth_replays_note_en": "One row per book-depth replay: ship id, methodology version, first/last book read (CST), max per-set read spread vs the stale threshold, and rows rejected by reason (a row can carry several reasons). null = not recorded by that version.",
