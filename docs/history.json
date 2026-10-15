@@ -473,6 +473,17 @@
    "pre_print": [],
    "note_en": "Evening CPI scorecard + Fed refresh. Overlay 2026-10-14 22:16 CST on afternoon scan (747 mkts, NO_EDGE). Freeze 2026-10-14-1042 scored 1/4 modal WIN; track 2/3. Fed PM 0.395 vs Investing 0.482 gap 8.7pp mismatch_flag true. Depth pending.",
    "note_zh": "晚间 CPI 记分 + 美联储刷新。叠加 2026-10-14 22:16 CST 于下午扫描（747 市，NO_EDGE）。冻盘 2026-10-14-1042 计分 1/4 主众数中；战绩 2/3。美联储 PM 0.395 对 Investing 0.482 缺口 8.7pp 错配 true。深度待核验。"
+  },
+  {
+   "id": "2026-10-15-1045",
+   "as_of_cst": "2026-10-15 10:01 CST",
+   "published_cst": "2026-10-15 10:45 CST",
+   "after_audit": 0,
+   "url": "./history/2026-10-15-1045.json",
+   "kind": "scan",
+   "pre_print": [],
+   "note_en": "Morning refresh. Scan 2026-10-15 10:01 CST: markets 1033 (completeness 1019+negrisk 14), raw_edges 2 rejected (presidential-election-winner-2028 placeholder NegRisk; mls-fcc-ner-2026-10-14 post-match incomplete), after_audit 0, NO_EDGE. Oct Fed PM +25bp 0.225 vs Investing 0.253 (gap 2.8pp, mismatch_flag false); Altınla bins broken (null). Scorecards carried; pending_freeze empty. Book depth checked both sides at $50–$1000 (as of 2026-10-15 10:41 CST) (v2.3, 248/248 books). Israel PM set walks under $1 at $500–$1000 but is nominal_not_exhaustive (9 placeholder legs) — not counted.",
+   "note_zh": "上午刷新。扫描 2026-10-15 10:01 CST：市场 1033（completeness 1019+negrisk 14），原始优势 2 条已否（presidential-election-winner-2028 占位 NegRisk；mls-fcc-ner-2026-10-14 赛后不完整），审计后 0，NO_EDGE。十月美联储 PM +25bp 0.225 对 Investing 0.253（缺口 2.8pp，mismatch_flag false）；Altınla 档位损坏（为空）。记分卡保留；pending_freeze 为空。盘口深度已双向核验 $50–$1000（截至 2026-10-15 10:41 CST）（v2.3，248/248 本盘口）。以色列总理整组在 $500–$1000 回溯低于 $1，但属 nominal_not_exhaustive（9 条占位腿）——不计。"
   }
  ],
  "universe_url": "./universe.json",
@@ -789,6 +800,45 @@
     }
    },
    "url": "history/2026-10-14-2218.json"
+  },
+  {
+   "id": "2026-10-15-1045",
+   "methodology_version": "v2.3",
+   "status": "checked",
+   "scan_dir": "routine-20261015-1000",
+   "books_fetched_cst": "2026-10-15 10:41 CST",
+   "books_fetch_first_cst": "2026-10-15 10:41:35 CST",
+   "books_fetch_last_cst": "2026-10-15 10:41:36 CST",
+   "max_set_fetch_spread_ms": 0,
+   "stale_threshold_ms": 5000,
+   "n_sets_stale": 0,
+   "oldest_book_ts_age_s": 300,
+   "n_sets": 17,
+   "n_books": 248,
+   "n_books_failed": 0,
+   "rows": {
+    "buy": 85,
+    "sell": 85
+   },
+   "rows_rejected": {
+    "buy": 56,
+    "sell": 30
+   },
+   "rows_rejected_by_reason": {
+    "buy": {
+     "min_order": 51,
+     "depth": 5,
+     "stale": 0,
+     "book": 0
+    },
+    "sell": {
+     "min_order": 0,
+     "depth": 30,
+     "stale": 0,
+     "book": 0
+    }
+   },
+   "url": "history/2026-10-15-1045.json"
   }
  ],
  "depth_replays_note_en": "One row per book-depth replay: ship id, methodology version, first/last book read (CST), max per-set read spread vs the stale threshold, and rows rejected by reason (a row can carry several reasons). null = not recorded by that version.",
